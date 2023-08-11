@@ -5,6 +5,10 @@
 
 .. todolist::
 
+.. todo::
+
+   check links
+
 Python support
 ==============
 
@@ -62,12 +66,14 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
 .. todo::
 
-   what is a terminal, how to open, how to download, very basic things
-   navigate a terminal.
+   check that the dropdown actually works, also look into css settings for
+   makeing it look prettier
 
 .. todo::
 
-   download button for code blocks
+   what is a terminal, how to open, how to download, very basic things
+   navigate a terminal.
+
 
 .. toctree::
    :maxdepth: 3

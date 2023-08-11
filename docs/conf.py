@@ -10,6 +10,8 @@ project = 'DTU Python support'
 copyright = '2023, DTU Python support developers'
 author = 'DTU Python support developers'
 
+url = "https://pythonsupport.dtu.dk"
+
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
@@ -49,9 +51,6 @@ _discord_invite = "https://discord.gg/h8EVaV9ShP"
 
 # Add common links to all
 rst_epilog = f"""
-
-.. todo::
-    check links
 
 .. _01001: https://01001.compute.dtu.dk
 .. _01003: https://01001.compute.dtu.dk
@@ -106,16 +105,24 @@ _icon_links = [
     },
 ]
 
+
+_course_json_url = "_static/course_switcher.json"
+
+
 html_theme_options = {
     "use_repository_button": True,
     "repository_provider": "github",
-    "repository_url": "https://github.com/dtudk/pythonsupport-webpage",
+    "repository_url": "https://github.com/dtudk/pythonsupport-page",
     "use_edit_page_button": True,
     "use_fullscreen_button": True,
     "header_links_before_dropdown": 4,
     "navbar_align": "left",
-    "navbar_center": ["navbar-nav"],
+    "navbar_center": ["version-switcher", "navbar-nav"],
     "icon_links": _icon_links,
+    "switcher": {
+        "json_url": _course_json_url,
+        "version_match": "courses",
+    },
 }
 
 html_css_files = [
@@ -124,7 +131,7 @@ html_css_files = [
 
 html_context = {
     "github_user": "dtudk",
-    "github_repo": "python-support-page",
+    "github_repo": "pythonsupport-page",
     "github_version": "main",
     "doc_path": "docs",
 }
@@ -133,3 +140,43 @@ html_context = {
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
 
 todo_include_todos = True
+
+
+# Automatically call the switcher creator
+def course_switcher(out="_static/course_switcher.json"):
+    """ Create a course switcher based on the available courses
+
+    This small snippet will automatically search the directories in:
+    `courses/` and add any course to the file
+    """
+    from pathlib import Path
+    import json
+
+    # current path
+    cwd = Path(__file__).parent
+
+    # Now search directories in the /courses folder
+
+    courses = cwd / "courses"
+
+    data = [{
+        "version": "courses",
+        "url": f"{url}/courses/index.html",
+        "preferred": True,
+    }]
+
+    for course in courses.glob("*"):
+        if not course.is_dir():
+            continue # only search directories
+
+        if not (course / "index.rst").exists():
+            continue # not a valid course
+
+        data.append({
+            "version": course.name,
+            "url": f"{url}/courses/{course.name}/",
+        })
+
+    json.dump(data, open(out, 'w'))
+
+course_switcher()
