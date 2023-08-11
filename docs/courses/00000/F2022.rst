@@ -1,0 +1,11 @@
+F2022
+=====
+
+This guideline is for students attending course 00000 in the F2022 year.
+
+Please install these packages:
+
+.. code-block:: bash
+
+   python3 -m pip install numpy==1.23.*
+

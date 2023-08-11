@@ -1,0 +1,12 @@
+
+.. _ide-vscode:
+
+Visual Studio Code
+------------------
+
+VS Code is a an open-source coding framework with a big community
+and many users.
+It integrates Jupyter notebooks and can also be used
+for other languages than Python.
+
+It can be downloaded `here <https://code.visualstudio.com/>`__.

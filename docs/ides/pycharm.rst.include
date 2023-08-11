@@ -1,0 +1,13 @@
+
+.. _ide-pycharm:
+
+PyCharm
+-------
+
+PyCharm comes in two variants; a Profesional (paid) version and a Community edition (free).
+
+PyCharm focuses on simplistic and powerful interface for code editing with Python as its
+core language.  
+PyCharm community edition does *not* contain Jupyter notebook integration.
+
+It can be downloaded `here <https://www.jetbrains.com/pycharm/download>`__.

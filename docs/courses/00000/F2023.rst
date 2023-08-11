@@ -1,0 +1,22 @@
+F2023
+=====
+
+This guideline is for students attending course 00000 in the F2023 year.
+
+Please install these packages:
+
+.. code-block:: bash
+
+   python3 -m pip install numpy==1.24.*
+
+.. note::
+
+   Point out something important for the students that is particularly
+   important
+
+
+.. warning::
+
+   Print warnings, such as:  
+   The course requirements may interfere with course YYYYY, please
+   ensure you use a virtual environment.
