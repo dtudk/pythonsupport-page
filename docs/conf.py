@@ -17,10 +17,16 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
     'sphinx.ext.todo',
+    # allow shorthands for links
     'sphinx.ext.extlinks',
+    # allows to view code directly in the homepage
     'sphinx.ext.viewcode',
+    # create tabs and grouped tabs
     'sphinx_tabs.tabs',
+    # allow emoji's in the documentation
     'sphinxemoji.sphinxemoji',
+    # allow copybutton on code-blocks
+    'sphinx_copybutton',
 ]
 
 intersphinx_mapping = {

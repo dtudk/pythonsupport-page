@@ -1,0 +1,8 @@
+# we should be buildalbe on any version (check minimal version)
+sphinx
+
+# extensions used
+sphinx-book-theme
+sphinx-copybutton
+sphinx-tabs
+sphinxemoji
