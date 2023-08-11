@@ -81,4 +81,4 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
    ides/index.rst
 
-   src/who.rst
+   src/about.rst

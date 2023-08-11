@@ -1,9 +1,9 @@
 
 
-.. _who:
+.. _about:
 
-Who we are
-==========
+About
+=====
 
 The Python support function is an entity consisting of employeed students
 to aid and help other stundents if they have problems installing Python
