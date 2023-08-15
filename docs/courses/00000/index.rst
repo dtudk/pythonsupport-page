@@ -1,7 +1,7 @@
 .. _course-template:
 
-00000 -- template
-=================
+Template
+========
 
 This is a template functioning as a guideline for creating
 a new course guideline.
@@ -23,7 +23,9 @@ This advocates that we retain courses for several years in a section
 fashion.
 
 We propose that instructions are kept for 6 years to allow students to
-revisit the instructions. If they will stop functioning we should warn with:
+revisit the instructions. If they stop functioning, please let us know
+via :mail:`pythonsupport@dtu.dk`, then we will insert a warning
+at the top of the instruction with:
 
 .. warning::
 
