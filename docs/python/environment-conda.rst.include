@@ -1,0 +1,157 @@
+
+
+`conda -- environment <env-conda_>`_
+------------------------------------
+
+The ``conda`` Python package automatically incorporates `environments <env-conda_>`_.
+Not only will it allow environments with specific packages, one can
+also create environments with different Python versions. This
+enables one to have a Python 3.8 and 3.10 installation.
+
+Once an environment has been created, and *sourced*, all ``python`` commands only act in *that environment*.
+
+
+An environment can be created using:
+
+.. note::
+   :class: margin   
+   
+   One can list the available *global* environments (created with ``--name``)
+   by executing ``conda env list``.
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+   
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+          # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+Once created, one can use the environment by *activating* it.
+Change ``course-A`` with the name of the environment.
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+        
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
+   
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
+
+
+Now every executed Python script will only use the packages installed
+in the environment. Every ``conda install`` will only install/remove
+packages in the environment.
+To get out of the environment, simply run the command ``conda deactivate``.
+
+Below is a complete example of creating an environment using a specific Python
+version, installing a specific
+package, running a code using the environment, and getting out of it.
+
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+   
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+

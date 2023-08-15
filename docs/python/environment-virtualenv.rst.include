@@ -1,0 +1,149 @@
+
+
+`virtualenv -- environment <env-virtualenv_>`_
+----------------------------------------------
+
+.. note::
+   :class: margin
+
+   ``virtualenv`` is the *original* implementation of the :ref:`venv <install-venv-env>`
+   package. ``virtualenv`` will be continuously developed and contains more up to date
+   methods and functionalities. As such ``virtualenv`` can be updated while ``venv``
+   is shipped with the Python sources and thus can **not** be updated.
+
+   For basic usage they are more or less the same.
+
+The package `virtualenv <env-virtualenv_>`_ creates environments using the :ref:`install-pip` method.
+Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
+
+.. note::
+
+    The ``virtualenv`` package can only create environments with different packages.
+    It cannot switch between different Python versions.
+
+
+
+
+An environment can be created using:
+
+.. note::
+   :class: margin
+
+   An environment will be a directory on your computer. Deleting
+   it will be the same as deleting the environment.
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+
+         python -m virtualenv <path to virtualenv>
+         # create an environment named 'course-A' in the current directory
+         python -m virtualenv course-A
+   
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         python -m virtualenv <path to virtualenv>
+         # create an environment named 'course-A' in the current directory
+         python -m virtualenv course-A
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         python3 -m virtualenv <path to virtualenv>
+         # create an environment named 'course-A' in the current directory
+         python3 -m virtualenv course-A
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         python3 -m virtualenv <path to virtualenv>
+         # create an environment named 'course-A' in the current directory
+         python3 -m virtualenv course-A
+
+Once created, one can use the environment by *sourcing* a file.
+Change ``course-A`` with the name of the environment.
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+
+         course-A/Scripts/Activate.ps1
+   
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         course-A/Scripts/activate.bat
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         source course-A/bin/activate
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         source course-A/bin/activate
+
+
+Now every executed Python script will only use the packages installed
+in the environment. And every ``pip`` command will only install/remove packages
+in the environment.
+To get out of the environment, simply run the command ``deactivate``.
+
+Below is a complete example of creating an environment, installing a specific
+package, running a code using the environment, and getting out of it.
+
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+
+         python -m virtualenv numpy-env
+         numpy-env/Scripts/Activate.ps1
+         pip install "numpy==1.23.*"
+         python -c "import numpy as np ; print(np.__version__)"
+         deactivate
+   
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         python -m virtualenv numpy-env
+         numpy-env/Scripts/activate.bat
+         pip install "numpy==1.23.*"
+         python -c "import numpy as np ; print(np.__version__)"
+         deactivate
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         python3 -m virtualenv numpy-env
+         source numpy-env/bin/activate
+         pip install "numpy==1.23.*"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         deactivate
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         python3 -m virtualenv numpy-env
+         source numpy-env/bin/activate
+         pip install "numpy==1.23.*"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         deactivate
+

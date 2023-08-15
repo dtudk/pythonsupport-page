@@ -5,9 +5,6 @@
 
 .. todolist::
 
-.. todo::
-
-   check links
 
 Python support
 ==============
@@ -15,7 +12,7 @@ Python support
 -- installation for Polytechnical Foundation course
 ---------------------------------------------------
 
-Welcome to the DTU student runned support unit, where we help students,
+Welcome to the DTU student support unit, where we help students,
 old or new, with installing Python and associated packages for their courses
 at DTU.
 
@@ -29,7 +26,7 @@ Email - :mail:`pythonsupport@dtu.dk`
    from our support team.
 
    We have someone answering tickets every weekday evenings between
-   17:00 and 21:00.
+   18:00 and 22:00.
 Office spaces
    we will have physical presence at DTU Lyngby campus on differing locations
    depending on the used lecture rooms in the `01001`_/`01003`_, `02002`_/`02003`_ courses.
@@ -38,8 +35,8 @@ Office spaces
 Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
    Our support team will also be present on the Discord chatting service.
 
-   We have someone answering every weekday evenings between
-   17:00 and 21:00.
+   We have someone answering Monday through Thursday evenings between
+   18:00 and 22:00.
    
    Using the Discord channel requires signing up to their terms, we (DTU)
    have no control over Discord and how they use your data. If you feel uncomfortable
@@ -54,7 +51,7 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    These courses are 01001, 01003, 02002, 02003.
 
    Many more will come! Our support unit is new, and we wish to figure
-   out what the need is amongst our students, please do not hesitate
+   out what the need is among our students, please do not hesitate
    to contact us regarding other courses, we will use it to understand the
    need for supporting in a broader sense.
 
@@ -66,8 +63,8 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
 .. todo::
 
-   check that the dropdown actually works, also look into css settings for
-   makeing it look prettier
+   check that the drop down actually works, also look into css settings for
+   making it look prettier
 
 .. todo::
 
@@ -82,9 +79,13 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
    python/install.rst
 
+   python/environments.rst
+
    python/pip.rst
    python/conda.rst
 
+   os/index.rst
    ides/index.rst
 
    src/about.rst
+   internal/index.rst

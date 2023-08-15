@@ -8,7 +8,7 @@ a new course guideline.
 
 Courses at DTU using Python will generally update their
 package dependencies every year due to the high turn-around
-on package versions in the Python eco-system.
+on package versions in the Python ecosystem.
 
 As such it is vital that we retain and store courses for a number of
 years so students can always backtrack their work.  

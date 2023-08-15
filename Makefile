@@ -26,6 +26,12 @@ all: clean html
 
 LINKCHECKDIR  = build/linkcheck
 
+.PHONY: spelling spell
+spelling: spell
+spell:
+	$(SPHINXBUILD) -b spelling "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+
 .PHONY: checklinks
 checklinks:
 	$(SPHINXBUILD) -b linkcheck "$(SOURCEDIR)" "$(LINKCHECKDIR)" $(SPHINXOPTS) $(O)

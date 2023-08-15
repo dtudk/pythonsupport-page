@@ -5,8 +5,8 @@
 About
 =====
 
-The Python support function is an entity consisting of employeed students
-to aid and help other stundents if they have problems installing Python
+The Python support function is an entity consisting of employed students
+to aid and help other students if they have problems installing Python
 and/or resolving package problems.
 
 Since 2023, DTU will conduct its teaching of the first Mathematics course
@@ -14,7 +14,7 @@ and the introduction to programming in the Python programming language.
 This is a major transitioning from licensed software (with paid support).
 
 Moving to new software infrastructure will undoubtedly cause some
-disturbance to the teaching eco-system.
+disturbance to the teaching ecosystem.
 
 The Python support, supporting the Polytechnical Foundational courses
 is a support unit build around the Python infrastructure to assist

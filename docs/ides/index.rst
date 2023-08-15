@@ -7,7 +7,7 @@ Integrated development environment (IDE)
 
 IDE's is an engineers integral work-horse for creating and executing code.
 It generally comprises utilities that aid the programmer for faster development
-turn arounds. Simultaneously it can help with showing documentation for the
+turn around. Simultaneously it can help with showing documentation for the
 API's currently being used.
 
 .. note::

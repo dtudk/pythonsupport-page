@@ -29,6 +29,8 @@ extensions = [
     'sphinxemoji.sphinxemoji',
     # allow copybutton on code-blocks
     'sphinx_copybutton',
+    # spell checking
+    'sphinxcontrib.spelling',
 ]
 
 intersphinx_mapping = {
@@ -74,7 +76,19 @@ rst_epilog = f"""
 .. _miniconda: https://docs.conda.io/en/latest/miniconda.html
 .. _mamba: https://mamba.readthedocs.io/
 
+.. _env-venv: https://docs.python.org/3/library/venv.html
+.. _env-conda: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+.. _env-virtualenv: https://virtualenv.pypa.io/en/latest/
+
 .. _dtu-courses: https://kurser.dtu.dk/
+
+.. |conda| replace:: conda
+.. |pip| replace:: pip
+
+.. |win-powershell| replace:: Windows | PowerShell
+.. |win-batch| replace:: Windows | Batch
+.. |linux-bash| replace:: Linux | Bash
+.. |macos-bash| replace:: MacOS | Bash
 """
 
 
@@ -96,17 +110,38 @@ html_title = "DTU Python support"
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
+# this move will work regardless of hover...
+_fa_move = ""
+
 _icon_links = [
     {
-        "name": "Discord",
+        "name": "Python support - Discord channel invitation",
         "url": _discord_invite,
-        "icon": "_static/discord_blurple_CMYK.png",
+        "icon": f"fa-brands fa-discord {_fa_move}",
+    },
+    {
+        "name": "Python support development page",
+        "url": "https://github.com/dtudk/pythonsupport-page",
+        "icon": f"fa-brands fa-github {_fa_move}",
+    },
+    {
+        "name": "Python homepage",
+        "url": "https://www.python.org",
+        "icon": f"fa-brands fa-python {_fa_move}",
+    },
+    {
+        "name": "PyPi package installation repository",
+        "url": "https://pypi.org/",
+        "icon": f"_static/logo-small.2a411bc6.svg",
+        "type": "local",
+    },
+    {
+        "name": "Conda documentation",
+        "url": "https://docs.conda.io/en/latest/index.html",
+        "icon": "_static/anaconda_logo.svg",
         "type": "local",
     },
 ]
-
-
-_course_json_url = "_static/course_switcher.json"
 
 
 html_theme_options = {
@@ -115,15 +150,19 @@ html_theme_options = {
     "repository_url": "https://github.com/dtudk/pythonsupport-page",
     "use_edit_page_button": True,
     "use_fullscreen_button": True,
-    "header_links_before_dropdown": 4,
-    "navbar_align": "left",
+    "header_links_before_dropdown": 3,
+    "navbar_align": "content",
     "navbar_center": ["version-switcher", "navbar-nav"],
     "icon_links": _icon_links,
-    "switcher": {
-        "json_url": _course_json_url,
-        "version_match": "courses",
-    },
 }
+
+_course_json_url = "_static/course_switcher.json"
+_switcher = {
+    "json_url": _course_json_url,
+    "version_match": "courses",
+}
+
+html_theme_options["switcher"] = _switcher
 
 html_css_files = [
     "css/custom_styles.css",
@@ -136,14 +175,22 @@ html_context = {
     "doc_path": "docs",
 }
 
+
 # -- Options for todo extension ----------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
 
+# TODO add custom codes to make this false when releasing
+# Some kind of env-variable
 todo_include_todos = True
 
 
+# Spell checking
+spelling_lang = 'en_US'
+tokenizer_lang = 'en_US'
+
+
 # Automatically call the switcher creator
-def course_switcher(out="_static/course_switcher.json"):
+def course_switcher(out=_course_json_url):
     """ Create a course switcher based on the available courses
 
     This small snippet will automatically search the directories in:
@@ -160,8 +207,9 @@ def course_switcher(out="_static/course_switcher.json"):
     courses = cwd / "courses"
 
     data = [{
+        "name": "courses",
         "version": "courses",
-        "url": f"{url}/courses/index.html",
+        "url": f"pathto(courses/index.html, 1)",
         "preferred": True,
     }]
 
@@ -173,10 +221,11 @@ def course_switcher(out="_static/course_switcher.json"):
             continue # not a valid course
 
         data.append({
+            "name": course.name,
             "version": course.name,
-            "url": f"{url}/courses/{course.name}/",
+            "url": f"pathto(courses/{course.name}/index.rst, 1)",
         })
 
-    json.dump(data, open(out, 'w'))
+    json.dump(data, open(out, 'w'), indent=4)
 
 course_switcher()

@@ -14,6 +14,9 @@ DTU courses have specific requirements for their used software.
    material, unless otherwise stated by the teacher.
 
 
+.. toctree::
+   :maxdepth: 1
+
 
 
 Template guide
@@ -25,4 +28,3 @@ For teachers these guidelines may be used to create new content.
    :maxdepth: 1
 
    00000/index.rst
-
