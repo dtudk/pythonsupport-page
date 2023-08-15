@@ -152,17 +152,17 @@ html_theme_options = {
     "use_fullscreen_button": True,
     "header_links_before_dropdown": 3,
     "navbar_align": "content",
-    "navbar_center": ["version-switcher", "navbar-nav"],
+    "navbar_center": ["navbar-nav"],
     "icon_links": _icon_links,
 }
 
 _course_json_url = "_static/course_switcher.json"
-_switcher = {
-    "json_url": _course_json_url,
-    "version_match": "courses",
-}
-
-html_theme_options["switcher"] = _switcher
+if False:
+    html_theme_options["switcher"] = {
+        "json_url": _course_json_url,
+        "version_match": "courses",
+    }
+    html_theme_options["navbar_center"].append("version-switcher")
 
 html_css_files = [
     "css/custom_styles.css",
