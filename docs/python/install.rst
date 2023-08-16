@@ -1,6 +1,10 @@
 
 .. _install-python:
 
+.. todo::
+
+   Document pyenv for Python version management
+   Document poetry
 
 Installing Python
 =================

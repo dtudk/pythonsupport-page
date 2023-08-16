@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import os
 
 project = 'DTU Python support'
 copyright = '2023, DTU Python support developers'
@@ -181,7 +182,7 @@ html_context = {
 
 # TODO add custom codes to make this false when releasing
 # Some kind of env-variable
-todo_include_todos = True
+todo_include_todos = bool(os.environ.get("PS_INCLUDE_TODOS", True))
 
 
 # Spell checking
