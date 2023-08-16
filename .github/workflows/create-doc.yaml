@@ -17,11 +17,13 @@ on:
         type: string
 
 jobs:
+
   # The actual job of the build-script
   build-documentation:
-    name: Build documentation
 
+    name: Build documentation
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout sources
         uses: actions/checkout@v3
@@ -35,7 +37,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          python -m pip install requirements.txt
+          python -m pip install -r requirements.txt
 
       - name: Build and tar.gz documentation
         run: |
@@ -49,6 +51,4 @@ jobs:
           name: ${{ inputs.name }}
           path: ${{ inputs.targz_name }}
           retention-days: 3
-
-
 

@@ -11,17 +11,10 @@ on:
 jobs:
 
   build_docs:
-
-    name: Build documentation
-    runs-on: ubuntu-latest
-    env:
-      PS_INCLUDE_TODOS: false
-
-    steps:
-      - uses: ./.github/workflows/create-doc.yaml
-        with:
-          name: docs
-          targz_name: docs.tar.gz
+    uses: ./.github/workflows/create-doc.yaml
+    with:
+      name: docs
+      targz_name: docs.tar.gz
 
   deploy_docs_first:
 
@@ -29,22 +22,32 @@ jobs:
     needs: [build_docs]
     runs-on: ubuntu-latest
     steps:
+      #- uses: tanmancan/action-setup-ssh-agent-key@1.0.0
+      #  with:
+      #    ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+
       - uses: actions/download-artifact@v3
         with:
-          name: artifact
-          path: html
-
-      - name: Unpack
-        run: |
-          tar -xfz -C html docs.tar.gz
-          [ ! -e html/index.html ] && exit 1
+          name: docs
 
       - name: Deployment -- rsync
         uses: Burnett01/rsync-deployments@6.0.0
         with:
-          switches: -avzr --delete
-          path: html/
+          switches: -vr --delete
+          path: docs.tar.gz
           remote_path: ${{ secrets.DEPLOY_PATH }}
           remote_host: ${{ secrets.DEPLOY_HOST }}
           remote_user: ${{ secrets.DEPLOY_USER }}
-          remote_key: ${{ secrets.DEPLOY_KEY }}
+          remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
+
+      - name: Access and unpack
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
+          script: |
+            cd ${{ secrets.DEPLOY_PATH }}
+            tar xfz docs.tar.gz
+            rm docs.tar.gz
+
