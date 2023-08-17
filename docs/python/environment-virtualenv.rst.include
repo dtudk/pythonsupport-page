@@ -3,34 +3,29 @@
 `virtualenv -- environment <env-virtualenv_>`_
 ----------------------------------------------
 
-.. note::
    :class: margin
 
-   ``virtualenv`` is the *original* implementation of the :ref:`venv <install-venv-env>`
-   package. ``virtualenv`` will be continuously developed and contains more up to date
-   methods and functionalities. As such ``virtualenv`` can be updated while ``venv``
-   is shipped with the Python sources and thus can **not** be updated.
 
    For basic usage they are more or less the same.
 
 The package `virtualenv <env-virtualenv_>`_ creates environments using the :ref:`install-pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
+   
+``virtualenv`` is the *original* implementation of the :ref:`venv <install-venv-env>`
+package. ``virtualenv`` will be continuously developed and contains more up to date
+methods and functionalities. As such ``virtualenv`` can be updated while ``venv``
+is shipped with the Python sources and thus can **not** be updated.
+For basic usage :ref:`venv <install-venv-env>` is to be considered sufficient.
 
 .. note::
 
     The ``virtualenv`` package can only create environments with different packages.
     It cannot switch between different Python versions.
 
-
-
+    An environment will be a directory on your computer. Deleting
+    it will be the same as deleting the environment.
 
 An environment can be created using:
-
-.. note::
-   :class: margin
-
-   An environment will be a directory on your computer. Deleting
-   it will be the same as deleting the environment.
 
 .. tabs::
 

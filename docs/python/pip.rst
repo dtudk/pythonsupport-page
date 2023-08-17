@@ -38,7 +38,6 @@ Packages can be installed in a very simple manner, note how multiple packages an
 can be specified in a single invocation of the program.
 
 .. note::
-   :class: margin
 
    ``pip list`` will give you the current list of installed packages.
 
@@ -49,7 +48,7 @@ can be specified in a single invocation of the program.
       .. code-block:: powershell
 
          python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
-   
+
    .. group-tab:: |win-batch|
 
       .. code-block:: batch
@@ -83,6 +82,83 @@ The above will install:
 
 when specifying more than one package on the line, all dependencies will be checked
 against each other at install time.
+
+
+Navigating packages
+^^^^^^^^^^^^^^^^^^^
+
+Quite often it is necessary to list and find extra information about the packages
+that is installed.
+
+Here is a set of commands that can be useful for interacting with the ``pip``
+packages:
+
+.. tabs::
+
+   .. group-tab:: |win-powershell|
+
+      .. code-block:: powershell
+
+         # List the packages installed
+         python -m pip list
+
+         # Show additional information about a single package
+         python -m pip show numpy
+
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python -m pip freeze > requirements.txt
+
+   .. group-tab:: |win-batch|
+
+      .. code-block:: batch
+
+         # List the packages installed
+         python -m pip list
+
+         # Show additional information about a single package
+         python -m pip show numpy
+
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python -m pip freeze > requirements.txt
+
+   .. group-tab:: |macos-bash|
+
+      .. code-block:: bash
+
+         # List the packages installed
+         python3 -m pip list
+
+         # Show additional information about a single package
+         python3 -m pip show numpy
+
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python3 -m pip freeze > requirements.txt
+
+   .. group-tab:: |linux-bash|
+
+      .. code-block:: bash
+
+         # List the packages installed
+         python3 -m pip list
+
+         # Show additional information about a single package
+         python3 -m pip show numpy
+
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python3 -m pip freeze > requirements.txt
+
 
 
 .. _install-venv-env:

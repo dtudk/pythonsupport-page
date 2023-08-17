@@ -14,7 +14,6 @@ Once an environment has been created, and *sourced*, all ``python`` commands onl
 An environment can be created using:
 
 .. note::
-   :class: margin   
    
    One can list the available *global* environments (created with ``--name``)
    by executing ``conda env list``.
