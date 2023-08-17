@@ -11,6 +11,8 @@ on:
 jobs:
 
   build_docs:
+    env:
+      PS_INCLUDE_TODOS: false
     uses: ./.github/workflows/create-doc.yaml
     with:
       name: docs
@@ -22,9 +24,6 @@ jobs:
     needs: [build_docs]
     runs-on: ubuntu-latest
     steps:
-      #- uses: tanmancan/action-setup-ssh-agent-key@1.0.0
-      #  with:
-      #    ssh-private-key: ${{ secrets.DEPLOY_KEY }}
 
       - uses: actions/download-artifact@v3
         with:
