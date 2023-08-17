@@ -27,7 +27,7 @@ Interacting with students
 
 Students will arrive with a variety of backgrounds. Some are very interested
 in programming, while others are not interested, *at all*, in the inner workings
-of Python and simply want to be able to attend classes.  
+of Python and simply want to be able to attend courses.  
 Our goal is to support both ends of the student spectrum.
 Information overload can be a problem for new students as there is already
 enough on the plate. It is imperative that information is given at the level
@@ -51,18 +51,12 @@ that can be useful:
 - ensure the module's version *after* import is as requested.
   Most likely the module has a variable: ``<modulename>.__version__``
   which can be checked for current imported version.
+- do the above points also in their editor to ensure that their editor
+  does not launch in a virtual environment.
 
 For instance, after having installed ``numpy==1.22`` one can check:
 
 .. tabs::
-
-   .. group-tab:: |conda|
-
-      .. code-block:: bash
-
-         conda list
-         # or "grep"'ing for a specific package
-         conda list | grep numpy
 
    .. group-tab:: |pip|
 
@@ -71,6 +65,14 @@ For instance, after having installed ``numpy==1.22`` one can check:
          pip list
          # or "grep"'ing for a specific package
          pip list | grep numpy
+
+   .. group-tab:: |conda|
+
+      .. code-block:: bash
+
+         conda list
+         # or "grep"'ing for a specific package
+         conda list | grep numpy
 
 Once the package is listed in the package list, check version and
 import:

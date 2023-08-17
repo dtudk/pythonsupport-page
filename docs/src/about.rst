@@ -16,7 +16,7 @@ This is a major transitioning from licensed software (with paid support).
 Moving to new software infrastructure will undoubtedly cause some
 disturbance to the teaching ecosystem.
 
-The Python support, supporting the Polytechnical Foundational courses
+The Python support, supporting the Polytechnical Foundation courses
 is a support unit build around the Python infrastructure to assist
 students with problems related to Python installation and Python package
 installations.  
