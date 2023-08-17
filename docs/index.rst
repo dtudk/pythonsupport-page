@@ -71,6 +71,14 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    what is a terminal, how to open, how to download, very basic things
    navigate a terminal.
 
+.. todo::
+
+   Create a Quickstart guide
+
+   There is too much information for each of the steps
+   It would be ideal with some kind of simple quickstart guide
+   which references the sub-pages if there are problems.
+
 
 .. toctree::
    :maxdepth: 3

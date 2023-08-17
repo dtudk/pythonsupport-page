@@ -196,6 +196,7 @@ if False:
         "json_url": _course_json_url,
         "version_match": "courses",
     }
+    #html_theme_options["switcher"]["json_url"] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
 
 html_css_files = [
@@ -253,7 +254,8 @@ def course_switcher(out=_course_json_url):
     data = [{
         "name": "courses",
         "version": "courses",
-        "url": f"pathto(courses/index.html, 1)",
+        #"url": f"pathto(courses/index.html, 1)",
+        "url": f"courses/index.html",
         "preferred": True,
     }]
 
@@ -267,7 +269,8 @@ def course_switcher(out=_course_json_url):
         data.append({
             "name": course.name,
             "version": course.name,
-            "url": f"pathto(courses/{course.name}/index.rst, 1)",
+            #"url": f"pathto(courses/{course.name}/index.rst, 1)",
+            "url": f"courses/{course.name}/index.rst",
         })
 
     json.dump(data, open(out, 'w'), indent=4)

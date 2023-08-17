@@ -17,6 +17,7 @@ DTU courses have specific requirements for their used software.
 .. toctree::
    :maxdepth: 1
 
+   01001/index.rst
    02002/index.rst
 
 Template guide
