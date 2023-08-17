@@ -182,7 +182,10 @@ html_context = {
 
 # TODO add custom codes to make this false when releasing
 # Some kind of env-variable
-todo_include_todos = bool(os.environ.get("PS_INCLUDE_TODOS", True))
+todo_include_todos = {
+    "true": True, "T": True, "TRUE": True, "True": True, True: True,
+    "false": False, "F": False, "FALSE": False, "False": False, False: False,
+}.get(os.environ.get("PS_INCLUDE_TODOS", True))
 
 
 # Spell checking

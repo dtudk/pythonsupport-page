@@ -8,11 +8,12 @@ on:
      - 'v*'
   workflow_dispatch:
 
+env:
+  PS_INCLUDE_TODOS: false
+
 jobs:
 
   build_docs:
-    env:
-      PS_INCLUDE_TODOS: false
     uses: ./.github/workflows/create-doc.yaml
     with:
       name: docs
