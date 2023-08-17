@@ -44,9 +44,42 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 
+# Determine the standard year of the current semester
+# I.e. this requires an update every 6 months to update correctly
+import datetime
+
+
+def get_current_years():
+    today = datetime.date.today()
+    year = today.year
+    year = (year - 1, year, year + 1)
+    if today.month >= 7:
+        # we are in the autumn, so it is *this* year and the next one
+        year = year[1:]
+    else:
+        year = year[:2]
+    return year
+_year = get_current_years()
+
+print(f"""\
+Links to DTU's course database will be to the year:
+      {_year[0]}-{_year[1]}""")
+
 extlinks = {
+    # easy mails
     "mail": ("mailto:%s", "%s"),
+    # easy show the entire link without duplicating the string
+    # I don't know if it can work in other ways
+    "full-link": ("%s", "%s"),
+    # direct links to the course documentation @ pythonsupport.dtu.dk
     "course": (":doc:`/courses/%s/index`", "%s"),
+    # direct links to DTU's course database for the course
+    # When courses changes numbers etc. some might
+    "course-base": (f"https://kurser.dtu.dk/course/{_year[0]}-{_year[1]}/%s", "%s"),
+    # Links to issues on this webpage:
+    "gh-issue": ("https://github.com/dtudk/pythonsupport-page/issues/%s", "%s"),
+    # Links to issues on this webpage:
+    "gh-disc": ("https://github.com/dtudk/pythonsupport-page/discussions/%s", "%s"),
 }
 
 _discord_general = "https://discord.com/channels/1138793943526539266/1138793944247980124"
@@ -57,8 +90,8 @@ rst_epilog = f"""
 
 .. _01001: https://01001.compute.dtu.dk
 .. _01003: https://01001.compute.dtu.dk
-.. _02002: https://www.unknown-course-site.org
-.. _02003: https://www.unknown-course-site.org
+.. _02002: https://02002.compute.dtu.dk
+.. _02003: https://02002.compute.dtu.dk
 
 .. _ps-discord-general: {_discord_general}
 .. _ps-discord-invite: {_discord_invite}
@@ -112,7 +145,7 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
 # this move will work regardless of hover...
-_fa_move = ""
+_fa_move = "fa-spin-hover"
 
 _icon_links = [
     {
@@ -182,10 +215,17 @@ html_context = {
 
 # TODO add custom codes to make this false when releasing
 # Some kind of env-variable
-todo_include_todos = {
-    "true": True, "T": True, "TRUE": True, "True": True, True: True,
-    "false": False, "F": False, "FALSE": False, "False": False, False: False,
-}.get(os.environ.get("PS_INCLUDE_TODOS", True))
+_include_todos = os.environ.get("PS_INCLUDE_TODOS", "False")
+if len(_include_todos) > 0:
+    _include_todos = _include_todos[0].lower()
+    _include_todos = _include_todos in ('1', 't', 'y')
+
+if _include_todos:
+    todo_include_todos = True
+    print("pythonsupport-page: Will SHOW TODOS")
+else:
+    todo_include_todos = False
+    print("pythonsupport-page: Will NOT SHOW TODOS")
 
 
 # Spell checking
