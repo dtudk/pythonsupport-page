@@ -5,7 +5,15 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+from pathlib import Path 
 import os
+import sys
+
+# add the exts folder
+sys.path.insert(1, str(Path().resolve()))
+print(sys.path[:2])
+from ps_modules.dictformatter import DictFormatter
+
 
 project = 'DTU Python support'
 copyright = '2023, DTU Python support developers'
@@ -65,6 +73,19 @@ print(f"""\
 Links to DTU's course database will be to the year:
       {_year[0]}-{_year[1]}""")
 
+
+_coursepages = DictFormatter()
+# Add all courses here
+# These will be used to format the homepages
+# I.e. this class can be used in extlinks
+_coursepages.add("01001", "https://01001.compute.dtu.dk")
+_coursepages.add("01002", "https://01001.compute.dtu.dk")
+_coursepages.add("01003", "https://01001.compute.dtu.dk")
+_coursepages.add("01004", "https://01001.compute.dtu.dk")
+_coursepages.add("02002", "https://02002.compute.dtu.dk")
+_coursepages.add("02003", "https://02002.compute.dtu.dk")
+
+
 extlinks = {
     # easy mails
     "mail": ("mailto:%s", "%s"),
@@ -76,6 +97,9 @@ extlinks = {
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
     "course-base": (f"https://kurser.dtu.dk/course/{_year[0]}-{_year[1]}/%s", "%s"),
+    # direct links to DTU's course database for the course
+    # When courses changes numbers etc. some might
+    "course-home": (_coursepages, "%s"),
     # Links to issues on this webpage:
     "gh-issue": ("https://github.com/dtudk/pythonsupport-page/issues/%s", "%s"),
     # Links to issues on this webpage:
@@ -87,11 +111,6 @@ _discord_invite = "https://discord.gg/h8EVaV9ShP"
 
 # Add common links to all
 rst_epilog = f"""
-
-.. _01001: https://01001.compute.dtu.dk
-.. _01003: https://01001.compute.dtu.dk
-.. _02002: https://02002.compute.dtu.dk
-.. _02003: https://02002.compute.dtu.dk
 
 .. _ps-discord-general: {_discord_general}
 .. _ps-discord-invite: {_discord_invite}
