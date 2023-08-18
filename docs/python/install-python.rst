@@ -6,7 +6,7 @@ Official Python distribution
 
 .. tip::
 
-   DTU recommends using version |python-recommended| of Python.
+   DTU recommends using version {{ python_version }} of Python.
 
 The `base Python <python-org_>`_ software can be downloaded and installed through
 their `download page <python-org-down_>`_ and uses common installation processes.
@@ -19,7 +19,7 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 .. tab:: {{ windows }}
 
    - Download and install Python from `here <python-org-down-win_>`__
-   - Ensure you check :far:`square-check` the ``Add Python |python-recommended| to PATH`` (at the bottom of the installation interface
+   - Ensure you check :far:`square-check` the ``Add Python {{ python_version }} to PATH`` (at the bottom of the installation GUI)
 
 .. tab:: {{ macos }}
 

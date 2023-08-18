@@ -9,7 +9,7 @@ Installing Python
    DTU recommends:
 
    - using the :ref:`Official Python distribution <install-python>`
-   - version |python-recommended| of Python
+   - version {{ python_version }} of Python
 
 There are multiple different distributions of Python available.
 Python is the base distribution allowing one to run and execute

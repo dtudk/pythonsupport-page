@@ -141,8 +141,6 @@ rst_epilog = f"""\
 .. _env-virtualenv: https://virtualenv.pypa.io/en/latest/
 
 .. _dtu-courses: https://kurser.dtu.dk/
-
-.. |python-recommended| replace:: {recommended_python}
 """
 
 
@@ -324,6 +322,7 @@ html_context = {
     "github_repo": "pythonsupport-page",
     "github_version": "main",
     "doc_path": "docs",
+    "python_version": recommended_python,
 
     # Installation methods
     "pip": "pip :fas:`ranking-star`",
