@@ -29,7 +29,7 @@ Email - :mail:`pythonsupport@dtu.dk`
    18:00 and 22:00.
 Office spaces
    we will have physical presence at DTU Lyngby campus on differing locations
-   depending on the used lecture rooms in the `01001`_/`01003`_, `02002`_/`02003`_ courses.
+   depending on the used lecture rooms in the Polytechnical Foundation courses.
    Once these locations have been fixed we will list a table of locations for the
    semester and expected opening hours.
 Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
@@ -48,7 +48,20 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
    Currently we only support students with installation problems related
    to Python (it self) and packages required in specific courses.
-   These courses are 01001, 01003, 02002, 02003.
+   These course are the Polytechnical Foundation courses:
+   
+   - :course-base:`01001`, :course-base:`01002`, :course-base:`01003` and :course-base:`01004`
+     Mathematics 1
+   - :course-base:`02002` and :course-base:`02003`
+     Computer Programming
+   - :course-base:`02402`
+     Statistics
+   - :course-base:`10060`, :course-base:`10063` and :course-base:`10065`
+     Physics
+   - :course-base:`26020`, :course-base:`26021` and :course-base:`26022`
+     Chemistry
+   - :course-base:`27022`
+     Bioengineering
 
    Many more will come! Our support unit is new, and we wish to figure
    out what the need is among our students, please do not hesitate
@@ -81,7 +94,7 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
    
    courses/index.rst
 

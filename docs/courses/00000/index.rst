@@ -1,7 +1,7 @@
 .. _course-template:
 
-Template
-========
+Template for new courses
+========================
 
 This is a template functioning as a guideline for creating
 a new course guideline.

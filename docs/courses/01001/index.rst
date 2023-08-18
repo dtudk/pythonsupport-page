@@ -5,8 +5,7 @@
 =============
 
 Installation instructions for the :course-base:`01001` and :course-base:`01003` courses.
-
-The guidelines for the previous years will also be located here.
+The course homepage can be found :course-home:`here <01001>`.
 
 .. toctree::
    :maxdepth: 1
