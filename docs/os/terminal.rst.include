@@ -18,9 +18,7 @@ Opening a terminal
 Each operating system opens terminals in a different way.
 
 
-.. tabs::
+.. tab:: |win-powershell|
 
-   .. group-tab:: |win-powershell|
-
-      See `here <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.3>`_.
+   See `here <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.3>`_.
 

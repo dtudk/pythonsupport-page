@@ -34,17 +34,19 @@ extensions = [
     # allows to view code directly in the homepage
     'sphinx.ext.viewcode',
     # create tabs and grouped tabs
-    'sphinx_tabs.tabs',
+    'sphinx_inline_tabs',
     # allow emoji's in the documentation
     'sphinxemoji.sphinxemoji',
     # allow copybutton on code-blocks
     'sphinx_copybutton',
     # spell checking
     'sphinxcontrib.spelling',
+    # design, grids etc.
+    'sphinx_design',
 ]
 
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None)
+    'python': ('https://docs.python.org/3', None),
 }
 
 sphinxemoji_style = 'twemoji'

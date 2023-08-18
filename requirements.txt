@@ -4,6 +4,7 @@ sphinx
 # extensions used
 sphinx-book-theme
 sphinx-copybutton
-sphinx-tabs
+sphinx-inline-tabs
 sphinxemoji
 sphinxcontrib-spelling
+sphinx-design

@@ -27,68 +27,64 @@ For basic usage :ref:`venv <pip-venv-env>` is to be considered sufficient.
 
 An environment can be created using:
 
-.. tabs::
+.. tab:: |win-powershell|
 
-   .. group-tab:: |win-powershell|
+   .. code-block:: powershell
 
-      .. code-block:: powershell
+      python -m virtualenv <path to virtualenv>
+      # create an environment named 'course-A' in the current directory
+      python -m virtualenv course-A
 
-         python -m virtualenv <path to virtualenv>
-         # create an environment named 'course-A' in the current directory
-         python -m virtualenv course-A
-   
-   .. group-tab:: |win-batch|
+.. tab:: |win-batch|
 
-      .. code-block:: batch
+   .. code-block:: batch
 
-         python -m virtualenv <path to virtualenv>
-         # create an environment named 'course-A' in the current directory
-         python -m virtualenv course-A
+      python -m virtualenv <path to virtualenv>
+      # create an environment named 'course-A' in the current directory
+      python -m virtualenv course-A
 
-   .. group-tab:: |macos-bash|
+.. tab:: |macos-bash|
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         python3 -m virtualenv <path to virtualenv>
-         # create an environment named 'course-A' in the current directory
-         python3 -m virtualenv course-A
+      python3 -m virtualenv <path to virtualenv>
+      # create an environment named 'course-A' in the current directory
+      python3 -m virtualenv course-A
 
-   .. group-tab:: |linux-bash|
+.. tab:: |linux-bash|
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         python3 -m virtualenv <path to virtualenv>
-         # create an environment named 'course-A' in the current directory
-         python3 -m virtualenv course-A
+      python3 -m virtualenv <path to virtualenv>
+      # create an environment named 'course-A' in the current directory
+      python3 -m virtualenv course-A
 
 Once created, one can use the environment by *sourcing* a file.
 Change ``course-A`` with the name of the environment.
 
-.. tabs::
+.. tab:: |win-powershell|
 
-   .. group-tab:: |win-powershell|
+   .. code-block:: powershell
 
-      .. code-block:: powershell
+      course-A/Scripts/Activate.ps1
 
-         course-A/Scripts/Activate.ps1
-   
-   .. group-tab:: |win-batch|
+.. tab:: |win-batch|
 
-      .. code-block:: batch
+   .. code-block:: batch
 
-         course-A/Scripts/activate.bat
+      course-A/Scripts/activate.bat
 
-   .. group-tab:: |macos-bash|
+.. tab:: |macos-bash|
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         source course-A/bin/activate
+      source course-A/bin/activate
 
-   .. group-tab:: |linux-bash|
+.. tab:: |linux-bash|
 
-      .. code-block:: bash
+   .. code-block:: bash
 
-         source course-A/bin/activate
+      source course-A/bin/activate
 
 
 Now every executed Python script will only use the packages installed
@@ -99,46 +95,43 @@ To get out of the environment, simply run the command ``deactivate``.
 Below is a complete example of creating an environment, installing a specific
 package, running a code using the environment, and getting out of it.
 
+.. tab:: |win-powershell|
 
-.. tabs::
+   .. code-block:: powershell
 
-   .. group-tab:: |win-powershell|
+      python -m virtualenv numpy-env
+      numpy-env/Scripts/Activate.ps1
+      pip install "numpy==1.23.*"
+      python -c "import numpy as np ; print(np.__version__)"
+      deactivate
 
-      .. code-block:: powershell
+.. tab:: |win-batch|
 
-         python -m virtualenv numpy-env
-         numpy-env/Scripts/Activate.ps1
-         pip install "numpy==1.23.*"
-         python -c "import numpy as np ; print(np.__version__)"
-         deactivate
-   
-   .. group-tab:: |win-batch|
+   .. code-block:: batch
 
-      .. code-block:: batch
+      python -m virtualenv numpy-env
+      numpy-env/Scripts/activate.bat
+      pip install "numpy==1.23.*"
+      python -c "import numpy as np ; print(np.__version__)"
+      deactivate
 
-         python -m virtualenv numpy-env
-         numpy-env/Scripts/activate.bat
-         pip install "numpy==1.23.*"
-         python -c "import numpy as np ; print(np.__version__)"
-         deactivate
+.. tab:: |macos-bash|
 
-   .. group-tab:: |macos-bash|
+   .. code-block:: bash
 
-      .. code-block:: bash
+      python3 -m virtualenv numpy-env
+      source numpy-env/bin/activate
+      pip install "numpy==1.23.*"
+      python3 -c "import numpy as np ; print(np.__version__)"
+      deactivate
 
-         python3 -m virtualenv numpy-env
-         source numpy-env/bin/activate
-         pip install "numpy==1.23.*"
-         python3 -c "import numpy as np ; print(np.__version__)"
-         deactivate
+.. tab:: |linux-bash|
 
-   .. group-tab:: |linux-bash|
+   .. code-block:: bash
 
-      .. code-block:: bash
-
-         python3 -m virtualenv numpy-env
-         source numpy-env/bin/activate
-         pip install "numpy==1.23.*"
-         python3 -c "import numpy as np ; print(np.__version__)"
-         deactivate
+      python3 -m virtualenv numpy-env
+      source numpy-env/bin/activate
+      pip install "numpy==1.23.*"
+      python3 -c "import numpy as np ; print(np.__version__)"
+      deactivate
 

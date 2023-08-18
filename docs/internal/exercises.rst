@@ -36,6 +36,18 @@ Always ask if they want more information, before recommending best practices for
 something they do not really care for.
 
 
+Discord
+^^^^^^^
+
+Our Discord channels can be found `here <ps-discord-general_>`.
+Once you have joined, ping ``@nicpa`` and ask for supporter role.
+
+We have a separate category where the students (and others) cannot see
+anything. Here you can share experiences, or consult your colleagues.
+
+If you need additional channels in that sub-category, lets discuss it there.
+
+
 Best practices
 ^^^^^^^^^^^^^^
 
@@ -56,23 +68,21 @@ that can be useful:
 
 For instance, after having installed ``numpy==1.22`` one can check:
 
-.. tabs::
+.. tab:: |pip|
 
-   .. group-tab:: |pip|
+   .. code-block:: bash
 
-      .. code-block:: bash
+      pip list
+      # or "grep"'ing for a specific package
+      pip list | grep numpy
 
-         pip list
-         # or "grep"'ing for a specific package
-         pip list | grep numpy
+.. tab:: |conda|
 
-   .. group-tab:: |conda|
+   .. code-block:: bash
 
-      .. code-block:: bash
-
-         conda list
-         # or "grep"'ing for a specific package
-         conda list | grep numpy
+      conda list
+      # or "grep"'ing for a specific package
+      conda list | grep numpy
 
 Once the package is listed in the package list, check version and
 import:
@@ -189,4 +199,11 @@ Figure out the following:
 1. How to swap environment in the IDE instead of the default Python executable
 2. How to check the packages that are installed (some IDE's allows calling Pip directly
    in the ``IPython`` shell)
+
+
+.. _internal-exercise-7:
+
+Exercise 7
+^^^^^^^^^^
+
 

@@ -16,6 +16,39 @@ Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
+.. :img-top: _static/index_getting_started.svg
+.. :img-top: _static/index_user_guide.svg
+
+.. grid:: 1 1 2 2
+    :gutter: 2
+
+    .. grid-item-card:: Quick-start guide :fas:`person-running`
+        :link: quickstart/index
+        :link-type: doc
+
+        New to Python @ DTU? Quickly get started with minimal guides.
+
+    .. grid-item-card::  Courses :fas:`book-open`
+        :link: courses/index
+        :link-type: doc
+
+        Find installation guides for specific courses.
+
+    .. grid-item-card:: :fas:`envelope` -- :mail:`pythonsupport@dtu.dk` 
+        :link: mailto:pythonsupport@dtu.dk
+        :link-type: url
+
+        | Contact us outside working hours.
+        | Monday -- Thursday @ 18:00-22:00
+   
+    .. grid-item-card:: Discord :fab:`discord`
+        :link: https://discord.gg/h8EVaV9ShP
+        :link-type: url
+
+        | Contact us outside working hours.
+        | Monday -- Thursday @ 18:00-22:00
+
+
 Welcome to the DTU student support unit!  
 We are here to help students with Python installation problems related
 to courses at DTU.
@@ -23,12 +56,6 @@ Our goal is to ensure that students can get a Python
 environment up and running according to the needs of DTU courses.  
 Help can be requested through various channels:
 
-Email - :mail:`pythonsupport@dtu.dk`
-   our ticket system based on email. You will get in contact with one
-   from our support team.
-
-   We have someone answering tickets Monday through Thursday evenings between
-   18:00 and 22:00 -- and during Office hours
 Office hours
    we will have physical presence at DTU Lyngby campus on differing locations
    depending on the used lecture rooms in the Polytechnical Foundation courses.
@@ -38,9 +65,6 @@ Office hours
 Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
    Our support team will also be present on the Discord chatting service.
 
-   We have someone answering Monday through Thursday evenings between
-   18:00 and 22:00.
-   
    Using the Discord channel requires signing up to Discord's terms, DTU
    have no control over Discord and how they use your data. If you feel uncomfortable
    about signing up, please use the email or the physical meet-ups. Otherwise contact
