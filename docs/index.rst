@@ -3,42 +3,45 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. meta::
+   :description: Technical University of Denmark (DTU) Python Installation Support
+   :keywords: dtu, dtudk, python, support, pip, conda, venv, virtualenv
+
 .. todolist::
 
 
 Python support
 ==============
 
--- installation for Polytechnical Foundation course
----------------------------------------------------
+-- Polytechnical Foundation courses
+-----------------------------------
 
-Welcome to the DTU student support unit, where we help students,
-old or new, with installing Python and associated packages for their courses
-at DTU.
-
-Our primary goal is to ensure that students can get a functional Python
-environment with associated packages requested from course teachers into
-a functional state. If you have any questions, we can be contacted via
-various channels:
+Welcome to the DTU student support unit!  
+We are here to help students with Python installation problems related
+to courses at DTU.
+Our goal is to ensure that students can get a Python
+environment up and running according to the needs of DTU courses.  
+Help can be requested through various channels:
 
 Email - :mail:`pythonsupport@dtu.dk`
    our ticket system based on email. You will get in contact with one
    from our support team.
 
-   We have someone answering tickets every weekday evenings between
-   18:00 and 22:00.
-Office spaces
+   We have someone answering tickets Monday through Thursday evenings between
+   18:00 and 22:00 -- and during Office hours
+Office hours
    we will have physical presence at DTU Lyngby campus on differing locations
    depending on the used lecture rooms in the Polytechnical Foundation courses.
-   Once these locations have been fixed we will list a table of locations for the
-   semester and expected opening hours.
+   Once these locations has been fixed, we will list the locations and opening hours
+   for the semester. These opening hours will change *during* the semester. Please
+   stay up to date on this page!
 Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
    Our support team will also be present on the Discord chatting service.
 
    We have someone answering Monday through Thursday evenings between
    18:00 and 22:00.
    
-   Using the Discord channel requires signing up to their terms, we (DTU)
+   Using the Discord channel requires signing up to Discord's terms, DTU
    have no control over Discord and how they use your data. If you feel uncomfortable
    about signing up, please use the email or the physical meet-ups. Otherwise contact
    us for details if needed.
@@ -92,9 +95,12 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    It would be ideal with some kind of simple quickstart guide
    which references the sub-pages if there are problems.
 
+   Add sphinx-panels
+
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    
    courses/index.rst
 
@@ -109,4 +115,3 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    ides/index.rst
 
    src/about.rst
-   internal/index.rst

@@ -3,6 +3,8 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+print("vvvvv INITIALIZING conf.py vvvvv")
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 from pathlib import Path 
@@ -11,7 +13,6 @@ import sys
 
 # add the exts folder
 sys.path.insert(1, str(Path().resolve()))
-print(sys.path[:2])
 from ps_modules.dictformatter import DictFormatter
 
 
@@ -118,7 +119,7 @@ rst_epilog = f"""
 .. _python-org: https://www.python.org
 .. _python-org-down: https://www.python.org/downloads/
 .. _pypi-org: https://pypi.org
-.. _pip: https://pip.pypa.io/en/stable
+.. _pip-org: https://pip.pypa.io/en/stable
 
 .. _numpy: https://numpy.org/doc/stable
 .. _scipy: https://docs.scipy.org/doc/scipy
@@ -173,9 +174,19 @@ _icon_links = [
         "icon": f"fa-brands fa-discord {_fa_move}",
     },
     {
+        "name": "Mail to Python support",
+        "url": "mailto:pythonsupport@dtu.dk",
+        "icon": f"fa-solid fa-envelope {_fa_move}",
+    },
+    {
         "name": "Python support development page",
         "url": "https://github.com/dtudk/pythonsupport-page",
         "icon": f"fa-brands fa-github {_fa_move}",
+    },
+    {
+        "name": "DTU help | External pages",
+        "url": "#;",
+        "icon": f"fa-solid fa-ellipsis-vertical",
     },
     {
         "name": "Python homepage",
@@ -295,3 +306,5 @@ def course_switcher(out=_course_json_url):
     json.dump(data, open(out, 'w'), indent=4)
 
 course_switcher()
+
+print("^^^^^ DONE conf.py ^^^^^")

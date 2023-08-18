@@ -8,14 +8,14 @@
 
    For basic usage they are more or less the same.
 
-The package `virtualenv <env-virtualenv_>`_ creates environments using the :ref:`install-pip` method.
+The package `virtualenv <env-virtualenv_>`_ creates environments using the :ref:`pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
    
-``virtualenv`` is the *original* implementation of the :ref:`venv <install-venv-env>`
+``virtualenv`` is the *original* implementation of the :ref:`venv <pip-venv-env>`
 package. ``virtualenv`` will be continuously developed and contains more up to date
 methods and functionalities. As such ``virtualenv`` can be updated while ``venv``
 is shipped with the Python sources and thus can **not** be updated.
-For basic usage :ref:`venv <install-venv-env>` is to be considered sufficient.
+For basic usage :ref:`venv <pip-venv-env>` is to be considered sufficient.
 
 .. note::
 

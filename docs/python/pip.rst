@@ -1,15 +1,22 @@
 
-.. _install-pip:
+.. _pip:
 
-`pip <pypi-org_>`_
-==================
+`pip <pypi-org_>`__
+===================
+
+.. note::
+
+   ``pip`` is shipped with pretty much *all* Python installations (also :ref:`conda <conda>`).
+   As such one can use ``pip`` in both ``conda`` and pure Python installations.
+
+   See :ref:`here <install>` for installing Python.
 
 .. todo::
 
    pip list | show | freeze
 
 `pip <pypi-org_>`_ is the *de-facto* standard for installing and maintaining
-packages/modules in a Python environment. Its `documentation <pip_>`_ is extensive.
+packages/modules in a Python environment. Its `documentation <pip-org_>`_ is extensive.
 Here some common tips and tricks will be listed.
 
 .. tip::
@@ -161,10 +168,10 @@ packages:
 
 
 
-.. _install-venv-env:
+.. _pip-venv-env:
 
 .. include:: environment-venv.rst.include
 
-.. _install-virtualenv-env:
+.. _pip-virtualenv-env:
 
 .. include:: environment-virtualenv.rst.include

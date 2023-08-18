@@ -3,7 +3,7 @@
 `venv -- environment <env-venv_>`_
 ----------------------------------
 
-The package `venv <env-venv_>`_ creates environments using the :ref:`install-pip` method.
+The package `venv <env-venv_>`_ creates environments using the :ref:`pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
 
 .. note::

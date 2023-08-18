@@ -1,2 +1,3 @@
 build/
 *.pyc
+docs/_static/course_switcher.json
