@@ -4,29 +4,35 @@
 Installing Python
 =================
 
-Python can relatively easily be installed by following guidelines for each
-of the distributions install guides.
+.. tip::
+
+   DTU recommends:
+
+   - using the :ref:`Official Python distribution <install-python>`
+   - version |python-recommended| of Python
+
+There are multiple different distributions of Python available.
+Python is the base distribution allowing one to run and execute
+Python code.
+
+At DTU the most frequently used are the *Python base* based on the
+`official Python release <python-org-down_>`_ and
+`anaconda <anaconda_>`_.
 
 .. note::
 
-   Python is a commonly encountered programming language spanning nearly
-   all areas of technology and commerce.
+   | Python is a commonly encountered programming language spanning nearly 
+     all areas of technology and commerce.
+   | The communities around Python are vast and there are **many**
+     variants of its installation distributions.
 
-   As such the communities around Python are vast and there are **many**
-   variants of its installation distributions.
+Choosing a Python software installation may seem like a minor decision.
+However, different courses may prefer, or require, a specific variant.
+Please consult the course guidelines before going forward.
 
-In the following we will concentrate on a few of the most widely used
-Python base installations.
-
-.. warning::
-
-   Choosing a Python software installation may seem like a minor decision.
-   However, different courses may prefer, or require, a specific variant.
-   Please take the time to know about the course requirements before going
-   forward.
 
 .. toctree::
-   :caption: Python environment
+   :caption: Python distributions
    :maxdepth: 1
 
    install-python.rst

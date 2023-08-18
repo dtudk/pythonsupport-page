@@ -17,7 +17,7 @@ Once an environment has been created, and *sourced*, all ``pip`` commands only a
 
 An environment can be created using:
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
@@ -25,7 +25,7 @@ An environment can be created using:
       # create an environment named 'course-A' in the current directory
       python -m venv course-A
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
@@ -33,7 +33,7 @@ An environment can be created using:
       # create an environment named 'course-A' in the current directory
       python -m venv course-A
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
@@ -41,7 +41,7 @@ An environment can be created using:
       # create an environment named 'course-A' in the current directory
       python3 -m venv course-A
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -52,25 +52,25 @@ An environment can be created using:
 Once created, one can use the environment by *sourcing* a file.
 Change ``course-A`` with the name of the environment.
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
       course-A/Scripts/Activate.ps1
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
       course-A/Scripts/activate.bat
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
       source course-A/bin/activate
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -85,7 +85,7 @@ To get out of the environment, simply run the command ``deactivate``.
 Below is a complete example of creating an environment, installing a specific
 package, running a code using the environment, and getting out of it.
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
@@ -95,7 +95,7 @@ package, running a code using the environment, and getting out of it.
       python -c "import numpy as np ; print(np.__version__)"
       deactivate
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
@@ -105,7 +105,7 @@ package, running a code using the environment, and getting out of it.
       python -c "import numpy as np ; print(np.__version__)"
       deactivate
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
@@ -115,7 +115,7 @@ package, running a code using the environment, and getting out of it.
       python3 -c "import numpy as np ; print(np.__version__)"
       deactivate
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 

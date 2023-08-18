@@ -14,6 +14,7 @@ pre
 9th
 10th
 
+
 Spyder
 VSCode
 PyCharm
@@ -26,3 +27,7 @@ virtualenv
 miniconda
 mamba
 polytechnical
+powershell
+
+# proper words:
+explorative

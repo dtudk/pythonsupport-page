@@ -3,6 +3,10 @@
 `conda <anaconda_>`_
 --------------------
 
+.. tip::
+
+   DTU recommends using version |python-recommended| of Python.
+
 ``conda`` is a fully fledged Python stack. It enables one to easily swap between different
 Python versions (via :ref:`environments <conda-env>`). It requires basic knowledge of
 how to use the command line (terminal). 

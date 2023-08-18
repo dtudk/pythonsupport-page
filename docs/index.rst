@@ -5,7 +5,7 @@
 
 .. meta::
    :description: Technical University of Denmark (DTU) Python Installation Support
-   :keywords: dtu, dtudk, python, support, pip, conda, venv, virtualenv
+   :keywords: dtudk, dtu, support, python, pip, conda, venv, virtualenv
 
 .. todolist::
 
@@ -16,23 +16,20 @@ Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
-.. :img-top: _static/index_getting_started.svg
-.. :img-top: _static/index_user_guide.svg
-
 .. grid:: 1 1 2 2
     :gutter: 2
 
-    .. grid-item-card:: Quick-start guide :fas:`person-running`
+    .. grid-item-card:: :fas:`person-running` -- Quick-start guide
         :link: quickstart/index
         :link-type: doc
 
-        New to Python @ DTU? Quickly get started with minimal guides.
+        New to Python @ DTU? Quickly get started.
 
-    .. grid-item-card::  Courses :fas:`book-open`
+    .. grid-item-card::  :fas:`book-open` -- Courses
         :link: courses/index
         :link-type: doc
 
-        Find installation guides for specific courses.
+        Course specific installation guides
 
     .. grid-item-card:: :fas:`envelope` -- :mail:`pythonsupport@dtu.dk` 
         :link: mailto:pythonsupport@dtu.dk
@@ -41,7 +38,7 @@ Python support
         | Contact us outside working hours.
         | Monday -- Thursday @ 18:00-22:00
    
-    .. grid-item-card:: Discord :fab:`discord`
+    .. grid-item-card:: :fab:`discord` -- Discord
         :link: https://discord.gg/h8EVaV9ShP
         :link-type: url
 
@@ -96,16 +93,6 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    need for supporting in a broader sense.
 
 
-.. note::
-
-   If you are a teacher, please visit :ref:`here <teacher-contact>` if you
-   wish to post your course installation guidelines here.
-
-.. todo::
-
-   check that the drop down actually works, also look into css settings for
-   making it look prettier
-
 .. todo::
 
    what is a terminal, how to open, how to download, very basic things
@@ -119,13 +106,12 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    It would be ideal with some kind of simple quickstart guide
    which references the sub-pages if there are problems.
 
-   Add sphinx-panels
-
 
 .. toctree::
    :maxdepth: 2
    :hidden:
-   
+
+   quickstart/index.rst
    courses/index.rst
 
    python/install.rst

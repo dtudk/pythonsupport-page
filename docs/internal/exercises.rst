@@ -1,3 +1,6 @@
+:nosearch:
+
+.. Ensure no search in this file
 
 .. _internal-exercises:
 
@@ -68,7 +71,7 @@ that can be useful:
 
 For instance, after having installed ``numpy==1.22`` one can check:
 
-.. tab:: |pip|
+.. tab:: {{ pip }}
 
    .. code-block:: bash
 
@@ -76,7 +79,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
       # or "grep"'ing for a specific package
       pip list | grep numpy
 
-.. tab:: |conda|
+.. tab:: {{ conda }}
 
    .. code-block:: bash
 
@@ -179,7 +182,7 @@ Hints:
 Exercise 5
 ^^^^^^^^^^
 
-Complete :ref:`exercise 2 <internal-exercise-2>` using `virtualenv <https://virtualenv.pypa.io/en/latest/>`_
+Complete :ref:`exercise 2 <internal-exercise-2>` using `virtualenv <env-virtualenv_>`_
 which works slightly different from ``venv``.
 
 
@@ -206,4 +209,4 @@ Figure out the following:
 Exercise 7
 ^^^^^^^^^^
 
-
+Run through the :course-home:`02002` installation instructions.

@@ -18,7 +18,7 @@ An environment can be created using:
    One can list the available *global* environments (created with ``--name``)
    by executing ``conda env list``.
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
@@ -28,7 +28,7 @@ An environment can be created using:
       # alternatively the environment can be placed in a sub directory
       conda create --prefix course-A
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
@@ -38,7 +38,7 @@ An environment can be created using:
        # alternatively the environment can be placed in a sub directory
       conda create --prefix course-A
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
@@ -48,7 +48,7 @@ An environment can be created using:
       # alternatively the environment can be placed in a sub directory
       conda create --prefix course-A
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -61,7 +61,7 @@ An environment can be created using:
 Once created, one can use the environment by *activating* it.
 Change ``course-A`` with the name of the environment.
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
      
@@ -70,7 +70,7 @@ Change ``course-A`` with the name of the environment.
       # if the environment was created in a sub directory (--prefix):
       conda activate ./course-A
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
@@ -79,7 +79,7 @@ Change ``course-A`` with the name of the environment.
       # if the environment was created in a sub directory (--prefix):
       conda activate ./course-A
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
@@ -88,7 +88,7 @@ Change ``course-A`` with the name of the environment.
       # if the environment was created in a sub directory (--prefix):
       conda activate ./course-A
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -107,7 +107,7 @@ Below is a complete example of creating an environment using a specific Python
 version, installing a specific
 package, running a code using the environment, and getting out of it.
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
@@ -117,7 +117,7 @@ package, running a code using the environment, and getting out of it.
       python -c "import numpy as np ; print(np.__version__)"
       conda deactivate
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
@@ -127,7 +127,7 @@ package, running a code using the environment, and getting out of it.
       python -c "import numpy as np ; print(np.__version__)"
       conda deactivate
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
@@ -137,7 +137,7 @@ package, running a code using the environment, and getting out of it.
       python3 -c "import numpy as np ; print(np.__version__)"
       conda deactivate
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 

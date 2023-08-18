@@ -48,25 +48,25 @@ can be specified in a single invocation of the program.
 
    ``pip list`` will give you the current list of installed packages.
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
       python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
       python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
       python3 -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -99,7 +99,7 @@ Here is a set of commands that can be useful for interacting with the ``pip``
 packages:
 
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
 
    .. code-block:: powershell
 
@@ -115,7 +115,7 @@ packages:
       # as the command 'pipes' the output into that file
       python -m pip freeze > requirements.txt
 
-.. tab:: |win-batch|
+.. tab:: {{ win_batch }}
 
    .. code-block:: batch
 
@@ -131,7 +131,7 @@ packages:
       # as the command 'pipes' the output into that file
       python -m pip freeze > requirements.txt
 
-.. tab:: |macos-bash|
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
@@ -147,7 +147,7 @@ packages:
       # as the command 'pipes' the output into that file
       python3 -m pip freeze > requirements.txt
 
-.. tab:: |linux-bash|
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 

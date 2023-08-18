@@ -1,7 +1,7 @@
 # Minimal makefile for Sphinx documentation
 #
 .PHONY: default
-default: html
+default: all
 
 # You can set these variables from the command line, and also
 # from the environment for the first two.

@@ -18,7 +18,69 @@ Opening a terminal
 Each operating system opens terminals in a different way.
 
 
-.. tab:: |win-powershell|
+.. tab:: {{ win_powershell }}
+   
+   Either of
+   
+   1. Search for ``powershell`` in the Windows taskbar search
+   2. A short-cut: press ``Win + R`` buttons (simultaneously), then type
+      ``powershell`` in the small run window appearing, press ``Enter``.
+   3. Launch Python
 
-   See `here <https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7.3>`_.
+      .. code-block:: powershell
+
+         # Execute a single line of code (each line may be ; separated)
+         # Note the quotation marks
+         python -c "print('hello world')"
+
+.. tab:: {{ win_batch }}
+
+   Either of
+
+   1. Search for ``cmd`` in the Windows taskbar search
+   2. A short-cut: press ``Win + R`` buttons (simultaneously), then type
+      ``cmd`` in the small run window appearing, press ``Enter``.
+   3. Launch Python
+
+      .. code-block:: batch
+
+         # Execute a single line of code (each line may be ; separated)
+         # Note the quotation marks
+         python -c "print('hello world')"
+
+.. tab:: {{ mac_bash }}
+
+   Open the Launchpad icon in the Dock, type ``Terminal`` and click on it.
+
+   See more detailed explanation `here <https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac>`__.
+
+   Launch Python
+
+   .. code-block:: batch
+
+      # Execute a single line of code (each line may be ; separated)
+      # Note the quotation marks
+      python3 -c "print('hello world')"
+
+.. tab:: {{ linux_bash }}
+
+   This depends on the distribution you are using. Nearly all Linux distributions
+   has the Terminal icon near the Desktop.
+
+   On Ubuntu one could do:
+
+   1. Press ``Ctrl + Alt + T`` simultaneously.
+   2. Press the ``Win`` key which should open up a search box, type
+      ``terminal`` and press ``Enter``
+   3. Lastly, one option is to open up a file explorer and right-click a folder,
+      there should be an option name ``Open in Terminal`` which will open that
+      folder in the terminal.
+   4. Launch Python
+
+      .. code-block:: bash
+
+         # Execute a single line of code (each line may be ; separated)
+         # Note the quotation marks
+         python3 -c "print('hello world')"
+
 

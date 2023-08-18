@@ -1,4 +1,10 @@
+:orphan:
+:nosearch:
 
+.. Ensure that the build does not create a warning
+   when not explicitly included.
+   Also ensure that the search function does not return
+   results from this file.
 
 .. _internal:
 

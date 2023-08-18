@@ -19,6 +19,7 @@ from ps_modules.dictformatter import DictFormatter
 project = 'DTU Python support'
 copyright = '2023, DTU Python support developers'
 author = 'DTU Python support developers'
+recommended_python = "3.11"
 
 url = "https://pythonsupport.dtu.dk"
 
@@ -113,13 +114,16 @@ _discord_general = "https://discord.com/channels/1138793943526539266/11387939442
 _discord_invite = "https://discord.gg/h8EVaV9ShP"
 
 # Add common links to all
-rst_epilog = f"""
+rst_epilog = f"""\
 
 .. _ps-discord-general: {_discord_general}
 .. _ps-discord-invite: {_discord_invite}
 
 .. _python-org: https://www.python.org
 .. _python-org-down: https://www.python.org/downloads/
+.. _python-org-down-win: https://www.python.org/downloads/windows
+.. _python-org-down-mac: https://www.python.org/downloads/macos
+.. _python-org-down-linux: https://www.python.org/downloads/linux
 .. _pypi-org: https://pypi.org
 .. _pip-org: https://pip.pypa.io/en/stable
 
@@ -138,26 +142,12 @@ rst_epilog = f"""
 
 .. _dtu-courses: https://kurser.dtu.dk/
 
-.. |conda| replace:: conda
-.. |pip| replace:: pip
-
-.. |win-powershell| replace:: Windows | PowerShell
-.. |win-batch| replace:: Windows | Batch
-.. |linux-bash| replace:: Linux | Bash
-.. |macos-bash| replace:: MacOS | Bash
+.. |python-recommended| replace:: {recommended_python}
 """
 
 
 # do not allow to collapse the tabs (always show one tab)
 sphinx_tabs_disable_tab_closing = True
-
-_navbar_start = [
-    "link_courses.html",
-]
-_navbar_end = [
-    "link_email.html",
-    "link_discord.html",
-]
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
@@ -216,7 +206,7 @@ html_theme_options = {
     "repository_url": "https://github.com/dtudk/pythonsupport-page",
     "use_edit_page_button": True,
     "use_fullscreen_button": True,
-    "header_links_before_dropdown": 3,
+    "header_links_before_dropdown": 4,
     "navbar_align": "content",
     "navbar_center": ["navbar-nav"],
     "icon_links": _icon_links,
@@ -234,13 +224,6 @@ if False:
 html_css_files = [
     "css/custom_styles.css",
 ]
-
-html_context = {
-    "github_user": "dtudk",
-    "github_repo": "pythonsupport-page",
-    "github_version": "main",
-    "doc_path": "docs",
-}
 
 
 # -- Options for todo extension ----------------------------------------------
@@ -310,3 +293,60 @@ def course_switcher(out=_course_json_url):
 course_switcher()
 
 print("^^^^^ DONE conf.py ^^^^^")
+
+def rstjinja(app, docname, source):
+    """
+    Render pages as a jinja template for fancy templating goodness.
+
+    The reason for resorting to the jinja templating is simply because
+    the directives might not always like combinations of replacement
+    directives *and* other directives, e.g. the following would fail:
+
+    .. |win| replace:: Hello :fas:`ranking-star`
+
+    .. tab:: |win|
+
+    When templating all gets replaced *in-place*.
+    """
+    # Make sure we're outputting HTML
+    if app.builder.format != 'html':
+        return
+    src = source[0]
+    rendered = app.builder.templates.render_string(
+        src, app.config.html_context
+    )
+    source[0] = rendered
+
+# Create jinja-replacements
+html_context = {
+    # Other useful data
+    "github_user": "dtudk",
+    "github_repo": "pythonsupport-page",
+    "github_version": "main",
+    "doc_path": "docs",
+
+    # Installation methods
+    "pip": "pip :fas:`ranking-star`",
+    "conda": "conda",
+    "poetry": "poetry",
+    "pyenv": "pyenv",
+
+    # Virtual environment methods
+    "venv": "venv :fas:`ranking-star`",
+    "virtualenv": "virtualenv",
+    "condaenv": "conda",
+    
+    # Operating systems
+    "windows": "Windows",
+    "macos": "MacOS",
+    "linux": "Linux",
+
+    # Operating shells
+    "win_powershell": "Windows | Powershell :fas:`ranking-star`",
+    "win_batch": "Windows | Batch",
+    "mac_bash": "MacOS | Bash",
+    "linux_bash": "Linux | Bash",
+}
+
+def setup(app):
+    app.connect("source-read", rstjinja)
