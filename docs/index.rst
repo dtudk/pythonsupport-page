@@ -10,8 +10,8 @@
 .. todolist::
 
 
-Python support
-==============
+DTU Python support
+==================
 
 -- Polytechnical Foundation courses
 -----------------------------------

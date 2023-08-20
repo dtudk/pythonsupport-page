@@ -6,10 +6,13 @@ Installing Python
 
 .. tip::
 
-   DTU recommends:
+   DTU recommends the following Python installation:
 
    - using the :ref:`Official Python distribution <install-python>`
-   - version {{ python_version }} of Python
+     at version {{ python_version }}
+   - package installations should be done with :ref:`pip`, consider
+     using a :ref:`virtual environment <pip-venv-env>` for each of
+     your courses
 
 There are multiple different distributions of Python available.
 Python is the base distribution allowing one to run and execute

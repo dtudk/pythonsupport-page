@@ -13,7 +13,7 @@
 
 .. todo::
 
-   pip list | show | freeze
+   pip list | show | freeze | check
 
 `pip <pypi-org_>`_ is the *de-facto* standard for installing and maintaining
 packages/modules in a Python environment. Its `documentation <pip-org_>`_ is extensive.
@@ -162,7 +162,6 @@ packages:
       # In this command we will create a file called 'requirements.txt'
       # as the command 'pipes' the output into that file
       python3 -m pip freeze > requirements.txt
-
 
 
 .. _pip-venv-env:
