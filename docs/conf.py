@@ -17,7 +17,7 @@ from ps_modules.dictformatter import DictFormatter
 
 
 project = 'DTU Python support'
-copyright = '2023, DTU Python support developers'
+copyright = '2023, DTU Python support'
 author = 'DTU Python support developers'
 recommended_python = "3.11"
 
@@ -199,6 +199,7 @@ _icon_links = [
 
 
 html_theme_options = {
+    "path_to_docs": "docs/",
     "use_repository_button": True,
     "repository_provider": "github",
     "repository_url": "https://github.com/dtudk/pythonsupport-page",
@@ -321,8 +322,8 @@ html_context = {
     "github_user": "dtudk",
     "github_repo": "pythonsupport-page",
     "github_version": "main",
-    "doc_path": "docs",
     "python_version": recommended_python,
+    "path_to_docs": "docs/",
 
     # Installation methods
     "pip": "pip :fas:`ranking-star`",
