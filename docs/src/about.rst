@@ -51,7 +51,14 @@ Adding your course to this support channel?
 If you wish to have a course documentation related to the installation process
 please do not hesitate to contact us at
 
-- :fas:`envelope` -- :mail:`pythonsupport@dtu.dk`
+.. card:: :fas:`envelope`
+   :text-align: center
+   :link: mailto:pythonsupport@dtu.dk
+   :link-type: url
+   :margin: 0 2 auto auto
+   :width: 50%
+
+   :mail:`pythonsupport@dtu.dk`
 
 Please see our :ref:`template overview <course-template>` to get an idea about
 how to organize the documentation.

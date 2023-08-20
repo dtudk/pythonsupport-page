@@ -3,6 +3,12 @@
 Template for new courses
 ========================
 
+.. tip::
+
+   If you are a teacher and wish your installation guides to be shared
+   through the Python support homepage, contact us through
+   :mail:`pythonsupport@dtu.dk` or open a :gh-issue:`new issue <new>`.
+
 This is a template functioning as a guideline for creating
 a new course guideline.
 
@@ -31,7 +37,6 @@ at the top of the instruction with:
 
    These instructions are known to not function due to the software progress
    since its usage. It may or may not work.
-
 
 .. toctree::
    :maxdepth: 1

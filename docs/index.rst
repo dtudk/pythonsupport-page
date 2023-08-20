@@ -47,7 +47,7 @@ Python support
 
 
 Welcome to the DTU student support unit!  
-We are here to help students with Python installation problems related
+We are here to help with Python installation problems related
 to courses at DTU.
 Our goal is to ensure that students can get a Python
 environment up and running according to the needs of DTU courses.  
@@ -59,7 +59,11 @@ Office hours
    Once these locations has been fixed, we will list the locations and opening hours
    for the semester. These opening hours will change *during* the semester. Please
    stay up to date on this page!
-Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
+Mail -- :mail:`pythonsupport@dtu.dk`
+   Outside of office hours we can be contacte through emails. We strive to return
+   answers as soon as possible, and will have someone ready to answer Monday through
+   Thursday between 18 and 22.
+Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
    Our support team will also be present on the Discord chatting service.
 
    Using the Discord channel requires signing up to Discord's terms, DTU
@@ -70,9 +74,9 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
 
 .. note::
 
-   Currently we only support students with installation problems related
+   Currently we only support installation problems related
    to Python (it self) and packages required in specific courses.
-   These course are the Polytechnical Foundation courses:
+   These are the Polytechnical Foundation courses:
    
    - :course-base:`01001`, :course-base:`01002`, :course-base:`01003` and :course-base:`01004`
      Mathematics 1
@@ -90,7 +94,7 @@ Discord - `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>
    Many more will come! Our support unit is new, and we wish to figure
    out what the need is among our students, please do not hesitate
    to contact us regarding other courses, we will use it to understand the
-   need for supporting in a broader sense.
+   need for Python support at DTU.
 
 
 .. todo::

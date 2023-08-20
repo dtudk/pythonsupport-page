@@ -21,12 +21,15 @@ DTU courses have specific requirements for their used software.
    01001/index.rst
    02002/index.rst
 
-Template guide
-^^^^^^^^^^^^^^
 
-For teachers these guidelines may be used to create new content.
+Template guide for new course
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Teaching a new DTU course? Host your guidelines here!
+Contact us at :mail:`pythonsupport@dtu.dk` or open a :gh-issue:`new issue <new>`.
+The course template can be found below.
 
 .. toctree::
    :maxdepth: 1
 
-   00000/index.rst
+   template/index.rst
