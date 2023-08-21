@@ -338,13 +338,13 @@ html_context = {
     "pref_symbol": _pref_symbol,
 
     # Installation methods
-    "pip": r"pip {_pref_symbol}",
+    "pip": f"pip {_pref_symbol}",
     "conda": "conda",
     "poetry": "poetry",
     "pyenv": "pyenv",
 
     # Virtual environment methods
-    "venv": r"venv {_pref_symbol}",
+    "venv": f"venv {_pref_symbol}",
     "virtualenv": "virtualenv",
     "condaenv": "conda",
     
@@ -362,6 +362,9 @@ html_context = {
     # Cheatsheet information
     "cheatsheet_icon": ":fas:`toolbox`",
     "cheatsheet_color": "muted",
+
+    # Timetable
+    "timetable_widths": "15 17 17 17 17 17",
 }
 
 def setup(app):

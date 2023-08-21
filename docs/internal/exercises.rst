@@ -7,13 +7,14 @@
 Exercises
 ---------
 
-These exercises are meant to prepare the supporters for a variety
-of things that they may encounter from new students.
+These exercises are meant to prepare the DTU Python supporters for a variety
+of things that they may encounter from students.
 
-It also covers a bit more of what the courses expects.
+It also covers a bit more of what the courses expects, we need to be prepared
+for a variety a things. 
 
 
-.. warning::
+.. note::
 
    These exercises are intended with low guidance, we strive
    to let our supporters be explorative, and that they ensure they
@@ -30,7 +31,8 @@ Interacting with students
 
 Students will arrive with a variety of backgrounds. Some are very interested
 in programming, while others are not interested, *at all*, in the inner workings
-of Python and simply want to be able to attend courses.  
+of Python and simply want to be able to attend courses.
+
 Our goal is to support both ends of the student spectrum.
 Information overload can be a problem for new students as there is already
 enough on the plate. It is imperative that information is given at the level
@@ -48,7 +50,7 @@ Once you have joined, ping ``@nicpa`` and ask for supporter role.
 We have a separate category where the students (and others) cannot see
 anything. Here you can share experiences, or consult your colleagues.
 
-If you need additional channels in that sub-category, lets discuss it there.
+If we need additional channels, we discuss it there!
 
 
 Best practices
@@ -111,8 +113,8 @@ print the version, if the variable (``__version__``) is part of the package.
 
 .. _internal-exercise-1:
 
-Exercise 1
-^^^^^^^^^^
+Exercise 1a
+^^^^^^^^^^^
 
 Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
 
@@ -126,6 +128,18 @@ Understand that:
 
    a. Packages can be installed from an *external* command, such as ``conda install -n <path to environment> <packages>``,
    b. Packages will be installed directly if the environment is already the activated one: ``conda activate <path to environment>``
+
+In the semester 2023; the student primary usage will be ``pip``.
+Undoubtedly there will be some students with a prior ``conda`` installation.
+It is thus important that you know how to have a ``conda`` installation *and* navigate a regular Python installation.
+
+
+Exercise 1b
+^^^^^^^^^^^
+
+Install the :ref:`official Python <install-python>` distribution.
+
+Ensure you can navigate both the ``conda`` and the official Python installation.
 
 
 .. _internal-exercise-2:
@@ -199,7 +213,7 @@ For all the currently known recommend IDE's:
 
 Figure out the following:
 
-1. How to swap environment in the IDE instead of the default Python executable
+1. How to swap environment (interpreter) in the IDE instead of the default Python executable
 2. How to check the packages that are installed (some IDE's allows calling Pip directly
    in the ``IPython`` shell)
 

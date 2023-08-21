@@ -36,14 +36,14 @@ DTU Python support
         :link-type: url
 
         | Contact us outside working hours.
-        | Monday -- Thursday @ 18:00-22:00
+        | Monday -- Thursday in the evening
    
     .. grid-item-card:: :fab:`discord` -- Discord
         :link: https://discord.gg/h8EVaV9ShP
         :link-type: url
 
         | Contact us outside working hours.
-        | Monday -- Thursday @ 18:00-22:00
+        | Monday -- Thursday in the evening
 
 
 Welcome to the DTU student support unit!  
@@ -64,13 +64,12 @@ Help can be requested through various channels:
 Office hours
    we will have physical presence at DTU Lyngby campus on differing locations
    depending on the used lecture rooms in the Polytechnical Foundation courses.
-   Once these locations has been fixed, we will list the locations and opening hours
-   for the semester. These opening hours will change *during* the semester. Please
-   stay up to date on this page!
+   See further down for our locations during specific weeks of the semester.
+   This page will be updated continuously.
 Mail -- :mail:`pythonsupport@dtu.dk`
    Outside of office hours we can be contacted through emails. We strive to return
    answers as soon as possible, and will have someone ready to answer Monday through
-   Thursday between 18 and 22.
+   Thursday in the evening
 Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
    Our support team will also be present on the Discord chatting service.
 
@@ -78,6 +77,8 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    have no control over Discord and how they use your data. If you feel uncomfortable
    about signing up, please use the email or the physical meet-ups. Otherwise contact
    us for details if needed.
+
+.. include:: /timetable/index.rst
 
 
 .. note::
