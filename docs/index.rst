@@ -68,7 +68,7 @@ Office hours
    for the semester. These opening hours will change *during* the semester. Please
    stay up to date on this page!
 Mail -- :mail:`pythonsupport@dtu.dk`
-   Outside of office hours we can be contacte through emails. We strive to return
+   Outside of office hours we can be contacted through emails. We strive to return
    answers as soon as possible, and will have someone ready to answer Monday through
    Thursday between 18 and 22.
 Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
