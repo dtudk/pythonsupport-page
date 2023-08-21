@@ -1,3 +1,5 @@
+toml; python < '3.11'
+
 # we should be buildalbe on any version (check minimal version)
 sphinx
 

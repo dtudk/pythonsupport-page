@@ -1,0 +1,19 @@
+
+[dtu]
+# The course database primary link
+course-base = "https://kurser.dtu.dk"
+
+
+[course.01001]
+home = "https://01001.compute.dtu.dk"
+[course.01002]
+home = "https://01002.compute.dtu.dk"
+[course.01003]
+home = "https://01003.compute.dtu.dk"
+[course.01004]
+home = "https://01004.compute.dtu.dk"
+
+[course.02002]
+home = "https://02002.compute.dtu.dk/da/index.html"
+[course.02003]
+home = "https://02002.compute.dtu.dk/index.html"

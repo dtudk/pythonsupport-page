@@ -4,6 +4,9 @@ E2023
 This guideline is for students attending course :course-base:`02002` in the 2023 autumn
 semester.
 
-The complete guidelines for this course is located here:
-
-:full-link:`https://02002.compute.dtu.dk/installation/index.html`
+.. card:: Press here for instructions
+   :text-align: center
+   :link: https://02002.compute.dtu.dk/installation/index.html
+   :link-type: url
+   :margin: 0 2 auto auto
+   :width: 50%

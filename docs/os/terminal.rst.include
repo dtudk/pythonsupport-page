@@ -15,7 +15,8 @@ It is used to execute commands in an interactive manner.
 Opening a terminal
 ^^^^^^^^^^^^^^^^^^
 
-Each operating system opens terminals in a different way.
+Each operating system opens terminals in a different way. In the following a ``#`` is
+a comment in the terminal, i.e. it is *not* considered a command.
 
 
 .. tab:: {{ win_powershell }}
@@ -42,7 +43,7 @@ Each operating system opens terminals in a different way.
       ``cmd`` in the small run window appearing, press ``Enter``.
    3. Launch Python
 
-      .. code-block:: batch
+      .. code-block:: winbatch
 
          # Execute a single line of code (each line may be ; separated)
          # Note the quotation marks
@@ -56,7 +57,7 @@ Each operating system opens terminals in a different way.
 
    Launch Python
 
-   .. code-block:: batch
+   .. code-block:: winbatch
 
       # Execute a single line of code (each line may be ; separated)
       # Note the quotation marks
@@ -83,4 +84,5 @@ Each operating system opens terminals in a different way.
          # Note the quotation marks
          python3 -c "print('hello world')"
 
-
+In the terminal one can navigate the `file system <https://en.wikipedia.org/wiki/File_system>`__
+by using commands specific to your operating systems shell.

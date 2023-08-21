@@ -3,135 +3,14 @@
 `virtualenv -- environment <env-virtualenv_>`_
 ----------------------------------------------
 
-   :class: margin
-
-
-   For basic usage they are more or less the same.
-
 The package `virtualenv <env-virtualenv_>`_ creates environments using the :ref:`pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
-   
+
 ``virtualenv`` is the *original* implementation of the :ref:`venv <pip-venv-env>`
 package. ``virtualenv`` will be continuously developed and contains more up to date
 methods and functionalities. As such ``virtualenv`` can be updated while ``venv``
 is shipped with the Python sources and thus can **not** be updated.
-For basic usage :ref:`venv <pip-venv-env>` is to be considered sufficient.
 
-.. note::
-
-    The ``virtualenv`` package can only create environments with different packages.
-    It cannot switch between different Python versions.
-
-    An environment will be a directory on your computer. Deleting
-    it will be the same as deleting the environment.
-
-An environment can be created using:
-
-.. tab:: {{ win_powershell }}
-
-   .. code-block:: powershell
-
-      python -m virtualenv <path to virtualenv>
-      # create an environment named 'course-A' in the current directory
-      python -m virtualenv course-A
-
-.. tab:: {{ win_batch }}
-
-   .. code-block:: batch
-
-      python -m virtualenv <path to virtualenv>
-      # create an environment named 'course-A' in the current directory
-      python -m virtualenv course-A
-
-.. tab:: {{ mac_bash }}
-
-   .. code-block:: bash
-
-      python3 -m virtualenv <path to virtualenv>
-      # create an environment named 'course-A' in the current directory
-      python3 -m virtualenv course-A
-
-.. tab:: {{ linux_bash }}
-
-   .. code-block:: bash
-
-      python3 -m virtualenv <path to virtualenv>
-      # create an environment named 'course-A' in the current directory
-      python3 -m virtualenv course-A
-
-Once created, one can use the environment by *sourcing* a file.
-Change ``course-A`` with the name of the environment.
-
-.. tab:: {{ win_powershell }}
-
-   .. code-block:: powershell
-
-      course-A/Scripts/Activate.ps1
-
-.. tab:: {{ win_batch }}
-
-   .. code-block:: batch
-
-      course-A/Scripts/activate.bat
-
-.. tab:: {{ mac_bash }}
-
-   .. code-block:: bash
-
-      source course-A/bin/activate
-
-.. tab:: {{ linux_bash }}
-
-   .. code-block:: bash
-
-      source course-A/bin/activate
-
-
-Now every executed Python script will only use the packages installed
-in the environment. And every ``pip`` command will only install/remove packages
-in the environment.
-To get out of the environment, simply run the command ``deactivate``.
-
-Below is a complete example of creating an environment, installing a specific
-package, running a code using the environment, and getting out of it.
-
-.. tab:: {{ win_powershell }}
-
-   .. code-block:: powershell
-
-      python -m virtualenv numpy-env
-      numpy-env/Scripts/Activate.ps1
-      pip install "numpy==1.23.*"
-      python -c "import numpy as np ; print(np.__version__)"
-      deactivate
-
-.. tab:: {{ win_batch }}
-
-   .. code-block:: batch
-
-      python -m virtualenv numpy-env
-      numpy-env/Scripts/activate.bat
-      pip install "numpy==1.23.*"
-      python -c "import numpy as np ; print(np.__version__)"
-      deactivate
-
-.. tab:: {{ mac_bash }}
-
-   .. code-block:: bash
-
-      python3 -m virtualenv numpy-env
-      source numpy-env/bin/activate
-      pip install "numpy==1.23.*"
-      python3 -c "import numpy as np ; print(np.__version__)"
-      deactivate
-
-.. tab:: {{ linux_bash }}
-
-   .. code-block:: bash
-
-      python3 -m virtualenv numpy-env
-      source numpy-env/bin/activate
-      pip install "numpy==1.23.*"
-      python3 -c "import numpy as np ; print(np.__version__)"
-      deactivate
+The usage of ``virtualenv`` is equivalent to ``venv`` by replacing all ``venv`` entries
+with ``virtualenv``. Additional options can be found on the `homepage <env-virtualenv_>`_.
 

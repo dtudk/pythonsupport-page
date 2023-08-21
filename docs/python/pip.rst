@@ -1,8 +1,15 @@
 
 .. _pip:
 
-`pip <pypi-org_>`__
-===================
+`pip <pypi-org_>`__ {{ pref_symbol }}
+=========================================
+
+.. button-link:: https://www.google.com/search?q=cheatsheet+python+pip
+   :color: {{ cheatsheet_color }}
+   :align: right
+   :tooltip: Search google for cheatsheet
+
+   Find a pip cheatsheet {{ cheatsheet_icon }}
 
 .. note::
 
@@ -11,9 +18,6 @@
 
    See :ref:`here <install>` for installing Python.
 
-.. todo::
-
-   pip list | show | freeze | check
 
 `pip <pypi-org_>`_ is the *de-facto* standard for installing and maintaining
 packages/modules in a Python environment. Its `documentation <pip-org_>`_ is extensive.
@@ -56,7 +60,7 @@ can be specified in a single invocation of the program.
 
 .. tab:: {{ win_batch }}
 
-   .. code-block:: batch
+   .. code-block:: winbatch
 
       python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
@@ -77,7 +81,7 @@ The above will install:
 .. note::
    :class: margin
 
-   Use ``pip show numpy`` to get more detailed information about the ``numpy``
+   Use ``pip3 show numpy`` to get more detailed information about the ``numpy``
    package, such as directory where it is installed etc.
 
 - `numpy`_ at the latest version in the 1.24 release cycle
@@ -117,7 +121,7 @@ packages:
 
 .. tab:: {{ win_batch }}
 
-   .. code-block:: batch
+   .. code-block:: winbatch
 
       # List the packages installed
       python -m pip list
@@ -162,6 +166,108 @@ packages:
       # In this command we will create a file called 'requirements.txt'
       # as the command 'pipes' the output into that file
       python3 -m pip freeze > requirements.txt
+
+
+Dependencies and conflicts
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Installing packages over the course of several months. During this time, new releases
+and new dependency requirements of each package arise.
+
+.. tip::
+
+   Always prefer to use :ref:`virtual environments <python-environments>`
+   to reduce package conflicts.
+
+Below is a constructed example of a dependency conflict arising.
+
+.. tab:: {{ win_powershell }}
+
+   .. code-block:: powershell
+
+      $> python -m pip install dtumathtools==1.0.1
+      ... lots of output
+      $> python -m pip install --upgrade numpy
+      ... lots of output ... then
+      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+
+.. tab:: {{ win_batch }}
+
+   .. code-block:: winbatch
+
+      $> python -m pip install dtumathtools==1.0.1
+      ... lots of output
+      $> python -m pip install --upgrade numpy
+      ... lots of output ... then
+      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+
+.. tab:: {{ mac_bash }}
+
+   .. code-block:: bash
+
+      $> python3 -m pip install dtumathtools==1.0.1
+      ... lots of output
+      $> python3 -m pip install --upgrade numpy
+      ... lots of output ... then
+      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+
+.. tab:: {{ linux_bash }}
+
+   .. code-block:: bash
+
+      $> python3 -m pip install dtumathtools==1.0.1
+      ... lots of output
+      $> python3 -m pip install --upgrade numpy
+      ... lots of output ... then
+      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+
+The first command finalized package installation obeying all requirements between the installed
+packages (``dtumathtools`` depends on many other packages which will also be installed).
+
+The second command will also succeed, however, at the end a warning will be printed.
+This tells us that the package ``dtumathtools`` installed is version ``1.0.1`` and that it requires
+a ``numpy`` version in the range ``1.21.1<=numpy<1.24``. However, the upgrade installed ``numpy`` version
+``1.25.2`` which is not in the requirement range. It still got installed regardless of the already installed
+packages requirements! Sometimes this results in a broken installation and nothing works.
+
+.. warning::
+
+   ``pip`` only obeys package requirements for packages installed on the same installation command:
+
+   .. code-block:: bash
+   
+      # this will install numpy and scipy in compatible versions
+      ... pip install numpy scipy
+      
+      # this MAY install numpy and scipy in non-compatible versions
+      ... pip install numpy
+      ... pip install scipy
+
+To check possible conflicts in the current environment do
+
+.. tab:: {{ win_powershell }}
+
+   .. code-block:: powershell
+
+      python -m pip check
+
+.. tab:: {{ win_batch }}
+
+   .. code-block:: winbatch
+
+      python -m pip check
+
+.. tab:: {{ mac_bash }}
+
+   .. code-block:: bash
+
+      python3 -m pip check
+
+.. tab:: {{ linux_bash }}
+
+   .. code-block:: bash
+      
+      python3 -m pip check
 
 
 .. _pip-venv-env:

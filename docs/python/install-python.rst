@@ -1,8 +1,8 @@
 
 .. _install-python:
 
-Official Python distribution
-----------------------------
+Official Python distribution {{ pref_symbol }}
+------------------------------------------------------
 
 .. tip::
 

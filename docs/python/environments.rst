@@ -1,7 +1,6 @@
 
 .. _python-environments:
 
-
 Environments
 ============
 
@@ -31,7 +30,7 @@ package list and easily swap between them.
    course environments.
 
 .. contents::
-   :depth: 1
+   :depth: 2
    :backlinks: none
    :local:
 

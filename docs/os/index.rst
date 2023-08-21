@@ -15,5 +15,17 @@ Several IDE's, such as conda's installer and Spyder/VSCode/PyCharm's installatio
 can ease the package installation process to a great deal. However, sometimes it might be necessary
 to run commands on the terminal to ensure proper installation and ensure a consistent environment.
 
+.. todo::
+
+   Add images of terminals for each of the OS's
+
+   Should we document:
+
+   - cd
+   - pwd (nice to know)
+   - ls
+   - mkdir
+   - rm
+
 
 .. include:: terminal.rst.include

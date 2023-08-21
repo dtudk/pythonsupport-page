@@ -1,9 +1,10 @@
 
 
-`venv -- environment <env-venv_>`_
-----------------------------------
+`venv -- environment <env-venv_>`_ {{ pref_symbol }}
+-------------------------------------------------------
 
-The package `venv <env-venv_>`_ creates environments using the :ref:`pip` method.
+
+The package `venv <env-venv_>`_ creates :ref:`environments <python-environments>` using the :ref:`pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
 
 .. note::
@@ -27,7 +28,7 @@ An environment can be created using:
 
 .. tab:: {{ win_batch }}
 
-   .. code-block:: batch
+   .. code-block:: winbatch
 
       python -m venv <path to venv>
       # create an environment named 'course-A' in the current directory
@@ -60,7 +61,7 @@ Change ``course-A`` with the name of the environment.
 
 .. tab:: {{ win_batch }}
 
-   .. code-block:: batch
+   .. code-block:: winbatch
 
       course-A/Scripts/activate.bat
 
@@ -97,7 +98,7 @@ package, running a code using the environment, and getting out of it.
 
 .. tab:: {{ win_batch }}
 
-   .. code-block:: batch
+   .. code-block:: winbatch
 
       python -m venv numpy-env
       numpy-env/Scripts/activate.bat

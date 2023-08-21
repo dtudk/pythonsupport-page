@@ -31,7 +31,7 @@ DTU Python support
 
         Course specific installation guides
 
-    .. grid-item-card:: :fas:`envelope` -- :mail:`pythonsupport@dtu.dk` 
+    .. grid-item-card:: :fas:`envelope` -- pythonsupport@dtu.dk 
         :link: mailto:pythonsupport@dtu.dk
         :link-type: url
 
@@ -49,9 +49,17 @@ DTU Python support
 Welcome to the DTU student support unit!  
 We are here to help with Python installation problems related
 to courses at DTU.
+
+When encountering the icon {{ pref_symbol }} you are using the
+recommended DTU Python installation procedure.
+
 Our goal is to ensure that students can get a Python
 environment up and running according to the needs of DTU courses.  
 Help can be requested through various channels:
+
+.. todo::
+
+   Should these (below) be here? Or is the above enough?
 
 Office hours
    we will have physical presence at DTU Lyngby campus on differing locations
@@ -97,20 +105,6 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    need for Python support at DTU.
 
 
-.. todo::
-
-   what is a terminal, how to open, how to download, very basic things
-   navigate a terminal.
-
-.. todo::
-
-   Create a Quickstart guide
-
-   There is too much information for each of the steps
-   It would be ideal with some kind of simple quickstart guide
-   which references the sub-pages if there are problems.
-
-
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -120,6 +114,12 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    python/install.rst
 
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Everyday use
+   
    python/environments.rst
 
    python/pip.rst

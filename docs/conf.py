@@ -15,11 +15,19 @@ import sys
 sys.path.insert(1, str(Path().resolve()))
 from ps_modules.dictformatter import DictFormatter
 
+if sys.version_info >= (3, 11):
+    import tomllib as toml
+else:
+    import toml
+
 
 project = 'DTU Python support'
+html_title = "DTU Python support"
 copyright = '2023, DTU Python support'
 author = 'DTU Python support developers'
 recommended_python = "3.11"
+
+_pref_symbol = ":fas:`ranking-star`"
 
 url = "https://pythonsupport.dtu.dk"
 
@@ -78,16 +86,18 @@ Links to DTU's course database will be to the year:
       {_year[0]}-{_year[1]}""")
 
 
+# Read in all the content from the course configuration.
+# This is much simpler to maintain and we could allow other
+# details as well.
+_conf_toml = toml.load(open("courses/configuration.toml", 'rb'))
+
+
 _coursepages = DictFormatter()
 # Add all courses here
 # These will be used to format the homepages
 # I.e. this class can be used in extlinks
-_coursepages.add("01001", "https://01001.compute.dtu.dk")
-_coursepages.add("01002", "https://01001.compute.dtu.dk")
-_coursepages.add("01003", "https://01001.compute.dtu.dk")
-_coursepages.add("01004", "https://01001.compute.dtu.dk")
-_coursepages.add("02002", "https://02002.compute.dtu.dk")
-_coursepages.add("02003", "https://02002.compute.dtu.dk")
+for course, info in _conf_toml["course"].items():
+    _coursepages.add(course, info["home"])
 
 
 extlinks = {
@@ -100,7 +110,7 @@ extlinks = {
     "course": (":doc:`/courses/%s/index`", "%s"),
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
-    "course-base": (f"https://kurser.dtu.dk/course/{_year[0]}-{_year[1]}/%s", "%s"),
+    "course-base": (f"{_conf_toml['dtu']['course-base']}/course/{_year[0]}-{_year[1]}/%s", "%s"),
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
     "course-home": (_coursepages, "%s"),
@@ -139,8 +149,6 @@ rst_epilog = f"""\
 .. _env-venv: https://docs.python.org/3/library/venv.html
 .. _env-conda: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 .. _env-virtualenv: https://virtualenv.pypa.io/en/latest/
-
-.. _dtu-courses: https://kurser.dtu.dk/
 """
 
 
@@ -150,7 +158,6 @@ sphinx_tabs_disable_tab_closing = True
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_title = "DTU Python support"
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
@@ -167,11 +174,6 @@ _icon_links = [
         "name": "Mail to Python support",
         "url": "mailto:pythonsupport@dtu.dk",
         "icon": f"fa-solid fa-envelope {_fa_move}",
-    },
-    {
-        "name": "Python support development page",
-        "url": "https://github.com/dtudk/pythonsupport-page",
-        "icon": f"fa-brands fa-github {_fa_move}",
     },
     {
         "name": "DTU help | External pages",
@@ -209,6 +211,15 @@ html_theme_options = {
     "navbar_align": "content",
     "navbar_center": ["navbar-nav"],
     "icon_links": _icon_links,
+}
+
+# currently not working... I don't know why..
+_html_sidebars = {
+    "**": [
+        "search-field",
+        "sidebar-nav-bs",
+        "sidebar-ethical-ads",
+    ]
 }
 
 _course_json_url = "_static/course_switcher.json"
@@ -324,15 +335,16 @@ html_context = {
     "github_version": "main",
     "python_version": recommended_python,
     "path_to_docs": "docs/",
+    "pref_symbol": _pref_symbol,
 
     # Installation methods
-    "pip": "pip :fas:`ranking-star`",
+    "pip": r"pip {_pref_symbol}",
     "conda": "conda",
     "poetry": "poetry",
     "pyenv": "pyenv",
 
     # Virtual environment methods
-    "venv": "venv :fas:`ranking-star`",
+    "venv": r"venv {_pref_symbol}",
     "virtualenv": "virtualenv",
     "condaenv": "conda",
     
@@ -342,10 +354,14 @@ html_context = {
     "linux": "Linux",
 
     # Operating shells
-    "win_powershell": "Windows | Powershell :fas:`ranking-star`",
+    "win_powershell": f"Windows | Powershell {_pref_symbol}",
     "win_batch": "Windows | Batch",
     "mac_bash": "MacOS | Bash",
     "linux_bash": "Linux | Bash",
+
+    # Cheatsheet information
+    "cheatsheet_icon": ":fas:`toolbox`",
+    "cheatsheet_color": "muted",
 }
 
 def setup(app):

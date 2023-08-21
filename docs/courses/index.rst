@@ -4,8 +4,6 @@
 Courses
 =======
 
-DTU courses have specific requirements for their used software.
-
 .. note::
 
    Courses may have their own guides on how to install, we encourage
@@ -25,7 +23,7 @@ DTU courses have specific requirements for their used software.
 Template guide for new course
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Teaching a new DTU course? Host your guidelines here!
+Teaching a DTU course? Host your guidelines here!
 Contact us at :mail:`pythonsupport@dtu.dk` or open a :gh-issue:`new issue <new>`.
 The course template can be found below.
 
