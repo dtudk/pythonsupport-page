@@ -10,7 +10,7 @@ Exercises
 These exercises are meant to prepare the DTU Python supporters for a variety
 of things that they may encounter from students.
 
-It also covers a bit more of what the courses expects, we need to be prepared
+It also covers a bit more than what the courses expects, we need to be prepared
 for a variety a things. 
 
 
@@ -21,8 +21,8 @@ for a variety a things.
    know where to find information.
 
    As such, supporters should be able to find the information on-line
-   if they encounter problems they have not experienced before. Or use
-   their peers to get the same information.
+   if they encounter problems they have not experienced before. Or, use
+   their peers to get a solution.
    So please use search engines for solving the problems.
 
 
@@ -40,15 +40,19 @@ of the student and at the pace that might be interesting for the student.
 Always ask if they want more information, before recommending best practices for
 something they do not really care for.
 
+And if it seems to you that they only want a working installation, the opt in to
+aid with minimal side steps.
+
 
 Discord
 ^^^^^^^
 
-Our Discord channels can be found `here <ps-discord-general_>`.
+Our Discord channels can be found `here <ps-discord-general_>`_.
 Once you have joined, ping ``@nicpa`` and ask for supporter role.
 
-We have a separate category where the students (and others) cannot see
-anything. Here you can share experiences, or consult your colleagues.
+We have a separate category (``support-internal``) where the students
+(and others) cannot see anything.
+Here you can share experiences, or consult your colleagues.
 
 If we need additional channels, we discuss it there!
 
@@ -62,7 +66,7 @@ to understand and ensure that the environment is behaving as expected.
 There can be numerous paths to confirm this, here are some check-points
 that can be useful:
 
-- check the ``conda``/``pip`` list of packages and ensure that the package
+- check the ``pip``/``conda`` list of packages and ensure that the package
   version and package is installed as requested.
 - open up a Python shell and ensure it can be imported
 - ensure the module's version *after* import is as requested.
@@ -99,6 +103,9 @@ import:
 this will fail with errors if it can not import it, and if it succeeds, it will
 print the version, if the variable (``__version__``) is part of the package.
 
+As will be clear in :ref:`internal-exercise-5`, the above test is also important in the
+IDE that the student is working with.
+
 .. warning::
 
    Please always use a virtual environment (``pip``/``conda``) when performing these
@@ -116,8 +123,19 @@ print the version, if the variable (``__version__``) is part of the package.
 Exercise 1
 ^^^^^^^^^^
 
-1. Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
+1. Install the :ref:`official Python <install-python>` distribution.
 
+   **Windows only**: If your terminal will not recognize the ``python``
+   executable, most likely your forgot to check the ``Add ... to PATH``.
+
+
+2. Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
+
+   In the semester 2023; the student primary usage will be ``pip``.
+   Likely there will be some students with a prior ``conda`` installation.
+   It is thus important that you know how to have a ``conda`` installation
+   *and* navigate a regular Python installation.
+   
    Create a `new environment <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`_ in a local folder.
 
    Understand that:
@@ -129,17 +147,16 @@ Exercise 1
       a. Packages can be installed from an *external* command, such as ``conda install -n <path to environment> <packages>``,
       b. Packages will be installed directly if the environment is already the activated one: ``conda activate <path to environment>``
 
-   In the semester 2023; the student primary usage will be ``pip``.
-   Likely there will be some students with a prior ``conda`` installation.
-   It is thus important that you know how to have a ``conda`` installation *and* navigate a regular Python installation.
+  
+   4. How can you see if you are in a ``conda`` environment? 
    
-   And how can you see if you are in a ``conda`` environment? 
+   5. Ensure you can navigate between both the ``conda`` and the official Python installation.
 
 
-2. Install the :ref:`official Python <install-python>` distribution.
+.. hint::
 
-   Ensure you can navigate both the ``conda`` and the official Python installation.
-
+   The command ``python -c "import sys ; print(sys.exec_prefix)"`` can give a hint at
+   which Python interpreter is being used.
 
 
 .. _internal-exercise-2:
@@ -147,7 +164,7 @@ Exercise 1
 Exercise 2
 ^^^^^^^^^^
 
-Create two virtual environments, using `venv <https://docs.python.org/3/library/venv.html>`_ and ``conda``.
+Create two virtual environments, using `venv <https://docs.python.org/3/library/venv.html>`__.
 
 .. code-block:: bash
 
@@ -168,6 +185,10 @@ Check that you can easily swap between these two environments.
    One cannot copy paste the above in ``pip``, ensure you change the package specification
    to match the package installers terminology.
 
+.. note::
+
+   If you have gone through all exercises, then do this again with ``conda``!
+
 
 .. _internal-exercise-3:
 
@@ -185,10 +206,11 @@ Exercise 4
 Install any package, and figure out its location in the file-system. It is important you check against an *importable*
 package.
 
-Hints:
 
-- ``__file__``
-- ``pip``
+.. hint::
+
+   - ``__file__``
+   - ``pip``
 
 
 .. _internal-exercise-5:
@@ -196,19 +218,19 @@ Hints:
 Exercise 5
 ^^^^^^^^^^
 
-For all the currently known recommend IDE's:
+For the currently known recommend IDE's:
 
-*If time is limited, only do VSCode*.
+*In order of priority, if time is limited, only do the first*.
 
 - :ref:`VSCode <ide-vscode>`
-- :ref:`PyCharm <ide-pycharm>`
 - :ref:`Spyder <ide-spyder>`
+- :ref:`PyCharm <ide-pycharm>`
 
 Figure out the following:
 
 1. How to swap environment (interpreter) in the IDE instead of the default Python executable
 2. How to check the packages that are installed (some IDE's allows calling Pip directly
-   in the ``IPython`` shell)
+   in the ``IPython`` console)
 
 
 .. _internal-exercise-6:
@@ -237,8 +259,10 @@ Also resolve the ``pip check`` errors.
 
 .. _internal-exercise-8:
 
-Exercise 8 -- not necessary
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exercise 8
+^^^^^^^^^^
+
+*Only if you are inclined, and have the time!*
 
 Complete :ref:`exercise 2 <internal-exercise-2>` using `virtualenv <env-virtualenv_>`_
 which works slightly different from ``venv``.

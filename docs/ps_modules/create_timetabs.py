@@ -65,7 +65,6 @@ def get_period(periods, semester, week):
 def get_weekdates(year, week):
     start = datetime.datetime.strptime(f"{year} {week} 1", "%G %V %u").date()
     end = datetime.datetime.strptime(f"{year} {week} 5", "%G %V %u").date()
-    print(start, end)
     return start, end
 
 
@@ -87,6 +86,9 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     today = datetime.datetime.today()
     # TODO use env to enable dev for checking dates
     #today = datetime.datetime.strptime("2023 9 5", "%Y %m %d")
+
+    print(f"timetable: will create an on-the-fly updated timetable in {out!s}")
+    print(f"timetable: the current time will be: {today.isoformat(' ', 'minutes')}")
 
     # Determine the week (added in 3.6)
     year, week, day, hour = map(int, today.strftime("%G %V %u %H").split())
