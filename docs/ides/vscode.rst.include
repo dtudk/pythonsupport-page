@@ -1,12 +1,23 @@
 
 .. _ide-vscode:
 
-Visual Studio Code 
-------------------
+Visual Studio Code {{pref_symbol}}
+--------------------------------------
 
-VS Code is a an open-source coding framework with a big community
+`VS Code <https://code.vsiualstudio.com/>`__ is a an open-source coding framework with a big community
 and many users.
-It integrates Jupyter notebooks and can also be used
-for other languages than Python.
+It can be used together with any other coding language or be used to edit configuration files (YAML, TOML, ...).
 
-It can be downloaded `here <https://code.visualstudio.com/>`__.
+It can be downloaded `here <https://code.visualstudio.com/download>`__.
+
+VS Code is an extensible and very versatile development environment.
+The extensions can greatly aid during the coding of varying problems.
+Some notable highlights include automatic API messages for methods, and
+integration with Jupyter notebooks.
+
+Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
+
+Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
+This depends on whether you are using :ref:`virtual environments <python-environments>` or not.
+Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
+

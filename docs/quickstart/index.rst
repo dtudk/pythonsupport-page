@@ -5,26 +5,31 @@ Quick start
 ===========
 
 Following these steps will quickly give you a minimal functioning Python installation.
+These steps follow the recommended DTU procedure ({{pref_symbol}}).
 
-1. | Download and install Python {{ python_version }} from `here <python-org-down_>`__
-   | **Important**: For Windows users ensure to :far:`square-check` the ``Add Python {{python_version}} to PATH`` box
+.. grid:: 1
+   :gutter: 1
 
-   .. button-ref:: install-python
-      :ref-type: ref
-      :align: right
-      :color: primary
+   .. grid-item-card:: 1. Install Python
 
-      Problems installing?
-   
-2. | Install VSCode from `here <https://code.visualstudio.com/download>`__
+      Download and install Python {{python_version}} from `here <python-org-down_>`__
 
-   `Add extensions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__:
+      | **Important**: For Windows users, ensure to :far:`square-check` the ``Add Python {{python_version}} to PATH`` box.
+      | Go `here <install-python>`_ if you encounter problems.
 
-   - ``Python``, a verified (:fas:`certificate`) Microsoft extension
-      
-     Then ensure to point the
-     `interpreter to the installed Python <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__
+   .. grid-item-card:: 2. Install VSCode 
 
-3. **Recommendation**: use :ref:`virtual environments <pip-venv-env>` to maintain stable package environments
+      Download from `here <https://code.visualstudio.com/download>`__
 
-DONE! Happy computing!
+      Then `add extensions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
+      Find the ``Python`` extension which is verified (:fas:`certificate`) by Microsoft.
+
+      Ensure your `Python interpreter <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__ points to the just installed Python version.
+
+   .. grid-item-card:: 3. Virtual Environments (recommendation!)
+      :link: pip-venv-env
+      :link-type: ref
+
+      Please use virtual environments so your Python codes works across courses.
+
+      Press this for information.

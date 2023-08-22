@@ -4,7 +4,13 @@
 Spyder
 ------
 
-Spyder is a marketed as a scientific Python development environment
-with intrinsic Jupyter notebook support.
+`Spyder <https://www.spyder-ide.org/>`__ is a free and open-source coding framework written in *and* for Python.
+It has intrinsic editor, IPython console and a variable explorer + many more.
 
 It can be downloaded `here <https://www.spyder-ide.org/>`__.
+
+Spyder is extensible by plugins, if needed. Generally its base installation should suffice.
+
+Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
+This depends on whether you are using :ref:`virtual environments <python-environments>` or not.
+Changing the interpreter location can be done by following `this instruction <https://docs.spyder-ide.org/current/faq.html#using-existing-environmen>`__.

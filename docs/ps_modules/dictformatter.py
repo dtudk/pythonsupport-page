@@ -1,5 +1,16 @@
 __all__ = "DictFormatter"
 
+
+def split_str(s, sep=None, maxsplit=-1):
+    """ split a string """
+    sl = s.split(sep, maxsplit)
+    if maxsplit > 0:
+        n_add = maxsplit + 1 - len(sl)
+        sl.extend([''] * n_add)
+    print(sl)
+    return sl
+
+
 class DictFormatter:
 
     __slots__ = ('info',)

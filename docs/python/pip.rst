@@ -42,6 +42,8 @@ This should not deter one from using `pip` at all, this is just to mention that 
    :backlinks: none
 
 
+.. _pip-installing:
+
 Installing packages
 -------------------
 
@@ -92,6 +94,8 @@ The above will install:
 when specifying more than one package on the line, all dependencies will be checked
 against each other at install time.
 
+
+.. _pip-navigating:
 
 Navigating packages
 ^^^^^^^^^^^^^^^^^^^
@@ -167,6 +171,8 @@ packages:
       # as the command 'pipes' the output into that file
       python3 -m pip freeze > requirements.txt
 
+
+.. _pip-dependencies:
 
 Dependencies and conflicts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^

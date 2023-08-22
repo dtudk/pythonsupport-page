@@ -6,6 +6,8 @@
 The package `virtualenv <env-virtualenv_>`_ creates environments using the :ref:`pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
 
+Install it with :ref:`pip` using the package name ``virtualenv``.
+
 ``virtualenv`` is the *original* implementation of the :ref:`venv <pip-venv-env>`
 package. ``virtualenv`` will be continuously developed and contains more up to date
 methods and functionalities. As such ``virtualenv`` can be updated while ``venv``

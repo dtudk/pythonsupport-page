@@ -113,33 +113,33 @@ print the version, if the variable (``__version__``) is part of the package.
 
 .. _internal-exercise-1:
 
-Exercise 1a
-^^^^^^^^^^^
+Exercise 1
+^^^^^^^^^^
 
-Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
+1. Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
 
-Create a `new environment <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`_ in a local folder.
+   Create a `new environment <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`_ in a local folder.
 
-Understand that:
+   Understand that:
 
-1. Environments created in local folders are not automatically listed when listing available environments
-2. How to activate a local environment.
-3. How to install packages into a local environment
+   1. Environments created in local folders are not automatically listed when listing available environments
+   2. How to activate a local environment.
+   3. How to install packages into a local environment
 
-   a. Packages can be installed from an *external* command, such as ``conda install -n <path to environment> <packages>``,
-   b. Packages will be installed directly if the environment is already the activated one: ``conda activate <path to environment>``
+      a. Packages can be installed from an *external* command, such as ``conda install -n <path to environment> <packages>``,
+      b. Packages will be installed directly if the environment is already the activated one: ``conda activate <path to environment>``
 
-In the semester 2023; the student primary usage will be ``pip``.
-Undoubtedly there will be some students with a prior ``conda`` installation.
-It is thus important that you know how to have a ``conda`` installation *and* navigate a regular Python installation.
+   In the semester 2023; the student primary usage will be ``pip``.
+   Likely there will be some students with a prior ``conda`` installation.
+   It is thus important that you know how to have a ``conda`` installation *and* navigate a regular Python installation.
+   
+   And how can you see if you are in a ``conda`` environment? 
 
 
-Exercise 1b
-^^^^^^^^^^^
+2. Install the :ref:`official Python <install-python>` distribution.
 
-Install the :ref:`official Python <install-python>` distribution.
+   Ensure you can navigate both the ``conda`` and the official Python installation.
 
-Ensure you can navigate both the ``conda`` and the official Python installation.
 
 
 .. _internal-exercise-2:
@@ -196,16 +196,9 @@ Hints:
 Exercise 5
 ^^^^^^^^^^
 
-Complete :ref:`exercise 2 <internal-exercise-2>` using `virtualenv <env-virtualenv_>`_
-which works slightly different from ``venv``.
-
-
-.. _internal-exercise-6:
-
-Exercise 6
-^^^^^^^^^^
-
 For all the currently known recommend IDE's:
+
+*If time is limited, only do VSCode*.
 
 - :ref:`VSCode <ide-vscode>`
 - :ref:`PyCharm <ide-pycharm>`
@@ -218,9 +211,31 @@ Figure out the following:
    in the ``IPython`` shell)
 
 
+.. _internal-exercise-6:
+
+Exercise 6
+^^^^^^^^^^
+
+Run through the :course-home:`02002` installation instructions.
+Then run through these extra steps: :full-link:`https://lab.compute.dtu.dk/cp/02002students/-/wikis/testing`
+
+
 .. _internal-exercise-7:
 
 Exercise 7
 ^^^^^^^^^^
 
-Run through the :course-home:`02002` installation instructions.
+Goto :ref:`pip dependencies <pip-dependencies>` and provoke the output
+shown, in a virtual environment. Understand all output of the commands, especially the warnings and errors.
+Use ``pip check`` as well.
+
+Also resolve the ``pip check`` errors.
+
+
+.. _internal-exercise-8:
+
+Exercise 8 -- not necessary
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Complete :ref:`exercise 2 <internal-exercise-2>` using `virtualenv <env-virtualenv_>`_
+which works slightly different from ``venv``.

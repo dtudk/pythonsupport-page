@@ -23,8 +23,16 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
+if "%1" == "spell" (
+set %1 = "spelling"
+)
+
+REM Quick go to help, this prevents a clean if one does make help
+if "%1" == "help" goto help
 if "%1" == "" goto help
 
+REM Default action is to remove build dir, the build
+%SPHINXBUILD% -M clean %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS% %O%
 goto end
 
