@@ -6,6 +6,9 @@ on:
   push:
     tags:
      - 'v*'
+  schedule:
+    # every friday @ 19:21
+    - cron: '21 19 * * FRI'
   workflow_dispatch:
 
 env:

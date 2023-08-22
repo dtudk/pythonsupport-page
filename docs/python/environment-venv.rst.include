@@ -50,7 +50,7 @@ An environment can be created using:
       # create an environment named 'course-A' in the current directory
       python3 -m venv course-A
 
-Once created, one can use the environment by *sourcing* a file.
+Once created, one can *activate*/use the environment by *sourcing* a file.
 Change ``course-A`` with the name of the environment.
 
 .. tab:: {{ win_powershell }}

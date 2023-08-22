@@ -219,6 +219,9 @@ Exercise 6
 Run through the :course-home:`02002` installation instructions.
 Then run through these extra steps: :full-link:`https://lab.compute.dtu.dk/cp/02002students/-/wikis/testing`
 
+It would also be great to test some of these things in a Jupyter Notebook, to see how well they fare in
+a more constrained environment.
+
 
 .. _internal-exercise-7:
 

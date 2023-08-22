@@ -37,3 +37,58 @@ package list and easily swap between them.
 .. include:: /python/environment-venv.rst.include 
 .. include:: /python/environment-conda.rst.include 
 .. include:: /python/environment-virtualenv.rst.include 
+
+
+.. _python-environments-jupyter:
+
+Jupyter Notebooks / IPython
+---------------------------
+
+
+Virtual environments and Jupyter can cause issues when Jupyter is installed in the
+system (not in the virtual environment). This is because the kernel is fixed to launch
+the Python interpreter it got installed with.
+
+.. warning::
+
+   This issue will arise in *any* virtual environment, including ``conda``.
+
+
+The simplest way to check whether your Jupyter Notebook is using your virtual environment
+is to execute the following code in a notebook cell:
+
+.. code-block:: python
+
+   import sys
+   print(sys.exec_prefix)
+
+if it shows a directory where you have your virtual environment, you are all set!
+If not, then the simplest solution would be to install the kernel runner
+in the virtual environment:
+
+.. tab:: {{ win_powershell }}
+
+   .. code-block:: powershell
+
+      python -m ipykernel install --user --prefix <path to venv|conda-env>
+
+.. tab:: {{ win_batch }}
+
+   .. code-block:: winbatch
+      
+      python -m ipykernel install --user --prefix <path to venv|conda-env>
+
+.. tab:: {{ mac_bash }}
+
+   .. code-block:: bash
+
+      python3 -m ipykernel install --user --prefix <path to venv|conda-env>
+
+.. tab:: {{ linux_bash }}
+
+   .. code-block:: bash
+
+      python3 -m ipykernel install --user --prefix <path to venv|conda-env>
+
+The problem, and fix, is described in greater detail
+`here <https://ipython.readthedocs.io/en/stable/install/kernel_install.html>`__.
