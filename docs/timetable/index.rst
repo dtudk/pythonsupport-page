@@ -15,14 +15,51 @@ Week numbers refer to the *semester weeks*!
 
             .. include:: /timetable/202335.rst
       
-         .. tab-item:: Week 2
+         .. tab-item:: 2
 
             .. include:: /timetable/202336.rst
       
-         .. tab-item:: Week 3
+         .. tab-item:: 3
 
             .. include:: /timetable/202337.rst
-         
-         .. tab-item:: Week 4
+        
+         .. tab-item:: 4
 
             To be determined
+         
+         .. tab-item:: 5
+
+            To be determined
+         
+         .. tab-item:: 6
+
+            To be determined
+
+         .. tab-item:: 7
+
+            To be determined
+         
+         .. tab-item:: 8
+
+            To be determined
+         
+         .. tab-item:: 9
+
+            To be determined
+         
+         .. tab-item:: 10
+
+            To be determined
+         
+         .. tab-item:: 11
+
+            To be determined
+         
+         .. tab-item:: 12
+
+            To be determined
+         
+         .. tab-item:: 13
+
+            To be determined
+         

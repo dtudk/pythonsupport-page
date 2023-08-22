@@ -5,8 +5,8 @@
 
 The ``conda`` Python package automatically incorporates `environments <env-conda_>`_.
 Not only will it allow environments with specific packages, one can
-also create environments with different Python versions. This
-enables one to have a Python 3.8 and 3.10 installation.
+also create environments with different Python versions. This can be useful if a specific
+package requires a specific Python version.
 
 Once an environment has been created, and *sourced*, all ``python`` commands only act in *that environment*.
 
