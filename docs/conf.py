@@ -14,6 +14,7 @@ import sys
 # add the exts folder
 sys.path.insert(1, str(Path().resolve()))
 from ps_modules.dictformatter import DictFormatter
+from ps_modules.create_timetabs import create_time_table
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -27,7 +28,9 @@ copyright = '2023, DTU Python support'
 author = 'DTU Python support developers'
 recommended_python = "3.11"
 
+# when we have a guideline:
 _pref_symbol = ":fas:`ranking-star`"
+_pref_symbol = ""
 
 url = "https://pythonsupport.dtu.dk"
 
@@ -89,7 +92,7 @@ Links to DTU's course database will be to the year:
 # Read in all the content from the course configuration.
 # This is much simpler to maintain and we could allow other
 # details as well.
-_conf_toml = toml.load(open("courses/configuration.toml", 'rb'))
+_conf_toml = toml.load(open("ps_configuration.toml", 'rb'))
 
 
 _coursepages = DictFormatter()
@@ -301,6 +304,9 @@ def course_switcher(out=_course_json_url):
     json.dump(data, open(out, 'w'), indent=4)
 
 course_switcher()
+
+
+create_time_table(_conf_toml["semester"])
 
 print("^^^^^ DONE conf.py ^^^^^")
 

@@ -50,8 +50,11 @@ Welcome to the DTU student support unit!
 We are here to help with Python installation problems related
 to courses at DTU.
 
-When encountering the icon {{ pref_symbol }} you are using the
-recommended DTU Python installation procedure.
+.. todo::
+
+   Re-insert this when we have a common guideline.
+   When encountering the icon {{ pref_symbol }} you are using the
+   recommended DTU Python installation procedure.
 
 Our goal is to ensure that students can get a Python
 environment up and running according to the needs of DTU courses.  

@@ -4,32 +4,39 @@
 Quick start
 ===========
 
-Following these steps will quickly give you a minimal functioning Python installation.
-These steps follow the recommended DTU procedure ({{pref_symbol}}).
+In the autumn semester of 2023, we will be following the guidelines in the Mathematics 1
+and Computer Programming courses. These guidelines can be found 
+`here <https://02002.compute.dtu.dk/installation/index.html>`__.
 
-.. grid:: 1
-   :gutter: 1
 
-   .. grid-item-card:: 1. Install Python
+.. comments to be back-filled
 
-      Download and install Python {{python_version}} from `here <python-org-down_>`__
+   Following these steps will quickly give you a minimal functioning Python installation.
+   These steps follow the recommended DTU procedure ({{pref_symbol}}).
 
-      | **Important**: For Windows users, ensure to :far:`square-check` the ``Add Python {{python_version}} to PATH`` box.
-      | Go `here <install-python>`_ if you encounter problems.
+   .. grid:: 1
+      :gutter: 1
 
-   .. grid-item-card:: 2. Install VSCode 
+      .. grid-item-card:: 1. Install Python
 
-      Download from `here <https://code.visualstudio.com/download>`__
+         Download and install Python {{python_version}} from `here <python-org-down_>`__
 
-      Then `add extensions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
-      Find the ``Python`` extension which is verified (:fas:`certificate`) by Microsoft.
+         | **Important**: For Windows users, ensure to :far:`square-check` the ``Add Python {{python_version}} to PATH`` box.
+         | Go `here <install-python>`_ if you encounter problems.
 
-      Ensure your `Python interpreter <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__ points to the just installed Python version.
+      .. grid-item-card:: 2. Install VSCode 
 
-   .. grid-item-card:: 3. Virtual Environments (recommendation!)
-      :link: pip-venv-env
-      :link-type: ref
+         Download from `here <https://code.visualstudio.com/download>`__
 
-      Please use virtual environments so your Python codes works across courses.
+         Then `add extensions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
+         Find the ``Python`` extension which is verified (:fas:`certificate`) by Microsoft.
 
-      Press this for information.
+         Ensure your `Python interpreter <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__ points to the just installed Python version.
+
+      .. grid-item-card:: 3. Virtual Environments (recommendation!)
+         :link: pip-venv-env
+         :link-type: ref
+
+         Please use virtual environments so your Python codes works across courses.
+
+         Press this for information.
