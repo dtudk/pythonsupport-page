@@ -1,0 +1,70 @@
+
+.. _internal-rt:
+
+Ticket system (RT)
+------------------
+
+Our Ticket system (RT) guideline is:
+
+.. grid:: 1
+   :gutter: 2
+
+   .. grid-item-card:: 1. Check for non-closed tickets
+
+      First check if there are any tickets open, where there
+      is ongoing communication. If the other supporter is unavailable
+      or have not answered for a long period, you can *take* the
+      ticket and continue on it
+      (please remember the note :ref:`here <internal-com-other>`).
+
+   .. grid-item-card:: 2. Resume your tickets
+
+      On the ``Homepage`` your tickets listed in
+      ``XX highest priority tickets I own`` should be your first
+      tickets to resume, and clear.
+
+   .. grid-item-card:: 3. Check for non-taken tickets
+
+      On the ``Homepage`` tickets under the
+      ``XX newest unowned tickets`` will be your current
+      tickets, prefer to take the oldest ticket.
+
+
+   .. grid-item-card:: 4. **Take** the ticket
+
+      When you have read the ticket, and think you can solve
+      it, **Take** it by clicking on the ticket.
+      Now press the ``Actions`` drop-down (top right corner) and select ``Take``.
+      Now you are the owner of the ticket, and the other supporters
+      can see this.
+
+   .. grid-item-card:: 5. Start communicating
+
+      Try to solve the problem for the student.
+
+      Press ``Reply`` from the message you wish to reply to, note that
+      *only* older communications will be part of the new message. Generally
+      you want to select ``Reply`` on the newest mail. 
+
+      .. note::
+         RT will list all mails just like a regular mail client.
+         By default, RT displays the oldests messages at the top,
+         and the latests at the bottom.
+
+         This default can be changed here:
+         ``Logged in as X -> Settings -> Preferences -> Ticket Display -> Show oldest history first``
+
+      .. danger::
+         Quite often it is nice with inputs from your other
+         supporters. We do this in the ticket system via ``Comments``.
+         Be careful about putting sensitive stuff in a comment, when pressing
+         reply you'll often have the comments combined in the full message for
+         the questioner (sometimes this is useful).
+
+   .. grid-item-card:: 6. Resolving tickets
+
+      When the questioner has found a solution you should resolve it.
+      
+      Press the ``Actions`` drop-down (top right corner) and select ``Resolve``.
+
+

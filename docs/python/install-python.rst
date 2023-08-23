@@ -44,10 +44,30 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 
 Once completed it is appropriate to test whether it works, :ref:`open up a terminal <os-terminal>` and execute the following:
 
-.. todo:
+.. tab:: {{ win_powershell }}
 
-   Make more beautiful documentation, notes, or something else
-   Add links to the environments and other vital information.
+   .. code-block::  powershell
+
+         python -c "print('Hello world')"
+
+.. tab:: {{ win_batch }}
+
+   .. code-block::  winbatch
+
+         python -c "print('Hello world')"
+
+.. tab:: {{ mac_bash }}
+   
+   .. code-block::  bash
+
+         python -c "print('Hello world')"
+
+.. tab:: {{ linux_bash }}
+   
+   .. code-block::  bash
+
+         python -c "print('Hello world')"
+
 
 Once Python has been installed, head over to :ref:`using pip <pip>` which will be the typical
 package installation backend.

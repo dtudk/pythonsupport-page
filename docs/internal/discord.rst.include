@@ -1,0 +1,103 @@
+
+.. _internal-discord:
+
+Discord
+-------
+
+Our Discord channels can be found `here <ps-discord-general_>`_.
+Once you have joined, ping ``@nicpa`` and ask for ``supporter`` role.
+
+We have a separate category (``support-internal``) where the students
+(and others) cannot see anything.
+Here you can share experiences, or consult your colleagues, *without* anybody watching.
+
+If we need additional channels, we discuss it there!
+
+Here is our current segmentation of the categories on Discord:
+current workflow for Discord interaction with students:
+
+``support-internal``
+   No rules for this *private* channel, this is **our** space, and no other than the ``@supporter``
+   role or ``@admin`` can see what is happening there.
+
+``support questions`` :fas:`arrow-right` ``general``
+   Main channel for new questions
+
+``support questions`` :fas:`arrow-right` ``tickets``
+   | Opened tickets through our RT ticket system can be moved here for
+     a more interactive discussion with the questioner.
+   | Ensure when you move a ticket to Discord to create a new ``Thread``,
+     and here name it according to the ticket number/ID as noted in the RT
+     system. This ensures we can easily correlate questions.
+
+   **Remember**: If you solve the question on Discord, note this in the RT system
+   by closing it and saying it got solved on Discord.
+
+``support questions`` :fas:`arrow-right` ``forum-help``
+   **Note**: I do not (personally) have experience with the Forum in Discord,
+   we'll learn along the way if this is valuable, or whether it should be deleted.
+
+``support questions`` :fas:`arrow-right` ``homepage``
+   Comments and improvements from students related to our homepage.
+
+``support questions`` :fas:`arrow-right` :fas:`volume-high`
+   These are voice channels we can join with other students to speak to each other,
+   share screens etc. Much like Zoom/Teams/...
+
+``python programming``
+   These channels are not *our* space of work. They are meant to be a community
+   that should be driven by students -- for students.
+
+   If you engage there, it will be as a ``non supportor`` role, and should be outside of
+   your office hours. :)
+
+``dtu courses``
+   Safe keeping if courses want to have a separate channel under the Python support
+   server. This is no enforcement from us, but we will let teachers now about the
+   possibility as the Python support unit matures.
+
+
+When engaging with the students questions, we should strive to keep things organized.
+This is no easy tasks since Discord does not implicitly enforce this.
+
+Our Discord guideline is:
+
+.. grid:: 1
+   :gutter: 2
+
+   .. grid-item-card:: 1. Check for non-closed threads (questions)
+      :link: https://support.discord.com/hc/en-us/articles/4403205878423-Threads-FAQ
+      :link-type: url
+
+      When you open up Discord for the first time, first check for
+      old threads/questions which have not been closed.
+
+      Go through these first to determine if there is anything that
+      you need to do there.
+
+   .. grid-item-card:: 2. New questions
+      :link: https://support.discord.com/hc/en-us/articles/4403205878423-Threads-FAQ
+      :link-type: url
+
+      1. Determine if the question is appropriate for our support.
+      2. Right click on the question, select ``Create Thread``.
+      3. Name the thread to something that can loosely describe the problem
+
+         *the thread name can be changed later*
+
+      4. Engage with the questioner on how to resolve the problem.
+
+      5. When a question has been resolved, the thread should be closed.
+         Either:
+
+         1. Right click the thread in the channel pane, and select ``Close Thread``, or
+         2. In the thread pane (located to the right), press the 3 dots ``...`` at the top and
+            select ``Close Thread``.
+      
+      .. warning:: 
+         
+         Try not to ``Lock``, ``Leave`` or ``Delete`` threads.
+
+
+
+

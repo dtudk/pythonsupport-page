@@ -26,37 +26,6 @@ for a variety a things.
    So please use search engines for solving the problems.
 
 
-Interacting with students
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Students will arrive with a variety of backgrounds. Some are very interested
-in programming, while others are not interested, *at all*, in the inner workings
-of Python and simply want to be able to attend courses.
-
-Our goal is to support both ends of the student spectrum.
-Information overload can be a problem for new students as there is already
-enough on the plate. It is imperative that information is given at the level
-of the student and at the pace that might be interesting for the student.
-Always ask if they want more information, before recommending best practices for
-something they do not really care for.
-
-And if it seems to you that they only want a working installation, the opt in to
-aid with minimal side steps.
-
-
-Discord
-^^^^^^^
-
-Our Discord channels can be found `here <ps-discord-general_>`_.
-Once you have joined, ping ``@nicpa`` and ask for supporter role.
-
-We have a separate category (``support-internal``) where the students
-(and others) cannot see anything.
-Here you can share experiences, or consult your colleagues.
-
-If we need additional channels, we discuss it there!
-
-
 Best practices
 ^^^^^^^^^^^^^^
 
@@ -127,7 +96,8 @@ Exercise 1
 
    **Windows only**: If your terminal will not recognize the ``python``
    executable, most likely your forgot to check the ``Add ... to PATH``.
-
+   It might be a good idea if you also try and install Python like this (forcefully)
+   to know how the error message looks.
 
 2. Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
 
