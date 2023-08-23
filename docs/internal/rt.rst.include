@@ -48,8 +48,8 @@ Our Ticket system (RT) guideline is:
 
       .. note::
          RT will list all mails just like a regular mail client.
-         By default, RT displays the oldests messages at the top,
-         and the latests at the bottom.
+         By default, RT displays the oldest messages at the top,
+         and the latest at the bottom.
 
          This default can be changed here:
          ``Logged in as X -> Settings -> Preferences -> Ticket Display -> Show oldest history first``

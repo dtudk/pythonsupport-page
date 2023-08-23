@@ -61,7 +61,7 @@ aid with minimal side steps.
    like this could be used:
 
        Please keep the tone polite and open. We will not accept any form of
-       harrassment and/or bullying through our channels.
+       harassment and/or bullying through our channels.
        We are trying to aid to the best of our abilities, and sometimes
        we encounter problems we have never experienced before.
 

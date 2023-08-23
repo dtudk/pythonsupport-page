@@ -220,7 +220,7 @@ a more constrained environment.
 Exercise 7
 ^^^^^^^^^^
 
-Goto :ref:`pip dependencies <pip-dependencies>` and provoke the output
+Go to :ref:`pip dependencies <pip-dependencies>` and provoke the output
 shown, in a virtual environment. Understand all output of the commands, especially the warnings and errors.
 Use ``pip check`` as well.
 
