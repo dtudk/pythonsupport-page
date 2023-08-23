@@ -73,7 +73,7 @@ aid with minimal side steps.
    If you, at **any** time feel uncomfortable, let us know immediately. It shall not,
    and will not be tolerated!
 
-   Please, openly, discuss this with the team. We are all here for each other!
+   Please, openly, discuss this with the team. We are all here for each other! :fas:`people-group`
 
 
 
