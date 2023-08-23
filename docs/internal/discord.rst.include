@@ -7,14 +7,14 @@ Discord
 Our Discord channels can be found `here <ps-discord-general_>`_.
 Once you have joined, ping ``@nicpa`` and ask for ``supporter`` role.
 
-We have a separate category (``support-internal``) where the students
-(and others) cannot see anything.
+We have a separate category (``support-internal``) where only persons in the
+``@supporter`` role can see stuff (note the *hinges* icons on the channel names).
 Here you can share experiences, or consult your colleagues, *without* anybody watching.
 
 If we need additional channels, we discuss it there!
 
 Here is our current segmentation of the categories on Discord:
-current workflow for Discord interaction with students:
+current workflow for Discord interaction with questioners:
 
 ``support-internal``
    No rules for this *private* channel, this is **our** space, and no other than the ``@supporter``
@@ -37,11 +37,13 @@ current workflow for Discord interaction with students:
    **Note**: I do not (personally) have experience with the Forum in Discord,
    we'll learn along the way if this is valuable, or whether it should be deleted.
 
+   *Comments are appreciated* :far:`smile`
+
 ``support questions`` :fas:`arrow-right` ``homepage``
-   Comments and improvements from students related to our homepage.
+   Comments and improvements related to our homepage.
 
 ``support questions`` :fas:`arrow-right` :fas:`volume-high`
-   These are voice channels we can join with other students to speak to each other,
+   These are voice channels we can join with other questioners to speak to each other,
    share screens etc. Much like Zoom/Teams/...
 
 ``python programming``
@@ -57,7 +59,7 @@ current workflow for Discord interaction with students:
    possibility as the Python support unit matures.
 
 
-When engaging with the students questions, we should strive to keep things organized.
+When engaging with peoples questions, we should strive to keep things organized.
 This is no easy tasks since Discord does not implicitly enforce this.
 
 Our Discord guideline is:

@@ -8,7 +8,7 @@ Exercises
 ---------
 
 These exercises are meant to prepare the DTU Python supporters for a variety
-of things that they may encounter from students.
+of things that they may encounter.
 
 It also covers a bit more than what the courses expects, we need to be prepared
 for a variety a things. 
@@ -73,7 +73,7 @@ this will fail with errors if it can not import it, and if it succeeds, it will
 print the version, if the variable (``__version__``) is part of the package.
 
 As will be clear in :ref:`internal-exercise-5`, the above test is also important in the
-IDE that the student is working with.
+IDE that the questioner is working with.
 
 .. warning::
 
@@ -101,7 +101,7 @@ Exercise 1
 
 2. Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
 
-   In the semester 2023; the student primary usage will be ``pip``.
+   In the semester 2023; the recommended usage will be ``pip``.
    Likely there will be some students with a prior ``conda`` installation.
    It is thus important that you know how to have a ``conda`` installation
    *and* navigate a regular Python installation.
