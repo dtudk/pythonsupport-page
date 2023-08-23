@@ -17,6 +17,19 @@ Our Ticket system (RT) guideline is:
       ticket and continue on it
       (please remember the note :ref:`here <internal-com-other>`).
 
+      Quite often, tickets will go in limbo, i.e. the last message
+      was from a supporter (us). If there has not been a reply
+      for a day, or more, then we can ask whether the question got
+      resolved, something like this:
+
+         Hi,
+
+         We hope our suggestions resolved your question?
+         If not, please let us know, otherwise we will close it
+         in a few days.
+
+         Thanks for reaching out to us!
+
    .. grid-item-card:: 2. Resume your tickets
 
       On the ``Homepage`` your tickets listed in
@@ -59,11 +72,11 @@ Our Ticket system (RT) guideline is:
          supporters. We do this in the ticket system via ``Comments``.
          Be careful about putting sensitive stuff in a comment, when pressing
          reply you'll often have the comments combined in the full message for
-         the questioner (sometimes this is useful).
+         the questioner (sometimes this *can* be useful).
 
    .. grid-item-card:: 6. Resolving tickets
 
-      When the questioner has found a solution you should resolve it.
+      When the questioner accepted the solution you should resolve it.
       
       Press the ``Actions`` drop-down (top right corner) and select ``Resolve``.
 

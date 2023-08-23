@@ -47,8 +47,8 @@ of the student and at the pace that might be interesting for the student.
 Always ask if they want more information, before recommending best practices for
 something they do not really care for.
 
-And if it seems to you that they only want a working installation, the opt in to
-aid with minimal side steps.
+If it seems that the student *just* want a working installation, then opt in to
+aid with few, if any, side steps.
 
    
 .. danger::
@@ -76,6 +76,20 @@ aid with minimal side steps.
    Please, openly, discuss this with the team. We are all here for each other! :fas:`people-group`
 
 
+Questioners will undoubtedly ask questions outside the scope of our scope.
+The best approach would be to *guess* who/where the question could be answered.
+For instance if the question is related to a Python programming problem, one could
+close it like this:
+
+   We, the Python installation support, cannot engage in support on Python
+   programming problems. If this is related to a DTU course, we have to refer
+   you to the course teaching assistants, or the teacher.
+
+   Otherwise, you can ask your question to other students in the #general
+   channel.
+
+   Thanks for your understanding!
+
 
 .. _internal-com-other:
 
@@ -87,6 +101,9 @@ will be a diverse set of methods.
 
 Always respect your co-workers solution methods, even though you would prefer
 other methods.
+
+This is not to say that we can not learn from each other, but doing so should be done
+with respect, and tolerance towards disagreements.
 
 It is vital we also keep a nice and healthy internal tone.
 
@@ -110,7 +127,6 @@ It is vital we also keep a nice and healthy internal tone.
 
 .. include:: /internal/discord.rst.include
 .. include:: /internal/rt.rst.include
-
 
 
 .. toctree::

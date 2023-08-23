@@ -4,21 +4,27 @@
 Discord
 -------
 
-Our Discord channels can be found `here <ps-discord-general_>`_.
+Our Discord server can be found `here <ps-discord-general_>`_.
 Once you have joined, ping ``@nicpa`` and ask for ``supporter`` role.
 
 We have a separate category (``support-internal``) where only persons in the
-``@supporter`` role can see stuff (note the *hinges* icons on the channel names).
+``@supporter`` role can see stuff (note the :fas:`lock` icon on the channel names).
 Here you can share experiences, or consult your colleagues, *without* anybody watching.
 
 If we need additional channels, we discuss it there!
 
-Here is our current segmentation of the categories on Discord:
-current workflow for Discord interaction with questioners:
+Here is our current segmentation of the categories and channels on Discord:
 
 ``support-internal``
    No rules for this *private* channel, this is **our** space, and no other than the ``@supporter``
    role or ``@admin`` can see what is happening there.
+
+   There is a ``teachers`` channel that is also open for users with the ``@teacher`` role.
+   This is only for discussing things related to courses, or if teachers wants some information
+   from us.
+
+``support questions``
+   This will be our main working category for questions.
 
 ``support questions`` :fas:`arrow-right` ``general``
    Main channel for new questions
@@ -26,18 +32,18 @@ current workflow for Discord interaction with questioners:
 ``support questions`` :fas:`arrow-right` ``tickets``
    | Opened tickets through our RT ticket system can be moved here for
      a more interactive discussion with the questioner.
-   | Ensure when you move a ticket to Discord to create a new ``Thread``,
-     and here name it according to the ticket number/ID as noted in the RT
-     system. This ensures we can easily correlate questions.
+   | Moving a ticket requires us to create a new ``Thread`` with the
+     ticket number/ID as the thread name.
+     This ensures we can easily correlate questions.
 
-   **Remember**: If you solve the question on Discord, note this in the RT system
-   by closing it and saying it got solved on Discord.
+   **Remember**: If you solve the question on Discord, ensure you
+   *resolve* the ticket in the RT system.
 
 ``support questions`` :fas:`arrow-right` ``forum-help``
    **Note**: I do not (personally) have experience with the Forum in Discord,
    we'll learn along the way if this is valuable, or whether it should be deleted.
 
-   *Comments are appreciated* :far:`smile`
+   *Your input is appreciated* :far:`smile`
 
 ``support questions`` :fas:`arrow-right` ``homepage``
    Comments and improvements related to our homepage.
@@ -48,14 +54,14 @@ current workflow for Discord interaction with questioners:
 
 ``python programming``
    These channels are not *our* space of work. They are meant to be a community
-   that should be driven by students -- for students.
+   that should be driven by students -- *for* students.
 
    If you engage there, it will be as a ``non supportor`` role, and should be outside of
    your office hours. :far:`face-smile`
 
 ``dtu courses``
-   Safe keeping if courses want to have a separate channel under the Python support
-   server. This is no enforcement from us, but we will let teachers now about the
+   Safe keeping, if courses want to have a separate channel under the Python support
+   server. This is no enforcement from us, but we will let teachers know about the
    possibility as the Python support unit matures.
 
 
