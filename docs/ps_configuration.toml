@@ -1,3 +1,11 @@
+[support]
+online.days = [
+   "Monday",
+   "Tuesday",
+   "Wednesday",
+   "Thursday",
+   "Friday"
+]
 
 [semester]
 january.name = "3 weeks January"

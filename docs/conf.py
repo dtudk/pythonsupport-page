@@ -333,6 +333,38 @@ def rstjinja(app, docname, source):
     )
     source[0] = rendered
 
+
+# Determine the days we are open online
+_week_days = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+]
+_week_days_dict = dict((day, i) for i, day in enumerate(_week_days))
+print(_week_days_dict)
+
+_days = _conf_toml["support"]["online"]["days"]
+_days = [_week_days_dict[day] for day in _days]
+_days.sort()
+
+_min_days = min(_days)
+_max_days = max(_days)
+if _max_days - _min_days + 1 == len(_days):
+    # continuous days
+    _online_days = f"{_week_days[_min_days]} -- {_week_days[_max_days]}"
+elif len(_days) == 0:
+    _online_day = "Closed!"
+    raise NotImplementedError
+elif len(_days) == 1:
+    _online_days = _week_days[_days[0]]
+else:
+    _online_days = ', '.join([_week_days[day] for day in _days[:-1]])
+    _online_days = f"{_online_days} and {_week_days[_days[-1]]}"
+
 # Create jinja-replacements
 html_context = {
     # Other useful data
@@ -371,6 +403,9 @@ html_context = {
 
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
+
+    # online days
+    "online_days": _online_days,
 }
 
 def setup(app):
