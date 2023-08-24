@@ -132,4 +132,6 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    os/index.rst
    ides/index.rst
 
+   faqs/index.rst
+
    src/about.rst

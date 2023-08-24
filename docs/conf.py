@@ -238,6 +238,8 @@ html_css_files = [
     "css/custom_styles.css",
 ]
 
+# Include summary of the search stuff
+html_show_search_summary = True
 
 # -- Options for todo extension ----------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/extensions/todo.html#configuration
