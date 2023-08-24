@@ -15,6 +15,10 @@ Once an environment has been created, and *sourced*, all ``pip`` commands only a
     An environment will be a directory on your computer. Deleting
     it will be the same as deleting the environment.
 
+.. warning::
+   Environments in :ref:`ide-vscode` requires special handling when
+   working in workspaces. Please see :ref:`here <faq-vscode-venv-workspace>`.
+
 
 An environment can be created using:
 

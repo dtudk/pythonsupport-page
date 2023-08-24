@@ -1,5 +1,5 @@
 
-.. _faq-vs-code-venv-workspace:
+.. _faq-vscode-venv-workspace:
 
 .. card:: VS Code and virtual environments
 
@@ -42,7 +42,7 @@
          The terminal will *not* be in the virtual environment if VS Code is freshly
          opened **and** you have not executed any Python code.
 
-      Press this box to get information about workspaces.
+      Click this box to get information about workspaces.
 
 
    .. card:: Single file scripts
@@ -58,10 +58,10 @@
       block at the bottom right. To the right of this small box, you can press
       a button which lets you choose the interpreter.
 
-      This should be a full path to the
-      This Right next 
+      This should be a full path to the python intepreter (a Python executable).
+      There will generally be a list of Python executables present to choose
+      from, if your wanted interpreter is not present, you'll have to
+      navigate manually to the wanted interpreter.
 
-      At the bottom right of your VS Code editor you will see
-
-      Press this box to get additional details regarding changing the interpreter.
+      Click this box to get additional details regarding changing the interpreter.
 

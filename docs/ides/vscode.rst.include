@@ -18,6 +18,6 @@ integration with Jupyter notebooks.
 Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
 
 Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
-This depends on whether you are using :ref:`virtual environments <python-environments>` (please see this :ref:`faq <faq-vs-code-venv-workspace>`) or not.
+This depends on whether you are using :ref:`virtual environments <python-environments>` (please see this :ref:`faq <faq-vscode-venv-workspace>`) or not.
 Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
 
