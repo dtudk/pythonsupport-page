@@ -68,7 +68,7 @@ Change ``course-A`` with the name of the environment.
       # if the enviroment was created with --name:
       conda activate course-A
       # if the environment was created in a sub directory (--prefix):
-      conda activate ./course-A
+      conda activate .\course-A
 
 .. tab:: {{ win_batch }}
 
@@ -77,7 +77,7 @@ Change ``course-A`` with the name of the environment.
       # if the enviroment was created with --name:
       conda activate course-A
       # if the environment was created in a sub directory (--prefix):
-      conda activate ./course-A
+      conda activate .\course-A
 
 .. tab:: {{ mac_bash }}
 

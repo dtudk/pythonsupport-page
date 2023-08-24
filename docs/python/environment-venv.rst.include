@@ -57,13 +57,13 @@ Change ``course-A`` with the name of the environment.
 
    .. code-block:: powershell
 
-      course-A/Scripts/Activate.ps1
+      course-A\Scripts\Activate.ps1
 
 .. tab:: {{ win_batch }}
 
    .. code-block:: winbatch
 
-      course-A/Scripts/activate.bat
+      course-A\Scripts\activate.bat
 
 .. tab:: {{ mac_bash }}
 
@@ -91,7 +91,7 @@ package, running a code using the environment, and getting out of it.
    .. code-block:: powershell
 
       python -m venv numpy-env
-      numpy-env/Scripts/Activate.ps1
+      numpy-env\Scripts\Activate.ps1
       pip install "numpy==1.23.*"
       python -c "import numpy as np ; print(np.__version__)"
       deactivate
@@ -101,7 +101,7 @@ package, running a code using the environment, and getting out of it.
    .. code-block:: winbatch
 
       python -m venv numpy-env
-      numpy-env/Scripts/activate.bat
+      numpy-env\Scripts\activate.bat
       pip install "numpy==1.23.*"
       python -c "import numpy as np ; print(np.__version__)"
       deactivate

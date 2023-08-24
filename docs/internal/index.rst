@@ -21,6 +21,7 @@ Thus our knowledge will be expanded as new things surface.
    Please come with suggestions for how we should do stuff!
 
 
+
 .. contents::
    :backlinks: none
    :local:
@@ -129,7 +130,13 @@ It is vital we also keep a nice and healthy internal tone.
 .. include:: /internal/rt.rst.include
 
 
+:ref:`Exercises <internal-exercises>`
+-------------------------------------
+
+Go :ref:`here <internal-exercises>` for the exercises.
+
 .. toctree::
    :maxdepth: 1
+   :hidden:
 
    exercises.rst

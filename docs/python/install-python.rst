@@ -18,14 +18,23 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 
 .. tab:: {{ windows }}
 
-   - Download and install Python from `here <python-org-down-win_>`__
-   - Ensure you check :far:`square-check` the ``Add Python {{ python_version }} to PATH`` (at the bottom of the installation GUI)
+   There are multiple ways to do this:
+   1. **Windows 10 and above**: Launch a :ref:`terminal <os-terminal>`, and type ``python``
+      If it runs the Python interpreter it is already installed, if not an ``App store``
+      pane will open up, asking if you want to install Python, simply press install
+      and continue. (It will select the latest stable release which is good!).
+   2. Download and install Python from `here <python-org-down-win_>`__
+      Ensure you check :far:`square-check` the
+      ``Add Python {{ python_version }} to PATH``
+      (at the bottom of the installation GUI)
 
 .. tab:: {{ macos }}
 
    - Download and install Python from `here <python-org-down-mac_>`__
-   - If you are using a newer Mac with an M1 or M2 processor, you need to enable the
-     Rosetta 1 or 2, respectively to ensure Python works.
+   - If you have an M1 or M2 processor, you might need the
+     `Rosetta 1 or 2 <https://support.apple.com/en-gb/HT211861>`__.
+     You can figure this out by pressing the Apple icon (top left)
+     and then ``About this Mac``/``Om denne Mac``.
 
    If there are problems, a more detailed instruction can be found
    `here <https://www.dataquest.io/blog/installing-python-on-mac/>`__.

@@ -165,14 +165,6 @@ Check that you can easily swap between these two environments.
 Exercise 3
 ^^^^^^^^^^
 
-Install the package `pyparsing <https://github.com/pyparsing/pyparsing>`_ at a specific Git commit ``c8b7664`` using ``pip``.
-
-
-.. _internal-exercise-4:
-
-Exercise 4
-^^^^^^^^^^
-
 Install any package, and figure out its location in the file-system. It is important you check against an *importable*
 package.
 
@@ -183,9 +175,9 @@ package.
    - ``pip``
 
 
-.. _internal-exercise-5:
+.. _internal-exercise-4:
 
-Exercise 5
+Exercise 4
 ^^^^^^^^^^
 
 For the currently known recommend IDE's:
@@ -203,9 +195,9 @@ Figure out the following:
    in the ``IPython`` console)
 
 
-.. _internal-exercise-6:
+.. _internal-exercise-5:
 
-Exercise 6
+Exercise 5
 ^^^^^^^^^^
 
 Run through the :course-home:`02002` installation instructions.
@@ -215,9 +207,9 @@ It would also be great to test some of these things in a Jupyter Notebook, to se
 a more constrained environment.
 
 
-.. _internal-exercise-7:
+.. _internal-exercise-6:
 
-Exercise 7
+Exercise 6
 ^^^^^^^^^^
 
 Go to :ref:`pip dependencies <pip-dependencies>` and provoke the output
@@ -227,12 +219,19 @@ Use ``pip check`` as well.
 Also resolve the ``pip check`` errors.
 
 
-.. _internal-exercise-8:
+.. _internal-exercise-7:
 
-Exercise 8
-^^^^^^^^^^
-
-*Only if you are inclined, and have the time!*
+Exercise 7 (not necessary)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Complete :ref:`exercise 2 <internal-exercise-2>` using `virtualenv <env-virtualenv_>`_
 which works slightly different from ``venv``.
+
+
+.. _internal-exercise-8:
+
+Exercise 8 (not necessary)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Install the package `pyparsing <https://github.com/pyparsing/pyparsing>`_ at a specific Git commit ``c8b7664`` using ``pip``.
+
