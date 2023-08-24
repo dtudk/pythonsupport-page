@@ -1,1 +1,46 @@
-.. to be filled
+
+
+.. _faq-win:
+
+Windows only problems
+---------------------
+
+.. _faq-win-ps-execution-policy:
+
+.. card:: Execution policy in PowerShell
+   :link: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies
+   :link-type: url
+
+   Windows
+   ^^^^^^^
+
+   Some times a Windows setup has disabled default execution
+   policies.
+
+   This happens when you find an error message looking like:
+
+   .. code-block:: powershell
+
+      AuthorizationManager check failed.
+      At line:1 char:1
+      + C:\scriptpath\scriptname.ps1
+      + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+          + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+          + FullyQualifiedErrorId : UnauthorizedAccess
+
+   Or, something similar (depending on versions etc.)
+
+   To enable execution do the following:
+
+   1. Open PowerShell in administrator mode:
+      Search for ``powershell`` in the windows search bar
+   2. Select ``Run as administrator``
+   3. Execute this code:
+
+      .. code-block:: powershell
+
+         Set-ExecutionPolicy Unrestricted
+
+   Restart any terminals (including VS Code) and try again.
+
+   Press this box to get more information about execution policies.

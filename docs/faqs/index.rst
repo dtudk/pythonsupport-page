@@ -5,6 +5,8 @@
 FAQ
 ===
 
+Please search on this page ``Ctrl + F`` for text searching
+
 .. contents::
    :local:
    :backlinks: none
