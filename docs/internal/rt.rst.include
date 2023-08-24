@@ -4,7 +4,9 @@
 Ticket system (RT)
 ------------------
 
-Our Ticket system (RT) guideline is:
+The ticket system (RT) can be found `here <https://pythonsupport-rt.dtu.dk/rt/>`__.
+
+Our guideline is:
 
 .. grid:: 1
    :gutter: 2
