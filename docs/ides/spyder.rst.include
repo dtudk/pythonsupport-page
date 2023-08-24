@@ -13,4 +13,4 @@ Spyder is extensible by plugins, if needed. Generally its base installation shou
 
 Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
 This depends on whether you are using :ref:`virtual environments <python-environments>` or not.
-Changing the interpreter location can be done by following `this instruction <https://docs.spyder-ide.org/current/faq.html#using-existing-environmen>`__.
+Changing the interpreter location can be done by following `this instruction <https://docs.spyder-ide.org/current/faq.html#using-existing-environment>`__.
