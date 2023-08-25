@@ -91,6 +91,24 @@ close it like this:
 
    Thanks for your understanding!
 
+General IT questions
+   | If they have questions related to Wireless, getting Multi-Factor-Authentication
+     (MFA) to work, etc. they should ask AIT.
+   | Mail: :mail:`itsupport@student.dtu.dk`
+   | Their phone number is: +45 452 55555.
+   | Office hours 305.027 8:00--15:00.
+DTU Learn
+   Go here: :full-link:`https://learnsupport.dtu.dk/contact.php`
+
+
+.. warning::
+
+   **Professional Secrecy**
+
+   While working with the students, you might see and learn about things
+   not directly relevant to your job. As an employee of DTU, you are obliged to keep that
+   knowledge secret.
+
 
 .. _internal-com-other:
 

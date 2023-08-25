@@ -85,8 +85,8 @@ def get_current_years():
 _year = get_current_years()
 
 print(f"""\
-Links to DTU's course database will be to the year:
-      {_year[0]}-{_year[1]}""")
+ps: Links to DTU's course database will be to the year:
+ps:      {_year[0]}-{_year[1]}""")
 
 
 # Read in all the content from the course configuration.
@@ -253,10 +253,10 @@ if len(_include_todos) > 0:
 
 if _include_todos:
     todo_include_todos = True
-    print("pythonsupport-page: Will SHOW TODOS")
+    print("ps: Will SHOW TODOS")
 else:
     todo_include_todos = False
-    print("pythonsupport-page: Will NOT SHOW TODOS")
+    print("ps: Will NOT SHOW TODOS")
 
 
 # Spell checking
@@ -310,7 +310,6 @@ course_switcher()
 
 create_time_table(_conf_toml["semester"])
 
-print("^^^^^ DONE conf.py ^^^^^")
 
 def rstjinja(app, docname, source):
     """
@@ -347,7 +346,6 @@ _week_days = [
     "Sunday"
 ]
 _week_days_dict = dict((day, i) for i, day in enumerate(_week_days))
-print(_week_days_dict)
 
 _days = _conf_toml["support"]["online"]["days"]
 _days = [_week_days_dict[day] for day in _days]
@@ -366,6 +364,8 @@ elif len(_days) == 1:
 else:
     _online_days = ', '.join([_week_days[day] for day in _days[:-1]])
     _online_days = f"{_online_days} and {_week_days[_days[-1]]}"
+
+print("ps: online days (Monday == 0) ", _days)
 
 # Create jinja-replacements
 html_context = {
@@ -409,6 +409,11 @@ html_context = {
     # online days
     "online_days": _online_days,
 }
+
+
+
+
+print("^^^^^ DONE conf.py ^^^^^")
 
 def setup(app):
     app.connect("source-read", rstjinja)
