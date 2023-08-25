@@ -31,7 +31,7 @@ Here is our current segmentation of the categories and channels on Discord:
 ``support questions``
    This will be our main working category for questions.
 
-``support questions`` :fas:`arrow-right` ``general``
+``support questions`` :fas:`arrow-right` ``questions``
    Main channel for new questions
 
 ``support questions`` :fas:`arrow-right` ``tickets``
@@ -99,6 +99,17 @@ Our Discord guideline is:
          *the thread name can be changed later*
 
       4. Engage with the questioner on how to resolve the problem.
+
+         Generally, additional details may be needed to help the student:
+            
+         - which operating system and Python version
+         - how are they executing their commands, in an IDE terminal, or a *proper*
+           terminal
+         - are they using ``conda``, or a basic Python installation
+         - what is the exact error message
+         - quite often the entire workflow is important, errors may arise due to prior
+           commands which can be difficult to know about if they *only* think the last
+           command was the problematic one
 
       5. When a question has been resolved, the thread should be closed.
          Either:

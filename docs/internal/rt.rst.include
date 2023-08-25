@@ -56,6 +56,17 @@ Our guideline is:
    .. grid-item-card:: 5. Start communicating
 
       Try to solve the problem for the questioner.
+         
+      Generally, additional details may be needed to help the student:
+         
+      - which operating system and Python version
+      - how are they executing their commands, in an IDE terminal, or a *proper*
+        terminal
+      - are they using ``conda``, or a basic Python installation
+      - what is the exact error message
+      - quite often the entire workflow is important, errors may arise due to prior
+        commands which can be difficult to know about if they *only* think the last
+        command was the problematic one
 
       Press ``Reply`` from the message you wish to reply to, note that
       *only* older communications will be part of the new message. Generally

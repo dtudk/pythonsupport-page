@@ -72,7 +72,7 @@ import:
 this will fail with errors if it can not import it, and if it succeeds, it will
 print the version, if the variable (``__version__``) is part of the package.
 
-As will be clear in :ref:`internal-exercise-5`, the above test is also important in the
+As will be clear in :ref:`internal-exercise-4`, the above test is also important in the
 IDE that the questioner is working with.
 
 .. warning::
@@ -184,7 +184,7 @@ For the currently known recommend IDE's:
 
 *In order of priority, if time is limited, only do the first*.
 
-- :ref:`VSCode <ide-vscode>`
+- :ref:`VS Code <ide-vscode>` (please also read the page linked for some additional information)
 - :ref:`Spyder <ide-spyder>`
 - :ref:`PyCharm <ide-pycharm>`
 
