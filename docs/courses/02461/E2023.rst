@@ -11,7 +11,7 @@ Please follow this guideline:
    Install the extensions ``Python`` and ``Jupyter``.
 
 3. Create a virtual environment called ``IntelligentSystems`` using ``venv``.
-   More details can be found in :ref:`this guide <environments>`.
+   More details can be found in :ref:`this guide <python-environments>`.
    If you will retain all course material in a VS Code workspace, you should follow
    :ref:`this FAQ entry <faq-vscode-venv-workspace>`.
       
