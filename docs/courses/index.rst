@@ -18,6 +18,7 @@ Courses
 
    01001/index.rst
    02002/index.rst
+   02461/index.rst
 
 
 Template guide for new course

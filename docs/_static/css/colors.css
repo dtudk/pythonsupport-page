@@ -1,14 +1,34 @@
+/*
+:root {
+   --dtu-red-corporate: #990000;
+   --dtu-white: #ffffff;
+   --dtu-black: #000000;
+   --dtu-blue: #2f3eea;
+   --dtu-bright-green: #1fd082;
+   --dtu-navy-blue: #030f4f;
+   --dtu-yellow: #f6d04d;
+   --dtu-orange: #fc7634;
+   --dtu-pink: #F7BBB1;
+   --dtu-grey: #DADADA;
+   --dtu-red: #E83F48;
+   --dtu-green: #008835;
+   --dtu-purple: #79238E;
+}
+
 * {
+    --bg-primary: var(--dtu-red);
+    --bg-primary-highlight: var(dtu-red-corporate);
+    
     /*--sd-color-primary: #007bff ;
     --sd-color-primary-highlight: #0069d9; */
-    --bg-primary: #E83F48;
-    --bg-primary-highlight: #990000;
-    --sd-color-primary: var(--bg-primary); /* light red */
-    --sd-color-primary-highlight: var(--bg-primary-highlight); /* dtu red */
+    --sd-color-primary: var(--dtu-red); /* light red */
+    --sd-color-primary-highlight: var(--dtu-red-corporate); /* dtu red */
+
     /*--sd-color-secondary: #6c757d;
     --sd-color-secondary-highlight: #5c636a; */
-    --sd-color-secondary: #2F3EEA;
-    --sd-color-secondary-highlight: #030F4F;
+    --sd-color-secondary: var(--dtu-blue);
+    --sd-color-secondary-highlight: var(--dtu-navy-blue);
+
     --sd-color-success: #28a745;
     --sd-color-success-highlight: #228e3b;
     --sd-color-info: #17a2b8;

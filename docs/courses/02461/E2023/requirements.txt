@@ -1,0 +1,14 @@
+torch
+torchvision
+torchaudio
+matplotlib
+opencv-python
+imageio
+scikit-learn
+scikit-image
+jupyter
+pygame
+scipy
+nltk
+ipywidgets
+tqdm

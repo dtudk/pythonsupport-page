@@ -95,6 +95,49 @@ when specifying more than one package on the line, all dependencies will be chec
 against each other at install time.
 
 
+.. _pip-requirements:
+
+Requirements file
+^^^^^^^^^^^^^^^^^
+
+Many Python tutorials will share a *so called* ``requirements.txt`` file which contains
+lines packages. For instance to replicate the installation shown in :ref`pip-installing`, one could create a file (called ``requirements.txt``):
+
+.. code-block::
+
+   numpy==1.24.*
+   scipy,1.10
+   matplotlib
+
+Basically it contains the equivalent of many packages on the same line, see :ref:`pip-installing`.
+
+Installation using a ``requirements.txt`` file is simply specifying the file with ``-r`` flag:
+
+.. tab:: {{ win_powershell }}
+
+   .. code-block:: powershell
+
+      python -m pip install -r requirements.txt
+
+.. tab:: {{ win_batch }}
+
+   .. code-block:: winbatch
+
+      python -m pip install -r requirements.txt
+
+.. tab:: {{ mac_bash }}
+
+   .. code-block:: bash
+
+      python3 -m pip install -r requirements.txt
+
+.. tab:: {{ linux_bash }}
+
+   .. code-block:: bash
+
+      python3 -m pip install -r requirements.txt
+
+
 .. _pip-navigating:
 
 Navigating packages
