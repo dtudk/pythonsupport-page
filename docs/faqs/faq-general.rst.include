@@ -24,12 +24,12 @@
       In this case you can only get virtual environments to work by
       following this:
 
-      1. Open the VS Code terminal (press ``Ctrl + Shift + P``)
+      1. Open the VS Code terminal (press ``Ctrl + Shift + P``, or ``Command + Shift + P`` on Mac)
          and search for ``python env``, select the menu
          ``Python: Create Environment``
       2. Now two additional options open up, choose ``Venv``
       3. Wait until it is done.
-      4. Execute a single line of code, e.g. ``exit()`` + ``Ctrl + ENTER``
+      4. Execute a single line of code, e.g. ``exit()`` + ``Shift + ENTER``
          to force the virtual environment being activated in the terminal
          associated with the workspace (you should see that the left of the
          terminal shows ``.venv``). Then it will execute the ``exit()`` code and
@@ -58,7 +58,7 @@
       block at the bottom right. To the right of this small box, you can press
       a button which lets you choose the interpreter.
 
-      This should be a full path to the python intepreter (a Python executable).
+      This should be a full path to the python interpreter (a Python executable).
       There will generally be a list of Python executables present to choose
       from, if your wanted interpreter is not present, you'll have to
       navigate manually to the wanted interpreter.

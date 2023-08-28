@@ -14,7 +14,6 @@ pre
 9th
 10th
 
-
 Spyder
 VSCode
 PyCharm
@@ -31,3 +30,4 @@ powershell
 
 # proper words:
 explorative
+executables
