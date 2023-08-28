@@ -5,14 +5,18 @@ This guideline is for students attending course 02461 in Autumn 2023.
 
 Please follow this guideline:
 
-1. Install Python by following :ref:`this guide <install-python>`
+1. Install Python by following :ref:`this guide <install-python>`.
 
-2. Install VS Code by following :ref:`this guide <ide-vscode>`
+2. Install VS Code by following :ref:`this guide <ide-vscode>`.
+   Install the extensions Python and Jupyter.
 
-3. Create a virtual environment in VS Code, follow
-   :ref:`this FAQ entry <faq-vscode-venv-workspace>`.
+3. Create a virtual environment called IntelligentSystems using venv, following :ref:`this guide <environments>`.
+   .. code-block::
+      
+      python -m venv IntelligentSystems
 
-4. Install these packages with :ref:`pip`.
+      
+4. Activate the virtual environment and install these packages with :ref:`pip`.
    Copy-paste the below to the ``pip install`` command line as shown in :ref:`pip-installing`
 
    .. code-block::
