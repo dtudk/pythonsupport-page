@@ -16,8 +16,21 @@ DTU Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
+
+.. card:: New student at DTU 2023? Welcome!
+   :class-card: sd-color-primary
+
+   .. button-link:: https://02002.compute.dtu.dk/installation/index.html
+      :color: primary
+      :expand:
+      :click-parent:
+
+      Just landed @ DTU
+        -- press here for the Python installation guide
+
 .. grid:: 1 1 2 2
     :gutter: 2
+
 
     .. grid-item-card:: :fas:`person-running` -- Quick-start guide
         :link: quickstart/index

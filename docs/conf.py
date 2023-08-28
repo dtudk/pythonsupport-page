@@ -236,6 +236,7 @@ if False:
 
 html_css_files = [
     "css/custom_styles.css",
+    "css/colors.css",
 ]
 
 # Include summary of the search stuff
