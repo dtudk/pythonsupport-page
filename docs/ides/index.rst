@@ -27,6 +27,6 @@ stick with it.
    :local:
 
 .. include:: /ides/vscode.rst.include
-.. include:: /ides/pycharm.rst.include
 .. include:: /ides/spyder.rst.include
+.. include:: /ides/pycharm.rst.include
 .. include:: /ides/notepad++.rst.include

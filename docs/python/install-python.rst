@@ -33,7 +33,9 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 .. tab:: {{ macos }}
 
    - Download and install Python from `here <python-org-down-mac_>`__
-   - If you have an M1 or M2 processor, you might need the
+   - Once installed, check if Python works (see further down)
+   - If Python does not work *AND* if you have an M1 or M2 processor,
+     you might need the
      `Rosetta 1 or 2 <https://support.apple.com/en-gb/HT211861>`__.
      You can figure this out by pressing the Apple icon (top left)
      and then ``About this Mac``/``Om denne Mac``.

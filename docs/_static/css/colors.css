@@ -1,5 +1,6 @@
-/*
-:root {
+/* */
+
+* {
    --dtu-red-corporate: #990000;
    --dtu-white: #ffffff;
    --dtu-black: #000000;
@@ -13,9 +14,7 @@
    --dtu-red: #E83F48;
    --dtu-green: #008835;
    --dtu-purple: #79238E;
-}
 
-* {
     --bg-primary: var(--dtu-red);
     --bg-primary-highlight: var(dtu-red-corporate);
     
