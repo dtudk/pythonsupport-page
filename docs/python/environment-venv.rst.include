@@ -135,7 +135,7 @@ package, running a code using the environment, and getting out of it.
 
 .. _environment-venv-vscode:
 
-:ref:`IDE -- VS Code <ide-vscode>`
+:ref:`VS Code <ide-vscode>`
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :ref:`VS Code <ide-vscode>` manages virtual environments via intrinsic VS Code commands.
