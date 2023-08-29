@@ -5,7 +5,7 @@
 FAQ
 ===
 
-Please search on this page ``Ctrl + F`` for text searching
+Please search on this page :kbd:`Ctrl-F` for text searching
 
 .. contents::
    :local:

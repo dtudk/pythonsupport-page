@@ -78,7 +78,7 @@ Our guideline is:
          and the latest at the bottom.
 
          This default can be changed here:
-         ``Logged in as X -> Settings -> Preferences -> Ticket Display -> Show oldest history first``
+         :menuselection:`Logged in as X --> Settings --> Preferences --> Ticket Display --> Show oldest history first`
 
       .. danger::
          Quite often it is nice with inputs from your other

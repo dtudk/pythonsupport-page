@@ -24,8 +24,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    Either of
    
    1. Search for ``powershell`` in the Windows taskbar search
-   2. A short-cut: press ``Win + R`` buttons (simultaneously), then type
-      ``powershell`` in the small run window appearing, press ``Enter``.
+   2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
+      ``powershell`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
 
       .. code-block:: powershell
@@ -39,8 +39,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    Either of
 
    1. Search for ``cmd`` in the Windows taskbar search
-   2. A short-cut: press ``Win + R`` buttons (simultaneously), then type
-      ``cmd`` in the small run window appearing, press ``Enter``.
+   2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
+      ``cmd`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
 
       .. code-block:: winbatch
@@ -70,9 +70,9 @@ a comment in the terminal, i.e. it is *not* considered a command.
 
    On Ubuntu one could do:
 
-   1. Press ``Ctrl + Alt + T`` simultaneously.
-   2. Press the ``Win`` key which should open up a search box, type
-      ``terminal`` and press ``Enter``
+   1. Press :kbd:`Ctrl-Alt-T` simultaneously.
+   2. Press the :kbd:`Win` key which should open up a search box, type
+      ``terminal`` and press :kbd:`Enter`
    3. Lastly, one option is to open up a file explorer and right-click a folder,
       there should be an option name ``Open in Terminal`` which will open that
       folder in the terminal.

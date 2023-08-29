@@ -3,6 +3,8 @@
 `venv -- environment <env-venv_>`_ {{ pref_symbol }}
 -------------------------------------------------------
 
+Terminal
+^^^^^^^^
 
 The package `venv <env-venv_>`_ creates :ref:`environments <python-environments>` using the :ref:`pip` method.
 Once an environment has been created, and *sourced*, all ``pip`` commands only act in *that environment*.
@@ -130,3 +132,58 @@ package, running a code using the environment, and getting out of it.
       python3 -c "import numpy as np ; print(np.__version__)"
       deactivate
 
+
+.. _environment-venv-vscode:
+
+:ref:`IDE -- VS Code <ide-vscode>`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:ref:`VS Code <ide-vscode>` manages virtual environments via intrinsic VS Code commands.
+
+Here is a brief explanation on how to setup a virtual environment
+in VS Code.
+
+.. warning::
+   If you encounter problems with virtual environments in VS Code, please see
+   :ref:`here <faq-vscode-venv-workspace>`.
+
+First check that you are not already using a virtual environment (see point 5. below).
+
+1. Create a folder/directory according to the course you wish to work on.
+   
+   *This is optional, but recommended to retain a structure of your course
+   activities*.
+
+2. Press :guilabel:`Open Folder` to start working in the designated course
+   folder. If you already have several opened folders, this will not be
+   visible. Just select the workspace.
+
+   .. image:: images/vscode-open-folder.png
+      :width: 700
+      :align: center
+      :alt: Open folder in VS Code
+
+3. Once you are in a folder/workspace we should create a virtual
+   environment. Press :kbd:`Ctrl-Shift-P` and search for
+   ``Python: Create Environment...``, and select that.
+
+   .. image:: images/vscode-python-env.png
+      :width: 600
+      :align: center
+      :alt: VS Code command prompt
+
+4. Next, select the below option 
+
+   .. image:: images/vscode-python-env-venv.png
+      :width: 600
+      :align: center
+      :alt: VS Code venv creation
+
+5. Check that the virtual environment is functional. Sometimes you need
+   to run a small Python script to enable the virtual environment,
+   either press :fas:`arrow-right`, or :kbd:`Shift-Enter`
+
+   .. image:: images/vscode-python-env-venv-check.png
+      :width: 700
+      :align: center
+      :alt: Check if virtual environment is enabled through VS Code

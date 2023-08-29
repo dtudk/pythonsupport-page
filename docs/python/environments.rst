@@ -70,25 +70,26 @@ in the virtual environment:
 
    .. code-block:: powershell
 
-      python -m ipykernel install --user --prefix <path to venv|conda-env>
+      python -m ipykernel install --prefix <path to venv|conda-env>
 
 .. tab:: {{ win_batch }}
 
    .. code-block:: winbatch
       
-      python -m ipykernel install --user --prefix <path to venv|conda-env>
+      python -m ipykernel install --prefix <path to venv|conda-env>
 
 .. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
-      python3 -m ipykernel install --user --prefix <path to venv|conda-env>
+      python3 -m ipykernel install --prefix <path to venv|conda-env>
 
 .. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
-      python3 -m ipykernel install --user --prefix <path to venv|conda-env>
+      python3 -m ipykernel install --prefix <path to venv|conda-env>
 
+Only insert the folder name in the ``< ... >`` block.
 The problem, and fix, is described in greater detail
 `here <https://ipython.readthedocs.io/en/stable/install/kernel_install.html>`__.
