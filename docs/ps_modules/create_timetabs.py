@@ -159,7 +159,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
         f.write(f"The {name} semester will start in {-offset_week} week.\n\n")
     elif offset_week < weeks:
         if day > 5:
-            f.write(f"The coming {name} semester week {offset_week+1}.\n\n")
+            f.write(f"The current/coming {name} semester week is {offset_week+1}.\n\n")
         else:
             f.write(f"The current {name} semester week is {offset_week+1}.\n\n")
 
