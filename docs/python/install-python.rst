@@ -20,7 +20,8 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 
    Here are the suggested (in priority order) ways of installing Python:
 
-   1. **Windows 10 and above** {{pref_symbol}}: Launch a :ref:`terminal <os-terminal>`, and type ``python``
+   1. **Windows 10 and above** {{pref_symbol}}: Launch a :ref:`terminal <os-terminal>`
+      (press :kbd:`Win-R`, type ``cmd`` and :kbd:`enter`), and type ``python``
       If it runs the Python interpreter it is already installed, if not an ``App store``
       pane will open up, asking if you want to install Python, simply press install
       and continue. It will select the latest stable release which is good!
@@ -40,9 +41,10 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 
       .. code-block:: bash
       
-         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> $HOME/.profile && eval "$(/usr/local/bin/brew shellenv)" && NOINTERACTIVE=1 brew install python
+         _TMP_FILE=$(mktemp) && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" | tee >(grep "brew shellenv" | tee $_TMP_FILE) && eval "$(cat $_TMP_FILE)" && (echo; cat $_TMP_FILE >> $HOME/.profile) && brew install python
 
-      Press :kbd:`Enter`, and it will install homebrew *and* Python.
+      Press :kbd:`Enter`, and after some moments it will ask you to **Press RETURN/ENTER**
+      again. Once done, you will have Homebrew *and* Python.
 
       See `here <https://brew.sh/>`__ for more details on Homebrew.
 

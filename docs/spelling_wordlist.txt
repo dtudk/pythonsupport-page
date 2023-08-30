@@ -27,6 +27,7 @@ miniconda
 mamba
 polytechnical
 powershell
+homebrew
 
 # proper words:
 explorative
