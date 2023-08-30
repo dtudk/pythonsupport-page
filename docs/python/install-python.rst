@@ -18,30 +18,47 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
 
 .. tab:: {{ windows }}
 
-   There are multiple ways to do this:
+   Here are the suggested (in priority order) ways of installing Python:
 
-   1. **Windows 10 and above**: Launch a :ref:`terminal <os-terminal>`, and type ``python``
+   1. **Windows 10 and above** {{pref_symbol}}: Launch a :ref:`terminal <os-terminal>`, and type ``python``
       If it runs the Python interpreter it is already installed, if not an ``App store``
       pane will open up, asking if you want to install Python, simply press install
-      and continue. (It will select the latest stable release which is good!).
+      and continue. It will select the latest stable release which is good!
 
    2. Download and install Python from `here <python-org-down-win_>`__
-       Ensure you check :far:`square-check` the
-       ``Add Python {{ python_version }} to PATH``
-       (at the bottom of the installation GUI)
+      Select the **64bit** version.
+      Ensure you check :far:`square-check` the
+      ``Add Python {{ python_version }} to PATH``
+      (at the bottom of the installation GUI)
 
 .. tab:: {{ macos }}
 
-   - Download and install Python from `here <python-org-down-mac_>`__
-   - Once installed, check if Python works (see further down)
-   - If Python does not work *AND* if you have an M1 or M2 processor,
-     you might need the
-     `Rosetta 1 or 2 <https://support.apple.com/en-gb/HT211861>`__.
-     You can figure this out by pressing the Apple icon (top left)
-     and then ``About this Mac``/``Om denne Mac``.
+   Here are the suggested (in priority order) ways of installing Python:
 
-   If there are problems, a more detailed instruction can be found
-   `here <https://www.dataquest.io/blog/installing-python-on-mac/>`__.
+   1. **Homebrew** {{pref_symbol}}: Launch a :ref:`terminal <os-terminal>` (press :kbd:`Command-Space`),
+      and execute the following code:
+
+      .. code-block:: bash
+      
+         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> $HOME/.profile && eval "$(/usr/local/bin/brew shellenv)" && NOINTERACTIVE=1 brew install python
+
+      Press :kbd:`Enter`, and it will install homebrew *and* Python.
+
+      See `here <https://brew.sh/>`__ for more details on Homebrew.
+
+   2. 
+      - Download and install Python from `here <python-org-down-mac_>`__
+      - Once installed, check if Python works (see further down)
+      - If Python does not work *AND* if you have an M1 or M2 processor,
+         you might need the
+         `Rosetta 1 or 2 <https://support.apple.com/en-gb/HT211861>`__.
+         You can figure this out by pressing the Apple icon (top left)
+         and then ``About this Mac``/``Om denne Mac``.
+
+      If there are problems, a more detailed instruction can be found
+      `here <https://www.dataquest.io/blog/installing-python-on-mac/>`__.
+
+      If you still have problems, please contact us at :mail:`pythonsupport@dtu.dk`.
 
 .. tab:: {{ linux }}
 

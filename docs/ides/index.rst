@@ -11,12 +11,15 @@ turn around. Simultaneously it can help with showing documentation for the
 API's currently being used.
 
 .. note::
+   
+   It is recommended that you use :ref:`VS Code <ide-vscode>` when beginning
+   your studies at DTU.
+   This will be the default IDE for all Polytechnical Foundation courses.
 
-   There is no correct or wrong choice. Take a look at them all, or talk to your
-   fellow students and hear their experiences.
+   If you later wish to play around with other IDE's, feel free to do so.
+   They are all similar, and different at the same time.
 
-   Sometimes course teachers may recommend a specific IDE.
-
+   Please note if course teachers recommends a specific IDE.
 
 They are all good, and generally users prefer one over the others, and primarily
 stick with it.
