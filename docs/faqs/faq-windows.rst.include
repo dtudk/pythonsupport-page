@@ -38,6 +38,8 @@ Windows only problems
 
          Set-ExecutionPolicy Unrestricted
 
+      **Important**: Press :kbd:`A` when asked (*not* :kbd:`Y`)!
+
    Restart any terminals (including VS Code) and try again.
 
    Click this box to get more information about execution policies.

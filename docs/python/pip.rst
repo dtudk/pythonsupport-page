@@ -90,9 +90,29 @@ The above will install:
 - `scipy`_ at the latest version, but older than the 1.10
 - `matplotlib`_ at the latest version
 
-
 when specifying more than one package on the line, all dependencies will be checked
 against each other at install time.
+
+.. note::
+   
+   You will quite often encounter some warnings or notices from ``pip``,
+   they look something like the following. It is perfectly normal, and
+   it is not necessary to do what it says.
+
+   ``pip`` versions 21 and older:
+
+   .. image:: images/pip21_upgrade.png
+      :width: 800
+      :align: left
+      :alt: pip upgrade notice from versions 21 and older
+   
+   ``pip`` versions 22 and newer:
+
+   .. image:: images/pip22_upgrade.png
+      :width: 550
+      :align: left
+      :alt: pip upgrade notice from versions 22 and newer
+
 
 
 .. _pip-requirements:
