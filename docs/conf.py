@@ -55,6 +55,8 @@ extensions = [
     'sphinxcontrib.spelling',
     # design, grids etc.
     'sphinx_design',
+    # enable target=_blank via jquery
+    'sphinxcontrib.jquery',
 ]
 
 intersphinx_mapping = {
@@ -233,6 +235,10 @@ if False:
     }
     #html_theme_options["switcher"]["json_url"] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
+
+html_js_files = [
+    "js/external_tab.js",
+]
 
 html_css_files = [
     "css/custom_styles.css",

@@ -13,3 +13,5 @@ sphinxcontrib-spelling
 # and sphinx-book-theme is based on pydata-sphinx-theme,
 # so it shouldn't be necessary
 sphinx-design
+# enable custom javascript
+sphinxcontrib-jquery
