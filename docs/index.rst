@@ -135,7 +135,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Everyday use
+   :caption: Advanced usage
    
    python/environments.rst
 

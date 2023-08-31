@@ -1,14 +1,17 @@
 
 .. _ides:
 
-Integrated development environment (IDE)
+Editors / IDE's
 ========================================
 
 
 IDE's is an engineers integral work-horse for creating and executing code.
-It generally comprises utilities that aid the programmer for faster development
-turn around. Simultaneously it can help with showing documentation for the
-API's currently being used.
+Any code, in any language, can be written in any text-editor. However,
+integrated development environments (IDE's) will extend the editor functionality
+and aid the programmer in various ways, either by creating tooltips when typing code
+or spell checking, and many other things.
+Therefore choosing and becoming comfortable with an IDE can greatly improve
+the turn around for the developer.
 
 .. note::
    
@@ -21,8 +24,6 @@ API's currently being used.
 
    Please note if course teachers recommends a specific IDE.
 
-They are all good, and generally users prefer one over the others, and primarily
-stick with it.
 
 .. contents::
    :depth: 1
