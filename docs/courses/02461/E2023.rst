@@ -14,6 +14,9 @@ Please follow this guideline:
    More details can be found in :ref:`this guide <python-environments>`.
    If you will retain all course material in a VS Code workspace, you should follow
    :ref:`this FAQ entry <faq-vscode-venv-workspace>`.
+
+   .. warning::
+      If using Windows you should also follow :ref:`this FAQ entry <faq-win-ps-execution-policy>`
       
 4. Activate the virtual environment and install these packages with :ref:`pip`.
    Copy-paste the below to the ``pip install`` command line as shown in :ref:`pip-installing`

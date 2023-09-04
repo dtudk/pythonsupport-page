@@ -8,8 +8,6 @@ Windows only problems
 .. _faq-win-ps-execution-policy:
 
 .. card:: Windows execution policy in PowerShell
-   :link: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies
-   :link-type: url
    
    Some times a Windows setup has disabled default execution
    policies.
@@ -42,4 +40,4 @@ Windows only problems
 
    Restart any terminals (including VS Code) and try again.
 
-   Click this box to get more information about execution policies.
+   `Click here to get more information about execution policies <https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies>`__.

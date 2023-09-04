@@ -42,7 +42,7 @@ jobs:
           # currently sphinx-book-theme[1.0.1] has a <7 dependency,
           # but it works locally and fixes some problems related to
           # included documents and jinja replacements
-          python -m pip install -U sphinx>=7.2.5
+          python -m pip install -U "sphinx>=7.2.5"
 
       - name: Build and tar.gz documentation
         run: |

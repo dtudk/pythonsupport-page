@@ -431,4 +431,9 @@ def rstjinja_include(app, relative_path, parent_docname, content):
 
 def setup(app):
     app.connect("source-read", rstjinja_source)
-    app.connect("include-read", rstjinja_include)
+    try:
+        # include-read was added in 7.2.5 of Sphinx
+        app.connect("include-read", rstjinja_include)
+    except BaseException as e:
+        # we don't do anything
+        pass

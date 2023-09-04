@@ -61,11 +61,17 @@ Change ``course-A`` with the name of the environment.
 
 .. tab:: {{ win_powershell }}
 
+   .. warning::
+      Please see :ref:`this FAQ entry <faq-win-ps-execution-policy>`!
+
    .. code-block:: powershell
 
       course-A\Scripts\Activate.ps1
 
 .. tab:: {{ win_batch }}
+   
+   .. warning::
+      Please see :ref:`this FAQ entry <faq-win-ps-execution-policy>`!
 
    .. code-block:: winbatch
 

@@ -9,6 +9,41 @@ If you are a DTU student and want help with installing
 packages for a course at DTU, plese visit 
 [pythonsupport.dtu.dk](https://pythonsupport.dtu.dk).
 
+
+
+Building the documentation
+--------------------------
+
+To build the documentation in a controlled environment we recommend you
+to use a virtual environment.
+Subsequently, the required packages should be installed, and lastly the
+documentation can be built.
+
+The steps can be outlined like this:
+
+1. Create a virtual environment (on a Linux box)
+
+      python3 -m venv ps-page-env
+      source ps-page-env/bin/activate
+
+2. Install the requirements:
+
+      python3 -m pip install -r requirements.txt
+      python3 -m pip install "sphinx>=7.2.5"
+
+3. Build documentation
+
+      make
+
+   Now the documentation is build and can be found in `build/html`.
+
+4. Open the documentation:
+
+      firefox build/html/index.html
+
+   And you should be ready to see the just build documentation.
+
+
 Running Locally in Podman
 -------------------------
 
