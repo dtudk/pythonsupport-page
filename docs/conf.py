@@ -318,30 +318,6 @@ course_switcher()
 create_time_table(_conf_toml["semester"])
 
 
-def rstjinja(app, docname, source):
-    """
-    Render pages as a jinja template for fancy templating goodness.
-
-    The reason for resorting to the jinja templating is simply because
-    the directives might not always like combinations of replacement
-    directives *and* other directives, e.g. the following would fail:
-
-    .. |win| replace:: Hello :fas:`ranking-star`
-
-    .. tab:: |win|
-
-    When templating all gets replaced *in-place*.
-    """
-    # Make sure we're outputting HTML
-    if app.builder.format != 'html':
-        return
-    src = source[0]
-    rendered = app.builder.templates.render_string(
-        src, app.config.html_context
-    )
-    source[0] = rendered
-
-
 # Determine the days we are open online
 _week_days = [
     "Monday",
@@ -418,9 +394,41 @@ html_context = {
 }
 
 
-
-
 print("^^^^^ DONE conf.py ^^^^^")
 
+
+def rstjinja(app, source):
+    """
+    Render pages as a jinja template for fancy templating goodness.
+
+    The reason for resorting to the jinja templating is simply because
+    the directives might not always like combinations of replacement
+    directives *and* other directives, e.g. the following would fail:
+
+    .. |win| replace:: Hello :fas:`ranking-star`
+
+    .. tab:: |win|
+
+    When templating all gets replaced *in-place*.
+
+    Thanks for https://www.ericholscher.com/blog/2016/jul/25/integrating-jinja-rst-sphinx/
+    """
+    # Make sure we're outputting HTML
+    if app.builder.format != 'html':
+        return source
+
+    return app.builder.templates.render_string(
+        source, app.config.html_context
+    )
+
+def rstjinja_source(app, docname, content):
+    """source-read event"""
+    content[0] = rstjinja(app, content[0])
+
+def rstjinja_include(app, relative_path, parent_docname, content):
+    """include-read event"""
+    content[0] = rstjinja(app, content[0])
+
 def setup(app):
-    app.connect("source-read", rstjinja)
+    app.connect("source-read", rstjinja_source)
+    app.connect("include-read", rstjinja_include)
