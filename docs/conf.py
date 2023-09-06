@@ -50,13 +50,19 @@ extensions = [
     'sphinxemoji.sphinxemoji',
     # allow copybutton on code-blocks
     'sphinx_copybutton',
-    # spell checking
-    'sphinxcontrib.spelling',
     # design, grids etc.
     'sphinx_design',
     # enable target=_blank via jquery
     'sphinxcontrib.jquery',
 ]
+
+# Add the spelling extension if available
+try:
+    import sphinxcontrib.spelling
+    # spell checking
+    extensions.append("sphinxcontrib.spelling")
+except ImportError:
+    print("cannot do spell checks! sphinxcontrib.spelling cannot be imported")
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
