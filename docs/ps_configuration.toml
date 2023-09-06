@@ -1,13 +1,23 @@
-[support]
-online.days = [
+[pythonsupport]
+mail = "pythonsupport@dtu.dk"
+homepage = "https://pythonsupport.dtu.dk"
+repository = "https://github.com/dtudk/pythonsupport-page"
+discord-channel = "https://discord.com/channels/1138793943526539266/1138793944247980124"
+discord-invite = "https://discord.gg/h8EVaV9ShP"
+
+online-days = [
    "Monday",
    "Tuesday",
    "Wednesday",
    "Thursday",
-   "Friday"
+   "Friday",
 ]
 
+
 [semester]
+# General, fill in information for all semesters
+# If each year does not have anything written, then these
+# will be their defaults!
 january.name = "3 weeks January"
 january.weeks = 3
 
@@ -20,6 +30,7 @@ june.weeks = 3
 autumn.name = "13 weeks Autumn"
 autumn.weeks = 13
 
+
 [semester.2023]
 january.week-start = 1
 spring.week-start = 5
@@ -29,11 +40,7 @@ autumn.week-breaks = 42
 
 [semester.2024]
 january.week-start = 1
-january.week = [
-    "Closed",
-    "Closed",
-    "Closed"
-]
+january.week = ["Closed", "Closed", "Closed"]
 
 spring.week-start = 5
 june.week-start = 24
@@ -44,7 +51,6 @@ june.week-start = 24
 [dtu]
 # The course database primary link
 course-base = "https://kurser.dtu.dk"
-
 
 [course.01001]
 home = "https://01001.compute.dtu.dk"

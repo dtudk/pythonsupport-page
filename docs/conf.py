@@ -32,7 +32,6 @@ recommended_python = "3.11"
 _pref_symbol = ":fas:`ranking-star`"
 _pref_symbol = ""
 
-url = "https://pythonsupport.dtu.dk"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -95,7 +94,9 @@ ps:      {_year[0]}-{_year[1]}""")
 # This is much simpler to maintain and we could allow other
 # details as well.
 _conf_toml = toml.load(open("ps_configuration.toml", 'rb'))
+_pythonsupport = _conf_toml["pythonsupport"]
 
+url = _pythonsupport["homepage"]
 
 _coursepages = DictFormatter()
 # Add all courses here
@@ -125,8 +126,9 @@ extlinks = {
     "gh-disc": ("https://github.com/dtudk/pythonsupport-page/discussions/%s", "%s"),
 }
 
-_discord_general = "https://discord.com/channels/1138793943526539266/1138793944247980124"
-_discord_invite = "https://discord.gg/h8EVaV9ShP"
+_discord_general = _pythonsupport["discord-channel"]
+_discord_invite = _pythonsupport["discord-invite"]
+
 
 # Add common links to all
 rst_epilog = f"""\
@@ -177,7 +179,7 @@ _icon_links = [
     },
     {
         "name": "Mail to Python support",
-        "url": "mailto:pythonsupport@dtu.dk",
+        "url": f"mailto:{_pythonsupport['mail']}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
     },
     {
@@ -209,7 +211,7 @@ html_theme_options = {
     "path_to_docs": "docs/",
     "use_repository_button": True,
     "repository_provider": "github",
-    "repository_url": "https://github.com/dtudk/pythonsupport-page",
+    "repository_url": _pythonsupport["repository"],
     "use_edit_page_button": True,
     "use_fullscreen_button": True,
     "header_links_before_dropdown": 4,
@@ -330,7 +332,7 @@ _week_days = [
 ]
 _week_days_dict = dict((day, i) for i, day in enumerate(_week_days))
 
-_days = _conf_toml["support"]["online"]["days"]
+_days = _pythonsupport["online-days"]
 _days = [_week_days_dict[day] for day in _days]
 _days.sort()
 
