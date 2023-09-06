@@ -77,7 +77,7 @@ aid with few, if any, side steps.
    Please, openly, discuss this with the team. We are all here for each other! :fas:`people-group`
 
 
-Questioners will undoubtedly ask questions outside the scope of our scope.
+Questioners will undoubtedly ask questions outside our scope.
 The best approach would be to *guess* who/where the question could be answered.
 For instance if the question is related to a Python programming problem, one could
 close it like this:
@@ -153,8 +153,17 @@ It is vital we also keep a nice and healthy internal tone.
 
 Go :ref:`here <internal-exercises>` for the exercises.
 
+
+:ref:`Editing documentation <internal-documentation>`
+-----------------------------------------------------
+
+Go :ref:`here <internal-documentation>` for instructions on how to
+fix/add new documentation.
+
+
 .. toctree::
    :maxdepth: 1
    :hidden:
 
    exercises.rst
+   documentation.rst

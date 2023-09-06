@@ -28,24 +28,25 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-      python3 -m pip install -r requirements.txt
-      # currently there is a blocking dependency on some of the
-      # packages listed in requirements.txt, however, since pip
-      # will allow updating a package that breaks compatibility, we
-      # can use this to our advantage. The documentation builds fine.
-      # Only some non-used features will not work. So we should be fine.
-      #    :fingers_crossed:
-      python3 -m pip install "sphinx>=7.2.5"
+       bash
+       python3 -m pip install -r requirements.txt
+       # currently there is a blocking dependency on some of the
+       # packages listed in requirements.txt, however, since pip
+       # will allow updating a package that breaks compatibility, we
+       # can use this to our advantage. The documentation builds fine.
+       # Only some non-used features will not work. So we should be fine.
+       #    :fingers_crossed:
+       python3 -m pip install "sphinx>=7.2.5"
 
 3. Build documentation
 
-      make
+       make
 
    Now the documentation is build and can be found in `build/html`.
 
 4. Open the documentation:
 
-      firefox build/html/index.html
+       firefox build/html/index.html
 
    And you should be ready to see the just build documentation.
 

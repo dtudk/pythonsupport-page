@@ -28,8 +28,11 @@
     --sd-color-secondary: var(--dtu-blue);
     --sd-color-secondary-highlight: var(--dtu-navy-blue);
 
-    --sd-color-success: #28a745;
-    --sd-color-success-highlight: #228e3b;
+    /*--sd-color-success: #28a745;
+    --sd-color-success-highlight: #228e3b; */
+    --sd-color-success: var(--dtu-green);
+    --sd-color-success-highlight: var(--dtu-bright-green);
+
     --sd-color-info: #17a2b8;
     --sd-color-info-highlight: #148a9c;
     --sd-color-warning: #f0b37e;

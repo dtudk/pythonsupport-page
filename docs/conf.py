@@ -357,6 +357,7 @@ html_context = {
     # Other useful data
     "github_user": "dtudk",
     "github_repo": "pythonsupport-page",
+    "ps_repository": _pythonsupport["repository"],
     "github_version": "main",
     "python_version": recommended_python,
     "path_to_docs": "docs/",
