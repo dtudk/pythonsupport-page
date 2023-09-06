@@ -48,15 +48,15 @@ DTU Python support
         :link: mailto:pythonsupport@dtu.dk
         :link-type: url
 
-        | Contact us outside working hours.
         | {{online_days}} in the evening.
+        | Contact us outside working hours.
    
     .. grid-item-card:: :fab:`discord` -- Discord
         :link: https://discord.gg/h8EVaV9ShP
         :link-type: url
 
-        | Contact us outside working hours.
         | {{online_days}} in the evening.
+        | Contact us outside working hours.
 
 
 Welcome to the DTU student support unit!  
@@ -82,17 +82,17 @@ Office hours
    depending on the used lecture rooms in the Polytechnical Foundation courses.
    See further down for our locations during specific weeks of the semester.
    This page will be updated continuously.
-Mail -- :mail:`pythonsupport@dtu.dk`
+Mail -- :mail:`pythonsupport@dtu.dk` -- {{online_days}} in the evening
    Outside of office hours we can be contacted through emails. We strive to return
-   answers as soon as possible, and will have someone ready to answer {{online_days}}
-   in the evening
-Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_
-   Our support team will also be present on the Discord chatting service.
+   answers as soon as possible.
+
+Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_ -- {{online_days}} in the evening
+   Our support team will also be present on the Discord chat service.
 
    Using the Discord channel requires signing up to Discord's terms, DTU
-   have no control over Discord and how they use your data. If you feel uncomfortable
-   about signing up, please use the email or the physical meet-ups. Otherwise contact
-   us for details if needed.
+   has no control over Discord and how they use your data. If you feel uncomfortable
+   about signing up, please use the email or the physical meet-ups.
+
 
 .. include:: /timetable/index.rst
 
