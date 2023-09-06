@@ -82,11 +82,11 @@ Office hours
    depending on the used lecture rooms in the Polytechnical Foundation courses.
    See further down for our locations during specific weeks of the semester.
    This page will be updated continuously.
-Mail -- :mail:`pythonsupport@dtu.dk` -- {{online_days}} in the evening
+Mail -- :mail:`pythonsupport@dtu.dk`  |  {{online_days}} in the evening
    Outside of office hours we can be contacted through emails. We strive to return
    answers as soon as possible.
 
-Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_ -- {{online_days}} in the evening
+Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_  |  {{online_days}} in the evening
    Our support team will also be present on the Discord chat service.
 
    Using the Discord channel requires signing up to Discord's terms, DTU
