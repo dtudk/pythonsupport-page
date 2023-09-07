@@ -202,7 +202,7 @@ def g_course_soup(course_id: str, lang: Lang) -> BeautifulSoup:
 
 	else:
 		print(
-			f"[https://kurser.dtu.dk/course/{course_id}] GET {lang} to {path_scrape_cache}...",
+			f"[https://kurser.dtu.dk/course/{course_id}] GET {lang} to {path_scrape_cache}..."
 		)
 		r = requests.get(
 			f"https://kurser.dtu.dk/course/{course_id}",
@@ -233,7 +233,7 @@ def parse_course_title_en(
 
 def parse_course_information(course_id: str, soups: dict[Lang, BeautifulSoup]):
 	print(
-		f"[https://kurser.dtu.dk/course/{course_id}] Scraping {course_id}...",
+		f"[https://kurser.dtu.dk/course/{course_id}] Scraping {course_id}..."
 	)
 	course = {
 		"course_id": course_id,
@@ -535,7 +535,7 @@ if __name__ == "__main__":
 	course_search_urls = parse_course_search_home(course_search_home_soup)
 
 	print(
-		"[https://kurser.dtu.dk/search?*] Processing Search for All Courses...",
+		"[https://kurser.dtu.dk/search?*] Processing Search for All Courses..."
 	)
 	course_search_all_soup = g_course_search_all_soup(
 		course_search_urls["url_search_all"],
@@ -548,7 +548,7 @@ if __name__ == "__main__":
 	# for course_id in {"28150"}:
 	for course_id in course_ids:
 		print(
-			f"[https://kurser.dtu.dk/course/{course_id}] Processing Course {course_id}...",
+			f"[https://kurser.dtu.dk/course/{course_id}] Processing Course {course_id}..."
 		)
 
 		course_soups = {
@@ -606,7 +606,7 @@ if __name__ == "__main__":
 			f.write(reparse_toml(toml_string))
 
 		print(
-			f"[https://kurser.dtu.dk/course/{course_id}] Wrote to {path_course_config}...",
+			f"[https://kurser.dtu.dk/course/{course_id}] Wrote to {path_course_config}..."
 		)
 		print()
 		print()
