@@ -37,6 +37,7 @@ import requests
 import tomlkit
 from bs4 import BeautifulSoup
 from markdownify import markdownify as md
+## md() stringifies HTML from course descriptions into a readable form.
 
 
 class Lang(enum.StrEnum):
