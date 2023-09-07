@@ -17,14 +17,14 @@
 import sys
 
 SUPPORTED_PY_MAJOR = 3
-SUPPORTED_PY3_VERSIONS = [11, 12, 13, 14]
+MIN_PY_MINOR_VERSION = 11
 if not all(
 	[
 		sys.version_info.major == SUPPORTED_PY_MAJOR,
-		sys.version_info.minor in SUPPORTED_PY3_VERSIONS,
+		sys.version_info.minor >= MIN_PY_MINOR_VERSION,
 	],
 ):
-	print("Python 3.X minor version must be in:", SUPPORTED_PY3_VERSIONS)
+	print(f"Python 3.X minor version must be > 3.{MIN_PY_MINOR_VERSION}")
 	sys.exit(1)
 
 import enum
