@@ -109,6 +109,27 @@ DTU Learn
    not directly relevant to your job. As an employee of DTU, you are obliged to keep that
    knowledge secret.
 
+.. _internal-opening-questions:
+
+Opening questions when mailing/chatting with questioners
+--------------------------------------------------------
+
+Here is a short item list of questions that may be useful for asking them.
+They are in code blocks so you can easily copy paste them directly into
+the Discord message/email system.
+
+Quite often we tend to suggest solutions before we know the exact problem.
+It can be very useful to get some basic information about the system, before suggesting
+workarounds.
+
+.. code-block:: shell
+
+   - Which operating system, Windows, MacOS, Linux?
+   - How did you install Python? App-store, download link, anaconda, other?
+   - If Windows, did you remember to check the ``Add ... to PATH`` box? If unsure, reinstall using App-store.
+   - Are you using virtual environments? If you are not sure, probably not. :)
+   - Are you using multiple Python versions on the same machine? Can cause conflicts.
+
 
 .. _internal-com-other:
 

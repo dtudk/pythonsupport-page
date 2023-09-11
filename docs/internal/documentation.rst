@@ -46,5 +46,6 @@ To start hacking on the repository, follow these steps:
       Type ``git clone`` and paste the copied line after ``git clone`` and press
       enter.
 
-   3. Now you should have a folder named ``pythonsupport-page`` at the 
+   3. Now you should have a folder named ``pythonsupport-page``.
+      This contains all the files required to build the documentation.
 
