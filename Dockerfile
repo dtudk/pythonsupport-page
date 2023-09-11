@@ -18,9 +18,13 @@ RUN apt update \
 	&& apt install --no-install-recommends -y \
 		make libenchant-2-2
 
-# Buffering
+# Install Dependencies
+COPY ./requirements.txt /app-src/requirements.txt
+RUN pip install -r /app-src/requirements.txt
+RUN pip install -U sphinx>=7.2.5
+
+# Make
 COPY ./ /app-src/
-RUN pip install -r requirements.txt
 RUN make all
 
 
