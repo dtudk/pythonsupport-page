@@ -29,6 +29,9 @@ The documentation is hosted {{ ps_repository }}.
 
 To start hacking on the repository, follow these steps:
 
+A more detailed description can be found `here <https://docs.github.com/en/get-started/quickstart/fork-a-repo>`__.
+
+
 0. Create a GitHub account `join <https://github.com/join>`__.
 1. Go to {{ps_repository}}
    
@@ -36,7 +39,8 @@ To start hacking on the repository, follow these steps:
       
       *First time only*: If this is your first time, you probably need
       to enable an SSH key for cloning and pushing to GitHub.
-      Follow `this instruction <https://docs.github.com/en/github-ae@latest/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`__.
+      Creating a key is described `here <https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows>`__, subsequently you should 
+      follow `this instruction <https://docs.github.com/en/github-ae@latest/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account>`__.
 
    2. Clone your local repository to your local drive.
 
@@ -48,4 +52,25 @@ To start hacking on the repository, follow these steps:
 
    3. Now you should have a folder named ``pythonsupport-page``.
       This contains all the files required to build the documentation.
+
+   4. Create a virtual environment in the same folder.
+
+      In this one follow the instructions in the `README.md` file.
+
+2. Now you can build it using the top level makefile system.
+   
+   *NOTE* I haven't tried on a Windows machine yet. So we should
+   probably sit together to fix the build there.
+
+3. Once you have build the pages you can open up your browser
+   using local files, something like this in the terminal
+   would work:
+
+   .. code-block:: shell
+
+      cd <path to the pythonsupport-page folder>
+      firefox build/html/index.html
+
+   And then it opens up the browser page (prefixed with ``file://``
+   to highlight it is a local file)
 
