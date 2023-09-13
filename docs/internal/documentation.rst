@@ -17,9 +17,56 @@ These links should provide you with enough details
 to get started:
 
 - https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-- https://sphinx-design.readthedocs.io/en/furo-theme/
+- https://sphinx-design.readthedocs.io/en/sbt-theme/
 
 If you have questions, feel free to discuss on our Discord channel.
+
+
+.. _internal-doc-good-bad:
+
+Good or bad documentation
+=========================
+
+Writing good is extremely difficult. Aspects such as content, audience,
+understandability, layout etc. are all important for users interacting with
+the documentation site.
+
+Here are some guidelines for creating the documentation in groups:
+
+1. Select a topic you wish to expand the documentation on.
+
+2. Take a brainstorm round, see for instance `this site <https://www.indeed.com/career-advice/career-development/how-to-brainstorm>`__
+   on how to do a proper brainstorm!
+
+   *NOTE*: In a brainstorm, nothing is a bad idea, stay positive towards ideas, sorting comes after.
+
+   Keeping this document for future works is a good idea. Future brainstorms should be done **without**
+   this document, but it can be used as a cross reference after a 2nd, future, brainstorm.
+
+3. Sorting of the brainstorm element. Think about the audience group, who should read it?
+   How will they understand or read the content? Should it be very basic? How basic? Should we split
+   advanced and beginners material? Or, can they go together? Others?
+
+   Each element of the brainstorm should be assigned pros/cons to decide whether it is eligible for the
+   documentation.
+
+4. All positive ideas should now be described in greater detail in an overview document.
+   The document should clearly discuss what content should be there (not necessarily in great detail).
+
+   This will be your working document for creating the actual documentation.
+   It should describe:
+
+   - overview of content
+   - layout of content (how to present)
+   - order of appearence
+   - necessary links, both external and internal links
+
+   It is important to understand how the documentation can expose the content in the
+   most favorable way.
+
+   **IMPORTANT**: Read `this document <https://documentation.divio.com/>`__.
+
+5. Start writing the documentation. Iterate many times, get feedback.
 
 
 Using Git

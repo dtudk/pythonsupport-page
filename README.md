@@ -28,7 +28,6 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-       bash
        python3 -m pip install -r requirements.txt
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
