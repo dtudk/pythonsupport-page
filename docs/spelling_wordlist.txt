@@ -28,6 +28,9 @@ mamba
 polytechnical
 powershell
 homebrew
+Ørsteds
+mkdir
+makefile
 
 # proper words:
 explorative

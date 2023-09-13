@@ -58,7 +58,7 @@ Here are some guidelines for creating the documentation in groups:
 
    - overview of content
    - layout of content (how to present)
-   - order of appearence
+   - order of appearance
    - necessary links, both external and internal links
 
    It is important to understand how the documentation can expose the content in the
