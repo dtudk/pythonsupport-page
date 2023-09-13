@@ -27,7 +27,7 @@ If you have questions, feel free to discuss on our Discord channel.
 Good or bad documentation
 =========================
 
-Writing good is extremely difficult. Aspects such as content, audience,
+Writing a good documentation is extremely difficult. Aspects such as content, audience,
 understandability, layout etc. are all important for users interacting with
 the documentation site.
 
@@ -41,9 +41,9 @@ Here are some guidelines for creating the documentation in groups:
    *NOTE*: In a brainstorm, nothing is a bad idea, stay positive towards ideas, sorting comes after.
 
    Keeping this document for future works is a good idea. Future brainstorms should be done **without**
-   this document, but it can be used as a cross reference after a 2nd, future, brainstorm.
+   this document, but it can be used as a cross reference or inspiration, after a 2nd future brainstorm.
 
-3. Sorting of the brainstorm element. Think about the audience group, who should read it?
+3. Reflection of the brainstorm elements. Think about the audience group, who should read it?
    How will they understand or read the content? Should it be very basic? How basic? Should we split
    advanced and beginners material? Or, can they go together? Others?
 
