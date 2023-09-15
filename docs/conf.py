@@ -176,27 +176,32 @@ html_static_path = ['_static']
 
 # this move will work regardless of hover...
 _fa_move = "fa-spin-hover"
+_fa_move = ""
 
 _icon_links = [
     {
         "name": "Python support - Discord channel invitation",
         "url": _discord_invite,
         "icon": f"fa-brands fa-discord {_fa_move}",
+        "type": "fontawesome",
     },
     {
         "name": "Mail to Python support",
         "url": f"mailto:{_pythonsupport['mail']}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
+        "type": "fontawesome",
     },
     {
         "name": "DTU help | External pages",
         "url": "#;",
         "icon": f"fa-solid fa-ellipsis-vertical",
+        "type": "fontawesome",
     },
     {
         "name": "Python homepage",
         "url": "https://www.python.org",
         "icon": f"fa-brands fa-python {_fa_move}",
+        "type": "fontawesome",
     },
     {
         "name": "PyPi package installation repository",
