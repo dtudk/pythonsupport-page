@@ -1,4 +1,4 @@
-.. office hours for autumn 2023 (semester week 5)
+.. office hours for autumn 2023 (semester week 7)
 .. list-table::
    :widths: {{ timetable_widths }}
    :header-rows: 1
