@@ -113,8 +113,14 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
      Physics
    - :course-base:`26020`, :course-base:`26021` and :course-base:`26022`
      Chemistry
-   - :course-base:`27022`
+   - :course-base:`27020`
      Bioengineering
+   - :course-base:`42611`
+     Science, Technology and Society
+   - :course-base:`42500`
+     Innovation in Engineering
+   - :course-base:`12100`
+     Quantitative Sustainability
 
    Many more will come! Our support unit is new, and we wish to figure
    out what the need is among our students, please do not hesitate
