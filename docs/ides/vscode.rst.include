@@ -10,6 +10,39 @@ It can be used together with any other coding language or be used to edit config
 
 It can be downloaded `here <https://code.visualstudio.com/download>`__.
 
+Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
+This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <environment-venv-vscode>`.
+Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
+
+
+User Interface
+^^^^^^^^^^^^^^
+    .. image:: images/Interface.png
+      :width: 700
+      :align: center
+
+**Editor:** The main editor is where you write and edit your code or text files. It's the central area of VSCode where you'll spend most of your time.
+
+**Activity bar:** The sidebar, located on the left side of the interface, provides quick access to various functionalities and information about your project. 
+
+**Panel:** This is where you will find your terminal (currently open).
+
+**Menu bar:** You can use this to open files and folders
+
+**Run and debug:** Pressing this button will run the file which is currently open in the editor.
+
+Activity Bar
+^^^^^^^^^^^^
+    .. image:: images/Activity.png
+      :width: 700
+      :align: center
+The Activity bar, located on the left side of the interface (see above), provides quick access to various functionalities and information about your project. The most used tabs in the activity bar is the explorer tab, run and debug tab and the extensions tab.
+
+**Explorer:** The "Explorer" tab in the sidebar is where you manage your project's files and folders. It provides a file tree view of your project's directory structure.
+
+**Run and debug:** The "Run and Debug" tab is essential for debugging your code and running your applications within VSCode.
+
+**Extensions:** The "Extensions" tab is your gateway to customizing and extending the functionality of VSCode through various extensions.
 VS Code is an extensible and versatile development environment.
 The extensions can greatly aid during the coding of varying problems.
 Some notable highlights include automatic API messages for methods, and
@@ -17,6 +50,112 @@ integration with Jupyter notebooks.
 
 Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
 
-Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
-This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <environment-venv-vscode>`.
-Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
+Creating and Opening Projects
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1. Create a folder for a project. You can do this by creating a folder e.g. on the desktop.
+
+2. Open the project be clicking on file on the menu bar and then clicking on "open folder" (see below) then navigate to your project folder.
+
+    .. image:: images/Open_folder.png
+      :width: 600
+      :align: center
+
+3. Create a folder inside your project by clicking on the seecond most left icon (see below).
+
+    .. image:: images/Create_folder.png
+      :width: 600
+      :align: center
+
+Working with Files
+^^^^^^^^^^^^^^^^^^
+1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it "new_file.py" - the ending ".py" makes it a python file.
+If you want to create a new file inside a folder in your project, make sure click on the folder before creating the file.
+
+    .. image:: images/files1.png
+      :width: 600
+      :align: center
+
+2. Save the file by clicking on file on the menu bar and then clicking on "Save" (see below).
+
+    .. image:: images/Save_file.png
+      :width: 600
+      :align: center
+
+3. To move a file to a folder simply click on the file and hold, then drag the file to the folder.
+
+Extensions
+^^^^^^^^^^
+Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
+
+
+Debugging
+^^^^^^^^^
+Debugging is the process of finding and fixing errors within a script. 
+VSCode provides a powerful debugging tool that allows you to set breakpoints, step through code, and inspect variables.
+
+1. Set a breakpoint, click on the left of the line number where you want to pause the execution of your code. 
+A red dot will appear to indicate that a breakpoint has been set, it is possible to set multiple breakpoints in your code.
+To remove a breakpoint, click on the red dot again.
+
+2. Start a debugging session, click on the "Run and Debug" tab in the sidebar and select "Run and Debug".
+This will open the debug panel at the top of the screen and start the debugging session.
+
+    .. image:: images/Debugging.png
+      :width: 600
+      :align: center
+
+The buttons in the debug panel allow you to control the execution of your code. From left to right the buttons are:
+
+**Continue:** Continue running the code until the next breakpoint is reached.
+
+**Step over:** Execute the next line of code. 
+
+**Step into:** Execute the next line of code, if the next line is a function call, step into the function.
+
+**Step out:** Execute the remaining lines of the function and return to the line where the function was called.
+
+**Restart:** Restart the debugging session.
+
+**Stop:** Stop the debugging session.
+
+3. Follow the variables in your code and their values on the left.
+
+    .. image:: images/Debugging2.png
+      :width: 600
+      :align: center
+
+
+
+Virtual environment (venv)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Virtual environments are isolated spaces in computing to manage software dependencies separately. They prevent conflicts, ensure project portability, and maintain system stability. 
+You can read more about virtual environments `here <https://pythonsupport.dtu.dk/python/environments.html>`__.
+
+The interpreter is the program that executes the code you write. It is important to ensure that the interpreter is pointing to the correct Python executable (environment).
+To change the interpreter location open a python file and click on the Python version in the bottom left corner of the screen (see below).
+
+    .. image:: images/Interpreter.png
+      :width: 600
+      :align: center
+
+Then select the correct interpreter (see below).
+
+    .. image:: images/Interpreter2.png
+      :width: 600
+      :align: center
+
+
+Customization
+Show how to personalize VSCode by changing themes, fonts, and settings.
+Mention the importance of keybindings and how to customize them.
+
+Conclusion
+Summarize the key points covered in the tutorial.
+Encourage users to explore more advanced features and resources for further learning.
+Additional Tips:
+
+Use screenshots and visuals to illustrate the concepts.
+Include download links and references to official documentation for more in-depth exploration.
+Keep instructions clear and concise, using beginner-friendly language.
+Encourage users to practice what they've learned by providing exercises or sample projects.
+Remember to update the tutorial as needed to reflect any changes in the VSCode interface or features in newer versions. This comprehensive tutorial should provide beginners with a solid foundation for using Visual Studio Code effectively.
