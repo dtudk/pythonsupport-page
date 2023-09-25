@@ -1,0 +1,19 @@
+---
+name: test web-page
+
+# Change this to whatever you want
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  PS_INCLUDE_TODOS: true
+
+jobs:
+
+  build_docs:
+    uses: ./.github/workflows/create-doc.yaml
+    with:
+      name: docs
+      targz_name: docs.tar.gz
