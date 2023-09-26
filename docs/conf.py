@@ -76,7 +76,7 @@ extensions = [
     'm2r2',
 ]
 
-sphinx_term_termynal_dir =['src/termynal_files/']
+sphinx_term_termynal_dir ='src/termynal_files/'
 
 source_suffix = ['.rst', '.md']
 

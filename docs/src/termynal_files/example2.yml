@@ -1,6 +1,6 @@
 - value: npm uninstall react
   type: input
-  prompt: ▲
+  prompt: ~/user >
 - value: Are you sure you want to uninstall 'react'?
 - value: y
   type: input

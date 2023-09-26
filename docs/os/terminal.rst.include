@@ -28,7 +28,36 @@ a comment in the terminal, i.e. it is *not* considered a command.
       ``powershell`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
       
-      .. mdinclude:: terminal.md
+      
+      
+      .. termynal:: termynal:example
+         
+         - value: pip install spacy
+           type: input
+           prompt: 'PS C:\User\youruser>'
+         - type: progress
+         - Successfully installed spacy
+         -
+         - value: python -m spacy download en
+           type: input
+         - type: progress
+         - Installed model 'en'
+         -
+         - value: python
+           type: input
+         - value: import spacy
+           type: input
+           prompt: '>>>'
+         - value: nlp = spacy.load('en')
+           type: input
+           prompt: '>>>'
+         - value: doc = nlp(u'Hello world')
+           type: input
+           prompt: '>>>'
+         - value: print([(w.text, w.pos_) for w in doc])
+           type: input
+           prompt: '>>>'
+         - "[('Hello', 'INTJ'), ('world', 'NOUN')]"
 .. tab:: {{ win_batch }}
 
    Either of
@@ -37,6 +66,7 @@ a comment in the terminal, i.e. it is *not* considered a command.
    2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
       ``cmd`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
+      ..termynal:: termynal:example2
 
       .. code-block:: winbatch
 
