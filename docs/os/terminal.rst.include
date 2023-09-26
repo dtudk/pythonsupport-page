@@ -27,13 +27,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
       ``powershell`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
-
-      .. code-block:: powershell
-
-         # Execute a single line of code (each line may be ; separated)
-         # Note the quotation marks
-         python -c "print('hello world')"
-
+      
+      .. mdinclude:: terminal.md
 .. tab:: {{ win_batch }}
 
    Either of

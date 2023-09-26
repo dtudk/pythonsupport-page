@@ -29,3 +29,4 @@ to run commands on the terminal to ensure proper installation and ensure a consi
 
 
 .. include:: terminal.rst.include
+.. include:: terminalTutorial.rst

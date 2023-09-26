@@ -71,7 +71,14 @@ extensions = [
     'sphinx_design',
     # enable target=_blank via jquery
     'sphinxcontrib.jquery',
+    'sphinx_term.cssterm',
+    'sphinx_term.termynal',
+    'm2r2',
 ]
+
+sphinx_term_termynal_dir =['src/termynal_files/']
+
+source_suffix = ['.rst', '.md']
 
 # Add the spelling extension if available
 try:
