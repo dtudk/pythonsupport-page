@@ -1,0 +1,7 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  command: /bin/bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/python/test

@@ -1,0 +1,27 @@
+config:
+  cols: 100
+  rows: 14
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 2000
+    content: 'PS C:\Users\python\test> '
+  - delay: 100
+    content: "\e[93mp"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bpw"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hpwd\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e[?25l\r\nPath\e[15X\r\n----\e[15X\r\nC:\\Users\\python\\test\e[13;1HPS C:\\Users\\python\\test> \e[?25h"
+  - delay: 3000
+    content: "\e"

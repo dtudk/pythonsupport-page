@@ -1,0 +1,9 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 7
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h\nPS C:\\Users\\python\\test> "
+ 

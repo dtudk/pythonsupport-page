@@ -1,0 +1,37 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 36
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c) Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 2000
+    content: d
+  - delay: 100
+    content: i
+  - delay: 100
+    content: r
+  - delay: 100
+    content: "\e[?25l\r\n Volume in drive C has no label.\r\n Volume Serial Number is AEFC-2E26\e[8;1H Directory of C:\\Users\\python\\test\e[10;1H23/11/2023  18:59    <DIR>          .\r\n23/11/2023  18:55    <DIR>          ..\r\n22/11/2023  01:36                 0 myfile.txt\r\n22/11/2023  01:35    <DIR>          myfolder1\r\n22/11/2023  01:35    <DIR>          myfolder2\r\n22/11/2023  01:36                 0 myscript.py\r\n               2 File(s)              0 bytes\r\n               4 Dir(s)  1,598,846,099,456 bytes free\e[19;1HC:\\Users\\python\\test>\e[?25h"
+  - delay: 2000
+    content: d
+  - delay: 100
+    content: i
+  - delay: 100
+    content: r
+  - delay: 300
+    content: ' '
+  - delay: 2000
+    content: /
+  - delay: 100
+    content: a
+  - delay: 100
+    content: "\e[?25l\r\n Volume in drive C has no label.\r\n Volume Serial Number is AEFC-2E26\e[23;1H Directory of C:\\Users\\python\\test\e[25;1H23/11/2023  18:59    <DIR>          .\r\n23/11/2023  18:55    <DIR>          ..\r\n22/11/2023  02:04    <DIR>          hiddenfolder\r\n22/11/2023  01:36                 0 myfile.txt\r\n22/11/2023  01:35    <DIR>          myfolder1\r\n22/11/2023  01:35    <DIR>          myfolder2\r\e]0;C:\\Windows\\SYSTEM32\\cmd.exe - dir  /a\a\e[?25h\n22/11/2023  01:36                 0 myscript.py\r\n               2 File(s)              0 bytes\r\n               5 Dir(s)  1,598,846,070,784 bytes free\r\n\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a"
+  - delay: 100
+    content: |-
+
+      C:\Users\python\test>
+  - delay: 4000
+    content: ' '
+

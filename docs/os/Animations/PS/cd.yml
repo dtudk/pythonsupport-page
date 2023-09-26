@@ -1,0 +1,63 @@
+config:
+  cols: 100
+  rows: 8
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 2000
+    content: 'PS C:\Users\python\test> '
+  - delay: 100
+    content: "\e[93mc"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bcd"
+  - delay: 100
+    content: "\e[m"
+  - delay: 2500
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mm\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmy\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyf\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyfo\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyfol\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyfold\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyfolde\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyfolder\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hcd \e[mmyfolder1\e[?25h"
+  - delay: 2000
+    content: "\r\n"
+  - delay: 100
+    content: 'PS C:\Users\python\test\myfolder1> '
+  - delay: 100
+    content: "\e[93mc"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bcd"
+  - delay: 2000
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[7;35Hcd \e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[7;35Hcd \e[m.\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[7;35Hcd \e[m..\e[?25h"
+  - delay: 2000
+    content: "\r\nPS C:\\Users\\python\\test> "
+  - delay: 100
+    content: "\e"

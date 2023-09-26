@@ -1,0 +1,48 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 8
+  
+records:
+  - delay: 100
+    content: "\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2000
+    content: c
+  - delay: 100
+    content: d
+  - delay: 100
+    content: ' '
+  - delay: 100
+    content: M
+  - delay: 100
+    content: y
+  - delay: 100
+    content: F
+  - delay: 100
+    content: o
+  - delay: 100
+    content: l
+  - delay: 100
+    content: d
+  - delay: 100
+    content: e
+  - delay: 100
+    content: r
+  - delay: 100
+    content: 1
+  - delay: 100
+    content: "\r\n\e[?2004l\r\e]0;python@system:~/test/MyFolder1\e\\\e]7;file://system/home/python/test/MyFolder1\e\\\e[?2004h\e]0;python@system: ~/test/MyFolder1\a\e[01;32mpython@system\e[00m:\e[01;34m~/test/MyFolder1\e[00m$ "
+  - delay: 2500
+    content: c
+  - delay: 100
+    content: d
+  - delay: 100
+    content: ' '
+  - delay: 400
+    content: .
+  - delay: 100
+    content: .
+  - delay: 100
+    content: "\r\n\e[?2004l\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2500
+    content: "\e[?2004l\r\r\nlogout\r\n"

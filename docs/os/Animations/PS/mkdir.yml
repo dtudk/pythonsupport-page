@@ -1,0 +1,82 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 35
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 2000
+    content: 'PS C:\Users\python\test> '
+  - delay: 100
+    content: "\e[93mm"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bmk"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkd\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdi\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mN\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNe\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNew\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewP\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPy\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPyt\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPyth\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPytho\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPython\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPythonF\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPythonFo\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPythonFol\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPythonFold\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPythonFolde\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hmkdir \e[mNewPythonFolder\e[?25h"
+  - delay: 2000
+    content: "\r\n"
+  - delay: 100
+    content: "\e[?25l\e[9;1H    Directory: C:\\Users\\python\\test\e[12;1HMode                 LastWriteTime         Length Name\e[154X\r\n----                 -------------         ------ ----\e[154X\r\nd-----        22/11/2023     02:23                NewPythonFolder\e[143X\e[17;1HPS C:\\Users\\python\\test> \e[?25h"
+  - delay: 3000
+    content: "\e[93ml"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bls"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[20;1H    Directory: C:\\Users\\python\\test\e[23;1HMode                 LastWriteTime         Length Name\e[154X\r\n----                 -------------         ------ ----\e[154X\r\nd-----        22/11/2023     01:35                myfolder1\e[149X\r\nd-----        22/11/2023     01:35                myfolder2\e[149X\r\nd-----        22/11/2023     02:23                NewPythonFolder\e[143X\r\n\e[?25h"
+  - delay: 100
+    content: "\e[?25l-a----        22/11/2023     01:36              0 myfile.txt\e[148X\r\n-a----        22/11/2023     01:36              0 myscript.py\e[147X\e[32;1HPS C:\\Users\\python\\test> \e[?25h"
+  - delay: 2500
+    content: "\e"

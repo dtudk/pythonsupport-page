@@ -16,3 +16,6 @@ sphinxcontrib-spelling
 sphinx-design
 # enable custom javascript
 sphinxcontrib-jquery
+
+# yaml
+pyyaml
