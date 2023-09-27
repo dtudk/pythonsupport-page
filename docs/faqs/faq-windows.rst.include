@@ -67,7 +67,7 @@ Windows only problems
    error.
    It happens because of a default limitation of 260 characters in file names.
 
-   The remedy is quite simple, download :download:`this script </_downloads/Remove260CharacterPathLimit.reg>
+   The remedy is quite simple, download :download:`this script </_downloads/Remove260CharacterPathLimit.reg>`
    and double-click it.
 
    Now try to install the packages again.
