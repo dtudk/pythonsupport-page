@@ -2,3 +2,4 @@ build/
 *.pyc
 docs/_static/course_switcher.json
 docs/timetable/timetable.rst
+ps-page-env/
