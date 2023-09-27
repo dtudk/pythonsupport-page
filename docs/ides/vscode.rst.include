@@ -146,8 +146,19 @@ Then select the correct interpreter (see below).
 
 
 Customization
-Show how to personalize VSCode by changing themes, fonts, and settings.
-Mention the importance of keybindings and how to customize them.
+^^^^^^^^^^^^^
+Vscode has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel butten in the lower left corner.
+
+>> Insert picture of the cogwheel and the pop-up menu<<
+
+**Key Bindings** Vscode enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press ``CTRL+K+S``. This key binding brings up Vscode's keyboard shortcut menu.
+
+For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching "run python file" in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
+
+>> Insert picture of procedure explained <<
+
+For more options on key bindings press `here <https://code.visualstudio.com/docs/getstarted/keybindings>`__.
+
 
 Conclusion
 Summarize the key points covered in the tutorial.
