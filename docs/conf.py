@@ -276,7 +276,7 @@ html_js_files = [
 ]
 
 html_css_files = [
-    "css/custom_styles.css",
+    ("css/custom_styles.css",{'priority':999}),
     "css/colors.css",
 ]
 

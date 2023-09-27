@@ -28,21 +28,22 @@ a comment in the terminal, i.e. it is *not* considered a command.
       ``powershell`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
       
-      .. termynal:: termynal:python 
-         :content: Powershell
+   .. termynal:: termynal:pythonPS
+      :terminal:  Powershell
 
-         -  value: python
-            type: input
-            prompt: 'PS C:\User\youruser>'
-         -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-         -  'Type "help", "copyright", "credits" or "license" for more information.'
-         -  '>>>'
+      -  value: python
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  '>>>'
+   
+   .. raw:: html
       
-      .. raw:: html
+      <button type="button"
+         class="btn btn-primary"
+         onclick="new Termynal('#termynal-pythonps')">↺</button>
 
-         <button type="button"
-            class="btn btn-primary"
-            onclick="new Termynal('#termynal-python')">↺</button>
 .. tab:: {{ win_batch }}
 
    Either of
@@ -51,13 +52,23 @@ a comment in the terminal, i.e. it is *not* considered a command.
    2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
       ``cmd`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
-      ..termynal:: termynal:example2
 
-      .. code-block:: winbatch
+      .. termynal:: termynal:pythonCMD
+         :terminal: Command Propmt
 
-         # Execute a single line of code (each line may be ; separated)
-         # Note the quotation marks
-         python -c "print('hello world')"
+         -  value: python
+            type: input
+            prompt: 'C:\User\youruser>'
+         -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+         -  'Type "help", "copyright", "credits" or "license" for more information.'
+         -  '>>>'
+      
+      .. raw:: html
+
+         <button type="button"
+            class="btn btn-primary"
+            onclick="new Termynal('#termynal-pythoncmd')">↺</button>
+
 
 .. tab:: {{ mac_bash }}
 
@@ -67,11 +78,22 @@ a comment in the terminal, i.e. it is *not* considered a command.
 
    Launch Python
 
-   .. code-block:: winbatch
+   .. termynal:: termynal:pythonMAC
+      :terminal: bash
 
-      # Execute a single line of code (each line may be ; separated)
-      # Note the quotation marks
-      python3 -c "print('hello world')"
+      -  '# Execute a single line of code (each line may be ; separated)'
+      -  '# Note the quotation marks'
+      -  value: python3 -c "print('hello world')"
+         type: input
+         prompt: 'username@mac~$'
+      -  hello world
+   
+   .. raw:: html
+   
+      <button type="button"
+         class="btn btn-primary"
+         onclick="new Termynal('#termynal-pythonmac')">↺</button>
+
 
 .. tab:: {{ linux_bash }}
 
@@ -88,11 +110,24 @@ a comment in the terminal, i.e. it is *not* considered a command.
       folder in the terminal.
    4. Launch Python
 
-      .. code-block:: bash
+      .. termynal:: termynal:pythonLINUX
+         :terminal: bash
 
-         # Execute a single line of code (each line may be ; separated)
-         # Note the quotation marks
-         python3 -c "print('hello world')"
+         -  value: python
+            type: input
+            prompt: 'username@linux~$'
+         -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+         -  'Type "help", "copyright", "credits" or "license" for more information.'
+         -  '>>>'
+      
+      .. raw:: html
+
+         <button type="button"
+            class="btn btn-primary"
+            onclick="new Termynal('#termynal-pythonlinux')">↺</button>
+
+
+         
 
 In the terminal one can navigate the `file system <https://en.wikipedia.org/wiki/File_system>`__
 by using commands specific to your operating systems shell.

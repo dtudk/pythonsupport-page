@@ -1,0 +1,201 @@
+Welcome to the world of the terminal! In this tutorial, you will learn the fundamentals of using the terminal, a powerful tool for interacting with your computer through text commands. We will cover essential commands and tips to help you navigate and perform tasks efficiently.
+
+.. code:: 
+
+   #0 What is a Terminal?
+   [Type] A terminal is a text-based interface that allows you to communicate with your computer's operating system using text commands. It provides a way to navigate your file system, run programs, and perform various tasks without the need for a graphical user interface (GUI).
+
+1. Where am I? (pwd and dir)
+=============================
+To find out your current directory (location), you can use the ``pwd`` command on Unix-based systems (Linux or macOS) or the ``dir`` command on Windows. Open your terminal and type:
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:cdPS
+        :terminal: Powershell
+
+        -   value: cd
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -   'PS C:\User\youruser>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-cdps')">↺</button>
+
+.. tab:: {{ win_batch }}
+
+   
+   .. termynal:: termynal:cdCMD
+        :terminal: Command prompt
+
+        -   value: cd
+            type: input
+            prompt: 'C:\User\youruser>'
+        -   'C:\User\youruser>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-cdcmd')">↺</button>
+
+.. tab:: {{ mac_bash }}
+
+   
+   .. termynal:: termynal:pwdMAC
+        :terminal: bash
+
+        -   value: pwd # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@mac~$'
+        -   /home/username
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pwdmac')">↺</button>
+   .. $ pwd  # On Unix-based systems (Linux or macOS)
+
+.. tab:: {{ linux_bash }}
+
+   
+   .. termynal:: termynal:pwdLINUX
+        :terminal: bash
+
+        -   value: pwd # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@linux~$'
+        -   /home/username
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pwdlinux')">↺</button>
+
+**Exercise:** Run the appropriate command for your system and note the directory where you are.
+
+2. What's in here? (ls and ls -a)
+===================================
+
+To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``. Try these commands:
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:lsPS
+        :terminal: Powershell
+
+        -   value: ls
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -   'PS C:\User\youruser>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-lsps')">↺</button>
+
+.. tab:: {{ win_batch }}
+
+   
+   .. termynal:: termynal:dirCMD
+        :terminal: Command prompt
+
+        -   value: dir
+            type: input
+            prompt: 'C:\User\youruser>'
+        -   'C:\User\youruser>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-lscmd')">↺</button>
+
+.. tab:: {{ mac_bash }}
+
+   
+   .. termynal:: termynal:lsMAC
+        :terminal: bash
+
+        -   value: ls
+            type: input
+            prompt: 'username@mac~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py
+        -   value: ls -a
+            type: input
+            prompt: 'username@mac~$'
+        -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-lsmac')">↺</button>
+   .. $ pwd  # On Unix-based systems (Linux or macOS)
+
+.. tab:: {{ linux_bash }}
+
+   
+   .. termynal:: termynal:lsLINUX
+        :terminal: bash
+
+        -   value: ls
+            type: input
+            prompt: 'username@linux~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py
+        -   value: ls -a
+            type: input
+            prompt: 'username@linux~$'
+        -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-lslinux')">↺</button>
+
+**Exercise:** Run the commands and observe the files and folders in your current directory.
+
+3. I want to get out of here (cd)
+==================================
+
+To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "my_folder," you can use:
+
+.. code:: 
+
+   $ cd my_folder
+
+**Exercise:** Change to a different directory using the ``cd`` command.
+
+
+
+
+
+
+
+
+
+.. .. tab:: {{ bash }}
+.. 
+..    
+..    .. termynal:: termynal:pwd
+..         :terminal: bash
+.. 
+..         -   value: pwd # On Unix-based systems (Linux or macOS)
+..             type: input
+..             prompt: 'username@mac~$'
+..         -   /home/username
+.. 
+..    .. raw:: html
+.. 
+..       <button type="button"
+..         class="btn btn-primary"
+..         onclick="new Termynal('#termynal-pwd')">↺</button>
+..    .. $ pwd  # On Unix-based systems (Linux or macOS)
+
