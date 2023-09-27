@@ -22,6 +22,23 @@ else:
     import toml
 
 
+def version2tuple(vers):
+    """ Convert a `vers` to a tuple """
+    if isinstance(vers, tuple):
+        return vers
+
+    if isinstance(vers, str):
+        vers = vers.split(".")
+        v = []
+        for vv in vers:
+            try:
+                v.append(int(vv))
+            except:
+                return tuple(v)
+        return tuple(v)
+
+    raise NotImplementedError()
+
 project = 'DTU Python support'
 html_title = "DTU Python support"
 copyright = '2023, DTU Python support'
@@ -257,6 +274,15 @@ html_css_files = [
     "css/custom_styles.css",
     "css/colors.css",
 ]
+
+import pydata_sphinx_theme
+if version2tuple(pydata_sphinx_theme.__version__) >= (0, 14):
+    print("ps: will use fontawesome 6 css")
+    html_css_files.append("css/fontawesome6.css")
+else:
+    print("ps: will use fontawesome 5 css")
+    html_css_files.append("css/fontawesome5.css")
+
 
 # Include summary of the search stuff
 html_show_search_summary = True

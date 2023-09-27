@@ -186,7 +186,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
 """, 4))
 
         # add dates, note this REQUIRES AN EXTRA newline!
-        f.write(indent(f"Dates: {start.strftime('%d/%m')} -- {end.strftime('%d/%m')}") + "\n") 
+        f.write(indent(f"Dates: {start.strftime('%d/%m')} -- {end.strftime('%d/%m')}. Danish week: {iso_week}.") + "\n")
 
         if (timetable_path / f"{year}{iso_week}.rst").exists():
             f.write(indent(f".. include:: /timetable/{year}{iso_week}.rst"))
