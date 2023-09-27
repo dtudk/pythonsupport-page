@@ -102,4 +102,4 @@ Once completed it is appropriate to test whether it works, :ref:`open up a termi
 
 
 Once Python has been installed, head over to :ref:`using pip <pip>` which will be the typical
-package installation backend.
+package installation back end.

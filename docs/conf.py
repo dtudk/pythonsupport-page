@@ -60,6 +60,7 @@ _pref_symbol = ""
 
 extensions = [
     'sphinx.ext.intersphinx',
+    'sphinxemoji.sphinxemoji',
     'sphinx.ext.mathjax',
     'sphinx.ext.todo',
     # allow shorthands for links
@@ -284,6 +285,7 @@ html_css_files = [
     ("css/custom_styles.css",{'priority':999}),
     "css/colors.css",
 ]
+
 
 import pydata_sphinx_theme
 if version2tuple(pydata_sphinx_theme.__version__) >= (0, 14):

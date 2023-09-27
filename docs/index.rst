@@ -143,14 +143,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    quickstart/index.rst
    courses/index.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Install Python
-
-   python/install.rst
-
+   python/index.rst
 
 .. toctree::
    :maxdepth: 2
@@ -158,13 +151,12 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    :caption: Advanced usage
    
    python/environments.rst
-
    python/pip.rst
    python/conda.rst
-
    os/index.rst
    ides/index.rst
-
    faqs/index.rst
-
+   python/uninstall-conda.rst
+   python/uninstall-python.rst
+   python/uninstall-vscode.rst
    src/about.rst
