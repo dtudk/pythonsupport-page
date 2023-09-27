@@ -9,19 +9,38 @@ Welcome to the world of the terminal! In this tutorial, you will learn the funda
 
 1. Where am I? (pwd and dir)
 =============================
+.. tab:: {{ bash }}
 
-To find out your current directory (location), you can use the ``pwd`` command on Unix-based systems (Linux or macOS) or the ``dir`` command on Windows. Open your terminal and type:
+   To find out your current directory (location), you can use the ``pwd`` command on Unix-based systems (Linux or macOS) or the ``dir`` command on Windows. Open your terminal and type:
 
-.. code:: termynal
+   .. termynal:: termynal:pwd
 
-   $ pwd  # On Unix-based systems (Linux or macOS)
+      -  value: pwd # On Unix-based systems (Linux or macOS)
+         type: input
+         prompt: 'username@mac~$'
+      -  /home/username
 
-OR
+   .. raw:: html
 
-.. code:: termynal
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pwd')">↺</button>
+   .. $ pwd  # On Unix-based systems (Linux or macOS)
 
-   $ dir  # On Windows
+.. tab:: {{ win_powershell }}
 
+   .. termynal:: termynal:dir
+
+      -  value: dir
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  Successfully installed spacy
+   
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-dir')">↺</button>
 **Exercise:** Run the appropriate command for your system and note the directory where you are.
 
 2. What's in here? (ls and ls -a)

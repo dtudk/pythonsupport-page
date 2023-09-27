@@ -24,4 +24,7 @@
   margin-top: 0
 }
 
+[data-termynal]:after {
+  content: 'powershell'
+}
 /* ^^^^^ STYLES TO MAKE TABS MORE VISUAL ^^^^^ */

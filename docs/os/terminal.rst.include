@@ -28,36 +28,21 @@ a comment in the terminal, i.e. it is *not* considered a command.
       ``powershell`` in the small run window appearing, press :kbd:`Enter`.
    3. Launch Python
       
+      .. termynal:: termynal:python 
+         :content: Powershell
+
+         -  value: python
+            type: input
+            prompt: 'PS C:\User\youruser>'
+         -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+         -  'Type "help", "copyright", "credits" or "license" for more information.'
+         -  '>>>'
       
-      
-      .. termynal:: termynal:example
-         
-         - value: pip install spacy
-           type: input
-           prompt: 'PS C:\User\youruser>'
-         - type: progress
-         - Successfully installed spacy
-         -
-         - value: python -m spacy download en
-           type: input
-         - type: progress
-         - Installed model 'en'
-         -
-         - value: python
-           type: input
-         - value: import spacy
-           type: input
-           prompt: '>>>'
-         - value: nlp = spacy.load('en')
-           type: input
-           prompt: '>>>'
-         - value: doc = nlp(u'Hello world')
-           type: input
-           prompt: '>>>'
-         - value: print([(w.text, w.pos_) for w in doc])
-           type: input
-           prompt: '>>>'
-         - "[('Hello', 'INTJ'), ('world', 'NOUN')]"
+      .. raw:: html
+
+         <button type="button"
+            class="btn btn-primary"
+            onclick="new Termynal('#termynal-python')">↺</button>
 .. tab:: {{ win_batch }}
 
    Either of
