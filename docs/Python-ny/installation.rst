@@ -11,27 +11,30 @@ Getting started with python
 
 
 1. **Download Python**
-    F
+
 
 .. tab:: {{ windows }}
 
-   Here are the suggested (in priority order) ways of installing Python:
-    1. bla bla  bla
-    2. ggg 
+    For a hassle-free Python download & installation experience, we recommend grabbing it straight from the Microsoft Store. However, if you find yourself on an adventurous detour and can't access it there,  you can still opt for the OG Python release.
+
+
 
 .. tab:: {{ macos }}
 
-    here are lala
-        1.  bla
+    You can download python directly from here.
+
 
 
 .. tab:: {{ linux }}
 
-    here are bla bla:
+    In progress:
         1. bla bla bla
         2. bla bla 
 
 
+
+
+2. **Installation** 
 
 .. warning::
     If you did not download python through Microsoft Store, then you need to make sure 
