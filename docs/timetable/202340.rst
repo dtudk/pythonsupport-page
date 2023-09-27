@@ -21,3 +21,9 @@
      - 302.A92
      - 358.002
      - 302.A92
+   * - 18-22
+     - Online
+     - Online
+     - Online
+     - Online
+     - Online

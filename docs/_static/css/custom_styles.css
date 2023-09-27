@@ -1,11 +1,4 @@
 
-.fa-spin-hover:hover {
-  -webkit-animation: fa-shake 2s infinite linear;
-  -moz-animation: fa-shake 2s infinite linear;
-  -o-animation: fa-shake 2s infinite linear;
-  animation: fa-shake 2s infinite linear;
-}
-
 /* vvvvv STYLES TO MAKE TABS MORE VISUAL vvvvv */
 
 /*The parent container of tabs*/
