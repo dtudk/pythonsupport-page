@@ -81,15 +81,15 @@ a comment in the terminal, i.e. it is *not* considered a command.
    .. termynal:: termynal:pythonMAC
       :terminal: bash
 
-      -  '# Execute a single line of code (each line may be ; separated)'
-      -  '# Note the quotation marks'
-      -  value: python3 -c "print('hello world')"
+      -  value: python3
          type: input
          prompt: 'username@mac~$'
-      -  hello world
-   
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  '>>>'
+      
    .. raw:: html
-   
+
       <button type="button"
          class="btn btn-primary"
          onclick="new Termynal('#termynal-pythonmac')">↺</button>
