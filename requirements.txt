@@ -15,4 +15,4 @@ sphinxcontrib-spelling
 sphinx-design
 # enable custom javascript
 sphinxcontrib-jquery
-sphinx-term
+git+https://github.com/TheWolf534/sphinx-term-plus.git#egg=sphinx-term-plus

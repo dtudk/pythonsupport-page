@@ -18,7 +18,7 @@ To find out your current directory (location), you can use the ``pwd`` command o
         -   value: cd
             type: input
             prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'
+        -   'PS C:\User\youruser>'  
 
    .. raw:: html
 

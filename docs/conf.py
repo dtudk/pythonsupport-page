@@ -71,8 +71,8 @@ extensions = [
     'sphinx_design',
     # enable target=_blank via jquery
     'sphinxcontrib.jquery',
-    'sphinx_term.cssterm',
-    'sphinx_term.termynal',
+    'sphinx_term_plus.cssterm',
+    'sphinx_term_plus.termynal',
 ]
 
 sphinx_term_termynal_dir ='src/termynal_files/'
