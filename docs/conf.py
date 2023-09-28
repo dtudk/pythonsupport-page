@@ -9,10 +9,13 @@ print("vvvvv INITIALIZING conf.py vvvvv")
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 from pathlib import Path 
 import os
+import datetime
 import sys
 
+_cwd = Path().resolve()
+
 # add the exts folder
-sys.path.insert(1, str(Path().resolve()))
+sys.path.insert(1, str(_cwd))
 from ps_modules.dictformatter import DictFormatter
 from ps_modules.create_timetabs import create_time_table
 
@@ -93,14 +96,15 @@ intersphinx_mapping = {
 sphinxemoji_style = 'twemoji'
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = [
+    "python/poetry.rst",
+    "python/pipenv.rst",
+    "python/pyenv.rst",
+]
 
 
 # Determine the standard year of the current semester
 # I.e. this requires an update every 6 months to update correctly
-import datetime
-
-
 def get_current_years():
     today = datetime.date.today()
     year = today.year
@@ -360,6 +364,17 @@ course_switcher()
 
 
 create_time_table(_conf_toml["semester"])
+
+# Now exclude the years that are not going to be used
+year, week = map(int, datetime.date.today().strftime("%G %V").split())
+for y in range(2023, year + 1):
+    if y < year:
+        week_end = 54
+    else:
+        week_end = week
+    for w in range(1, week_end):
+        if (_cwd / "timetable" / f"{y}{w}.rst").is_file():
+            exclude_patterns.append(f"timetable/{y}{w}.rst")
 
 
 # Determine the days we are open online
