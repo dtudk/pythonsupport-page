@@ -154,3 +154,5 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    faqs/index.rst
 
    src/about.rst
+   
+   python/deletingPython.rst
