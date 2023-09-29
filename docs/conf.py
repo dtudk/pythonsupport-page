@@ -9,10 +9,13 @@ print("vvvvv INITIALIZING conf.py vvvvv")
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 from pathlib import Path 
 import os
+import datetime
 import sys
 
+_cwd = Path().resolve()
+
 # add the exts folder
-sys.path.insert(1, str(Path().resolve()))
+sys.path.insert(1, str(_cwd))
 from ps_modules.dictformatter import DictFormatter
 from ps_modules.create_timetabs import create_time_table
 
@@ -21,6 +24,23 @@ if sys.version_info >= (3, 11):
 else:
     import toml
 
+
+def version2tuple(vers):
+    """ Convert a `vers` to a tuple """
+    if isinstance(vers, tuple):
+        return vers
+
+    if isinstance(vers, str):
+        vers = vers.split(".")
+        v = []
+        for vv in vers:
+            try:
+                v.append(int(vv))
+            except:
+                return tuple(v)
+        return tuple(v)
+
+    raise NotImplementedError()
 
 project = 'DTU Python support'
 html_title = "DTU Python support"
@@ -54,6 +74,9 @@ extensions = [
     'sphinx_design',
     # enable target=_blank via jquery
     'sphinxcontrib.jquery',
+    # added to allow for the termynal extensions
+    'sphinx_term.cssterm',
+    'sphinx_term.termynal'
 ]
 
 # Add the spelling extension if available
@@ -71,14 +94,15 @@ intersphinx_mapping = {
 sphinxemoji_style = 'twemoji'
 
 templates_path = ['_templates']
-exclude_patterns = []
+exclude_patterns = [
+    "python/poetry.rst",
+    "python/pipenv.rst",
+    "python/pyenv.rst",
+]
 
 
 # Determine the standard year of the current semester
 # I.e. this requires an update every 6 months to update correctly
-import datetime
-
-
 def get_current_years():
     today = datetime.date.today()
     year = today.year
@@ -258,6 +282,15 @@ html_css_files = [
     "css/colors.css",
 ]
 
+import pydata_sphinx_theme
+if version2tuple(pydata_sphinx_theme.__version__) >= (0, 14):
+    print("ps: will use fontawesome 6 css")
+    html_css_files.append("css/fontawesome6.css")
+else:
+    print("ps: will use fontawesome 5 css")
+    html_css_files.append("css/fontawesome5.css")
+
+
 # Include summary of the search stuff
 html_show_search_summary = True
 
@@ -329,6 +362,17 @@ course_switcher()
 
 
 create_time_table(_conf_toml["semester"])
+
+# Now exclude the years that are not going to be used
+year, week = map(int, datetime.date.today().strftime("%G %V").split())
+for y in range(2023, year + 1):
+    if y < year:
+        week_end = 54
+    else:
+        week_end = week
+    for w in range(1, week_end):
+        if (_cwd / "timetable" / f"{y}{w}.rst").is_file():
+            exclude_patterns.append(f"timetable/{y}{w}.rst")
 
 
 # Determine the days we are open online
@@ -451,3 +495,4 @@ def setup(app):
     except BaseException as e:
         # we don't do anything
         pass
+
