@@ -149,15 +149,28 @@ Customization
 ^^^^^^^^^^^^^
 Vscode has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel butten in the lower left corner.
 
->> Insert picture of the cogwheel and the pop-up menu<<
+    .. image:: images/cogwheel.png
+      :width: 400
+      :align: center
 
-**Key Bindings** Vscode enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press ``CTRL+K+S``. This key binding brings up Vscode's keyboard shortcut menu.
+**Themes:** One thing that you might want to experiment with is the different themes that vscode has to offer. These themes change the color coding of vscode and code that you have implemented.
+By either using the keybinding ``CTRL+K+T`` or pressing the cogwheel button and navigating to the option "color theme", vscode will bring up a palette of different themes that you have installed in your IDE. 
+
+New color themes can be acquired by navigating to Extensions under the Activity bar, and then searching for the color theme that you want to install. The library of color themes that vscode Extensions has to offer can be found by pressing `here <https://vscodethemes.com/?language=python>`__.
+
+
+**Key Bindings:** Vscode enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press ``CTRL+K+S``. This key binding brings up Vscode's keyboard shortcut menu.
 
 For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching "run python file" in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
 
->> Insert picture of procedure explained <<
+    .. image:: images/keybindings.png
+        :width: 900
+        :align: center
 
 For more options on key bindings press `here <https://code.visualstudio.com/docs/getstarted/keybindings>`__.
+
+**Settings:** For more customization you can navigate to the `settings <https://code.visualstudio.com/docs/getstarted/settings>`__ option after pressing on the cogwheel. Here you will be able to change miscellaneous settings of your vscode like font size, cursor style etc. 
+
 Conclusion
 Summarize the key points covered in the tutorial.
 Encourage users to explore more advanced features and resources for further learning.
