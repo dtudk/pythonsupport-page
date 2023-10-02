@@ -63,3 +63,9 @@ podman run --rm -it --cap-drop ALL --publish 3000:3000 pythonsupport-page:dev
 ```
 
 To control things like cache headers, compression, healthcheck endpoint, and basic authentication, see the `static-web-server` environment variable reference: https://static-web-server.net/configuration/environment-variables/
+
+
+
+# source ps-page-env/bin/activate
+# make 
+# åben build/html/index.html

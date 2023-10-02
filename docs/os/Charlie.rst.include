@@ -1,0 +1,70 @@
+3. I want to change my directory (cd)
+==================================
+
+To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "my_folder," you can use:
+
+.. code:: termynal
+
+   $ cd my_folder
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:cdPS
+        :terminal: Powershell
+
+        -   value: cd my_folder
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -   'PS C:\User\youruser\my_folder>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-cdps')">↺</button>
+
+.. tab:: {{ win_batch }}
+
+   
+   .. termynal:: termynal:cdCMD
+        :terminal: Command prompt
+
+        -   value: cd my_folder
+            type: input
+            prompt: 'C:\User\youruser>'
+        -   'C:\User\youruser\my_folder>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-cdcmd')">↺</button>
+
+
+
+   
+
+
+
+
+
+
+**Exercise:** Change to a different directory using the ``cd`` command.
+
+To navigate one step backwards, you can use the ``cd ..`` command:
+
+.. code:: termynal 
+
+   $cd .. 
+
+**exercise:** try to navigate to a directory, and then leaving it using ``cd ..``
+
+4. How can i make using the terminal easier? 
+
+==================================
+
+There are a few different tips/tricks to make using the temrinal a lot smoother
+
+
+
