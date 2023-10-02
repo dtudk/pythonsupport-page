@@ -2,3 +2,10 @@ build/
 *.pyc
 docs/_static/course_switcher.json
 docs/timetable/timetable.rst
+.coverage
+
+# os files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
