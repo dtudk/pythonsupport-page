@@ -20,6 +20,7 @@ This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:mkdirPS
         :title: Powershell
+        :windows:
 
         -   value: mkdir NewPythonFolder
             type: input
@@ -31,11 +32,12 @@ This should look *something* like this in your **Terminal**:
 
 
 
-.. tab:: Windows (Batch)
+.. tab:: Windows (Command prompt)
 
    
    .. termynal:: termynal:mkdirCMD
         :title: Command prompt
+        :windows:
 
         -   value: mkdir NewPythonFolder
             type: input
@@ -51,7 +53,8 @@ This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:mkdirMAC
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: mkdir NewPythonFolder 
             type: input
@@ -68,7 +71,8 @@ This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:mkdirLINUX
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: mkdir NewPythonFolder
             type: input
@@ -106,6 +110,7 @@ This should look like this in your **Terminal**:
    
    .. termynal:: termynal:rmPS
         :title: Powershell
+        :windows:
 
         -   value: rm -r NewPythonFolder
             type: input
@@ -117,11 +122,12 @@ This should look like this in your **Terminal**:
 
 
 
-.. tab:: Windows (Batch)
+.. tab:: Windows (Command prompt)
 
    
    .. termynal:: termynal:rmCMD
         :title: Command prompt
+        :windows:
 
         -   value: rm -r NewPythonFolder
             type: input
@@ -137,7 +143,8 @@ This should look like this in your **Terminal**:
 
    
    .. termynal:: termynal:rmMAC
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: rm -r NewPythonFolder 
             type: input
@@ -154,7 +161,8 @@ This should look like this in your **Terminal**:
 
    
    .. termynal:: termynal:rmLINUX
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: rm -r NewPythonFolder
             type: input
@@ -194,6 +202,7 @@ This should look like this in your **Terminal**:
    
    .. termynal:: termynal:pythonversionPS
         :title: Powershell
+        :windows:
 
         -   value: python --version
             type: input
@@ -202,11 +211,12 @@ This should look like this in your **Terminal**:
 
 
 
-.. tab:: Windows (Batch)
+.. tab:: Windows (Command prompt)
 
    
    .. termynal:: termynal:pythonversionCMD
         :title: Command prompt
+        :windows:
 
         -   value: python --version
             type: input
@@ -217,7 +227,8 @@ This should look like this in your **Terminal**:
 .. tab:: Mac Terminal
 
    .. termynal:: termynal:pythonversionMAC
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: python --version 
             type: input
@@ -231,7 +242,8 @@ This should look like this in your **Terminal**:
 
    
    .. termynal:: termynal:pythonversionLINUX
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: python --version
             type: input
@@ -270,6 +282,7 @@ This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:pythonINPS
         :title: Powershell
+        :windows:
 
         -   value: python
             type: input
@@ -279,11 +292,12 @@ This should look *something* like this in your **Terminal**:
 
 
 
-.. tab:: Windows (Batch)
+.. tab:: Windows (Command prompt)
 
    
    .. termynal:: termynal:pythonINCMD
         :title: Command prompt
+        :windows:
 
         -   value: python
             type: input
@@ -295,7 +309,8 @@ This should look *something* like this in your **Terminal**:
 .. tab:: Mac Terminal
 
    .. termynal:: termynal:pythonINMAC
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: python3
             type: input
@@ -310,7 +325,8 @@ This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:pythonINLINUX
-        :title: bash
+        :title: Command prompt
+        :unix:
 
         -   value: python3
             type: input
