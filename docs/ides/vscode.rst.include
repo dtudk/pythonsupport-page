@@ -60,8 +60,6 @@ The extensions can greatly aid during the coding of varying problems.
 Some notable highlights include automatic API messages for methods, and
 integration with Jupyter notebooks.
 
-Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
-
 Creating and Opening Projects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. Create a folder for a project. You can do this by creating a folder e.g. on the desktop.
@@ -81,7 +79,7 @@ Creating and Opening Projects
 Working with Files
 ^^^^^^^^^^^^^^^^^^
 1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it "new_file.py" - the ending ".py" makes it a python file.
-If you want to create a new file inside a folder in your project, make sure click on the folder before creating the file.
+If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
 
     .. image:: images/Vscode-files1.png
       :width: 600
@@ -97,7 +95,16 @@ If you want to create a new file inside a folder in your project, make sure clic
 
 Extensions
 ^^^^^^^^^^
-Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
+1. To install an extension click on the extensions tab in the activity bar (see below).
+
+2. Then search for the extension you want to install and click on install.
+
+    .. image:: images/Vscode-Extensions.png
+      :width: 600
+      :align: center
+    
+
+Extensions can also be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
 
 
 Debugging
@@ -178,7 +185,7 @@ Customization
 ^^^^^^^^^^^^^
 Vscode has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel butten in the lower left corner.
 
-    .. image:: images/cogwheel.png
+    .. image:: images/Vscode-cogwheel.png
       :width: 400
       :align: center
 
@@ -192,7 +199,7 @@ New color themes can be acquired by navigating to Extensions under the Activity 
 
 For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching "run python file" in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
 
-    .. image:: images/keybindings.png
+    .. image:: images/Vscode-keybindings.png
         :width: 900
         :align: center
 
@@ -206,7 +213,7 @@ We can create and work with Jupyter Notebook files in vscode. A file in Vscode w
 
 **Preliminaries:** For Jupyter Notebook to run in vscode, we need to install a few Extensions. These include "Jupyter", "Jupyter Keymap", and "Jupyter Notebook Renderers", as seen on the following picture.
     
-    .. image:: images/jupyter_extensions.png
+    .. image:: images/Vscode-jupyter_extensions.png
         :width: 400
         :align: center
 
