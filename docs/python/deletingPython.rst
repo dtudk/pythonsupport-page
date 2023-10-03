@@ -10,9 +10,9 @@ This might be useful to do in a couple of scenarios:
 2. You have several versions of python that conflict with each other. 
 3. You have tried to install python, but something went wrong, and you want to start from scratch. 
 
-=================
+=========================================
 Deleting python on Windows
-=================
+=========================================
 
 1. Open the control panel.
 2. Click on "Uninstall a program" under the "Programs" section.
@@ -21,9 +21,9 @@ Deleting python on Windows
 5. Follow the instructions to uninstall python.
 6. Repeat steps 3-5 for all versions of python that you have installed on your computer.
 
-==============
+=========================================
 Deleting python on Mac
-==============
+=========================================
 
 When deleting python on a Mac, you need to be careful not to delete the system python.
 

@@ -145,15 +145,10 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    :caption: Advanced usage
    
    python/environments.rst
-
    python/pip.rst
    python/conda.rst
-   Python-ny/VS.rst
    os/index.rst
    ides/index.rst
-
    faqs/index.rst
-
    src/about.rst
-   
    python/deletingPython.rst

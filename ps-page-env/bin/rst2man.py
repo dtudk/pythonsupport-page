@@ -1,4 +1,4 @@
-#!/Users/nataliefederspiel/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3
+#!/Users/philipnickel/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3
 
 # Author:
 # Contact: grubert@users.sf.net

@@ -1,4 +1,4 @@
-#!/Users/nataliefederspiel/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3
+#!/Users/philipnickel/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3
 # :Copyright: © 2015 Günter Milde.
 # :License: Released under the terms of the `2-Clause BSD license`_, in short:
 #
