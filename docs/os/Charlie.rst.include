@@ -1,19 +1,88 @@
-3. I want to change my directory (cd)
+3. Changing directories (cd)
 ==========================================
 
 To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "my_folder," you can use:
 
-.. code:: termynal
 
-   $ cd my_folder
 
-**Exercise:** Change to a different directory using the ``cd`` command.
+
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:chdirps
+        :terminal: Powershell
+
+        -   value: cd MyFolder
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -   prompt: 'PS C:\User\youruser\Myfolder>'  
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-chdirps')">↺</button>
+
+.. tab:: {{ win_batch }}
+
+   
+   .. termynal:: termynal:chdircmd
+        :terminal: Command prompt
+
+        -   value: cd MyFolder
+            type: input
+            prompt: 'C:\User\youruser>'
+        -   prompt: 'C:\User\youruser\MyFolder>'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-chdircmd')">↺</button>
+
+.. tab:: {{ mac_bash }}
+
+   
+   .. termynal:: termynal:chdirmac
+        :terminal: bash
+
+        -   value: cd MyFolder # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@mac~%'
+        -   prompt: username@mac MyFolder~%
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-chdirmac')">↺</button>
+   .. $ pwd  # On Unix-based systems (Linux or macOS)
+
+.. tab:: {{ linux_bash }}
+
+
+   .. termynal:: termynal:chdirlinux
+        :terminal: bash
+
+        -   value: cd MyFolder # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@linux~$'
+        -   prompt: 'username@linux MyFolder~$'
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-chdirlinux')">↺</button>
+
+
 
 To navigate one step backwards, you can use the ``cd ..`` command:
 
 .. code:: termynal 
 
-   $cd .. 
+   $ cd .. 
 
 **exercise:** try to navigate to a directory, and then leaving it using ``cd ..``
 
@@ -21,7 +90,26 @@ To navigate one step backwards, you can use the ``cd ..`` command:
 4. How can i make using the terminal easier? 
 ==================================================
 
-There are a few different tips/tricks to make using the temrinal a lot smoother
+There are a few different tips/tricks to make using the terminal a lot smoother:
+
+* Recycling old inputs with arrow-keys
+   * If you have already input a command and need to use it again, pressing the upwards arrow key will go through your old inputs
+   * This is especially useful for correcting typos in wrong input
+
+* Using tab key to autocomplete input
+   * The tab key is the one with two sideways arrows (usually placed above caps lock)
+   * This is very efficient in combination with the ``cd`` command 
+   * For example one can navigate to the folder "MyFolderForCourse01006" by simply typing ``cd My``, and the pressing tab followed by enter
+   * This also works for importing packages 
+
+* Pasting code into the terminal
+   * The terminal is just like any other document, in the sense that you can copy and paste anything
+   * **Warning: In the terminal, pasting is done by simply rightclicking or pressing with two fingers on the mousepad , not by using ``ctrl + v``**
+
+
+
+
+
 
 
 
