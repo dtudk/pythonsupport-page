@@ -25,8 +25,18 @@ Deleting python on Windows
 Deleting python on Mac
 =========================================
 
-When deleting python on a Mac, you need to be careful not to delete the system python.
+A version of Python comes pre-installed with macOs. This version of python is used by the operating system, and should not be deleted.
+Other verions of Python may be deleted using the script below. This may include versions installed from the official python website, anaconda or miniconda. 
+
+In order to run the script below you will need to download it. Afterwards open a terminal window and navigate to the folder where you downloaded the script. 
+Then run the following command:
+
+.. code-block:: bash
+
+    bash deletePythonMac.sh
+
+This will promt you for your system password. Enter it and press enter. The script will then delete all versions of python that you have installed on your computer.
 
 :download:`Download script for deleting python: deletePythonMac.sh </_downloads/deletePythonMac.sh>`
 
-.. note:: This will delete all versions of python that you have installed on your computer.
+.. note:: This will delete all versions of python that you have installed on your computer - including packages that you have installed using pip or conda install.

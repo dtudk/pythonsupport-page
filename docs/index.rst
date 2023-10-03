@@ -138,6 +138,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    python/install.rst
    Python-ny/installation.rst
+   python/Installing_packages.rst
 
 .. toctree::
    :maxdepth: 2
