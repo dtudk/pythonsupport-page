@@ -150,11 +150,6 @@ To change the interpreter location open a python file and click on the Python ve
       :width: 600
       :align: center
 
-Then select the correct interpreter (see below).
-
-    .. image:: images/Interpreter2.png
-      :width: 600
-      :align: center
 
 Importing packages
 ^^^^^^^^^^^^^^^^^^
