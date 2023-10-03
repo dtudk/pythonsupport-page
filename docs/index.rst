@@ -137,7 +137,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    courses/index.rst
 
    python/install.rst
-
+   Python-ny/installation.rst
 
 .. toctree::
    :maxdepth: 2
@@ -148,10 +148,12 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    python/pip.rst
    python/conda.rst
-
+   Python-ny/VS.rst
    os/index.rst
    ides/index.rst
 
    faqs/index.rst
 
    src/about.rst
+   
+   python/deletingPython.rst
