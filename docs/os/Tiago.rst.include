@@ -13,117 +13,139 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
    
    .. termynal:: termynal:cdPS
-        :terminal: Powershell
+      :title: Powershell
+      :windows:
 
-        -   value: cd
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'  
+      -  value: cd
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  'PS C:\User\youruser>'  
 
-   .. raw:: html
-
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-cdps')">↺</button>
-
-.. tab:: {{ win_batch }}
+.. tab:: {{ win_cmd }} 
 
    
    .. termynal:: termynal:cdCMD
-        :terminal: Command prompt
+      :title: Command Prompt
+      :windows:
 
-        -   value: cd
-            type: input
-            prompt: 'C:\User\youruser>'
-        -   'C:\User\youruser>'
+      -  value: cd
+         type: input
+         prompt: 'C:\User\youruser>'
+      -  'C:\User\youruser>'  
 
-   .. raw:: html
-
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-cdcmd')">↺</button>
-
-.. tab:: {{ mac_bash }}
+.. tab:: {{ mac_bash }} 
 
    
    .. termynal:: termynal:pwdMAC
-        :terminal: bash
+      :title: Bash
+      :unix:
 
-        -   value: pwd # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@mac~$'
-        -   /home/username
+      -  value: pwd
+         type: input
+         prompt: 'username@mac~$'
+      -  /home/username
 
-   .. raw:: html
-
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-pwdmac')">↺</button>
-   .. $ pwd  # On Unix-based systems (Linux or macOS)
-
-.. tab:: {{ linux_bash }}
+.. tab:: {{ linux_bash }} 
 
    
    .. termynal:: termynal:pwdLINUX
-        :terminal: bash
+      :title: Bash
+      :unix:
 
-        -   value: pwd # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@linux~$'
-        -   /home/username
-
-   .. raw:: html
-
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-pwdlinux')">↺</button>
+      -  value: pwd
+         type: input
+         prompt: 'username@linux~$'
+      -  /home/username
 
 **Exercise:** Run the appropriate command for your system and note the directory where you are.
 
-2. What's in here? (ls and ls -a)
+2. What's in here?
 ===================================
 
-To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``. Try these commands:
+
+
 
 .. tab:: {{ win_powershell }} 
 
+   To list the contents of your current directory in PowerShell, you can use the ``Get-ChildItem`` cmdlet. If you want to see only files and not directories, use ``Get-ChildItem -File``. To show hidden files and directories, use ``Get-ChildItem -Force``. Try these commands:
    
    .. termynal:: termynal:lsPS
-        :terminal: Powershell
+      :title: Powershell
+      :windows:
 
-        -   value: ls
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'
-
-   .. raw:: html
-
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-lsps')">↺</button>
+      -  value: Get-ChildItem -Path "C:\User\youruser"
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  ' Directory: C:\User\youruser'
+      -
+      -  '   Mode                LastWriteTime         Length Name'
+      -  '   ----                -------------         ------ ----'
+      -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+      -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+      -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+      -  '   -a----        8/1/2021  10:00 AM              0 myscript.py'
+      -  value: Get-ChildItem -Path "C:\User\youruser" -Force
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  ' Directory: C:\User\youruser'
+      -
+      -  '   Mode                LastWriteTime         Length Name'
+      -  '   ----                -------------         ------ ----'
+      -  '   d-----        8/1/2021  10:00 AM              .hiddenfolder'
+      -  '   -a----        8/1/2021  10:00 AM              0 .hiddenfile'
+      -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+      -  '   -a----        8/1/2021  10:00 AM              0 myscript.py'
 
 .. tab:: {{ win_batch }}
 
+   To list the contents of your current directory in Windows Command Prompt, you can use the ``dir`` command. If you want to see hidden files and directories as well, use ``dir /a``. Try these commands:
    
    .. termynal:: termynal:dirCMD
-        :terminal: Command prompt
+      :title: Command prompt
+      :windows:
 
-        -   value: dir
-            type: input
-            prompt: 'C:\User\youruser>'
-        -   'C:\User\youruser>'
-
-   .. raw:: html
-
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-lscmd')">↺</button>
+      -  value: dir
+         type: input
+         prompt: 'C:\User\youruser>'
+      -  ' Volume in drive C has no label.'
+      -  '   Volume Serial Number is 1234-5678'
+      -  
+      -  '   Directory of C:\User\youruser'
+      -  
+      -  '   08/01/2021  10:00 AM    <DIR>          .'
+      -  '   08/01/2021  10:00 AM    <DIR>          ..'
+      -  '   08/01/2021  10:00 AM    <DIR>          myfolder1'
+      -  '   08/01/2021  10:00 AM    <DIR>          myfolder2'
+      -  '   08/01/2021  10:00 AM                 0 myfile.txt'
+      -  '   08/01/2021  10:00 AM                 0 myscript.py'
+      -  '                  2 File(s)              0 bytes'
+      -  '                  4 Dir(s)  1,234,567,890 bytes free'
+      -  value: dir /a
+         type: input
+         prompt: 'C:\User\youruser>'
+      -  ' Volume in drive C has no label.'
+      -  '   Volume Serial Number is 1234-5678'
+      -  
+      -  '   Directory of C:\User\youruser'
+      -  
+      -  '   08/01/2021  10:00 AM    <DIR>          .'
+      -  '   08/01/2021  10:00 AM    <DIR>          ..'
+      -  '   08/01/2021  10:00 AM    <DIR>          .hiddenfolder'
+      -  '   08/01/2021  10:00 AM                 0 .hiddenfile'
+      -  '   08/01/2021  10:00 AM    <DIR>          myfolder1'
+      -  '   08/01/2021  10:00 AM    <DIR>          myfolder2'
+      -  '   08/01/2021  10:00 AM                 0 myfile.txt'
+      -  '   08/01/2021  10:00 AM                 0 myscript.py'
+      -  '                  3 File(s)              0 bytes'
+      -  '                  5 Dir(s)  1,234,567,890 bytes free'
 
 .. tab:: {{ mac_bash }}
-
+   
+   To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``. Try these commands:
    
    .. termynal:: termynal:lsMAC
-        :terminal: bash
+        :title: bash
+        :unix:
 
         -   value: ls
             type: input
@@ -133,18 +155,15 @@ To list the contents of your current directory, you can use the ``ls`` command. 
             type: input
             prompt: 'username@mac~$'
         -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
-   .. raw:: html
 
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-lsmac')">↺</button>
-   .. $ pwd  # On Unix-based systems (Linux or macOS)
 
 .. tab:: {{ linux_bash }}
-
+   
+   To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``. Try these commands:
    
    .. termynal:: termynal:lsLINUX
-        :terminal: bash
+        :title: bash
+        :unix:
 
         -   value: ls
             type: input
@@ -154,11 +173,7 @@ To list the contents of your current directory, you can use the ``ls`` command. 
             type: input
             prompt: 'username@linux~$'
         -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
-   .. raw:: html
 
-      <button type="button"
-        class="btn btn-primary"
-        onclick="new Termynal('#termynal-lslinux')">↺</button>
 
 **Exercise:** Run the commands and observe the files and folders in your current directory.
 

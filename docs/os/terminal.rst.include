@@ -29,7 +29,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    3. Launch Python
       
    .. termynal:: termynal:pythonPS
-      :terminal:  Powershell
+      :title:  Powershell
+      :windows:
 
       -  value: python
          type: input
@@ -37,12 +38,6 @@ a comment in the terminal, i.e. it is *not* considered a command.
       -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
       -  'Type "help", "copyright", "credits" or "license" for more information.'
       -  '>>>'
-   
-   .. raw:: html
-      
-      <button type="button"
-         class="btn btn-primary"
-         onclick="new Termynal('#termynal-pythonps')">↺</button>
 
 .. tab:: {{ win_batch }}
 
@@ -54,7 +49,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    3. Launch Python
 
       .. termynal:: termynal:pythonCMD
-         :terminal: Command Propmt
+         :title: Command Propmt
+         :windows:
 
          -  value: python
             type: input
@@ -62,12 +58,6 @@ a comment in the terminal, i.e. it is *not* considered a command.
          -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
          -  'Type "help", "copyright", "credits" or "license" for more information.'
          -  '>>>'
-      
-      .. raw:: html
-
-         <button type="button"
-            class="btn btn-primary"
-            onclick="new Termynal('#termynal-pythoncmd')">↺</button>
 
 
 .. tab:: {{ mac_bash }}
@@ -79,7 +69,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    Launch Python
 
    .. termynal:: termynal:pythonMAC
-      :terminal: bash
+      :title: bash
+      :unix:
 
       -  value: python3
          type: input
@@ -87,12 +78,6 @@ a comment in the terminal, i.e. it is *not* considered a command.
       -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
       -  'Type "help", "copyright", "credits" or "license" for more information.'
       -  '>>>'
-      
-   .. raw:: html
-
-      <button type="button"
-         class="btn btn-primary"
-         onclick="new Termynal('#termynal-pythonmac')">↺</button>
 
 
 .. tab:: {{ linux_bash }}
@@ -111,7 +96,8 @@ a comment in the terminal, i.e. it is *not* considered a command.
    4. Launch Python
 
       .. termynal:: termynal:pythonLINUX
-         :terminal: bash
+         :title: bash
+         :unix:
 
          -  value: python
             type: input
@@ -119,15 +105,7 @@ a comment in the terminal, i.e. it is *not* considered a command.
          -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
          -  'Type "help", "copyright", "credits" or "license" for more information.'
          -  '>>>'
-      
-      .. raw:: html
 
-         <button type="button"
-            class="btn btn-primary"
-            onclick="new Termynal('#termynal-pythonlinux')">↺</button>
-
-
-         
 
 In the terminal one can navigate the `file system <https://en.wikipedia.org/wiki/File_system>`__
 by using commands specific to your operating systems shell.
