@@ -1,7 +1,7 @@
 .. _install-python-ny:
 
 Getting started with python
-=================
+=========================================
 
 .. tip:: 
     We suggest removing any pre-installed Python versions and VS Code before 

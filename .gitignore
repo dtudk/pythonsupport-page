@@ -1,6 +1,11 @@
 build/
 *.pyc
-**/.DS_Store
 docs/_static/course_switcher.json
 docs/timetable/timetable.rst
-ps-page-env/
+.coverage
+
+# os files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db

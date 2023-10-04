@@ -51,7 +51,7 @@ DTU Python support
         | {{online_days}} in the evening.
         | Contact us outside working hours.
    
-    .. grid-item-card:: :fab:`discord` -- Discord
+    .. grid-item-card:: :fab:`discord` -- Chat with us
         :link: https://discord.gg/h8EVaV9ShP
         :link-type: url
 
@@ -82,6 +82,7 @@ Office hours
    depending on the used lecture rooms in the Polytechnical Foundation courses.
    See further down for our locations during specific weeks of the semester.
    This page will be updated continuously.
+
 Mail -- :mail:`pythonsupport@dtu.dk`  |  {{online_days}} in the evening
    Outside of office hours we can be contacted through emails. We strive to return
    answers as soon as possible.
@@ -137,6 +138,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    python/install.rst
    Python-ny/installation.rst
+   python/Installing_packages.rst
 
 .. toctree::
    :maxdepth: 2
@@ -144,19 +146,13 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    :caption: Advanced usage
    
    python/environments.rst
-
    python/pip.rst
    python/conda.rst
-   Python-ny/VS.rst
    os/index.rst
    ides/index.rst
-
    faqs/index.rst
-
    src/about.rst
-
-   python/DownloadPacks.rst
-
+   
    python/deletingPython.rst
 
    python/deleteVSC.rst
