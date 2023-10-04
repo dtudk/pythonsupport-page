@@ -29,6 +29,3 @@ to run commands on the terminal to ensure proper installation and ensure a consi
 
 
 .. include:: terminal.rst.include
-.. include:: Tiago.rst.include
-.. include:: Charlie.rst.include
-.. include:: Manu.rst.include
