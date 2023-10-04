@@ -32,8 +32,8 @@ This is a guide on how to download different packages for Python through the ter
 And then run the following:
 
 .. tab:: {{ windows }}
-    
-   .. code-block:: powershell
+
+   .. code-block:: bash
 
       python -m pip install numpy
 
