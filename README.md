@@ -35,7 +35,7 @@ The steps can be outlined like this:
        # can use this to our advantage. The documentation builds fine.
        # Only some non-used features will not work. So we should be fine.
        #    :fingers_crossed:
-       python3 -m pip install "sphinx>=7.2.5"
+       python3 -m pip install -U "sphinx>=7.2.5"
 
 3. Build documentation
 
