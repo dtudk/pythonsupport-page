@@ -1,4 +1,4 @@
-#!/Users/nataliefederspiel/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3.11
+#!/Users/oliversorgenfrey/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3.11
 # -*- coding: utf-8 -*-
 import re
 import sys

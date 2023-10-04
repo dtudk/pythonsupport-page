@@ -1,4 +1,4 @@
-#!/Users/nataliefederspiel/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3
+#!/Users/oliversorgenfrey/Documents/GitHub/pythonsupport-page/ps-page-env/bin/python3
 
 # $Id: rst2pseudoxml.py 8927 2022-01-03 23:50:05Z milde $
 # Author: David Goodger <goodger@python.org>
