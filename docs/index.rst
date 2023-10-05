@@ -137,7 +137,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    courses/index.rst
 
    python/install.rst
-   Python-ny/installation.rst
+   python/installation.rst
    python/Installing_packages.rst
 
 .. toctree::
@@ -153,7 +153,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    faqs/index.rst
    src/about.rst
 
-   python/DownloadPacks.rst
+   
    
    python/deletingPython.rst
 
