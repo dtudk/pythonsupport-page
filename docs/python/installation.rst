@@ -4,9 +4,9 @@ Getting started with python
 =========================================
 
 .. tip:: 
-    We suggest removing any pre-installed Python versions and VS Code before 
-    proceeding with this  guide to ensure a smooth installation process. You can refer to this guide to walk you through the uninstallation process, ensuring you're all set to get started.
-
+    In case you have tried installing python before and this is giving you trouble. Check out :ref:`Deleting Python <Deleting Python>` .
+    
+    
 
 
 

@@ -12,13 +12,33 @@ Depending on which distribution of Python you are using, you will need to use a 
 =========================================
 Using the official Python distribution
 =========================================
-If you are using the official Python distribution, you will need to use the pip package manager.
+If you are using the official Python distribution, you will need to use the pip package manager. Open up a terminal and run the following: 
 
-On windows or on mac open a terminal and type:
 
-.. code-block:: bash
 
-  pip install <package name>
+.. tab:: {{ windows }}
+
+   .. code-block:: bash
+
+      python -m pip install numpy
+
+.. tab:: {{ macos }}
+
+   .. code-block:: bash
+
+      python3 -m pip install numpy
+
+.. tab:: {{ linux }}
+
+   .. code-block:: bash
+
+      python3 -m pip install numpy
+
+
+.. note::
+
+   The code above will install the library "numpy". For installation of other libraries, simply delete "numpy", and write the name of the library you want to download.
+
 
 
 =========================================
@@ -29,7 +49,30 @@ If you are using a conda distribution, you will need to use the conda package ma
 
 On windows or on mac open a terminal and type:
 
-.. code-block:: bash
 
-  conda install <package name>
+.. tab:: {{ windows }}
+
+   .. code-block:: bash
+
+      conda install numpy
+
+.. tab:: {{ macos }}
+
+   .. code-block:: bash
+
+      conda install numpy
+
+.. tab:: {{ linux }}
+
+   .. code-block:: bash
+
+      conda install numpy
+
+
+
+.. note::
+
+   The code above will install the library "numpy". For installation of other libraries, simply delete "numpy", and write the name of the library you want to download.
+
+
 
