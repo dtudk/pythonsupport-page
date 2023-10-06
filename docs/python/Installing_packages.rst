@@ -44,6 +44,29 @@ If you are using the official Python distribution, you will need to use the pip 
 
    The code above will install the library "numpy". For installation of other libraries, simply delete "numpy", and write the name of the library you want to download.
 
+.. note::
+
+   If you get the error message ending in "(mach-o file, but is an incompatible achitecture (have 'x86_64', need 'arm64'))", run the following instead:
+
+
+.. tab:: {{ windows }}
+
+   .. code-block:: bash
+
+      pip install --upgrade --force-reinstall numpy
+
+.. tab:: {{ macos }}
+
+   .. code-block:: bash
+
+      pip3 install --upgrade --force-reinstall numpy
+
+.. tab:: {{ linux }}
+
+   .. code-block:: bash
+
+      pip3 install --upgrade --force-reinstall numpy
+
 
 
 =========================================
