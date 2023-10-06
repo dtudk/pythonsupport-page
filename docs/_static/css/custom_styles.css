@@ -25,3 +25,42 @@
 }
 
 /* ^^^^^ STYLES TO MAKE TABS MORE VISUAL ^^^^^ */
+
+/* To center the logo on the page */
+
+/* Actual logo */
+.microsoft-logo {
+  position: relative;
+  width: 50vmin;
+  height: 50vmin;
+  overflow: hidden;
+}
+
+#microsoft-logo:before {
+  content: "";
+  position: absolute;
+  height: 24.1vmin;
+  width: 50vmin;
+  background: linear-gradient(
+    90deg,
+    #f25022 48%,
+    transparent 48%,
+    transparent 52%,
+    #7fba00 52%
+  );
+}
+
+#microsoft-logo:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 24.1vmin;
+  width: 50vmin;
+  background: linear-gradient(
+    90deg,
+    #00a4ef 48%,
+    transparent 48%,
+    transparent 52%,
+    #ffb900 52%
+  );
+}
