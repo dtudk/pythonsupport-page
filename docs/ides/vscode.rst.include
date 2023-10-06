@@ -217,7 +217,7 @@ By either using the keybinding ``CTRL+K+T`` or pressing the cogwheel button and 
 New color themes can be acquired by navigating to Extensions under the Activity bar, and then searching for the color theme that you want to install. The library of color themes that vscode Extensions has to offer can be found by pressing `here <https://vscodethemes.com/?language=python>`__.
 
 
-**Key Bindings:** Vscode enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press ``CTRL+K+S``. This key binding brings up Vscode's keyboard shortcut menu.
+**Key Bindings:** Vscode enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press ``CTRL+K+S``. This key binding brings up vscode's keyboard shortcut menu.
 
 For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching "run python file" in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
 
@@ -231,17 +231,26 @@ For more options on key bindings press `here <https://code.visualstudio.com/docs
 
 Working with Jupyter Notebooks in Vscode
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-We can create and work with Jupyter Notebook files in vscode. A file in Vscode will be recognized as a Jupyter Notebook file with ``.ipynb``.
+We can create and work with Jupyter Notebook files in vscode. A file in vscode will be recognized as a Jupyter Notebook file with ``.ipynb``.
 
-**Preliminaries:** For Jupyter Notebook to run in vscode, we need to install a few Extensions. These include "Jupyter", "Jupyter Keymap", and "Jupyter Notebook Renderers", as seen on the following picture.
+#. **Preliminaries:** For Jupyter Notebook to run in vscode, we need to install a few Extensions. These include "Jupyter", "Jupyter Keymap", and "Jupyter Notebook Renderers", as seen on the following picture. 
     
     .. image:: images/Vscode-jupyter_extensions.png
-        :width: 400
+        :width: 300
+        :align: center
+    
+
+    **Note:** Usually, when you install the "Jupyter" extension, it will also install the two other extensions. However, check when you have installed the "Jupyter" extension the other extensions are also installed.
+
+#. **Creating a new Jupyter Notebook:** Creating a Jupyter Notebook in vscode is relatively simple. Just when you create an ordinary python file with the suffix ``.py``, you write ``.ipynb`` to create a Jupyter Notebook file. Or, you can press ``CTRL+SHIFT+P`` and search "Create: New Jupyter Notebook". This will also create a Jupyter Notebook file in vscode, however not in a predetermined directory.
+
+#. **Kernels: Setting up your Jupyter Notebook:** When working in a ``.ipynb`` file, you need to select a kernel for the file. Kernel is just a fancy word for the conda or virtual environment that will run your code in the cells of the notebook. Selecting a kernel can be done by either pressing ``CTRL+SHIFT+P``, selecting ``Python: Select Interpreter``, and choosing your environment or you can press the ``Select Kernel`` button in the top right corner of the notebook (illustrated on the following picture).
+    
+    .. image:: images/Vscode-native-kernel-picker.png
+        :width: 850
         :align: center
 
-**Creating a new Jupyter Notebook:** Creating a Jupyter Notebook in vscode is relatively simple. Just when you create an ordinary python file with the suffix ``.py``, you write ``.ipynb`` instead to create a Jupyter Notebook file.
-
-**Kernel:** When working in a ``.ipynb`` file, you need to select a kernel for the file. Kernel is just a fancy word for the conda or virtual environment that will run your code in the cells of the notebook. For a guide on how to select kernels and other functionality of jupyter notebooks, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_save-your-jupyter-notebook>`__. 
+Now you are ready to tackle your first project by using Jupyter Notebooks in vscode. However, if you are still uncomfortable with running cells or other functionalities of Jupyter Notebook, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks>`__. 
 
 .. note::
   You should install the package ``ipykernel`` in the environment that you plan to use as the kernel for Jupyter Notebook.
