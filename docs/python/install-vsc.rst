@@ -8,4 +8,6 @@ This is a guide on how to install VSC.  The following steps are the the same for
 
 2. Download VSC for you system. The webpage should recognize what system you are using.
 
+.. note::
 
+    If you want more information on how Visual Studio Code works, read :ref:`this <>`.

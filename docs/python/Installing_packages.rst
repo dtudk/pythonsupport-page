@@ -17,6 +17,11 @@ Depending on which distribution of Python you are using, you will need to use a 
 =========================================
 Using the official Python distribution
 =========================================
+
+.. note::
+
+   If you are unsure about using the terminal, we advice that you read :ref:`this <>` before proceeding.
+
 If you are using the official Python distribution, you will need to use the pip package manager. Open up a terminal and run the following: 
 
 
