@@ -190,3 +190,27 @@ After a couple of seconds, your terminal will list every package that you have d
 
 
 
+
+10. How can i install and uninstall packages? 
+==================================================
+
+To uninstall a package you can type ``pip3 install package name ``
+
+For example, in order to install the sympy package, you could write the following:
+
+.. code-block:: python
+
+   pip3 install sympy 
+
+It is also possible to do the same thing in order to uninstall a package 
+
+.. code-block:: python
+
+   pip3 uninstall sympy
+
+A clever trick to use, is to install multiple packages in the same command. This makes it so that both packages will be installed, in versions that are compatible with one another.
+For example, you can download sympy and numpy in one go, to make sure that their versions will be able to work together 
+
+.. code-block:: python
+
+   pip3 install sympy numpy 
