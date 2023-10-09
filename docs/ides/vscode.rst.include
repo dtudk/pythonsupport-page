@@ -31,7 +31,7 @@ User Interface
 
 **Run and debug:** Pressing this button will run the file which is currently open in the editor.
 
-Panal
+Panel
 ^^^^^^
 The Panel, located at the bottom of the interface (see above), consists of several important tabs:
 
@@ -78,8 +78,7 @@ Creating and Opening Projects
 
 Working with Files
 ^^^^^^^^^^^^^^^^^^
-1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it "new_file.py" - the ending ".py" makes it a python file.
-If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
+1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it "new_file.py" - the ending ".py" makes it a python file. If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
 
     .. image:: images/Vscode-files1.png
       :width: 600
@@ -92,6 +91,38 @@ If you want to create a new file inside a folder in your project, make sure to c
       :align: center
 
 3. To move a file to a folder simply click on the file and hold, then drag the file to the folder.
+
+Importing packages
+^^^^^^^^^^^^^^^^^^
+
+In order to write your code you can benefit from a bunch of different python-packages that will help you with your calculation. In Python these packages typically end
+with the letters "py". For example there is sympy, which will help you with caluclating with variables (or symbols), numpy which is used for numerical calculations and 
+matplotlib, which is used for plotting your data. You will typically import the packages you want to use in the top of your project so that you can use them throughout the following code.
+
+ 1. Open a new project.
+ 
+ 2. There are several different ways of importing packages. We will here show you some examples:
+
+   - ``import <name of the package>``
+       This is the simplest way of importing packages. In order to call functions from the package you have to write the name of the package, followed by ``.`` and then 
+       the function you want to use (for example ``numpy.sqrt(2)``).
+   - ``import <name of the package> as ...``
+       If you don't want to write the whole name of the packages every time you use a command from them, you can define a shorter name for them yourself, that you want
+       to call them. Typically one will write ``import numpy as np`` instead of ``import numpy`` or ``import sympy as sp`` instead of ``import sympy``, so that you don't have to write 
+       the entire name every time you want to call a function from that package.
+   - ``from <name of the package> import *``
+       You can use this command if you want to import the whole package without having to write the name or the abbreviation of the package in front of the function. It already knows 
+       that you want to import the function from this package. The ``*`` indicates that you imported everything from this package.
+       For example one can write ``from sympy import *`` and then create a matrix by writing ``Matrix([[... , ...],[... , ...]])`` instead of writing ``sp.Matrix([[... , ...],[... , ...]])``
+       or even ``sympy.Matrix([[... , ...],[... , ...]])``.
+   - ``from <name of the package> import <name of function>``
+       You can use this command if you only want to import specific functions from the package. This will allow you to import only the functions that you are using. For example the command
+       ``from matplotlib import pyplot`` will import only the function ``pyplot`` from the package ``matplotlib``. You can then for example call the function ``pyplot.plot(x,y)``.
+   - ``import <name of the package>.<name of function> as ...``
+       This command is helpful if you again only want to import specific functions but you also want to call them something else (often times something shorter). If you for example run the
+       command ``import matplotlib.pyplot as plt`` you will import the exact same function as in the example before but you don't have to write as much in order to call the function: ``plt.plot(x, y)``.
+
+
 
 Extensions
 ^^^^^^^^^^
@@ -112,12 +143,9 @@ Debugging
 Debugging is the process of finding and fixing errors within a script. 
 VSCode provides a powerful debugging tool that allows you to set breakpoints, step through code, and inspect variables.
 
-1. Set a breakpoint, click on the left of the line number where you want to pause the execution of your code. 
-A red dot will appear to indicate that a breakpoint has been set, it is possible to set multiple breakpoints in your code.
-To remove a breakpoint, click on the red dot again.
+1. Set a breakpoint, click on the left of the line number where you want to pause the execution of your code. A red dot will appear to indicate that a breakpoint has been set, it is possible to set multiple breakpoints in your code. To remove a breakpoint, click on the red dot again.
 
-2. Start a debugging session, click on the "Run and Debug" tab in the sidebar and select "Run and Debug".
-This will open the debug panel at the top of the screen and start the debugging session.
+2. Start a debugging session, click on the "Run and Debug" tab in the sidebar and select "Run and Debug". This will open the debug panel at the top of the screen and start the debugging session.
 
     .. image:: images/Vscode-Debugging.png
       :width: 600
@@ -157,50 +185,42 @@ To change the interpreter location open a python file and click on the Python ve
       :width: 600
       :align: center
 
+Install requirements.txt 
+^^^^^^^^^^^^^^^^^^^^^^^^
+The requirements.txt file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
+To install a requirements.txt file you have to do the following:
 
-Importing packages
-^^^^^^^^^^^^^^^^^^
+1. Navigate into the folder from where you want to access the packages (see "Creating and Opening Projects"). 
 
-In order to write your code you can benefit from a bunch of different python-packages that will help you with your calculation. In Python these packages typically end
-with the letters "py". For example there is sympy, which will help you with caluclating with variables (or symbols), numpy which is used for numerical calculations and 
-matplotlib, which is used for plotting your data.
 
-To choose which packages you want to import, you can write "import <name of the package>". This will already import the package into your program. In order to use the 
-functions in the program, you will have to write the name of the package, followed by "." and then you will write the function that you want to use (for example
-numpy.sqrt(2)). If you don't want to write the whole name of the packages every time you use a command from them, you can define a shorter name for them yourself, that you want
-to call them. Typically one will write "import numpy as np" instead of "import numpy" or "import sympy as sp" instead of "import sympy", so that you don't have to write 
-the entire name every time you want to call a function from that package.
+2. Open up your terminal. You can then copy the following command into your terminal and press enter to execute:
 
-If you want to import the whole package you can use "from <name of the package> import *". The * indicates that you import everything from the package and that also means that 
-you don't have to specify which package you are using whenever you call a function, because it already knows that you will import the function from this package.
+.. tab:: {{ win_powershell }}
 
-For example one can write "from sympy import *" and then create a matrix by writing "Matrix([[... , ...],[... , ...]])" instead of writing "sp.Matrix([[... , ...],[... , ...]])"
-or even "sympy.Matrix([[... , ...],[... , ...]])".
+   .. code-block:: powershell
 
-Another example where you can use the "from <name of the package> import" function, is if you only want to import specific functions from the package. In that case you will write
-"from <name of the package> import <the function(s) that you want to import>". This will allow you to import only the functions that you are using.
+      python -m pip install -r requirements.txt
 
-Importing packages
-^^^^^^^^^^^^^^^^^^
+.. tab:: {{ win_batch }}
 
-In order to write your code you can benefit from a bunch of different python-packages that will help you with your calculation. In Python these packages typically end
-with the letters "py". For example there is sympy, which will help you with caluclating with variables (or symbols), numpy which is used for numerical calculations and 
-matplotlib, which is used for plotting your data.
+   .. code-block:: winbatch
 
-To choose which packages you want to import, you can write "import <name of the package>". This will already import the package into your program. In order to use the 
-functions in the program, you will have to write the name of the package, followed by "." and then you will write the function that you want to use (for example
-numpy.sqrt(2)). If you don't want to write the whole name of the packages every time you use a command from them, you can define a shorter name for them yourself, that you want
-to call them. Typically one will write "import numpy as np" instead of "import numpy" or "import sympy as sp" instead of "import sympy", so that you don't have to write 
-the entire name every time you want to call a function from that package.
+      python -m pip install -r requirements.txt
 
-If you want to import the whole package you can use "from <name of the package> import *". The * indicates that you import everything from the package and that also means that 
-you don't have to specify which package you are using whenever you call a function, because it already knows that you will import the function from this package.
+.. tab:: {{ mac_bash }}
 
-For example one can write "from sympy import *" and then create a matrix by writing "Matrix([[... , ...],[... , ...]])" instead of writing "sp.Matrix([[... , ...],[... , ...]])"
-or even "sympy.Matrix([[... , ...],[... , ...]])".
+   .. code-block:: bash
 
-Another example where you can use the "from <name of the package> import" function, is if you only want to import specific functions from the package. In that case you will write
-"from <name of the package> import <the function(s) that you want to import>". This will allow you to import only the functions that you are using.
+      python3 -m pip install -r requirements.txt
+
+.. tab:: {{ linux_bash }}
+
+   .. code-block:: bash
+
+      python3 -m pip install -r requirements.txt
+
+The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an "%". 
+
 
 
 Customization
@@ -254,14 +274,3 @@ Now you are ready to tackle your first project by using Jupyter Notebooks in vsc
 
 .. note::
   You should install the package ``ipykernel`` in the environment that you plan to use as the kernel for Jupyter Notebook.
-
-Conclusion
-Summarize the key points covered in the tutorial.
-Encourage users to explore more advanced features and resources for further learning.
-Additional Tips:
-
-Use screenshots and visuals to illustrate the concepts.
-Include download links and references to official documentation for more in-depth exploration.
-Keep instructions clear and concise, using beginner-friendly language.
-Encourage users to practice what they've learned by providing exercises or sample projects.
-Remember to update the tutorial as needed to reflect any changes in the VSCode interface or features in newer versions. This comprehensive tutorial should provide beginners with a solid foundation for using Visual Studio Code effectively.
