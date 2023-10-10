@@ -1,6 +1,6 @@
-.. _Deleting Python:
+.. _Deleting multiple versions of python:
 
-Deleting Python
+Deleting multiple versions of python
 =========================================
 
 If for some reason you wish to delete python from your computer, here is how you do it. 
@@ -35,8 +35,11 @@ Then run the following command:
 
     bash deletePythonMac.sh
 
+.. tip:: Place the script on your desktop. Then open a terminal window and type the following command: 'cd ~/Desktop'. Then run the script as described above. If this does not work check out: LINK TO HELP WITH TERMINAL
+
 This will promt you for your system password. Enter it and press enter. The script will then delete all versions of python that you have installed on your computer.
 
 :download:`Download script for deleting python: deletePythonMac.sh </_downloads/deletePythonMac.sh>`
 
 .. note:: This will delete all versions of python that you have installed on your computer - including packages that you have installed using pip or conda install.
+

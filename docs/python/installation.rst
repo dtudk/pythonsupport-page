@@ -5,7 +5,7 @@ Setting up python
 
 .. tip:: 
     We suggest removing any pre-installed Python versions and VS Code before 
-    proceeding with this  guide to ensure a smooth installation process. You can refer to this guide to walk you through the uninstallation process, ensuring you're all set to get started.
+    proceeding with this  guide to ensure a smooth installation process. For help with this process, take a look at the section on `Deleting multiple versions of python <deletingPython.html>`_.
 
 
 
@@ -42,6 +42,12 @@ Setting up python
 .. warning::
     If you did not download python through Microsoft Store, then you need to make sure 
     that you check the "Add to path" box during the installation. 
+
+=================
+Verifying installation
+=================
+
+To verify if python is installed correctly follow the steps below:  
 
 .. tab:: {{ windows }}
 

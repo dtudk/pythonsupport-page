@@ -14,11 +14,17 @@ This is a guide on how to uninstall Anaconda from your computer.  It can help if
 Windows
 ===========================================
 
-1. Open your terminal and run the following line
+1. Open your terminal and run the following lines, one at a time
 
 .. code-block:: bash
     
     conda install anaconda-clean
+
+.. code-block:: bash
+    
+        anaconda-clean --yes
+
+.. tip:: In order to run the above command you need to be in the 'base' environment. If it does not say (base) in the beginning of the line, run the following command: ``conda activate base``    
 
 2.  Open your controlpanel, and press uninstall application
 
@@ -28,11 +34,17 @@ Windows
 MacOs and Linux
 ===========================================
 
-1. Open your terminal and run the following line
+1. Open your terminal and run the following lines, one at a time
 
 .. code-block:: bash
     
     conda install anaconda-clean
+
+.. code-block:: bash
+        
+        anaconda-clean --yes
+
+.. tip:: In order to run the above command you need to be in the 'base' environment. If it does not say (base) in the beginning of the line, run the following command: ``conda activate base``
 
 2. Then run the following three lines, one at a time
 

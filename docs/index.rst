@@ -136,9 +136,11 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    quickstart/index.rst
    courses/index.rst
 
-   python/install.rst
+   .. python/install.rst
+   
    python/installation.rst
    python/Installing_packages.rst
+   python/install-vsc.rst
 
 .. toctree::
    :maxdepth: 2
@@ -151,11 +153,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    os/index.rst
    ides/index.rst
    faqs/index.rst
-   src/about.rst
    python/deleteAnaconda.rst
-   python/install-vsc.rst
-
    python/deletingPython.rst
-
    python/deleteVSC.rst
-
+   src/about.rst
