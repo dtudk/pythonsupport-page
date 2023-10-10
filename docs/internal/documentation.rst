@@ -22,6 +22,9 @@ to get started:
 If you have questions, feel free to discuss on our Discord channel.
 
 
+.. include:: extensions.rst.include
+
+
 .. _internal-doc-good-bad:
 
 Good or bad documentation

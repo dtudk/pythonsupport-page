@@ -1,0 +1,72 @@
+
+Extensions and usage
+^^^^^^^^^^^^^^^^^^^^^
+
+When documenting in RsT the documentation enables
+certain extensions.
+
+.. card:: ``:course:``
+
+   A direct link to the installation guide for the course.
+   I.e. this link will be directed to the :guilabel:`Courses -> XXXXX`
+   page.
+
+   Usage:
+
+   .. code-block:: rst
+
+      :course:`01001`
+
+.. card:: ``:course-home:``
+
+   Retrieve a link to the home page of a course.
+
+   Some courses may have generic home-pages.
+   The top level configuration file `docs/ps_configuration.toml`
+   contains the homepages in a `[course.XXXXX.home]` value.
+
+   Usage:
+
+   .. code-block:: rst
+
+      :course-home:`01001`
+
+   will turn into a text of ``01001`` which links to the page
+   set in the configuration file.
+
+.. card:: ``:course-base:``
+
+   This extension can be used in two different ways
+
+   1. Specify only the course number.
+      This results in a simple reference to the latest
+      course description (i.e. current year).
+
+      This should generally be used when describing the course
+      in a broad sense.
+
+   2. Specify which year the course description should be
+      looked up in.
+
+      This method should be used when describing material
+      that focuses on the course for a given year. E.g.
+      semester specific course guides.
+      A year reference will be taken as the first year.
+      The DTU base URLs is created with ``YYYY-YYYY+1`` for
+      specific courses in specific years.
+
+   Example usage:
+
+   .. code-block:: rst
+
+      .. 1. Simple reference
+
+      :course-base:`01001`
+
+
+      .. 2. Specific year reference
+         All below will result in the same link.
+
+      :course-base:`2023:01001`
+      :course-base:`23:01001`
+      :course-base:`23-24:01001`
