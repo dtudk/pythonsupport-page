@@ -16,7 +16,7 @@ _cwd = Path().resolve()
 
 # add the exts folder
 sys.path.insert(1, str(_cwd))
-from ps_modules.dictformatter import DictFormatter
+from ps_modules.pageredirects import *
 from ps_modules.create_timetabs import create_time_table
 
 if sys.version_info >= (3, 11):
@@ -125,13 +125,12 @@ _pythonsupport = _conf_toml["pythonsupport"]
 
 url = _pythonsupport["homepage"]
 
-_coursepages = DictFormatter()
+_coursepages = HomepageFormatter()
 # Add all courses here
 # These will be used to format the homepages
 # I.e. this class can be used in extlinks
 for course, info in _conf_toml["course"].items():
     _coursepages.add(course, info["home"])
-
 
 extlinks = {
     # easy mails
@@ -143,7 +142,10 @@ extlinks = {
     "course": (":doc:`/courses/%s/index`", "%s"),
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
-    "course-base": (f"{_conf_toml['dtu']['course-base']}/course/{_year[0]}-{_year[1]}/%s", "%s"),
+    "course-base": (
+        Coursebase(_conf_toml["dtu"]["course-base"] + "/course"),
+        CourseStrip()
+    ),
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
     "course-home": (_coursepages, "%s"),

@@ -1,7 +1,7 @@
 E2023
 =====
 
-This guideline is for students attending course :course-base:`02461` in Autumn 2023.
+This guideline is for students attending course :course-base:`2023:02461` in Autumn 2023.
 
 Please follow this guideline:
 

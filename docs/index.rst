@@ -116,9 +116,9 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
      Chemistry
    - :course-base:`27020`
      Bioengineering
-   - :course-base:`42611`
+   - :course-base:`42620`, :course-base:`42622`
      Science, Technology and Society
-   - :course-base:`42500`
+   - :course-base:`42500`, :course-base:`42501`, :course-base:`42504`
      Innovation in Engineering
    - :course-base:`12100`
      Quantitative Sustainability
