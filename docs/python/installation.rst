@@ -37,8 +37,6 @@ Setting up python
     *In progress*
 
 
-2. **Verify the installation** 
-
 .. warning::
     If you did not download python through Microsoft Store, then you need to make sure 
     that you check the "Add to path" box during the installation. 
