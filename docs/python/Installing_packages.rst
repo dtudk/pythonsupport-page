@@ -5,14 +5,14 @@ Installing packages
 
 When using Python, you will most likely need to import several packages in your script. 
 Python comes with a standard library that includes many of the most common packages. 
-However, some packages you wil need to install manually. 
+However, some packages you will need to install manually. 
 
 Depending on which distribution of Python you are using, you will need to use a different package manager.
 
 .. note::
    
-   If you at some point have trouble with installing a package, and you already have conda og Anacona installed, consider deleting it, since this can misscomunicate with pip.
-   You can find a guide on how to uninstall these :ref:`by clicking here <Deleting Anaconda>`.
+   If you at some point have trouble with installing a package, and you already have Anacona installed, consider deleting it, since this can misscomunicate with pip.
+   You can find a guide for the uninstallation process :ref:`by clicking here <Deleting Anaconda>`.
 
 =========================================
 Using the official Python distribution
@@ -20,7 +20,7 @@ Using the official Python distribution
 
 .. note::
 
-   If you are unsure about using the terminal, we advice that you read :ref:`this <>` before proceeding.
+   If you are unsure about using the terminal, we advice that you read :ref:`this <LINK TO TERMINAL GUIDE>` before proceeding.
 
 If you are using the official Python distribution, you will need to use the pip package manager. Open up a terminal and run the following: 
 

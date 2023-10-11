@@ -2,7 +2,7 @@
 
 Installing Visual Studio Code
 ===========================================
-This is a guide on how to install VSC.  The following steps are the the same for all operatoing systems.
+This is a guide on how to install Visual Studio Code.  The following steps are the the same for all operating systems.
 
 1. Go to `VSC webpage <https://code.visualstudio.com>`_ 
 
@@ -10,4 +10,4 @@ This is a guide on how to install VSC.  The following steps are the the same for
 
 .. note::
 
-    If you want more information on how Visual Studio Code works, read :ref:`this <>`.
+    If you want more information on how Visual Studio Code works, read :ref:`this <LINK TO VS CODE GUIDE>`.

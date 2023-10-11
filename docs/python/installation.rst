@@ -32,14 +32,15 @@ Setting up python
 
 
 
-.. tab:: {{ linux }}
-
-    *In progress*
-
 
 .. warning::
     If you did not download python through Microsoft Store, then you need to make sure 
     that you check the "Add to path" box during the installation. 
+
+.. image:: images/Install-Python-step-1.png
+    :width: 600px
+    :align: center
+    :alt: Add to path checkbox
 
 =================
 Verifying installation
@@ -61,11 +62,4 @@ To verify if python is installed correctly follow the steps below:
     3. In the Terminal window, type *"python3 --version"*
     4. If you see the "Python x.xx.x" smiling back at you, you're all set! You've got a Python friend on your machine |:snake:|.
 
-.. tab:: {{ linux }} 
 
-    If you use linux, you know what to do (jk, det skal nok rettes inden publish)
-
-
-.. toctree::
-   :caption: Downloading python installation
-   :maxdepth: 1
