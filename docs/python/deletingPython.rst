@@ -35,7 +35,7 @@ Then run the following command:
 
     bash deletePythonMac.sh
 
-.. tip:: Place the script on your desktop. Then open a terminal window and type the following command: 'cd ~/Desktop'. Then run the script as described above. If this does not work check out: LINK TO HELP WITH TERMINAL
+.. tip:: Place the script on your desktop. Then open a terminal window and type the following command: ``cd ~/Desktop`` . Then run the script as described above. If this does not work check out: LINK TO HELP WITH TERMINAL
 
 This will promt you for your system password. Enter it and press enter. The script will then delete all versions of python that you have installed on your computer.
 
