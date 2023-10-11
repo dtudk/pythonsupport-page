@@ -225,7 +225,7 @@ The installation of the packages will take a few minutes. After it is done you w
 
 Customization
 ^^^^^^^^^^^^^
-Vscode has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel butten in the lower left corner.
+Vscode has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel button in the lower left corner.
 
     .. image:: images/Vscode-cogwheel.png
       :width: 400
