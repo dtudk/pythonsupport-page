@@ -214,3 +214,78 @@ For example, you can download sympy and numpy in one go, to make sure that their
 .. code-block:: python
 
    pip3 install sympy numpy 
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:pip3install
+        :terminal: Powershell
+
+        -   value: pip3 install numpy
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -   "Collecting numpy"
+        -   "Obtaining dependency information for numpy from https://files......."
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pip3install')">↺</button>
+
+.. tab:: {{ win_batch }}
+
+   
+   .. termynal:: termynal:pip3installcmd
+        :terminal: Command prompt
+
+        -   value: pip3 install numpy
+            type: input
+            prompt: 'C:\User\youruser>'
+        -   "Collecting numpy"
+        -   "Obtaining dependency information for numpy from https://files......."
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pip3installcmd')">↺</button>
+
+.. tab:: {{ mac_bash }}
+
+   
+   .. termynal:: termynal:pip3installmac
+        :terminal: bash
+
+        -   value: pip3 install numpy # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@mac~%'
+        -   "Collecting numpy"
+        -   "Obtaining dependency information for numpy from https://files......."
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pip3installmac')">↺</button>
+   .. $ pwd  # On Unix-based systems (Linux or macOS)
+
+
+.. tab:: {{ linux_bash }}
+
+
+   .. termynal:: termynal:pip3installlinux
+        :terminal: bash
+
+        -   value: pip3 list # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@linux~$'
+        -   "Collecting numpy"
+        -   "Obtaining dependency information for numpy from https://files......."
+
+
+   .. raw:: html
+
+      <button type="button"
+        class="btn btn-primary"
+        onclick="new Termynal('#termynal-pip3installlinux')">↺</button>
