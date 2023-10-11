@@ -177,40 +177,157 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 **Exercise:** Run the commands and observe the files and folders in your current directory.
 
-3. I want to get out of here (cd)
+
+7. How to know when you are in the python shell
+================================================
+
+When you start the Python interpreter, you will see a prompt that looks like this:
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:pythonIdPS
+      :title: Powershell
+      :windows:
+
+      -  value: python
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: ''
+         type: input
+         prompt: '>>>'
+.. tab:: {{ win_cmd }} 
+
+   
+   .. termynal:: termynal:pythonIdCMD
+      :title: Command Prompt
+      :windows:
+
+      -  value: python
+         type: input
+         prompt: 'C:\User\youruser>'
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: ''
+         type: input
+         prompt: '>>>'
+
+.. tab:: {{ mac_bash }} 
+
+   
+   .. termynal:: termynal:pythonIdMac
+      :title: Bash
+      :unix:
+
+      -  value: python
+         type: input
+         prompt: 'youruser@yourcomputer ~ % '
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: ''
+         type: input
+         prompt: '>>>'
+
+
+.. tab:: {{ linux_bash }} 
+
+   
+   .. termynal:: termynal:pythonIdLinux
+      :title: Bash
+      :unix:
+
+      -  value: python
+         type: input
+         prompt: 'youruser@yourcomputer:~$ '
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: ''
+         type: input
+         prompt: '>>>'
+
+The ``>>>`` prompt indicates that you are inside the Python shell. This means that you can enter Python commands and they will be executed by the interpreter. You can also import modules, define functions, and perform other tasks that you would normally do in a Python script.
+
+
+
+8. How to exit python shell
 ==================================
 
-To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "my_folder," you can use:
+To exit the Python shell, type ``exit()`` and press Enter.
 
-.. code:: 
+.. tab:: {{ win_powershell }} 
 
-   $ cd my_folder
+   
+   .. termynal:: termynal:exitPS
+      :title: Powershell
+      :windows:
 
-**Exercise:** Change to a different directory using the ``cd`` command.
+      -  value: python
+         type: input
+         prompt: 'PS C:\User\youruser>'
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: exit()
+         type: input
+         prompt: '>>>'
+      -  value: ''
+         type: input
+         prompt: 'PS C:\User\youruser>'
 
+.. tab:: {{ win_cmd }} 
 
+   
+   .. termynal:: termynal:exitCMD
+      :title: Command Prompt
+      :windows:
 
+      -  value: python
+         type: input
+         prompt: 'C:\User\youruser>'
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: exit()
+         type: input
+         prompt: '>>>'
+      -  value: ''
+         type: input
+         prompt: 'C:\User\youruser>'
 
+.. tab:: {{ mac_bash }} 
 
+   
+   .. termynal:: termynal:exitMac
+      :title: Bash
+      :unix:
 
+      -  value: python3
+         type: input
+         prompt: 'youruser@yourcomputer ~ % '
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: exit()
+         type: input
+         prompt: '>>>'
+      -  value: ''
+         type: input
+         prompt: 'youruser@yourcomputer ~ % '
 
+.. tab:: {{ linux_bash }} 
 
+   
+   .. termynal:: termynal:exitLinux
+      :title: Bash
+      :unix:
 
-.. .. tab:: {{ bash }}
-.. 
-..    
-..    .. termynal:: termynal:pwd
-..         :terminal: bash
-.. 
-..         -   value: pwd # On Unix-based systems (Linux or macOS)
-..             type: input
-..             prompt: 'username@mac~$'
-..         -   /home/username
-.. 
-..    .. raw:: html
-.. 
-..       <button type="button"
-..         class="btn btn-primary"
-..         onclick="new Termynal('#termynal-pwd')">↺</button>
-..    .. $ pwd  # On Unix-based systems (Linux or macOS)
-
+      -  value: python3
+         type: input
+         prompt: 'youruser@yourcomputer:~$ '
+      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+      -  'Type "help", "copyright", "credits" or "license" for more information.'
+      -  value: exit()
+         type: input
+         prompt: '>>>'
+      -  value: ''
+         type: input
+         prompt: 'youruser@yourcomputer:~$ '

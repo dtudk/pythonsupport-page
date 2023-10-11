@@ -27,8 +27,9 @@ to run commands on the terminal to ensure proper installation and ensure a consi
    - mkdir
    - rm
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Terminal guide
 
-.. include:: terminal.rst.include
-.. include:: Tiago.rst.include
-.. include:: Charlie.rst.include
-.. include:: Manu.rst.include
+   terminalTutorial.rst
+   terminalExercises.rst
