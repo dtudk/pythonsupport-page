@@ -11,8 +11,8 @@ Depending on which distribution of Python you are using, you will need to use a 
 
 .. note::
    
-   If you at some point have trouble with installing a package, and you already have Anacona installed, consider deleting it, since this can misscomunicate with pip.
-   You can find a guide for the uninstallation process :ref:`by clicking here <Deleting Anaconda>`.
+   If you at some point have trouble with installing a package, and you already have Anaconda installed, consider deleting it, since this can miscommunicate with pip.
+   You can find a guide for the uninstalling process :ref:`by clicking here <Deleting Anaconda>`.
 
 =========================================
 Using the official Python distribution
@@ -51,7 +51,7 @@ If you are using the official Python distribution, you will need to use the pip 
 
 .. note::
 
-   If you get the error message ending in "(mach-o file, but is an incompatible achitecture (have 'x86_64', need 'arm64'))", run the following instead:
+   If you get the error message ending in "(mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))", run the following instead:
 
 
 .. tab:: {{ windows }}

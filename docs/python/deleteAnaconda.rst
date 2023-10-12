@@ -26,7 +26,7 @@ Windows
 
 .. tip:: In order to run the above command you need to be in the 'base' environment. If it does not say (base) in the beginning of the line, run the following command: ``conda activate base``    
 
-2.  Open your controlpanel, and press uninstall application
+2.  Open your control panel, and press uninstall application
 
 3. Find all the applications regarding Anaconda, right click on the and press uninstall.
 
