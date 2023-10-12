@@ -135,9 +135,9 @@ To find out your current directory (location), you can use the ``pwd`` command o
       -  value: cd
          type: input
          prompt: 'PS C:\User\youruser>'
-      -  'PS C:\User\youruser>'  
+      -  'PS C:\User\youruser>'
 
-.. tab:: {{ win_cmd }} 
+.. tab:: {{ win_batch }} 
 
    
    .. termynal:: termynal:cdCMD
@@ -147,7 +147,7 @@ To find out your current directory (location), you can use the ``pwd`` command o
       -  value: cd
          type: input
          prompt: 'C:\User\youruser>'
-      -  'C:\User\youruser>'  
+      -  'C:\User\youruser>'
 
 .. tab:: {{ mac_bash }} 
 
