@@ -22,6 +22,7 @@ Lyngby
 conda
 pip
 venv
+anaconda
 virtualenv
 miniconda
 mamba
@@ -31,6 +32,15 @@ homebrew
 Ørsteds
 mkdir
 makefile
+
+# packages
+numpy
+scipy
+matplotlib
+sympy
+pytorch
+tensorflow
+dtumathtools
 
 # proper words:
 explorative
