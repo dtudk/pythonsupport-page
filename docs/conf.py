@@ -432,6 +432,8 @@ html_context = {
     "windows": "Windows",
     "macos": "MacOS",
     "linux": "Linux",
+    "vscode": "VS Code",
+    "spyder": "Spyder",
 
     # Operating shells
     "win_powershell": f"Windows | Powershell {_pref_symbol}",

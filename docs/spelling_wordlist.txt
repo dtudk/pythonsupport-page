@@ -19,6 +19,7 @@ VSCode
 PyCharm
 Jupyter
 Lyngby
+IPython
 conda
 pip
 venv
@@ -45,3 +46,7 @@ dtumathtools
 # proper words:
 explorative
 executables
+miscommunicate
+workspaces
+integrations
+understandability
