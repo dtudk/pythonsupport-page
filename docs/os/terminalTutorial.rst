@@ -302,7 +302,14 @@ To find out your current directory (location), you can use the ``pwd`` command o
 3. Changing directories (cd)
 ==========================================
 
-To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "my_folder," you can use:
+To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+
+Type and enter in your Terminal:
+   .. code:: termynal 
+
+      cd MyFolder
+
+It should look something like this:
 
 .. tab:: {{ win_powershell }} 
 
@@ -314,7 +321,7 @@ To navigate to a different directory, you can use the ``cd`` command followed by
          -  value: cd MyFolder
             type: input
             prompt: 'PS C:\User\youruser>'
-         -  prompt: 'PS C:\User\youruser\Myfolder>'  
+         -  prompt: 'PS C:\User\youruser\MyFolder>'  
 
 
 .. tab:: {{ win_batch }}
@@ -359,7 +366,7 @@ To navigate one step backwards, you can use the ``cd ..`` command:
 
 .. code:: termynal 
 
-   $ cd .. 
+   cd .. 
 
 **exercise:** try to navigate to a directory, and then leaving it using ``cd ..``
 
@@ -819,6 +826,14 @@ To exit the Python shell, type ``exit()`` and press Enter.
 
 To see which packages you currently have, you can type ``pip3 list`` in the terminal.
 After a couple of seconds, your terminal will list every package that you have downloaded
+
+You can paste the following code directly in to your terminal:
+
+.. code:: termynal 
+
+      pip3 list
+
+It should look something like this (but you will probably have a lot more packages than 2):
 
 .. tab:: {{ win_powershell }} 
 

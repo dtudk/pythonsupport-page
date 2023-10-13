@@ -4,9 +4,10 @@
 To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "my_folder," you can do as explained below:
 
 Type the following and press enter:
-   .. code-block:: 
 
-      cd MyFolder
+.. code:: termynal 
+
+   cd .. 
 
 
 
@@ -87,7 +88,7 @@ To navigate one step backwards, you can use the ``cd ..`` command:
 
 .. code:: termynal 
 
-   $ cd .. 
+   cd .. 
 
 **exercise:** try to navigate to a directory, and then leaving it using ``cd ..``
 
