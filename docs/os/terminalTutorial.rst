@@ -361,8 +361,75 @@ It should look something like this:
             prompt: 'username@linux~$'
          -  prompt: 'username@linux MyFolder~$'
 
+A good trick to use in visual studio code, is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
+
+#. Press the icon in the top left of the screen that looks like 2 pieces of paper on top of each other
+#. Press "open folder"
+#. Visual studio code will now open your files. Select the folder that you would like to work with by clicking on it
+#. Now you should see all the files and subfolders contained in the folder taht you selected on the left side of the screen
+#. You can now right click a folder and press "copy path"
+#. type cd in your terminal and paste the path that you just copied 
+
+In general it is a good practice, it is a good idea to change your directory, to the place of whatever you are working with. For example, if a large dataset is in a specific folder, you can change your directory to that folder. 
+
+
+
 
 To navigate one step backwards, you can use the ``cd ..`` command:
+
+It might look something like this:
+
+
+.. tab:: {{ win_powershell }} 
+
+   
+   .. termynal:: termynal:backdir
+        :title: Powershell
+        :windows:
+
+         -  value: cd ..
+            type: input
+            prompt: 'PS C:\User\youruser\Myfolder>'
+         -  prompt: 'PS C:\User\youruser>'  
+
+
+.. tab:: {{ win_batch }}
+
+   
+   .. termynal:: termynal:backdircmd
+        :title: Command prompt
+        :windows:
+
+         -  value: cd ..
+            type: input
+            prompt: 'C:\User\youruser\Myfolder>'
+         -  prompt: 'C:\User\youruser>'
+
+.. tab:: {{ mac_bash }}
+
+   
+   .. termynal:: termynal:backdirmac
+        :title: bash
+        :unix:
+
+         -  value: cd .. # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@mac MyFolder~%'
+         -  prompt: username@mac~%
+
+   
+.. tab:: {{ linux_bash }}
+
+
+   .. termynal:: termynal:backdirlinux
+        :title: bash
+        :unix:
+
+         -  value: cd .. # On Unix-based systems (Linux or macOS)
+            type: input
+            prompt: 'username@linux MyFolder~$'
+         -  prompt: 'username@linux~$'
+
 
 .. code:: termynal 
 
