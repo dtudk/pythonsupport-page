@@ -42,9 +42,11 @@ def version2tuple(vers):
 
     raise NotImplementedError()
 
+year = datetime.date.today().year
+
 project = 'DTU Python support'
 html_title = "DTU Python support"
-copyright = '2023, DTU Python support'
+copyright = f'{year}, DTU Python support'
 author = 'DTU Python support developers'
 recommended_python = "3.11"
 
@@ -494,5 +496,4 @@ def setup(app):
         # include-read was added in 7.2.5 of Sphinx
         app.connect("include-read", rstjinja_include)
     except BaseException as e:
-        # we don't do anything
-        pass
+        print("cannot do jinja-replacements on included files")

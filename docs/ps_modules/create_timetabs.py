@@ -92,6 +92,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
 
     # Determine the week (added in 3.6)
     year, week, day, hour = map(int, today.strftime("%G %V %u %H").split())
+    print(f"timetable: parsed time: {year} {week} {day} {hour}")
 
     # perhaps some logic here.
     # Get the number of weeks in each period
@@ -147,7 +148,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
 
     # get week
     offset_week = week - week_start
-    offset_week += count_weeks_after_breaks(week, week_breaks)
+    offset_week -= count_weeks_after_breaks(week, week_breaks)
 
     # start writing out
     f = open(out, 'w')
