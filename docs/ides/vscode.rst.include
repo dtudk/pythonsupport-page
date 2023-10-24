@@ -11,15 +11,19 @@ It can be used together with any other coding language or be used to edit config
 It can be downloaded `here <https://code.visualstudio.com/download>`__.
 
 Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
-This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <environment-venv-vscode>`.
+This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <environment-venv-vsode>`.
 Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
 
 
+.. _ide-vscode-user-interface:
+
 User Interface
 ^^^^^^^^^^^^^^
-    .. image:: images/Vscode-Interface.png
-      :width: 700
-      :align: center
+
+.. image:: images/Vscode-Interface.png
+   :width: 700
+   :align: center
+   :alt: VS Code interface - explaining the different regions of the editor; Menu, Editor, Run/Debug, Panel and Activity Bar
 
 **Editor:** The main editor is where you write and edit your code or text files. It's the central area of VSCode where you will spend most of your time.
 
@@ -27,13 +31,15 @@ User Interface
 
 **Panel:** An additional space for views below the editor. By default, it houses output, debug information, problems, and an integrated terminal.
 
-**Menu bar:** You can use this to open files and folders
+**Menu bar:** You can use this to open files and folders, and more.
 
 **Run and debug:** Pressing this button will run the file which is currently open in the editor.
 
+
 Panel
 ^^^^^^
-The Panel, located at the bottom of the interface (see above), consists of several important tabs:
+
+The Panel, located at the bottom of the interface (see :ref:`above <ide-vscode-user-interface>`), consists of several important tabs:
 
 **Problems:** Displays a list of coding errors, warnings, and messages, helping you identify and fix issues in your code.
 
@@ -43,65 +49,78 @@ The Panel, located at the bottom of the interface (see above), consists of sever
 
 **Integrated Terminal:** Offers a command-line interface within Visual Studio Code, allowing you to run terminal commands and scripts directly from the editor.
 
+
 Activity Bar
 ^^^^^^^^^^^^
-    .. image:: images/Vscode-Activity.png
-      :width: 700
-      :align: center
-The Activity bar, located on the left side of the interface (see above), provides quick access to various functionalities and information about your project. The most used tabs in the activity bar is the explorer tab, run and debug tab and the extensions tab.
 
-**Explorer:** The "Explorer" tab in the sidebar is where you manage your project's files and folders. It provides a file tree view of your project's directory structure.
+.. image:: images/Vscode-Activity.png
+   :width: 700
+   :align: center
+   :alt: Activity bar selectors -- Explorer, Run and debug and Extensions tabs explained
 
-**Run and debug:** The "Run and Debug" tab is essential for debugging your code and running your applications within VSCode.
+The Activity bar, located on the left side of the interface (see :ref:`above <ide-vscode-user-interface>`),
+provides quick access to various functionalities and information about your project. The most used tabs in the activity bar is the *Explorer* tab, *Run and debug* tab and the *Extensions* tab.
 
-**Extensions:** The "Extensions" tab is your gateway to customizing and extending the functionality of VSCode through various extensions.
+**Explorer:** allows management of your project's files and folders. It provides a file tree view of your project's directory structure.
+
+**Run and debug:** is essential for debugging your code and running your applications within VSCode.
+
+**Extensions:** an *App store* equivalent for VS Code; it is your gateway to customizing and extending the functionality of VSCode through various extensions.
 VS Code is an extensible and versatile development environment.
 The extensions can greatly aid during the coding of varying problems.
 Some notable highlights include automatic API messages for methods, and
 integration with Jupyter notebooks.
 
+
 Creating and Opening Projects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 1. Create a folder for a project. You can do this by creating a folder e.g. on the desktop.
 
-2. Open the project be clicking on file on the menu bar and then clicking on "open folder" (see below) then navigate to your project folder.
+2. Open the project by clicking on :guilabel:`File` on the menu bar and then clicking on :guilabel:`Open Folder...` (see below) then navigate to your project folder.
 
-    .. image:: images/Vscode-Open_folder.png
+   .. image:: images/Vscode-Open_folder.png
       :width: 600
       :align: center
+      :alt: How to open a folder, select :guilabel:`File -> Open Folder...`
 
-3. Create a folder inside your project by clicking on the seecond most left icon (see below).
+3. Create a folder inside your project by clicking on the second most left icon (see below).
 
-    .. image:: images/Vscode-Create_folder.png
+   .. image:: images/Vscode-Create_folder.png
       :width: 600
       :align: center
+      :alt: How to create a folder, select :guilabel:`Explorer (Activity Bar) -> Folder+ (Icon)`
 
 Working with Files
 ^^^^^^^^^^^^^^^^^^
+
 1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it "new_file.py" - the ending ".py" makes it a python file. If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
 
-    .. image:: images/Vscode-files1.png
+   .. image:: images/Vscode-files1.png
       :width: 600
       :align: center
+      :alt: How to create a file, select :guilabel:`Explorer (Activity Bar) -> File+ (Icon)`
 
-2. Save the file by clicking on :guilabel:`File -> Save` (see below). If you want autosave to be enabled, click on :guilabel:`File -> Autosave`, and make sure it is checked.
+2. Save the file by clicking on :guilabel:`File -> Save` (see below), or by pressing :kbd:`Ctrl+S` (:kbd:`Command+S` on MacOS). If you want autosave to be enabled, click on :guilabel:`File -> Autosave`, and make sure it is checked.
 
-    .. image:: images/Vscode-Save_file.png
+   .. image:: images/Vscode-Save_file.png
       :width: 600
       :align: center
+      :alt: How to save a file, select :guilabel:`File -> Save`, or press :kbd:`Ctrl+S` / :kbd:`Command+S` (Windows/Mac)
 
 3. To move a file to a folder simply click on the file and hold, then drag the file to the folder.
+
 
 Importing packages
 ^^^^^^^^^^^^^^^^^^
 
 In order to write your code you can benefit from a bunch of different python-packages that will help you with your calculation. In Python these packages typically end
-with the letters "py". For example there is sympy, which will help you with caluclating with variables (or symbols), numpy which is used for numerical calculations and 
-matplotlib, which is used for plotting your data. You will typically import the packages you want to use in the top of your project so that you can use them throughout the following code.
+with the letters ``py``. For example there is ``sympy``, which will help you with caluclating with variables (or symbols), ``numpy`` which is used for numerical calculations and 
+``matplotlib``, which is used for plotting your data. You will typically import the packages you want to use in the top of your project so that you can use them throughout the following code.
 
- 1. Open a new project.
- 
- 2. There are several different ways of importing packages. We will here show you some examples:
+1. Open a new project.
+
+2. There are several different ways of importing packages. We will here show you some examples:
 
    - ``import <name of the package>``
        This is the simplest way of importing packages. In order to call functions from the package you have to write the name of the package, followed by ``.`` and then 
@@ -109,12 +128,14 @@ matplotlib, which is used for plotting your data. You will typically import the 
    - ``import <name of the package> as ...``
        If you don't want to write the whole name of the packages every time you use a command from them, you can define a shorter name for them yourself, that you want
        to call them. Typically one will write ``import numpy as np`` instead of ``import numpy`` or ``import sympy as sp`` instead of ``import sympy``, so that you don't have to write 
-       the entire name every time you want to call a function from that package.
+       the entire name every time you want to call a function from that package (for example ``np.sqrt(2)``).
    - ``from <name of the package> import *``
        You can use this command if you want to import the whole package without having to write the name or the abbreviation of the package in front of the function. It already knows 
        that you want to import the function from this package. The ``*`` indicates that you imported everything from this package.
        For example one can write ``from sympy import *`` and then create a matrix by writing ``Matrix([[... , ...],[... , ...]])`` instead of writing ``sp.Matrix([[... , ...],[... , ...]])``
        or even ``sympy.Matrix([[... , ...],[... , ...]])``.
+
+       **NOTE**: This can cause side-effects, use with care if doing this with multiple packages.
    - ``from <name of the package> import <name of function>``
        You can use this command if you only want to import specific functions from the package. This will allow you to import only the functions that you are using. For example the command
        ``from matplotlib import pyplot`` will import only the function ``pyplot`` from the package ``matplotlib``. You can then for example call the function ``pyplot.plot(x,y)``.
@@ -123,14 +144,14 @@ matplotlib, which is used for plotting your data. You will typically import the 
        command ``import matplotlib.pyplot as plt`` you will import the exact same function as in the example before but you don't have to write as much in order to call the function: ``plt.plot(x, y)``.
 
 
-
 Extensions
 ^^^^^^^^^^
+
 1. To install an extension click on the extensions tab in the activity bar (see below).
 
 2. Then search for the extension you want to install and click on install.
 
-    .. image:: images/Vscode-Extensions.png
+   .. image:: images/Vscode-Extensions.png
       :width: 600
       :align: center
     
@@ -140,6 +161,7 @@ Extensions can also be installed by following `these instructions <https://code.
 
 Debugging
 ^^^^^^^^^
+
 Debugging is the process of finding and fixing errors within a script. 
 VSCode provides a powerful debugging tool that allows you to set breakpoints, step through code, and inspect variables.
 
@@ -147,7 +169,7 @@ VSCode provides a powerful debugging tool that allows you to set breakpoints, st
 
 2. Start a debugging session, click on the "Run and Debug" tab in the sidebar and select "Run and Debug". This will open the debug panel at the top of the screen and start the debugging session.
 
-    .. image:: images/Vscode-Debugging.png
+   .. image:: images/Vscode-Debugging.png
       :width: 600
       :align: center
 
@@ -167,7 +189,7 @@ The buttons in the debug panel allow you to control the execution of your code. 
 
 3. Follow the variables in your code and their values on the left.
 
-    .. image:: images/Vscode-Debugging2.png
+   .. image:: images/Vscode-Debugging2.png
       :width: 600
       :align: center
 
@@ -175,49 +197,52 @@ The buttons in the debug panel allow you to control the execution of your code. 
 
 Virtual environment (venv)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Virtual environments are isolated spaces in computing to manage software dependencies separately. They prevent conflicts, ensure project portability, and maintain system stability. 
 You can read more about virtual environments `here <https://pythonsupport.dtu.dk/python/environments.html>`__.
 
 The interpreter is the program that executes the code you write. It is important to ensure that the interpreter is pointing to the correct Python executable (environment).
 To change the interpreter location open a python file and click on the Python version in the bottom left corner of the screen (see below).
 
-    .. image:: images/Vscode-Interpreter.png
-      :width: 600
-      :align: center
+.. image:: images/Vscode-interpreter.png
+   :width: 600
+   :align: center
+
 
 Install requirements.txt 
 ^^^^^^^^^^^^^^^^^^^^^^^^
-The requirements.txt file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
-To install a requirements.txt file you have to do the following:
+
+The ``requirements.txt`` file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
+To install a ``requirements.txt`` file you have to do the following:
 
 1. Navigate into the folder from where you want to access the packages (see "Creating and Opening Projects"). 
 
 
 2. Open up your terminal. You can then copy the following command into your terminal and press enter to execute:
 
-.. tab:: {{ win_powershell }}
+   .. tab:: {{ win_powershell }}
 
-   .. code-block:: powershell
+      .. code-block:: powershell
 
-      python -m pip install -r requirements.txt
+         python -m pip install -r requirements.txt
 
-.. tab:: {{ win_batch }}
+   .. tab:: {{ win_batch }}
 
-   .. code-block:: winbatch
+      .. code-block:: winbatch
 
-      python -m pip install -r requirements.txt
+         python -m pip install -r requirements.txt
 
-.. tab:: {{ mac_bash }}
+   .. tab:: {{ mac_bash }}
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      python3 -m pip install -r requirements.txt
+         python3 -m pip install -r requirements.txt
 
-.. tab:: {{ linux_bash }}
+   .. tab:: {{ linux_bash }}
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      python3 -m pip install -r requirements.txt
+         python3 -m pip install -r requirements.txt
 
 The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an "%". 
 
@@ -225,52 +250,55 @@ The installation of the packages will take a few minutes. After it is done you w
 
 Customization
 ^^^^^^^^^^^^^
-Vscode has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel button in the lower left corner.
 
-    .. image:: images/Vscode-cogwheel.png
-      :width: 400
-      :align: center
+VS Code has a lot of options that allows you to tailor it towards your individual preferences. These options can be found by pressing the cogwheel button in the lower left corner.
 
-**Themes:** One thing that you might want to experiment with is the different themes that vscode has to offer. These themes change the color coding of vscode and code that you have implemented.
-By either using the keybinding ``CTRL+K+T`` or pressing the cogwheel button and navigating to the option "color theme", vscode will bring up a palette of different themes that you have installed in your IDE. 
+.. image:: images/Vscode-cogwheel.png
+   :width: 400
+   :align: center
 
-New color themes can be acquired by navigating to Extensions under the Activity bar, and then searching for the color theme that you want to install. The library of color themes that vscode Extensions has to offer can be found by pressing `here <https://vscodethemes.com/?language=python>`__.
+**Themes:** One thing that you might want to experiment with is the different themes that VS Code has to offer. These themes change the color coding of VS Code and code that you have implemented.
+By either using the keybinding :kbd:`Ctrl+K+T` or pressing the cogwheel button and navigating to the option *color theme*, VS Code will bring up a palette of different themes that you have installed in your IDE. 
+
+New color themes can be acquired by navigating to Extensions under the Activity bar, and then searching for the color theme that you want to install. The library of color themes that VS Code Extensions has to offer can be found by pressing `here <https://VS Codethemes.com/?language=python>`__.
 
 
-**Key Bindings:** Vscode enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press ``CTRL+K+S``. This key binding brings up vscode's keyboard shortcut menu.
+**Key Bindings:** VS Code enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press :kbd:`Ctrl+K+S`. This key binding brings up VS Code's keyboard shortcut menu.
 
-For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching "run python file" in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
+For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching *run python file* in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
 
-    .. image:: images/Vscode-keybindings.png
-        :width: 900
-        :align: center
+.. image:: images/Vscode-keybindings.png
+   :width: 900
+   :align: center
 
 For more options on key bindings press `here <https://code.visualstudio.com/docs/getstarted/keybindings>`__.
 
-**Settings:** For more customization you can navigate to the `settings <https://code.visualstudio.com/docs/getstarted/settings>`__ option after pressing on the cogwheel. Here you will be able to change miscellaneous settings of your vscode like font size, cursor style etc. 
+**Settings:** For more customization you can navigate to the `settings <https://code.visualstudio.com/docs/getstarted/settings>`__ option after pressing on the cogwheel. Here you will be able to change miscellaneous settings of your VS Code like font size, cursor style etc. 
 
-Working with Jupyter Notebooks in Vscode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-We can create and work with Jupyter Notebook files in vscode. A file in vscode will be recognized as a Jupyter Notebook file with ``.ipynb``.
 
-#. **Preliminaries:** For Jupyter Notebook to run in vscode, we need to install a few Extensions. These include "Jupyter", "Jupyter Keymap", and "Jupyter Notebook Renderers", as seen on the following picture. 
+Working with Jupyter Notebooks in VS Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We can create and work with Jupyter Notebook files in VS Code. A file in VS Code will be recognized as a Jupyter Notebook file with ``.ipynb``.
+
+#. **Preliminaries:** For Jupyter Notebook to run in VS Code, we need to install a few Extensions. These include "Jupyter", "Jupyter Keymap", and "Jupyter Notebook Renderers", as seen on the following picture.
+
+   .. image:: images/Vscode-jupyter_extensions.png
+      :width: 300
+      :align: center
     
-    .. image:: images/Vscode-jupyter_extensions.png
-        :width: 300
-        :align: center
+
+   **Note:** Usually, when you install the "Jupyter" extension, it will also install the two other extensions. However, check when you have installed the "Jupyter" extension the other extensions are also installed.
+
+#. **Creating a new Jupyter Notebook:** Creating a Jupyter Notebook in VS Code is relatively simple. Just when you create an ordinary python file with the suffix ``.py``, you write ``.ipynb`` to create a Jupyter Notebook file. Or, you can press :kbd:`Ctrl+Shift+P` and search *Create: New Jupyter Notebook*. This will also create a Jupyter Notebook file in VS Code, however not in a predetermined directory.
+
+#. **Kernels: Setting up your Jupyter Notebook:** When working in a ``.ipynb`` file, you need to select a kernel for the file. Kernel is just a fancy word for the conda or virtual environment that will run your code in the cells of the notebook. Selecting a kernel can be done by either pressing :kbd:`Ctrl+Shift+P`, selecting ``Python: Select Interpreter``, and choosing your environment or you can press the ``Select Kernel`` button in the top right corner of the notebook (illustrated on the following picture).
     
+   .. image:: images/Vscode-native-kernel-picker.png
+      :width: 850
+      :align: center
 
-    **Note:** Usually, when you install the "Jupyter" extension, it will also install the two other extensions. However, check when you have installed the "Jupyter" extension the other extensions are also installed.
-
-#. **Creating a new Jupyter Notebook:** Creating a Jupyter Notebook in vscode is relatively simple. Just when you create an ordinary python file with the suffix ``.py``, you write ``.ipynb`` to create a Jupyter Notebook file. Or, you can press ``CTRL+SHIFT+P`` and search "Create: New Jupyter Notebook". This will also create a Jupyter Notebook file in vscode, however not in a predetermined directory.
-
-#. **Kernels: Setting up your Jupyter Notebook:** When working in a ``.ipynb`` file, you need to select a kernel for the file. Kernel is just a fancy word for the conda or virtual environment that will run your code in the cells of the notebook. Selecting a kernel can be done by either pressing ``CTRL+SHIFT+P``, selecting ``Python: Select Interpreter``, and choosing your environment or you can press the ``Select Kernel`` button in the top right corner of the notebook (illustrated on the following picture).
-    
-    .. image:: images/Vscode-native-kernel-picker.png
-        :width: 850
-        :align: center
-
-Now you are ready to tackle your first project by using Jupyter Notebooks in vscode. However, if you are still uncomfortable with running cells or other functionalities of Jupyter Notebook, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks>`__. 
+Now you are ready to tackle your first project by using Jupyter Notebooks in VS Code. However, if you are still uncomfortable with running cells or other functionalities of Jupyter Notebook, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks>`__. 
 
 .. note::
-  You should install the package ``ipykernel`` in the environment that you plan to use as the kernel for Jupyter Notebook.
+   You should install the package ``ipykernel`` in the environment that you plan to use as the kernel for Jupyter Notebook.
