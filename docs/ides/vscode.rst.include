@@ -4,6 +4,28 @@
 Visual Studio Code {{pref_symbol}}
 --------------------------------------
 
+.. grid:: 1 1 2 2
+    :gutter: 2
+
+    .. grid-item-card:: Download + Install VS Code
+       :link: https://code.visualstudio.com/download
+       :link-type: url
+
+       Download and install VS Code.
+
+    .. grid-item-card:: Add extensions to VS Code
+       :link: https://code.visualstudio.com/docs/editor/extension-marketplace
+       :link-type: url
+
+       Add extensions to enable additional features.
+
+    .. grid-item-card:: Ensure correct Python interpreter
+       :link: https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter
+       :link-type: url
+       :columns: 12
+
+       Manually change the interpreter, mainly required when having multiple Python installations.
+
 `VS Code <https://code.visualstudio.com/>`__ is a an open-source coding framework with a big community
 and many users.
 It can be used together with any other coding language or be used to edit configuration files (YAML, TOML, ...).
@@ -15,8 +37,12 @@ The extensions can greatly aid during the coding of varying problems.
 Some notable highlights include automatic API messages for methods, and
 integration with Jupyter notebooks.
 
-Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
 
 Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
 This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <environment-venv-vscode>`.
 Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
+
+Extensions
+^^^^^^^^^^
+
+Extensions can be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.

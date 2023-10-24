@@ -1,8 +1,8 @@
 
 .. _course-index:
 
-Courses
-=======
+DTU Courses
+===========
 
 .. note::
 
@@ -17,6 +17,7 @@ Courses
    :maxdepth: 1
 
    01001/index.rst
+   01002/index.rst
    02002/index.rst
    02461/index.rst
 

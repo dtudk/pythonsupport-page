@@ -1,8 +1,8 @@
-E2023
+F2024
 =====
 
-This guideline is for students attending course :course-base:`2023:01001` and :course-base:`2023:01003`
-in the 2023 autumn semester.
+This guideline is for students attending course :course-base:`2023:01002` and :course-base:`2023:01004`
+in the 2024 spring semester.
 
 The primary guideline for this course is located here:
 

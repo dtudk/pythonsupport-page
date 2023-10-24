@@ -17,7 +17,7 @@ DTU Python support
 -----------------------------------
 
 
-.. card:: New student at DTU 2023? Welcome!
+.. card:: New student at DTU {{current_year}}? Welcome!
    :class-card: sd-color-primary
 
    .. button-link:: https://02002.compute.dtu.dk/installation/index.html
@@ -135,6 +135,11 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    quickstart/index.rst
    courses/index.rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Install Python
 
    python/install.rst
 

@@ -365,7 +365,7 @@ course_switcher()
 create_time_table(_conf_toml["semester"])
 
 # Now exclude the years that are not going to be used
-year, week = map(int, datetime.date.today().strftime("%G %V").split())
+week = int(datetime.date.today().strftime("%V"))
 for y in range(2023, year + 1):
     if y < year:
         week_end = 54
@@ -424,6 +424,9 @@ html_context = {
     "conda": "conda",
     "poetry": "poetry",
     "pyenv": "pyenv",
+
+    # dates
+    "current_year": f"{year}",
 
     # Virtual environment methods
     "venv": f"venv {_pref_symbol}",
