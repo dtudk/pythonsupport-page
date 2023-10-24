@@ -1,4 +1,4 @@
-.. _Installing packages:
+.. _install-packages:
 
 Installing packages
 =========================================
@@ -12,9 +12,9 @@ Depending on which distribution of Python you are using, you will need to use a 
 .. note::
    
    If you at some point have trouble with installing a package, and you already have Anaconda installed, consider deleting it, since this can miscommunicate with pip.
-   You can find a guide for the uninstalling process :ref:`by clicking here <Deleting Anaconda>`.
+   You can find a guide for the uninstalling process :ref:`by clicking here <uninstall-conda>`.
 
-=========================================
+
 Using the official Python distribution
 =========================================
 
@@ -22,23 +22,23 @@ Using the official Python distribution
 
    If you are unsure about using the terminal, we advice that you read :ref:`this <LINK TO TERMINAL GUIDE>` before proceeding.
 
-If you are using the official Python distribution, you will need to use the pip package manager. Open up a terminal and run the following: 
+If you are using the official Python distribution, you will need to use the :ref:`pip` package manager. Open up a terminal and run the following: 
 
 
 
-.. tab:: {{ windows }}
+.. tab:: {{ win_powershell }}
 
-   .. code-block:: bash
+   .. code-block:: powershell
 
       python -m pip install numpy
 
-.. tab:: {{ macos }}
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
       python3 -m pip install numpy
 
-.. tab:: {{ linux }}
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -47,34 +47,33 @@ If you are using the official Python distribution, you will need to use the pip 
 
 .. note::
 
-   The code above will install the library "numpy". For installation of other libraries, simply delete "numpy", and write the name of the library you want to download.
+   The code above will install the library ``numpy``. For installation of other libraries, simply delete ``numpy``, and write the name of the library you want to download.
 
 .. note::
 
-   If you get the error message ending in "(mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))", run the following instead:
+   If you get the error message ending in ``(mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))``, run the following instead:
 
 
-.. tab:: {{ windows }}
+   .. tab:: {{ win_powershell }}
 
-   .. code-block:: bash
+      .. code-block:: powershell
 
-      pip install --upgrade --force-reinstall numpy
+         pip install --upgrade --force-reinstall numpy
 
-.. tab:: {{ macos }}
+   .. tab:: {{ mac_bash }}
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      pip3 install --upgrade --force-reinstall numpy
+         pip3 install --upgrade --force-reinstall numpy
 
-.. tab:: {{ linux }}
+   .. tab:: {{ linux_bash }}
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      pip3 install --upgrade --force-reinstall numpy
+         pip3 install --upgrade --force-reinstall numpy
 
 
 
-=========================================
 Using a conda distribution
 =========================================
 
@@ -83,19 +82,19 @@ If you are using a conda distribution, you will need to use the conda package ma
 On windows or on mac open a terminal and type:
 
 
-.. tab:: {{ windows }}
+.. tab:: {{ win_powershell }}
+
+   .. code-block:: powershell
+
+      conda install numpy
+
+.. tab:: {{ mac_bash }}
 
    .. code-block:: bash
 
       conda install numpy
 
-.. tab:: {{ macos }}
-
-   .. code-block:: bash
-
-      conda install numpy
-
-.. tab:: {{ linux }}
+.. tab:: {{ linux_bash }}
 
    .. code-block:: bash
 
@@ -105,7 +104,7 @@ On windows or on mac open a terminal and type:
 
 .. note::
 
-   The code above will install the library "numpy". For installation of other libraries, simply delete "numpy", and write the name of the library you want to download.
+   The code above will install the library ``numpy``. For installation of other libraries, simply replace ``numpy`` with the name of the library you want to install.
 
 
 

@@ -75,9 +75,6 @@ extensions = [
     'sphinx_design',
     # enable target=_blank via jquery
     'sphinxcontrib.jquery',
-    # added to allow for the termynal extensions
-    'sphinx_term.cssterm',
-    'sphinx_term.termynal'
 ]
 
 # Add the spelling extension if available
