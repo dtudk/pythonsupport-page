@@ -72,6 +72,9 @@ Some notable highlights include automatic API messages for methods, and
 integration with Jupyter notebooks.
 
 
+
+.. _ide-vscode-new-project:
+
 Creating and Opening Projects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -94,7 +97,7 @@ Creating and Opening Projects
 Working with Files
 ^^^^^^^^^^^^^^^^^^
 
-1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it "new_file.py" - the ending ".py" makes it a python file. If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
+1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it ``new_file.py`` - the ending ``.py`` makes it a python file. If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
 
    .. image:: images/Vscode-files1.png
       :width: 600
@@ -167,7 +170,7 @@ VSCode provides a powerful debugging tool that allows you to set breakpoints, st
 
 1. Set a breakpoint, click on the left of the line number where you want to pause the execution of your code. A red dot will appear to indicate that a breakpoint has been set, it is possible to set multiple breakpoints in your code. To remove a breakpoint, click on the red dot again.
 
-2. Start a debugging session, click on the "Run and Debug" tab in the sidebar and select "Run and Debug". This will open the debug panel at the top of the screen and start the debugging session.
+2. Start a debugging session, click on the *Run and Debug* tab in the sidebar and select *Run and Debug*. This will open the debug panel at the top of the screen and start the debugging session.
 
    .. image:: images/Vscode-Debugging.png
       :width: 600
@@ -215,7 +218,7 @@ Install requirements.txt
 The ``requirements.txt`` file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
 To install a ``requirements.txt`` file you have to do the following:
 
-1. Navigate into the folder from where you want to access the packages (see "Creating and Opening Projects"). 
+1. Navigate into the folder from where you want to access the packages (see :ref:`ide-vscode-new-project`).
 
 
 2. Open up your terminal. You can then copy the following command into your terminal and press enter to execute:
@@ -244,7 +247,7 @@ To install a ``requirements.txt`` file you have to do the following:
 
          python3 -m pip install -r requirements.txt
 
-The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an "%". 
+The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an ``%``. 
 
 
 
@@ -281,16 +284,16 @@ Working with Jupyter Notebooks in VS Code
 
 We can create and work with Jupyter Notebook files in VS Code. A file in VS Code will be recognized as a Jupyter Notebook file with ``.ipynb``.
 
-#. **Preliminaries:** For Jupyter Notebook to run in VS Code, we need to install a few Extensions. These include "Jupyter", "Jupyter Keymap", and "Jupyter Notebook Renderers", as seen on the following picture.
+#. **Preliminaries:** For Jupyter Notebook to run in VS Code, we need to install a few Extensions. These include *Jupyter*, *Jupyter Keymap*, and *Jupyter Notebook Renderers*, as seen on the following picture.
 
    .. image:: images/Vscode-jupyter_extensions.png
       :width: 300
       :align: center
     
 
-   **Note:** Usually, when you install the "Jupyter" extension, it will also install the two other extensions. However, check when you have installed the "Jupyter" extension the other extensions are also installed.
+   **Note:** Usually, when you install the *Jupyter* extension, it will also install the two other extensions. However, check when you have installed the *Jupyter* extension the other extensions are also installed.
 
-#. **Creating a new Jupyter Notebook:** Creating a Jupyter Notebook in VS Code is relatively simple. Just when you create an ordinary python file with the suffix ``.py``, you write ``.ipynb`` to create a Jupyter Notebook file. Or, you can press :kbd:`Ctrl+Shift+P` and search *Create: New Jupyter Notebook*. This will also create a Jupyter Notebook file in VS Code, however not in a predetermined directory.
+#. **Creating a new Jupyter Notebook:** Creating a Jupyter Notebook in VS Code is relatively simple. When you create an ordinary python file with the suffix ``.py``, you instead write ``.ipynb`` to create a Jupyter Notebook file. Or, you can press :kbd:`Ctrl+Shift+P` and search *Create: New Jupyter Notebook*. This will also create a Jupyter Notebook file in VS Code, however not in a predetermined directory.
 
 #. **Kernels: Setting up your Jupyter Notebook:** When working in a ``.ipynb`` file, you need to select a kernel for the file. Kernel is just a fancy word for the conda or virtual environment that will run your code in the cells of the notebook. Selecting a kernel can be done by either pressing :kbd:`Ctrl+Shift+P`, selecting ``Python: Select Interpreter``, and choosing your environment or you can press the ``Select Kernel`` button in the top right corner of the notebook (illustrated on the following picture).
     
@@ -298,7 +301,7 @@ We can create and work with Jupyter Notebook files in VS Code. A file in VS Code
       :width: 850
       :align: center
 
-Now you are ready to tackle your first project by using Jupyter Notebooks in VS Code. However, if you are still uncomfortable with running cells or other functionalities of Jupyter Notebook, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks>`__. 
+Now you are ready to tackle your first project using Jupyter Notebooks in VS Code. However, if you are still uncomfortable with running cells or other functionalities of Jupyter Notebook, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks>`__ for more information. 
 
 .. note::
    You should install the package ``ipykernel`` in the environment that you plan to use as the kernel for Jupyter Notebook.
