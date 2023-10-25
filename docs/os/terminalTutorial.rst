@@ -185,13 +185,13 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ win_powershell }} 
 
-   To list the contents of your current directory in PowerShell, you can use the ``Get-ChildItem`` cmdlet. If you want to see only files and not directories, use ``Get-ChildItem -File``. To show hidden files and directories, use ``Get-ChildItem -Force``. Try these commands:
+   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. If you want to see only files and not directories, use ``ls -File``. To show hidden files and directories, use ``ls -Force``. Try these commands:
    
    .. termynal:: termynal:lsPS
       :title: Powershell
       :windows:
 
-      -  value: Get-ChildItem -Path "C:\User\youruser"
+      -  value: ls
          type: input
          prompt: 'PS C:\User\youruser>'
       -  ' Directory: C:\User\youruser'
@@ -202,7 +202,7 @@ To find out your current directory (location), you can use the ``pwd`` command o
       -  '   d-----        8/1/2021  10:00 AM              myfolder2'
       -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
       -  '   -a----        8/1/2021  10:00 AM              0 myscript.py'
-      -  value: Get-ChildItem -Path "C:\User\youruser" -Force
+      -  value: ls -Force
          type: input
          prompt: 'PS C:\User\youruser>'
       -  ' Directory: C:\User\youruser'

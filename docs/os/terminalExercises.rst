@@ -97,6 +97,35 @@ The `ls` command is used to list all files and directories in the current workin
 
       ls
 
+mkdir (Create Directory)
++++++++++++++++++++++++++
+
+The `mkdir` command is used to create a new directory. It is particularly helpful when you need to create a new folder for your project.
+
+.. tab::  Windows (Powershell)
+
+   .. code-block:: bash
+
+        mkdir NewFolder
+
+.. tab::  Windows (Batch)
+
+   .. code-block:: bash
+
+        mkdir NewFolder
+
+.. tab::  MacOS|Bash
+
+   .. code-block:: bash
+
+        mkdir NewFolder
+
+.. tab::  Linux|Bash
+
+   .. code-block:: bash
+
+        mkdir NewFolder
+
 rm (Remove)
 +++++++++++
 
@@ -130,3 +159,27 @@ pip (Package Installer for Python)
 +++++++++++++++++++++++++++++++++++
 
 The `pip` command is a package installer for Python that simplifies the process of managing and installing various Python
+
+.. tab::  Windows (Powershell)
+
+   .. code-block:: bash
+
+      pip install package_name
+
+.. tab::  Windows (Batch)
+    
+   .. code-block:: bash
+
+      pip install package_name
+
+.. tab::  MacOS|Bash
+
+    .. code-block:: bash
+    
+        pip3 install package_name
+
+.. tab::  Linux|Bash
+
+    .. code-block:: bash
+    
+        pip3 install package_name
