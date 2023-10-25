@@ -185,15 +185,7 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ win_powershell }} 
 
-   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. If you want to see only files and not directories, use ``ls -File``. 
-   
-   1- Type and enter in your Terminal:
-   ``ls``
-
-   2- Type and enter in your Terminal:
-   ``ls -Force``
-
-   This should look *something* like this in your **Terminal**:
+   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. If you want to see only files and not directories, use ``ls -File``. To show hidden files and directories, use ``ls -Force``. Try these commands:
    
    .. termynal:: termynal:lsPS
       :title: Powershell
@@ -468,40 +460,16 @@ In general it is a good idea to change your directory, to the place of whatever 
          -  prompt: 'username@linux~$'
 
 
-.. code:: termynal 
 
-   cd .. 
-
-**exercise:** try to navigate to a directory, and then leaving it using ``cd ..``
+**exercise:** Try navigating to different folders, and leaving them using ``cd ..``
 
 
 
 
 
-4. How can I make using the terminal easier? 
-==================================================
-
-There are a few different tips/tricks to make using the terminal a lot smoother:
-
-* Recycling old inputs with arrow-keys
-   * If you have already input a command and need to use it again, pressing the upwards arrow key will go through your old inputs
-   * This is especially useful for correcting typos in wrong input
-
-* Using tab key to autocomplete input
-   * The tab key is the one with two sideways arrows (usually placed above caps lock)
-   * This is very efficient in combination with the ``cd`` command 
-   * For example one can navigate to the folder "MyFolderForCourse01006" by simply typing ``cd My``, and then pressing tab followed by enter
-   * This also works for importing packages 
-
-* Pasting code into the terminal
-   * The terminal is just like any other document, in the sense that you can copy and paste anything
-   * **Warning: In the terminal, pasting is done by simply rightclicking or pressing with two fingers on the mousepad , not by using ``ctrl + v``**
 
 
-
-
-
-5. How can I create a new folder? (mkdir)
+4. How can I create a new folder? (mkdir)
 =============================
 To create a new folder you can use ``mkdir`` on your Terminal. In this exercise you will create a new folder called ``NewPythonFolder``
 
