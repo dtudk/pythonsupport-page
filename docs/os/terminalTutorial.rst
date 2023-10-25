@@ -185,7 +185,15 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ win_powershell }} 
 
-   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. If you want to see only files and not directories, use ``ls -File``. To show hidden files and directories, use ``ls -Force``. Try these commands:
+   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. If you want to see only files and not directories, use ``ls -File``. 
+   
+   1- Type and enter in your Terminal:
+   ``ls``
+
+   2- Type and enter in your Terminal:
+   ``ls -Force``
+
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:lsPS
       :title: Powershell
@@ -441,7 +449,7 @@ It might look something like this:
 
 
 
-4. How can i make using the terminal easier? 
+4. How can I make using the terminal easier? 
 ==================================================
 
 There are a few different tips/tricks to make using the terminal a lot smoother:
