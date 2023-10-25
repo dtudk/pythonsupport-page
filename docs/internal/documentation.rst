@@ -81,6 +81,8 @@ To start hacking on the repository, follow these steps:
 
 A more detailed description can be found `here <https://docs.github.com/en/get-started/quickstart/fork-a-repo>`__.
 
+*Please do not merge in the ``main`` branch as that can cause problems.*
+
 
 0. Create a GitHub account `join <https://github.com/join>`__.
 1. Go to {{ps_repository}}
