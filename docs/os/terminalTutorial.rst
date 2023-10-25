@@ -302,17 +302,17 @@ To find out your current directory (location), you can use the ``pwd`` command o
 3. Changing directories (cd)
 ==========================================
 
-To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
-
-Type and enter in your Terminal:
-   .. code:: termynal 
-
-      cd MyFolder
-
-It should look something like this:
 
 .. tab:: {{ win_powershell }} 
 
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+
+   Type and enter in your Terminal: ``cd MyFolder``
+
+   **warning for windows**:
+   Note when typing the directory name of subfolders, that windows uses backslashes ``\`` and NOT forward slashes ``/``
+
+   It should look something like this:
    
    .. termynal:: termynal:chdirps
         :title: Powershell
@@ -326,6 +326,14 @@ It should look something like this:
 
 .. tab:: {{ win_batch }}
 
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+
+   Type and enter in your Terminal: ``cd MyFolder``
+
+   **warning for windows**:
+   Note when typing the directory name of subfolders, that windows uses backslashes ``\`` and NOT forward slashes ``/``
+
+   It should look something like this:
    
    .. termynal:: termynal:chdircmd
         :title: Command prompt
@@ -338,6 +346,11 @@ It should look something like this:
 
 .. tab:: {{ mac_bash }}
 
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+
+   Type and enter in your Terminal: ``cd MyFolder``
+
+   It should look something like this:
    
    .. termynal:: termynal:chdirmac
         :title: bash
@@ -350,6 +363,12 @@ It should look something like this:
 
    
 .. tab:: {{ linux_bash }}
+
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+
+   ype and enter in your Terminal: ``cd MyFolder``
+
+   It should look something like this:
 
 
    .. termynal:: termynal:chdirlinux
@@ -370,19 +389,17 @@ A good trick to use in visual studio code, is to open a folder in your sidebar, 
 #. You can now right click a folder and press "copy path"
 #. type cd in your terminal and paste the path that you just copied 
 
-In general it is a good practice, it is a good idea to change your directory, to the place of whatever you are working with. For example, if a large dataset is in a specific folder, you can change your directory to that folder. 
+In general it is a good idea to change your directory, to the place of whatever you are working with. For example, if a large dataset is in a specific folder, you can change your directory to that folder. 
 
 
-
-
-To navigate one step backwards, you can use the ``cd ..`` command:
-
-It might look something like this:
 
 
 .. tab:: {{ win_powershell }} 
 
-   
+   To navigate one step backwards, you can use the ``cd ..`` command:
+
+   It might look something like this:
+
    .. termynal:: termynal:backdir
         :title: Powershell
         :windows:
@@ -395,6 +412,10 @@ It might look something like this:
 
 .. tab:: {{ win_batch }}
 
+   To navigate one step backwards, you can use the ``cd ..`` command:
+
+   It might look something like this:
+
    
    .. termynal:: termynal:backdircmd
         :title: Command prompt
@@ -406,6 +427,10 @@ It might look something like this:
          -  prompt: 'C:\User\youruser>'
 
 .. tab:: {{ mac_bash }}
+
+   To navigate one step backwards, you can use the ``cd ..`` command:
+
+   It might look something like this:
 
    
    .. termynal:: termynal:backdirmac
@@ -420,6 +445,10 @@ It might look something like this:
    
 .. tab:: {{ linux_bash }}
 
+   To navigate one step backwards, you can use the ``cd ..`` command:
+
+   It might look something like this:
+
 
    .. termynal:: termynal:backdirlinux
         :title: bash
@@ -431,40 +460,16 @@ It might look something like this:
          -  prompt: 'username@linux~$'
 
 
-.. code:: termynal 
 
-   cd .. 
-
-**exercise:** try to navigate to a directory, and then leaving it using ``cd ..``
+**exercise:** Try navigating to different folders, and leaving them using ``cd ..``
 
 
 
 
 
-4. How can i make using the terminal easier? 
-==================================================
-
-There are a few different tips/tricks to make using the terminal a lot smoother:
-
-* Recycling old inputs with arrow-keys
-   * If you have already input a command and need to use it again, pressing the upwards arrow key will go through your old inputs
-   * This is especially useful for correcting typos in wrong input
-
-* Using tab key to autocomplete input
-   * The tab key is the one with two sideways arrows (usually placed above caps lock)
-   * This is very efficient in combination with the ``cd`` command 
-   * For example one can navigate to the folder "MyFolderForCourse01006" by simply typing ``cd My``, and then pressing tab followed by enter
-   * This also works for importing packages 
-
-* Pasting code into the terminal
-   * The terminal is just like any other document, in the sense that you can copy and paste anything
-   * **Warning: In the terminal, pasting is done by simply rightclicking or pressing with two fingers on the mousepad , not by using ``ctrl + v``**
 
 
-
-
-
-5. How can I create a new folder? (mkdir)
+4. How can I create a new folder? (mkdir)
 =============================
 To create a new folder you can use ``mkdir`` on your Terminal. In this exercise you will create a new folder called ``NewPythonFolder``
 
@@ -557,7 +562,7 @@ In this list you should be able to see the 'NewPythonFolder' you have just creat
 
 
 
-6. How can I delete a folder or a file using a Terminal? (rm and rm -r)
+5. How can I delete a folder or a file using a Terminal? (rm and rm -r)
 =============================
 To eliminate a folder you can use ``rm`` to eliminate a file or ``rm -r`` to eliminate a folder using the Terminal. 
 In this exercise you will eliminate the folder you created in the previous exercise. 
@@ -651,7 +656,7 @@ In this list you should not be able to see the 'NewPythonFolder' you have just d
 
 
 
-7. Which Python version? (python --version or python3 --version)
+6. Which Python version? (python --version or python3 --version)
 ==================================
 
 Check which Python version you have.  **Note that this might change depending on what system you 
@@ -728,7 +733,7 @@ This should look like this in your **Terminal**:
 
 
 
-8. How to know when you are in the python shell
+7. How to know when you are in the python shell
 ================================================
 
 When you start the Python interpreter, you will see a prompt that looks like this:
@@ -803,7 +808,7 @@ The ``>>>`` prompt indicates that you are inside the Python shell. This means th
 
 
 
-9. How to exit python shell
+8. How to exit python shell
 ==================================
 
 To exit the Python shell, type ``exit()`` and press Enter.
@@ -888,21 +893,17 @@ To exit the Python shell, type ``exit()`` and press Enter.
 
 
 
-10. Which packages do i have? 
+9. Which packages do i have? 
 ==================================================
 
-To see which packages you currently have, you can type ``pip3 list`` in the terminal.
-After a couple of seconds, your terminal will list every package that you have downloaded
-
-You can paste the following code directly in to your terminal:
-
-.. code:: termynal 
-
-      pip3 list
-
-It should look something like this (but you will probably have a lot more packages than 2):
 
 .. tab:: {{ win_powershell }} 
+   
+   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
+   After a couple of seconds, your terminal will list every package that you have downloaded
+
+
+   It should look something like this (but you will probably have a lot more packages than 2):
 
    
    .. termynal:: termynal:pip3list
@@ -915,8 +916,16 @@ It should look something like this (but you will probably have a lot more packag
         -   "numpy     3.0.2"
         -   "sympy     2.0.4"
 
+   **Exercise:** Try listing your current packages
+
 
 .. tab:: {{ win_batch }}
+   
+   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
+   After a couple of seconds, your terminal will list every package that you have downloaded
+
+
+   It should look something like this (but you will probably have a lot more packages than 2):
 
    
    .. termynal:: termynal:pip3listcmd
@@ -929,8 +938,16 @@ It should look something like this (but you will probably have a lot more packag
         -   "numpy   3.0.2"
         -   "sympy   2.0.4"
 
+   **Exercise:** Try listing your current packages
+
 
 .. tab:: {{ mac_bash }}
+   
+   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
+   After a couple of seconds, your terminal will list every package that you have downloaded
+
+
+   It should look something like this (but you will probably have a lot more packages than 2):
 
    
    .. termynal:: termynal:pip3listmac
@@ -943,9 +960,17 @@ It should look something like this (but you will probably have a lot more packag
         -   "numpy   3.0.2"
         -   "sympy   2.0.4"
 
+   **Exercise:** Try listing your current packages
+
 
 
 .. tab:: {{ linux_bash }}
+   
+   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
+   After a couple of seconds, your terminal will list every package that you have downloaded
+
+
+   It should look something like this (but you will probably have a lot more packages than 2):
 
 
    .. termynal:: termynal:pip3listlinux
@@ -957,6 +982,7 @@ It should look something like this (but you will probably have a lot more packag
             prompt: 'username@linux~$'
         -   "numpy   3.0.2"
         -   "sympy   2.0.4"
+   **Exercise:** Try listing your current packages
 
 
 

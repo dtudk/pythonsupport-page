@@ -183,3 +183,23 @@ The `pip` command is a package installer for Python that simplifies the process 
     .. code-block:: bash
     
         pip3 install package_name
+
+
+How to make using the terminal easier
+++++++++++++++++++++++++++++++++++++++++++
+
+There are a few different tips/tricks to make using the terminal a lot smoother:
+
+* Recycling old inputs with arrow-keys
+   * If you have already input a command and need to use it again, pressing the upwards arrow key will go through your old inputs
+   * This is especially useful for correcting typos in wrong input
+
+* Using tab key to autocomplete input
+   * The tab key is the one with two sideways arrows (usually placed above caps lock)
+   * This is very efficient in combination with the ``cd`` command 
+   * For example one can navigate to the folder "MyFolderForCourse01006" by simply typing ``cd My``, and then pressing tab followed by enter
+   * This also works for importing packages 
+
+* Pasting code into the terminal
+   * The terminal is just like any other document, in the sense that you can copy and paste anything
+   * **Warning: In the terminal, pasting is done by simply rightclicking or pressing with two fingers on the mousepad , not by using ``ctrl + v``**
