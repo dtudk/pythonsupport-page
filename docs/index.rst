@@ -135,10 +135,8 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
 
    quickstart/index.rst
    courses/index.rst
+   python/index.rst
 
-   python/installation.rst
-   python/installing-packages.rst
-   python/install-vsc.rst
 
 .. toctree::
    :maxdepth: 2

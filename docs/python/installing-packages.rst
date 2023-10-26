@@ -45,7 +45,7 @@ If you are using the official Python distribution, you will need to use the :ref
       python3 -m pip install numpy
 
 
-.. note::
+.. tip::
 
    The code above will install the library ``numpy``. For installation of other libraries, simply delete ``numpy``, and write the name of the library you want to download.
 
@@ -102,9 +102,16 @@ On windows or on mac open a terminal and type:
 
 
 
-.. note::
+.. tip::
 
    The code above will install the library ``numpy``. For installation of other libraries, simply replace ``numpy`` with the name of the library you want to install.
 
 
 
+.. note:: 
+   If you want more information about pip, or encounter some of the following problems: 
+   * You need a specific version of a package
+   * Navigate and manage your packages 
+   * Installing packages using a requirements.txt file
+   * Have conflicting packages
+   * Want or need to use virtual environments 
