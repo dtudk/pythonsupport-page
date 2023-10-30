@@ -1,3 +1,5 @@
+.. _terminalExercise:
+
 What's a Terminal?
 ============
 

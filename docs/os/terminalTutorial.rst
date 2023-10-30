@@ -1,4 +1,4 @@
-.. _os-terminal:
+.. _terminalTutorial:
 
 Terminal tutorial
 ===================
@@ -7,7 +7,7 @@ Welcome to the world of the Terminal! In this tutorial, you will learn the funda
 a powerful tool for interacting with your computer through text commands. 
 We will cover essential commands and tips to help you navigate and perform tasks efficiently.
 
-You can learn more about what a Terminal is and the most useful commands here **TIAGO ADD A THE LINK WHERE IT SAYS HERE TO THE OTHER PAGE WITH THE EXPLANATIONS**
+You can learn more about what a Terminal is and the most useful commands :ref:`here <terminalExercise>`
 
 
 Opening a terminal
