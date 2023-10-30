@@ -102,9 +102,9 @@ Each operating system opens terminals in a different way.
 .. tab:: {{ win_powershell }} 
       
    To find out your current directory (location), you can use the 
-   ``dir`` command on Windows. 
+   ``pwd`` command on Windows. 
 
-   -Type and enter ``dir`` in your Terminal.
+   -Type and enter ``pwd`` in your Terminal.
 
    This should look *something* like this in your **Terminal**:
    
@@ -112,7 +112,7 @@ Each operating system opens terminals in a different way.
       :title: Powershell
       :windows:
 
-      -  value: dir
+      -  value: pwd
          type: input
          prompt: 'PS C:\User\youruser>'
       -  'PS C:\User\youruser>'
@@ -120,9 +120,9 @@ Each operating system opens terminals in a different way.
 .. tab:: {{ win_batch }} 
    
    To find out your current directory (location), you can use the  
-   ``dir`` command on Windows. 
+   ``cd`` command on Windows. 
 
-   -Type and enter ``dir`` in your Terminal.
+   -Type and enter ``cd`` in your Terminal.
 
    This should look *something* like this in your **Terminal**:
    
@@ -130,7 +130,7 @@ Each operating system opens terminals in a different way.
       :title: Command Prompt
       :windows:
 
-      -  value: dir
+      -  value: cd
          type: input
          prompt: 'C:\User\youruser>'
       -  'C:\User\youruser>'
@@ -185,15 +185,15 @@ Each operating system opens terminals in a different way.
 
 .. tab:: {{ win_powershell }} 
 
-   To list the contents of your current directory in PowerShell, you can use the ``dir`` cmdlet. 
-   If you want to see only files and not directories, use ``dir /a``. 
+   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. 
+   If you want to see only files and not directories, use ``ls -Force``. 
    
 
    1- Type and enter in your Terminal:
-   ``dir``
+   ``ls``
 
    2- Type and enter in your Terminal:
-   ``dir /a``
+   ``ls -Force``
 
    This should look *something* like this in your **Terminal**:
 
@@ -288,7 +288,7 @@ Each operating system opens terminals in a different way.
    ``ls``
 
    2- Type and enter in your Terminal:
-   ``ls-a``
+   ``ls -a``
 
    This should look *something* like this in your **Terminal**:
 
@@ -637,9 +637,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 .. tab:: Windows (Command prompt)
    
-   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
+   You can use ``del`` to delete a file or ``rmdir /s`` to delete a folder using the Terminal. 
 
-   1-Type and enter in your Terminal: ``rm -r NewPythonFolder``
+   1-Type and enter in your Terminal: ``rmdir /s NewPythonFolder``
 
    2-Type and enter in your Terminal: ``dir``
 
@@ -650,7 +650,7 @@ In general it is a good idea to change your directory, to the place of whatever 
         :title: Command prompt
         :windows:
 
-        -   value: rm -r NewPythonFolder
+        -   value: rmdir /s NewPythonFolder
             type: input
             prompt: 'C:\User\youruser>'
         -   value: dir
@@ -809,12 +809,12 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 .. tab:: Mac Terminal
 
-   To check which Python version you have you can use ``python --version`` or ``python3 --version``
+   To check which Python version you have you can use ``python3 --version``
 
    **Note that this might change depending 
    whether you have more than one Python version installed**
 
-   To enter Python in your Terminal you can use ``python`` or ``python3``
+   To enter Python in your Terminal you can use ``python3``
 
    To exit Python in your Terminal you can use ``exit()``
 
@@ -833,7 +833,7 @@ In general it is a good idea to change your directory, to the place of whatever 
         :title: Command prompt
         :unix:
 
-        -   value: python --version 
+        -   value: python3 --version 
             type: input
             prompt: 'username@mac ~ %'
         -   'Python 3.11.4' 
@@ -857,18 +857,18 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 .. tab:: Linux Terminal
    
-   To check which Python version you have you can use ``python --version`` or ``python3 --version``
+   To check which Python version you have you can use ``python3 --version``
 
    **Note that this might change depending 
    whether you have more than one Python version installed**
 
-   To enter Python in your Terminal you can use ``python`` or ``python3``
+   To enter Python in your Terminal you can use ``python3``
 
    To exit Python in your Terminal you can use ``exit()``
 
-   1-Type and enter in your Terminal: ``python version`` 
+   1-Type and enter in your Terminal: ``python3 --version`` 
 
-   2-Type and enter in your Terminal: ``python``
+   2-Type and enter in your Terminal: ``python3``
 
    3-Type and enter in your Terminal: ``exit()``
    
@@ -882,7 +882,7 @@ In general it is a good idea to change your directory, to the place of whatever 
         :title: Command prompt
         :unix:
 
-        -   value: python --version
+        -   value: python3 --version
             type: input
             prompt: 'username@linux~$'
         -   'Python 3.11.4'  
