@@ -460,7 +460,7 @@ Each operating system opens terminals in a different way.
 
 
 
-A good trick to use in visual studio code is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
+A good trick to use in Visual Studio Code is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
 
 #. Press the icon in the top left of the screen that looks like 2 pieces of paper on top of each other
 #. Press "open folder"
@@ -498,18 +498,26 @@ In general it is a good idea to change your directory, to the place of whatever 
         -   value: ls
             type: input
             prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'  
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
+        -  '   d-----        8/1/2021  10:00 AM              NewPythonFolder'     
 
 
 
 .. tab:: Windows (Command prompt)
 
-   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``dir`` to see 
    if the folder was successfully created.
    
    1-Type and enter in your Terminal: ``mkdir NewPythonFolder``
 
-   2-Type and enter in your Terminal: ``ls``
+   2-Type and enter in your Terminal: ``dir``
 
    This should look *something* like this in your **Terminal**:
    
@@ -520,10 +528,18 @@ In general it is a good idea to change your directory, to the place of whatever 
         -   value: mkdir NewPythonFolder
             type: input
             prompt: 'C:\User\youruser>'
-        -   value: ls
+        -   value: dir
             type: input
-            prompt: 'C:\User\youruser>'   
-        -   'C:\User\youruser>'
+            prompt: 'PS C:\User\youruser>'
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
+        -  '   d-----        8/1/2021  10:00 AM              NewPythonFolder'    
 
 
 
@@ -548,8 +564,11 @@ In general it is a good idea to change your directory, to the place of whatever 
             prompt: 'username@mac ~ %'
         -   value: ls
             type: input
-            prompt: 'username@mac ~ %' 
-        -   'username@mac ~ %'
+            prompt: 'username@mac~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
+
+
+        
 
 
 
@@ -576,7 +595,8 @@ In general it is a good idea to change your directory, to the place of whatever 
         -   value: ls
             type: input
             prompt: 'username@linux~$'     
-        -   'username@linux~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
+    
 
 
 
@@ -606,9 +626,14 @@ In general it is a good idea to change your directory, to the place of whatever 
         -   value: ls
             type: input
             prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'  
-
-
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
 
 .. tab:: Windows (Command prompt)
    
@@ -616,7 +641,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    1-Type and enter in your Terminal: ``rm -r NewPythonFolder``
 
-   2-Type and enter in your Terminal: ``ls``
+   2-Type and enter in your Terminal: ``dir``
 
    This should look *something* like this in your **Terminal**:
 
@@ -628,10 +653,17 @@ In general it is a good idea to change your directory, to the place of whatever 
         -   value: rm -r NewPythonFolder
             type: input
             prompt: 'C:\User\youruser>'
-        -   value: ls
+        -   value: dir
             type: input
-            prompt: 'C:\User\youruser>'   
-        -   'C:\User\youruser>'
+            prompt: 'PS C:\User\youruser>'
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
 
 
 
@@ -655,8 +687,11 @@ In general it is a good idea to change your directory, to the place of whatever 
             prompt: 'username@mac ~ %'
         -   value: ls
             type: input
-            prompt: 'username@mac ~ %' 
-        -   'username@mac ~ %'
+            prompt: 'username@mac~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
+
+
+        
 
 
    
@@ -681,7 +716,8 @@ In general it is a good idea to change your directory, to the place of whatever 
         -   value: ls
             type: input
             prompt: 'username@linux~$'     
-        -   'username@linux~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder        
+        
 
 
 
@@ -695,7 +731,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 .. tab::  Windows (Powershell) 
 
    To check which Python version you have you can use ``python --version``
+
    To enter Python in your Terminal you can use ``python``
+
    To exit Python in your Terminal you can use ``exit()``
 
    1-Type and enter in your Terminal: ``python --version`` 
@@ -705,7 +743,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    3-Type and enter in your Terminal: ``exit()``
    
 
-   This should look *something* look like this in your **Terminal**:
+   This should look *something* like this in your **Terminal**:
 
    
    
@@ -733,20 +771,18 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    To check which Python version you have you can use ``python --version``
 
-   **Note that this might change depending 
-   whether you have more than one Python version installed**
-
    To enter Python in your Terminal you can use ``python``
+
    To exit Python in your Terminal you can use ``exit()``
 
    1-Type and enter in your Terminal: ``python --version`` 
 
    2-Type and enter in your Terminal: ``python``
 
-   3-Type and enter in your Terminal: ``exit()
+   3-Type and enter in your Terminal: ``exit()``
    
 
-   This should look *something* look like this in your **Terminal**:
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:pythonversionCMD
@@ -779,6 +815,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    whether you have more than one Python version installed**
 
    To enter Python in your Terminal you can use ``python`` or ``python3``
+
    To exit Python in your Terminal you can use ``exit()``
 
    1-Type and enter in your Terminal: ``python3 --version`` 
@@ -788,7 +825,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    3-Type and enter in your Terminal: ``exit()``
    
 
-   This should look *something* look like this in your **Terminal**:
+   This should look *something* like this in your **Terminal**:
 
    
 
@@ -826,16 +863,17 @@ In general it is a good idea to change your directory, to the place of whatever 
    whether you have more than one Python version installed**
 
    To enter Python in your Terminal you can use ``python`` or ``python3``
+
    To exit Python in your Terminal you can use ``exit()``
 
    1-Type and enter in your Terminal: ``python version`` 
 
    2-Type and enter in your Terminal: ``python``
 
-   3-Type and enter in your Terminal: ``exit()
+   3-Type and enter in your Terminal: ``exit()``
    
 
-   This should look *something* look like this in your **Terminal**:
+   This should look *something* like this in your **Terminal**:
 
    
 
@@ -868,9 +906,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 .. tab:: {{ win_powershell }} 
    
-   To see which packages you currently have in Python, you can use ``pip3 list``. 
+   To see which packages you currently have in Python, you can use ``pip list``. 
 
-   This should look *something* like this in your **Terminal:
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:pip3list
         :title: Powershell
@@ -886,13 +924,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 .. tab:: {{ win_batch }}
    
-   To see which packages you currently have in Python, you can use ``pip3 list``. 
+   To see which packages you currently have in Python, you can use ``pip list``. 
 
-   This should look *something* like this in your **Terminal:
-
-
-   It should look something like this (but you will probably have a lot more packages than 2):
-
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:pip3listcmd
         :title: Command prompt
@@ -910,7 +944,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    
    To see which packages you currently have in Python, you can use ``pip3 list``. 
 
-   This should look *something* like this in your **Terminal:
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:pip3listmac
@@ -931,7 +965,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    
    To see which packages you currently have in Python, you can use ``pip3 list``. 
 
-   This should look *something* like this in your **Terminal:
+   This should look *something* like this in your **Terminal**:
 
    .. termynal:: termynal:pip3listlinux
         :title: bash
