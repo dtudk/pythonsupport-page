@@ -27,7 +27,7 @@ The `pwd` command displays the current working directory. It is particularly hel
 
    .. code-block:: bash
 
-      echo %cd%
+      cd
 
 .. tab::  MacOS|Bash
 
@@ -131,7 +131,7 @@ The `mkdir` command is used to create a new directory. It is particularly helpfu
 rm (Remove)
 +++++++++++
 
-The `rm` command is used to delete files or directories permanently. It is a powerful command that can help you remove unnecessary files from the file system.
+The `rm` or `del` command is used to delete files and `rm -r` or `rmdir /s` to delete directories permanently. It is a powerful command that can help you remove unnecessary files from the file system.
 
 .. tab::  Windows (Powershell)
 
@@ -139,11 +139,19 @@ The `rm` command is used to delete files or directories permanently. It is a pow
 
       rm NewFile.txt
 
+   .. code-block:: bash   
+      
+      rm -r NewFolder
+
 .. tab::  Windows (Batch)
 
    .. code-block:: bash
 
       del NewFile.txt
+
+   .. code-block:: bash   
+      
+      rmdir /s NewFolder
 
 .. tab::  MacOS|Bash
 
@@ -151,11 +159,19 @@ The `rm` command is used to delete files or directories permanently. It is a pow
 
       rm NewFile.txt
 
+   .. code-block:: bash   
+      
+      rm -r NewFolder
+
 .. tab::  Linux|Bash
 
    .. code-block:: bash
 
       rm NewFile.txt
+
+   .. code-block:: bash   
+      
+      rm -r NewFolder
 
 pip (Package Installer for Python)
 +++++++++++++++++++++++++++++++++++
