@@ -200,8 +200,7 @@ html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
 
 # this move will work regardless of hover...
-_fa_move = "fa-spin-hover"
-_fa_move = ""
+_fa_move = "shake-hover"
 
 _icon_links = [
     {
