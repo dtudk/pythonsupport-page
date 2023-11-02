@@ -56,4 +56,10 @@ To verify if python is installed correctly follow the steps below:
     3. In the Terminal window, type ``python3 --version``
     4. If you see the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python friend on your machine |:snake:|.
 
+======================
+Conda installation 
+======================
+If you wish to use a conda installation in order to run python, please go :ref:`here <install-conda>`.
 
+.. note ::
+    DTU recommends using the official python release (and pip). However, some courses might require you to use conda. Please check your course page for more information.
