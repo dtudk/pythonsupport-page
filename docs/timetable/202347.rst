@@ -1,0 +1,35 @@
+.. office hours for autumn 2023 (semester week 12)
+.. list-table::
+   :widths: {{ timetable_widths }}
+   :header-rows: 1
+
+   * - Hours
+     - Monday
+     - Tuesday
+     - Wednesday
+     - Thursday
+     - Friday
+   * - 10-12:30
+     - 302.A92
+     - 302.A92
+     - 302.A92
+     - 302.A92
+     -
+   * - 12:30-16
+     - 
+     - 302.A92
+     - 302.A92
+     - 358.002
+     - 302.A92
+   * - 18-20
+     - Online
+     - Online
+     - Online
+     - Online
+     - Online
+   * - 20-22
+     - Online
+     - Online
+     - Online
+     - Online
+     -
