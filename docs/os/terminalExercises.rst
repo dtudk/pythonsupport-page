@@ -197,9 +197,7 @@ There are a few different tips/tricks to make using the terminal a lot smoother:
 * Using tab key to autocomplete input
    * The tab key is the one with two sideways arrows (usually placed above caps lock)
    * This is very efficient in combination with the ``cd`` command 
-   * For example one can navigate to the folder "MyFolderForCourse01006" by simply typing ``cd My``, and then pressing tab followed by enter
-   * This also works for importing packages 
+   * For example one can navigate to the folder ``MyFolderForCourse01006`` by simply typing ``cd My``, and then pressing tab followed by enter
 
 * Pasting code into the terminal
    * The terminal is just like any other document, in the sense that you can copy and paste anything
-   * **Warning: In the terminal, pasting is done by simply rightclicking or pressing with two fingers on the mousepad , not by using ``ctrl + v``**
