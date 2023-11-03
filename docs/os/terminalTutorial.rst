@@ -1,62 +1,53 @@
-.. _os-terminal:
+.. _terminalTutorial:
 
 Terminal tutorial
 ===================
 
-Terminals is one the most widely used methods for running and interacting
-with any Python environment. It may also be known under the name *Shell*'s.
+Welcome to the world of the Terminal! In this tutorial, you will learn the fundamentals of using the Terminal, 
+a powerful tool for interacting with your computer through text commands. 
+We will cover essential commands and tips to help you navigate and perform tasks efficiently.
 
-`Terminals <https://en.wikipedia.org/wiki/Terminal_emulator>`_ comes in a variety of different forms.
-
-It is used to execute commands in an interactive manner.
+You can learn more about what a Terminal is and the most useful commands :ref:`here <terminalExercise>`
 
 
 Opening a terminal
 ^^^^^^^^^^^^^^^^^^
 
-Each operating system opens terminals in a different way. In the following a ``#`` is
-a comment in the terminal, i.e. it is *not* considered a command.
+Each operating system opens terminals in a different way. 
 
 
 .. tab:: {{ win_powershell }}
-   
-   Either of
-   
-   1. Search for ``powershell`` in the Windows taskbar search
-   2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
-      ``powershell`` in the small run window appearing, press :kbd:`Enter`.
-   3. Launch Python
-      
+
+   Search for ``powershell`` in the Windows taskbar search or 
+   press :kbd:`Win-R` buttons (simultaneously), then type
+   ``powershell`` in the small run window appearing, press :kbd:`Enter`.
+
+   This should open a **Terminal** looking *something* like this:
+
    .. termynal:: termynal:pythonPS
       :title:  Powershell
       :windows:
 
-      -  value: python
+      -  value: ''
          type: input
          prompt: 'PS C:\User\youruser>'
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  '>>>'
+
 
 .. tab:: {{ win_batch }}
 
-   Either of
+   Search for ``cmd`` in the Windows taskbar search
+   or press :kbd:`Win-R` buttons (simultaneously), then type
+   ``cmd`` in the small run window appearing, press :kbd:`Enter`.
+  
+   This should open a **Terminal** looking *something* like this:
 
-   1. Search for ``cmd`` in the Windows taskbar search
-   2. A short-cut: press :kbd:`Win-R` buttons (simultaneously), then type
-      ``cmd`` in the small run window appearing, press :kbd:`Enter`.
-   3. Launch Python
-
-      .. termynal:: termynal:pythonCMD
+   .. termynal:: termynal:pythonCMD
          :title: Command Propmt
          :windows:
 
-         -  value: python
+         -  value: ''
             type: input
             prompt: 'C:\User\youruser>'
-         -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-         -  'Type "help", "copyright", "credits" or "license" for more information.'
-         -  '>>>'
 
 
 .. tab:: {{ mac_bash }}
@@ -64,58 +55,41 @@ a comment in the terminal, i.e. it is *not* considered a command.
    Open the Launchpad icon in the Dock, or press :kbd:`Command-Space`; type ``Terminal`` and click on it.
 
    See more detailed explanation `here <https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac>`__.
-
-   Launch Python
+   
+   This should open a **Terminal** looking *something* like this:
 
    .. termynal:: termynal:pythonMAC
       :title: bash
       :unix:
 
-      -  value: python3
+      -  value: ''
          type: input
          prompt: 'username@mac~$'
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  '>>>'
-
 
 .. tab:: {{ linux_bash }}
 
-   This depends on the distribution you are using. Nearly all Linux distributions
+   **Note**: This depends on the distribution you are using. Nearly all Linux distributions
    has the Terminal icon near the Desktop.
 
-   On Ubuntu one could do:
+   Try one of the following options:
 
    1. Press :kbd:`Ctrl-Alt-T` simultaneously.
    2. Press the :kbd:`Win` key which should open up a search box, type
       ``terminal`` and press :kbd:`Enter`
-   3. Lastly, one option is to open up a file explorer and right-click a folder,
+   3. Open a file explorer and right-click a folder,
       there should be an option name ``Open in Terminal`` which will open that
       folder in the terminal.
-   4. Launch Python
 
-      .. termynal:: termynal:pythonLINUX
+   This should open a **Terminal** looking *something* like this:   
+
+   .. termynal:: termynal:pythonLINUX
          :title: bash
          :unix:
 
-         -  value: python
+         -  value: ''
             type: input
             prompt: 'username@linux~$'
-         -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-         -  'Type "help", "copyright", "credits" or "license" for more information.'
-         -  '>>>'
 
-
-In the terminal one can navigate the `file system <https://en.wikipedia.org/wiki/File_system>`__
-by using commands specific to your operating systems shell.
-
-
-Welcome to the world of the terminal! In this tutorial, you will learn the fundamentals of using the terminal, a powerful tool for interacting with your computer through text commands. We will cover essential commands and tips to help you navigate and perform tasks efficiently.
-
-.. code:: 
-
-   #0 What is a Terminal?
-   [Type] A terminal is a text-based interface that allows you to communicate with your computer's operating system using text commands. It provides a way to navigate your file system, run programs, and perform various tasks without the need for a graphical user interface (GUI).
 
 
 
@@ -123,22 +97,34 @@ Welcome to the world of the terminal! In this tutorial, you will learn the funda
 
 1. Where am I? (pwd and dir)
 =============================
-To find out your current directory (location), you can use the ``pwd`` command on Unix-based systems (Linux or macOS) or the ``dir`` command on Windows. Open your terminal and type:
+
 
 .. tab:: {{ win_powershell }} 
+      
+   To find out your current directory (location), you can use the 
+   ``pwd`` command on Windows. 
 
+   -Type and enter ``pwd`` in your Terminal.
+
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:cdPS
       :title: Powershell
       :windows:
 
-      -  value: cd
+      -  value: pwd
          type: input
          prompt: 'PS C:\User\youruser>'
       -  'PS C:\User\youruser>'
 
 .. tab:: {{ win_batch }} 
+   
+   To find out your current directory (location), you can use the  
+   ``cd`` command on Windows. 
 
+   -Type and enter ``cd`` in your Terminal.
+
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:cdCMD
       :title: Command Prompt
@@ -150,6 +136,14 @@ To find out your current directory (location), you can use the ``pwd`` command o
       -  'C:\User\youruser>'
 
 .. tab:: {{ mac_bash }} 
+
+   To find out your current directory (location), you can use the 
+   ``pwd`` command on Unix-based systems (Linux or macOS).
+
+   -Type and enter ``pwd`` in your Terminal.
+
+   This should look *something* like this in your **Terminal**:
+   
 
    
    .. termynal:: termynal:pwdMAC
@@ -163,6 +157,14 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ linux_bash }} 
 
+
+   To find out your current directory (location), you can use the 
+   ``pwd`` command on Unix-based systems (Linux or macOS). 
+
+   -Type and enter ``pwd`` in your Terminal. 
+
+   This should look *something* like this in your **Terminal**:
+   
    
    .. termynal:: termynal:pwdLINUX
       :title: Bash
@@ -172,8 +174,6 @@ To find out your current directory (location), you can use the ``pwd`` command o
          type: input
          prompt: 'username@linux~$'
       -  /home/username
-
-**Exercise:** Run the appropriate command for your system and note the directory where you are.
 
 
 
@@ -185,7 +185,8 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ win_powershell }} 
 
-   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. If you want to see only files and not directories, use ``ls -File``. 
+   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. 
+   If you want to see only files and not directories, use ``ls -Force``. 
    
 
    1- Type and enter in your Terminal:
@@ -226,7 +227,17 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ win_batch }}
 
-   To list the contents of your current directory in Windows Command Prompt, you can use the ``dir`` command. If you want to see hidden files and directories as well, use ``dir /a``. Try these commands:
+   To list the contents of your current directory in Windows Command Prompt, you can use the ``dir`` command. If you want to see hidden files and directories as well, use ``dir /a``. 
+   
+
+   1- Type and enter in your Terminal:
+   ``dir``
+
+   2- Type and enter in your Terminal:
+   ``dir /a``
+
+   This should look *something* like this in your **Terminal**:
+
    
    .. termynal:: termynal:dirCMD
       :title: Command prompt
@@ -268,8 +279,20 @@ To find out your current directory (location), you can use the ``pwd`` command o
       -  '                  5 Dir(s)  1,234,567,890 bytes free'
 
 .. tab:: {{ mac_bash }}
+
+   To list the contents of your current directory, you can use the ``ls`` command. 
+   If you want to see hidden files as well, use ``ls -a``.  
    
-   To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``. Try these commands:
+
+   1- Type and enter in your Terminal:
+   ``ls``
+
+   2- Type and enter in your Terminal:
+   ``ls -a``
+
+   This should look *something* like this in your **Terminal**:
+
+  
    
    .. termynal:: termynal:lsMAC
         :title: bash
@@ -287,7 +310,16 @@ To find out your current directory (location), you can use the ``pwd`` command o
 
 .. tab:: {{ linux_bash }}
    
-   To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``. Try these commands:
+   To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``.
+
+   1- Type and enter in your Terminal:
+   ``ls``
+
+   2- Type and enter in your Terminal:
+   ``ls -a``
+
+   This should look *something* like this in your **Terminal**:
+
    
    .. termynal:: termynal:lsLINUX
         :title: bash
@@ -303,26 +335,19 @@ To find out your current directory (location), you can use the ``pwd`` command o
         -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
 
 
-**Exercise:** Run the commands and observe the files and folders in your current directory.
-
-
-
-
 
 3. Changing directories (cd)
 ==========================================
 
-
 .. tab:: {{ win_powershell }} 
 
-   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named ``MyFolder``," do as explained below:
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
 
-   Type and enter in your Terminal: ``cd MyFolder``
-
-   **warning for windows**:
-   Note when typing the directory name of subfolders, that windows uses backslashes ``\`` and NOT forward slashes ``/``
-
-   It should look something like this:
+   1- Type and enter in your Terminal: ``cd MyFolder``
+   
+   2-Type and enter in your Terminal: ``cd ..``
+   
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:chdirps
         :title: Powershell
@@ -332,18 +357,28 @@ To find out your current directory (location), you can use the ``pwd`` command o
             type: input
             prompt: 'PS C:\User\youruser>'
          -  prompt: 'PS C:\User\youruser\MyFolder>'  
+         -  value: cd ..
+            type: input
+            prompt: 'PS C:\User\youruser\Myfolder>'
+         -  prompt: 'PS C:\User\youruser>'  
 
 
 .. tab:: {{ win_batch }}
 
-   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+   **Warning 1**:
+   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
 
-   Type and enter in your Terminal: ``cd MyFolder``
-
-   **warning for windows**:
+   **Warning 2 (for Windows)**:
    Note when typing the directory name of subfolders, that windows uses backslashes ``\`` and NOT forward slashes ``/``
 
-   It should look something like this:
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
+   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
+
+   1- Type and enter in your Terminal: ``cd MyFolder``
+   
+   2-Type and enter in your Terminal: ``cd ..``
+   
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:chdircmd
         :title: Command prompt
@@ -353,14 +388,24 @@ To find out your current directory (location), you can use the ``pwd`` command o
             type: input
             prompt: 'C:\User\youruser>'
          -  prompt: 'C:\User\youruser\MyFolder>'
+         -  value: cd ..
+            type: input
+            prompt: 'C:\User\youruser\Myfolder>'
+         -  prompt: 'C:\User\youruser>'
 
 .. tab:: {{ mac_bash }}
 
-   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+   **Warning**:
+   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
 
-   Type and enter in your Terminal: ``cd MyFolder``
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
+   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
 
-   It should look something like this:
+   1- Type and enter in your Terminal: ``cd MyFolder``
+   
+   2-Type and enter in your Terminal: ``cd ..``
+
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:chdirmac
         :title: bash
@@ -370,27 +415,45 @@ To find out your current directory (location), you can use the ``pwd`` command o
             type: input
             prompt: 'username@mac~%'
          -  prompt: username@mac MyFolder~%
+         -  value: cd ..
+            type: input
+            prompt: 'username@mac MyFolder~%'
+         -  prompt: username@mac~%
+
+   
 
    
 .. tab:: {{ linux_bash }}
 
-   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+   **Warning**:
+   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
 
-   ype and enter in your Terminal: ``cd MyFolder``
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
+   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
 
-   It should look something like this:
+   1- Type and enter in your Terminal: ``cd MyFolder``
+   
+   2-Type and enter in your Terminal: ``cd ..``
+   
+   This should look *something* like this in your **Terminal**:
 
 
    .. termynal:: termynal:chdirlinux
         :title: bash
         :unix:
 
-         -  value: cd MyFolder # On Unix-based systems (Linux or macOS)
+         -  value: cd MyFolder 
             type: input
             prompt: 'username@linux~$'
          -  prompt: 'username@linux MyFolder~$'
+         -  value: cd ..
+            type: input
+            prompt: 'username@linuxMyFolder~$'
+         -  prompt: 'username@linux~$'
 
-A good trick to use in visual studio code, is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
+
+
+A good trick to use in Visual Studio Code is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
 
 #. Press the icon in the top left of the screen that looks like 2 pieces of paper on top of each other
 #. Press "open folder"
@@ -403,100 +466,19 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-
-.. tab:: {{ win_powershell }} 
-
-   To navigate one step backwards, you can use the ``cd ..`` command:
-
-   It might look something like this:
-
-   .. termynal:: termynal:backdir
-        :title: Powershell
-        :windows:
-
-         -  value: cd ..
-            type: input
-            prompt: 'PS C:\User\youruser\Myfolder>'
-         -  prompt: 'PS C:\User\youruser>'  
-
-
-.. tab:: {{ win_batch }}
-
-   To navigate one step backwards, you can use the ``cd ..`` command:
-
-   It might look something like this:
-
-   
-   .. termynal:: termynal:backdircmd
-        :title: Command prompt
-        :windows:
-
-         -  value: cd ..
-            type: input
-            prompt: 'C:\User\youruser\Myfolder>'
-         -  prompt: 'C:\User\youruser>'
-
-.. tab:: {{ mac_bash }}
-
-   To navigate one step backwards, you can use the ``cd ..`` command:
-
-   It might look something like this:
-
-   
-   .. termynal:: termynal:backdirmac
-        :title: bash
-        :unix:
-
-         -  value: cd .. # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@mac MyFolder~%'
-         -  prompt: username@mac~%
-
-   
-.. tab:: {{ linux_bash }}
-
-   To navigate one step backwards, you can use the ``cd ..`` command:
-
-   It might look something like this:
-
-
-   .. termynal:: termynal:backdirlinux
-        :title: bash
-        :unix:
-
-         -  value: cd .. # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@linux MyFolder~$'
-         -  prompt: 'username@linux~$'
-
-
-
-**exercise:** Try navigating to different folders, and leaving them using ``cd ..``
-
-
-
-
-
-
-
 4. How can I create a new folder? (mkdir)
 =============================
-To create a new folder you can use ``mkdir`` on your Terminal. In this exercise you will create a new folder called ``NewPythonFolder``
-
-1-Type and enter in your Terminal:
-   .. code-block:: 
-
-      mkdir NewPythonFolder
-
-2-Type and enter in your Terminal:
-   .. code-block:: 
-
-      ls
-
-This should look *something* like this in your **Terminal**:
-
 
 .. tab::  Windows (Powershell) 
+
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
+   if the folder was successfully created.
+
+   1-Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:mkdirPS
@@ -509,12 +491,28 @@ This should look *something* like this in your **Terminal**:
         -   value: ls
             type: input
             prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'  
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
+        -  '   d-----        8/1/2021  10:00 AM              NewPythonFolder'     
 
 
 
 .. tab:: Windows (Command prompt)
 
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``dir`` to see 
+   if the folder was successfully created.
+   
+   1-Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``dir``
+
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:mkdirCMD
         :title: Command prompt
@@ -523,14 +521,31 @@ This should look *something* like this in your **Terminal**:
         -   value: mkdir NewPythonFolder
             type: input
             prompt: 'C:\User\youruser>'
-        -   value: ls
+        -   value: dir
             type: input
-            prompt: 'C:\User\youruser>'   
-        -   'C:\User\youruser>'
+            prompt: 'PS C:\User\youruser>'
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
+        -  '   d-----        8/1/2021  10:00 AM              NewPythonFolder'    
 
 
 
 .. tab:: Mac Terminal
+
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
+   if the folder was successfully created.
+   
+   1-Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:mkdirMAC
@@ -542,13 +557,25 @@ This should look *something* like this in your **Terminal**:
             prompt: 'username@mac ~ %'
         -   value: ls
             type: input
-            prompt: 'username@mac ~ %' 
-        -   'username@mac ~ %'
+            prompt: 'username@mac~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
 
 
-   .. $ pwd  # On Unix-based systems (Linux or macOS)
+        
+
+
+
 
 .. tab:: Linux Terminal
+
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
+   if the folder was successfully created.
+   
+   1-Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:mkdirLINUX
@@ -561,36 +588,25 @@ This should look *something* like this in your **Terminal**:
         -   value: ls
             type: input
             prompt: 'username@linux~$'     
-        -   'username@linux~$'
-
-
-
-After these two simple steps you should get a list as you did before when you learned how to use ``ls``. 
-In this list you should be able to see the 'NewPythonFolder' you have just created.
-
-
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
+    
 
 
 
 5. How can I delete a folder or a file using a Terminal? (rm and rm -r)
 =============================
-To eliminate a folder you can use ``rm`` to eliminate a file or ``rm -r`` to eliminate a folder using the Terminal. 
-In this exercise you will eliminate the folder you created in the previous exercise. 
-
-1-Type and enter in your Terminal:
-   .. code-block:: 
-
-      rm -r NewPythonFolder
-
-2-Type and enter in your Terminal:
-   .. code-block:: 
-
-      ls
-
-This should look like this in your **Terminal**:
 
 
 .. tab::  Windows (Powershell) 
+
+   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
+
+   1-Type and enter in your Terminal: ``rm -r NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
+
 
    
    .. termynal:: termynal:rmPS
@@ -603,28 +619,56 @@ This should look like this in your **Terminal**:
         -   value: ls
             type: input
             prompt: 'PS C:\User\youruser>'
-        -   'PS C:\User\youruser>'  
-
-
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
 
 .. tab:: Windows (Command prompt)
+   
+   You can use ``del`` to delete a file or ``rmdir /s`` to delete a folder using the Terminal. 
+
+   1-Type and enter in your Terminal: ``rmdir /s NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``dir``
+
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:rmCMD
         :title: Command prompt
         :windows:
 
-        -   value: rm -r NewPythonFolder
+        -   value: rmdir /s NewPythonFolder
             type: input
             prompt: 'C:\User\youruser>'
-        -   value: ls
+        -   value: dir
             type: input
-            prompt: 'C:\User\youruser>'   
-        -   'C:\User\youruser>'
+            prompt: 'PS C:\User\youruser>'
+        -  ' Directory: C:\User\youruser'
+        -
+        -  '   Mode                LastWriteTime         Length Name'
+        -  '   ----                -------------         ------ ----'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
+        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
+        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
+        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
 
 
 
 .. tab:: Mac Terminal
+
+   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
+
+   1-Type and enter in your Terminal: ``rm -r NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:   
 
    
    .. termynal:: termynal:rmMAC
@@ -636,13 +680,23 @@ This should look like this in your **Terminal**:
             prompt: 'username@mac ~ %'
         -   value: ls
             type: input
-            prompt: 'username@mac ~ %' 
-        -   'username@mac ~ %'
+            prompt: 'username@mac~$'
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
 
 
-   .. $ pwd  # On Unix-based systems (Linux or macOS)
+        
 
+
+   
 .. tab:: Linux Terminal
+
+   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
+
+   1-Type and enter in your Terminal: ``rm -r NewPythonFolder``
+
+   2-Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:rmLINUX
@@ -655,13 +709,8 @@ This should look like this in your **Terminal**:
         -   value: ls
             type: input
             prompt: 'username@linux~$'     
-        -   'username@linux~$'
-
-
-
-After these two simple steps you should get a list as you did before when you learned how to use ``ls``. 
-In this list you should not be able to see the 'NewPythonFolder' you have just deleted.
-
+        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder        
+        
 
 
 
@@ -669,38 +718,64 @@ In this list you should not be able to see the 'NewPythonFolder' you have just d
 6. Which Python version? (python --version or python3 --version)
 ==================================
 
-Check which Python version you have.  **Note that this might change depending on what system you 
-have and wether you have more than one Python version installed**
 
-You will have to run either:
-.. code-block:: 
-
-   python --version
-
-or
-
-.. code-block:: 
-
-   python3 --version
-
-This should look like this in your **Terminal**:
 
 
 .. tab::  Windows (Powershell) 
 
+   To check which Python version you have you can use ``python --version``
+
+   To enter Python in your Terminal you can use ``python``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1-Type and enter in your Terminal: ``python --version`` 
+
+   2-Type and enter in your Terminal: ``python``
+
+   3-Type and enter in your Terminal: ``exit()``
    
-   .. termynal:: termynal:pythonversionPS
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   
+   .. termynal:: termynal:pythonversionPSS
         :title: Powershell
         :windows:
 
         -   value: python --version
             type: input
             prompt: 'PS C:\User\youruser>'
-        -   'Python 3.11.4'  
-
-
+        -   'Python 3.11.4' 
+        -   value: python
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on Windows'
+        -  'Type "help", "copyright", "credits" or "license" for more information.'
+        -   value: exit()
+            type: input
+            prompt: '>>>'
+        -   value: ''
+            type: input
+            prompt: 'PS C:\User\youruser>' 
 
 .. tab:: Windows (Command prompt)
+
+   To check which Python version you have you can use ``python --version``
+
+   To enter Python in your Terminal you can use ``python``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1-Type and enter in your Terminal: ``python --version`` 
+
+   2-Type and enter in your Terminal: ``python``
+
+   3-Type and enter in your Terminal: ``exit()``
+   
+
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:pythonversionCMD
@@ -711,210 +786,122 @@ This should look like this in your **Terminal**:
             type: input
             prompt: 'C:\User\youruser>'
         -   'Python 3.11.4'  
+        -   value: python
+            type: input
+            prompt: 'PS C:\User\youruser>'
+        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on Windows'
+        -  'Type "help", "copyright", "credits" or "license" for more information.'
+        -   value: exit()
+            type: input
+            prompt: '>>>'
+        -   value: ''
+            type: input
+            prompt: 'PS C:\User\youruser>' 
+
 
 
 .. tab:: Mac Terminal
+
+   To check which Python version you have you can use ``python3 --version``
+
+   **Note that this might change depending 
+   whether you have more than one Python version installed**
+
+   To enter Python in your Terminal you can use ``python3``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1-Type and enter in your Terminal: ``python3 --version`` 
+
+   2-Type and enter in your Terminal: ``python3``
+
+   3-Type and enter in your Terminal: ``exit()``
+   
+
+   This should look *something* like this in your **Terminal**:
+
+   
 
    .. termynal:: termynal:pythonversionMAC
         :title: Command prompt
         :unix:
 
-        -   value: python --version 
+        -   value: python3 --version 
             type: input
             prompt: 'username@mac ~ %'
-        -   'Python 3.11.4'  
+        -   'Python 3.11.4' 
+        -   value: python3
+            type: input
+            prompt: 'username@mac ~ %'
+        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on darwin'
+        -  'Type "help", "copyright", "credits" or "license" for more information.'
+        -   value: exit()
+            type: input
+            prompt: '>>>'
+        -   value: ''
+            type: input
+            prompt: 'username@mac ~ %' 
 
 
-   .. $ pwd  # On Unix-based systems (Linux or macOS)
+    
+
+
+  
 
 .. tab:: Linux Terminal
+   
+   To check which Python version you have you can use ``python3 --version``
+
+   **Note that this might change depending 
+   whether you have more than one Python version installed**
+
+   To enter Python in your Terminal you can use ``python3``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1-Type and enter in your Terminal: ``python3 --version`` 
+
+   2-Type and enter in your Terminal: ``python3``
+
+   3-Type and enter in your Terminal: ``exit()``
+   
+
+   This should look *something* like this in your **Terminal**:
+
+   
 
    
    .. termynal:: termynal:pythonversionLINUX
         :title: Command prompt
         :unix:
 
-        -   value: python --version
+        -   value: python3 --version
             type: input
             prompt: 'username@linux~$'
         -   'Python 3.11.4'  
+        -   value: python3
+            type: input
+            prompt: 'username@linux~$'
+        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
+        -  'Type "help", "copyright", "credits" or "license" for more information.'
+        -   value: exit()
+            type: input
+            prompt: '>>>'
+        -   value: ''
+            type: input
+            prompt: 'username@linux~$' 
 
 
 
-
-
-7. How to know when you are in the python shell
-================================================
-
-When you start the Python interpreter, you will see a prompt that looks like this:
-
-.. tab:: {{ win_powershell }} 
-
-   
-   .. termynal:: termynal:pythonIdPS
-      :title: Powershell
-      :windows:
-
-      -  value: python
-         type: input
-         prompt: 'PS C:\User\youruser>'
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: ''
-         type: input
-         prompt: '>>>'
-.. tab:: {{ win_cmd }} 
-
-   
-   .. termynal:: termynal:pythonIdCMD
-      :title: Command Prompt
-      :windows:
-
-      -  value: python
-         type: input
-         prompt: 'C:\User\youruser>'
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: ''
-         type: input
-         prompt: '>>>'
-
-.. tab:: {{ mac_bash }} 
-
-   
-   .. termynal:: termynal:pythonIdMac
-      :title: Bash
-      :unix:
-
-      -  value: python
-         type: input
-         prompt: 'youruser@yourcomputer ~ % '
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: ''
-         type: input
-         prompt: '>>>'
-
-
-.. tab:: {{ linux_bash }} 
-
-   
-   .. termynal:: termynal:pythonIdLinux
-      :title: Bash
-      :unix:
-
-      -  value: python
-         type: input
-         prompt: 'youruser@yourcomputer:~$ '
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: ''
-         type: input
-         prompt: '>>>'
-
-The ``>>>`` prompt indicates that you are inside the Python shell. This means that you can enter Python commands and they will be executed by the interpreter. You can also import modules, define functions, and perform other tasks that you would normally do in a Python script.
-
-
-
-
-
-8. How to exit python shell
-==================================
-
-To exit the Python shell, type ``exit()`` and press Enter.
-
-.. tab:: {{ win_powershell }} 
-
-   
-   .. termynal:: termynal:exitPS
-      :title: Powershell
-      :windows:
-
-      -  value: python
-         type: input
-         prompt: 'PS C:\User\youruser>'
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: exit()
-         type: input
-         prompt: '>>>'
-      -  value: ''
-         type: input
-         prompt: 'PS C:\User\youruser>'
-
-.. tab:: {{ win_cmd }} 
-
-   
-   .. termynal:: termynal:exitCMD
-      :title: Command Prompt
-      :windows:
-
-      -  value: python
-         type: input
-         prompt: 'C:\User\youruser>'
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: exit()
-         type: input
-         prompt: '>>>'
-      -  value: ''
-         type: input
-         prompt: 'C:\User\youruser>'
-
-.. tab:: {{ mac_bash }} 
-
-   
-   .. termynal:: termynal:exitMac
-      :title: Bash
-      :unix:
-
-      -  value: python3
-         type: input
-         prompt: 'youruser@yourcomputer ~ % '
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: exit()
-         type: input
-         prompt: '>>>'
-      -  value: ''
-         type: input
-         prompt: 'youruser@yourcomputer ~ % '
-
-.. tab:: {{ linux_bash }} 
-
-   
-   .. termynal:: termynal:exitLinux
-      :title: Bash
-      :unix:
-
-      -  value: python3
-         type: input
-         prompt: 'youruser@yourcomputer:~$ '
-      -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-      -  'Type "help", "copyright", "credits" or "license" for more information.'
-      -  value: exit()
-         type: input
-         prompt: '>>>'
-      -  value: ''
-         type: input
-         prompt: 'youruser@yourcomputer:~$ '
-
-
-
-
-
-9. Which packages do i have? 
+7. Which packages do I have? 
 ==================================================
 
 
 .. tab:: {{ win_powershell }} 
    
-   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
-   After a couple of seconds, your terminal will list every package that you have downloaded
+   To see which packages you currently have in Python, you can use ``pip list``. 
 
-
-   It should look something like this (but you will probably have a lot more packages than 2):
-
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:pip3list
         :title: Powershell
@@ -926,17 +913,13 @@ To exit the Python shell, type ``exit()`` and press Enter.
         -   "numpy     3.0.2"
         -   "sympy     2.0.4"
 
-   **Exercise:** Try listing your current packages
 
 
 .. tab:: {{ win_batch }}
    
-   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
-   After a couple of seconds, your terminal will list every package that you have downloaded
+   To see which packages you currently have in Python, you can use ``pip list``. 
 
-
-   It should look something like this (but you will probably have a lot more packages than 2):
-
+   This should look *something* like this in your **Terminal**:
    
    .. termynal:: termynal:pip3listcmd
         :title: Command prompt
@@ -948,16 +931,13 @@ To exit the Python shell, type ``exit()`` and press Enter.
         -   "numpy   3.0.2"
         -   "sympy   2.0.4"
 
-   **Exercise:** Try listing your current packages
-
+ 
 
 .. tab:: {{ mac_bash }}
    
-   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
-   After a couple of seconds, your terminal will list every package that you have downloaded
+   To see which packages you currently have in Python, you can use ``pip3 list``. 
 
-
-   It should look something like this (but you will probably have a lot more packages than 2):
+   This should look *something* like this in your **Terminal**:
 
    
    .. termynal:: termynal:pip3listmac
@@ -970,18 +950,15 @@ To exit the Python shell, type ``exit()`` and press Enter.
         -   "numpy   3.0.2"
         -   "sympy   2.0.4"
 
-   **Exercise:** Try listing your current packages
+   
 
 
 
 .. tab:: {{ linux_bash }}
    
-   To see which packages you currently have, you can type ``pip3 list`` in the terminal.
-   After a couple of seconds, your terminal will list every package that you have downloaded
+   To see which packages you currently have in Python, you can use ``pip3 list``. 
 
-
-   It should look something like this (but you will probably have a lot more packages than 2):
-
+   This should look *something* like this in your **Terminal**:
 
    .. termynal:: termynal:pip3listlinux
         :title: bash
@@ -992,10 +969,8 @@ To exit the Python shell, type ``exit()`` and press Enter.
             prompt: 'username@linux~$'
         -   "numpy   3.0.2"
         -   "sympy   2.0.4"
-   **Exercise:** Try listing your current packages
 
 
 
 
-
-
+    
