@@ -66,6 +66,8 @@ extensions = [
     'sphinx.ext.extlinks',
     # allows to view code directly in the homepage
     'sphinx.ext.viewcode',
+    # toggle-button on info/warning/...
+    'sphinx_togglebutton',
     # create tabs and grouped tabs
     'sphinx_inline_tabs',
     # allow emoji's in the documentation
