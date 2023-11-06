@@ -75,8 +75,19 @@ integration with Jupyter notebooks.
 
 .. _ide-vscode-new-project:
 
+
+Getting Started with Python in Vscode
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the following we will prowide a step-by-step guide on how to get started with Python in VSCode. This includes creating a new project, working with files, importing packages, running your code, installing requirements.txt, debugging, virtual environment (venv).
+
+
+Installing the python extension
+_______________________________
+Before you can start working with Python in VSCode you have to install the Python extension. You can do this by following these steps in the extension guide (see :ref:`here <ide-vscode-Extensions>`).
+
+
 Creating and Opening Projects
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_____________________________
 
 1. Create a folder for a project. You can do this by creating a folder e.g. on the desktop.
 
@@ -95,7 +106,7 @@ Creating and Opening Projects
       :alt: How to create a folder, select :guilabel:`Explorer (Activity Bar) -> Folder+ (Icon)`
 
 Working with Files
-^^^^^^^^^^^^^^^^^^
+__________________
 
 1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it ``new_file.py`` - the ending ``.py`` makes it a python file. If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
 
@@ -115,7 +126,7 @@ Working with Files
 
 
 Importing packages
-^^^^^^^^^^^^^^^^^^
+__________________
 
 In order to write your code you can benefit from a bunch of different python-packages that will help you with your calculation. In Python these packages typically end
 with the letters ``py``. For example there is ``sympy``, which will help you with caluclating with variables (or symbols), ``numpy`` which is used for numerical calculations and 
@@ -125,41 +136,104 @@ with the letters ``py``. For example there is ``sympy``, which will help you wit
 
 2. There are several different ways of importing packages. We will here show you some examples:
 
-   - ``import <name of the package>``
-       This is the simplest way of importing packages. In order to call functions from the package you have to write the name of the package, followed by ``.`` and then 
-       the function you want to use (for example ``numpy.sqrt(2)``).
-   - ``import <name of the package> as ...``
+.. dropdown:: ``import <name of the package>``
+
+      This is the simplest way of importing packages. In order to call functions from the package you have to write the name of the package, followed by ``.`` and then 
+      the function you want to use (for example ``numpy.sqrt(2)``).
+
+.. dropdown:: ``import <name of the package> as ...``
+
        If you don't want to write the whole name of the packages every time you use a command from them, you can define a shorter name for them yourself, that you want
        to call them. Typically one will write ``import numpy as np`` instead of ``import numpy`` or ``import sympy as sp`` instead of ``import sympy``, so that you don't have to write 
        the entire name every time you want to call a function from that package (for example ``np.sqrt(2)``).
-   - ``from <name of the package> import *``
+
+.. dropdown:: ``from <name of the package> import *``
+
        You can use this command if you want to import the whole package without having to write the name or the abbreviation of the package in front of the function. It already knows 
        that you want to import the function from this package. The ``*`` indicates that you imported everything from this package.
        For example one can write ``from sympy import *`` and then create a matrix by writing ``Matrix([[... , ...],[... , ...]])`` instead of writing ``sp.Matrix([[... , ...],[... , ...]])``
        or even ``sympy.Matrix([[... , ...],[... , ...]])``.
 
-       **NOTE**: This can cause side-effects, use with care if doing this with multiple packages.
-   - ``from <name of the package> import <name of function>``
+       .. Warning:: 
+            This can cause side-effects, use with care if doing this with multiple packages.
+
+.. dropdown:: ``from <name of the package> import <name of function>``
+
        You can use this command if you only want to import specific functions from the package. This will allow you to import only the functions that you are using. For example the command
        ``from matplotlib import pyplot`` will import only the function ``pyplot`` from the package ``matplotlib``. You can then for example call the function ``pyplot.plot(x,y)``.
-   - ``import <name of the package>.<name of function> as ...``
+
+.. dropdown:: ``import <name of the package>.<name of function> as ...``
+       
        This command is helpful if you again only want to import specific functions but you also want to call them something else (often times something shorter). If you for example run the
        command ``import matplotlib.pyplot as plt`` you will import the exact same function as in the example before but you don't have to write as much in order to call the function: ``plt.plot(x, y)``.
 
 
-Extensions
-^^^^^^^^^^
+Running your code
+_________________
+There are several ways to run your code in VSCode. We will here show you some examples:
 
-1. To install an extension click on the extensions tab in the activity bar (see below).
+1. Create a new file (see :ref:`above <ide-vscode-new-project>`).
 
-2. Then search for the extension you want to install and click on install.
+2. Write your code in the file. For example:
 
-   .. image:: images/Vscode-Extensions.png
-      :width: 600
-      :align: center
-    
+   .. code-block:: python
 
-Extensions can also be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
+      import numpy as np
+      print(np.sqrt(2))
+
+3. Save the file (see :ref:`here <ide-vscode-new-project>`).
+
+4. Run the file by clicking on the *Run and Debug* (see :ref:`above <ide-vscode-user-interface>`).
+
+5. You can also run the file through the terminal (see :ref:`here <Insert-refrence-to-terminal>`).
+
+6. Lastly, you can run the file by binding a key to the command (see :ref:`here <ide-vscode-keybindings>`).
+
+
+
+
+
+
+Install requirements.txt 
+________________________
+
+The ``requirements.txt`` file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
+To install a ``requirements.txt`` file you have to do the following:
+
+1. Navigate into the folder from where you want to access the packages (see :ref:`ide-vscode-new-project`).
+
+
+2. Open up your terminal. You can then copy the following command into your terminal and press enter to execute:
+
+   .. tab:: {{ win_powershell }}
+
+      .. code-block:: powershell
+
+         python -m pip install -r requirements.txt
+
+   .. tab:: {{ win_batch }}
+
+      .. code-block:: winbatch
+
+         python -m pip install -r requirements.txt
+
+   .. tab:: {{ mac_bash }}
+
+      .. code-block:: bash
+
+         python3 -m pip install -r requirements.txt
+
+   .. tab:: {{ linux_bash }}
+
+      .. code-block:: bash
+
+         python3 -m pip install -r requirements.txt
+
+The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an ``%``. 
+
+.. note::
+   If you are using a virtual environment, make sure to activate it before installing the packages. You can read more about virtual environments `here <https://pythonsupport.dtu.dk/python/environments.html>`__.
+
 
 
 Debugging
@@ -212,42 +286,19 @@ To change the interpreter location open a python file and click on the Python ve
    :align: center
 
 
-Install requirements.txt 
-^^^^^^^^^^^^^^^^^^^^^^^^
+Extensions
+^^^^^^^^^^
 
-The ``requirements.txt`` file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
-To install a ``requirements.txt`` file you have to do the following:
+1. To install an extension click on the extensions tab in the activity bar (see below).
 
-1. Navigate into the folder from where you want to access the packages (see :ref:`ide-vscode-new-project`).
+2. Then search for the extension you want to install and click on install.
 
+   .. image:: images/Vscode-Extensions.png
+      :width: 600
+      :align: center
+    
 
-2. Open up your terminal. You can then copy the following command into your terminal and press enter to execute:
-
-   .. tab:: {{ win_powershell }}
-
-      .. code-block:: powershell
-
-         python -m pip install -r requirements.txt
-
-   .. tab:: {{ win_batch }}
-
-      .. code-block:: winbatch
-
-         python -m pip install -r requirements.txt
-
-   .. tab:: {{ mac_bash }}
-
-      .. code-block:: bash
-
-         python3 -m pip install -r requirements.txt
-
-   .. tab:: {{ linux_bash }}
-
-      .. code-block:: bash
-
-         python3 -m pip install -r requirements.txt
-
-The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an ``%``. 
+Extensions can also be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
 
 
 
@@ -265,7 +316,7 @@ By either using the keybinding :kbd:`Ctrl+K+T` or pressing the cogwheel button a
 
 New color themes can be acquired by navigating to Extensions under the Activity bar, and then searching for the color theme that you want to install. The library of color themes that VS Code Extensions has to offer can be found by pressing `here <https://VS Codethemes.com/?language=python>`__.
 
-
+.. _ide-vscode-keybindings:
 **Key Bindings:** VS Code enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press :kbd:`Ctrl+K+S`. This key binding brings up VS Code's keyboard shortcut menu.
 
 For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching *run python file* in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 
