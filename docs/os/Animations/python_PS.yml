@@ -1,0 +1,237 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ercol\test
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 15
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 521
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 111
+    content: 'PS C:\Users\ercol\test> '
+  - delay: 853
+    content: "\e[93mp"
+  - delay: 17
+    content: "\e[m"
+  - delay: 489
+    content: "\e[93m\bpy"
+  - delay: 16
+    content: "\e[m"
+  - delay: 221
+    content: "\e[?25l\e[93m\e[6;25Hpyt\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 349
+    content: "\e[?25l\e[93m\e[6;25Hpyth\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 235
+    content: "\e[?25l\e[93m\e[6;25Hpytho\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 300
+    content: "\e[?25l\e[93m\e[6;25Hpython\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 378
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 921
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[m-\e[?25h"
+  - delay: 202
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 188
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--r\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 648
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m-- \b\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 141
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--v\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 78
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--ve\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 395
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--ver\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 351
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--vers\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 191
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--versi\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 206
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--versio\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 221
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--version\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 570
+    content: "\r\n"
+  - delay: 16
+    content: "Python 3.12.0\r\n"
+  - delay: 15
+    content: 'PS C:\Users\ercol\test> '
+  - delay: 1958
+    content: "\e[93mp"
+  - delay: 16
+    content: "\e[m"
+  - delay: 758
+    content: "\e[93m\bpy"
+  - delay: 15
+    content: "\e[m"
+  - delay: 240
+    content: "\e[?25l\e[93m\e[8;25Hpyt\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 127
+    content: "\e[?25l\e[93m\e[8;25Hpyth\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 221
+    content: "\e[?25l\e[93m\e[8;25Hpytho\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 254
+    content: "\e[?25l\e[93m\e[8;25Hpython\e[?25h"
+  - delay: 15
+    content: "\e[m"
+  - delay: 737
+    content: "\r\n"
+  - delay: 62
+    content: "Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)] on win32\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> "
+  - delay: 2215
+    content: e
+  - delay: 489
+    content: x
+  - delay: 396
+    content: i
+  - delay: 268
+    content: t
+  - delay: 1658
+    content: (
+  - delay: 348
+    content: )
+  - delay: 997
+    content: "\r\nPS C:\\Users\\ercol\\test> "
+  - delay: 2500
+    content: "\e"

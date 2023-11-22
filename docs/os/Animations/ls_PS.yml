@@ -1,0 +1,173 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ercol\test
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 40
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 539
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 110
+    content: 'PS C:\Users\ercol\test> '
+  - delay: 1534
+    content: "\e[93ml"
+  - delay: 16
+    content: "\e[m"
+  - delay: 254
+    content: "\e[93m\bls"
+  - delay: 16
+    content: "\e[m"
+  - delay: 378
+    content: "\r\n"
+  - delay: 15
+    content: "\e[?25l\e[9;1H\e[?25h"
+  - delay: 17
+    content: "\e[?25l    Directory: C:\\Users\\ercol\\test\e[12;1HMode                 LastWriteTime         Length Name\e[154X\r\n----                 -------------         ------ ----\e[154X\r\nd-----        22/11/2023     01:35                myfolder1\e[149X\r\nd-----        22/11/2023     01:35                myfolder2\e[149X\r\n-a----        22/11/2023     01:36              0 myfile.txt\e[148X\r\n-a----        22/11/2023     01:36              0 myscript.py\e[147X\e[20;1H\e[?25h"
+  - delay: 15
+    content: 'PS C:\Users\ercol\test> '
+  - delay: 1467
+    content: "\e[93ml"
+  - delay: 15
+    content: "\e[m"
+  - delay: 286
+    content: "\e[93m\bls"
+  - delay: 16
+    content: "\e[m"
+  - delay: 506
+    content: "\e[?25l\e[93m\e[20;25Hls \e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 600
+    content: "\e[?25l\e[93m\e[20;25Hls \e[m-\e[?25h"
+  - delay: 743
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-F\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 477
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-Fo\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 219
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-For\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 314
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-Forc\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 144
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-Force\e[?25h"
+  - delay: 16
+    content: "\e[m"
+  - delay: 678
+    content: "\e[?25l\e[23;1H    Directory: C:\\Users\\ercol\\test\e[26;1HMode                 LastWriteTime         Length Name\e[154X\r\n----                 -------------         ------ ----\e[154X\r\nd--h--        22/11/2023     02:04                hiddenfolder\e[146X\r\nd-----        22/11/2023     01:35                myfolder1\e[149X\r\nd-----        22/11/2023     01:35                myfolder2\e[149X\r\n\e[?25h"
+  - delay: 16
+    content: "\e[?25l-a-h--        22/11/2023     02:06              0 .hiddenfile\e[147X\r\n-a----        22/11/2023     01:36              0 myfile.txt\e[148X\r\n-a----        22/11/2023     01:36              0 myscript.py\e[147X\e[36;1HPS C:\\Users\\ercol\\test> \e[?25h"
+  - delay: 1248
+    content: "\e"
