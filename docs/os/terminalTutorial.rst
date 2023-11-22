@@ -108,14 +108,9 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:cdPS
-      :title: Powershell
-      :windows:
-
-      -  value: pwd
-         type: input
-         prompt: 'PS C:\User\youruser>'
-      -  'PS C:\User\youruser>'
+   .. image:: Animations/PS/pwd.gif
+      :width: 100%
+      :align: center
 
 .. tab:: {{ win_batch }} 
    
@@ -143,37 +138,10 @@ Each operating system opens terminals in a different way.
    -Type and enter ``pwd`` in your Terminal.
 
    This should look *something* like this in your **Terminal**:
-   
-
-   
-   .. termynal:: termynal:pwdMAC
-      :title: Bash
-      :unix:
-
-      -  value: pwd
-         type: input
-         prompt: 'username@mac~$'
-      -  /home/username
-
-.. tab:: {{ linux_bash }} 
-
-
-   To find out your current directory (location), you can use the 
-   ``pwd`` command on Unix-based systems (Linux or macOS). 
-
-   -Type and enter ``pwd`` in your Terminal. 
-
-   This should look *something* like this in your **Terminal**:
-   
-   
-   .. termynal:: termynal:pwdLINUX
-      :title: Bash
-      :unix:
-
-      -  value: pwd
-         type: input
-         prompt: 'username@linux~$'
-      -  /home/username
+      
+   .. image:: Animations/Unix/pwd.gif
+      :width: 100%
+      :align: center
 
 
 
@@ -198,32 +166,9 @@ Each operating system opens terminals in a different way.
    This should look *something* like this in your **Terminal**:
 
 
-   .. termynal:: termynal:lsPS
-      :title: Powershell
-      :windows:
-
-      -  value: ls
-         type: input
-         prompt: 'PS C:\User\youruser>'
-      -  ' Directory: C:\User\youruser'
-      -
-      -  '   Mode                LastWriteTime         Length Name'
-      -  '   ----                -------------         ------ ----'
-      -  '   d-----        8/1/2021  10:00 AM              myfolder1'
-      -  '   d-----        8/1/2021  10:00 AM              myfolder2'
-      -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
-      -  '   -a----        8/1/2021  10:00 AM              0 myscript.py'
-      -  value: ls -Force
-         type: input
-         prompt: 'PS C:\User\youruser>'
-      -  ' Directory: C:\User\youruser'
-      -
-      -  '   Mode                LastWriteTime         Length Name'
-      -  '   ----                -------------         ------ ----'
-      -  '   d-----        8/1/2021  10:00 AM              .hiddenfolder'
-      -  '   -a----        8/1/2021  10:00 AM              0 .hiddenfile'
-      -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
-      -  '   -a----        8/1/2021  10:00 AM              0 myscript.py'
+   .. image:: Animations/PS/ls.gif
+      :width: 100%
+      :align: center
 
 .. tab:: {{ win_batch }}
 
@@ -294,45 +239,12 @@ Each operating system opens terminals in a different way.
 
   
    
-   .. termynal:: termynal:lsMAC
-        :title: bash
-        :unix:
-
-        -   value: ls
-            type: input
-            prompt: 'username@mac~$'
-        -   myfolder1 myfolder2 myfile.txt myscript.py
-        -   value: ls -a
-            type: input
-            prompt: 'username@mac~$'
-        -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
+   .. image:: Animations/Unix/ls.gif
+      :width: 100%
+      :align: center
 
 
-.. tab:: {{ linux_bash }}
-   
-   To list the contents of your current directory, you can use the ``ls`` command. If you want to see hidden files as well, use ``ls -a``.
 
-   1- Type and enter in your Terminal:
-   ``ls``
-
-   2- Type and enter in your Terminal:
-   ``ls -a``
-
-   This should look *something* like this in your **Terminal**:
-
-   
-   .. termynal:: termynal:lsLINUX
-        :title: bash
-        :unix:
-
-        -   value: ls
-            type: input
-            prompt: 'username@linux~$'
-        -   myfolder1 myfolder2 myfile.txt myscript.py
-        -   value: ls -a
-            type: input
-            prompt: 'username@linux~$'
-        -   .hiddenfolder .hiddenfile myfolder1 myfolder2 myfile.txt myscript.py
 
 
 
@@ -349,18 +261,9 @@ Each operating system opens terminals in a different way.
    
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:chdirps
-        :title: Powershell
-        :windows:
-
-         -  value: cd MyFolder
-            type: input
-            prompt: 'PS C:\User\youruser>'
-         -  prompt: 'PS C:\User\youruser\MyFolder>'  
-         -  value: cd ..
-            type: input
-            prompt: 'PS C:\User\youruser\Myfolder>'
-         -  prompt: 'PS C:\User\youruser>'  
+   .. image:: Animations/PS/cd.gif
+      :width: 100%
+      :align: center
 
 
 .. tab:: {{ win_batch }}
@@ -407,49 +310,11 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:chdirmac
-        :title: bash
-        :unix:
-
-         -  value: cd MyFolder # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@mac~%'
-         -  prompt: username@mac MyFolder~%
-         -  value: cd ..
-            type: input
-            prompt: 'username@mac MyFolder~%'
-         -  prompt: username@mac~%
-
+   .. image:: Animations/Unix/cd.gif
+      :width: 100%
+      :align: center
    
 
-   
-.. tab:: {{ linux_bash }}
-
-   **Warning**:
-   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
-
-   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
-   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
-
-   1- Type and enter in your Terminal: ``cd MyFolder``
-   
-   2-Type and enter in your Terminal: ``cd ..``
-   
-   This should look *something* like this in your **Terminal**:
-
-
-   .. termynal:: termynal:chdirlinux
-        :title: bash
-        :unix:
-
-         -  value: cd MyFolder 
-            type: input
-            prompt: 'username@linux~$'
-         -  prompt: 'username@linux MyFolder~$'
-         -  value: cd ..
-            type: input
-            prompt: 'username@linuxMyFolder~$'
-         -  prompt: 'username@linux~$'
 
 
 
@@ -481,25 +346,9 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. termynal:: termynal:mkdirPS
-        :title: Powershell
-        :windows:
-
-        -   value: mkdir NewPythonFolder
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -   value: ls
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -  ' Directory: C:\User\youruser'
-        -
-        -  '   Mode                LastWriteTime         Length Name'
-        -  '   ----                -------------         ------ ----'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
-        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
-        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
-        -  '   d-----        8/1/2021  10:00 AM              NewPythonFolder'     
+   .. image:: Animations/PS/mkdir.gif
+      :width: 100%
+      :align: center  
 
 
 
@@ -548,47 +397,12 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. termynal:: termynal:mkdirMAC
-        :title: Command prompt
-        :unix:
-
-        -   value: mkdir NewPythonFolder 
-            type: input
-            prompt: 'username@mac ~ %'
-        -   value: ls
-            type: input
-            prompt: 'username@mac~$'
-        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
+   .. image:: Animations/Unix/mkdir.gif
+      :width: 100%
+      :align: center
 
 
         
-
-
-
-
-.. tab:: Linux Terminal
-
-   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
-   if the folder was successfully created.
-   
-   1-Type and enter in your Terminal: ``mkdir NewPythonFolder``
-
-   2-Type and enter in your Terminal: ``ls``
-
-   This should look *something* like this in your **Terminal**:
-
-   
-   .. termynal:: termynal:mkdirLINUX
-        :title: Command prompt
-        :unix:
-
-        -   value: mkdir NewPythonFolder
-            type: input
-            prompt: 'username@linux~$'
-        -   value: ls
-            type: input
-            prompt: 'username@linux~$'     
-        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
     
 
 
@@ -609,24 +423,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
    
-   .. termynal:: termynal:rmPS
-        :title: Powershell
-        :windows:
-
-        -   value: rm -r NewPythonFolder
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -   value: ls
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -  ' Directory: C:\User\youruser'
-        -
-        -  '   Mode                LastWriteTime         Length Name'
-        -  '   ----                -------------         ------ ----'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
-        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
-        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
+   .. image:: Animations/PS/rm.gif
+      :width: 100%
+      :align: center
 
 .. tab:: Windows (Command prompt)
    
@@ -671,45 +470,11 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:   
 
    
-   .. termynal:: termynal:rmMAC
-        :title: Command prompt
-        :unix:
-
-        -   value: rm -r NewPythonFolder 
-            type: input
-            prompt: 'username@mac ~ %'
-        -   value: ls
-            type: input
-            prompt: 'username@mac~$'
-        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder
+   .. image:: Animations/Unix/rm.gif
+      :width: 100%
+      :align: center
 
 
-        
-
-
-   
-.. tab:: Linux Terminal
-
-   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
-
-   1-Type and enter in your Terminal: ``rm -r NewPythonFolder``
-
-   2-Type and enter in your Terminal: ``ls``
-
-   This should look *something* like this in your **Terminal**:
-
-   
-   .. termynal:: termynal:rmLINUX
-        :title: Command prompt
-        :unix:
-
-        -   value: rm -r NewPythonFolder
-            type: input
-            prompt: 'username@linux~$'
-        -   value: ls
-            type: input
-            prompt: 'username@linux~$'     
-        -   myfolder1 myfolder2 myfile.txt myscript.py NewPythonFolder        
         
 
 
@@ -740,25 +505,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    
    
-   .. termynal:: termynal:pythonversionPSS
-        :title: Powershell
-        :windows:
-
-        -   value: python --version
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -   'Python 3.11.4' 
-        -   value: python
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on Windows'
-        -  'Type "help", "copyright", "credits" or "license" for more information.'
-        -   value: exit()
-            type: input
-            prompt: '>>>'
-        -   value: ''
-            type: input
-            prompt: 'PS C:\User\youruser>' 
+   .. image:: Animations/PS/python.gif
+      :width: 100%
+      :align: center
 
 .. tab:: Windows (Command prompt)
 
@@ -822,74 +571,11 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    
 
-   .. termynal:: termynal:pythonversionMAC
-        :title: Command prompt
-        :unix:
-
-        -   value: python3 --version 
-            type: input
-            prompt: 'username@mac ~ %'
-        -   'Python 3.11.4' 
-        -   value: python3
-            type: input
-            prompt: 'username@mac ~ %'
-        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on darwin'
-        -  'Type "help", "copyright", "credits" or "license" for more information.'
-        -   value: exit()
-            type: input
-            prompt: '>>>'
-        -   value: ''
-            type: input
-            prompt: 'username@mac ~ %' 
+   .. image:: Animations/Unix/python.gif
+      :width: 100%
+      :align: center
 
 
-    
-
-
-  
-
-.. tab:: Linux Terminal
-   
-   To check which Python version you have you can use ``python3 --version``
-
-   **Note that this might change depending 
-   whether you have more than one Python version installed**
-
-   To enter Python in your Terminal you can use ``python3``
-
-   To exit Python in your Terminal you can use ``exit()``
-
-   1-Type and enter in your Terminal: ``python3 --version`` 
-
-   2-Type and enter in your Terminal: ``python3``
-
-   3-Type and enter in your Terminal: ``exit()``
-   
-
-   This should look *something* like this in your **Terminal**:
-
-   
-
-   
-   .. termynal:: termynal:pythonversionLINUX
-        :title: Command prompt
-        :unix:
-
-        -   value: python3 --version
-            type: input
-            prompt: 'username@linux~$'
-        -   'Python 3.11.4'  
-        -   value: python3
-            type: input
-            prompt: 'username@linux~$'
-        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on linux'
-        -  'Type "help", "copyright", "credits" or "license" for more information.'
-        -   value: exit()
-            type: input
-            prompt: '>>>'
-        -   value: ''
-            type: input
-            prompt: 'username@linux~$' 
 
 
 
@@ -903,15 +589,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:pip3list
-        :title: Powershell
-        :windows:
-
-        -   value: pip list
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -   "numpy     3.0.2"
-        -   "sympy     2.0.4"
+   .. image:: Animations/PS/pip.gif
+      :width: 100%
+      :align: center
 
 
 
@@ -940,37 +620,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. termynal:: termynal:pip3listmac
-        :title: bash
-        :unix:
-
-        -   value: pip3 list # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@mac~%'
-        -   "numpy   3.0.2"
-        -   "sympy   2.0.4"
-
-   
-
-
-
-.. tab:: {{ linux_bash }}
-   
-   To see which packages you currently have in Python, you can use ``pip3 list``. 
-
-   This should look *something* like this in your **Terminal**:
-
-   .. termynal:: termynal:pip3listlinux
-        :title: bash
-        :unix:
-
-        -   value: pip3 list # On Unix-based systems (Linux or macOS)
-            type: input
-            prompt: 'username@linux~$'
-        -   "numpy   3.0.2"
-        -   "sympy   2.0.4"
-
-
-
-
-    
+   .. image:: Animations/Unix/pip.gif
+      :width: 100%
+      :align: center
