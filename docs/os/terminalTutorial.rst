@@ -341,7 +341,7 @@ Each operating system opens terminals in a different way.
 
 .. tab:: {{ win_powershell }} 
 
-   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named "MyFolder," do as explained below:
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired directory. For example, to move to a directory named ``MyFolder``, do as explained below:
 
    1- Type and enter in your Terminal: ``cd MyFolder``
    
