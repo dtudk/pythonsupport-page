@@ -24,8 +24,4 @@
   margin-top: 0
 }
 
-[data-ty-terminal]:after {
-  content: attr(data-ty-terminal)
-  !important
-}
 /* ^^^^^ STYLES TO MAKE TABS MORE VISUAL ^^^^^ */
