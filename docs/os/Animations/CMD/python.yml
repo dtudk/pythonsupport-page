@@ -1,0 +1,183 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: cmd.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ercol\test
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 13
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 500
+    content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c) Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\ercol\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 948
+    content: p
+  - delay: 126
+    content: 'y'
+  - delay: 159
+    content: t
+  - delay: 94
+    content: h
+  - delay: 221
+    content: o
+  - delay: 156
+    content: 'n'
+  - delay: 448
+    content: ' '
+  - delay: 347
+    content: '-'
+  - delay: 158
+    content: '-'
+  - delay: 205
+    content: v
+  - delay: 174
+    content: e
+  - delay: 221
+    content: r
+  - delay: 256
+    content: s
+  - delay: 252
+    content: i
+  - delay: 190
+    content: o
+  - delay: 175
+    content: 'n'
+  - delay: 332
+    content: "\r\n\e]0;C:\\Windows\\SYSTEM32\\cmd.exe - python  --version\a"
+  - delay: 94
+    content: "\e[?25lPython 3.11.6\e[7;1HC:\\Users\\ercol\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 1153
+    content: p
+  - delay: 363
+    content: 'y'
+  - delay: 189
+    content: t
+  - delay: 110
+    content: h
+  - delay: 173
+    content: o
+  - delay: 173
+    content: 'n'
+  - delay: 1344
+    content: "\r\n\e]0;C:\\Windows\\SYSTEM32\\cmd.exe - python\a"
+  - delay: 139
+    content: "Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)] on win32\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> "
+  - delay: 997
+    content: e
+  - delay: 365
+    content: x
+  - delay: 206
+    content: i
+  - delay: 346
+    content: t
+  - delay: 826
+    content: (
+  - delay: 378
+    content: )
+  - delay: 508
+    content: "\e[?25l\e[12;1HC:\\Users\\ercol\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 2500
+    content: "\r\n"

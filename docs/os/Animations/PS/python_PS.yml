@@ -145,14 +145,6 @@ records:
     content: "\e[m"
   - delay: 921
     content: "\e[?25l\e[93m\e[6;25Hpython \e[m-\e[?25h"
-  - delay: 202
-    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--\e[?25h"
-  - delay: 15
-    content: "\e[m"
-  - delay: 188
-    content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--r\e[?25h"
-  - delay: 16
-    content: "\e[m"
   - delay: 648
     content: "\e[?25l\e[93m\e[6;25Hpython \e[90m-- \b\e[?25h"
   - delay: 16

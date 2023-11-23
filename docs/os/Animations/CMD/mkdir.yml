@@ -1,0 +1,169 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: cmd.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\ercol\test
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 100
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 23
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 499
+    content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c) Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\ercol\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 882
+    content: m
+  - delay: 238
+    content: k
+  - delay: 398
+    content: d
+  - delay: 220
+    content: i
+  - delay: 158
+    content: r
+  - delay: 714
+    content: ' '
+  - delay: 381
+    content: 'N'
+  - delay: 362
+    content: e
+  - delay: 327
+    content: w
+  - delay: 474
+    content: P
+  - delay: 680
+    content: 'y'
+  - delay: 173
+    content: t
+  - delay: 189
+    content: h
+  - delay: 206
+    content: o
+  - delay: 205
+    content: 'n'
+  - delay: 617
+    content: F
+  - delay: 239
+    content: o
+  - delay: 237
+    content: l
+  - delay: 110
+    content: d
+  - delay: 157
+    content: e
+  - delay: 174
+    content: r
+  - delay: 760
+    content: "\e[?25l\e[6;1HC:\\Users\\ercol\\test>\e[?25h"
+  - delay: 947
+    content: d
+  - delay: 219
+    content: i
+  - delay: 95
+    content: r
+  - delay: 475
+    content: "\e[?25l\r\n Volume in drive C has no label.\r\n Volume Serial Number is AEFC-2E26\e[10;1H Directory of C:\\Users\\ercol\\test\e[12;1H23/11/2023  19:01    <DIR>          .\r\n23/11/2023  18:55    <DIR>          ..\r\n22/11/2023  01:36                 0 myfile.txt\r\n22/11/2023  01:35    <DIR>          myfolder1\r\n22/11/2023  01:35    <DIR>          myfolder2\r\n22/11/2023  01:36                 0 myscript.py\r\n23/11/2023  19:01    <DIR>          NewPythonFolder\r\n               2 File(s)              0 bytes\r\n               5 Dir(s)  1,598,836,051,968 bytes free\e[22;1HC:\\Users\\ercol\\test>\e[?25h"
+  - delay: 2500
+    content: "\r\n"

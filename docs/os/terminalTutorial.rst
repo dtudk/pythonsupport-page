@@ -37,13 +37,9 @@ Each operating system opens terminals in a different way.
   
    This should open a **Terminal** looking *something* like this:
 
-   .. termynal:: termynal:pythonCMD
-         :title: Command Propmt
-         :windows:
-
-         -  value: ''
-            type: input
-            prompt: 'C:\User\youruser>'
+   .. image:: Animations/CMD/terminal.gif
+      :width: 100%
+      :align: center
 
 
 .. tab:: {{ mac_bash }}
@@ -109,14 +105,9 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:cdCMD
-      :title: Command Prompt
-      :windows:
-
-      -  value: cd
-         type: input
-         prompt: 'C:\User\youruser>'
-      -  'C:\User\youruser>'
+   .. image:: Animations/CMD/currentDir.gif
+      :width: 100%
+      :align: center
 
 .. tab:: Mac/Linux (bash)
 
@@ -172,44 +163,9 @@ Each operating system opens terminals in a different way.
    This should look *something* like this in your **Terminal**:
 
    
-   .. termynal:: termynal:dirCMD
-      :title: Command prompt
-      :windows:
-
-      -  value: dir
-         type: input
-         prompt: 'C:\User\youruser>'
-      -  ' Volume in drive C has no label.'
-      -  '   Volume Serial Number is 1234-5678'
-      -  
-      -  '   Directory of C:\User\youruser'
-      -  
-      -  '   08/01/2021  10:00 AM    <DIR>          .'
-      -  '   08/01/2021  10:00 AM    <DIR>          ..'
-      -  '   08/01/2021  10:00 AM    <DIR>          myfolder1'
-      -  '   08/01/2021  10:00 AM    <DIR>          myfolder2'
-      -  '   08/01/2021  10:00 AM                 0 myfile.txt'
-      -  '   08/01/2021  10:00 AM                 0 myscript.py'
-      -  '                  2 File(s)              0 bytes'
-      -  '                  4 Dir(s)  1,234,567,890 bytes free'
-      -  value: dir /a
-         type: input
-         prompt: 'C:\User\youruser>'
-      -  ' Volume in drive C has no label.'
-      -  '   Volume Serial Number is 1234-5678'
-      -  
-      -  '   Directory of C:\User\youruser'
-      -  
-      -  '   08/01/2021  10:00 AM    <DIR>          .'
-      -  '   08/01/2021  10:00 AM    <DIR>          ..'
-      -  '   08/01/2021  10:00 AM    <DIR>          .hiddenfolder'
-      -  '   08/01/2021  10:00 AM                 0 .hiddenfile'
-      -  '   08/01/2021  10:00 AM    <DIR>          myfolder1'
-      -  '   08/01/2021  10:00 AM    <DIR>          myfolder2'
-      -  '   08/01/2021  10:00 AM                 0 myfile.txt'
-      -  '   08/01/2021  10:00 AM                 0 myscript.py'
-      -  '                  3 File(s)              0 bytes'
-      -  '                  5 Dir(s)  1,234,567,890 bytes free'
+   .. image:: Animations/CMD/dir.gif
+      :width: 100%
+      :align: center
 
 .. tab:: Mac/Linux (bash)
 
@@ -225,7 +181,6 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
 
-  
    
    .. image:: Animations/Unix/ls.gif
       :width: 100%
@@ -271,18 +226,9 @@ Each operating system opens terminals in a different way.
    
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:chdircmd
-        :title: Command prompt
-        :windows:
-
-         -  value: cd MyFolder
-            type: input
-            prompt: 'C:\User\youruser>'
-         -  prompt: 'C:\User\youruser\MyFolder>'
-         -  value: cd ..
-            type: input
-            prompt: 'C:\User\youruser\Myfolder>'
-         -  prompt: 'C:\User\youruser>'
+   .. image:: Animations/CMD/cd.gif
+      :width: 100%
+      :align: center
 
 .. tab:: Mac/Linux (bash)
 
@@ -351,25 +297,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:mkdirCMD
-        :title: Command prompt
-        :windows:
-
-        -   value: mkdir NewPythonFolder
-            type: input
-            prompt: 'C:\User\youruser>'
-        -   value: dir
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -  ' Directory: C:\User\youruser'
-        -
-        -  '   Mode                LastWriteTime         Length Name'
-        -  '   ----                -------------         ------ ----'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
-        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
-        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
-        -  '   d-----        8/1/2021  10:00 AM              NewPythonFolder'    
+   .. image:: Animations/CMD/mkdir.gif
+      :width: 100%
+      :align: center    
 
 
 
@@ -426,24 +356,9 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. termynal:: termynal:rmCMD
-        :title: Command prompt
-        :windows:
-
-        -   value: rmdir /s NewPythonFolder
-            type: input
-            prompt: 'C:\User\youruser>'
-        -   value: dir
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -  ' Directory: C:\User\youruser'
-        -
-        -  '   Mode                LastWriteTime         Length Name'
-        -  '   ----                -------------         ------ ----'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder1'
-        -  '   d-----        8/1/2021  10:00 AM              myfolder2'
-        -  '   -a----        8/1/2021  10:00 AM              0 myfile.txt'
-        -  '   -a----        8/1/2021  10:00 AM              0 myscript.py' 
+   .. image:: Animations/CMD/rmdir.gif
+      :width: 100%
+      :align: center
 
 
 
@@ -515,25 +430,9 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. termynal:: termynal:pythonversionCMD
-        :title: Command prompt
-        :windows:
-
-        -   value: python --version
-            type: input
-            prompt: 'C:\User\youruser>'
-        -   'Python 3.11.4'  
-        -   value: python
-            type: input
-            prompt: 'PS C:\User\youruser>'
-        -  'Python 3.11.5 (main, Sep 11 2023, 13:54:46) [GCC 11.2.0] on Windows'
-        -  'Type "help", "copyright", "credits" or "license" for more information.'
-        -   value: exit()
-            type: input
-            prompt: '>>>'
-        -   value: ''
-            type: input
-            prompt: 'PS C:\User\youruser>' 
+   .. image:: Animations/CMD/python.gif
+      :width: 100%
+      :align: center
 
 
 
@@ -589,16 +488,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
    
-   .. termynal:: termynal:pip3listcmd
-        :title: Command prompt
-        :windows:
-
-        -   value: pip list
-            type: input
-            prompt: 'C:\User\youruser>'
-        -   "numpy   3.0.2"
-        -   "sympy   2.0.4"
-
+   .. image:: Animations/CMD/pip.gif
+      :width: 100%
+      :align: center
  
 
 .. tab:: Mac/Linux (bash)
