@@ -5,11 +5,11 @@ config:
   # like `/bin/bash -l`, `ls`, or any other commands
   # the default is bash for Linux
   # or powershell.exe for Windows
-  command: bash -l
+  command: powershell.exe
   
   # Specify the current working directory path
   # the default is the current working directory path
-  cwd: /home/jonnywalker/test
+  cwd: C:\Users\ercol\test
   
   # Export additional ENV variables
   env:
@@ -23,7 +23,7 @@ config:
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 5
+  rows: 20
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -79,7 +79,7 @@ config:
   fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
   
   # The size of the font
-  fontSize: 16
+  fontSize: 12
   
   # The height of lines
   lineHeight: 1
@@ -111,57 +111,10 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 340
-    content: "\r\e]0;jonnywalker@pop-os:~/test\e\\\e]7;file://pop-os/home/jonnywalker/test\e\\\e[?2004h\e]0;jonnywalker@pop-os: ~/test\a\e[01;32mjonnywalker@pop-os\e[00m:\e[01;34m~/test\e[00m$ "
-  - delay: 861
-    content: r
-  - delay: 232
-    content: m
-  - delay: 881
-    content: ' '
-  - delay: 677
-    content: '-'
-  - delay: 649
-    content: r
-  - delay: 822
-    content: ' '
-  - delay: 668
-    content: 'N'
-  - delay: 406
-    content: e
-  - delay: 274
-    content: w
-  - delay: 650
-    content: P
-  - delay: 394
-    content: 'y'
-  - delay: 195
-    content: t
-  - delay: 168
-    content: h
-  - delay: 250
-    content: o
-  - delay: 207
-    content: 'n'
-  - delay: 873
-    content: F
-  - delay: 399
-    content: o
-  - delay: 238
-    content: l
-  - delay: 257
-    content: d
-  - delay: 107
-    content: e
-  - delay: 259
-    content: r
-  - delay: 873
-    content: "\r\n\e[?2004l\r\e]0;jonnywalker@pop-os:~/test\e\\\e]7;file://pop-os/home/jonnywalker/test\e\\\e[?2004h\e]0;jonnywalker@pop-os: ~/test\a\e[01;32mjonnywalker@pop-os\e[00m:\e[01;34m~/test\e[00m$ "
-  - delay: 1117
-    content: l
-  - delay: 378
-    content: s
-  - delay: 402
-    content: "\r\n\e[?2004l\rMyFile.txt  \e[0m\e[01;34mMyFolder1\e[0m  \e[01;34mMyFolder2\e[0m  MyScript.py\r\n\e]0;jonnywalker@pop-os:~/test\e\\\e]7;file://pop-os/home/jonnywalker/test\e\\\e[?2004h\e]0;jonnywalker@pop-os: ~/test\a\e[01;32mjonnywalker@pop-os\e[00m:\e[01;34m~/test\e[00m$ "
-  - delay: 2500
-    content: "\e[?2004l\r\r\nlogout\r\n"
+  - delay: 529
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 109
+    content: 'PS C:\Users\ercol\test> '
+  - delay: 2258
+    content: "\e"
+ 

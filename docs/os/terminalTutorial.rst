@@ -24,13 +24,9 @@ Each operating system opens terminals in a different way.
 
    This should open a **Terminal** looking *something* like this:
 
-   .. termynal:: termynal:pythonPS
-      :title:  Powershell
-      :windows:
-
-      -  value: ''
-         type: input
-         prompt: 'PS C:\User\youruser>'
+   .. image:: Animations/PS/terminal.gif
+      :width: 100%
+      :align: center
 
 
 .. tab:: {{ win_batch }}
@@ -58,13 +54,9 @@ Each operating system opens terminals in a different way.
    
    This should open a **Terminal** looking *something* like this:
 
-   .. termynal:: termynal:pythonMAC
-      :title: bash
-      :unix:
-
-      -  value: ''
-         type: input
-         prompt: 'username@mac~$'
+   .. image:: Animations/Unix/terminal.gif
+      :width: 100%
+      :align: center
 
 .. tab:: {{ linux_bash }}
 
@@ -82,13 +74,9 @@ Each operating system opens terminals in a different way.
 
    This should open a **Terminal** looking *something* like this:   
 
-   .. termynal:: termynal:pythonLINUX
-         :title: bash
-         :unix:
-
-         -  value: ''
-            type: input
-            prompt: 'username@linux~$'
+   .. image:: Animations/Unix/terminal.gif
+      :width: 100%
+      :align: center
 
 
 
@@ -130,7 +118,7 @@ Each operating system opens terminals in a different way.
          prompt: 'C:\User\youruser>'
       -  'C:\User\youruser>'
 
-.. tab:: {{ mac_bash }} 
+.. tab:: Mac/Linux (bash)
 
    To find out your current directory (location), you can use the 
    ``pwd`` command on Unix-based systems (Linux or macOS).
@@ -223,7 +211,7 @@ Each operating system opens terminals in a different way.
       -  '                  3 File(s)              0 bytes'
       -  '                  5 Dir(s)  1,234,567,890 bytes free'
 
-.. tab:: {{ mac_bash }}
+.. tab:: Mac/Linux (bash)
 
    To list the contents of your current directory, you can use the ``ls`` command. 
    If you want to see hidden files as well, use ``ls -a``.  
@@ -296,7 +284,7 @@ Each operating system opens terminals in a different way.
             prompt: 'C:\User\youruser\Myfolder>'
          -  prompt: 'C:\User\youruser>'
 
-.. tab:: {{ mac_bash }}
+.. tab:: Mac/Linux (bash)
 
    **Warning**:
    Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
@@ -385,7 +373,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Mac Terminal
+.. tab:: Mac/Linux (bash)
 
    To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
    if the folder was successfully created.
@@ -459,7 +447,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Mac Terminal
+.. tab:: Mac/Linux (bash)
 
    You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
 
@@ -549,7 +537,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Mac Terminal
+.. tab:: Mac/Linux (bash)
 
    To check which Python version you have you can use ``python3 --version``
 
@@ -613,7 +601,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
  
 
-.. tab:: {{ mac_bash }}
+.. tab:: Mac/Linux (bash)
    
    To see which packages you currently have in Python, you can use ``pip3 list``. 
 

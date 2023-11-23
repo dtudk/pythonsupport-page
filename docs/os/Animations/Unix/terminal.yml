@@ -23,7 +23,7 @@ config:
   # Explicitly set the number of rows
   # or use `auto` to take the current
   # number of rows of your shell
-  rows: 5
+  rows: 20
   
   # Amount of times to repeat GIF
   # If value is -1, play once
@@ -111,57 +111,7 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 340
+  - delay: 341
     content: "\r\e]0;jonnywalker@pop-os:~/test\e\\\e]7;file://pop-os/home/jonnywalker/test\e\\\e[?2004h\e]0;jonnywalker@pop-os: ~/test\a\e[01;32mjonnywalker@pop-os\e[00m:\e[01;34m~/test\e[00m$ "
-  - delay: 861
-    content: r
-  - delay: 232
-    content: m
-  - delay: 881
-    content: ' '
-  - delay: 677
-    content: '-'
-  - delay: 649
-    content: r
-  - delay: 822
-    content: ' '
-  - delay: 668
-    content: 'N'
-  - delay: 406
-    content: e
-  - delay: 274
-    content: w
-  - delay: 650
-    content: P
-  - delay: 394
-    content: 'y'
-  - delay: 195
-    content: t
-  - delay: 168
-    content: h
-  - delay: 250
-    content: o
-  - delay: 207
-    content: 'n'
-  - delay: 873
-    content: F
-  - delay: 399
-    content: o
-  - delay: 238
-    content: l
-  - delay: 257
-    content: d
-  - delay: 107
-    content: e
-  - delay: 259
-    content: r
-  - delay: 873
-    content: "\r\n\e[?2004l\r\e]0;jonnywalker@pop-os:~/test\e\\\e]7;file://pop-os/home/jonnywalker/test\e\\\e[?2004h\e]0;jonnywalker@pop-os: ~/test\a\e[01;32mjonnywalker@pop-os\e[00m:\e[01;34m~/test\e[00m$ "
-  - delay: 1117
-    content: l
-  - delay: 378
-    content: s
-  - delay: 402
-    content: "\r\n\e[?2004l\rMyFile.txt  \e[0m\e[01;34mMyFolder1\e[0m  \e[01;34mMyFolder2\e[0m  MyScript.py\r\n\e]0;jonnywalker@pop-os:~/test\e\\\e]7;file://pop-os/home/jonnywalker/test\e\\\e[?2004h\e]0;jonnywalker@pop-os: ~/test\a\e[01;32mjonnywalker@pop-os\e[00m:\e[01;34m~/test\e[00m$ "
   - delay: 2500
-    content: "\e[?2004l\r\r\nlogout\r\n"
+    content: "\e"
