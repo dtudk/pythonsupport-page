@@ -4,7 +4,7 @@ What's a Terminal?
 ============
 
 
-“The Terminal” may sound complicated, but it is a fundamental part of every computer and a key element used in development for handling most tasks in your coding environment.
+``The Terminal`` may sound complicated, but it is a fundamental part of every computer and a key element used in development for handling most tasks in your coding environment.
 
 You can think of the terminal as a direct line of communication between you and the computer. For instance, when you install an extension in one of your apps or create a new file using an app, you are actually using the terminal indirectly. 
 Learning how to use the Terminal allows you to give the computer the exact commands you want and to know precisely **where** and **how** new files are being created. This knowledge comes in handy when developing software or working with large databases.
@@ -182,25 +182,25 @@ The `pip` command is a package installer for Python that simplifies the process 
 
    .. code-block:: bash
 
-      pip install package_name
+      pip install <package_name>
 
 .. tab::  Windows (Batch)
     
    .. code-block:: bash
 
-      pip install package_name
+      pip install <package_name>
 
 .. tab::  MacOS|Bash
 
     .. code-block:: bash
     
-        pip3 install package_name
+        pip3 install <package_name>
 
 .. tab::  Linux|Bash
 
     .. code-block:: bash
     
-        pip3 install package_name
+        pip3 install <package_name>
 
 
 How to make using the terminal easier

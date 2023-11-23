@@ -66,6 +66,6 @@ To control things like cache headers, compression, healthcheck endpoint, and bas
 
 
 
-# source ps-page-env/bin/activate
+
 # make 
 # åben build/html/index.html

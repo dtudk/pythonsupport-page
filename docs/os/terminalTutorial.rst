@@ -1,7 +1,7 @@
 .. _terminalTutorial:
 
 Terminal tutorial
-===================
+==================
 
 Welcome to the world of the Terminal! In this tutorial, you will learn the fundamentals of using the Terminal, 
 a powerful tool for interacting with your computer through text commands. 
@@ -109,7 +109,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
 
    To find out your current directory (location), you can use the 
    ``pwd`` command on Unix-based systems (Linux or macOS).
@@ -127,7 +127,7 @@ Each operating system opens terminals in a different way.
 
 
 2. What's in here?
-===================================
+===================
 
 
 .. tab:: {{ win_powershell }} 
@@ -167,7 +167,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
 
    To list the contents of your current directory, you can use the ``ls`` command. 
    If you want to see hidden files as well, use ``ls -a``.  
@@ -192,7 +192,7 @@ Each operating system opens terminals in a different way.
 
 
 3. Changing directories (cd)
-==========================================
+=============================
 
 .. tab:: {{ win_powershell }} 
 
@@ -230,7 +230,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
 
    **Warning**:
    Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
@@ -266,9 +266,9 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 4. How can I create a new folder? (mkdir)
-=============================
+=========================================
 
-.. tab::  Windows (Powershell) 
+.. tab::  {{ win_powershell }} 
 
    To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
    if the folder was successfully created.
@@ -286,7 +286,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Windows (Command prompt)
+.. tab:: {{ win_batch }}
 
    To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``dir`` to see 
    if the folder was successfully created.
@@ -303,7 +303,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
 
    To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
    if the folder was successfully created.
@@ -326,10 +326,10 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 5. How can I delete a folder or a file using a Terminal? (rm and rm -r)
-=============================
+========================================================================
 
 
-.. tab::  Windows (Powershell) 
+.. tab::  {{ win_powershell }} 
 
    You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
 
@@ -345,7 +345,7 @@ In general it is a good idea to change your directory, to the place of whatever 
       :width: 100%
       :align: center
 
-.. tab:: Windows (Command prompt)
+.. tab:: {{ win_batch }}
    
    You can use ``del`` to delete a file or ``rmdir /s`` to delete a folder using the Terminal. 
 
@@ -362,7 +362,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
 
    You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
 
@@ -384,12 +384,12 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 6. Which Python version? (python --version or python3 --version)
-==================================
+=================================================================
 
 
 
 
-.. tab::  Windows (Powershell) 
+.. tab::  {{ win_powershell }} 
 
    To check which Python version you have you can use ``python --version``
 
@@ -412,7 +412,7 @@ In general it is a good idea to change your directory, to the place of whatever 
       :width: 100%
       :align: center
 
-.. tab:: Windows (Command prompt)
+.. tab:: {{ win_batch }}
 
    To check which Python version you have you can use ``python --version``
 
@@ -436,7 +436,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
 
    To check which Python version you have you can use ``python3 --version``
 
@@ -467,7 +467,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
 7. Which packages do I have? 
-==================================================
+=============================
 
 
 .. tab:: {{ win_powershell }} 
@@ -493,7 +493,7 @@ In general it is a good idea to change your directory, to the place of whatever 
       :align: center
  
 
-.. tab:: Mac/Linux (bash)
+.. tab:: {{ mac_linux_bash }}
    
    To see which packages you currently have in Python, you can use ``pip3 list``. 
 

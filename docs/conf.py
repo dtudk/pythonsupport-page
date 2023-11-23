@@ -437,6 +437,7 @@ html_context = {
     "win_batch": "Windows | Batch",
     "mac_bash": "MacOS | Bash",
     "linux_bash": "Linux | Bash",
+    "mac_linux_bash": "MacOS | Linux | Bash",
 
     # Cheatsheet information
     "cheatsheet_icon": ":fas:`toolbox`",
