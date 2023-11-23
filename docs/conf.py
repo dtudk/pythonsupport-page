@@ -76,8 +76,6 @@ extensions = [
     'sphinxcontrib.jquery',
 ]
 
-sphinx_term_termynal_dir ='src/termynal_files/'
-
 
 # Add the spelling extension if available
 try:
