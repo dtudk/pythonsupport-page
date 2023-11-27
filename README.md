@@ -23,8 +23,8 @@ The steps can be outlined like this:
 
 1. Create a virtual environment (on a Linux box)
 
-      python3 -m venv ps-page-env
-      source ps-page-env/bin/activate
+       python3 -m venv ps-page-env
+       source ps-page-env/bin/activate
 
 2. Install the requirements:
 
