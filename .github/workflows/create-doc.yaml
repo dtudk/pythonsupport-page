@@ -48,6 +48,7 @@ jobs:
       run: |
         npm install -g terminalizer
         cd docs/os/Animations
+	export DISPLAY=:1
         bash create.sh
 
     - name: Store cache gif
