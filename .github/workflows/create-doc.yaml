@@ -45,15 +45,16 @@ jobs:
     
     - name: Run gifs
       if: steps.cache-gif.outputs.cache-hit != 'true'
-      run: |
-        npm install -g terminalizer
-        cd docs/os/Animations
-        export DISPLAY=:1
-        bash create.sh
+      uses: coactions/setup-xvfb@v1
+      with:
+        run: |
+          npm install -g terminalizer
+          cd docs/os/Animations
+          bash create.sh
 
     - name: Store cache gif
-      uses: actions/cache/save@v3
       if: steps.cache-gif.outputs.cache-hit != 'true'
+      uses: actions/cache/save@v3
       with:
         key: gifs-${{ hashFiles('docs/os/Animations/tmp/hashes.yml') }}
         path: |
