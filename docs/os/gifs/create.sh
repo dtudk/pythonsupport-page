@@ -17,7 +17,7 @@ python merge.py $run
 echo "Will run:"
 cat $run
 echo "in parallel"
-exit 0
+
 if [[ $np -eq 1 ]]; then
   while read line ; do
     echo "Running: ${line}"
