@@ -10,8 +10,8 @@ except ImportError:
 
 cwd = Path()
 
-hash_file = cwd / "hashes.yml"
 tmpdir = cwd / "tmp"
+hash_file = tmpdir / "hashes.yml"
 commands_out = sys.argv[1]
 
 def read_yaml(file: Path):

@@ -37,7 +37,7 @@ jobs:
         path: docs/os/Animations/CMD/cd.gif
         # Same key *always*, since these gifs should just be reused
         # for all OS's
-        key: cache-gif
+        key: gifs
 
     - name: Node.js setup
       if: steps.cache-gif.outputs.cache-hit != 'true'
@@ -53,10 +53,10 @@ jobs:
     - name: Store cache gif
       uses: actions/cache/save@v3
       if: steps.cache-gif.outputs.cache-hit != 'true'
-      id: cache-gif
       with:
         path: docs/os/Animations/*/*.gif
-        key: cache-gif
+        path: docs/os/Animations/tmp/hashes.yml
+        key: gifs
 
     - name: Python installation
       uses: actions/setup-python@v4
