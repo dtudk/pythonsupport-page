@@ -24,7 +24,7 @@ Each operating system opens terminals in a different way.
 
    This should open a **Terminal** looking *something* like this:
 
-   .. image:: Animations/PS/terminal.gif
+   .. image:: gifs/PS/terminal.gif
       :width: 100%
       :align: center
 
@@ -37,7 +37,7 @@ Each operating system opens terminals in a different way.
   
    This should open a **Terminal** looking *something* like this:
 
-   .. image:: Animations/CMD/terminal.gif
+   .. image:: gifs/CMD/terminal.gif
       :width: 100%
       :align: center
 
@@ -50,7 +50,7 @@ Each operating system opens terminals in a different way.
    
    This should open a **Terminal** looking *something* like this:
 
-   .. image:: Animations/Unix/terminal.gif
+   .. image:: gifs/Unix/terminal.gif
       :width: 100%
       :align: center
 
@@ -70,7 +70,7 @@ Each operating system opens terminals in a different way.
 
    This should open a **Terminal** looking *something* like this:   
 
-   .. image:: Animations/Unix/terminal.gif
+   .. image:: gifs/Unix/terminal.gif
       :width: 100%
       :align: center
 
@@ -92,7 +92,7 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/PS/pwd.gif
+   .. image:: gifs/PS/pwd.gif
       :width: 100%
       :align: center
 
@@ -105,7 +105,7 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/CMD/currentDir.gif
+   .. image:: gifs/CMD/currentDir.gif
       :width: 100%
       :align: center
 
@@ -118,7 +118,7 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
       
-   .. image:: Animations/Unix/pwd.gif
+   .. image:: gifs/Unix/pwd.gif
       :width: 100%
       :align: center
 
@@ -144,7 +144,7 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
 
-   .. image:: Animations/PS/ls.gif
+   .. image:: gifs/PS/ls.gif
       :width: 100%
       :align: center
 
@@ -162,7 +162,7 @@ Each operating system opens terminals in a different way.
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/CMD/dir.gif
+   .. image:: gifs/CMD/dir.gif
       :width: 100%
       :align: center
 
@@ -181,7 +181,7 @@ Each operating system opens terminals in a different way.
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/Unix/ls.gif
+   .. image:: gifs/Unix/ls.gif
       :width: 100%
       :align: center
 
@@ -210,7 +210,7 @@ Each operating system opens terminals in a different way.
    
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/PS/cd.gif
+   .. image:: gifs/PS/cd.gif
       :width: 100%
       :align: center
 
@@ -232,7 +232,7 @@ Each operating system opens terminals in a different way.
    
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/CMD/cd.gif
+   .. image:: gifs/CMD/cd.gif
       :width: 100%
       :align: center
 
@@ -250,7 +250,7 @@ Each operating system opens terminals in a different way.
 
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/Unix/cd.gif
+   .. image:: gifs/Unix/cd.gif
       :width: 100%
       :align: center
    
@@ -286,7 +286,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/PS/mkdir.gif
+   .. image:: gifs/PS/mkdir.gif
       :width: 100%
       :align: center  
 
@@ -303,7 +303,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/CMD/mkdir.gif
+   .. image:: gifs/CMD/mkdir.gif
       :width: 100%
       :align: center    
 
@@ -321,7 +321,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/Unix/mkdir.gif
+   .. image:: gifs/Unix/mkdir.gif
       :width: 100%
       :align: center
 
@@ -347,7 +347,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
 
    
-   .. image:: Animations/PS/rm.gif
+   .. image:: gifs/PS/rm.gif
       :width: 100%
       :align: center
 
@@ -362,7 +362,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/CMD/rmdir.gif
+   .. image:: gifs/CMD/rmdir.gif
       :width: 100%
       :align: center
 
@@ -379,7 +379,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:   
 
    
-   .. image:: Animations/Unix/rm.gif
+   .. image:: gifs/Unix/rm.gif
       :width: 100%
       :align: center
 
@@ -414,7 +414,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    
    
-   .. image:: Animations/PS/python.gif
+   .. image:: gifs/PS/python.gif
       :width: 100%
       :align: center
 
@@ -436,7 +436,7 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/CMD/python.gif
+   .. image:: gifs/CMD/python.gif
       :width: 100%
       :align: center
 
@@ -464,7 +464,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    
 
-   .. image:: Animations/Unix/python.gif
+   .. image:: gifs/Unix/python.gif
       :width: 100%
       :align: center
 
@@ -482,7 +482,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/PS/pip.gif
+   .. image:: gifs/PS/pip.gif
       :width: 100%
       :align: center
 
@@ -494,7 +494,7 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
    
-   .. image:: Animations/CMD/pip.gif
+   .. image:: gifs/CMD/pip.gif
       :width: 100%
       :align: center
  
@@ -506,6 +506,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    This should look *something* like this in your **Terminal**:
 
    
-   .. image:: Animations/Unix/pip.gif
+   .. image:: gifs/Unix/pip.gif
       :width: 100%
       :align: center

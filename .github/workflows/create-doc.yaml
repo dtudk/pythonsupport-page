@@ -34,10 +34,10 @@ jobs:
       uses: actions/cache@v3
       id: cache-gif
       with:
-        key: gifs-${{ hashFiles('docs/os/Animations/tmp/hashes.yml') }}
+        key: gifs-${{ hashFiles('docs/os/gifs/tmp/hashes.yml') }}
         path: |
-          docs/os/Animations/*/*.gif
-          docs/os/Animations/tmp/hashes.yml
+          docs/os/gifs/*/*.gif
+          docs/os/gifs/tmp/hashes.yml
 
     - name: Node.js setup
       if: steps.cache-gif.outputs.cache-hit != 'true'
@@ -48,7 +48,7 @@ jobs:
       run: |
         sudo apt-get install xvfb
         npm install -g terminalizer
-        cd docs/os/Animations
+        cd docs/os/gifs
         xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
         echo pwd=$(pwd)
         ls -l */*.gif
