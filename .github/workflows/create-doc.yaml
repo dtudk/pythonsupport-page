@@ -54,8 +54,9 @@ jobs:
       uses: actions/cache/save@v3
       if: steps.cache-gif.outputs.cache-hit != 'true'
       with:
-        path: docs/os/Animations/*/*.gif
-        path: docs/os/Animations/tmp/hashes.yml
+        path:
+	- docs/os/Animations/*/*.gif
+        - docs/os/Animations/tmp/hashes.yml
         key: gifs
 
     - name: Python installation
