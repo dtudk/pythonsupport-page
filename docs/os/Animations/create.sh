@@ -19,4 +19,11 @@ echo "Will run:"
 cat $run
 echo "in parallel"
 
-parallel -j$np < $run
+if [[ $np -eq 1 ]]; then
+  while read line ; do
+    echo "Running: ${line}"
+    ${line}
+  done < $run
+else
+  parallel -j$np < $run
+fi
