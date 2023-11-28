@@ -43,11 +43,17 @@ jobs:
       if: steps.cache-gif.outputs.cache-hit != 'true'
       uses: actions/setup-node@v4
     
+    - name: Install terminalizer
+      if: steps.cache-gif.outputs.cache-hit != 'true'
+      run: |
+        npm install -g terminalizer
+
     - name: Run gifs
       if: steps.cache-gif.outputs.cache-hit != 'true'
       uses: coactions/setup-xvfb@v1
       with:
-        run: npm install -g terminalizer ; cd docs/os/Animations ; bash create.sh
+        run: bash create.sh
+        working-directory: /docs/os/Animations
 
     - name: Store cache gif
       if: steps.cache-gif.outputs.cache-hit != 'true'
