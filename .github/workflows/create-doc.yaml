@@ -47,10 +47,7 @@ jobs:
       if: steps.cache-gif.outputs.cache-hit != 'true'
       uses: coactions/setup-xvfb@v1
       with:
-        run: |
-          npm install -g terminalizer
-          cd docs/os/Animations
-          bash create.sh
+        run: npm install -g terminalizer ; cd docs/os/Animations ; bash create.sh
 
     - name: Store cache gif
       if: steps.cache-gif.outputs.cache-hit != 'true'
