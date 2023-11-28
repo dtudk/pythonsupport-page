@@ -49,8 +49,7 @@ jobs:
         sudo apt-get install xvfb
         npm install -g terminalizer
         cd docs/os/Animations
-        xvfb-run --auto-servernum bash create.sh
-        echo "Exit code: $? (forced success)"
+        xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
         exit 0
 
     - name: Store cache gif
