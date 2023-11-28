@@ -1,0 +1,28 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 7
+
+records:
+  - delay: 100
+    content: "\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2500
+    content: l
+  - delay: 100
+    content: s
+  - delay: 100
+    content: "\r\n\e[?2004l\rMyFile.txt  \e[0m\e[01;34mMyFolder1\e[0m  \e[01;34mMyFolder2\e[0m  \e[01;34mMyNewPythonFolder\e[0m  MyScript.py\r\n\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2000
+    content: l
+  - delay: 100
+    content: s
+  - delay: 100
+    content: ' '
+  - delay: 400
+    content: '-'
+  - delay: 100
+    content: a
+  - delay: 100
+    content: "\r\n\e[?2004l\r\e[0m\e[01;34m.\e[0m   MyFile.txt  \e[01;34mMyFolder2\e[0m      \e[01;34m.myhiddenfolder\e[0m    MyScript.py\r\n\e[01;34m..\e[0m  \e[01;34mMyFolder1\e[0m   .myhiddenfile  \e[01;34mMyNewPythonFolder\e[0m\r\n\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 4000
+    content: "\e[?2004l\r\r\nlogout\r\n"

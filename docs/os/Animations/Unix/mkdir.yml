@@ -1,0 +1,60 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 5
+
+records:
+  - delay: 100
+    content: "\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2500
+    content: m
+  - delay: 100
+    content: k
+  - delay: 100
+    content: d
+  - delay: 100
+    content: i
+  - delay: 100
+    content: r
+  - delay: 100
+    content: ' '
+  - delay: 400
+    content: N
+  - delay: 100
+    content: e
+  - delay: 100
+    content: w
+  - delay: 100
+    content: P
+  - delay: 100
+    content: y
+  - delay: 100
+    content: t
+  - delay: 100
+    content: h
+  - delay: 100
+    content: o
+  - delay: 100
+    content: n
+  - delay: 100
+    content: F
+  - delay: 100
+    content: o
+  - delay: 100
+    content: l
+  - delay: 100
+    content: d
+  - delay: 100
+    content: e
+  - delay: 100
+    content: r
+  - delay: 100
+    content: "\r\n\e[?2004l\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2500
+    content: l
+  - delay: 100
+    content: s
+  - delay: 100
+    content: "\r\n\e[?2004l\rMyFile.txt  \e[0m\e[01;34mMyFolder1\e[0m  \e[01;34mMyFolder2\e[0m  MyScript.py  \e[01;34mNewPythonFolder\e[0m\r\n\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 4000
+    content: "\e[?2004l\r\r\nlogout\r\n"

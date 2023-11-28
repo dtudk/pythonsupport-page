@@ -1,0 +1,511 @@
+.. _terminalTutorial:
+
+Terminal tutorial
+==================
+
+Welcome to the world of the Terminal! In this tutorial, you will learn the fundamentals of using the Terminal, 
+a powerful tool for interacting with your computer through text commands. 
+We will cover essential commands and tips to help you navigate and perform tasks efficiently.
+
+You can learn more about what a Terminal is and the most useful commands :ref:`here <terminalExercise>`
+
+
+Opening a terminal
+^^^^^^^^^^^^^^^^^^
+
+Each operating system opens terminals in a different way. 
+
+
+.. tab:: {{ win_powershell }}
+
+   Search for ``powershell`` in the Windows taskbar search or 
+   press :kbd:`Win-R` buttons (simultaneously), then type
+   ``powershell`` in the small run window appearing, press :kbd:`Enter`.
+
+   This should open a **Terminal** looking *something* like this:
+
+   .. image:: Animations/PS/terminal.gif
+      :width: 100%
+      :align: center
+
+
+.. tab:: {{ win_batch }}
+
+   Search for ``cmd`` in the Windows taskbar search
+   or press :kbd:`Win-R` buttons (simultaneously), then type
+   ``cmd`` in the small run window appearing, press :kbd:`Enter`.
+  
+   This should open a **Terminal** looking *something* like this:
+
+   .. image:: Animations/CMD/terminal.gif
+      :width: 100%
+      :align: center
+
+
+.. tab:: {{ mac_bash }}
+
+   Open the Launchpad icon in the Dock, or press :kbd:`Command-Space`; type ``Terminal`` and click on it.
+
+   See more detailed explanation `here <https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac>`__.
+   
+   This should open a **Terminal** looking *something* like this:
+
+   .. image:: Animations/Unix/terminal.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ linux_bash }}
+
+   **Note**: This depends on the distribution you are using. Nearly all Linux distributions
+   has the Terminal icon near the Desktop.
+
+   Try one of the following options:
+
+   1. Press :kbd:`Ctrl-Alt-T` simultaneously.
+   2. Press the :kbd:`Win` key which should open up a search box, type
+      ``terminal`` and press :kbd:`Enter`
+   3. Open a file explorer and right-click a folder,
+      there should be an option name ``Open in Terminal`` which will open that
+      folder in the terminal.
+
+   This should open a **Terminal** looking *something* like this:   
+
+   .. image:: Animations/Unix/terminal.gif
+      :width: 100%
+      :align: center
+
+
+
+
+
+
+1. Where am I? (pwd and dir)
+=============================
+
+
+.. tab:: {{ win_powershell }} 
+      
+   To find out your current directory (location), you can use the 
+   ``pwd`` command on Windows. 
+
+   1. Type and enter ``pwd`` in your Terminal.
+
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/PS/pwd.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ win_batch }} 
+   
+   To find out your current directory (location), you can use the  
+   ``cd`` command on Windows. 
+
+   1. Type and enter ``cd`` in your Terminal.
+
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/CMD/currentDir.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ unix_bash }}
+
+   To find out your current directory (location), you can use the 
+   ``pwd`` command on Unix-based systems (Linux or macOS).
+
+   1. Type and enter ``pwd`` in your Terminal.
+
+   This should look *something* like this in your **Terminal**:
+      
+   .. image:: Animations/Unix/pwd.gif
+      :width: 100%
+      :align: center
+
+
+
+
+
+2. What's in here?
+===================
+
+
+.. tab:: {{ win_powershell }} 
+
+   To list the contents of your current directory in PowerShell, you can use the ``ls`` cmdlet. 
+   If you want to see only files and not directories, use ``ls -Force``. 
+   
+
+   1. Type and enter in your Terminal:
+   ``ls``
+
+   2. Type and enter in your Terminal:
+   ``ls -Force``
+
+   This should look *something* like this in your **Terminal**:
+
+   .. image:: Animations/PS/ls.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ win_batch }}
+
+   To list the contents of your current directory in Windows Command Prompt, you can use the ``dir`` command. If you want to see hidden files and directories as well, use ``dir /a``. 
+   
+
+   1. Type and enter in your Terminal:
+   ``dir``
+
+   2. Type and enter in your Terminal:
+   ``dir /a``
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/CMD/dir.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ unix_bash }}
+
+   To list the contents of your current directory, you can use the ``ls`` command. 
+   If you want to see hidden files as well, use ``ls -a``.  
+   
+
+   1. Type and enter in your Terminal:
+   ``ls``
+
+   2. Type and enter in your Terminal:
+   ``ls -a``
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/Unix/ls.gif
+      :width: 100%
+      :align: center
+
+
+
+
+
+
+3. Changing directories (cd)
+=============================
+
+.. tab:: {{ win_powershell }} 
+   
+   **Warning 1**:
+   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
+
+   **Warning 2 (for Windows)**:
+   Note when typing the directory name of subfolders, that Windows uses backslashes ``\`` and **not** forward slashes ``/``
+
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
+   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
+
+   1. Type and enter in your Terminal: ``cd MyFolder``
+   
+   2. Type and enter in your Terminal: ``cd ..``
+   
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/PS/cd.gif
+      :width: 100%
+      :align: center
+
+
+.. tab:: {{ win_batch }}
+
+   **Warning 1**:
+   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
+
+   **Warning 2 (for Windows)**:
+   Note when typing the directory name of subfolders, that windows uses backslashes ``\`` and NOT forward slashes ``/``
+
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
+   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
+
+   1. Type and enter in your Terminal: ``cd MyFolder``
+   
+   2. Type and enter in your Terminal: ``cd ..``
+   
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/CMD/cd.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ unix_bash }}
+
+   **Warning**:
+   Note that instead of ``MyFolder`` you should use one of the folders listed in the previous exercise.
+
+   To navigate to a different directory, you can use the ``cd`` command followed by the path to the desired 
+   directory, and to navigate one step backwards, you can use the ``cd ..`` command.
+
+   1. Type and enter in your Terminal: ``cd MyFolder``
+   
+   2. Type and enter in your Terminal: ``cd ..``
+
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/Unix/cd.gif
+      :width: 100%
+      :align: center
+   
+
+
+
+
+A good trick to use in Visual Studio Code is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
+
+#. Press the icon in the top left of the screen that looks like 2 pieces of paper on top of each other
+#. Press "open folder"
+#. Visual studio code will now open your files. Select the folder that you would like to work with by clicking on it
+#. Now you should see all the files and subfolders contained in the folder taht you selected on the left side of the screen
+#. You can now right click a folder and press "copy path"
+#. type cd in your terminal and paste the path that you just copied 
+
+In general it is a good idea to change your directory, to the place of whatever you are working with. For example, if a large dataset is in a specific folder, you can change your directory to that folder. 
+
+
+
+4. How can I create a new folder? (mkdir)
+=========================================
+
+.. tab::  {{ win_powershell }} 
+
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
+   if the folder was successfully created.
+
+   1. Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2. Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/PS/mkdir.gif
+      :width: 100%
+      :align: center  
+
+
+
+.. tab:: {{ win_batch }}
+
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``dir`` to see 
+   if the folder was successfully created.
+   
+   1. Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2. Type and enter in your Terminal: ``dir``
+
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/CMD/mkdir.gif
+      :width: 100%
+      :align: center    
+
+
+
+.. tab:: {{ unix_bash }}
+
+   To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``ls`` to see 
+   if the folder was successfully created.
+   
+   1. Type and enter in your Terminal: ``mkdir NewPythonFolder``
+
+   2. Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/Unix/mkdir.gif
+      :width: 100%
+      :align: center
+
+
+        
+    
+
+
+
+5. How can I delete a folder or a file using a Terminal? (rm and rm -r)
+========================================================================
+
+
+.. tab::  {{ win_powershell }} 
+
+   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
+
+   1. Type and enter in your Terminal: ``rm -r NewPythonFolder``
+
+   2. Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:
+
+
+   
+   .. image:: Animations/PS/rm.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ win_batch }}
+   
+   You can use ``del`` to delete a file or ``rmdir /s`` to delete a folder using the Terminal. 
+
+   1. Type and enter in your Terminal: ``rmdir /s NewPythonFolder``
+
+   2. Type and enter in your Terminal: ``dir``
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/CMD/rmdir.gif
+      :width: 100%
+      :align: center
+
+
+
+.. tab:: {{ unix_bash }}
+
+   You can use ``rm`` to delete a file or ``rm -r`` to delete a folder using the Terminal. 
+
+   1. Type and enter in your Terminal: ``rm -r NewPythonFolder``
+
+   2. Type and enter in your Terminal: ``ls``
+
+   This should look *something* like this in your **Terminal**:   
+
+   
+   .. image:: Animations/Unix/rm.gif
+      :width: 100%
+      :align: center
+
+
+        
+
+
+
+
+6. Which Python version? (python --version or python3 --version)
+=================================================================
+
+
+
+
+.. tab::  {{ win_powershell }} 
+
+   To check which Python version you have you can use ``python --version``
+
+   To enter Python in your Terminal you can use ``python``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1. Type and enter in your Terminal: ``python --version`` 
+
+   2. Type and enter in your Terminal: ``python``
+
+   3. Type and enter in your Terminal: ``exit()``
+   
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   
+   .. image:: Animations/PS/python.gif
+      :width: 100%
+      :align: center
+
+.. tab:: {{ win_batch }}
+
+   To check which Python version you have you can use ``python --version``
+
+   To enter Python in your Terminal you can use ``python``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1. Type and enter in your Terminal: ``python --version`` 
+
+   2. Type and enter in your Terminal: ``python``
+
+   3. Type and enter in your Terminal: ``exit()``
+   
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/CMD/python.gif
+      :width: 100%
+      :align: center
+
+
+
+.. tab:: {{ unix_bash }}
+
+   To check which Python version you have you can use ``python3 --version``
+
+   **Note that this might change depending 
+   whether you have more than one Python version installed**
+
+   To enter Python in your Terminal you can use ``python3``
+
+   To exit Python in your Terminal you can use ``exit()``
+
+   1. Type and enter in your Terminal: ``python3 --version`` 
+
+   2. Type and enter in your Terminal: ``python3``
+
+   3. Type and enter in your Terminal: ``exit()``
+   
+
+   This should look *something* like this in your **Terminal**:
+
+   
+
+   .. image:: Animations/Unix/python.gif
+      :width: 100%
+      :align: center
+
+
+
+
+
+7. Which packages do I have? 
+=============================
+
+
+.. tab:: {{ win_powershell }} 
+   
+   To see which packages you currently have in Python, you can use ``pip list``. 
+
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/PS/pip.gif
+      :width: 100%
+      :align: center
+
+
+
+.. tab:: {{ win_batch }}
+   
+   To see which packages you currently have in Python, you can use ``pip list``. 
+
+   This should look *something* like this in your **Terminal**:
+   
+   .. image:: Animations/CMD/pip.gif
+      :width: 100%
+      :align: center
+ 
+
+.. tab:: {{ unix_bash }}
+   
+   To see which packages you currently have in Python, you can use ``pip3 list``. 
+
+   This should look *something* like this in your **Terminal**:
+
+   
+   .. image:: Animations/Unix/pip.gif
+      :width: 100%
+      :align: center

@@ -1,0 +1,8 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 7
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c) Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"

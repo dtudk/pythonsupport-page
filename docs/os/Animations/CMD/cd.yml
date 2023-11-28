@@ -1,0 +1,42 @@
+config:
+  cols: 100
+  rows: 8
+
+records:
+  - content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c) Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 2000
+    content: c
+  - content: d
+  - delay: 200
+    content: ' '
+  - content: m
+  - content: y
+  - content: f
+  - delay: 100
+    content: o
+  - delay: 100
+    content: l
+  - delay: 100
+    content: d
+  - delay: 100
+    content: e
+  - delay: 100
+    content: r
+  - delay: 100
+    content: '1'
+  - delay: 3000
+    content: "\e[?25l\e[6;1HC:\\Users\\python\\test\\myfolder1>\e[?25h"
+  - delay: 3000
+    content: c
+  - delay: 100
+    content: d
+  - delay: 200
+    content: ' '
+  - delay: 100
+    content: .
+  - delay: 100
+    content: .
+  - delay: 100
+    content: "\e[?25l\e[8;1HC:\\Users\\python\\test>\e[?25h"
+  - delay: 4000
+    content: ' '

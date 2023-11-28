@@ -30,6 +30,9 @@ jobs:
         with:
           submodules: false
 
+      - name: Node.js setup
+        uses: actions/setup-node@v4
+
       - name: Python installation
         uses: actions/setup-python@v4
         with:
@@ -43,6 +46,14 @@ jobs:
           # but it works locally and fixes some problems related to
           # included documents and jinja replacements
           python -m pip install -U "sphinx>=7.2.5"
+
+          # Install terminalizer
+          npm install -g terminalizer
+
+      - name: Run terminalizer
+        working-directory: docs/os/Animations
+        run: |
+          bash create.sh
 
       - name: Build and tar.gz documentation
         run: |

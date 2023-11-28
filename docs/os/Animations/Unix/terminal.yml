@@ -1,0 +1,8 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 7
+
+records:
+  - delay: 4000
+    content: "\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "

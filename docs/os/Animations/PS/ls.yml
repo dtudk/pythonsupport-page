@@ -1,0 +1,66 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 40
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 2000
+    content: 'PS C:\Users\python\test> '
+  - delay: 100
+    content: "\e[93ml"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bls"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "\e[?25l\e[9;1H\e[?25h"
+  - delay: 100
+    content: "\e[?25l    Directory: C:\\Users\\python\\test\e[12;1HMode                 LastWriteTime         Length Name\e[154X\r\n----                 -------------         ------ ----\e[154X\r\nd-----        22/11/2023     01:35                myfolder1\e[149X\r\nd-----        22/11/2023     01:35                myfolder2\e[149X\r\n-a----        22/11/2023     01:36              0 myfile.txt\e[148X\r\n-a----        22/11/2023     01:36              0 myscript.py\e[147X\e[20;1H\e[?25h"
+  - delay: 2000
+    content: 'PS C:\Users\python\test> '
+  - delay: 100
+    content: "\e[93ml"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bls"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[m-\e[?25h"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-F\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-Fo\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-For\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-Forc\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[20;25Hls \e[90m-Force\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[23;1H    Directory: C:\\Users\\python\\test\e[26;1HMode                 LastWriteTime         Length Name\e[154X\r\n----                 -------------         ------ ----\e[154X\r\nd--h--        22/11/2023     02:04                hiddenfolder\e[146X\r\nd-----        22/11/2023     01:35                myfolder1\e[149X\r\nd-----        22/11/2023     01:35                myfolder2\e[149X\r\n\e[?25h"
+  - delay: 100
+    content: "\e[?25l-a-h--        22/11/2023     02:06              0 .hiddenfile\e[147X\r\n-a----        22/11/2023     01:36              0 myfile.txt\e[148X\r\n-a----        22/11/2023     01:36              0 myscript.py\e[147X\e[36;1HPS C:\\Users\\python\\test> \e[?25h"
+  - delay: 2500
+    content: "\e"

@@ -80,6 +80,7 @@ extensions = [
     'sphinxcontrib.jquery',
 ]
 
+
 # Add the spelling extension if available
 try:
     import sphinxcontrib.spelling
@@ -280,7 +281,7 @@ html_js_files = [
 ]
 
 html_css_files = [
-    "css/custom_styles.css",
+    ("css/custom_styles.css",{'priority':999}),
     "css/colors.css",
 ]
 
@@ -446,6 +447,7 @@ html_context = {
     "win_batch": "Windows | Batch",
     "mac_bash": "MacOS | Bash",
     "linux_bash": "Linux | Bash",
+    "unix_bash": "Bash",
 
     # Cheatsheet information
     "cheatsheet_icon": ":fas:`toolbox`",
@@ -495,6 +497,8 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     content[0] = rstjinja(app, content[0])
 
 def setup(app):
+
+
     app.connect("source-read", rstjinja_source)
     try:
         # include-read was added in 7.2.5 of Sphinx
