@@ -51,7 +51,6 @@ jobs:
         cd docs/os/gifs
         xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
         echo pwd=$(pwd)
-        ls -l */*.gif
         exit 0
 
     - name: Python installation
