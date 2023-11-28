@@ -7,7 +7,8 @@ Windows only problems
 
 .. _faq-win-ps-execution-policy:
 
-.. card:: Windows execution policy in PowerShell
+Windows execution policy in PowerShell
+""""""""""""""""""""""""""""""""""""""
    
    Some times a Windows setup has disabled default execution
    policies.
@@ -43,7 +44,10 @@ Windows only problems
    `Click here to get more information about execution policies <https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies>`__.
 
 
-.. card:: ``ImportError: DLL load failed ...``
+.. _faq-win-dll-load-failed:
+
+``ImportError: DLL load failed ...``
+""""""""""""""""""""""""""""""""""""
 
    When importing ``dtumathtools`` some Windows machines are missing certain libraries.
 
@@ -61,7 +65,10 @@ Windows only problems
    4. If problems still occur, please write us at :mail:`pythonsupport@dtu.dk`
 
 
-.. card:: ``ERROR: Could not install packages due to an OSError: ...``
+.. _faq-win-install-oserror:
+
+``ERROR: Could not install packages due to an OSError: ...``
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
    The exact error message can look different depending on when you encounter this
    error.

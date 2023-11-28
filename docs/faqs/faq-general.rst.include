@@ -1,7 +1,8 @@
 
 .. _faq-vscode-venv-workspace:
 
-.. card:: VS Code and virtual environments
+VS Code and virtual environments
+""""""""""""""""""""""""""""""""
 
    This is particularly tricky configuration since it depends
    on the way you have setup VS Code.
