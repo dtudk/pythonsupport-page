@@ -33,7 +33,7 @@ It can be used together with any other coding language or be used to edit config
 It can be downloaded `here <https://code.visualstudio.com/download>`__.
 
 Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
-This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <environment-venv-vsode>`.
+This depends on whether you are using :ref:`virtual environments <python-environments>`, see :ref:`here <ide-vscode-environment-venv>`.
 Changing the interpreter location can be done by following `this instruction <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__.
 
 
@@ -105,7 +105,7 @@ In the following we will prowide a step-by-step guide on how to get started with
 
 Installing the python extension
 _______________________________
-Before you can start working with Python in VSCode you have to install the Python extension. You can do this by following these steps in the extension guide (see :ref:`here <ide-vscode-Extensions>`).
+Before you can start working with Python in VSCode you have to install the Python extension. You can do this by following these steps in the extension guide (see :ref:`here <ide-vscode-extensions>`).
 
 
 Creating and Opening Projects
@@ -207,7 +207,7 @@ There are several ways to run your code in VSCode. We will here show you some ex
 
 4. Run the file by clicking on the *Run and Debug* (see :ref:`above <ide-vscode-user-interface>`).
 
-5. You can also run the file through the terminal (see :ref:`here <Insert-refrence-to-terminal>`).
+5. You can also run the file through the terminal (see :ref:`here <os-terminal>`).
 
 6. Lastly, you can run the file by binding a key to the command (see :ref:`here <ide-vscode-keybindings>`).
 
@@ -293,6 +293,7 @@ The buttons in the debug panel allow you to control the execution of your code. 
       :align: center
 
 
+.. _ide-vscode-environment-venv:
 
 Virtual environment (venv)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -307,6 +308,8 @@ To change the interpreter location open a python file and click on the Python ve
    :width: 600
    :align: center
 
+
+.. _ide-vscode-extensions:
 
 Extensions
 ^^^^^^^^^^
