@@ -30,14 +30,14 @@ jobs:
       with:
         submodules: false
 
-    - name: Restore cached gif-hash-file
+    - name: Restore cached hash-file
       uses: actions/cache@v3
       id: cache-gif-hash
       with:
         key: gifs-hash
         path: docs/os/gifs/hashes.yml
 
-    - name: Restore cached gif
+    - name: Restore cached gifs
       uses: actions/cache@v3
       id: cache-gif
       with:
