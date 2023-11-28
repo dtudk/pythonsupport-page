@@ -25,46 +25,63 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout sources
-        uses: actions/checkout@v3
-        with:
-          submodules: false
+    - name: Checkout sources
+      uses: actions/checkout@v3
+      with:
+        submodules: false
 
-      - name: Node.js setup
-        uses: actions/setup-node@v4
+    - name: Restore cached gif
+      uses: actions/cache/restore@v3
+      id: cache-gif
+      with:
+        path: docs/os/Animations/CMD/cd.gif
+        # Same key *always*, since these gifs should just be reused
+        # for all OS's
+        key: cache-gif
 
-      - name: Python installation
-        uses: actions/setup-python@v4
-        with:
-          python-version: "3.11"
+    - name: Node.js setup
+      if: steps.cache-gif.outputs.cache-hit != 'true'
+      uses: actions/setup-node@v4
+    
+    - name: Run gifs
+      if: steps.cache-gif.outputs.cache-hit != 'true'
+      run: |
+        npm install -g terminalizer
+        cd docs/os/Animations
+        bash create.sh
 
-      - name: Install requirements
-        run: |
-          python -m pip install -r requirements.txt
-          # upgrade to the latest sphinx
-          # currently sphinx-book-theme[1.0.1] has a <7 dependency,
-          # but it works locally and fixes some problems related to
-          # included documents and jinja replacements
-          python -m pip install -U "sphinx>=7.2.5"
+    - name: Store cache gif
+      uses: actions/cache/save@v3
+      if: steps.cache-gif.outputs.cache-hit != 'true'
+      id: cache-gif
+      with:
+        path: docs/os/Animations/*/*.gif
+        key: cache-gif
 
-          # Install terminalizer
-          npm install -g terminalizer
+    - name: Python installation
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
 
-      - name: Run terminalizer
-        working-directory: docs/os/Animations
-        run: |
-          bash create.sh
+    - name: Install requirements
+      run: |
+        python -m pip install -r requirements.txt
+        # upgrade to the latest sphinx
+        # currently sphinx-book-theme[1.0.1] has a <7 dependency,
+        # but it works locally and fixes some problems related to
+        # included documents and jinja replacements
+        python -m pip install -U "sphinx>=7.2.5"
 
-      - name: Build and tar.gz documentation
-        run: |
-          make all
-          # tar gz the build/html dir
-          tar -czf ${{ inputs.targz_name }} -C build/html .
+    - name: Build and tar.gz documentation
+      run: |
+        make all
+        # tar gz the build/html dir
+        tar -czf ${{ inputs.targz_name }} -C build/html .
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: ${{ inputs.name }}
-          path: ${{ inputs.targz_name }}
-          retention-days: 3
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ inputs.name }}
+        path: ${{ inputs.targz_name }}
+        retention-days: 3
 
