@@ -30,21 +30,27 @@ jobs:
       with:
         submodules: false
 
+    - name: Restore cached gif-hash-file
+      uses: actions/cache@v3
+      id: cache-gif-hash
+      with:
+        key: gifs-hash
+        path: docs/os/gifs/hashes.yml
+
     - name: Restore cached gif
       uses: actions/cache@v3
       id: cache-gif
       with:
-        key: gifs-${{ hashFiles('docs/os/gifs/tmp/hashes.yml') }}
+        key: gifs-${{ hashFiles('docs/os/gifs/hashes.yml') }}
         path: |
           docs/os/gifs/*/*.gif
-          docs/os/gifs/tmp/hashes.yml
 
     - name: Node.js setup
-      if: steps.cache-gif.outputs.cache-hit != 'true'
+      if: ${{ steps.cache-gif.outputs.cache-hit != 'true' || steps.cache-gif-hash.outputs.cache-hit != 'true' }}
       uses: actions/setup-node@v4
     
     - name: Run gifs
-      if: steps.cache-gif.outputs.cache-hit != 'true'
+      if: ${{ steps.cache-gif.outputs.cache-hit != 'true' || steps.cache-gif-hash.outputs.cache-hit != 'true' }}
       run: |
         sudo apt-get install xvfb
         npm install -g terminalizer

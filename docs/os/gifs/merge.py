@@ -11,7 +11,7 @@ except ImportError:
 cwd = Path()
 
 tmpdir = cwd / "tmp"
-hash_file = tmpdir / "hashes.yml"
+hash_file = cwd / "hashes.yml"
 commands_out = sys.argv[1]
 
 def read_yaml(file: Path):
@@ -49,7 +49,7 @@ for path in cwd.glob("*/*.yml"):
         continue
     if path.is_relative_to(tmpdir):
         continue
-    if path.name == "config.yml":
+    if path.name in ("config.yml", "hashes.yml"):
         continue
 
     config = read_yaml(path.parent / "config.yml")
