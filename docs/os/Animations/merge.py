@@ -41,7 +41,7 @@ if hash_file.is_file():
     hashes = read_yaml(hash_file)
 
 # Read the default configuration
-config = read_yaml(cwd / "config.yml")
+def_config = read_yaml(cwd / "config.yml")
 commands = open(commands_out, 'w')
 
 for path in cwd.glob("*/*.yml"):
@@ -52,14 +52,14 @@ for path in cwd.glob("*/*.yml"):
     if path.name == "config.yml":
         continue
 
-    dir_config = read_yaml(path.parent / "config.yml")
+    config = read_yaml(path.parent / "config.yml")
 
     # get a path object relative to cwd (strips segments behind)
     top_path = path.relative_to(cwd)
     top_path_str = str(top_path)
 
     # Merge dictionaries
-    yml = merge(merge(config, dir_config),
+    yml = merge(merge(def_config, config),
                 read_yaml(path))
 
     # check whether we need to do anything
@@ -72,7 +72,14 @@ for path in cwd.glob("*/*.yml"):
     out = tmpdir / '_'.join(top_path.parts)
     gif = path.with_suffix(".gif")
     if old_hash == current_hash and gif.is_file():
+        print(f"Skipping {top_path_str} as it already exists with same hash")
         continue
+    elif top_path_str in hashes and gif.is_file():
+        print(f"Running {top_path_str} even if it exists, hashes are different: {old_hash} != {current_hash}")
+    elif gif.is_file():
+        print(f"Running {top_path_str} as the hash is not found.")
+    else:
+        print(f"Running {top_path_str} as the file is not found.")
 
     hashes[top_path_str] = current_hash
     # We do not have the same hash, or the file does not exist
@@ -82,4 +89,4 @@ for path in cwd.glob("*/*.yml"):
 commands.close()
 
 # Store the hashes, to be re-used
-write_yaml(hashes, hash_file)
+write_yaml(sortdict(hashes), hash_file)

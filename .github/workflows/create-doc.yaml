@@ -31,7 +31,7 @@ jobs:
         submodules: false
 
     - name: Restore cached gif
-      uses: actions/cache/restore@v3
+      uses: actions/cache@v3
       id: cache-gif
       with:
         key: gifs-${{ hashFiles('docs/os/Animations/tmp/hashes.yml') }}
@@ -50,16 +50,9 @@ jobs:
         npm install -g terminalizer
         cd docs/os/Animations
         xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
+        echo pwd=$(pwd)
+        ls -l */*.gif
         exit 0
-
-    - name: Store cache gif
-      if: steps.cache-gif.outputs.cache-hit != 'true'
-      uses: actions/cache/save@v3
-      with:
-        key: gifs-${{ hashFiles('docs/os/Animations/tmp/hashes.yml') }}
-        path: |
-          docs/os/Animations/*/*.gif
-          docs/os/Animations/tmp/hashes.yml
 
     - name: Python installation
       uses: actions/setup-python@v4
