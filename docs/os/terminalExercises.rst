@@ -1,4 +1,4 @@
-.. _terminalExercise:
+.. _os-terminal-exercise:
 
 What's a Terminal?
 ==================
