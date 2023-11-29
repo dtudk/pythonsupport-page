@@ -1,35 +1,23 @@
 
 .. _os:
 
-Operating Systems
+Terminal
 =================
 
-There are numerous operating systems to select from.
+The terminal is an intrinsic part of each operating system.
 The Python support will strive to support any operating system students arrive with.
 There might, however, be some weird corner cases of operating systems we will have
 difficulties in supporting. But the most frequently used OS'ses, Windows, MacOS and most
 major Linux distributions will be supported.
 
 Common for all is the use of terminals to get packages installed.
-Several IDE's, such as conda's installer and Spyder/VSCode/PyCharm's installation integrations
+Several IDE's, such as :ref:`conda <conda>` installer and :ref:`Spyder <ide-spyder>`/:ref:`VS Code <ide-vscode>`/:ref:`PyCharm <ide-pycharm>` installation integrations
 can ease the package installation process to a great deal. However, sometimes it might be necessary
 to run commands on the terminal to ensure proper installation and ensure a consistent environment.
-
-.. todo::
-
-   Add images of terminals for each of the OS's
-
-   Should we document:
-
-   - cd
-   - pwd (nice to know)
-   - ls
-   - mkdir
-   - rm
 
 .. toctree::
    :maxdepth: 2
    :caption: Terminal guide
-
-   terminalTutorial.rst
+   
    terminalExercises.rst
+   terminalTutorial.rst

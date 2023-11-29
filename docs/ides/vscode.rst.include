@@ -47,7 +47,7 @@ User Interface
    :align: center
    :alt: VS Code interface - explaining the different regions of the editor; Menu, Editor, Run/Debug, Panel and Activity Bar
 
-**Editor:** The main editor is where you write and edit your code or text files. It's the central area of VSCode where you will spend most of your time.
+**Editor:** The main editor is where you write and edit your code or text files. It's the central area of VS Code where you will spend most of your time.
 
 **Activity bar:** The sidebar, located on the left side of the interface, provides quick access to various functionalities and information about your project. 
 
@@ -85,9 +85,9 @@ provides quick access to various functionalities and information about your proj
 
 **Explorer:** allows management of your project's files and folders. It provides a file tree view of your project's directory structure.
 
-**Run and debug:** is essential for debugging your code and running your applications within VSCode.
+**Run and debug:** is essential for debugging your code and running your applications within VS Code.
 
-**Extensions:** an *App store* equivalent for VS Code; it is your gateway to customizing and extending the functionality of VSCode through various extensions.
+**Extensions:** an *App store* equivalent for VS Code; it is your gateway to customizing and extending the functionality of VS Code through various extensions.
 VS Code is an extensible and versatile development environment.
 The extensions can greatly aid during the coding of varying problems.
 Some notable highlights include automatic API messages for methods, and
@@ -98,18 +98,18 @@ integration with Jupyter notebooks.
 .. _ide-vscode-new-project:
 
 
-Getting Started with Python in Vscode
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-In the following we will prowide a step-by-step guide on how to get started with Python in VSCode. This includes creating a new project, working with files, importing packages, running your code, installing requirements.txt, debugging, virtual environment (venv).
+Getting Started with Python in VS Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+In the following we will prowide a step-by-step guide on how to get started with Python in VS Code. This includes creating a new project, working with files, importing packages, running your code, installing requirements.txt, debugging, virtual environment (venv).
 
 
 Installing the python extension
-_______________________________
-Before you can start working with Python in VSCode you have to install the Python extension. You can do this by following these steps in the extension guide (see :ref:`here <ide-vscode-extensions>`).
+-------------------------------
+Before you can start working with Python in VS Code you have to install the Python extension. You can do this by following these steps in the extension guide (see :ref:`here <ide-vscode-extensions>`).
 
 
 Creating and Opening Projects
-_____________________________
+-----------------------------
 
 1. Create a folder for a project. You can do this by creating a folder e.g. on the desktop.
 
@@ -127,8 +127,9 @@ _____________________________
       :align: center
       :alt: How to create a folder, select :guilabel:`Explorer (Activity Bar) -> Folder+ (Icon)`
 
+
 Working with Files
-__________________
+------------------
 
 1. Create a new file inside your project by clicking on the left icon (see below) and e.g. naming it ``new_file.py`` - the ending ``.py`` makes it a python file. If you want to create a new file inside a folder in your project, make sure to click on the folder before creating the file.
 
@@ -148,7 +149,7 @@ __________________
 
 
 Importing packages
-__________________
+------------------
 
 In order to write your code you can benefit from a bunch of different python-packages that will help you with your calculation. In Python these packages typically end
 with the letters ``py``. For example there is ``sympy``, which will help you with caluclating with variables (or symbols), ``numpy`` which is used for numerical calculations and 
@@ -191,8 +192,8 @@ with the letters ``py``. For example there is ``sympy``, which will help you wit
 
 
 Running your code
-_________________
-There are several ways to run your code in VSCode. We will here show you some examples:
+-----------------
+There are several ways to run your code in VS Code. We will here show you some examples:
 
 1. Create a new file (see :ref:`above <ide-vscode-new-project>`).
 
@@ -217,7 +218,7 @@ There are several ways to run your code in VSCode. We will here show you some ex
 
 
 Install requirements.txt 
-________________________
+------------------------
 
 The ``requirements.txt`` file is a text file that contains a list of packages that you want to install. It is an easy and convenient way to install all the packages you need for your project.
 To install a ``requirements.txt`` file you have to do the following:
@@ -262,7 +263,7 @@ Debugging
 ^^^^^^^^^
 
 Debugging is the process of finding and fixing errors within a script. 
-VSCode provides a powerful debugging tool that allows you to set breakpoints, step through code, and inspect variables.
+VS Code provides a powerful debugging tool that allows you to set breakpoints, step through code, and inspect variables.
 
 1. Set a breakpoint, click on the left of the line number where you want to pause the execution of your code. A red dot will appear to indicate that a breakpoint has been set, it is possible to set multiple breakpoints in your code. To remove a breakpoint, click on the red dot again.
 
@@ -326,6 +327,7 @@ Extensions
 Extensions can also be installed by following `these instructions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
 
 
+.. _ide-vscode-customization:
 
 Customization
 ^^^^^^^^^^^^^
@@ -379,5 +381,6 @@ We can create and work with Jupyter Notebook files in VS Code. A file in VS Code
 
 Now you are ready to tackle your first project using Jupyter Notebooks in VS Code. However, if you are still uncomfortable with running cells or other functionalities of Jupyter Notebook, `follow this link <https://code.visualstudio.com/docs/datascience/jupyter-notebooks>`__ for more information. 
 
-.. note::
-   You should install the package ``ipykernel`` in the environment that you plan to use as the kernel for Jupyter Notebook.
+.. warning::
+
+   When using virtual environments it is vital that the ``ipykernel`` Python package is installed in the environment before Jupyter Notebook can be used.

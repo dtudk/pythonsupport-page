@@ -7,8 +7,10 @@ Welcome to the world of the Terminal! In this tutorial, you will learn the funda
 a powerful tool for interacting with your computer through text commands. 
 We will cover essential commands and tips to help you navigate and perform tasks efficiently.
 
-You can learn more about what a Terminal is and the most useful commands :ref:`here <os-terminal>`
+You can learn more about what a Terminal is and the most useful commands :ref:`here <os-terminal>`.
 
+
+.. _os-terminal-open:
 
 Opening a terminal
 ^^^^^^^^^^^^^^^^^^
@@ -54,6 +56,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
+
 .. tab:: {{ linux_bash }}
 
    **Note**: This depends on the distribution you are using. Nearly all Linux distributions
@@ -75,12 +78,10 @@ Each operating system opens terminals in a different way.
       :align: center
 
 
+.. _os-terminal-pwd:
 
-
-
-
-1. Where am I? (pwd and dir)
-=============================
+1. Where am I?
+^^^^^^^^^^^^^^
 
 
 .. tab:: {{ win_powershell }} 
@@ -96,6 +97,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
+
 .. tab:: {{ win_batch }} 
    
    To find out your current directory (location), you can use the  
@@ -108,6 +110,7 @@ Each operating system opens terminals in a different way.
    .. image:: gifs/CMD/currentDir.gif
       :width: 100%
       :align: center
+
 
 .. tab:: {{ unix_bash }}
 
@@ -123,11 +126,10 @@ Each operating system opens terminals in a different way.
       :align: center
 
 
-
-
+.. _os-terminal-ls:
 
 2. What's in here?
-===================
+^^^^^^^^^^^^^^^^^^^
 
 
 .. tab:: {{ win_powershell }} 
@@ -148,6 +150,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
+
 .. tab:: {{ win_batch }}
 
    To list the contents of your current directory in Windows Command Prompt, you can use the ``dir`` command. If you want to see hidden files and directories as well, use ``dir /a``. 
@@ -165,6 +168,7 @@ Each operating system opens terminals in a different way.
    .. image:: gifs/CMD/dir.gif
       :width: 100%
       :align: center
+
 
 .. tab:: {{ unix_bash }}
 
@@ -186,12 +190,10 @@ Each operating system opens terminals in a different way.
       :align: center
 
 
+.. _os-terminal-cd:
 
-
-
-
-3. Changing directories (cd)
-=============================
+3. Changing directories
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab:: {{ win_powershell }} 
    
@@ -236,6 +238,7 @@ Each operating system opens terminals in a different way.
       :width: 100%
       :align: center
 
+
 .. tab:: {{ unix_bash }}
 
    **Warning**:
@@ -256,8 +259,6 @@ Each operating system opens terminals in a different way.
    
 
 
-
-
 A good trick to use in Visual Studio Code is to open a folder in your sidebar, and copy the names of folders/directories that you would like to work in. This is done by completing the steps below:
 
 #. Press the icon in the top left of the screen that looks like 2 pieces of paper on top of each other
@@ -270,9 +271,10 @@ A good trick to use in Visual Studio Code is to open a folder in your sidebar, a
 In general it is a good idea to change your directory, to the place of whatever you are working with. For example, if a large dataset is in a specific folder, you can change your directory to that folder. 
 
 
+.. _os-terminal-mkdir:
 
-4. How can I create a new folder? (mkdir)
-=========================================
+4. How can I create a new folder?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab::  {{ win_powershell }} 
 
@@ -291,7 +293,6 @@ In general it is a good idea to change your directory, to the place of whatever 
       :align: center  
 
 
-
 .. tab:: {{ win_batch }}
 
    To create a new folder you can use ``mkdir`` on your Terminal. Then, you can use ``dir`` to see 
@@ -306,7 +307,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    .. image:: gifs/CMD/mkdir.gif
       :width: 100%
       :align: center    
-
 
 
 .. tab:: {{ unix_bash }}
@@ -326,13 +326,10 @@ In general it is a good idea to change your directory, to the place of whatever 
       :align: center
 
 
-        
-    
+.. _os-terminal-rm:
 
-
-
-5. How can I delete a folder or a file using a Terminal? (rm and rm -r)
-========================================================================
+5. How can I delete a folder or a file using a Terminal?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 .. tab::  {{ win_powershell }} 
@@ -344,7 +341,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    2. Type and enter in your Terminal: ``ls``
 
    This should look *something* like this in your **Terminal**:
-
 
    
    .. image:: gifs/PS/rm.gif
@@ -384,16 +380,10 @@ In general it is a good idea to change your directory, to the place of whatever 
       :align: center
 
 
-        
+.. _os-terminal-python-version:
 
-
-
-
-6. Which Python version? (python --version or python3 --version)
-=================================================================
-
-
-
+6. Which Python version?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab::  {{ win_powershell }} 
 
@@ -411,8 +401,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    
 
    This should look *something* like this in your **Terminal**:
-
-   
    
    .. image:: gifs/PS/python.gif
       :width: 100%
@@ -435,7 +423,6 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
 
-   
    .. image:: gifs/CMD/python.gif
       :width: 100%
       :align: center
@@ -462,18 +449,15 @@ In general it is a good idea to change your directory, to the place of whatever 
 
    This should look *something* like this in your **Terminal**:
 
-   
-
    .. image:: gifs/Unix/python.gif
       :width: 100%
       :align: center
 
 
-
-
+.. _os-terminal-pip-list:
 
 7. Which packages do I have? 
-=============================
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 .. tab:: {{ win_powershell }} 
@@ -485,7 +469,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    .. image:: gifs/PS/pip.gif
       :width: 100%
       :align: center
-
 
 
 .. tab:: {{ win_batch }}
@@ -504,7 +487,6 @@ In general it is a good idea to change your directory, to the place of whatever 
    To see which packages you currently have in Python, you can use ``pip3 list``. 
 
    This should look *something* like this in your **Terminal**:
-
    
    .. image:: gifs/Unix/pip.gif
       :width: 100%
