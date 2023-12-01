@@ -45,7 +45,7 @@ Then run the following command:
 The script will ask you for your system password. Enter it and press enter.
 The script will then delete all versions of python that you have installed on your computer.
 
-If this does not work check out: :ref:`LINK TO HELP WITH TERMINAL`.
+If this does not work check out :ref:`this page <os-terminal>`.
 
 .. note::
    This will delete all versions of Python that you have installed on your computer - including packages that you have installed using ``pip`` or ``conda install``.

@@ -60,7 +60,6 @@ _pref_symbol = ""
 
 extensions = [
     'sphinx.ext.intersphinx',
-    'sphinxemoji.sphinxemoji',
     'sphinx.ext.mathjax',
     'sphinx.ext.todo',
     # allow shorthands for links
@@ -422,6 +421,7 @@ html_context = {
     "python_version": recommended_python,
     "path_to_docs": "docs/",
     "pref_symbol": _pref_symbol,
+    "python_org_rec": _pythonsupport["python-org-recommended"],
 
     # Installation methods
     "pip": f"pip {_pref_symbol}",

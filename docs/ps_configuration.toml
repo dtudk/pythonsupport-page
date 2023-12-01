@@ -1,4 +1,5 @@
 [pythonsupport]
+python-org-recommended = "https://www.python.org/downloads/release/python-3116/"
 mail = "pythonsupport@dtu.dk"
 homepage = "https://pythonsupport.dtu.dk"
 repository = "https://github.com/dtudk/pythonsupport-page"

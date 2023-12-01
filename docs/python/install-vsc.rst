@@ -12,4 +12,4 @@ The following steps are the the same for all operating systems.
 
 .. note::
 
-    Once installed, please visit our pages dedicated to explaining the use of VS Code :ref:`here <LINK TO VS CODE GUIDE>`.
+    Once installed, please visit our pages dedicated to explaining the use of VS Code :ref:`here <ide-vscode>`.

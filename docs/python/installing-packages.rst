@@ -20,7 +20,7 @@ Using the official Python distribution
 
 .. note::
 
-   If you are unsure about using the terminal, we advice that you read :ref:`this <LINK TO TERMINAL GUIDE>` before proceeding.
+   If you are unsure about using the terminal, we advice that you read :ref:`this <os-terminal>` before proceeding.
 
 If you are using the official Python distribution, you will need to use the :ref:`pip` package manager. Open up a terminal and run the following: 
 
