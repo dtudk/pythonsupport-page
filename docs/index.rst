@@ -16,6 +16,14 @@ DTU Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
+.. card:: Having last minute problems before exams?
+   :class-card: sd-color-primary
+
+   Please contact us through `Discord <ps-discord-invite_>` or :mail:`pythonsupport@dtu.dk`.
+   We will respond in regular office hours.
+
+   We will also be open in 302.A92 on Tuesday 5th between 13-15.
+
 
 .. card:: New student at DTU {{current_year}}? Welcome!
    :class-card: sd-color-primary
