@@ -1,4 +1,4 @@
-.. _os-terminal:
+.. _os-terminal-tutorial:
 
 Terminal tutorial
 ==================

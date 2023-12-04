@@ -1,7 +1,7 @@
 .. _install-conda:
 
-`conda <anaconda_>`_
---------------------
+`conda <anaconda_>`_ installation
+----------------------------------
 
 .. tip::
 
@@ -22,7 +22,7 @@ Conda installations comes in some variants:
 `Miniconda <miniconda_>`_ |:1st_place_medal:|
    A minimal conda installation, requiring users to manually install packages subsequently.
 
-   We recommend this Conda backend.
+   We recommend this Conda back end.
 
 
 `Anaconda <anaconda-down_>`_ |:2nd_place_medal:| |:snail:|

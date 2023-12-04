@@ -3,6 +3,7 @@ build/
 docs/_static/course_switcher.json
 docs/timetable/timetable.rst
 .coverage
+ps-page-env/
 
 # os files
 .DS_Store

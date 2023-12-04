@@ -344,6 +344,7 @@ By either using the keybinding :kbd:`Ctrl+K+T` or pressing the cogwheel button a
 New color themes can be acquired by navigating to Extensions under the Activity bar, and then searching for the color theme that you want to install. The library of color themes that VS Code Extensions has to offer can be found by pressing `here <https://VS Codethemes.com/?language=python>`__.
 
 .. _ide-vscode-keybindings:
+
 **Key Bindings:** VS Code enables you to bind a key to pretty much any action imaginable within an IDE. A majority of the actions has already been allocated as defualt, but if you want to change some of the IDE's key bindings you can press :kbd:`Ctrl+K+S`. This key binding brings up VS Code's keyboard shortcut menu.
 
 For starters, you would perhaps want to add a shortcut for running a python file. This can be done by searching *run python file* in the keyboard shortcuts menu, and double-clicking on ``Python: Run Python File``. Thereafter, you can enter a personal shortcut for the functionality and finishing by pressing enter again. 

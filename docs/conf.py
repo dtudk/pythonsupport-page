@@ -285,6 +285,7 @@ html_css_files = [
     "css/colors.css",
 ]
 
+
 import pydata_sphinx_theme
 if version2tuple(pydata_sphinx_theme.__version__) >= (0, 14):
     print("ps: will use fontawesome 6 css")
@@ -420,6 +421,7 @@ html_context = {
     "python_version": recommended_python,
     "path_to_docs": "docs/",
     "pref_symbol": _pref_symbol,
+    "python_org_rec": _pythonsupport["python-org-recommended"],
 
     # Installation methods
     "pip": f"pip {_pref_symbol}",
