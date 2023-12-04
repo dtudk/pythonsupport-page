@@ -1,15 +1,15 @@
 .. _Deleting Visual Studio Code:
 
 
-Deleting Visual Studio Code
+Visual Studio Code
 ============================
 
 This is a guide on how to uninstall Visual Studio Code from your computer.  
 This can come in handy in many different scenarios, but especially if Visual Studio Code is not working properly, and you want a fresh start on it. 
 
 
-Deleting Visual Studio Code on Windows
-=======================================
+Windows
+---------------------------------------
 
 1. Open the control panel.
 2. Click on ``Uninstall a program`` under the ``Programs`` section.
@@ -29,8 +29,8 @@ Deleting Visual Studio Code on Windows
 6. Find the folder named ``.vscode`` and delete it.
 
 
-Deleting VSC on MacOS
-======================
+MacOS
+----------------------
 
 1. Open Finder
 2. Open the Apps folder

@@ -1,6 +1,6 @@
 .. _uninstall-conda:
 
-Deleting Anaconda/Conda
+Anaconda/Conda
 ===========================================
 
 This is a guide on how to uninstall Anaconda from your computer.  It can help if you for example:
@@ -13,7 +13,7 @@ This is a guide on how to uninstall Anaconda from your computer.  It can help if
 
 
 Windows
-===========================================
+-------------------------------------------
 
 1. Open your terminal and run the following lines, one at a time
 
@@ -37,7 +37,7 @@ Windows
 
 
 MacOS and Linux
-===========================================
+-------------------------------------------
 
 1. Open your terminal and run the following lines, one at a time
 

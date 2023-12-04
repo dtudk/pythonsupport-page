@@ -1,7 +1,7 @@
 .. _install-conda:
 
-`conda <anaconda_>`_
---------------------
+`conda <anaconda_>`_ installation
+----------------------------------
 
 .. tip::
 

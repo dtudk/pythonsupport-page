@@ -101,17 +101,6 @@ On windows or on mac open a terminal and type:
       conda install numpy
 
 
-
 .. tip::
 
    The code above will install the library ``numpy``. For installation of other libraries, simply replace ``numpy`` with the name of the library you want to install.
-
-
-
-.. note:: 
-   If you want more information about pip, or encounter some of the following problems: 
-   * You need a specific version of a package
-   * Navigate and manage your packages 
-   * Installing packages using a requirements.txt file
-   * Have conflicting packages
-   * Want or need to use virtual environments 

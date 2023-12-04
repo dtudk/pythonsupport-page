@@ -10,7 +10,6 @@ For more advanced topics, please refer to the section `Advanced usage`.
 .. toctree::
    :maxdepth: 1
 
-   installation.rst
-   installing-packages.rst
-   install-vsc.rst
-
+   install-python.rst
+   install-conda.rst
+   install-packages.rst

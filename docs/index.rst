@@ -150,13 +150,11 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    :hidden:
    :caption: Advanced usage
    
-   python/environments.rst
    python/pip.rst
    python/conda.rst
    os/index.rst
    ides/index.rst
+   python/environments.rst
    faqs/index.rst
-   python/uninstall-conda.rst
-   python/uninstall-python.rst
-   python/uninstall-vscode.rst
+   python/uninstall.rst
    src/about.rst

@@ -1,7 +1,7 @@
 .. _uninstall-python:
 
 
-Deleting multiple versions of Python
+Python
 =========================================
 
 If for some reason you wish to delete Python from your computer, here is how you do it. 
@@ -13,7 +13,7 @@ This might be useful to do in a couple of scenarios:
 
 
 Deleting Python on Windows
-=========================================
+-----------------------------------------
 
 1. Open the control panel.
 2. Click on *Uninstall a program* under the *Programs* section.
@@ -24,7 +24,7 @@ Deleting Python on Windows
 
 
 Deleting Python on Mac
-=========================================
+-----------------------------------------
 
 A version of Python comes pre-installed with {{macs}}. This version of Python is used by the operating system, and should not be deleted.
 Other versions of Python may be deleted using a script supplied here.

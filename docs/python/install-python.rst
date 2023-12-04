@@ -1,42 +1,55 @@
-
 .. _install-python:
 
-Official Python distribution {{ pref_symbol }}
-------------------------------------------------------
+Official Python 
+=================
 
-.. tip::
+.. admonition:: Remove older Python versions
+   :class: dropdown warning
 
-   DTU recommends using version {{ python_version }} of Python.
+   We suggest removing any pre-installed Python versions and VS Code before 
+   proceeding with this guide to ensure a smooth installation process.
+   For help with this process, take a look at the section on `Deleting multiple versions of python <Deleting multiple versions of python>`_.
 
-The `base Python <python-org_>`_ software can be downloaded and installed through
-their `download page <python-org-down_>`_ and uses common installation processes.
 
-Installing the official Python distribution forces you to choose a version, and continuously use that version. I.e. upgrading to
-a new Python version requires re-installing a new version, starting from downloading a new installer
-and subsequently installing packages, again, through :ref:`pip <pip>`.
 
+Download & Installation
+-----------------------
+
+.. admonition:: Do not install Python 3.12 or later
+   :class: dropdown warning
+
+    For the time being, we recommend **not** downloading version 3.12 (or later) of Python. This is because some of the course dependencies does not yet work with said versions.
 
 .. tab:: {{ windows }}
 
-   Here are the suggested (in priority order) ways of installing Python:
+   .. tab:: App Store {{pref_symbol}}
 
-   1. **Windows 10 and above** {{pref_symbol}}: Launch a :ref:`terminal <os-terminal>`
-      (press :kbd:`Win-R`, type ``cmd`` and :kbd:`enter`), and type ``python``
-      If it runs the Python interpreter it is already installed, if not an ``App store``
-      pane will open up, asking if you want to install Python, simply press install
-      and continue. It will select the latest stable release which is good!
+      Installing Python through the App Store is by far the easiest!
 
-   2. Download and install Python from `here <python-org-down-win_>`__
-      Select the **64bit** version.
-      Ensure you check :far:`square-check` the
-      ``Add Python {{ python_version }} to PATH``
-      (at the bottom of the installation GUI)
+      Search for `Python` in the store and select a suitable version (for instance `this <https://www.microsoft.com/store/productid/9NRWMJP3717K?ocid=pdpshare>`_).
+
+      Alternatively you can open a terminal (press :kbd:`Win-R`, type ``cmd`` and :kbd:`Enter`) then type ``python`` and
+      :kbd:`Enter` which should open up the App store where Python can be selected, remember to select the correct version!
+  
+   .. tab:: `python.org <{{python_org_rec}}>`
+
+      However, if you find yourself on an adventurous detour and can't access it there, you can still opt for the `official Python release <{{python_org_rec}}>`_.
+
+      Download the **64bit** version.
+
+      **Just remember to check the Add Python to PATH box (at the bottom of the installation GUI)**.
+
+      .. image:: images/python-win-step-1.png
+          :width: 600px
+          :align: center
+          :alt: Add to path checkbox
+
 
 .. tab:: {{ macos }}
 
-   Here are the suggested (in priority order) ways of installing Python:
+   .. tab:: Homebrew {{pref_symbol}}
 
-   1. **Homebrew** {{pref_symbol}}: Launch a :ref:`terminal <os-terminal>` (press :kbd:`Command-Space`),
+      Launch a :ref:`terminal <os-terminal>` (press :kbd:`Command-Space`),
       and execute the following code:
 
       .. code-block:: bash
@@ -47,15 +60,19 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
       again. Once done, you will have Homebrew *and* Python.
 
       See `here <https://brew.sh/>`__ for more details on Homebrew.
+      
 
-   2. 
-      - Download and install Python from `here <python-org-down-mac_>`__
-      - Once installed, check if Python works (see further down)
-      - If Python does not work *AND* if you have an M1 or M2 processor,
-         you might need the
-         `Rosetta 1 or 2 <https://support.apple.com/en-gb/HT211861>`__.
-         You can figure this out by pressing the Apple icon (top left)
-         and then ``About this Mac``/``Om denne Mac``.
+   .. tab:: `python.org <{{python_org_rec}}>`
+
+      You can download the official python directly from `here <{{python_org_rec}}/>`_.
+      After downloading the installer, the installation process should be relatively straightforward.
+
+      Once installed, check it works. If it doesn't *and* you have an M1/M2/MX processor, you might
+      need to use Rosetta to enable it:
+
+      `Rosetta 1 or 2 <https://support.apple.com/en-gb/HT211861>`__.
+      You can figure this out by pressing the Apple icon (top left)
+      and then ``About this Mac``/``Om denne Mac``.
 
       If there are problems, a more detailed instruction can be found
       `here <https://www.dataquest.io/blog/installing-python-on-mac/>`__.
@@ -74,32 +91,29 @@ and subsequently installing packages, again, through :ref:`pip <pip>`.
       # the exact package manager, or package name is distro dependent
       sudo apt install python3
 
-Once completed it is appropriate to test whether it works, :ref:`open up a terminal <os-terminal>` and execute the following:
 
-.. tab:: {{ win_powershell }}
+Verifying installation
+======================
 
-   .. code-block::  powershell
+To verify if python is installed correctly follow the steps below:  
 
-         python -c "print('Hello world')"
+.. tab:: {{ windows }}
 
-.. tab:: {{ win_batch }}
+    #. Give your keyboard's window key a friendly nudge.  
+    #. Type ``powershell`` in the search bar, and hit enter to launch PowerShell.
+    #. In the powershell window, type ``python --version``
+    #. If you spot the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python in your machine |:snake:|.  
 
-   .. code-block::  winbatch
+.. tab:: {{ macos }}
 
-         python -c "print('Hello world')"
+    #. Give your keyboard's ``Command`` key a friendly nudge.
+    #. Type ``terminal`` in the search bar, and press Enter to open Terminal.
+    #. In the Terminal window, type ``python3 --version``
+    #. If you see the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python friend on your machine |:snake:|.
 
-.. tab:: {{ mac_bash }}
-   
-   .. code-block::  bash
+.. tab:: {{ linux}}
 
-         python -c "print('Hello world')"
+    #. Open a terminal
+    #. In the Terminal window, type ``python3 --version``
+    #. If you see the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python friend on your machine |:snake:|.
 
-.. tab:: {{ linux_bash }}
-   
-   .. code-block::  bash
-
-         python -c "print('Hello world')"
-
-
-Once Python has been installed, head over to :ref:`using pip <pip>` which will be the typical
-package installation back end.

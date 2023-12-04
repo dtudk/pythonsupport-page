@@ -16,7 +16,7 @@
    ``pip`` is shipped with pretty much *all* Python installations (also :ref:`conda <conda>`).
    As such one can use ``pip`` in both ``conda`` and pure Python installations.
 
-   See :ref:`here <install>` for installing Python.
+   See :ref:`here <install-python>` for installing Python.
 
 
 `pip <pypi-org_>`_ is the *de-facto* standard for installing and maintaining
