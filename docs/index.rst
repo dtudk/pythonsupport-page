@@ -22,7 +22,7 @@ DTU Python support
    Please contact us through `Discord <ps-discord-invite_>`_ or :mail:`pythonsupport@dtu.dk`.
    We will respond in regular office hours.
 
-   We will also be open in 302.A92 on Tuesday 5th between 13-15.
+   We will also be open in 302.A92 on Tuesday 5th of December between 13-15.
 
 
 .. card:: New student at DTU {{current_year}}? Welcome!
@@ -92,11 +92,11 @@ Office hours
    This page will be updated continuously.
 
 Mail -- :mail:`pythonsupport@dtu.dk`  |  {{online_days}} in the evening
-   Outside of office hours we can be contacted through emails. We strive to return
-   answers as soon as possible.
+   Outside of office hours (during the semester) we can be contacted through emails.
+   We strive to return answers as soon as possible.
 
 Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_  |  {{online_days}} in the evening
-   Our support team will also be present on the Discord chat service.
+   Our support team will also be present on the Discord chat service during the semester.
 
    Using the Discord channel requires signing up to Discord's terms, DTU
    has no control over Discord and how they use your data. If you feel uncomfortable

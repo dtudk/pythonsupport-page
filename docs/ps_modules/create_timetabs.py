@@ -17,12 +17,13 @@ After 18 on a Friday, the preferred week-number will be the following week.
 import datetime
 from pathlib import Path
 
+
 def fill_defaults(semester, periods):
     """ Fill defaults into the `semester` dictionary """
     # fill non-filled data from the generic periods
     for name, defaults in periods:
         period = semester[name]
-        for key in ("weeks", "name"):
+        for key in ("week", "weeks", "name", "week-breaks"):
             if key not in period:
                 # update field
                 period[key] = defaults[key]
@@ -62,6 +63,21 @@ def get_period(periods, semester, week):
     return closests[0]
 
 
+def extract_dateinfo(date):
+    """Returns year, week, day, hour of the date """
+    return map(int, date.strftime("%G %V %u %H").split())
+
+
+def datetime_diff(date1, date2, what="week"):
+    """Returns year, week, day, hour of the date """
+    diff = date2 - date1
+    if what == "week":
+        return int((diff.days + 3.5) // 7)
+    if what == "days":
+        return diff.days
+    return diff
+
+
 def get_weekdates(year, week):
     start = datetime.datetime.strptime(f"{year} {week} 1", "%G %V %u").date()
     end = datetime.datetime.strptime(f"{year} {week} 5", "%G %V %u").date()
@@ -84,14 +100,14 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
 
     # Get today
     today = datetime.datetime.today()
+    sem_date = today
     # TODO use env to enable dev for checking dates
-    #today = datetime.datetime.strptime("2023 9 5", "%Y %m %d")
 
     print(f"timetable: will create an on-the-fly updated timetable in {out!s}")
     print(f"timetable: the current time will be: {today.isoformat(' ', 'minutes')}")
 
     # Determine the week (added in 3.6)
-    year, week, day, hour = map(int, today.strftime("%G %V %u %H").split())
+    year, week, day, hour = extract_dateinfo(today)
     print(f"timetable: parsed time: {year} {week} {day} {hour}")
 
     # perhaps some logic here.
@@ -113,11 +129,13 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     if period is None:
         print("Failed current semester, trying next year, this will likely fail!")
         # reset year
-        year += 1
-        week = day = hour = 1
+        sem_date = datetime.datetime(year + 1, month=1, day=1, hour=1)
+        year, week, day, hour = extract_dateinfo(sem_date)
+        print(f"timetable: (skipped to) parsed time: {year} {week} {day} {hour}")
         semester = semester_info[f"{year}"]
         fill_defaults(semester, periods)
         period = get_period(periods, semester, week)
+        week = semester[period[0]]["week-start"]
 
     # now choose the exact semester from the chosen period
     semester = semester[period[0]]
@@ -133,6 +151,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     # get semester information
     name = semester["name"]
     week_start = semester["week-start"]
+    week_info = semester["week"]
     weeks = semester["weeks"]
     week_breaks = semester["week-breaks"]
     if not isinstance(week_breaks, list):
@@ -145,7 +164,6 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
                 count += 1
         return count
 
-
     # get week
     offset_week = week - week_start
     offset_week -= count_weeks_after_breaks(week, week_breaks)
@@ -154,15 +172,30 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     f = open(out, 'w')
 
     # open the tabs
-    if offset_week < -1:
-        f.write(f"The {name} semester will start in {-offset_week} weeks.\n\n")
-    elif offset_week == -1:
-        f.write(f"The {name} semester will start in {-offset_week} week.\n\n")
-    elif offset_week < weeks:
+    week_diffs = datetime_diff(today, sem_date)
+    if week_diffs > 1:
+        f.write(f"The {name} semester will start in {week_diffs} weeks.\n\n")
+    elif week_diffs == 1:
+        f.write("The {name} semester will start in 1 week.\n\n")
+    else:
         if day > 5:
             f.write(f"The current/coming {name} semester week is {offset_week+1}.\n\n")
         else:
             f.write(f"The current {name} semester week is {offset_week+1}.\n\n")
+
+    # Determine if we should write a close notice
+    weeks_rng = list(range(max(0, offset_week), weeks))
+    if len(weeks_rng) == 0:
+        # we are not open, and not in any weeks
+
+        f.write("""\
+The Python support has no office hours. We will strive to be reachable on
+mails and Discord.
+Expect longer answering times.
+""")
+
+        f.close()
+        return
 
     # Now produce the content
     f.write(".. tab-set::\n")
@@ -192,15 +225,13 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
 
         if (timetable_path / f"{year}{iso_week}.rst").exists():
             f.write(indent(f".. include:: /timetable/{year}{iso_week}.rst"))
+        elif sem_week < len(week_info):
+            f.write(indent(week_info[sem_week]))
         else:
-            f.write(indent(f"To be determined, come back later!"))
+            f.write(indent("To be determined, come back later!"))
         f.write("\n")
         
         # signal nothing for the first one
         first = ""
 
     f.close()
-
-
-    
-    

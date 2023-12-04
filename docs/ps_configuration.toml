@@ -20,16 +20,32 @@ online-days = [
 # will be their defaults!
 january.name = "3 weeks January"
 january.weeks = 3
+january.week = ["Closed", "Closed", "Closed"]
+january.week-breaks = []
 
 spring.name = "13 weeks Spring"
 spring.weeks = 13
+spring.week = []
+spring.week-breaks = []
 
 june.name = "3 weeks June"
 june.weeks = 3
+june.week = ["Closed", "Closed", "Closed"]
+june.week-breaks = []
 
 autumn.name = "13 weeks Autumn"
 autumn.weeks = 13
+autumn.week = []
+autumn.week-breaks = []
 
+
+[semester.2024]
+january.week-start = 1
+spring.week-start = 5
+spring.week-breaks = 13
+june.week-start = 24
+autumn.week-start = 34
+autumn.week-breaks = 42
 
 [semester.2023]
 january.week-start = 1
@@ -37,15 +53,6 @@ spring.week-start = 5
 june.week-start = 23
 autumn.week-start = 35
 autumn.week-breaks = 42
-
-[semester.2024]
-january.week-start = 1
-january.week = ["Closed", "Closed", "Closed"]
-
-spring.week-start = 5
-june.week-start = 24
-#autumn.week-start = 34
-#autumn.week-breaks = 42
 
 
 [dtu]
