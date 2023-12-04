@@ -66,29 +66,36 @@ if it shows a directory where you have your virtual environment, you are all set
 If not, then the simplest solution would be to install the kernel runner
 in the virtual environment:
 
-.. tab:: {{ win_powershell }}
 
-   .. code-block:: powershell
+.. tab-set::
 
-      python -m ipykernel install --prefix <path to venv|conda-env>
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-.. tab:: {{ win_batch }}
+      .. code-block:: powershell
 
-   .. code-block:: winbatch
-      
-      python -m ipykernel install --prefix <path to venv|conda-env>
+         python -m ipykernel install --prefix <path to venv|conda-env>
 
-.. tab:: {{ mac_bash }}
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-   .. code-block:: bash
+      .. code-block:: winbatch
+         
+         python -m ipykernel install --prefix <path to venv|conda-env>
 
-      python3 -m ipykernel install --prefix <path to venv|conda-env>
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-.. tab:: {{ linux_bash }}
+      .. code-block:: bash
 
-   .. code-block:: bash
+         python3 -m ipykernel install --prefix <path to venv|conda-env>
 
-      python3 -m ipykernel install --prefix <path to venv|conda-env>
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
+
+      .. code-block:: bash
+
+         python3 -m ipykernel install --prefix <path to venv|conda-env>
 
 Only insert the folder name in the ``< ... >`` block.
 The problem, and fix, is described in greater detail

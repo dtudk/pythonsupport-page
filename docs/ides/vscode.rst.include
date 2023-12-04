@@ -228,29 +228,35 @@ To install a ``requirements.txt`` file you have to do the following:
 
 2. Open up your terminal. You can then copy the following command into your terminal and press enter to execute:
 
-   .. tab:: {{ win_powershell }}
+   .. tab-set::
 
-      .. code-block:: powershell
+      .. tab-item:: {{ win_powershell }}
+         :sync: powershell
 
-         python -m pip install -r requirements.txt
+         .. code-block:: powershell
 
-   .. tab:: {{ win_batch }}
+            python -m pip install -r requirements.txt
 
-      .. code-block:: winbatch
+      .. tab-item:: {{ win_batch }}
+         :sync: batch
 
-         python -m pip install -r requirements.txt
+         .. code-block:: winbatch
 
-   .. tab:: {{ mac_bash }}
+            python -m pip install -r requirements.txt
 
-      .. code-block:: bash
+      .. tab-item:: {{ mac_bash }}
+         :sync: mac
 
-         python3 -m pip install -r requirements.txt
+         .. code-block:: bash
 
-   .. tab:: {{ linux_bash }}
+            python3 -m pip install -r requirements.txt
 
-      .. code-block:: bash
+      .. tab-item:: {{ linux_bash }}
+         :sync: bash
 
-         python3 -m pip install -r requirements.txt
+         .. code-block:: bash
+
+            python3 -m pip install -r requirements.txt
 
 The installation of the packages will take a few minutes. After it is done you will se the path of the folder you are in followed by an ``%``. 
 

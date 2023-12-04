@@ -29,29 +29,35 @@ pwd (Print Working Directory)
 
 The ``pwd`` command displays the current working directory. It is particularly helpful when you need to know your current location within the file system.
 
-.. tab:: {{win_powershell}}
+.. tab-set::
 
-   .. code-block:: bash
+   .. tab-item:: {{win_powershell}}
+      :sync: powershell
 
-      pwd
+      .. code-block:: bash
 
-.. tab:: {{win_batch}}
+         pwd
 
-   .. code-block:: bash
+   .. tab-item:: {{win_batch}}
+      :sync: batch
 
-      cd
+      .. code-block:: bash
 
-.. tab:: {{mac_bash}}
+         cd
 
-   .. code-block:: bash
+   .. tab-item:: {{mac_bash}}
+      :sync: mac
 
-      pwd
+      .. code-block:: bash
 
-.. tab:: {{linux_bash}}
+         pwd
 
-   .. code-block:: bash
+   .. tab-item:: {{linux_bash}}
+      :sync: bash
 
-      pwd
+      .. code-block:: bash
+
+         pwd
 
 
 cd (Change Directory)
@@ -59,29 +65,35 @@ cd (Change Directory)
 
 The ``cd`` command is used to change the current working directory. It enables you to navigate through various folders and explore different parts of the file system.
 
-.. tab:: {{win_powershell}}
+.. tab-set::
 
-   .. code-block:: bash
+   .. tab-item:: {{win_powershell}}
+      :sync: powershell
 
-      cd NewFolder
+      .. code-block:: bash
 
-.. tab:: {{win_batch}}
+         cd NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{win_batch}}
+      :sync: batch
 
-      cd NewFolder
+      .. code-block:: bash
 
-.. tab:: {{mac_bash}}
+         cd NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{mac_bash}}
+      :sync: mac
 
-      cd NewFolder
+      .. code-block:: bash
 
-.. tab:: {{linux_bash}}
+         cd NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{linux_bash}}
+      :sync: bash
 
-      cd NewFolder
+      .. code-block:: bash
+
+         cd NewFolder
 
 
 ls (List)
@@ -89,29 +101,35 @@ ls (List)
 
 The ``ls`` command is used to list all files and directories in the current working directory. It allows you to view the contents of the folder you are currently in.
 
-.. tab::  {{win_powershell}}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item::  {{win_powershell}}
+      :sync: powershell
 
-      ls
+      .. code-block:: powershell
 
-.. tab:: {{win_batch}}
+         ls
 
-   .. code-block:: winbatch
+   .. tab-item:: {{win_batch}}
+      :sync: batch
 
-      dir
+      .. code-block:: winbatch
 
-.. tab:: {{mac_bash}}
+         dir
 
-   .. code-block:: bash
+   .. tab-item:: {{mac_bash}}
+      :sync: mac
 
-      ls
+      .. code-block:: bash
 
-.. tab:: {{linux_bash}}
+         ls
 
-   .. code-block:: bash
+   .. tab-item:: {{linux_bash}}
+      :sync: bash
 
-      ls
+      .. code-block:: bash
+
+         ls
 
 
 mkdir (Create Directory)
@@ -119,29 +137,35 @@ mkdir (Create Directory)
 
 The ``mkdir`` command is used to create a new directory. It is particularly helpful when you need to create a new folder for your project.
 
-.. tab::  {{win_powershell}}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item::  {{win_powershell}}
+      :sync: powershell
 
-        mkdir NewFolder
+      .. code-block:: powershell
 
-.. tab:: {{win_batch}}
+           mkdir NewFolder
 
-   .. code-block:: winbatch
+   .. tab-item:: {{win_batch}}
+      :sync: batch
 
-        mkdir NewFolder
+      .. code-block:: winbatch
 
-.. tab:: {{mac_bash}}
+           mkdir NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{mac_bash}}
+      :sync: mac
 
-        mkdir NewFolder
+      .. code-block:: bash
 
-.. tab:: {{linux_bash}}
+           mkdir NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{linux_bash}}
+      :sync: bash
 
-        mkdir NewFolder
+      .. code-block:: bash
+
+           mkdir NewFolder
 
 
 rm (Remove)
@@ -149,33 +173,39 @@ rm (Remove)
 
 The ``rm`` or ``del`` command is used to delete files and ``rm -r`` or ``rmdir /s`` to delete directories permanently. It is a powerful command that can help you remove unnecessary files from the file system.
 
-.. tab::  {{win_powershell}}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item::  {{win_powershell}}
+      :sync: powershell
 
-      rm NewFile.txt
-      rm -r NewFolder
+      .. code-block:: powershell
 
-.. tab:: {{win_batch}}
+         rm NewFile.txt
+         rm -r NewFolder
 
-   .. code-block:: winbatch
+   .. tab-item:: {{win_batch}}
+      :sync: batch
 
-      del NewFile.txt
-      rmdir /s NewFolder
+      .. code-block:: winbatch
 
-.. tab:: {{mac_bash}}
+         del NewFile.txt
+         rmdir /s NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{mac_bash}}
+      :sync: mac
 
-      rm NewFile.txt
-      rm -r NewFolder
+      .. code-block:: bash
 
-.. tab:: {{linux_bash}}
+         rm NewFile.txt
+         rm -r NewFolder
 
-   .. code-block:: bash
+   .. tab-item:: {{linux_bash}}
+      :sync: bash
 
-      rm NewFile.txt
-      rm -r NewFolder
+      .. code-block:: bash
+
+         rm NewFile.txt
+         rm -r NewFolder
 
 
 pip (Package Installer for Python)
@@ -183,29 +213,35 @@ pip (Package Installer for Python)
 
 The ``pip`` command is a package installer for Python that simplifies the process of managing and installing various Python
 
-.. tab::  {{win_powershell}}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item::  {{win_powershell}}
+      :sync: powershell
 
-      pip install <package_name>
+      .. code-block:: powershell
 
-.. tab:: {{win_batch}}
-    
-   .. code-block:: winbatch
+         pip install <package_name>
 
-      pip install <package_name>
+   .. tab-item:: {{win_batch}}
+      :sync: batch
+       
+      .. code-block:: winbatch
 
-.. tab:: {{mac_bash}}
+         pip install <package_name>
 
-    .. code-block:: bash
-    
-       pip3 install <package_name>
+   .. tab-item:: {{mac_bash}}
+      :sync: mac
 
-.. tab:: {{linux_bash}}
+      .. code-block:: bash
+       
+         pip3 install <package_name>
 
-    .. code-block:: bash
-    
-       pip3 install <package_name>
+   .. tab-item:: {{linux_bash}}
+      :sync: bash
+
+      .. code-block:: bash
+       
+         pip3 install <package_name>
 
 
 How to make using the terminal easier

@@ -54,29 +54,35 @@ can be specified in a single invocation of the program.
 
    ``pip list`` will give you the current list of installed packages.
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
+      .. code-block:: powershell
 
-.. tab:: {{ win_batch }}
+         python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      python3 -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         python3 -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      python3 -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
+      .. code-block:: bash
+
+         python3 -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
 The above will install:
 
@@ -133,29 +139,35 @@ Basically it contains the equivalent of many packages on the same line, see :ref
 
 Installation using a ``requirements.txt`` file is simply specifying the file with ``-r`` flag:
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      python -m pip install -r requirements.txt
+      .. code-block:: powershell
 
-.. tab:: {{ win_batch }}
+         python -m pip install -r requirements.txt
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      python -m pip install -r requirements.txt
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         python -m pip install -r requirements.txt
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      python3 -m pip install -r requirements.txt
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         python3 -m pip install -r requirements.txt
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      python3 -m pip install -r requirements.txt
+      .. code-block:: bash
+
+         python3 -m pip install -r requirements.txt
 
 
 .. _pip-navigating:
@@ -170,69 +182,75 @@ Here is a set of commands that can be useful for interacting with the ``pip``
 packages:
 
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      # List the packages installed
-      python -m pip list
+      .. code-block:: powershell
 
-      # Show additional information about a single package
-      python -m pip show numpy
+         # List the packages installed
+         python -m pip list
 
-      # Create a *fixed* file with the exact numbers in a requirement.txt
-      # compatible file format.
-      # In this command we will create a file called 'requirements.txt'
-      # as the command 'pipes' the output into that file
-      python -m pip freeze > requirements.txt
+         # Show additional information about a single package
+         python -m pip show numpy
 
-.. tab:: {{ win_batch }}
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python -m pip freeze > requirements.txt
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      # List the packages installed
-      python -m pip list
+      .. code-block:: winbatch
 
-      # Show additional information about a single package
-      python -m pip show numpy
+         # List the packages installed
+         python -m pip list
 
-      # Create a *fixed* file with the exact numbers in a requirement.txt
-      # compatible file format.
-      # In this command we will create a file called 'requirements.txt'
-      # as the command 'pipes' the output into that file
-      python -m pip freeze > requirements.txt
+         # Show additional information about a single package
+         python -m pip show numpy
 
-.. tab:: {{ mac_bash }}
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python -m pip freeze > requirements.txt
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      # List the packages installed
-      python3 -m pip list
+      .. code-block:: bash
 
-      # Show additional information about a single package
-      python3 -m pip show numpy
+         # List the packages installed
+         python3 -m pip list
 
-      # Create a *fixed* file with the exact numbers in a requirement.txt
-      # compatible file format.
-      # In this command we will create a file called 'requirements.txt'
-      # as the command 'pipes' the output into that file
-      python3 -m pip freeze > requirements.txt
+         # Show additional information about a single package
+         python3 -m pip show numpy
 
-.. tab:: {{ linux_bash }}
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python3 -m pip freeze > requirements.txt
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      # List the packages installed
-      python3 -m pip list
+      .. code-block:: bash
 
-      # Show additional information about a single package
-      python3 -m pip show numpy
+         # List the packages installed
+         python3 -m pip list
 
-      # Create a *fixed* file with the exact numbers in a requirement.txt
-      # compatible file format.
-      # In this command we will create a file called 'requirements.txt'
-      # as the command 'pipes' the output into that file
-      python3 -m pip freeze > requirements.txt
+         # Show additional information about a single package
+         python3 -m pip show numpy
+
+         # Create a *fixed* file with the exact numbers in a requirement.txt
+         # compatible file format.
+         # In this command we will create a file called 'requirements.txt'
+         # as the command 'pipes' the output into that file
+         python3 -m pip freeze > requirements.txt
 
 
 .. _pip-dependencies:
@@ -250,45 +268,51 @@ and new dependency requirements of each package arise.
 
 Below is a constructed example of a dependency conflict arising.
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      $> python -m pip install dtumathtools==1.0.1
-      ... lots of output
-      $> python -m pip install --upgrade numpy
-      ... lots of output ... then
-      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+      .. code-block:: powershell
 
-.. tab:: {{ win_batch }}
+         $> python -m pip install dtumathtools==1.0.1
+         ... lots of output
+         $> python -m pip install --upgrade numpy
+         ... lots of output ... then
+         dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      $> python -m pip install dtumathtools==1.0.1
-      ... lots of output
-      $> python -m pip install --upgrade numpy
-      ... lots of output ... then
-      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         $> python -m pip install dtumathtools==1.0.1
+         ... lots of output
+         $> python -m pip install --upgrade numpy
+         ... lots of output ... then
+         dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      $> python3 -m pip install dtumathtools==1.0.1
-      ... lots of output
-      $> python3 -m pip install --upgrade numpy
-      ... lots of output ... then
-      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         $> python3 -m pip install dtumathtools==1.0.1
+         ... lots of output
+         $> python3 -m pip install --upgrade numpy
+         ... lots of output ... then
+         dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      $> python3 -m pip install dtumathtools==1.0.1
-      ... lots of output
-      $> python3 -m pip install --upgrade numpy
-      ... lots of output ... then
-      dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
+      .. code-block:: bash
+
+         $> python3 -m pip install dtumathtools==1.0.1
+         ... lots of output
+         $> python3 -m pip install --upgrade numpy
+         ... lots of output ... then
+         dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
 
 The first command finalized package installation obeying all requirements between the installed
 packages (``dtumathtools`` depends on many other packages which will also be installed).
@@ -314,29 +338,35 @@ packages requirements! Sometimes this results in a broken installation and nothi
 
 To check possible conflicts in the current environment do
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      python -m pip check
+      .. code-block:: powershell
 
-.. tab:: {{ win_batch }}
+         python -m pip check
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      python -m pip check
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         python -m pip check
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      python3 -m pip check
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         python3 -m pip check
 
-   .. code-block:: bash
-      
-      python3 -m pip check
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
+
+      .. code-block:: bash
+         
+         python3 -m pip check
 
 
 .. _pip-venv-env:

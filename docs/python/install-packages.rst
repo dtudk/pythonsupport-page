@@ -25,52 +25,59 @@ Using the official Python distribution
 If you are using the official Python distribution, you will need to use the :ref:`pip` package manager. Open up a terminal and run the following: 
 
 
+.. tab-set::
 
-.. tab:: {{ win_powershell }}
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-   .. code-block:: powershell
+      .. code-block:: powershell
 
-      python -m pip install numpy
+         python -m pip install numpy
 
-.. tab:: {{ mac_bash }}
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      python3 -m pip install numpy
+         python3 -m pip install numpy
 
-.. tab:: {{ linux_bash }}
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-   .. code-block:: bash
+      .. code-block:: bash
 
-      python3 -m pip install numpy
+         python3 -m pip install numpy
 
 
-.. tip::
-
-   The code above will install the library ``numpy``. For installation of other libraries, simply delete ``numpy``, and write the name of the library you want to download.
+Replace ``numpy`` by the package name for installing other packages.
 
 .. note::
 
    If you get the error message ending in ``(mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))``, run the following instead:
 
 
-   .. tab:: {{ win_powershell }}
+   .. tab-set::
 
-      .. code-block:: powershell
+      .. tab-item:: {{ win_powershell }}
+         :sync: powershell
 
-         pip install --upgrade --force-reinstall numpy
+         .. code-block:: powershell
 
-   .. tab:: {{ mac_bash }}
+            pip install --upgrade --force-reinstall numpy
 
-      .. code-block:: bash
+      .. tab-item:: {{ mac_bash }}
+         :sync: mac
 
-         pip3 install --upgrade --force-reinstall numpy
+         .. code-block:: bash
 
-   .. tab:: {{ linux_bash }}
+            pip3 install --upgrade --force-reinstall numpy
 
-      .. code-block:: bash
+      .. tab-item:: {{ linux_bash }}
+         :sync: bash
 
-         pip3 install --upgrade --force-reinstall numpy
+         .. code-block:: bash
+
+            pip3 install --upgrade --force-reinstall numpy
 
 
 
@@ -82,25 +89,27 @@ If you are using a conda distribution, you will need to use the conda package ma
 On windows or on mac open a terminal and type:
 
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      conda install numpy
+      .. code-block:: powershell
 
-.. tab:: {{ mac_bash }}
+         conda install numpy
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      conda install numpy
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         conda install numpy
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      conda install numpy
+      .. code-block:: bash
 
+         conda install numpy
 
-.. tip::
-
-   The code above will install the library ``numpy``. For installation of other libraries, simply replace ``numpy`` with the name of the library you want to install.
+Replace ``numpy`` by the package name for installing other packages.

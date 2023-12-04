@@ -18,84 +18,96 @@ An environment can be created using:
    One can list the available *global* environments (created with ``--name``)
    by executing ``conda env list``.
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      conda create --name <name of env>
-      # create an environment named 'course-A' (in the global environment list)
-      conda create --name course-A
-      # alternatively the environment can be placed in a sub directory
-      conda create --prefix course-A
+      .. code-block:: powershell
 
-.. tab:: {{ win_batch }}
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      conda create --name <name of env>
-      # create an environment named 'course-A' (in the global environment list)
-      conda create --name course-A
-       # alternatively the environment can be placed in a sub directory
-      conda create --prefix course-A
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+          # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      conda create --name <name of env>
-      # create an environment named 'course-A' (in the global environment list)
-      conda create --name course-A
-      # alternatively the environment can be placed in a sub directory
-      conda create --prefix course-A
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      conda create --name <name of env>
-      # create an environment named 'course-A' (in the global environment list)
-      conda create --name course-A
-      # alternatively the environment can be placed in a sub directory
-      conda create --prefix course-A
+      .. code-block:: bash
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
 
 Once created, one can use the environment by *activating* it.
 Change ``course-A`` with the name of the environment.
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
-     
-      # if the enviroment was created with --name:
-      conda activate course-A
-      # if the environment was created in a sub directory (--prefix):
-      conda activate .\course-A
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-.. tab:: {{ win_batch }}
+      .. code-block:: powershell
+        
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate .\course-A
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      # if the enviroment was created with --name:
-      conda activate course-A
-      # if the environment was created in a sub directory (--prefix):
-      conda activate .\course-A
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate .\course-A
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      # if the enviroment was created with --name:
-      conda activate course-A
-      # if the environment was created in a sub directory (--prefix):
-      conda activate ./course-A
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      # if the enviroment was created with --name:
-      conda activate course-A
-      # if the environment was created in a sub directory (--prefix):
-      conda activate ./course-A
+      .. code-block:: bash
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
 
 
 Now every executed Python script will only use the packages installed
@@ -107,43 +119,49 @@ Below is a complete example of creating an environment using a specific Python
 version, installing a specific
 package, running a code using the environment, and getting out of it.
 
-.. tab:: {{ win_powershell }}
+.. tab-set::
 
-   .. code-block:: powershell
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      conda create --name numpy-env python=3.10
-      conda activate numpy-env
-      conda install "numpy=1.23"
-      python -c "import numpy as np ; print(np.__version__)"
-      conda deactivate
+      .. code-block:: powershell
 
-.. tab:: {{ win_batch }}
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
 
-   .. code-block:: winbatch
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
 
-      conda create --name numpy-env python=3.10
-      conda activate numpy-env
-      conda install "numpy=1.23"
-      python -c "import numpy as np ; print(np.__version__)"
-      conda deactivate
+      .. code-block:: winbatch
 
-.. tab:: {{ mac_bash }}
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
 
-   .. code-block:: bash
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
 
-      conda create --name numpy-env python=3.10
-      conda activate numpy-env
-      conda install "numpy=1.23"
-      python3 -c "import numpy as np ; print(np.__version__)"
-      conda deactivate
+      .. code-block:: bash
 
-.. tab:: {{ linux_bash }}
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
 
-   .. code-block:: bash
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
-      conda create --name numpy-env python=3.10
-      conda activate numpy-env
-      conda install "numpy=1.23"
-      python3 -c "import numpy as np ; print(np.__version__)"
-      conda deactivate
+      .. code-block:: bash
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
 

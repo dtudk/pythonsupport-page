@@ -46,21 +46,25 @@ that can be useful:
 
 For instance, after having installed ``numpy==1.22`` one can check:
 
-.. tab:: {{ pip }}
+.. tab-set::
 
-   .. code-block:: bash
+   .. tab-item:: {{ pip }}
+      :sync: pip
 
-      pip list
-      # or "grep"'ing for a specific package
-      pip list | grep numpy
+      .. code-block:: bash
 
-.. tab:: {{ conda }}
+         pip list
+         # or "grep"'ing for a specific package
+         pip list | grep numpy
 
-   .. code-block:: bash
+   .. tab-item:: {{ conda }}
+      :sync: conda
 
-      conda list
-      # or "grep"'ing for a specific package
-      conda list | grep numpy
+      .. code-block:: bash
+
+         conda list
+         # or "grep"'ing for a specific package
+         conda list | grep numpy
 
 Once the package is listed in the package list, check version and
 import:

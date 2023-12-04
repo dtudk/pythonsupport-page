@@ -43,10 +43,9 @@ MacOS
 
 * Open up a terminal and run the following command:
 
-.. tab:: {{ macos }}
 
-   .. code-block:: bash
+.. code-block:: bash
 
-      rm -rf ~/.vscode
-      rm -rf "~/Library/Application Support/Code"
+   rm -rf ~/.vscode
+   rm -rf "~/Library/Application Support/Code"
 
