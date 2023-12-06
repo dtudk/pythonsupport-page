@@ -48,11 +48,10 @@ project = 'DTU Python support'
 html_title = "DTU Python support"
 copyright = f'{year}, DTU Python support'
 author = 'DTU Python support developers'
-recommended_python = "3.11"
 
 # when we have a guideline:
 _pref_symbol = ":fas:`ranking-star`"
-_pref_symbol = ""
+#_pref_symbol = ""
 
 
 # -- General configuration ---------------------------------------------------
@@ -175,6 +174,7 @@ rst_epilog = f"""\
 .. _python-org-down-win: https://www.python.org/downloads/windows
 .. _python-org-down-mac: https://www.python.org/downloads/macos
 .. _python-org-down-linux: https://www.python.org/downloads/linux
+.. _python-org-rec: {_pythonsupport['python-org-recommended']}
 .. _pypi-org: https://pypi.org
 .. _pip-org: https://pip.pypa.io/en/stable
 
@@ -221,7 +221,7 @@ _icon_links = [
     {
         "name": "DTU help | External pages",
         "url": "#;",
-        "icon": f"fa-solid fa-ellipsis-vertical",
+        "icon": "fa-solid fa-ellipsis-vertical",
         "type": "fontawesome",
     },
     {
@@ -233,7 +233,7 @@ _icon_links = [
     {
         "name": "PyPi package installation repository",
         "url": "https://pypi.org/",
-        "icon": f"_static/logo-small.2a411bc6.svg",
+        "icon": "_static/logo-small.2a411bc6.svg",
         "type": "local",
     },
     {
@@ -418,10 +418,13 @@ html_context = {
     "github_repo": "pythonsupport-page",
     "ps_repository": _pythonsupport["repository"],
     "github_version": "main",
-    "python_version": recommended_python,
     "path_to_docs": "docs/",
     "pref_symbol": _pref_symbol,
     "python_org_rec": _pythonsupport["python-org-recommended"],
+    "python_version_min": _pythonsupport["python-version"]["min"],
+    "python_version_max": _pythonsupport["python-version"]["max"],
+    "python_version_recommended": _pythonsupport["python-version"]["recommended"],
+    "python_version": _pythonsupport["python-version"]["recommended"],
 
     # Installation methods
     "pip": f"pip {_pref_symbol}",

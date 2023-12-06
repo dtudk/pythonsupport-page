@@ -1,14 +1,18 @@
 .. _install-python:
 
-Official Python 
-=================
+Official Python {{pref_symbol}} 
+=====================================
 
-.. admonition:: Remove older Python versions
-   :class: dropdown warning
+.. tip::
 
-   We suggest removing any pre-installed Python versions and VS Code before 
+   DTU recommends using version {{ python_version }} of Python.
+
+   It is recommended to not have more Python versions installed (unless you feel confident in
+   selectively using explicit versions).
+
+   We suggest removing any pre-installed Python versions before 
    proceeding with this guide to ensure a smooth installation process.
-   For help with this process, take a look at the section on `Deleting multiple versions of python <Deleting multiple versions of python>`_.
+   For help with this process, take a look at :ref:`this section <uninstall-python>`.
 
 
 
@@ -40,7 +44,7 @@ Download & Installation
          .. tab-item:: python.org
             :sync: py-2nd
 
-            However, if you find yourself on an adventurous detour and can't access it there, you can still opt for the `official Python release <{{python_org_rec}}>`_.
+            However, if you find yourself on an adventurous detour and can't access it there, you can still opt for the `official Python release <python-org-rec_>`_.
 
             Download the **64bit** version.
 
@@ -76,7 +80,7 @@ Download & Installation
          .. tab-item:: python.org
             :sync: py-2nd
 
-            You can download the official python directly from `here <{{python_org_rec}}/>`_.
+            You can download the official python directly from `here <python-org-rec_>`_.
             After downloading the installer, the installation process should be relatively straightforward.
 
             Once installed, check it works. If it doesn't *and* you have an M1/M2/MX processor, you might
@@ -105,34 +109,75 @@ Download & Installation
          sudo apt install python3
 
 
-Verifying installation
-======================
+.. _install-python-packages:
 
-To verify if python is installed correctly follow the steps below:  
+Installing packages
+--------------------
 
+.. admonition:: Unsure what a *terminal* is?
+   :class: dropdown info
+
+   Please head over :ref:`here <os-terminal>` to understand how to open and use a terminal.
+
+Using this installation will require you to use :ref:`pip` (see link for more details).
+Open up a terminal and run the following: 
 
 .. tab-set::
 
-   .. tab-item:: {{ windows }}
-      :sync: win
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
 
-      #. Give your keyboard's window key a friendly nudge.  
-      #. Type ``powershell`` in the search bar, and hit enter to launch PowerShell.
-      #. In the powershell window, type ``python --version``
-      #. If you spot the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python in your machine |:snake:|.  
+      .. code-block:: powershell
 
-   .. tab-item:: {{ macos }}
+         python -m pip install numpy
+
+   .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      #. Give your keyboard's ``Command`` key a friendly nudge.
-      #. Type ``terminal`` in the search bar, and press Enter to open Terminal.
-      #. In the Terminal window, type ``python3 --version``
-      #. If you see the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python friend on your machine |:snake:|.
+      .. code-block:: bash
 
-   .. tab-item:: {{ linux}}
-      :sync: linux
+         python3 -m pip install numpy
 
-      #. Open a terminal
-      #. In the Terminal window, type ``python3 --version``
-      #. If you see the ``Python x.xx.x`` smiling back at you, you're all set! You've got a Python friend on your machine |:snake:|.
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
 
+      .. code-block:: bash
+
+         python3 -m pip install numpy
+
+
+Replace ``numpy`` by the package name you wish to install.
+
+.. admonition:: Seeing ``(mach-o file, but is an incompatible architecture ...``?
+   :class: dropdown warning
+
+   If you get the error message ending in
+
+   .. code-block:: shell
+   
+      (mach-o file, but is an incompatible architecture (have 'x86_64', need 'arm64'))``,
+
+   Then run the following command:
+
+   .. tab-set::
+
+      .. tab-item:: {{ win_powershell }}
+         :sync: powershell
+
+         .. code-block:: powershell
+
+            pip install --upgrade --force-reinstall numpy
+
+      .. tab-item:: {{ mac_bash }}
+         :sync: mac
+
+         .. code-block:: bash
+
+            pip3 install --upgrade --force-reinstall numpy
+
+      .. tab-item:: {{ linux_bash }}
+         :sync: bash
+
+         .. code-block:: bash
+
+            pip3 install --upgrade --force-reinstall numpy

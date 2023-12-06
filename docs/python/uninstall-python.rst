@@ -47,6 +47,6 @@ The script will then delete all versions of python that you have installed on yo
 
 If this does not work check out :ref:`this page <os-terminal>`.
 
-.. note::
+.. warning::
    This will delete all versions of Python that you have installed on your computer - including packages that you have installed using ``pip`` or ``conda install``.
 

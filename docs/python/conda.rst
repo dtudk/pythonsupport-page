@@ -6,9 +6,9 @@
 ====================
 
 .. button-link:: https://www.google.com/search?q=cheatsheet+python+conda
-   :color: {{ cheatsheet_color }}
+   :color: muted
    :align: right
-   :tooltip: Search google for cheatsheet
+   :tooltip: Search Google for cheatsheet
 
    Find a conda cheatsheet {{ cheatsheet_icon }}
 

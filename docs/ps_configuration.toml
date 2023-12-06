@@ -1,5 +1,4 @@
 [pythonsupport]
-python-org-recommended = "https://www.python.org/downloads/release/python-3116/"
 mail = "pythonsupport@dtu.dk"
 homepage = "https://pythonsupport.dtu.dk"
 repository = "https://github.com/dtudk/pythonsupport-page"
@@ -13,6 +12,11 @@ online-days = [
    "Thursday",
    "Friday",
 ]
+
+python-org-recommended = "https://www.python.org/downloads/release/python-3116/"
+python-version.min = "3.8"
+python-version.recommended = "3.11"
+python-version.max = "3.11"
 
 
 [semester]
@@ -70,6 +74,6 @@ home = "https://01003.compute.dtu.dk"
 home = "https://01004.compute.dtu.dk"
 
 [course.02002]
-home = "https://02002.compute.dtu.dk/da/index.html"
+home = "https://02002.compute.dtu.dk/index.html"
 [course.02003]
 home = "https://02002.compute.dtu.dk/index.html"

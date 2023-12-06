@@ -98,7 +98,7 @@ General IT questions
    | Their phone number is: +45 452 55555.
    | Office hours 305.027 8:00--15:00.
 DTU Learn
-   Go here: :full-link:`https://learnsupport.dtu.dk/contact.php`
+   Go here: :full-link:`https://learnsupport.dtu.dk`
 
 
 .. warning::

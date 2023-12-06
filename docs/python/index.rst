@@ -12,4 +12,4 @@ For more advanced topics, please refer to the section `Advanced usage`.
 
    install-python.rst
    install-conda.rst
-   install-packages.rst
+   install-verify.rst

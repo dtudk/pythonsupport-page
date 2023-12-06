@@ -16,13 +16,15 @@ DTU Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
-.. card:: Having last minute problems before exams?
-   :class-card: sd-color-primary
+.. card:: Python Installation Support closed!
+   :class-card: sd-color-info
 
-   Please contact us through `Discord <ps-discord-invite_>`_ or :mail:`pythonsupport@dtu.dk`.
-   We will respond in regular office hours.
+   The Python Installation Support is closed until the spring semester.
 
-   We will also be open in 302.A92 on Tuesday 5th of December between 13-15.
+   Our `Discord <ps-discord-invite_>`_ channel will remain open for students
+   to interact with each other.
+
+   See you in the spring.
 
 
 .. card:: New student at DTU {{current_year}}? Welcome!
@@ -158,3 +160,13 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    faqs/index.rst
    python/uninstall.rst
    src/about.rst
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+   :caption: Supported functionalities
+
+   {{python_version_min}} -- {{python_version_max}} <python/supported.rst>
+   Conda <python/supported.rst>
+   Python.org <python/supported.rst>
+   Virtual Environments <python/supported.rst>
