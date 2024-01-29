@@ -16,7 +16,7 @@ online-days = [
 python-org-recommended = "https://www.python.org/downloads/release/python-3116/"
 python-version.min = "3.8"
 python-version.recommended = "3.11"
-python-version.max = "3.11"
+python-version.max = "3.12"
 
 
 [semester]
