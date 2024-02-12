@@ -12,7 +12,7 @@ run=commands.run
 rm -f $run
 mkdir -p tmp
 echo "Running creation of $run script"
-python merge.py $run 
+python3 merge.py $run
 
 echo "Will run:"
 cat $run

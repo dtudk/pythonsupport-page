@@ -16,13 +16,14 @@ DTU Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
-.. card:: Python Installation Support open!
-   :class-card: sd-color-info
+..
+	.. card:: Python Installation Support open!
+	   :class-card: sd-color-info
 
-   The Python Installation Support is open again in the spring semester.
+	   The Python Installation Support is open again in the spring semester.
 
-   Our `Discord <ps-discord-invite_>`_ channel is still open for students
-   to interact with each other.
+	   Our `Discord <ps-discord-invite_>`_ channel is still open for students
+	   to interact with each other.
 
 
 .. card:: New student at DTU {{current_year}}? Welcome!
