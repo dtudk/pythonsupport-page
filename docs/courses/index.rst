@@ -14,7 +14,7 @@ DTU Courses
 .. tip::
 
    If an error is encountered during the installation process, it is *vital*
-   to report this to :email:`pythonsupport@dtu.dk` so we can correct/add
+   to report this to :mail:`pythonsupport@dtu.dk` so we can correct/add
    content for work-arounds.
 
    Thanks!
