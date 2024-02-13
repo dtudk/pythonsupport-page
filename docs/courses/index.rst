@@ -28,6 +28,7 @@ DTU Courses
    01002/index.rst
    02002/index.rst
    02461/index.rst
+   10060/index.rst
 
 
 Template guide for new course
