@@ -448,10 +448,10 @@ html_context = {
     "spyder": "Spyder",
 
     # Operating shells
-    "win_powershell": f"Windows | Powershell {_pref_symbol}",
+    "win_powershell": f"Windows | PS {_pref_symbol}",
     "win_batch": "Windows | Batch",
-    "mac_bash": "MacOS | Bash",
-    "linux_bash": "Linux | Bash",
+    "mac_bash": "MacOS",
+    "linux_bash": "Linux",
     "unix_bash": "Bash",
 
     # Cheatsheet information
