@@ -5,7 +5,7 @@
 
 .. meta::
    :description: Technical University of Denmark (DTU) Python Installation Support
-   :keywords: dtudk, dtu, support, python, pip, conda, venv, virtualenv
+   :keywords: dtudk, dtu, support, python, python3, pip, pip3, conda, venv, virtualenv
 
 .. todolist::
 
@@ -145,6 +145,7 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    quickstart/index.rst
    courses/index.rst
    python/index.rst
+   faqs/index.rst
 
 .. toctree::
    :maxdepth: 2
@@ -156,7 +157,6 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    os/index.rst
    ides/index.rst
    python/environments.rst
-   faqs/index.rst
    python/uninstall.rst
    src/about.rst
 
