@@ -9,6 +9,12 @@
      - Wednesday
      - Thursday
      - Friday
+   * - 8-10
+     - 302.A92
+     -
+     -
+     - 302.A92
+     -
    * - 10-12:30
      - 302.A92
      - 302.A92
@@ -26,10 +32,10 @@
      - Online
      - Online
      - Online
-     - Online
+     -
    * - 20-22
      - Online
      - Online
      - Online
      - Online
-     - Online
+     -
