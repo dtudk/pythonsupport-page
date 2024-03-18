@@ -46,6 +46,8 @@ class Lang(enum.StrEnum):
     DANISH = "dk"
 
 
+COURSE_SCRAPES_URL = "https://kurser.dtu.dk/course/{course_id}"
+
 COURSE_SCRAPES_PATHS = {
     Lang.ENGLISH: Path(__file__).parent / "course-scrapes" / "en",
     Lang.DANISH: Path(__file__).parent / "course-scrapes" / "dk",
@@ -197,11 +199,10 @@ def g_course_soup(course_id: str, lang: Lang) -> BeautifulSoup:
             return BeautifulSoup(f.read(), features="html.parser")
 
     else:
-        print(
-            f"[https://kurser.dtu.dk/course/{course_id}] GET {lang} to {path_scrape_cache}..."
-        )
+        url = COURSE_SCRAPES_URL.format(course_id=course_id)
+        print(f"[{url}] GET {lang} to {path_scrape_cache}...")
         r = requests.get(
-            f"https://kurser.dtu.dk/course/{course_id}",
+            f"{url}",
             cookies=g_session_cookies(LANG_TO_LANGSESSIONCODE[lang]),
         )
 
@@ -233,6 +234,7 @@ def parse_course_information(course_id: str, soups: dict[Lang, BeautifulSoup]):
         "course_id": course_id,
         "name": {},
         "classification": {},
+        "assessment": {},
         "faculty": {},
         "summary": {},
         "objectives": {},
@@ -272,7 +274,7 @@ def parse_course_information(course_id: str, soups: dict[Lang, BeautifulSoup]):
     ):
         label = row.find("label").get_text(strip=True)
 
-        match row.find("label").get_text(strip=True):
+        match label:
             case "Danish title":
                 course["name"][Lang.DANISH] = row.find_all("td")[1].get_text(
                     strip=True,
@@ -316,6 +318,44 @@ def parse_course_information(course_id: str, soups: dict[Lang, BeautifulSoup]):
 
                 course["degree"] = degree
                 course["classification"][degree] = default_degree_classi
+
+            # case _:
+            #    print(f"unparsed title information: {label}")
+
+    ## Parse: Title Table
+    for row in el_table_properties.tbody.find_all(
+        "tr",
+        recursive=False,
+    ):
+        label = row.find("label").get_text(strip=True)
+
+        match label:
+            case "Schedule":
+                course["schedule"] = row.find_all("td")[1].get_text(strip=True)
+
+            case "Location":
+                course["location"] = row.find_all("td")[1].get_text(strip=True)
+
+            case "Type of assessment":
+                course["assessment"]["type"] = row.find_all("td")[1].get_text(
+                    strip=True
+                )
+
+            case "Aid":
+                course["assessment"]["aid"] = row.find_all("td")[1].get_text(strip=True)
+
+            case "Exam duration":
+                course["assessment"]["duration"] = row.find_all("td")[1].get_text(
+                    strip=True
+                )
+
+            case "Evaluation":
+                course["assessment"]["evaluation"] = row.find_all("td")[1].get_text(
+                    strip=True
+                )
+
+            # case _:
+            #    print(f"unparsed properties information: {label}")
 
     ## Parse: Department Table
     for row in el_table_department.tbody.find_all(
@@ -531,9 +571,8 @@ if __name__ == "__main__":
 
     # for course_id in {"28150"}:
     for course_id in course_ids:
-        print(
-            f"[https://kurser.dtu.dk/course/{course_id}] Processing Course {course_id}..."
-        )
+        url = COURSE_SCRAPES_URL.format(course_id=course_id)
+        print(f"[{url}] Processing Course {course_id}...")
 
         course_soups = {
             Lang.ENGLISH: g_course_soup(course_id, Lang.ENGLISH),
@@ -564,9 +603,11 @@ if __name__ == "__main__":
                         for real_line in line_string.split("  \\n")
                     ]
                     real_lines = [
-                        real_line[:2] + real_line[2:].capitalize()
-                        if real_line.startswith("* ")
-                        else real_line
+                        (
+                            real_line[:2] + real_line[2:].capitalize()
+                            if real_line.startswith("* ")
+                            else real_line
+                        )
                         for real_line in real_lines
                     ]
 
@@ -586,8 +627,6 @@ if __name__ == "__main__":
             toml_string = tomlkit.dumps(course_config)
             f.write(reparse_toml(toml_string))
 
-        print(
-            f"[https://kurser.dtu.dk/course/{course_id}] Wrote to {path_course_config}..."
-        )
+        print(f"[{url}] Wrote to {path_course_config}...")
         print()
         print()
