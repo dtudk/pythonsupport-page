@@ -282,7 +282,7 @@ html_js_files = [
 
 html_css_files = [
     ("css/custom_styles.css",{'priority':999}),
-    "css/colors.css",
+    "css/colors.css"
 ]
 
 
@@ -510,3 +510,7 @@ def setup(app):
         app.connect("include-read", rstjinja_include)
     except BaseException as e:
         print("cannot do jinja-replacements on included files")
+
+
+
+

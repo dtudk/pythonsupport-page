@@ -10,11 +10,8 @@
 .. todolist::
 
 
-DTU Python support
+DTU Python Support
 ==================
-
--- Polytechnical Foundation courses
------------------------------------
 
 ..
 	.. card:: Python Installation Support open!
@@ -25,8 +22,15 @@ DTU Python support
 	   Our `Discord <ps-discord-invite_>`_ channel is still open for students
 	   to interact with each other.
 
+Welcome to the DTU student support unit!  
+We are here to help with Python installation problems related
+to courses at DTU.
 
-.. card:: New student at DTU {{current_year}}? Welcome!
+Our goal is to ensure that students can get a Python
+environment up and running according to the needs of DTU courses.  
+Help can be requested through various channels:
+
+.. card:: New to Python?
    :class-card: sd-color-primary
 
    .. button-link:: https://02002.compute.dtu.dk/installation/index.html
@@ -34,32 +38,32 @@ DTU Python support
       :expand:
       :click-parent:
 
-      Just landed @ DTU
-        -- press here for the Python installation guide
+      
+        -- Press here for installing Python
 
 .. grid:: 1 1 2 2
     :gutter: 2
 
 
-    .. grid-item-card:: :fas:`person-running` -- Quick-start guide
+    .. grid-item-card:: :fas:`person-running` -- Office hours
         :link: quickstart/index
         :link-type: doc
 
-        New to Python @ DTU? Quickly get started.
+        You can find us at building 302 room 92, here you can look at our opening hours.
 
-    .. grid-item-card::  :fas:`book-open` -- Courses
+    .. grid-item-card::  :fas:`book-open` -- Documentation
         :link: courses/index
         :link-type: doc
 
-        Course specific installation guides
+        Here you can find important information about conda, the terminal, pip install, IDEs, environments and more!
+
 
     .. grid-item-card:: :fas:`envelope` -- pythonsupport@dtu.dk 
         :link: mailto:pythonsupport@dtu.dk
         :link-type: url
 
-        | {{online_days}} in the evening.
-        | Contact us outside working hours.
-   
+        | You can contact us {{online_days}} via email.
+
     .. grid-item-card:: :fab:`discord` -- Chat with us
         :link: https://discord.gg/h8EVaV9ShP
         :link-type: url
@@ -68,104 +72,98 @@ DTU Python support
         | Contact us outside working hours.
 
 
-Welcome to the DTU student support unit!  
-We are here to help with Python installation problems related
-to courses at DTU.
 
-.. todo::
+.. .. todo::
 
-   Re-insert this when we have a common guideline.
-   When encountering the icon {{ pref_symbol }} you are using the
-   recommended DTU Python installation procedure.
-
-Our goal is to ensure that students can get a Python
-environment up and running according to the needs of DTU courses.  
-Help can be requested through various channels:
-
-.. todo::
-
-   Should these (below) be here? Or is the above enough?
-
-Office hours
-   we will have physical presence at DTU Lyngby campus on differing locations
-   depending on the used lecture rooms in the Polytechnical Foundation courses.
-   See further down for our locations during specific weeks of the semester.
-   This page will be updated continuously.
-
-Mail -- :mail:`pythonsupport@dtu.dk`  |  {{online_days}} in the evening
-   Outside of office hours (during the semester) we can be contacted through emails.
-   We strive to return answers as soon as possible.
-
-Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_  |  {{online_days}} in the evening
-   Our support team will also be present on the Discord chat service during the semester.
-
-   Using the Discord channel requires signing up to Discord's terms, DTU
-   has no control over Discord and how they use your data. If you feel uncomfortable
-   about signing up, please use the email or the physical meet-ups.
+..    Re-insert this when we have a common guideline.
+..    When encountering the icon {{ pref_symbol }} you are using the
+..    recommended DTU Python installation procedure.
 
 
-.. include:: /timetable/index.rst
+
+.. .. todo::
+
+..    Should these (below) be here? Or is the above enough?
+
+.. Office hours
+..    we will have physical presence at DTU Lyngby campus on differing locations
+..    depending on the used lecture rooms in the Polytechnical Foundation courses.
+..    See further down for our locations during specific weeks of the semester.
+..    This page will be updated continuously.
+
+.. Mail -- :mail:`pythonsupport@dtu.dk`  |  {{online_days}} in the evening
+..    Outside of office hours (during the semester) we can be contacted through emails.
+..    We strive to return answers as soon as possible.
+
+.. Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_  |  {{online_days}} in the evening
+..    Our support team will also be present on the Discord chat service during the semester.
+
+..    Using the Discord channel requires signing up to Discord's terms, DTU
+..    has no control over Discord and how they use your data. If you feel uncomfortable
+..    about signing up, please use the email or the physical meet-ups.
 
 
-.. note::
+.. .. include:: /timetable/index.rst
 
-   Currently we only support installation problems related
-   to Python (it self) and packages required in specific courses.
-   These are the Polytechnical Foundation courses:
+
+.. .. .. note::
+
+..    Currently we only support installation problems related
+..    to Python (it self) and packages required in specific courses.
+..    These are the Polytechnical Foundation courses:
    
-   - :course-base:`01001`, :course-base:`01002`, :course-base:`01003` and :course-base:`01004`
-     Mathematics 1
-   - :course-base:`02002` and :course-base:`02003`
-     Computer Programming
-   - :course-base:`02402`
-     Statistics
-   - :course-base:`10060`, :course-base:`10063` and :course-base:`10065`
-     Physics
-   - :course-base:`26020`, :course-base:`26021` and :course-base:`26022`
-     Chemistry
-   - :course-base:`27020`
-     Bioengineering
-   - :course-base:`42620`, :course-base:`42622`
-     Science, Technology and Society
-   - :course-base:`42500`, :course-base:`42501`, :course-base:`42504`
-     Innovation in Engineering
-   - :course-base:`12100`
-     Quantitative Sustainability
+..    - :course-base:`01001`, :course-base:`01002`, :course-base:`01003` and :course-base:`01004`
+..      Mathematics 1
+..    - :course-base:`02002` and :course-base:`02003`
+..      Computer Programming
+..    - :course-base:`02402`
+..      Statistics
+..    - :course-base:`10060`, :course-base:`10063` and :course-base:`10065`
+..      Physics
+..    - :course-base:`26020`, :course-base:`26021` and :course-base:`26022`
+..      Chemistry
+..    - :course-base:`27020`
+..      Bioengineering
+..    - :course-base:`42620`, :course-base:`42622`
+..      Science, Technology and Society
+..    - :course-base:`42500`, :course-base:`42501`, :course-base:`42504`
+..      Innovation in Engineering
+..    - :course-base:`12100`
+..      Quantitative Sustainability
 
-   Many more will come! Our support unit is new, and we wish to figure
-   out what the need is among our students, please do not hesitate
-   to contact us regarding other courses, we will use it to understand the
-   need for Python support at DTU.
+..    Many more will come! Our support unit is new, and we wish to figure
+..    out what the need is among our students, please do not hesitate
+..    to contact us regarding other courses, we will use it to understand the
+..    need for Python support at DTU.
 
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
-   quickstart/index.rst
-   courses/index.rst
    python/index.rst
+   python/index2.rst
    faqs/index.rst
 
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Advanced usage
+.. .. toctree::
+..    :maxdepth: 2
+..    :hidden:
+..    :caption: Documentation
    
-   python/pip.rst
-   python/conda.rst
-   os/index.rst
-   ides/index.rst
-   python/environments.rst
-   python/uninstall.rst
-   src/about.rst
+..    python/pip.rst
+..    python/conda.rst
+..    os/index.rst
+..    ides/index.rst
+..    python/environments.rst
+..    python/uninstall.rst
+..    src/about.rst
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: Supported functionalities
+.. .. toctree::
+..    :maxdepth: 1
+..    :hidden:
+..    :caption: Supported functionalities
 
-   {{python_version_min}} -- {{python_version_max}} <python/supported.rst>
-   Conda <python/supported.rst>
-   Python.org <python/supported.rst>
-   Virtual Environments <python/supported.rst>
+..    {{python_version_min}} -- {{python_version_max}} <python/supported.rst>
+..    Conda <python/supported.rst>
+..    Python.org <python/supported.rst>
+..    Virtual Environments <python/supported.rst>
