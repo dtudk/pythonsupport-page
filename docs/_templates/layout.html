@@ -1,0 +1,28 @@
+<!-- _templates/layout.html -->
+{% extends "!layout.html" %}
+
+{% block html %}
+<div class="wy-grid-for-nav">
+    <div class="wy-nav-side">
+        <div class="wy-side-scroll">
+            <div class="wy-side-nav-search">
+                {{ super() }}
+            </div>
+        </div>
+    </div>
+    <div class="wy-nav-content-wrap">
+        <div class="wy-nav-content">
+            <header class="wy-nav-top">
+                <div class="header-wrapper">
+                    <a href="https://pythonsupport.dtu.dk" class="logo-container">
+                        <img src="{{ pathto('_static/DTU_logo_Coral_RGB.png', 1) }}" alt="DTU Logo">
+                    </a>
+                    <nav class="header-links">
+                        {{ super() }}
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+{% endblock %}

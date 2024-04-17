@@ -1,3 +1,5 @@
+.. _homepage-reference:
+
 .. pythonsupport documentation master file, created by
    sphinx-quickstart on Mon Aug  7 12:41:08 2023.
    You can adapt this file completely to your liking, but it should at least
@@ -10,144 +12,93 @@
 .. todolist::
 
 
-DTU Python support
-==================
+DTU Python Installation Support
+===============================
 
--- Polytechnical Foundation courses
------------------------------------
-
-.. .. admonition:: Extra open for the Programming 02002 re-exam!
-   :class: important
-
-   We are open in 302 on the 28th and 29th of May, between 10-16.
-
-   Drop by if you have problems!
-
-.. .. admonition:: Help us improve the Python Support webpage!
-   :class: important
-
-   We need your input! **Please take a moment to complete our survey** and help shape the DTU Python Support website's future. The survey is anonymous but you will need to log in with your DTU account to fill it in. You can access the survey here: `Complete the Survey <https://forms.office.com/e/pFZ4AM8MhA>`_.
-
-..
-	.. card:: Python Installation Support open!
-	   :class-card: sd-color-info
-
-	   The Python Installation Support is open again in the spring semester.
-
-	   Our `Discord <ps-discord-invite_>`_ channel is still open for students
-	   to interact with each other.
-
-
-.. card:: New student at DTU {{current_year}}? Welcome!
-   :class-card: sd-color-primary
-
-   .. button-link:: https://02002.compute.dtu.dk/installation/index.html
-      :color: primary
-      :expand:
-      :click-parent:
-
-      Just landed @ DTU
-        -- press here for the Python installation guide
-
-.. grid:: 1 1 2 2
-    :gutter: 2
-
-
-    .. grid-item-card:: :fas:`person-running` -- Quick-start guide
-        :link: quickstart/index
-        :link-type: doc
-
-        New to Python @ DTU? Quickly get started.
-
-    .. grid-item-card::  :fas:`book-open` -- Courses
-        :link: courses/index
-        :link-type: doc
-
-        Course specific installation guides
-
-    .. grid-item-card:: :fas:`envelope` -- pythonsupport@dtu.dk 
-        :link: mailto:pythonsupport@dtu.dk
-        :link-type: url
-
-        | {{online_days}} in the evening.
-        | Contact us outside working hours.
-   
-    .. grid-item-card:: :fab:`discord` -- Chat with us
-        :link: https://discord.gg/h8EVaV9ShP
-        :link-type: url
-
-        | {{online_days}} in the evening.
-        | Contact us outside working hours.
-
-
-Welcome to the DTU student support unit!  
-We are here to help with Python installation problems related
-to courses at DTU.
 
 .. todo::
 
-   Re-insert this when we have a common guideline.
-   When encountering the icon {{ pref_symbol }} you are using the
-   recommended DTU Python installation procedure.
+   On different machines the CSS might look different. Some have complete
+   Red-Coral as underlines, others have blue+orange and stuff...
+   Might be CSS problems, or something that
+
+
+.. raw:: html
+      :file: html/main_banner.html
 
 Our goal is to ensure that students can get a Python
 environment up and running according to the needs of DTU courses.  
 Help can be requested through various channels:
 
-.. todo::
 
-   Should these (below) be here? Or is the above enough?
+.. _reach-us-reference:
+--------
+Reach us
+--------
 
+.. grid:: 1 1 1 3
+   :gutter: 1
+
+   .. grid-item-card:: :fas:`person-running` -- Visit us
+      :link: #office-hours
+
+      | You can find us at building **302**, room **92** {{online_days}}. Click to see our office hours.
+
+   .. grid-item-card:: :fas:`envelope` -- E-mail us
+      :link: mailto:pythonsupport@dtu.dk
+      :link-type: url
+
+      | You can contact us via email at pythonsupport@dtu.dk.
+
+   .. grid-item-card:: :fab:`discord` -- Chat with us
+      :link: https://discord.gg/h8EVaV9ShP
+      :link-type: url
+
+      | Join our Discord channel to reach us online, even after normal working hours.
+
+------------------------
+What's on this website?
+------------------------
+
+Welcome to the DTU Python Installation Support website. This website provides 
+essential information and resources for installing Python on your 
+personal computer, and helping you get ready to start programming with Python.
+
+.. grid:: 1 1 1 2
+   :gutter: 1
+
+   .. grid-item-card:: :fas:`download` -- Install Python
+      :link: install-python-reference
+
+      | Access installation guides based on your operating system.
+
+   .. grid-item-card:: :fas:`book` -- DTU Course Guidelines
+      :link: course-index
+
+      | Find installation guides for specific DTU courses or host one if you are an instructor.
+
+   .. grid-item-card:: :fas:`info-circle` -- Learn More
+      :link: Documentation_index2
+
+      | Navigate Python with information on pip, environments, terminal usage, and uninstallation.
+
+   .. grid-item-card:: :fas:`video` -- Video Tutorials
+      :link: video-tutorials-reference
+
+      | Watch video guides on essential Python topics.
+
+.. _office-hours:
+
+------------
 Office hours
-   we will have physical presence at DTU Lyngby campus on differing locations
-   depending on the used lecture rooms in the Polytechnical Foundation courses.
-   See further down for our locations during specific weeks of the semester.
-   This page will be updated continuously.
+------------
+ 
+.. include:: /timetable/timetables.rst
 
-Mail -- :mail:`pythonsupport@dtu.dk`  |  {{online_days}} in the evening
-   Outside of office hours (during the semester) we can be contacted through emails.
-   We strive to return answers as soon as possible.
-
-Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_>`_  |  {{online_days}} in the evening
-   Our support team will also be present on the Discord chat service during the semester.
-
-   Using the Discord channel requires signing up to Discord's terms, DTU
-   has no control over Discord and how they use your data. If you feel uncomfortable
-   about signing up, please use the email or the physical meet-ups.
+*Available via online channels (e-mail and Discord) during all office hours.*
 
 
-.. include:: /timetable/index.rst
-
-
-.. note::
-
-   Currently we only support installation problems related
-   to Python (it self) and packages required in specific courses.
-   These are the Polytechnical Foundation courses:
-   
-   - :course-base:`01001`, :course-base:`01002`, :course-base:`01003` and :course-base:`01004`
-     Mathematics 1
-   - :course-base:`02002` and :course-base:`02003`
-     Computer Programming
-   - :course-base:`02402`
-     Statistics
-   - :course-base:`10060`, :course-base:`10063` and :course-base:`10065`
-     Physics
-   - :course-base:`26020`, :course-base:`26021` and :course-base:`26022`
-     Chemistry
-   - :course-base:`27020`
-     Bioengineering
-   - :course-base:`42620`, :course-base:`42622`
-     Science, Technology and Society
-   - :course-base:`42500`, :course-base:`42501`, :course-base:`42504`
-     Innovation in Engineering
-   - :course-base:`12100`
-     Quantitative Sustainability
-
-   Many more will come! Our support unit is new, and we wish to figure
-   out what the need is among our students, please do not hesitate
-   to contact us regarding other courses, we will use it to understand the
-   need for Python support at DTU.
+.. .. todo::
 
 
 .. toctree::
@@ -155,29 +106,10 @@ Discord -- `channel <ps-discord-general_>`_ and `invite link <ps-discord-invite_
    :hidden:
 
    quickstart/index.rst
-   courses/index.rst
-   python/index.rst
-   faqs/index.rst
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Advanced usage
+   .. essentials_first/index.rst
    
-   python/pip.rst
-   python/conda.rst
-   os/index.rst
-   ides/index.rst
-   python/environments.rst
-   python/uninstall.rst
-   src/about.rst
-
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: Supported functionalities
-
-   {{python_version_min}} -- {{python_version_max}} <python/supported.rst>
-   Conda <python/supported.rst>
-   Python.org <python/supported.rst>
-   Virtual Environments <python/supported.rst>
+   courses/index.rst
+   menu/index.rst
+   .. faqs/index.rst
+   
+   Knowledgebase/index.rst

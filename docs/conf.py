@@ -3,6 +3,8 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+
+
 print("vvvvv INITIALIZING conf.py vvvvv")
 
 # -- Project information -----------------------------------------------------
@@ -11,6 +13,11 @@ from pathlib import Path
 import os
 import datetime
 import sys
+
+html_logo= '_static/DTU_logo_Coral_RGB.png'
+
+
+templates_path = ['_templates']
 
 _cwd = Path().resolve()
 
@@ -45,7 +52,10 @@ def version2tuple(vers):
 year = datetime.date.today().year
 
 project = 'DTU Python support'
-html_title = "DTU Python support"
+# conf.py
+html_title = ""
+html_short_title = ""
+
 copyright = f'{year}, DTU Python support'
 author = 'DTU Python support developers'
 
@@ -245,27 +255,27 @@ _icon_links = [
 ]
 
 
-html_theme_options = {
-    "path_to_docs": "docs/",
-    "use_repository_button": True,
-    "repository_provider": "github",
-    "repository_url": _pythonsupport["repository"],
-    "use_edit_page_button": True,
-    "use_fullscreen_button": True,
-    "header_links_before_dropdown": 4,
-    "navbar_align": "content",
-    "navbar_center": ["navbar-nav"],
-    "icon_links": _icon_links,
-}
+# html_theme_options = {
+#     "path_to_docs": "docs/",
+#     "use_repository_button": True,
+#     "repository_provider": "github",
+#     "repository_url": _pythonsupport["repository"],
+#     "use_edit_page_button": True,
+#     "use_fullscreen_button": True,
+#     "header_links_before_dropdown": 4,
+#     "navbar_align": "content",
+#     "navbar_center": ["navbar-nav"],
+#     "icon_links": _icon_links,
+# }
 
-# currently not working... I don't know why..
-_html_sidebars = {
-    "**": [
-        "search-field",
-        "sidebar-nav-bs",
-        "sidebar-ethical-ads",
-    ]
-}
+# # currently not working... I don't know why..
+# _html_sidebars = {
+#     "**": [
+#         "search-field",
+#         "sidebar-nav-bs",
+#         "sidebar-ethical-ads",
+#     ]
+# }
 
 _course_json_url = "_static/course_switcher.json"
 if False:
@@ -273,16 +283,20 @@ if False:
         "json_url": _course_json_url,
         "version_match": "courses",
     }
-    #html_theme_options["switcher"]["json_url"] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
+    html_theme_options["switcher"]["json_url"] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
 
 html_js_files = [
     "js/external_tab.js",
+    "js/custom.js"
 ]
 
 html_css_files = [
-    ("css/custom_styles.css",{'priority':999}),
-    "css/colors.css",
+    ("css/bannerStyles.css", {'priority': 999}),
+    ("css/questionairStyles.css", {'priority': 999}),
+    ("css/popupStyles.css", {'priority': 999}),
+    ("css/custom_styles.css", {'priority': 998}),
+    "css/colors.css"
 ]
 
 
@@ -427,7 +441,7 @@ html_context = {
     "python_version": _pythonsupport["python-version"]["recommended"],
 
     # Installation methods
-    "pip": f"pip {_pref_symbol}",
+    "pip": "pip",
     "conda": "conda",
     "poetry": "poetry",
     "pyenv": "pyenv",
@@ -448,7 +462,7 @@ html_context = {
     "spyder": "Spyder",
 
     # Operating shells
-    "win_powershell": f"Windows | PS {_pref_symbol}",
+    "win_powershell": "Windows | PS",
     "win_batch": "Windows | Batch",
     "mac_bash": "MacOS",
     "linux_bash": "Linux",
@@ -510,3 +524,50 @@ def setup(app):
         app.connect("include-read", rstjinja_include)
     except BaseException as e:
         print("cannot do jinja-replacements on included files")
+
+
+
+
+
+
+html_theme_options = {
+    
+    "navbar_center": ["logo_button.html","navbar-nav","theme-switcher"],
+    # "navbar_end": ["theme-switcher","search-field"],
+    "lefttsidebar": "false",
+    "icon_links": _icon_links,
+    "header_links_before_dropdown": 10,
+    "back_to_top_button": True,
+    "use_repository_button": True,
+    "repository_provider": "github",
+    "repository_url": _pythonsupport["repository"],
+}
+
+
+
+
+
+
+
+
+
+
+
+# html_theme_options = {
+#     "navbar_center": ["logo_button.html", "search-field.html", "theme-switch-button.html", "navbar-nav"],
+#     "leftsidebar": "false",
+#     "icon_links": _icon_links
+# }
+
+# "use_repository_button": True,
+#     "repository_provider": "github",
+#     "repository_url": _pythonsupport["repository"],
+#     "use_edit_page_button": True,
+#     "use_fullscreen_button": True,
+#     "header_links_before_dropdown": 4,
+#     "navbar_align": "content",
+#     "navbar_center": ["navbar-nav"],
+#     "icon_links": _icon_links,
+templates_path = ['_templates']
+
+ 

@@ -1,42 +1,32 @@
+.. _install-python-reference:
 
-.. _quickstart:
+Install Python 
+=================
 
-Quick start
-===========
+In this section, you will find different installation guides that cover the 
+same components (Python, packages, conda, and Visual Studio Code).
 
-In the autumn semester of 2023, we will be following the guidelines in the Mathematics 1
-and Computer Programming courses. These guidelines can be found 
-`here <https://02002.compute.dtu.dk/installation/index.html>`__.
+Importantly, these installation guides are specifically designed for students who meet at least one of the following criteria:
 
+- First-year Bachelor students at DTU
+- Students taking Mathematics 1a/1b (course numbers: 01001 and 01002 in Danish, 01003 and 01004 in English)
+- Students taking Computer Programming (course numbers: 02002 in Danish, 02003 in English)
 
-.. comments to be back-filled
+These guides, although tailored for 1\ :sup:`st`\  year students, are also ideal for anyone needing to use Python.
 
-   Following these steps will quickly give you a minimal functioning Python installation.
-   These steps follow the recommended DTU procedure ({{pref_symbol}}).
+Installation on Windows
+-------------------------
 
-   .. grid:: 1
-      :gutter: 1
+* The :ref:`manual installation guide <manual-reference-windows>` allows you to set up Python step by step - **recommended** {{ pref_symbol }}
 
-      .. grid-item-card:: 1. Install Python
+* The :ref:`automated installation <automated-reference-windows>` completes the same steps for you, ensuring that no steps are missed.
 
-         Download and install Python {{python_version}} from `here <python-org-down_>`__
+Installation on MacOS
+-----------------------
 
-         | **Important**: For Windows users, ensure to :far:`square-check` the ``Add Python {{python_version}} to PATH`` box.
-         | Go `here <install-python>`_ if you encounter problems.
+* The :ref:`package managed installation guide <package-managed-reference-macOS>` allows you to set up Python step by step - **recommended** {{ pref_symbol }}
+* The :ref:`automated installation <automated-reference-MacOS>` completes the same steps for you, ensuring that no steps are missed.
+* The :ref:`manual installation guide <manual-reference-MacOS>` is recommended if you have had previous failures with the above options. 
 
-      .. grid-item-card:: 2. Install VSCode 
-
-         Download from `here <https://code.visualstudio.com/download>`__
-
-         Then `add extensions <https://code.visualstudio.com/docs/editor/extension-marketplace>`__.
-         Find the ``Python`` extension which is verified (:fas:`certificate`) by Microsoft.
-
-         Ensure your `Python interpreter <https://code.visualstudio.com/docs/python/environments#_manually-specify-an-interpreter>`__ points to the just installed Python version.
-
-      .. grid-item-card:: 3. Virtual Environments (recommendation!)
-         :link: pip-venv-env
-         :link-type: ref
-
-         Please use virtual environments so your Python codes works across courses.
-
-         Press this for information.
+.. note::
+    If you are using other operating systems, please send an `email <mailto:pythonsupport@dtu.dk>`_ to us and we will try to help you.

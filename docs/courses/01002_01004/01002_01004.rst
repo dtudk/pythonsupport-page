@@ -1,0 +1,24 @@
+.. _course-01002:
+.. _course-01004:
+
+**Mathematics 1b**
+=================================================================
+
+These are the instructions for spring 2025 (F25)
+
+
+.. dropdown:: Looking for old instructions?
+    :color: light
+
+    * `Spring 2024 (F24) <https://02002.compute.dtu.dk/installation/mat1.html>`_
+    * **ETC...**
+
+| 
+
+
+**insert instructions here**
+
+
+
+
+
