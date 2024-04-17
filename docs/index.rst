@@ -10,8 +10,8 @@
 .. todolist::
 
 
-DTU Python Support
-==================
+DTU Python Installation Support
+===============================
 
 ..
 	.. card:: Python Installation Support open!
@@ -22,8 +22,8 @@ DTU Python Support
 	   Our `Discord <ps-discord-invite_>`_ channel is still open for students
 	   to interact with each other.
 
-Welcome to the DTU student support unit!  
-We are here to help with Python installation problems related
+Welcome to the DTU Python Installation student support unit!  
+We are here to help you with Python installation problems related
 to courses at DTU.
 
 Our goal is to ensure that students can get a Python
@@ -34,44 +34,57 @@ Help can be requested through various channels:
    :class-card: sd-color-primary
 
    .. button-link:: https://02002.compute.dtu.dk/installation/index.html
-      :color: primary
+      :color: success
       :expand:
       :click-parent:
 
       
-        -- Press here for installing Python
+         Press here for our Python Installation Guide!
 
-.. grid:: 1 1 2 2
-    :gutter: 2
+.. card:: :fas:`book-open`  Documentation
+   :class-card: sd-color-primary
 
+   Here you can find important information about Python, the terminal, conda, pip, IDEs (like Visual Studio), environments, and more!
 
-    .. grid-item-card:: :fas:`person-running` -- Office hours
-        :link: quickstart/index
-        :link-type: doc
+   .. button-link:: courses/index
+      :color: secondary
+      :expand:
+      :click-parent:
 
-        You can find us at building 302 room 92, here you can look at our opening hours.
-
-    .. grid-item-card::  :fas:`book-open` -- Documentation
-        :link: courses/index
-        :link-type: doc
-
-        Here you can find important information about conda, the terminal, pip install, IDEs, environments and more!
+      
+         Press here for our Documentation pages!
 
 
-    .. grid-item-card:: :fas:`envelope` -- pythonsupport@dtu.dk 
-        :link: mailto:pythonsupport@dtu.dk
-        :link-type: url
-
-        | You can contact us {{online_days}} via email.
-
-    .. grid-item-card:: :fab:`discord` -- Chat with us
-        :link: https://discord.gg/h8EVaV9ShP
-        :link-type: url
-
-        | {{online_days}} in the evening.
-        | Contact us outside working hours.
+--------
+Reach us
+--------
 
 
+.. grid:: 1 1 1 3
+   :gutter: 1
+
+   .. grid-item-card:: :fas:`person-running` -- Visit us
+      :link: quickstart/index
+      :link-type: doc
+
+      You can find us at building **302**, room **92** {{online_days}}. See our office hours here.
+
+   .. grid-item-card:: :fas:`envelope` -- Email us
+      :link: mailto:pythonsupport@dtu.dk
+      :link-type: url
+
+      | You can contact us via email within our office hours {{online_days}}.
+
+   .. grid-item-card:: :fab:`discord` -- Chat with us
+      :link: https://discord.gg/h8EVaV9ShP
+      :link-type: url
+
+      | Join our Discord channel to reach us online.
+      | Contact us outside working hours.
+
+------------
+Office hours
+------------
 
 .. .. todo::
 
