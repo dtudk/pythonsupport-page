@@ -12,6 +12,20 @@ For more advanced topics, please refer to the section `Advanced usage`.
 
    pip.rst
    conda.rst
-   pythonsupport-page/os/index.rst
-   pythonsupport-page/pythonsupport-page/ides/index.rst
    environments.rst
+   ides/index.rst
+   uninstall.rst
+   os/index.rst
+
+
+   .. uninstall-conda.rst
+   .. uninstall-python.rst
+   .. uninstall-vscode.rst
+
+
+
+
+   
+   .. pythonsupport-page/os/index.rst
+   .. pythonsupport-page/pythonsupport-page/ides/index.rst
+   

@@ -82,11 +82,9 @@ Reach us
       | Join our Discord channel to reach us online.
       | Contact us outside working hours.
 
-------------
-Office hours
-------------
-
-.. .. todo::
+.. ------------
+.. Office hours
+.. ------------
 
 ..    Re-insert this when we have a common guideline.
 ..    When encountering the icon {{ pref_symbol }} you are using the
@@ -119,7 +117,6 @@ Office hours
 .. .. include:: /timetable/index.rst
 
 
-.. .. .. note::
 
 ..    Currently we only support installation problems related
 ..    to Python (it self) and packages required in specific courses.

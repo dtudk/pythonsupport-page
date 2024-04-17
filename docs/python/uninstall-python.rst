@@ -1,7 +1,7 @@
 .. _uninstall-python:
 
 
-Python
+Uninstalling Python
 =========================================
 
 If for some reason you wish to delete Python from your computer, here is how you do it. 

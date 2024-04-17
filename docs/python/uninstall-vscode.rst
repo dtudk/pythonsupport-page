@@ -1,7 +1,7 @@
 .. _Deleting Visual Studio Code:
 
 
-Visual Studio Code
+Uninstalling Visual Studio Code
 ============================
 
 This is a guide on how to uninstall Visual Studio Code from your computer.  

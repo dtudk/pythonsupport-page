@@ -1,6 +1,6 @@
 .. _uninstall-conda:
 
-Anaconda/Conda
+Uninstalling Anaconda/Conda
 ===========================================
 
 This is a guide on how to uninstall Anaconda from your computer.  It can help if you for example:
