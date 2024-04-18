@@ -45,7 +45,7 @@ def version2tuple(vers):
 year = datetime.date.today().year
 
 project = 'DTU Python support'
-html_title = "DTU Python support"
+html_title = "DTU Python Installation Support"
 copyright = f'{year}, DTU Python support'
 author = 'DTU Python support developers'
 
