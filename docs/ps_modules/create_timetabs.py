@@ -117,6 +117,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
         "january",
         "spring",
         "june",
+        "august",
         "autumn",
     ]
     # default information for a given semester

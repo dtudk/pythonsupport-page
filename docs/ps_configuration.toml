@@ -13,7 +13,7 @@ online-days = [
    "Friday",
 ]
 
-python-org-recommended = "https://www.python.org/downloads/release/python-3117/"
+python-org-recommended = "https://www.python.org/downloads/release/python-3119/"
 python-version.min = "3.8"
 python-version.recommended = "3.11"
 python-version.max = "3.11"
@@ -38,18 +38,32 @@ june.weeks = 3
 june.week = ["Closed", "Closed", "Closed"]
 june.week-breaks = []
 
+august.name = "3 weeks August"
+august.weeks = 3
+august.week = ["Closed", "Closed", "Closed"]
+august.week-breaks = []
+
 autumn.name = "13 weeks Autumn"
 autumn.weeks = 13
 autumn.week = []
 autumn.week-breaks = []
 
+[semester.2025]
+january.week-start = 1
+spring.week-start = 5
+spring.week-breaks = 13
+june.week-start = 24
+august.week-start = 32
+autumn.week-start = 36
+autumn.week-breaks = 42
 
 [semester.2024]
 january.week-start = 1
 spring.week-start = 5
 spring.week-breaks = 13
 june.week-start = 24
-autumn.week-start = 34
+august.week-start = 32
+autumn.week-start = 36
 autumn.week-breaks = 42
 
 [semester.2023]
