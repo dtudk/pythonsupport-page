@@ -44,7 +44,7 @@ Help can be requested through various channels:
 .. card:: :fas:`book-open`  Documentation
    :class-card: sd-color-primary
 
-   Here you can find important information about Python, the terminal, conda, pip, IDEs (like Visual Studio), environments, and more!
+   Here you can find important information about Python, the terminal, conda, pip, IDEs (like Visual Studio Code), environments, and more!
 
    .. button-link:: courses/index
       :color: secondary
@@ -59,32 +59,36 @@ Help can be requested through various channels:
 Reach us
 --------
 
-
 .. grid:: 1 1 1 3
    :gutter: 1
 
    .. grid-item-card:: :fas:`person-running` -- Visit us
-      :link: quickstart/index
+      :link: office-hours
       :link-type: doc
 
       You can find us at building **302**, room **92** {{online_days}}. See our office hours here.
 
-   .. grid-item-card:: :fas:`envelope` -- Email us
+   .. grid-item-card:: :fas:`envelope` -- E-mail us
       :link: mailto:pythonsupport@dtu.dk
       :link-type: url
 
-      | You can contact us via email within our office hours {{online_days}}.
+      | You can contact us via email at pythonsupport@dtu.dk.
 
    .. grid-item-card:: :fab:`discord` -- Chat with us
       :link: https://discord.gg/h8EVaV9ShP
       :link-type: url
 
-      | Join our Discord channel to reach us online.
-      | Contact us outside working hours.
+      | Join our Discord channel to reach us online, even after normal working hours.
 
-.. ------------
-.. Office hours
-.. ------------
+
+------------
+Office hours
+------------
+ 
+.. include:: /timetable/timetables.rst
+
+*Available via online channels (e-mail and Discord) during all office hours.*
+
 
 ..    Re-insert this when we have a common guideline.
 ..    When encountering the icon {{ pref_symbol }} you are using the
