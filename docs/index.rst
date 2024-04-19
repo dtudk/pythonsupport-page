@@ -16,6 +16,11 @@ DTU Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
+.. admonition:: Help us improve the Python Support webpage!
+   :class: important
+
+   We need your input! **Please take a moment to complete our survey** and help shape the DTU Python Support website's future. The survey is anonymous but you will need to log in with your DTU account to fill it in. You can access the survey here: `Complete the Survey <https://forms.office.com/e/pFZ4AM8MhA>`_.
+
 ..
 	.. card:: Python Installation Support open!
 	   :class-card: sd-color-info
