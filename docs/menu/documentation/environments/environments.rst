@@ -34,9 +34,9 @@ package list and easily swap between them.
    :backlinks: none
    :local:
 
-.. include:: /python/environment-venv.rst.include 
-.. include:: /python/environment-conda.rst.include 
-.. include:: /python/environment-virtualenv.rst.include 
+.. include:: environment-venv.rst.include 
+.. include:: environment-conda.rst.include 
+.. include:: environment-virtualenv.rst.include 
 
 
 .. _python-environments-jupyter:

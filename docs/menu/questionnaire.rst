@@ -81,13 +81,3 @@ Installing Python
     </body>
     </html>
 
-
-
-
-
-
-..    :maxdepth: 1
-
-..    install-python.rst
-..    install-conda.rst
-..    install-verify.rst

@@ -107,14 +107,14 @@ against each other at install time.
 
    ``pip`` versions 21 and older:
 
-   .. image:: images/pip21_upgrade.png
+   .. image:: /menu/images/pip21_upgrade.png
       :width: 800
       :align: left
       :alt: pip upgrade notice from versions 21 and older
    
    ``pip`` versions 22 and newer:
 
-   .. image:: images/pip22_upgrade.png
+   .. image:: /menu/images/pip22_upgrade.png
       :width: 550
       :align: left
       :alt: pip upgrade notice from versions 22 and newer
@@ -371,8 +371,8 @@ To check possible conflicts in the current environment do
 
 .. _pip-venv-env:
 
-.. include:: environment-venv.rst.include
+.. include:: /menu/documentation/environments/environment-venv.rst.include
 
 .. _pip-virtualenv-env:
 
-.. include:: environment-virtualenv.rst.include
+.. include:: /menu/documentation/environments/environment-virtualenv.rst.include
