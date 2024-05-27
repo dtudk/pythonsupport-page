@@ -16,6 +16,13 @@ DTU Python support
 -- Polytechnical Foundation courses
 -----------------------------------
 
+.. admonition:: Extra open for the Programming 02002 re-exam!
+   :class: important
+
+   We are open in 302 on the 28th and 29th of May, between 10-16.
+
+   Drop by if you have problems!
+
 .. admonition:: Help us improve the Python Support webpage!
    :class: important
 
