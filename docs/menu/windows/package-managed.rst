@@ -35,13 +35,13 @@ Now run the following commands in terminal one at a time:
 
 .. code-block::
 
-    CODIGO
+    conda install python=3.11 --yes
 
 and 
 
 .. code-block::
 
-    pip install dtumathtools uncertainties 
+    conda install -c conda-forge dtumathtools uncertainties
 
 
 
