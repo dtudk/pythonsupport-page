@@ -5,12 +5,13 @@ MacOS - Package managed installation guide
 Step 1: Install Homebrew
 -------------------------
 
-First you need to download the package manager Homebrew. This is done by going to `Brew webpage <https://brew.sh>`_ and follow the instructions. 
-Once Homebrew has been installed, open your terminal and paste the following code and press enter:
+Start by opening your terminal. This can be done by pressing ``cmd`` + ``space`` and then searching for terminal.
+
+Paste the following line of code into your terminal and press ``enter``. 
 
 .. code-block:: 
         
-    brew install --cask miniconda
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"  && (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> ~/.zshrc && (echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> ~/.bash_profile && eval "$(/usr/local/bin/brew shellenv)" && echo "Homebrew installed. Note: You do not need to run anything else in the terminal" && clear 
 
 
 Step 2: Download Anaconda Navigator
