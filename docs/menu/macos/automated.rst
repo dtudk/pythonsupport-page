@@ -2,9 +2,8 @@ MacOS - Automated installation guide
 ================================
 
 
-The first thing you need to do is open your ``terminal``. This can be done by pressing command + space. There after search ``terminal``.
-Next you need to copy the following line of code into your terminal and press enter.
-
+Open your ``terminal``. This can be done by pressing command + space. There after search ``terminal``.
+Next, you need to copy the following line of code into your terminal and press enter.
 
 .. code-block:: 
         

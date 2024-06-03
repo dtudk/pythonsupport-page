@@ -1,7 +1,7 @@
 Windows - Automated installation guide
 ================================
 
-The first thing you need to do is to open your Command Prompt as an administrator. This can be done by searching for ``cmd``. Once you see ``Command Prompt``, on the right hand side you can select ``Run as administrator``.
+Open your Command Prompt as an administrator. This can be done by searching for ``cmd``. Once you see ``Command Prompt``, on the right hand side you can select ``Run as administrator``.
 
 Next you need to copy the following line of code into your terminal and press enter.
 
