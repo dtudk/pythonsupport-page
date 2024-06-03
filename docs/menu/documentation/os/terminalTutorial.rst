@@ -28,7 +28,7 @@ Each operating system opens terminals in a different way.
 
       This should open a **Terminal** looking *something* like this:
 
-      .. image:: gifs/PS/terminal.yml
+      .. image:: gifs/PS/terminal.gif
          :width: 100%
          :align: center
 

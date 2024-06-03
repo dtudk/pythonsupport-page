@@ -1,6 +1,7 @@
-Aguante Racing
+Linux - Automated installation guide
 ================================
 
-Automated
-Vamo Academia
-Linux
+
+Please send an `email <mailto:pythonsupport@dtu.dk>`_ to us, and we will help you :)
+
+

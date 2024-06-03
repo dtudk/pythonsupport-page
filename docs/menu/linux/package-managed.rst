@@ -1,6 +1,5 @@
-Aguante Racing
+Linux - Package managed installation guide
 ================================
 
-Linux
-Vamo Academia
-Package Managed
+
+Please send an `email <mailto:pythonsupport@dtu.dk>`_ to us, and we will help you :)

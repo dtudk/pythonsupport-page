@@ -1,7 +1,5 @@
-Aguante Racing
+Linux - Fully manual installation guide
 ================================
 
 
-Linux
-Fully manual
-Vamo Academia
+Please send an `email <mailto:pythonsupport@dtu.dk>`_ to us, and we will help you :)
