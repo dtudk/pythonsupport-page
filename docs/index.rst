@@ -27,7 +27,7 @@ Help can be requested through various channels:
    :class-card: sd-color-primary
 
    .. button-link:: menu/questionnaire.html
-      :color: primary
+      :color: #28a745
       :expand:
       :click-parent:
 
