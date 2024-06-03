@@ -38,4 +38,4 @@ Step 3: Install Visual Studio Code
 
 This is done by going to `Visual Studio Code <https://code.visualstudio.com>`_. Click the download button and follow the instructions. 
 
-Open VSC and select the Extensions tab on the left, or press command + shift + X. Here search for Python, and download the extension. **Make sure that it's from Microsoft**. Hereafter search for Jupyter, and download that extension as well. This also needs to be from Microsoft.
+Open VSC and select the Extensions tab on the left, or press control + shift + X. Here search for Python, and download the extension. **Make sure that it's from Microsoft**. Hereafter search for Jupyter, and download that extension as well. This also needs to be from Microsoft.
