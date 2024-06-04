@@ -26,13 +26,8 @@ Help can be requested through various channels:
 .. card:: New to Python?
    :class-card: sd-color-primary
 
-   .. button-link:: menu/questionnaire.html
-      :color: success
-      :expand:
-      :click-parent:
-
-      
-         Press here for our Python Installation Guide!
+   .. raw:: html
+      :file: questionnaire.html
 
 .. card:: :fas:`book-open`  Documentation
    :class-card: sd-color-primary
@@ -91,7 +86,6 @@ Office hours
    :hidden:
 
    menu/index.rst
-   menu/questionnaire.rst
    faqs/index.rst
    courses/index.rst
 
