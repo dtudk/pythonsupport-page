@@ -1,0 +1,165 @@
+config:
+  cols: 100
+  command: powershell.exe
+  cursorStyle: block
+  cwd: C:\Users\python\test
+  env:
+    recording: true
+  fontFamily: Monaco, Lucida Console, Ubuntu Mono, Monospace
+  fontSize: 12
+  frameBox:
+    style:
+      boxShadow: none
+      margin: 0px
+    title: null
+    type: floating
+  frameDelay: auto
+  letterSpacing: 0
+  lineHeight: 1
+  maxIdleTime: 2000
+  quality: 100
+  repeat: 0
+  rows: 15
+  theme:
+    background: transparent
+    black: '#232628'
+    blue: '#75dff2'
+    brightBlack: '#626566'
+    brightBlue: '#75dff2'
+    brightCyan: '#b1c6ca'
+    brightGreen: '#c8ed71'
+    brightMagenta: '#ae89fe'
+    brightRed: '#ff7fac'
+    brightWhite: '#f9f9f4'
+    brightYellow: '#ebdf86'
+    cursor: '#c7c7c7'
+    cyan: '#708387'
+    foreground: '#afafaf'
+    green: '#b3e33b'
+    magenta: '#ae89fe'
+    red: '#fc4384'
+    white: '#d5d5d0'
+    yellow: '#ffa727'
+  watermark:
+    imagePath: null
+records:
+- content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation.
+    All rights reserved.\e[4;1HInstall the latest PowerShell for new features and
+    improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  delay: 100
+- content: 'PS C:\Users\python\test> '
+  delay: 2000
+- content: "\e[93mp"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[93m\bpy"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpyt\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpyth\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpytho\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[m-\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m-- \b\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--v\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--ve\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--ver\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--vers\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--versi\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--versio\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hpython \e[90m--version\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\r\n"
+  delay: 100
+- content: "Python 3.12.0\r\n"
+  delay: 100
+- content: 'PS C:\Users\python\test> '
+  delay: 100
+- content: "\e[93mp"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[93m\bpy"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[8;25Hpyt\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[8;25Hpyth\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[8;25Hpytho\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[8;25Hpython\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\r\n"
+  delay: 100
+- content: "Python 3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935
+    64 bit (AMD64)] on win32\r\nType \"help\", \"copyright\", \"credits\" or \"license\"
+    for more information.\r\n>>> "
+  delay: 100
+- content: e
+  delay: 3000
+- content: x
+  delay: 100
+- content: i
+  delay: 100
+- content: t
+  delay: 100
+- content: (
+  delay: 100
+- content: )
+  delay: 100
+- content: "\r\nPS C:\\Users\\python\\test> "
+  delay: 4000
+- content: "\e"
+  delay: 100
