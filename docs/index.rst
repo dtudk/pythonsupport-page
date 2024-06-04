@@ -86,6 +86,8 @@ Office hours
    :hidden:
 
    menu/index.rst
-   faqs/index.rst
    courses/index.rst
+   faqs/index.rst
+   essentials_first/index.rst
+
 
