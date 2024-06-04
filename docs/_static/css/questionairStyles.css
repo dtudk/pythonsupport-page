@@ -1,4 +1,4 @@
-.d-1 {
+.PyS_d-1 {
   --b:4px;   /* border length*/
   --c:20px;  /* the cube perspective */
   
@@ -24,7 +24,7 @@
     var(--c) calc(100% - var(--c)),
     var(--c) calc(100% - var(--c)));
 }
-.d-1:hover {
+.PyS_d-1:hover {
   transform:translate(0,0);
   clip-path: 
     polygon(0% var(--c), var(--c) 0%, 
@@ -32,7 +32,7 @@
     100% calc(100% - var(--c)), calc(100% - var(--c)) 100%, 
     0% 100%,0% 100%);
 }
-.d-2 {
+.PyS_d-2 {
   --b:4px;   /* border length*/
   --c:20px;  /* the cube perspective */
   
@@ -59,7 +59,7 @@
     calc(100% - var(--c)) calc(100% - var(--c)),
     calc(100% - var(--c)) calc(100% - var(--c)));
 }
-.d-2:hover {
+.PyS_d-2:hover {
   transform:translate(0,0);
   clip-path: 
     polygon(100% var(--c), calc(100% - var(--c)) 0%, 
@@ -70,14 +70,15 @@
 }
 
 /**/
-.d-1, .d-2 {
+.PyS_d-1, .PyS_d-2 {
   display:inline-block;
   font-size:40px;
   font-family:sans-serif;
   margin:25px;
   cursor:pointer;
+  text-align:center;
 }
 
-body {
+.PyS_buttons {
   text-align:center;
 }
