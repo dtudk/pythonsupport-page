@@ -2,8 +2,8 @@
 
 .. _faq:
 
-FAQ
-===
+FAQ and common problems 
+=======================
 
 Please search on this page if you can not find an exact match.
 We welcome any suggestions for FAQ entries, please contact us
