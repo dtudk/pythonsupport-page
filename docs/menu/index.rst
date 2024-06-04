@@ -16,7 +16,9 @@ help you navigate Python in the best way possible.
    documentation/ides/index.rst
    documentation/uninstall/uninstall.rst
    documentation/os/index.rst
-
+   macos/automated.rst
+   macos/fully-manual.rst
+   macos/package-manged.rst
 
 
    
