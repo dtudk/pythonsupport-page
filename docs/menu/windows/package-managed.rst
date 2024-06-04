@@ -1,10 +1,12 @@
 Windows - Package managed installation guide
 ================================
 
+Step 1: Download Chocolatey
+--------------------------------------
 
-Download the package manager Chocolatey. This is done very easily done by opening your Command Prompt as an administrator. This can be done by searching for ``cmd``. Once you see ``Command Prompt``, on the right hand side you can select ``Run as administrator``.
+This is done by opening your Command Prompt as an administrator. This can be done by searching for ``cmd``. Once you see ``Command Prompt``, on the right hand side you can select ``Run as administrator``.
 
-Next thing you need to do is to past the following line of code (the whole one), into you command prompt, and executing.
+Next thing you need to do is to paste the following line of code (the whole one), into your command prompt, and press enter:
 
 .. code-block::
 
@@ -13,13 +15,16 @@ Next thing you need to do is to past the following line of code (the whole one),
 
 
 
-Once Chocolatey has been installed, open your terminal and past the following and click enter:
+Step 2: Install miniconda3
+--------------------------------
+
+Open your terminal and paste the following and click enter:
 
 .. code-block::
 
     choco install miniconda3
 
-After this you need to install the Anaconda Navigater. This is done by running the following line in your command prompt:
+After this you need to install the Anaconda Navigator. This is done by running the following line in your command prompt:
 
 .. code-block::
 
@@ -30,15 +35,21 @@ Now run the following commands in terminal one at a time:
 
 .. code-block::
 
-    CODIGO
+    conda install python=3.11 --yes
 
 and 
 
 .. code-block::
 
-    pip install dtumathtools uncertainties 
+    conda install -c conda-forge dtumathtools uncertainties
 
-After this you need to install Visual Studio Code. This is done by pasting the following in you terminal and executing it: 
+
+
+
+Step 3: Install Visual Studio Code
+--------------------------------
+
+This is done by pasting the following in you terminal and executing it: 
     
 .. code-block::
 

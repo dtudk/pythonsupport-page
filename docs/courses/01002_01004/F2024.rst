@@ -1,0 +1,12 @@
+F2024
+=====
+
+This guideline is for students attending course :course-base:`2023:01002` and :course-base:`2023:01004`
+in the 2024 spring semester.
+
+The primary guideline for this course is located here:
+
+:full-link:`https://02002.compute.dtu.dk/installation/mat1.html`
+
+Once you have followed the above guide, you additionally need to install the
+``Jupyter`` extension in VS Code, please read :ref:`here <ide-vscode>`.
