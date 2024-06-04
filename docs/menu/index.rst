@@ -1,7 +1,7 @@
 .. _Documentation_index2:
 
-Documentation
-================================
+Python In Practice 
+==================
 
 Below you will find essential information that will 
 help you navigate Python in the best way possible.
