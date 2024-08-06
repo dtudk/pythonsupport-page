@@ -1,9 +1,0 @@
-terminalizer render -o CMD/exitPython.gif tmp/CMD_exitPython.yml
-terminalizer render -o CMD/openPython.gif tmp/CMD_openPython.yml
-terminalizer render -o CMD/runPython.gif tmp/CMD_runPython.yml
-terminalizer render -o Unix/exitPython.gif tmp/Unix_exitPython.yml
-terminalizer render -o Unix/openPython.gif tmp/Unix_openPython.yml
-terminalizer render -o Unix/runPython.gif tmp/Unix_runPython.yml
-terminalizer render -o PS/exitPython.gif tmp/PS_exitPython.yml
-terminalizer render -o PS/openPython.gif tmp/PS_openPython.yml
-terminalizer render -o PS/runPython.gif tmp/PS_runPython.yml
