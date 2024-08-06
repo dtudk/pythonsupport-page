@@ -20,9 +20,9 @@ In this section, you will find an introduction to the primary tools and methods 
 .. toctree::
    :maxdepth: 2
 
-   essentials_first/index.rst
+   core-tools/index.rst
    index-mgmt.rst
-   documentation/uninstall/uninstall.rst
+   advanced-management/uninstall/uninstall.rst
 
 
 
