@@ -1,0 +1,118 @@
+config:
+  cols: 100
+  command: cmd.exe
+  cursorStyle: block
+  cwd: C:\Users\python\test
+  env:
+    recording: true
+  fontFamily: Monaco, Lucida Console, Ubuntu Mono, Monospace
+  fontSize: 12
+  frameBox:
+    style:
+      boxShadow: none
+      margin: 0px
+    title: null
+    type: floating
+  frameDelay: auto
+  letterSpacing: 0
+  lineHeight: 1
+  maxIdleTime: 2000
+  quality: 100
+  repeat: 0
+  rows: 13
+  theme:
+    background: transparent
+    black: '#232628'
+    blue: '#75dff2'
+    brightBlack: '#626566'
+    brightBlue: '#75dff2'
+    brightCyan: '#b1c6ca'
+    brightGreen: '#c8ed71'
+    brightMagenta: '#ae89fe'
+    brightRed: '#ff7fac'
+    brightWhite: '#f9f9f4'
+    brightYellow: '#ebdf86'
+    cursor: '#c7c7c7'
+    cyan: '#708387'
+    foreground: '#afafaf'
+    green: '#b3e33b'
+    magenta: '#ae89fe'
+    red: '#fc4384'
+    white: '#d5d5d0'
+    yellow: '#ffa727'
+  watermark:
+    imagePath: null
+records:
+- content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c)
+    Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  delay: 100
+- content: p
+  delay: 2000
+- content: y
+  delay: 100
+- content: t
+  delay: 100
+- content: h
+  delay: 100
+- content: o
+  delay: 100
+- content: n
+  delay: 100
+- content: ' '
+  delay: 100
+- content: '-'
+  delay: 400
+- content: '-'
+  delay: 100
+- content: v
+  delay: 100
+- content: e
+  delay: 100
+- content: r
+  delay: 100
+- content: s
+  delay: 100
+- content: i
+  delay: 100
+- content: o
+  delay: 100
+- content: n
+  delay: 100
+- content: "\r\n\e]0;C:\\Windows\\SYSTEM32\\cmd.exe - python  --version\a"
+  delay: 100
+- content: "\e[?25lPython 3.11.6\e[7;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  delay: 2000
+- content: p
+  delay: 3000
+- content: y
+  delay: 100
+- content: t
+  delay: 100
+- content: h
+  delay: 100
+- content: o
+  delay: 100
+- content: n
+  delay: 100
+- content: "\r\n\e]0;C:\\Windows\\SYSTEM32\\cmd.exe - python\a"
+  delay: 100
+- content: "Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935
+    64 bit (AMD64)] on win32\r\nType \"help\", \"copyright\", \"credits\" or \"license\"
+    for more information.\r\n>>> "
+  delay: 2000
+- content: e
+  delay: 100
+- content: x
+  delay: 100
+- content: i
+  delay: 100
+- content: t
+  delay: 100
+- content: (
+  delay: 100
+- content: )
+  delay: 100
+- content: "\e[?25l\e[12;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  delay: 100
+- content: ' '
+  delay: 4000
