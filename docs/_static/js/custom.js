@@ -18,9 +18,9 @@ function PyS_osSelector(os) {
     const baseUrl = getBaseUrl();
     console.log('Base URL:', baseUrl); // Debugging line
     if (os === "windows") {
-        window.location.href = `${baseUrl}menu/${os}/fully-manual.html`;
+        window.location.href = `${baseUrl}installation/${os}/manual.html`;
     } else {
-        window.location.href = `${baseUrl}menu/${os}/${userLevel}`;
+        window.location.href = `${baseUrl}installation/${os}/manual.html`;
     }
 }
 
@@ -33,9 +33,9 @@ function PyS_redirectUser(UserLevel) {
     if (!os) {
         toggleBanner(); // Show os selector
     } else if (os === "windows") {
-        window.location.href = `${baseUrl}menu/${os}/fully-manual.html`;
+        window.location.href = `${baseUrl}installation/${os}/manual.html`;
     } else {
-        window.location.href = `${baseUrl}menu/${os}/${userLevel}`;
+        window.location.href = `${baseUrl}installation/${os}/manual.html`;
     }
 }
 
