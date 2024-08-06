@@ -1,0 +1,22 @@
+
+.. _ide-spyder:
+
+Spyder
+------
+
+.. warning::
+   Spyder on MacOS with an M1/M2 processor can cause problems when
+   not installed through :ref:`conda`. Therefore we recommend
+   to use another IDE when on MacOS and M1.
+
+`Spyder <https://www.spyder-ide.org/>`__ is a free and open-source coding framework written in *and* for Python.
+It has intrinsic editor, IPython console and a variable explorer + many more.
+
+It can be downloaded `here <https://www.spyder-ide.org/>`__.
+
+Spyder is extensible by plugins, if needed. Generally its base installation should suffice.
+
+Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
+This depends on whether you are using :ref:`virtual environments <python-environments>` or not.
+Changing the interpreter location can be done by following `this instruction <https://docs.spyder-ide.org/current/faq.html#using-existing-environment>`__.
+

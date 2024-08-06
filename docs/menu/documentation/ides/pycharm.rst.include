@@ -1,0 +1,17 @@
+
+.. _ide-pycharm:
+
+PyCharm
+-------
+
+`PyCharm <https://www.jetbrains.com/pycharm/>`__ comes in two variants; a Professional (paid) version and a Community edition (free).
+
+PyCharm focuses on a simplistic and powerful interface for code editing with Python as its
+core language.  
+PyCharm community edition does *not* contain Jupyter notebook integration.
+
+It can be downloaded `here <https://www.jetbrains.com/pycharm/download>`__.
+
+Once installed it is vital to ensure the Python interpreter is pointing to the *correct* Python executable.
+This depends on whether you are using :ref:`virtual environments <python-environments>` or not.
+Changing the interpreter location can be done by following `this instruction <https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html>`__.

@@ -12,6 +12,8 @@ help you navigate Python in the best way possible.
 
    documentation/pip/pip.rst
    documentation/environments/environments.rst
+   .. documentation/ides/index.rst
+
    documentation/os/index.rst
 
 

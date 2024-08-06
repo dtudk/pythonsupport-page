@@ -53,7 +53,7 @@ Each operating system opens terminals in a different way.
 
 
 Opening Python in a Terminal
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
 
@@ -141,7 +141,7 @@ Exiting Python in a Terminal
 
 
 Running a Python script using the Terminal
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
 

@@ -32,7 +32,6 @@ Help can be requested through various channels:
 
 
 .. _reach-us-reference:
-
 --------
 Reach us
 --------
@@ -107,6 +106,10 @@ Office hours
    :hidden:
 
    quickstart/index.rst
+   .. essentials_first/index.rst
+   
    courses/index.rst
    menu/index.rst
+   .. faqs/index.rst
+   
    Knowledgebase/index.rst

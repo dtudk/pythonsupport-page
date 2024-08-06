@@ -1,7 +1,7 @@
 .. _manual-reference-windows:
 
 Windows - Manual installation guide
-===================================
+================================
 
 .. note::
     Not using **Windows**? The manual installation guide for **MacOS** can be found :ref:`here <manual-reference-MacOS>`.
