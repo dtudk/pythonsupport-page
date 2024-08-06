@@ -1,0 +1,24 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 5
+  
+records:
+  - delay: 100
+    content: "Python 3.11.6 (tags/v3.11.6:8b6ee5b, Oct  2 2023, 14:57:12) [MSC v.1935 64 bit (AMD64)] on win32\r\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\r\n>>> "
+  - delay: 100
+    content: e
+  - delay: 100
+    content: x
+  - delay: 100
+    content: i
+  - delay: 100
+    content: t
+  - delay: 100
+    content: (
+  - delay: 100
+    content: )
+  - delay: 100
+    content: "\e[?25l\e[12;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  - delay: 4000
+    content: " "

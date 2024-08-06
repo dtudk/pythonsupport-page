@@ -1,0 +1,35 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 10
+
+records:
+  - delay: 100
+    content: "\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 2500
+    content: p
+  - delay: 100
+    content: 'y'
+  - delay: 100
+    content: t
+  - delay: 100
+    content: h
+  - delay: 100
+    content: o
+  - delay: 100
+    content: 'n'
+  - delay: 100
+    content: ' '    
+  - delay: 1000
+    content: '/Users/yourname/Desktop/helloWorld.py'
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: 'Hello World'   
+  - delay: 100
+    content: "\r\n"     
+  - delay: 100
+    content: "\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+  - delay: 7000
+    content: "\e[?2004l\r\r\nlogout\r\n"
+
