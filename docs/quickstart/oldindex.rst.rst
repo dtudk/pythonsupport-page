@@ -14,9 +14,9 @@ Importantly, these installation guides are specifically designed for students wh
 - Students taking Mathematics 1a/1b (course numbers: 01001 and 01002 in Danish, 01003 and 01004 in English)
 - Students taking Computer Programming (course numbers: 02002 in Danish, 02003 in English)
 
----------------------------
+---------------------------------------------------------------------------------
 Package managed installation guide - Recommended for 1\ :sup:`st`\  year students
----------------------------
+---------------------------------------------------------------------------------
 
 For **first-year students** or those new to programming, 
 using package managers is the best option for ensuring a 
@@ -31,9 +31,9 @@ folder on MacOS can be avoided entirely with package manager installations.
        Click here for the package managed installation guide recommended for 1<sup>st</sup> year students.
    </a></p>
    
----------------------------
+----------------------------------------------------------------
 Fully manual installation guide - Recommended for advanced users
----------------------------
+----------------------------------------------------------------
 
 For intermediate or advanced users, the fully manual installation guide offers detailed steps for setting up Python, packages, conda, and Visual Studio Code without relying on package managers. This approach provides greater flexibility and control over the installation process, making it ideal for users with more experience and specific configuration needs.
 
