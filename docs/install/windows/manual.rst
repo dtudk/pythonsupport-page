@@ -3,12 +3,14 @@
 Windows - Manual installation guide
 ===================================
 
-.. note::
-    Not using **Windows**? The manual installation guide for **MacOS** can be found :ref:`here <manual-reference-MacOS>`.
+.. button-ref:: package-managed-reference-macos
+    :ref-type: ref
+    :color: info
 
-.. tip::
-    You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
+    Not using **Windows**? The manual installation guide for **MacOS** can be found here.  
 
+.. todo::
+    Change color?
 
 Step 1: Install Miniconda
 --------------------------
@@ -23,17 +25,27 @@ Here you need to click and download Miniconda3 Windows 64-bit.
 
 
 Then you need to follow the instructions during the installations. Make sure to cross of all the
-options regarding **PATH** ect
+options regarding **PATH** as shows below.
+
+.. todo::
+    Insert image showing **PATH** checkboxes when downloading miniconda on windows
 
 
 Step 2: Install Python:
 -------------------------
 
+Now you need to open you Powershell as an administrator and run the following commands in powershell one at a time by pasting them into the terminal and pressing enter.
+
 If you are unsure on how to open Powershell, it can be done by opening the menu bar and searching
 for Windows Powershell. Once you see Windows Powershell, on the right hand side you can select
-Run as administrator. If not, right-click on the icon and select Run as administrator.
+Run as administrator. If not, right-click on the icon and select Run as administrator as shown bellow. 
 
-Now run the following commands in powershell one at a time by pasting them into the terminal and pressing enter:
+.. todo::
+    Insert image showing how to open the windows powershell as described above.
+
+
+.. tip::
+    You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
 .. code-block::
 
@@ -42,7 +54,6 @@ Now run the following commands in powershell one at a time by pasting them into 
 .. code-block::
 
     conda install -c conda-forge dtumathtools uncertainties -y
-
 
 Step 3: Install VS Code:
 -------------------------
@@ -81,7 +92,12 @@ download that extension as well. This also needs to be from Microsoft.
 Verification and Quick Troubleshooting
 --------------------------------------
 To ensure that your installation is working correctly, please go through the following steps.
-Open up PowerShell again. if you see (base) next to your username, you can proceed. Otherwise do the following:
+Open up PowerShell again. if you see (base) next to your username, you can proceed. If unsure see the image bellow:
+
+.. todo::
+    Insert image of the powershell with (base) next to the username
+
+Otherwise do the following:
 
 • Search for Miniconda PowerShell promt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
 • After opening the Miniconda shell, type ``conda init`` and press enter.
@@ -91,7 +107,11 @@ Open up PowerShell again. if you see (base) next to your username, you can proce
 Now ensure the following:
 
 • It says Python 3.11.xx in the top left.
-• You get no errors when typing ``import dtumathtools, uncertainties`` and press enter.(Nothing should happen)
+• You get no errors when typing ``import dtumathtools, uncertainties`` and press enter. This should open a new line without any text, as shown bellow.
+
+.. todo::
+    Insert image of ``idle`` after import dtumathtools and uncertainties so they can see what it should look like.
+
 
 If it is not the case for one of the above, try to paste the following line of code in PowerShell and press enter:
 
@@ -100,7 +120,4 @@ If it is not the case for one of the above, try to paste the following line of c
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
 
-Supporter's Notes
------------------
-
-You are always welcome to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.

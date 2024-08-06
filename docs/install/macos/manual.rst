@@ -1,13 +1,16 @@
-.. _manual-reference-macOS:
+.. _manual-reference-macos:
 
 MacOS - Manual installation guide
 =======================================
 
-.. note::
-    Not using **MacOS**? The manual installation guide for **Windows** can be found :ref:`here <manual-reference-windows>`.
-.. tip::
-    You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
+.. button-ref:: manual-reference-windows
+    :ref-type: ref
+    :color: info
 
+    Not using **MacOS**? The similar installation guide for **Windows** can be found here.  
+
+.. todo::
+    Change color?
 
 .. _fully-manual-reference-mac:
 
@@ -44,7 +47,14 @@ Step 2: Install Python
 ---------------------------
 
 Now you need to open your terminal. This is done by pressing the "command" and "space" key at the same time and searching for "terminal".
+
+.. todo::
+    Insert image of spotlight search for terminal.
+
 Copy and paste the following lines of cod einto your terminal and press enter one line at a time:
+
+.. tip::
+    You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
 .. code-block::
         
@@ -95,45 +105,32 @@ download that extension as well. This also needs to be from Microsoft.
     When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
 
 Verification and Quick Troubleshooting
----------------------------------------
+--------------------------------------
+Open up a terminal again. if you see (base) next to your username, you can proceed. Otherwise
+try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
+For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
 
-* 
-    Open up a terminal again. if you see (base) next to your username, you can proceed. Otherwise
-    try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
-    For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
+.. todo::
+    Insert image of the terminal with (base) next to the username
 
-* 
+Make sure that it says (base) next to your user name when opening the terminal.
 
-    Open up a terminal again and verify that you now see (base)
+Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run python code.
 
-* 
+Now ensure the following:
 
-    Finally type idle3 in a terminal and press Enter. This should open up a new window in which
-    you will able to run python code
+• It says Python 3.11.xx in the top left.
+• You get no errors when typing ``import dtumathtools, uncertainties`` and press enter. This should open a new line without any text, as shown bellow.
 
-* 
-    | now ensure the following:
-    | It says Python 3.11.xx in the top left 
-    | You get no errors when typing ``import dtumathtools, uncertainties`` and pressing enter. (nothing should happen)
-
-* 
-    If you do get an error for the above, try to paste the following line of code in a temrinal and pressing enter 
-
-    .. code-block::
-
-        conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
-
-* 
-    open up idle3 again to verify. 
+.. todo::
+    Insert image of ``idle3`` after import dtumathtools and uncertainties so they can see what it should look like.
 
 
+If it is not the case for one of the above, try to paste the following line of code in the terminal and press enter:
+
+.. code-block::
+
+     conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
 
-
-
-
-
-Supporter's Notes
------------------
-
-You are always welcome to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
