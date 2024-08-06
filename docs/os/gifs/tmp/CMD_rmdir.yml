@@ -1,0 +1,119 @@
+config:
+  cols: 100
+  command: cmd.exe
+  cursorStyle: block
+  cwd: C:\Users\python\test
+  env:
+    recording: true
+  fontFamily: Monaco, Lucida Console, Ubuntu Mono, Monospace
+  fontSize: 12
+  frameBox:
+    style:
+      boxShadow: none
+      margin: 0px
+    title: null
+    type: floating
+  frameDelay: auto
+  letterSpacing: 0
+  lineHeight: 1
+  maxIdleTime: 2000
+  quality: 100
+  repeat: 0
+  rows: 23
+  theme:
+    background: transparent
+    black: '#232628'
+    blue: '#75dff2'
+    brightBlack: '#626566'
+    brightBlue: '#75dff2'
+    brightCyan: '#b1c6ca'
+    brightGreen: '#c8ed71'
+    brightMagenta: '#ae89fe'
+    brightRed: '#ff7fac'
+    brightWhite: '#f9f9f4'
+    brightYellow: '#ebdf86'
+    cursor: '#c7c7c7'
+    cyan: '#708387'
+    foreground: '#afafaf'
+    green: '#b3e33b'
+    magenta: '#ae89fe'
+    red: '#fc4384'
+    white: '#d5d5d0'
+    yellow: '#ffa727'
+  watermark:
+    imagePath: null
+records:
+- content: "\e[?25l\e[2J\e[m\e[HMicrosoft Windows [Version 10.0.22621.2715]\r\n(c)
+    Microsoft Corporation. All rights reserved.\e[4;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  delay: 100
+- content: r
+  delay: 2000
+- content: m
+  delay: 100
+- content: d
+  delay: 100
+- content: i
+  delay: 100
+- content: r
+  delay: 100
+- content: ' '
+  delay: 100
+- content: /
+  delay: 400
+- content: s
+  delay: 100
+- content: ' '
+  delay: 100
+- content: N
+  delay: 400
+- content: e
+  delay: 100
+- content: w
+  delay: 100
+- content: P
+  delay: 100
+- content: y
+  delay: 100
+- content: t
+  delay: 100
+- content: h
+  delay: 100
+- content: o
+  delay: 100
+- content: n
+  delay: 100
+- content: F
+  delay: 100
+- content: o
+  delay: 100
+- content: l
+  delay: 100
+- content: d
+  delay: 100
+- content: e
+  delay: 100
+- content: r
+  delay: 100
+- content: "\r\nNewPythonFolder, Are you sure (Y/N)? \e]0;C:\\Windows\\SYSTEM32\\cmd.exe
+    - rmdir  /s NewPythonFolder\a"
+  delay: 100
+- content: y
+  delay: 3000
+- content: "\e[?25l\e[7;1HC:\\Users\\python\\test>\e]0;C:\\Windows\\SYSTEM32\\cmd.exe\a\e[?25h"
+  delay: 100
+- content: d
+  delay: 3000
+- content: i
+  delay: 100
+- content: r
+  delay: 100
+- content: "\e[?25l\r\n Volume in drive C has no label.\r\n Volume Serial Number is
+    AEFC-2E26\e[11;1H Directory of C:\\Users\\python\\test\e[13;1H23/11/2023  19:03
+    \   <DIR>          .\r\n23/11/2023  18:55    <DIR>          ..\r\n22/11/2023  01:36
+    \                0 myfile.txt\r\n22/11/2023  01:35    <DIR>          myfolder1\r\n22/11/2023
+    \ 01:35    <DIR>          myfolder2\r\n22/11/2023  01:36                 0 myscript.py\r\n
+    \              2 File(s)              0 bytes\r\n               4 Dir(s)  1,598,835,302,400
+    bytes free\e[22;1HC:\\Users\\python\\test>\e[?25h"
+  delay: 100
+- content: ' '
+  delay: 4000
