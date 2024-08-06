@@ -10,9 +10,9 @@ help you navigate Python in the best way possible.
 .. toctree::
    :maxdepth: 1
 
-   documentation/pip/pip.rst
-   documentation/environments/environments.rst
-   documentation/os/index.rst
+   advanced-management/pip/pip.rst
+   advanced-management/environments/environments.rst
+   advanced-management/os/index.rst
 
 
 
