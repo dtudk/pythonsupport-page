@@ -41,10 +41,9 @@ Windows execution policy in PowerShell
    `Click here to get more information about execution policies <https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies>`__.
 
 
-.. _faq-win-dll-load-failed:
 
 ``ImportError: DLL load failed ...``
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    When importing ``dtumathtools`` some Windows machines are missing certain libraries.
 
@@ -62,7 +61,6 @@ Windows execution policy in PowerShell
    4. If problems still occur, please write us at :mail:`pythonsupport@dtu.dk`
 
 
-.. _faq-win-install-oserror:
 
 ``ERROR: Could not install packages due to an OSError: ...``
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

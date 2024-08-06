@@ -2,7 +2,7 @@
 
 
 MacOS - Package managed installation guide
-================================
+==========================================
 
 .. note::
     Not using **MacOS**? A similar installation guide for **Windows** can be found :ref:`here <manual-reference-windows>`.

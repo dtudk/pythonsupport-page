@@ -1,5 +1,5 @@
 Visual Studio Code
-========
+===================
 
 .. note::
     If you are in your first year, you probably will not need to use VS Code until **week 7 or 8 of your studies**. Just remember that this page is here to get you started with some basic tips whenever you need. 
@@ -44,7 +44,7 @@ Creating a Python-file
 
 
 Selecting the right interpreter
-------------------------------
+-------------------------------
 
 .. card::
 
@@ -87,6 +87,7 @@ Selecting the right interpreter
                         :width: 450
                         :align: center
                         :alt: IDLE Shell
+                        
             3. Choose the option similar to "Python 3.11.5 ('base')" (You may have a different version of Python on your own PC)
 
             .. image:: images/VScode_mac3.png

@@ -1,7 +1,7 @@
 .. _automated-reference-windows:
 
 Windows - Automated installation guide
-================================
+======================================
 
 .. note::
     Not using **Windows**? The automated installation guide for **MacOS** can be found :ref:`here <automated-reference-MacOS>`.

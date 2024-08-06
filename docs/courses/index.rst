@@ -24,11 +24,6 @@ Teaching a DTU course? Host your guidelines here!
 Contact us at :mail:`pythonsupport@dtu.dk` or open a :gh-issue:`new issue <new>`.
 The course template can be found below.
 
-.. toctree::
-   :maxdepth: 1
-
-   template/index.rst
-
 .. note::
 
    Courses may have their own guides on how to install. We encourage

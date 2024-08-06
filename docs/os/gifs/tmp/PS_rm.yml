@@ -1,0 +1,129 @@
+config:
+  cols: 100
+  command: powershell.exe
+  cursorStyle: block
+  cwd: C:\Users\python\test
+  env:
+    recording: true
+  fontFamily: Monaco, Lucida Console, Ubuntu Mono, Monospace
+  fontSize: 12
+  frameBox:
+    style:
+      boxShadow: none
+      margin: 0px
+    title: null
+    type: floating
+  frameDelay: auto
+  letterSpacing: 0
+  lineHeight: 1
+  maxIdleTime: 2000
+  quality: 100
+  repeat: 0
+  rows: 25
+  theme:
+    background: transparent
+    black: '#232628'
+    blue: '#75dff2'
+    brightBlack: '#626566'
+    brightBlue: '#75dff2'
+    brightCyan: '#b1c6ca'
+    brightGreen: '#c8ed71'
+    brightMagenta: '#ae89fe'
+    brightRed: '#ff7fac'
+    brightWhite: '#f9f9f4'
+    brightYellow: '#ebdf86'
+    cursor: '#c7c7c7'
+    cyan: '#708387'
+    foreground: '#afafaf'
+    green: '#b3e33b'
+    magenta: '#ae89fe'
+    red: '#fc4384'
+    white: '#d5d5d0'
+    yellow: '#ffa727'
+  watermark:
+    imagePath: null
+records:
+- content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation.
+    All rights reserved.\e[4;1HInstall the latest PowerShell for new features and
+    improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  delay: 100
+- content: 'PS C:\Users\python\test> '
+  delay: 100
+- content: "\e[93mr"
+  delay: 2000
+- content: "\e[m"
+  delay: 100
+- content: "\e[93m\brm"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[m-\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r\e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[?25h"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mN\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNe\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNew\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewP\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPy\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPyt\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPyth\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPytho\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPython\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPythonF\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPythonFo\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPythonFol\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPythonFold\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPythonFolde\e[?25h"
+  delay: 100
+- content: "\e[?25l\e[93m\e[6;25Hrm \e[90m-r \e[mNewPythonFolder\e[?25h"
+  delay: 100
+- content: "\r\n"
+  delay: 100
+- content: 'PS C:\Users\python\test> '
+  delay: 100
+- content: "\e[93ml"
+  delay: 2000
+- content: "\e[m"
+  delay: 100
+- content: "\e[93m\bls"
+  delay: 100
+- content: "\e[m"
+  delay: 100
+- content: "\r\n"
+  delay: 100
+- content: "\e[?25l\e[10;1H    Directory: C:\\Users\\python\\test\e[13;1HMode                 LastWriteTime
+    \        Length Name\e[154X\r\n----                 -------------         ------
+    ----\e[154X\r\nd-----        22/11/2023     01:35                myfolder1\e[149X\r\nd-----
+    \       22/11/2023     01:35                myfolder2\e[149X\r\n-a----        22/11/2023
+    \    02:25           3526 mkdir_PS.yml\e[146X\r\n-a----        22/11/2023     01:36
+    \             0 myfile.txt\e[148X\r\n-a----        22/11/2023     01:36              0
+    myscript.py\e[147X\e[22;1H\e[?25h"
+  delay: 100
+- content: 'PS C:\Users\python\test> '
+  delay: 3000
+- content: "\e"
+  delay: 100

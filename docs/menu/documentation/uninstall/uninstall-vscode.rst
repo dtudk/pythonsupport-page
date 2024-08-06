@@ -2,7 +2,7 @@
 
 
 Uninstalling Visual Studio Code
-============================
+===================================
 
 This guide will help you uninstall Visual Studio Code from your computer. 
 This can be useful if Visual Studio Code is not working properly and you want a fresh start.

@@ -1,6 +1,6 @@
 .. office hours for spring 2024
 .. list-table::
-   :widths: {{ timetable_widths }}
+   :widths: 10 20 20 20 20 20
    :header-rows: 1
 
    * - Hours
