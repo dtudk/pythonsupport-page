@@ -3,16 +3,16 @@
 **Mathematics 1b**
 =================================================================
 
-These are the instructions for spring 2025 (F25). The course base can be found :course-base:`here <2024:01002>`
-
-
 .. dropdown:: Looking for old instructions?
     :icon: hourglass
 
     * :doc:`Spring 2024 (F24) <../2023-2024/01002>`
     * **ETC...**
 
-| 
+
+These are the instructions for spring 2025 (F25). The course base can be found :course-base:`here <2024:01002>`
+
+
 
 .. todo::
     Add newer years to dropdown menu as we progress

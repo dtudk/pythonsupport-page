@@ -3,10 +3,6 @@
 **Mathematics 1a**
 ===================
 
-These are the instructions for the autumn 2024 (E24). The course base can be found :course-base:`here <2024:01001>`
-
-
-
 .. dropdown:: Looking for old instructions?
     :icon: hourglass
 
@@ -14,7 +10,11 @@ These are the instructions for the autumn 2024 (E24). The course base can be fou
     * **ETC...**
 
 
-| 
+These are the instructions for the autumn 2024 (E24). The course base can be found :course-base:`here <2024:01001>`
+
+
+
+
 
 .. todo::
     Add newer years to dropdown menu as we progress

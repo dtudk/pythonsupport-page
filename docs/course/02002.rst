@@ -1,11 +1,7 @@
-.. _course-02002:
-.. _course-02003:
-.. _2024-2025-02002-reference:
+
 
 **Intro to programming**
 ========================================================================
-
-These are the instructions for autumn 2024 (E24). The course base can be found :course-base:`here <2024:02002>`
 
 .. dropdown:: Looking for old instructions?
     :icon: hourglass
@@ -13,7 +9,9 @@ These are the instructions for autumn 2024 (E24). The course base can be found :
     * :doc:`Autumn 2023 (E23) <2023-2024/02002>`
     * **ETC...**
 
-| 
+These are the instructions for autumn 2024 (E24). The course base can be found :course-base:`here <2024:02002>`
+
+
 
 
 .. todo::
