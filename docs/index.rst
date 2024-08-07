@@ -107,6 +107,7 @@ Office hours
    :hidden:
 
    install-python/index.rst
-   courses/index.rst
+   course/index.rst
    learn-more/index.rst
    videotutorials/index.rst
+

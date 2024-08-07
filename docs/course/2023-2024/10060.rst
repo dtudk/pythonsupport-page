@@ -1,20 +1,12 @@
-.. _course-10060:
-.. _course-10063:
-.. _course-10065:
+
+
 
 **Physics**
 ============================================================================
 
 
 
-This guideline is for students attending course :course-base:`10060` in the F25 year.
-
-
-.. dropdown:: Looking for old instructions?
-    :color: light
-
-    * `Autumn 2023 (E23) <https://02002.compute.dtu.dk/installation/index.html>`_
-    * **ETC...**
+This guideline is for students attending course :course-base:`10060` in the F24 year.
 
 |
 

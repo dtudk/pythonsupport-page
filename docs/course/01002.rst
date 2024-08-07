@@ -1,0 +1,24 @@
+
+
+**Mathematics 1b**
+=================================================================
+
+.. dropdown:: Looking for previous years?
+    :icon: hourglass
+
+    * :doc:`Spring 2024 (F24) <2023-2024/01002>`
+    * **ETC...**
+
+
+These are the instructions for spring 2025 (F25). The course base can be found :course-base:`here <2024:01002>`
+
+
+
+
+.. todo::
+    Add newer years to dropdown menu as we progress
+
+**insert current instructions here**
+
+.. todo::
+    make sure that course bases in guidelines match the year of the guidelines. For example: if the guidelines are from 2023 the course base should be that of 2023 and not the current one. 
