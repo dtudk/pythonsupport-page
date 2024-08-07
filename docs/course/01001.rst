@@ -1,0 +1,19 @@
+.. _course-01001:
+.. _course-01003:
+.. _2024-2025-01001-reference:
+
+**Mathematics 1a**
+===================
+
+These are the instructions for the autumn 2024 (E24)
+
+
+
+.. dropdown:: Looking for old instructions?
+    :color: light
+
+    * :doc:`Autumn 2023 (E23) <2023-2024/01001>`
+    * **ETC...**
+
+| 
+

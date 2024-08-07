@@ -1,5 +1,6 @@
 .. _course-02002:
 .. _course-02003:
+.. _2024-2025-02002-reference:
 
 **Intro to programming**
 ========================================================================
@@ -9,12 +10,9 @@ These are the instructions for autumn 2024 (E24)
 .. dropdown:: Looking for old instructions?
     :color: light
 
-    * `Autumn 2023 (E23) <https://02002.compute.dtu.dk/installation/index.html>`_
+    * :doc:`Autumn 2023 (E23) <../2023-2024/02002>`
     * **ETC...**
 
 | 
 
 **insert instructions here**
-
-
-

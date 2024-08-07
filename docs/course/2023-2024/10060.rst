@@ -1,0 +1,33 @@
+.. _course-10060:
+.. _course-10063:
+.. _course-10065:
+.. _2023-2024-10060-reference:
+
+
+**Physics**
+============================================================================
+
+
+
+This guideline is for students attending course :course-base:`10060` in the F24 year.
+
+|
+
+Please install the uncertainties package by pasting the following into your terminal:
+
+.. code-block:: bash
+
+   python3 -m pip install dtumathtools scipy pandas uncertainties
+
+
+
+
+
+**The course databases can be found below:**
+
+- :course-base:`Danish version (10060) <10060>`
+- :course-base:`Physics for general engineering (10063) <10063>`
+- :course-base:`Online version of physics (10065) <10065>`
+
+
+

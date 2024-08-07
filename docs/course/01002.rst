@@ -1,0 +1,20 @@
+.. _course-01002:
+.. _course-01004:
+.. _2024-2025-01002-reference:
+
+**Mathematics 1b**
+=================================================================
+
+These are the instructions for spring 2025 (F25)
+
+
+.. dropdown:: Looking for old instructions?
+    :color: light
+
+    * :doc:`Spring 2024 (F24) <2023-2024/01002>`
+    * **ETC...**
+
+| 
+
+
+**insert current instructions here**

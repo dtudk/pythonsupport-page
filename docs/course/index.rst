@@ -10,11 +10,11 @@ Here you can find specific guidelines for different courses on how to install Py
    :caption: Course guides
    :maxdepth: 1
 
-   Mathematics 1a <01001_01003/01001_01003.rst>
-   Mathematics 1b <01002_01004/01002_01004.rst>
-   Intro to Programming <02002_02003/02002_02003.rst>
-   Intelligent systems <02461/02461.rst>
-   Physics <10060_10063_10065/10060_10063_10065.rst>
+   Mathematics 1a <2024-2025/01001.rst>
+   Mathematics 1b <2024-2025/01002.rst>
+   Intro to Programming <2024-2025/02002.rst>
+   Intelligent systems <2024-2025/02461.rst>
+   Physics <2024-2025/10060.rst>
 
 
 Template guide for new course
