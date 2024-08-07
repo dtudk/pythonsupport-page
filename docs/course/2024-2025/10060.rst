@@ -4,7 +4,7 @@
 ============================================================================
 
 
-.. dropdown:: Looking for old instructions?
+.. dropdown:: Looking for previous years?
     :icon: hourglass
 
     * :doc:`spring 2024 (F24) <../2023-2024/10060>`

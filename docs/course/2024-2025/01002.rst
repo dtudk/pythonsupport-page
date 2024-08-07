@@ -3,7 +3,7 @@
 **Mathematics 1b**
 =================================================================
 
-.. dropdown:: Looking for old instructions?
+.. dropdown:: Looking for previous years?
     :icon: hourglass
 
     * :doc:`Spring 2024 (F24) <../2023-2024/01002>`
