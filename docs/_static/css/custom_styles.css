@@ -1,6 +1,16 @@
   /* _static/css/custom_styles.css */
 
-  /* Import custom font */
+
+ 
+
+  /* 
+  
+  This part of the code imports and changes the font style of the website. 
+  
+  The main font is DTUs official font called NeoSans and is located in _static/fonts
+  
+  */
+
   @font-face {
     font-family: 'NeoSans';
     src: url('../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf') fort('truetype');
@@ -22,21 +32,16 @@
     font-style: light;
   }
 
-  /* Apply the font to the body and other elements */
+  /* Apply the font to the body */
   body {
     font-family: 'NeoSans', sans-serif;
   }
 
+  /* Apply the font to the headings. It also makes all titles bold */
   h1, h2, h3, h4, h5, h6 {
     font-family: 'NeoSans', sans-serif;
-    font-weight: bold; /* Bold headings */
+    font-weight: bold !important; /* Bold headings */
   }
-
-  /* p, li, a, span, div {
-    font-family: 'NeoSans', sans-serif;
-  } */
-
-    /* Special font for code blocks */
 
 
 
@@ -46,17 +51,13 @@
   .tab-set {
     border: 1px solid #ccc
   }
-
+  
   /*Individual box of each tab*/
   .tab-set > label {
     margin-bottom: 0
   }
 
-  /*Container appearing below the tabs, with the contents of the active tab*/
-  .tab-content {
-    background-color: aliceblue;
-    padding: 20px
-  }
+
 
   /*Initial paragraph of the content. By default there's a top margin 
   but we already specify a padding of 20 px for the content no matter what the
@@ -105,31 +106,11 @@
       #ffb900 52%
     );
   }
-  /* _static/css/custom_styles.css */
-  /* _static/css/custom_styles.css */
 
-  /* _static/css/custom_styles.css */
 
-  /* Customize toctree links */
-  .toctree-wrapper .toctree-l1 a {
-    text-decoration: none; /* Remove the underline */
-    color: #E83F48 !important; /* Set the link text to the specified red */
-  }
-
-  .toctree-wrapper .toctree-l1 a:hover {
-    color: black !important; /* Change the color on hover */
-    text-decoration: underline; /* Add underline on hover if needed */
-  }
-
-  .toctree-wrapper .toctree-l1 a:visited {
-    color: #E83F48 !important; /* Ensure visited links are the specified red */
-  }
-
-  .toctree-wrapper .toctree-l1 a:active {
-    color: #E83F48 !important; /* Ensure active links are the specified red */
-  }
 
   /* Add bullets to the toctree items */
+  
   .toctree-wrapper ul {
     list-style-type: disc !important; /* Disc bullet for the first level */
     padding-left: 20px; /* Adjust the padding as needed */
@@ -151,163 +132,154 @@
     list-style: inherit !important; /* Ensure bullets are inherited */
   }
 
-  /* Set bullet points to always appear in the specified red */
-  .toctree-wrapper ul li {
-    color: #E83F48 !important; /* Set bullet points to the specified red */
-  }
+  /* Set bullet points to always appear in the specified red - Does not seem to have an effect right now*/ 
+  /* .toctree-wrapper ul li {
+    color: var(--bg-primary) !important; 
+  } */
 
+/* Set bullet points to always appear in the specified red*/ 
   .toctree-wrapper ul li::marker {
-    color: #E83F48 !important; /* Ensure the marker (bullet) itself is the specified red */
+    color: var(--bg-primary) !important; 
   }
-
+  
   /* Set headers inside the toctree to the specified red */
   .toctree-wrapper .toctree-l1 a {
-    color: #E83F48 !important; /* Ensure the headers inside the toctree are the specified red */
+    color: var(--bg-primary)!important; /* Ensure the headers inside the toctree are the specified red */
   }
-
+  
+/* This changes the color of the toctree letters, not bullet points */
   .toctree-wrapper .toctree-l1 a:hover,
   .toctree-wrapper .toctree-l1 a:visited,
   .toctree-wrapper .toctree-l1 a:active {
-    color: #E83F48 !important; /* Maintain the specified red color on hover, visited, and active states */
+    color: var(--bg-primary) !important; 
   }
 
-  /* Set sidebar links and headers to the specified red */
-  div[role="navigation"] a.nav-link {
-    color: #E83F48 !important; /* Set the sidebar link color to the specified red */
-  }
 
-  /* custom.css */
-  .tab-content {
-    color: #E83F48  !important;
-  }
+  /* Set sidebar links and headers to the specified red - doesn't seem to have any effect*/
+  /* div[role="navigation"] a.nav-link {
+    color: var(--bg-primary) !important;
+  } */
 
-  /* Change the background color of the selected item to black */
+
+/* Changes the color of the list below a section - For example, in all the courses below 'DTU Courses' when selected. */
+
   .toctree-l1.current a {
-    color: #E83F48  !important; /* Ensure text is readable */
+    color: var(--bg-primary) !important; /* Ensure text is readable */
   }
 
   
-/* Default navbar link styles */
-  nav.navbar a {
-    color: #E83F48 ; /* Use inherited color */
-    font-weight: normal; /* Normal font weight */
-  }
+/* Default navbar link styles - does not seem to be working */
+  /* nav.navbar a {
+    color: yellow ; 
+    font-weight: normal; 
+  } */
 
-  /* Styles for the active or selected navbar link */
-  nav.navbar a.active, nav.navbar a.current {
-    color: #E83F48  !important; /* Set the active link text color to black */
-    font-weight: bold !important; /* Make the active link text bold */
-  }
 
-  /* Additional class that might be used for the current page link */
+
+  /* Styles for the active or selected navbar link - doesn't seem to be working */
+  /* nav.navbar a.active, nav.navbar a.current {
+    color: var(--bg-primary)  !important; 
+    font-weight: bold !important; 
+  } */
+
+  /* Changes the color of the active link on the header */
   nav.navbar .active > a {
-    color: #E83F48  !important;
+    color: var(--bg-primary) !important;
     font-weight: bold !important;
   }
 
-/* Ensure all titles formatted with `=` are bold */
-  h1, h2 {
+/* Ensure all titles formatted with `=` are bold - doesn't seem to 
+have an extra effect since there is previous code taking care of this*/
+
+  /* h1, h2 {
     font-weight: bold !important;
-  }
-
-  /* General hyperlink styles */
-  a {
-    color: #E83F48; /* Red color */
-    text-decoration: none; /* Remove underline */
-  }
+  } */
 
 
-  /* Styles for navigation buttons (Previous and Next) */
-  .nav-button a {
-    color: #E83F48 !important; /* Red color */
+
+  /* General hyperlink styles - doesn't seem to have any effect */
+  /* a {
+    color: green; 
+    text-decoration: none; 
+  } */
+
+  /* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
+  /* .nav-button a {
+    color: var(--bg-primary) !important;
     text-decoration: none !important; 
-    border-bottom-color:  #E83F48 !important; 
-    /* Remove underline */
-  }
-
-
-
+    border-bottom-color:  var(--bg-primary) !important; 
   
+  } */
+
+  /* Ensure the bottom navigation links are also styled - doesn't seem to have any effect*/
+  /* .wy-nav-content a[href] {
+    color: var(--bg-primary); /* Red color */
+    /* text-decoration: none; /* Remove underline
+  } */
 
 
+/* General hyperlink styles - Changes ALL hyperlinks on the website, therefore it is disabled*/
 
-  /* Ensure the bottom navigation links are also styled */
-  .wy-nav-content a[href] {
-    color: #E83F48; /* Red color */
-    text-decoration: none; /* Remove underline */
-  }
+/* a {
+  color: var(--bg-primary) ;
+} */
 
- 
+/* Hover state for hyperlinks - Changes all, but there are other 
+hovers that are also interfering so it doesn't have effect on all  */
 
-  /* Custom CSS to change hyperlink styles */
-
-/* General hyperlink styles */
-a {
-  color: #E83F48; /* Red color */
-}
-
-/* Hover state for hyperlinks */
 a:hover {
-  color: #E83F48 !important;
-  border-bottom-color: #E83F48 !important;
+  color: var(--bg-primary)!important;
+  border-bottom-color: var(--bg-primary) !important;
+  }
+
+/* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
+/* .nav-button a {
+  color: var(--bg-primary) !important; 
+  border-bottom-color: var(--bg-primary) !important
   
-   /* Add underline on hover if needed */
-}
-
-/* Styles for navigation buttons (Previous and Next) */
-.nav-button a {
-  color: #E83F48 !important; /* Red color */
-  border-bottom-color: #E83F48 !important
-  /* Remove underline */
-}
-
-/* Change the color of the Next and Previous navigation links to red and remove underline */
-.sphinxsidebar a, .sphinxsidebar a:visited, .sphinxsidebar a:active {
-  color: #E83F48 !important; /* Red color */
-  border-bottom-color: #E83F48 !important;
-
-}
-
-
-/* Ensure the bottom navigation links are also styled */
-.wy-nav-content a[href] {
-  color: #E83F48 !important; /* Red color */
-  text-decoration: none; /* Remove underline */
-}
-
-.wy-nav-content a[href]:hover {
-  color: #E83F48 !important;
-  border-bottom-color: #E83F48 !important;
-
-}
+} */
 
 
 
-/* Ensure default styles for subtitle and title */
+/* Change the color of the Next and Previous navigation links to red and remove underline - doesn't seem to be working */
+/* .sphinxsidebar a, .sphinxsidebar a:visited, .sphinxsidebar a:active {
+  color: var(--bg-primary) !important; 
+  border-bottom-color: var(--bg-primary) !important;
+} */
+
+
+
+/* Ensure the bottom navigation links are also styled - doesn't seem to be working */
+/* .wy-nav-content a[href] {
+  color: var(--bg-primary) !important; /* Red color */
+  /* text-decoration: none;  */
+/* } */ 
+
+/* .wy-nav-content a[href]:hover {
+  color: var(--bg-primary) !important;
+  border-bottom-color: var(--bg-primary) !important;
+} */
+
+
+
+/* Changes style of next and previous buttons at the bottom of the page -
+ Note that you can change both 'Next' and the subtitle behind.
+ Here both are changed simultaneously*/
+
 .prev-next-subtitle,
 .prev-next-title {
   color: currentColor !important;
   text-decoration: none !important; /* Remove underline */
   font-weight: normal !important;
-
 }
 
 
-
-
-/* Apply hover effect to the parent anchor */
-
-
-
-
-
-/* Custom CSS to change the style of the reference internal nav-link */
-
-/* General styles for the reference internal nav-link class */
-a.reference.internal.nav-link {
-  color: #E83F48 !important; /* Red color */
+/* General styles for the reference internal nav-link class - doesn't seem to be working*/
+/* a.reference.internal.nav-link {
+  color: var(--bg-primary) !important; 
   text-decoration: none !important; /* Remove underline */
-}
+/* } 
+
 
 /* Hover state for the reference internal nav-link */
 a.reference.internal.nav-link:hover {
@@ -316,44 +288,42 @@ a.reference.internal.nav-link:hover {
    /* Add underline on hover if needed */
 }
 
-
-/* Custom CSS to hide the navbar-brand logo */
-
-/* Hide the element with class navbar-brand logo */
+/* Hide the homepage element that's on top in the primary side bar  */
 .navbar-brand.logo {
   display: none !important;
 }
-
-/* Custom CSS to hide the header-article-items header-article_inner */
 
 /* Hide the element with class header-article-items header-article_inner */
 .header-article-items.header-article_inner {
   display: none !important;
 }
 
-/* Custom CSS to hide the bd-header-article noprint */
-
-/* This takes out the  toggle side bar */
-/* .bd-header-article.noprint {
+/* This takes out the toggle side bar */
+ /* .bd-header-article.noprint {
   display: none !important;
-}
- *//* styles.css */
+} */
+
+
+/* Changes colors of all buttons */
 .btn:hover {
- color: #E83F48 ! important;
- box-decoration-break:#E83F48 ! important ;
+ color: var(--bg-primary) ! important;
+ box-decoration-break:var(--bg-primary) ! important ;
 }
 
-/* styles.css */
-/* styles.css */
+/* Changes the aesthetics of the search button in the toggle primary side bar*/
 .btn.btn-sm.navbar-btn.search-button.search-button__button:hover {
-  color: #E83F48; /* Change text color */
+  color: var(--bg-primary); /* Change text color */
   box-shadow: none  !important;  
 }
 
+/* Removes the switch theme button on the toggle primary side bar - This is to avoid repetition,
+since it is also on the header.
+*/
 .bd-header-article.noprint .btn.btn-sm.navbar-btn.theme-switch-button {
   display: none;
 }
 
+/* Takes out a repeated list appearing on the phone/tablet version */
 @media only screen and (max-width: 992px) {
   .sidebar-header-items.sidebar-primary__section {
       display: none;
@@ -361,15 +331,7 @@ a.reference.internal.nav-link:hover {
 }
 
 
-
-
-
-
-
-
-/* Custom CSS to remove the light blue line below selected items */
-
-/* Target the selected item and remove the border */
+/* Remove the light blue line below selected items */
 .navbar a:focus, .navbar a:hover, .navbar a.active, .navbar a.current {
   border-bottom: none !important; /* Remove the underline */
 }
@@ -379,14 +341,13 @@ a.reference.internal.nav-link:hover {
   border-bottom: none !important; /* Ensure no underline for all navbar links */
 }
 
-/* Custom CSS to remove the light blue background and left border from the selected sidebar item */
 
 /* Target the selected sidebar item and remove the background and border */
 li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   background-color: transparent !important; /* Remove the light blue background */
   border-left: none !important; /* Remove the left border */
   border-bottom: none !important; /* Remove the bottom border */
-  color: #E83F48 !important; !important; /* Ensure the text color is inherited */
+  color: var(--bg-primary) !important; !important; /* Ensure the text color is inherited */
   font-weight: bold !important; /* Make the text bold */
   box-shadow: none !important; /* Remove any box shadow that might be creating the line */
 }
@@ -395,7 +356,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
 
 /* Ensure the current link does not have an underline or border */
 .bd-sidebar-primary a.current {
-  color: #E83F48 !important;
+  color: var(--bg-primary) !important;
   border-left: none !important; /* Ensure no left border for the current link */
   border-bottom: none !important; /* Ensure no bottom border for the current link */
   text-decoration: none !important; /* Remove underline */
@@ -415,7 +376,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   border-bottom: none !important; /* Remove bottom border */
   text-decoration: none !important; /* Remove underline */
   box-shadow: none !important; /* Remove any box shadow */
-  color: #E83F48 !important; /* Ensure the text color is inherited */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
   font-weight: bold !important; /* Make the text bold */
 }
 
@@ -424,8 +385,8 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
 
 /* Ensure links in the sidebar are underlined on hover */
 .bd-sidebar-primary a:hover {
-  color: #E83F48 !important;
-  border-bottom-color: #E83F48 !important;
+  color: var(--bg-primary) !important;
+  border-bottom-color: var(--bg-primary) !important;
 }
 
 /*.bd-sidebar-primary,.bd-sidebar-secondary { 
@@ -442,7 +403,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   height: auto;            /* Allow the height to adjust based on content */
   padding: 0;              /* Remove default padding */
   margin: 0;
-  border-bottom-color: #E83F48               /* Remove default margin */
+  border-bottom-color: var(--bg-primary)               /* Remove default margin */
 }
 
 /* Center and style .navbar-icon-links */
@@ -455,7 +416,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   margin: 0;               /* Remove default margin */
   list-style-type: none;   /* Remove list style */
   flex-wrap: nowrap;  
-  border-bottom-color: #E83F48;     /* Prevent wrapping to the next line */
+  border-bottom-color: var(--bg-primary);     /* Prevent wrapping to the next line */
 }
 
 /* Ensure each icon is evenly spaced */
@@ -464,7 +425,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   align-items: center;     /* Center items vertically */
   justify-content: center; /* Center items horizontally */
   margin: 0 10px;  
-  border-bottom-color: #E83F48;     /* Prevent wrapping to the next line */
+  border-bottom-color: var(--bg-primary);     /* Prevent wrapping to the next line */
   /* Adjust the spacing as needed */
 }
 
@@ -475,7 +436,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   justify-content: center;
   text-decoration: none;
   font-size: 1.5em;
-  border-bottom-color: #E83F48;     /* Prevent wrapping to the next line */
+  border-bottom-color: var(--bg-primary);     /* Prevent wrapping to the next line */
   /* Adjust the size of the icons */     /* Set the color to match the text color */
 }
 
@@ -522,21 +483,21 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
 
  /* General hyperlink styles */
  a {
-  color: #E83F48; /* Red color */
+  color: var(--bg-primary); /* Red color */
   text-decoration: none; /* Remove underline */
 }
 
 
 
 .reference.external {
-  color: #E83F48; /* Tomato color */
+  color: var(--bg-primary); /* Tomato color */
 }
 
 
 /* Change the color of the hover effect */
 a.reference.external:hover {
-  color:#E83F48 ;
-  border-bottom-color: #E83F48;
+  color:var(--bg-primary) ;
+  border-bottom-color: var(--bg-primary);
   text-decoration: underline; /* SteelBlue color */
 }
 
@@ -544,7 +505,7 @@ a.reference.external:hover {
 
 /* Change the color of the visited link */
 a.reference.external:visited {
-  color:#E83F48 ; /* SlateBlue color */
+  color:var(--bg-primary) ; /* SlateBlue color */
 }
 
 
@@ -572,7 +533,7 @@ a.reference.external:visited {
 .navbar-icon-links .nav-item .nav-link.active,
 .navbar-icon-links .nav-item .nav-link:focus,
 .navbar-icon-links .nav-item .nav-link:hover {
-  border-bottom: 3.2px solid #E83F48 !important; /* Add red underline */
+  border-bottom: 3.2px solid var(--bg-primary) !important; /* Add red underline */
   text-decoration: none !important;
   box-shadow: none !important;
 }
@@ -593,7 +554,7 @@ h4:hover .headerlink,
 h5:hover .headerlink,
 h6:hover .headerlink {
   display: inline;
-  color: #E83F48; /* Custom color */
+  color: var(--bg-primary); /* Custom color */
   font-size: 0.93em; /* Custom size */
   text-decoration: none; /* Remove underline */
   margin-left: 5px; /* Add some spacing */
@@ -630,14 +591,14 @@ h6:hover .headerlink {
 
 
 .visible.nav.section-nav.flex-column li.toc-h2 a:hover {
-  color:#E83F48 !important;
+  color:var(--bg-primary) !important;
   font-weight: bold !important;
    /* Change this to your desired hover color */
 }
 
 
 .visible.nav.section-nav.flex-column li.toc-h2 a.active {
-  color:#E83F48 !important;
+  color:var(--bg-primary) !important;
   font-weight: bold !important;
   content: none !important; 
   box-shadow:none !important;/* Change this to your desired hover color */
@@ -658,9 +619,9 @@ h6:hover .headerlink {
 /* input#search-input:hover,
 input#search-input:active,
 input#search-input:focus {
-    color: #E83F48;
-    border: 1px solid #E83F48; 
-    box-shadow: 0 0 10px #E83F48; 
+    color: var(--bg-primary);
+    border: 1px solid var(--bg-primary); 
+    box-shadow: 0 0 10px var(--bg-primary); 
     transition: all 0.3s ease; 
     text-decoration: none; 
     background-color: transparent; 
@@ -668,7 +629,7 @@ input#search-input:focus {
 /* Change hover effect for theme switcher button */
 .theme-switch a:hover {
 
-  color:#E83F48 !important; /* Example text color */
+  color:var(--bg-primary) !important; /* Example text color */
   box-shadow: none; /* Remove underline */
 
 }
@@ -679,14 +640,14 @@ input#search-input:focus {
 /* button.search-button-class:hover,
 button.search-button-class:active,
 button.search-button-class:focus {
-    color: #E83F48;
+    color: var(--bg-primary);
     box-shadow: none; } */
 
 /* Change hover, active, and focus effects for theme switch button */
 button.btn.btn-sm.navbar-btn.theme-switch-button:hover,
 button.btn.btn-sm.navbar-btn.theme-switch-button:active,
 button.btn.btn-sm.navbar-btn.theme-switch-button:focus {
-    color: #E83F48; /* Specific text color */
+    color: var(--bg-primary); /* Specific text color */
     box-shadow: none;}
 
 /* Specifically target each mode button within the theme switch button */
@@ -699,7 +660,7 @@ button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]
 button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:hover,
 button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:active,
 button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:focus {
-    color: #E83F48; /* Specific text color for inner buttons */
+    color: var(--bg-primary); /* Specific text color for inner buttons */
     box-shadow: none; /* Remove underline */
 
 
@@ -714,20 +675,20 @@ button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch.nav-link {
 
 /* Change text color on hover */
 label.sd-tab-label:hover {
-  color:#E83F48 !important;
-  border-color: #E83F48 !important;
+  color:var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
    /* Change to your desired hover color */
 }
 
 /* Change background and text color when selected */
 .sd-tab-set input:checked + label.sd-tab-label {
-  color: #E83F48 !important;
-  border-bottom-color: #E83F48 !important; /* Change to your desired text color when selected */
+  color: var(--bg-primary) !important;
+  border-bottom-color: var(--bg-primary) !important; /* Change to your desired text color when selected */
 }
 
 /* Optional: Change border color on focus */
 label.sd-tab-label:focus {
-  border-bottom-color: #E83F48 !important; /* Change to your desired focus border color */
+  border-bottom-color: var(--bg-primary) !important; /* Change to your desired focus border color */
 }
 
 
@@ -737,27 +698,27 @@ label.sd-tab-label:focus {
 /* Target only the main section */
 .bd-article a.reference.external:visited {
   /* Your desired styles for visited external links */
-  color:#E83F48 ;
+  color:var(--bg-primary) ;
 }
 
 /* Target only the main section */
 .bd-article a.reference.internal:visited {
   /* Your desired styles for visited internal links */
-  color:#E83F48 ;
+  color:var(--bg-primary) ;
 }
 
 .bd-article a.reference.internal:hover {
   /* Your desired styles for visited internal links */
-  color:#E83F48 !important ;
+  color:var(--bg-primary) !important ;
   text-decoration: underline !important;
 }
 
 
 /* Custom styles for the back to top button */
 #pst-back-to-top {
-  background-color: #E83F48; /* Blue background */
+  background-color: var(--bg-primary); /* Blue background */
   color: #ffffff; /* White text */
-  border-color: #E83F48; /* Darker blue border */
+  border-color: var(--bg-primary); /* Darker blue border */
 }
 
 /* Optional: Add hover, focus, and active states */
@@ -772,20 +733,22 @@ label.sd-tab-label:focus {
 @import url('bannerStyles.css');
 
 a.custom-link {
-  color: #E83F48;  /* Normal color */
+  color: var(--bg-primary);  /* Normal color */
   text-decoration: none;
 }
 
 a.custom-link:hover {
-  color: #E83F48;  /* Hover color */
+  color: var(--bg-primary);  /* Hover color */
   text-decoration: underline;
 }
 
 .sd-card-hover:hover {
-  border-color: #E83F48 !important; /* Optional: Add a border or change its color */
+  border-color: var(--bg-primary) !important; /* Optional: Add a border or change its color */
 }
 
 .sd-card.sd-sphinx-override.sd-w-100.sd-shadow-sm.sd-card-hover.docutils {
   border-radius: 15px; /* Adjust the value as needed */
 }
+
+
 
