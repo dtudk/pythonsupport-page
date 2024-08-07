@@ -44,17 +44,17 @@ Once Homebrew has been installed and you have RESTARTED you terminal, paste the 
 .. tip::
     You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
-.. code-block::
+.. code-block:: bash
 
     brew install --cask miniconda
 
 Now run the following commands in terminal one at a time by inserting and pressing enter:
 
-.. code-block::
+.. code-block:: bash
 
     conda install python=3.11 -y
     
-.. code-block::
+.. code-block:: bash
 
     conda install -c conda-forge dtumathtools uncertainties -y
     
@@ -65,7 +65,7 @@ Step 3: Install VS Code
 After this you need to install Visual Studio Code. This is done by pasting the following in you
 terminal and executing it:
 
-.. code-block::
+.. code-block:: bash
 
     brew install --cask visual-studio-code
 
@@ -96,14 +96,14 @@ well. This also needs to be from Microsoft.
 
 Verification and Quick Troubleshooting
 --------------------------------------
-Open up a terminal again. if you see (base) next to your username, you can proceed. Otherwise
+Open up a terminal again. if you see ``(base)`` next to your username, you can proceed. Otherwise
 try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
 For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
 
 .. todo::
-    Insert image of the terminal with (base) next to the username
+    Insert image of the terminal with ``(base)`` next to the username
 
-Make sure that it says (base) next to your user name when opening the terminal.
+Make sure that it says ``(base)`` next to your user name when opening the terminal.
 
 Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run python code.
 
@@ -118,7 +118,7 @@ Now ensure the following:
 
 If it is not the case for one of the above, try to paste the following line of code in the terminal and press enter:
 
-.. code-block::
+.. code-block:: bash
 
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 

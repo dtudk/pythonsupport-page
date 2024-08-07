@@ -13,13 +13,13 @@ Windows - Automated installation guide
     Change color?
 #. 
 
-    The first thing you need to do is to open Powershell as an administrator. This can be done
-    by opening the menu bar, then search for *Windows Powershell*. Once you see Windows
-    Powershell, on the right hand side you can select *Run as administrator*. If not, right-click the
+    The first thing you need to do is to open PowerShell as an administrator. This can be done
+    by opening the menu bar, then search for *Windows PowerShell*. Once you see Windows
+    PowerShell, on the right hand side you can select *Run as administrator*. If not, right-click the
     icon and select *Run as administrator*. 
 
     .. todo::
-        insert image of how to open powershell as described above.
+        insert image of how to open PowerShell as described above.
 
 #. 
     Next you need to copy the following line of code into your terminal and press enter:
@@ -27,7 +27,7 @@ Windows - Automated installation guide
     .. tip::
         You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
-    .. code-block::
+    .. code-block:: bash
 
         PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/AutoInstallWindows.ps1' -UseBasicParsing).Content}"
 
@@ -41,16 +41,16 @@ Windows - Automated installation guide
 Verification and Quick Troubleshooting
 --------------------------------------
 To ensure that your installation is working correctly, please go through the following steps.
-Open up PowerShell again. if you see (base) next to your username, you can proceed. If unsure see the image bellow:
+Open up PowerShell again. if you see ``(base)`` next to your username, you can proceed. If unsure see the image bellow:
 
 .. todo::
-    Insert image of the powershell with (base) next to the username
+    Insert image of the PowerShell with (base) next to the username
 
 Otherwise do the following:
 
 • Search for Miniconda PowerShell promt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
 • After opening the Miniconda shell, type ``conda init`` and press enter.
-• Open up PowerShell again and verify that you now see (base).
+• Open up PowerShell again and verify that you now see ``(base)``.
 • Finally type ``idle`` in PowerShell and press enter. This should open up a new window in which you will able to run python code.
 
 Now ensure the following:
@@ -64,7 +64,7 @@ Now ensure the following:
 
 If it is not the case for one of the above, try to paste the following line of code in PowerShell and press enter:
 
-.. code-block::
+.. code-block:: bash
 
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 

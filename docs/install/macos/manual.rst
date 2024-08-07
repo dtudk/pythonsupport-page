@@ -19,8 +19,8 @@ Step 1: Install Miniconda
 
 First thing you need to do is download Miniconda. This is done by going to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
 Under the title "Latest Miniconda installer links", you will see different installers where you will have to download the correct one.
-If you have an Intel processor you need to select Miniconda3 macOS Intel x86 64-bit pkg.
-If you have an M processor you need to select Miniconda3 macOS Apple M1 64-bit pkg. Even if
+If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
+If you have an M processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. Even if
 you have an M2 or M3.
 
 .. image:: /menu/images/macos-fully-manual-miniconda.png
@@ -56,11 +56,11 @@ Copy and paste the following lines of cod einto your terminal and press enter on
 .. tip::
     You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
-.. code-block::
+.. code-block:: bash
         
     conda install python=3.11 -y
     
-.. code-block::
+.. code-block:: bash
 
     conda install -c conda-forge dtumathtools uncertainties -y
 
@@ -106,14 +106,14 @@ download that extension as well. This also needs to be from Microsoft.
 
 Verification and Quick Troubleshooting
 --------------------------------------
-Open up a terminal again. if you see (base) next to your username, you can proceed. Otherwise
+Open up a terminal again. if you see ``(base)`` next to your username, you can proceed. Otherwise
 try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
 For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
 
 .. todo::
     Insert image of the terminal with (base) next to the username
 
-Make sure that it says (base) next to your user name when opening the terminal.
+Make sure that it says ``(base)`` next to your user name when opening the terminal.
 
 Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run python code.
 
@@ -128,7 +128,7 @@ Now ensure the following:
 
 If it is not the case for one of the above, try to paste the following line of code in the terminal and press enter:
 
-.. code-block::
+.. code-block:: bash
 
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
