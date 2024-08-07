@@ -5,11 +5,11 @@ Intro to Intelligent Systems
 ==============================================
 
 
-These are the instructions for autumn 2024 (E24)
+These are the instructions for autumn 2024 (E24). The course base can be found :course-base:`here <2024:02461>`
 
 
 .. dropdown:: Looking for old instructions?
-    :color: light
+    :icon: hourglass
 
     * :doc:`Autumn 2023 (E23) <2023-2024/02461>`
     * **ETC...**
@@ -17,4 +17,11 @@ These are the instructions for autumn 2024 (E24)
 | 
 
 
+.. todo::
+    Add newer years to dropdown menu as we progress
+
 **insert current instructions here**
+
+
+.. todo::
+    make sure that course bases in guidelines match the year of the guidelines. For example: if the guidelines are from 2023 the course base should be that of 2023 and not the current one. 
