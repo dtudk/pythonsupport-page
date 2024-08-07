@@ -7,7 +7,7 @@ Windows - Automated installation guide
     :ref-type: ref
     :color: info
 
-    Not using **Windows**? The similar installation guide for **MacOS** can be found here.  
+    Not using **Windows**? Press here for **MacOS** guides.
 
 .. todo::
     Change color?

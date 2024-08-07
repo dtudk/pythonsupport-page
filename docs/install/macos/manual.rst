@@ -7,7 +7,7 @@ MacOS - Manual installation guide
     :ref-type: ref
     :color: info
 
-    Not using **MacOS**? The similar installation guide for **Windows** can be found here.  
+    Not using **MacOS**? Press here for **Windows** guides.
 
 .. todo::
     Change color?
