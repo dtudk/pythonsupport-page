@@ -215,6 +215,8 @@ html_static_path = ['_static']
 # this move will work regardless of hover...
 _fa_move = "shake-hover"
 
+
+
 _icon_links = [
     {
         "name": "Python support - Discord channel invitation",
@@ -251,7 +253,7 @@ _icon_links = [
         "url": "https://docs.conda.io/en/latest/index.html",
         "icon": "_static/anaconda_logo.svg",
         "type": "local",
-    },
+    }
 ]
 
 
@@ -529,12 +531,10 @@ def setup(app):
 
 
 
-
 html_theme_options = {
     
-    "navbar_center": ["logo_button.html","navbar-nav","theme-switcher"],
-    # "navbar_end": ["theme-switcher","search-field"],
-    "lefttsidebar": "false",
+    "navbar_center": ["logo_button.html","navbar-nav","theme-switcher","article-header-buttons"],
+    "use_fullscreen_button": True,
     "icon_links": _icon_links,
     "header_links_before_dropdown": 10,
     "back_to_top_button": True,
@@ -542,6 +542,7 @@ html_theme_options = {
     "repository_provider": "github",
     "repository_url": _pythonsupport["repository"],
 }
+
 
 
 
