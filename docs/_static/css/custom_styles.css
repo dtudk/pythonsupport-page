@@ -182,19 +182,28 @@
     font-weight: bold !important; 
   } */
 
-  /* Changes the color of the active link on the header */
+
+
+
+
 
   
+  
+  
+
+
+  /* It underlines header title when selected - color red */
 .nav-item .nav-link:hover{
     color: var(--bg-primary) !important;
     text-decoration: underline 3.2px solid var(--bg-primary) !important; /* Add red underline */
     }
   
 
+ /* Makes text bold and red when you are in a specific section - For example, Install Python */
 
 .nav-item.current.active,
 .nav-item.current.active .nav-link {
-    color: var(--bg-primary) !important; /* Example: Orange text color */
+    color: var(--bg-primary) !important; 
     font-weight: bold !important;
     text-decoration: none !important;
     border-bottom: none !important;
@@ -203,15 +212,14 @@
     box-shadow: none !important;
   }
 
-.nav-item .nav-link::before,
-.nav-item .nav-link::after {
-    content: none !important; /* Remove any pseudo-element content */
-}
+
+  /* Takes out the huge underline below the header titles when selected */
 
 .nav-item .nav-link::before,
 .nav-item .nav-link::after {
     content: none !important; /* Remove any pseudo-element content */
 }
+
   
 /* Hover styles for the switch theme button on header */
 .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before,
@@ -760,7 +768,7 @@ a.custom-link:hover {
   border-color: var(--bg-primary) !important; /* Optionally change the border color */
 }
 
-
+/* Change color for the selected tab label within the tab set */
 .sd-tab-set.docutils input[type="radio"]:checked + .sd-tab-label + .sd-tab-content {
   border-color: var(--bg-primary) !important; /* Optionally change the border color */
 }
