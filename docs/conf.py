@@ -255,27 +255,17 @@ _icon_links = [
 ]
 
 
-# html_theme_options = {
-#     "path_to_docs": "docs/",
-#     "use_repository_button": True,
-#     "repository_provider": "github",
-#     "repository_url": _pythonsupport["repository"],
-#     "use_edit_page_button": True,
-#     "use_fullscreen_button": True,
-#     "header_links_before_dropdown": 4,
-#     "navbar_align": "content",
-#     "navbar_center": ["navbar-nav"],
-#     "icon_links": _icon_links,
-# }
+html_theme_options = {
+    "navbar_center": ["logo_button.html", "navbar-nav"],
+    "navbar_end": ["article-header-buttons", "theme-switcher"],
+    "icon_links": _icon_links,
+    "header_links_before_dropdown": 10,
+    "back_to_top_button": True,
+    "use_repository_button": True,
+    "repository_provider": "github",
+    "repository_url": _pythonsupport["repository"],
+}
 
-# # currently not working... I don't know why..
-# _html_sidebars = {
-#     "**": [
-#         "search-field",
-#         "sidebar-nav-bs",
-#         "sidebar-ethical-ads",
-#     ]
-# }
 
 _course_json_url = "_static/course_switcher.json"
 if False:
@@ -525,49 +515,3 @@ def setup(app):
     except BaseException as e:
         print("cannot do jinja-replacements on included files")
 
-
-
-
-
-
-html_theme_options = {
-    
-    "navbar_center": ["logo_button.html","navbar-nav","theme-switcher"],
-    # "navbar_end": ["theme-switcher","search-field"],
-    "lefttsidebar": "false",
-    "icon_links": _icon_links,
-    "header_links_before_dropdown": 10,
-    "back_to_top_button": True,
-    "use_repository_button": True,
-    "repository_provider": "github",
-    "repository_url": _pythonsupport["repository"],
-}
-
-
-
-
-
-
-
-
-
-
-
-# html_theme_options = {
-#     "navbar_center": ["logo_button.html", "search-field.html", "theme-switch-button.html", "navbar-nav"],
-#     "leftsidebar": "false",
-#     "icon_links": _icon_links
-# }
-
-# "use_repository_button": True,
-#     "repository_provider": "github",
-#     "repository_url": _pythonsupport["repository"],
-#     "use_edit_page_button": True,
-#     "use_fullscreen_button": True,
-#     "header_links_before_dropdown": 4,
-#     "navbar_align": "content",
-#     "navbar_center": ["navbar-nav"],
-#     "icon_links": _icon_links,
-templates_path = ['_templates']
-
- 
