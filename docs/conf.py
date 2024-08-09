@@ -532,8 +532,8 @@ def setup(app):
 
 html_theme_options = {
     
-    "navbar_center": ["logo_button.html","navbar-nav","theme-switcher"],
-    # "navbar_end": ["theme-switcher","search-field"],
+    "navbar_center": ["logo_button.html","navbar-nav"],
+    "navbar_end": ["article-header-buttons","theme-switcher"],
     "lefttsidebar": "false",
     "icon_links": _icon_links,
     "header_links_before_dropdown": 10,

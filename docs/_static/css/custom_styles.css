@@ -234,6 +234,88 @@ color: var(--bg-primary)!important;
 
 
 
+/* Changes that we need to discuss */
+
+
+/* Style for custom buttons in the header */
+.article-header-buttons .btn {
+  margin: 0 2.5px;
+  padding: 5px;
+  color: currentColor !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; /* Set a fixed width */
+  height: 36px; /* Set a fixed height */
+}
+/* Hide the download button */
+/* .svg-inline--fa.fa-download {
+    display: none;
+} */
+/* Move the theme switch button to the left */
+.theme-switch-button {
+  margin-left: -10px; /* Remove any existing left margin */
+  margin-right: auto; /* Push the element to the left */
+}
+
+
+/* Target the GitHub SVG icon specifically and delete it */
+.svg-inline--fa.fa-github {
+display: none !important;
+}
+
+/* Hide the button with the specific class within article-header-buttons */
+.article-header-buttons .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button {
+  display: none !important;
+}
+
+/* Move the icon with the class 'svg-inline--fa fa-expand' to the left */
+.svg-inline--fa.fa-expand {
+  margin-left: -10px; /* Ensure no left margin */ /* Push it to the left within a flex container */
+  vertical-align: middle; /* Ensure it is vertically aligned */
+  width: 21px;  /* Adjust width as needed */
+  height: 21px; 
+}
+
+
+/* Ensure the header is fixed and static */
+.bd-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+/* Ensure the header is fixed and static */
+.bd-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+body {
+  padding-top: 60px; /* Adjust based on the height of your header */
+}
+
+/* Reduce space between icons and titles */
+.navbar-header-items__center {
+  display: flex;
+  align-items: center;
+}
+
+.article-header-buttons {
+  margin-left: -12px; /* Adjust to reduce space between titles and icons */
+}
+
+
+/* Ensure the header buttons are aligned with the rest of the header */
+.article-header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end of changes that we need to discuss */
 
 
 
