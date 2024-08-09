@@ -256,7 +256,7 @@ color: var(--bg-primary)!important;
  
 /* Move the theme switch button to the left */
 .theme-switch-button {
-  margin-left: -27px; /* Remove any existing left margin */
+  margin-left: -1.5em; /* Remove any existing left margin */
   margin-right: auto; /* Push the element to the left */
 }
 
