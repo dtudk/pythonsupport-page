@@ -4,20 +4,19 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 
-
 print("vvvvv INITIALIZING conf.py vvvvv")
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-from pathlib import Path 
+from pathlib import Path
 import os
 import datetime
 import sys
 
-html_logo= '_static/DTU_logo_Coral_RGB.png'
+html_logo = "_static/DTU_logo_Coral_RGB.png"
 
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 _cwd = Path().resolve()
 
@@ -33,7 +32,7 @@ else:
 
 
 def version2tuple(vers):
-    """ Convert a `vers` to a tuple """
+    """Convert a `vers` to a tuple"""
     if isinstance(vers, tuple):
         return vers
 
@@ -49,62 +48,64 @@ def version2tuple(vers):
 
     raise NotImplementedError()
 
+
 year = datetime.date.today().year
 
-project = 'DTU Python support'
+project = "DTU Python support"
 # conf.py
 html_title = ""
 html_short_title = ""
 
-copyright = f'{year}, DTU Python support'
-author = 'DTU Python support developers'
+copyright = f"{year}, DTU Python support"
+author = "DTU Python support developers"
 
 # when we have a guideline:
 _pref_symbol = ":fas:`ranking-star`"
-#_pref_symbol = ""
+# _pref_symbol = ""
 
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.mathjax',
-    'sphinx.ext.todo',
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.mathjax",
+    "sphinx.ext.todo",
     # allow shorthands for links
-    'sphinx.ext.extlinks',
+    "sphinx.ext.extlinks",
     # allows to view code directly in the homepage
-    'sphinx.ext.viewcode',
+    "sphinx.ext.viewcode",
     # toggle-button on info/warning/...
-    'sphinx_togglebutton',
+    "sphinx_togglebutton",
     # create tabs and grouped tabs
-    'sphinx_inline_tabs',
+    "sphinx_inline_tabs",
     # allow emoji's in the documentation
-    'sphinxemoji.sphinxemoji',
+    "sphinxemoji.sphinxemoji",
     # allow copybutton on code-blocks
-    'sphinx_copybutton',
+    "sphinx_copybutton",
     # design, grids etc.
-    'sphinx_design',
+    "sphinx_design",
     # enable target=_blank via jquery
-    'sphinxcontrib.jquery',
+    "sphinxcontrib.jquery",
 ]
 
 
 # Add the spelling extension if available
 try:
     import sphinxcontrib.spelling
+
     # spell checking
     extensions.append("sphinxcontrib.spelling")
 except ImportError:
     print("cannot do spell checks! sphinxcontrib.spelling cannot be imported")
 
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None),
+    "python": ("https://docs.python.org/3", None),
 }
 
-sphinxemoji_style = 'twemoji'
+sphinxemoji_style = "twemoji"
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 exclude_patterns = [
     "python/poetry.rst",
     "python/pipenv.rst",
@@ -124,17 +125,21 @@ def get_current_years():
     else:
         year = year[:2]
     return year
+
+
 _year = get_current_years()
 
-print(f"""\
+print(
+    f"""\
 ps: Links to DTU's course database will be to the year:
-ps:      {_year[0]}-{_year[1]}""")
+ps:      {_year[0]}-{_year[1]}"""
+)
 
 
 # Read in all the content from the course configuration.
 # This is much simpler to maintain and we could allow other
 # details as well.
-_conf_toml = toml.load(open("ps_configuration.toml", 'rb'))
+_conf_toml = toml.load(open("ps_configuration.toml", "rb"))
 _pythonsupport = _conf_toml["pythonsupport"]
 
 url = _pythonsupport["homepage"]
@@ -158,7 +163,7 @@ extlinks = {
     # When courses changes numbers etc. some might
     "course-base": (
         Coursebase(_conf_toml["dtu"]["course-base"] + "/course"),
-        CourseStrip()
+        CourseStrip(),
     ),
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
@@ -209,8 +214,8 @@ sphinx_tabs_disable_tab_closing = True
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-html_theme = 'sphinx_book_theme'
-html_static_path = ['_static']
+html_theme = "sphinx_book_theme"
+html_static_path = ["_static"]
 
 # this move will work regardless of hover...
 _fa_move = "shake-hover"
@@ -273,24 +278,24 @@ if False:
         "json_url": _course_json_url,
         "version_match": "courses",
     }
-    html_theme_options["switcher"]["json_url"] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
+    html_theme_options["switcher"][
+        "json_url"
+    ] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
 
-html_js_files = [
-    "js/external_tab.js",
-    "js/custom.js"
-]
+html_js_files = ["js/external_tab.js", "js/custom.js"]
 
 html_css_files = [
-    ("css/bannerStyles.css", {'priority': 999}),
-    ("css/questionairStyles.css", {'priority': 999}),
-    ("css/popupStyles.css", {'priority': 999}),
-    ("css/custom_styles.css", {'priority': 998}),
-    "css/colors.css"
+    ("css/bannerStyles.css", {"priority": 999}),
+    ("css/questionairStyles.css", {"priority": 999}),
+    ("css/popupStyles.css", {"priority": 999}),
+    ("css/custom_styles.css", {"priority": 998}),
+    "css/colors.css",
 ]
 
 
 import pydata_sphinx_theme
+
 if version2tuple(pydata_sphinx_theme.__version__) >= (0, 14):
     print("ps: will use fontawesome 6 css")
     html_css_files.append("css/fontawesome6.css")
@@ -310,7 +315,7 @@ html_show_search_summary = True
 _include_todos = os.environ.get("PS_INCLUDE_TODOS", "False")
 if len(_include_todos) > 0:
     _include_todos = _include_todos[0].lower()
-    _include_todos = _include_todos in ('1', 't', 'y')
+    _include_todos = _include_todos in ("1", "t", "y")
 
 if _include_todos:
     todo_include_todos = True
@@ -321,13 +326,13 @@ else:
 
 
 # Spell checking
-spelling_lang = 'en_US'
-tokenizer_lang = 'en_US'
+spelling_lang = "en_US"
+tokenizer_lang = "en_US"
 
 
 # Automatically call the switcher creator
 def course_switcher(out=_course_json_url):
-    """ Create a course switcher based on the available courses
+    """Create a course switcher based on the available courses
 
     This small snippet will automatically search the directories in:
     `courses/` and add any course to the file
@@ -342,29 +347,34 @@ def course_switcher(out=_course_json_url):
 
     courses = cwd / "courses"
 
-    data = [{
-        "name": "courses",
-        "version": "courses",
-        #"url": f"pathto(courses/index.html, 1)",
-        "url": f"courses/index.html",
-        "preferred": True,
-    }]
+    data = [
+        {
+            "name": "courses",
+            "version": "courses",
+            # "url": f"pathto(courses/index.html, 1)",
+            "url": f"courses/index.html",
+            "preferred": True,
+        }
+    ]
 
     for course in courses.glob("*"):
         if not course.is_dir():
-            continue # only search directories
+            continue  # only search directories
 
         if not (course / "index.rst").exists():
-            continue # not a valid course
+            continue  # not a valid course
 
-        data.append({
-            "name": course.name,
-            "version": course.name,
-            #"url": f"pathto(courses/{course.name}/index.rst, 1)",
-            "url": f"courses/{course.name}/index.rst",
-        })
+        data.append(
+            {
+                "name": course.name,
+                "version": course.name,
+                # "url": f"pathto(courses/{course.name}/index.rst, 1)",
+                "url": f"courses/{course.name}/index.rst",
+            }
+        )
 
-    json.dump(data, open(out, 'w'), indent=4)
+    json.dump(data, open(out, "w"), indent=4)
+
 
 course_switcher()
 
@@ -391,7 +401,7 @@ _week_days = [
     "Thursday",
     "Friday",
     "Saturday",
-    "Sunday"
+    "Sunday",
 ]
 _week_days_dict = dict((day, i) for i, day in enumerate(_week_days))
 
@@ -410,7 +420,7 @@ elif len(_days) == 0:
 elif len(_days) == 1:
     _online_days = _week_days[_days[0]]
 else:
-    _online_days = ', '.join([_week_days[day] for day in _days[:-1]])
+    _online_days = ", ".join([_week_days[day] for day in _days[:-1]])
     _online_days = f"{_online_days} and {_week_days[_days[-1]]}"
 
 print("ps: online days (Monday == 0) ", _days)
@@ -429,42 +439,34 @@ html_context = {
     "python_version_max": _pythonsupport["python-version"]["max"],
     "python_version_recommended": _pythonsupport["python-version"]["recommended"],
     "python_version": _pythonsupport["python-version"]["recommended"],
-
     # Installation methods
     "pip": "pip",
     "conda": "conda",
     "poetry": "poetry",
     "pyenv": "pyenv",
-
     # dates
     "current_year": f"{year}",
-
     # Virtual environment methods
     "venv": f"venv {_pref_symbol}",
     "virtualenv": "virtualenv",
     "condaenv": "conda",
-    
     # Operating systems
     "windows": "Windows",
     "macos": "MacOS",
     "linux": "Linux",
     "vscode": "VS Code",
     "spyder": "Spyder",
-
     # Operating shells
     "win_powershell": "Windows | PS",
     "win_batch": "Windows | Batch",
     "mac_bash": "MacOS",
     "linux_bash": "Linux",
     "unix_bash": "Bash",
-
     # Cheatsheet information
     "cheatsheet_icon": ":fas:`toolbox`",
     "cheatsheet_color": "muted",
-
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
-
     # online days
     "online_days": _online_days,
 }
@@ -490,23 +492,23 @@ def rstjinja(app, source):
     Thanks for https://www.ericholscher.com/blog/2016/jul/25/integrating-jinja-rst-sphinx/
     """
     # Make sure we're outputting HTML
-    if app.builder.format != 'html':
+    if app.builder.format != "html":
         return source
 
-    return app.builder.templates.render_string(
-        source, app.config.html_context
-    )
+    return app.builder.templates.render_string(source, app.config.html_context)
+
 
 def rstjinja_source(app, docname, content):
     """source-read event"""
     content[0] = rstjinja(app, content[0])
 
+
 def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
-def setup(app):
 
+def setup(app):
 
     app.connect("source-read", rstjinja_source)
     try:
@@ -514,4 +516,3 @@ def setup(app):
         app.connect("include-read", rstjinja_include)
     except BaseException as e:
         print("cannot do jinja-replacements on included files")
-
