@@ -220,7 +220,8 @@
     content: none !important; /* Remove any pseudo-element content */
 }
 
-  
+
+
 /* Hover styles for the switch theme button on header */
 .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before,
 .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before
@@ -252,9 +253,10 @@ color: var(--bg-primary)!important;
 /* .svg-inline--fa.fa-download {
     display: none;
 } */
+ 
 /* Move the theme switch button to the left */
 .theme-switch-button {
-  margin-left: -10px; /* Remove any existing left margin */
+  margin-left: -27px; /* Remove any existing left margin */
   margin-right: auto; /* Push the element to the left */
 }
 
@@ -262,6 +264,11 @@ color: var(--bg-primary)!important;
 /* Target the GitHub SVG icon specifically and delete it */
 .svg-inline--fa.fa-github {
 display: none !important;
+content: none !important;
+}
+.btn.btn-sm.btn-source-repository-button {
+
+  display: none !important;
 }
 
 /* Hide the button with the specific class within article-header-buttons */
@@ -856,8 +863,6 @@ a.custom-link:hover {
 }
 
 
-
-
 /* Reduce space between the icons in the navbar-icon-links section */
 .navbar-icon-links .nav-item {
   margin-left: 5px;  /* Adjust the left margin as needed */
@@ -870,7 +875,6 @@ a.custom-link:hover {
   box-shadow: none !important;
   border:  3.2px solid var(--bg-primary) !important;
 }
-
 
 
 
