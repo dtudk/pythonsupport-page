@@ -78,7 +78,7 @@
     overflow: hidden;
   }
 
-  #microsoft-logo:before {
+  #microsoft-:before {
     content: "";
     position: absolute;
     height: 24.1vmin;
@@ -183,11 +183,59 @@
   } */
 
   /* Changes the color of the active link on the header */
-  nav.navbar .active > a {
+
+  
+.nav-item .nav-link:hover{
     color: var(--bg-primary) !important;
+    text-decoration: underline 3.2px solid var(--bg-primary) !important; /* Add red underline */
+    }
+  
+
+
+.nav-item.current.active,
+.nav-item.current.active .nav-link {
+    color: var(--bg-primary) !important; /* Example: Orange text color */
     font-weight: bold !important;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    border-color: transparent !important;
+    content: none !important;
+    box-shadow: none !important;
   }
 
+.nav-item .nav-link::before,
+.nav-item .nav-link::after {
+    content: none !important; /* Remove any pseudo-element content */
+}
+
+.nav-item .nav-link::before,
+.nav-item .nav-link::after {
+    content: none !important; /* Remove any pseudo-element content */
+}
+  
+/* Hover styles for the switch theme button on header */
+.btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before,
+.btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before
+ {
+content: none !important;
+color: var(--bg-primary)!important;
+}
+.btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button:active *{
+    color: var(--bg-primary) !important; /* Red text color for all inner elements when clicking */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  
 /* Ensure all titles formatted with `=` are bold - doesn't seem to 
 have an extra effect since there is previous code taking care of this*/
 
@@ -298,11 +346,11 @@ a.reference.internal.nav-link:hover {
   display: none !important;
 }
 
-/* This takes out the toggle side bar */
- /* .bd-header-article.noprint {
-  display: none !important;
-} */
+/* This takes out the toggle side bar */ 
 
+ .bd-header-article.noprint {
+  display: none !important;
+}
 
 /* Changes colors of all buttons */
 .btn:hover {
@@ -322,6 +370,11 @@ since it is also on the header.
 .bd-header-article.noprint .btn.btn-sm.navbar-btn.theme-switch-button {
   display: none;
 }
+
+.bd-header-article.d-print-none.noprint .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button {
+  display: none !important;
+}
+
 
 /* Takes out a repeated list appearing on the phone/tablet version */
 @media only screen and (max-width: 992px) {
@@ -346,7 +399,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   background-color: transparent !important; /* Remove the light blue background */
   border-left: none !important; /* Remove the left border */
   border-bottom: none !important; /* Remove the bottom border */
-  color: var(--bg-primary) !important; !important; /* Ensure the text color is inherited */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
   font-weight: bold !important; /* Make the text bold */
   box-shadow: none !important; /* Remove any box shadow that might be creating the line */
 }
@@ -397,6 +450,9 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   margin: 0;
   border-bottom-color: var(--bg-primary)               /* Remove default margin */
 }
+
+
+
 
 /* Center and style .navbar-icon-links */
 .navbar-icon-links {
@@ -501,15 +557,8 @@ a.reference.external:visited {
   box-shadow: none !important;
 }
 
-/* Ensure no pseudo-element content for the link and its child elements */
-.navbar-icon-links .nav-item .nav-link::before,
-.navbar-icon-links .nav-item .nav-link::after,
-.navbar-icon-links .nav-item .nav-link span::before,
-.navbar-icon-links .nav-item .nav-link span::after,
-.navbar-icon-links .nav-item .nav-link svg::before,
-.navbar-icon-links .nav-item .nav-link svg::after {
-  content: none !important;
-}
+
+
 
 /* Add red underline for active, focus, and hover states */
 .navbar-icon-links .nav-item .nav-link.active,
@@ -602,7 +651,8 @@ button.btn.btn-sm.navbar-btn.theme-switch-button:hover,
 button.btn.btn-sm.navbar-btn.theme-switch-button:active,
 button.btn.btn-sm.navbar-btn.theme-switch-button:focus {
     color: var(--bg-primary); /* Specific text color */
-    box-shadow: none;}
+    box-shadow: none;
+  }
 
 /* Specifically target each mode button within the theme switch button */
 button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:hover,
@@ -703,6 +753,35 @@ a.custom-link:hover {
 .sd-card.sd-sphinx-override.sd-w-100.sd-shadow-sm.sd-card-hover.docutils {
   border-radius: 15px; /* Adjust the value as needed */
 }
+
+/* Change color for the selected tab label within the tab set */
+.sd-tab-set.docutils input[type="radio"]:checked + .sd-tab-label {
+  color: var(--bg-primary) !important; /* Change to your desired text color */
+  border-color: var(--bg-primary) !important; /* Optionally change the border color */
+}
+
+
+.sd-tab-set.docutils input[type="radio"]:checked + .sd-tab-label + .sd-tab-content {
+  border-color: var(--bg-primary) !important; /* Optionally change the border color */
+}
+
+
+
+
+/* Reduce space between the icons in the navbar-icon-links section */
+.navbar-icon-links .nav-item {
+  margin-left: 5px;  /* Adjust the left margin as needed */
+  margin-right: 5px; /* Adjust the right margin as needed */
+  padding: 0; /* Ensure no padding */
+}
+
+/* Change hover effect for the search button */
+.btn.search-button-field.search-button__button:hover {
+  box-shadow: none !important;
+  border:  3.2px solid var(--bg-primary) !important;
+}
+
+
 
 
 
