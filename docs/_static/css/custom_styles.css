@@ -3,7 +3,7 @@
 
  
 
-  /* 
+    /* 
   
   This part of the code imports and changes the font style of the website. 
   
@@ -875,6 +875,30 @@ a.custom-link:hover {
   box-shadow: none !important;
   border:  3.2px solid var(--bg-primary) !important;
 }
+
+
+/* Adds picture-in-picture videos to the bottom right - Note that this is optimized for 
+ONE video per page. If there are more videos, this won't 
+be that useful for the user experience  */
+
+
+iframe[src*='panopto'] {
+  border-radius: 1em; /* Rounded corners for the video iframe using em units */
+}
+
+.sticky-video {
+  position: fixed;
+  bottom: 2vh; /* 2% of the viewport height from the bottom */
+  right: 2vw; /* 2% of the viewport width from the right */
+  width: 20vw; /* 20% of the viewport width */
+  height: auto; /* Maintains aspect ratio based on width */
+  z-index: 1000;
+  border-radius: 2em; /* Rounded corners using em units */
+  overflow: hidden; /* Ensures content within the iframe adheres to the border radius */
+}
+
+
+
 
 
 

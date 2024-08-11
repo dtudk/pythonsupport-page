@@ -283,7 +283,7 @@ if False:
     ] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
 
-html_js_files = ["js/external_tab.js", "js/custom.js"]
+html_js_files = ["js/external_tab.js", "js/custom.js", "js/sticky_video.js"]
 
 html_css_files = [
     ("css/bannerStyles.css", {"priority": 999}),
@@ -516,3 +516,8 @@ def setup(app):
         app.connect("include-read", rstjinja_include)
     except BaseException as e:
         print("cannot do jinja-replacements on included files")
+
+
+def setup(app):
+    app.add_js_file("sticky_video.js")
+
