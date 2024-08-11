@@ -39,13 +39,13 @@
 
 
 .topBanner {
-    background-color: rgba(31, 208, 130, 0.7); /* Change to your desired background color */
+    background-color: rgb(31 208 130 / 70%); /* Change to your desired background color */
     border-top-left-radius: 15px; /* Rounded corners for the banners */
     border-top-right-radius: 15px; /* Rounded corners for the banners */
 }
 
 .bottomBanner {
-    background-color: rgba(232, 63, 72, 0.7); /* Change to your desired background color */
+    background-color: rgb(232 63 72 / 70%); /* Change to your desired background color */
     border-bottom-left-radius: 15px; /* Rounded corners for the banners */
     border-bottom-right-radius: 15px; /* Rounded corners for the banners */
 }
@@ -75,7 +75,6 @@
 }
 
 .bottom-link{
-
     margin-bottom: 5px;
 }
 
@@ -100,11 +99,11 @@
     --dtu-bright-green: #1fd082;
     --dtu-red: #E83F48;
     --dtu-green: #008835;
-    --dtu-red-corporate: #990000;
+    --dtu-red-corporate: #900;
 }
 
 /* Media Queries for smaller screens */
-@media (max-width: 600px) {
+@media (width <= 600px) {
     .top-text, .bottom-text, .top-link, .bottom-link {
         font-size: 18px !important;
     }

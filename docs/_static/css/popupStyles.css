@@ -1,10 +1,10 @@
 .popup .overlay{
     position: fixed;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     width:100vw;
     height:100vh;
-    background:rgba(0,0,0,0.7);
+    background:rgb(0 0 0 / 70%);
     z-index: 1;
 }
 
@@ -13,7 +13,7 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%) scale(1);
-    background: rgb(87, 86, 86);
+    background: rgb(87 86 86);
     padding: 20px;
     z-index: 2;
     border-radius: 5px;
