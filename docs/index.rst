@@ -70,21 +70,25 @@ personal computer, and helping you get ready to start programming with Python.
 
    .. grid-item-card:: :fas:`download` -- Install Python
       :link: install-python-reference
+      :link-type: ref
 
       | Access installation guides based on your operating system.
 
    .. grid-item-card:: :fas:`book` -- DTU Course Guidelines
       :link: course-index
+      :link-type: ref 
 
       | Find installation guides for specific DTU courses or host one if you are an instructor.
 
    .. grid-item-card:: :fas:`info-circle` -- Learn More
       :link: Documentation_index2
+      :link-type: ref
 
       | Navigate Python with information on pip, environments, terminal usage, and uninstallation.
 
    .. grid-item-card:: :fas:`video` -- Video Tutorials
       :link: video-tutorials-reference
+      :link-type: ref
 
       | Watch video guides on essential Python topics.
 
