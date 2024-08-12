@@ -23,7 +23,7 @@ Under the title ``Latest Miniconda installer links``, you will see different ins
 * If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
 * If you have an M processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. *Even* if you have an M2 or M3.
 
-.. image:: /menu/images/macos-fully-manual-miniconda.png
+.. image:: /images/install/macos-fully-manual-miniconda.png
     :width: 400
     :align: center
 
@@ -31,14 +31,14 @@ Under the title ``Latest Miniconda installer links``, you will see different ins
 You can find out which processor you have by pressing the Apple logo an the top left of your
 screen. Go to :menulabel:`About This Mac --> Chip/Processor`.
 
-.. image:: /menu/images/macos-fully-manual-processor.png
+.. image:: /images/install/macos-fully-manual-processor.png
     :width: 200
     :align: center
 
 
 Then you need to follow the instructions from the package.
 
-.. image:: /menu/images/macos-fully-manual-miniconda-pkg.png
+.. image:: /images/install/macos-fully-manual-miniconda-pkg.png
     :width: 400
     :align: center
 
@@ -68,7 +68,7 @@ Copy and paste the following lines of code into your terminal and press enter on
 Step 3: Install VS Code
 ----------------------------
 
-.. |applications| image:: /menu/images/macos-applications.png
+.. |applications| image:: /images/install/macos-applications.png
     :height: 25px
 
 After the installation is finished, you need to download Visual Studio Code. This is done by going
@@ -76,7 +76,7 @@ to `this website  <https://code.visualstudio.com>`_. Click the download button a
 Once downloaded make sure that Visual Studio Code is under the |applications| folder in Finder.
 
 
-.. image:: /menu/images/macos-fully-manual-vsc-webpage.png
+.. image:: /images/install/macos-fully-manual-vsc-webpage.png
       :width: 500
       :align: center
 
@@ -84,7 +84,7 @@ Once downloaded make sure that Visual Studio Code is under the |applications| fo
 Step 4: Install extensions for Visual Studio Code
 -------------------------------------------------
 
-.. |extensions| image:: /menu/images/extensions.png
+.. |extensions| image:: /images/install/extensions.png
     :height: 25px
 
 
@@ -93,11 +93,11 @@ download the extension. Make sure that it is from Microsoft. Hereafter search fo
 download that extension as well. This also needs to be from Microsoft.
 
 
-.. image:: /menu/images/macos-package-managed-python.png
+.. image:: /images/install/macos-package-managed-python.png
       :width: 200
       :align: center
 
-.. image:: /menu/images/macos-package-managed-jupyter.png
+.. image:: /images/install/macos-package-managed-jupyter.png
       :width: 200
       :align: center
 
