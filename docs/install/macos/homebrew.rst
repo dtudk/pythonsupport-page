@@ -20,7 +20,7 @@ First you need to download the package manager Homebrew. This is done by going t
 .. todo::
    Insert image of spotlight search for terminal. 
 
-.. image:: /menu/images/macos-package-managed-homebrew.png
+.. image:: /images/install/macos-package-managed-homebrew.png
     :width: 400
     :align: center
 
@@ -28,7 +28,7 @@ Be aware that Homebrew will need to be added to **PATH**. When the installation 
 you to copy, paste and run some code in the terminal. Simply press enter once you have pasted the code.
 It should look similar to the following image, but might differ a little for different masOS versions.
 
-.. image:: /menu/images/macos-package-managed-homebrew-terminal-instructions.png
+.. image:: /images/install/macos-package-managed-homebrew-terminal-instructions.png
     :width: 400
     :align: center
 
@@ -71,7 +71,7 @@ terminal and pressing enter:
 Step 4: Install extensions for Visual Studio Code
 -------------------------------------------------
 
-.. |extensions| image:: /menu/images/extensions.png
+.. |extensions| image:: /images/install/extensions.png
     :height: 25px
 
 
@@ -80,11 +80,11 @@ Extensions |extensions| button on the left side. Here search for ``Python``, and
 sure that it is from Microsoft. Hereafter search for ``Jupyter``, and download that extension as
 well. This also needs to be from Microsoft.
 
-.. image:: /menu/images/macos-package-managed-python.png
+.. image:: /images/install/macos-package-managed-python.png
       :width: 200
       :align: center
 
-.. image:: /menu/images/macos-package-managed-jupyter.png
+.. image:: /images/install/macos-package-managed-jupyter.png
       :width: 200
       :align: center
 
@@ -96,7 +96,7 @@ Verification and Quick Troubleshooting
 --------------------------------------
 Open up a terminal again. if you see ``(base)`` next to your username, you can proceed. Otherwise
 try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
-For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
+For further information, see step 1 :ref:`here <fully-manual-reference-mac>`.
 
 .. todo::
     Insert image of the terminal with ``(base)`` next to the username
