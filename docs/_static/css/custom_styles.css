@@ -300,6 +300,15 @@ content: none !important;
   z-index: 1000; /* Ensure it is above other elements */
 }
 
+
+.bd-sidebar-secondary {
+  position: sticky;
+  top: 4rem; /* Adjust this value based on the height of your header */
+  z-index: 900; /* Slightly lower than the header's z-index */
+  overflow-y: auto; /* Allow scrolling if content exceeds the viewport height */
+}
+
+
 body {
   padding-top: 60px; /* Adjust based on the height of your header */
 }
