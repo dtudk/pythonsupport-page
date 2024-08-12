@@ -1,6 +1,6 @@
 .. _manual-reference-macos:
 
-MacOS - Manual installation guide
+MacOS - Manual installation
 =======================================
 
 .. button-ref:: manual-reference-windows
@@ -17,11 +17,11 @@ MacOS - Manual installation guide
 Step 1: Install Miniconda
 ---------------------------
 
-First thing you need to do is download Miniconda. This is done by going to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
-Under the title "Latest Miniconda installer links", you will see different installers where you will have to download the correct one.
-If you have an Intel processor, you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
-If you have an M processor, you need to select Miniconda3 MacOS Apple M1 64-bit pkg. Even if
-you have an M2 or M3.
+The first thing to do is to download Miniconda. This is done by going to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
+Under the title ``Latest Miniconda installer links``, you will see different installers where you will have to download the correct one.
+
+* If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
+* If you have an M processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. *Even* if you have an M2 or M3.
 
 .. image:: /menu/images/macos-fully-manual-miniconda.png
     :width: 400
@@ -29,7 +29,7 @@ you have an M2 or M3.
 
 
 You can find out which processor you have by pressing the Apple logo an the top left of your
-screen. Go to "About This Mac", and then under "Chip/Processor".
+screen. Go to :menulabel:`About This Mac --> Chip/Processor`.
 
 .. image:: /menu/images/macos-fully-manual-processor.png
     :width: 200
