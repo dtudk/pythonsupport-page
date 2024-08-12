@@ -22,7 +22,7 @@ done by pressing the "command" and "space" buttons at the same time and searchin
 .. todo::
    Insert image of spotlight search for terminal. 
 
-.. image:: /menu/images/macos-package-managed-homebrew.png
+.. image:: /install/images/macos-package-managed-homebrew.png
     :width: 400
     :align: center
 
@@ -30,7 +30,7 @@ Be aware that Homebrew will need to be added to path. When the installation is d
 you to copy, paste and run some code in the terminal. Simply press enter once you have pasted the code.
 It should look similar to the following image, but might differ a little for different masOS versions.
 
-.. image:: /menu/images/macos-package-managed-homebrew-terminal-instructions.png
+.. image:: /install/images/macos-package-managed-homebrew-terminal-instructions.png
     :width: 400
     :align: center
 
@@ -73,7 +73,7 @@ terminal and executing it:
 Step 4: Install extensions for Visual Studio Code
 -------------------------------------------------
 
-.. |extensions| image:: /menu/images/extensions.png
+.. |extensions| image:: /install/images/extensions.png
     :height: 25px
 
 
@@ -82,11 +82,11 @@ Extensions |extensions| button on the left side. Here search for ``Python``, and
 sure that it is from Microsoft. Hereafter search for ``Jupyter``, and download that extension as
 well. This also needs to be from Microsoft.
 
-.. image:: /menu/images/macos-package-managed-python.png
+.. image:: /install/images/macos-package-managed-python.png
       :width: 200
       :align: center
 
-.. image:: /menu/images/macos-package-managed-jupyter.png
+.. image:: /install/images/macos-package-managed-jupyter.png
       :width: 200
       :align: center
 
