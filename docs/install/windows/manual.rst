@@ -3,13 +3,19 @@
 Windows - Manual installation guide
 ===================================
 
+
+.. button-link:: https://www.google.com/search?q=cheatsheet+python+pip
+   :color: primary
+   :tooltip: Search google for cheatsheet
+
+   Not using Windows? Press here for MacOs guides  {{ apple_icon }}
+   
+
 .. button-ref:: package-managed-reference-macos
    :ref-type: ref
    :color: info
 
-   .. raw:: html
-
-      <i class="fa-brands fa-windows"></i> Not using **Windows**? Press here for **MacOS** guides.
+   {_windows_icon} Not using **Windows**? Press here for **MacOS** guides.
 
 .. dropdown:: Video guide
     :color: info

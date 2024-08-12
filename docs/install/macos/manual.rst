@@ -3,11 +3,13 @@
 MacOS - Manual installation
 =======================================
 
-.. button-ref:: manual-reference-windows
-    :ref-type: ref
-    :color: info
 
-    Not using **MacOS**? Press here for **Windows** guides.
+.. button-link:: https://www.google.com/search?q=cheatsheet+python+pip
+   :color: primary
+   :tooltip: Search google for cheatsheet
+
+   Not using MacOs? Press here for Windows guides  {{ windows_icon }}
+   
 
 .. todo::
     Change color?

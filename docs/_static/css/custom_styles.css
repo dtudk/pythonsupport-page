@@ -947,17 +947,29 @@ a.custom-link:hover {
 } */
 
 /* Grey version - black text */
-.sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-info
+
+.sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
 {
   background-color: #f3f4f5 !important;
   border: 1px solid #d1d5d9 !important;
-  border-radius: 20px !important;
+  border-radius: 10px !important;
   margin-bottom: -20px !important;
   color: #48566b !important;
-
-  text-align: center;
+  
+  /* Add these properties */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left; */
 }
 
+.sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover
+{
+  color: var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
+  text-decoration: none !important;
+  
+}
 
 .bd-sidebar-primary.bd-sidebar.noprint
 
