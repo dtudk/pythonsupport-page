@@ -44,7 +44,7 @@ Verification and Quick Troubleshooting
 --------------------------------------
 Open up a terminal again. if you see ``(base)`` next to your username, you can proceed. Otherwise
 try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
-For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
+For further information, see step 1 :ref:`here <fully-manual-reference-mac>`.
 
 .. todo::
     Insert image of the terminal with ``(base)`` next to the username

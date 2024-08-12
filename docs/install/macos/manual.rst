@@ -19,8 +19,8 @@ Step 1: Install Miniconda
 
 First thing you need to do is download Miniconda. This is done by going to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
 Under the title "Latest Miniconda installer links", you will see different installers where you will have to download the correct one.
-If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
-If you have an M processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. Even if
+If you have an Intel processor, you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
+If you have an M processor, you need to select Miniconda3 MacOS Apple M1 64-bit pkg. Even if
 you have an M2 or M3.
 
 .. image:: /menu/images/macos-fully-manual-miniconda.png
@@ -46,12 +46,12 @@ Then you need to follow the instructions from the package.
 Step 2: Install Python
 ---------------------------
 
-Now you need to open your terminal. This is done by pressing the "command" and "space" key at the same time and searching for "terminal".
+Now you need to open your terminal. This is done by pressing the "command" and "space" key at the same time, and searching for "terminal".
 
 .. todo::
     Insert image of spotlight search for terminal.
 
-Copy and paste the following lines of cod einto your terminal and press enter one line at a time:
+Copy and paste the following lines of code into your terminal and press enter one line at a time:
 
 .. tip::
     You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
@@ -73,7 +73,7 @@ Step 3: Install VS Code
 
 After the installation is finished, you need to download Visual Studio Code. This is done by going
 to `this website  <https://code.visualstudio.com>`_. Click the download button and follow the instructions. 
-Once downloaded make sure that the VSC app is under the |applications| folder in Finder.
+Once downloaded make sure that Visual Studio Code is under the |applications| folder in Finder.
 
 
 .. image:: /menu/images/macos-fully-manual-vsc-webpage.png
@@ -108,7 +108,7 @@ Verification and Quick Troubleshooting
 --------------------------------------
 Open up a terminal again. if you see ``(base)`` next to your username, you can proceed. Otherwise
 try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
-For further information, see step 1 :ref:`here <fully-manual-reference-mac>`
+For further information, see step 1 :ref:`here <fully-manual-reference-mac>`.
 
 .. todo::
     Insert image of the terminal with (base) next to the username
