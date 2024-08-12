@@ -430,6 +430,8 @@ html_context = {
     # Other useful data
     "github_user": "dtudk",
     "github_repo": "pythonsupport-page",
+    "mail": f":mail:{_pythonsupport['mail']}",
+    "discord": _discord_invite,
     "ps_repository": _pythonsupport["repository"],
     "github_version": "main",
     "path_to_docs": "docs/",
