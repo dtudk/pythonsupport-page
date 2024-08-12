@@ -15,9 +15,8 @@ Windows - Manual installation guide
 Step 1: Install Miniconda
 --------------------------
 
-First thing you need to do is download Miniconda. This is done by going to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
-Under the title "Latest Miniconda installer links", you will see different installers where you will have to download the correct one.
-Here you need to click and download Miniconda3 Windows 64-bit.
+The first thing you need to do is download Miniconda. This is done by going to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
+Under the title "Latest Miniconda installer links", you will see different installers where you will have to download the Miniconda3 Windows 64-bit, as shown bellow.
 
 .. image:: /menu/images/windows-fully-manual-miniconda.png
     :width: 400
@@ -38,7 +37,7 @@ Now you need to open you PowerShell as an administrator and run the following co
 
 If you are unsure on how to open PowerShell, it can be done by opening the menu bar and searching
 for Windows PowerShell. Once you see Windows PowerShell, on the right hand side you can select
-Run as administrator. If not, right-click on the icon and select Run as administrator as shown bellow. 
+Run as Administrator. If not, right-click on the icon and select Run as Administrator as shown bellow. 
 
 .. todo::
     Insert image showing how to open the windows PowerShell as described above.
@@ -55,7 +54,7 @@ Run as administrator. If not, right-click on the icon and select Run as administ
 
     conda install -c conda-forge dtumathtools uncertainties -y
 
-Step 3: Install VS Code:
+Step 3: Install Visual Studio Code:
 -------------------------
 
 After the installation is finished, you need to download Visual Studio Code. This is done by going
@@ -73,9 +72,7 @@ Step 4: Install extensions for Visual Studio Code
     :height: 25px
 
 
-Open Visual Studio Code and select the Extensions |extensions| tab on the left. Here search for Python, and
-download the extension. Make sure that it's from Microsoft. Hereafter search for Jupyter, and
-download that extension as well. This also needs to be from Microsoft.
+Open Visual Studio Code and select the Extensions |extensions| tab on the left. Here search for Python, and download the extension. Make sure that it's from Microsoft. Hereafter search for Jupyter, and download that extension as well. This also needs to be from Microsoft.
 
 .. image:: /menu/images/macos-package-managed-python.png
       :width: 200
@@ -99,10 +96,10 @@ Open up PowerShell again. If you see ``(base)`` next to your username, you can p
 
 Otherwise do the following:
 
-• Search for Miniconda PowerShell promt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
+• Search for Miniconda PowerShell promt on your computer and open it up. (If you cannot find it, try to install Miniconda again)
 • After opening the Miniconda shell, type ``conda init`` and press enter.
 • Open up PowerShell again and verify that you now see ``(base)``.
-• Finally type ``idle`` in PowerShell and press enter. This should open up a new window in which you will able to run python code.
+• Finally type ``idle`` in PowerShell and press enter. This should open up a new window in which you will able to run Python code.
 
 Now ensure the following:
 
@@ -120,4 +117,4 @@ If it is not the case for one of the above, try to paste the following line of c
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.

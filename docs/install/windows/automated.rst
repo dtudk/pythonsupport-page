@@ -51,7 +51,7 @@ Otherwise do the following:
 • Search for Miniconda PowerShell promt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
 • After opening the Miniconda shell, type ``conda init`` and press enter.
 • Open up PowerShell again and verify that you now see ``(base)``.
-• Finally type ``idle`` in PowerShell and press enter. This should open up a new window in which you will able to run python code.
+• Finally type ``idle`` in PowerShell and press enter. This should open up a new window in which you will able to run Python code.
 
 Now ensure the following:
 
@@ -69,4 +69,4 @@ If it is not the case for one of the above, try to paste the following line of c
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
