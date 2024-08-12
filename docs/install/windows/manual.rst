@@ -19,7 +19,7 @@ First thing you need to do is download Miniconda. This is done by going to `this
 Under the title "Latest Miniconda installer links", you will see different installers where you will have to download the correct one.
 Here you need to click and download Miniconda3 Windows 64-bit.
 
-.. image:: /menu/images/windows-fully-manual-miniconda.png
+.. image:: /images/install/windows-fully-manual-miniconda.png
     :width: 400
     :align: center
 
@@ -61,7 +61,7 @@ Step 3: Install VS Code:
 After the installation is finished, you need to download Visual Studio Code. This is done by going
 to `this website  <https://code.visualstudio.com>`_. Click the download button and follow the instructions.
 
-.. image:: /menu/images/windows-fully-manual-vsc-webpage.png
+.. image:: /images/install/windows-fully-manual-vsc-webpage.png
       :width: 500
       :align: center
       
@@ -69,7 +69,7 @@ to `this website  <https://code.visualstudio.com>`_. Click the download button a
 Step 4: Install extensions for Visual Studio Code
 -------------------------------------------------
 
-.. |extensions| image:: /menu/images/extensions.png
+.. |extensions| image:: /images/install/extensions.png
     :height: 25px
 
 
@@ -77,11 +77,11 @@ Open Visual Studio Code and select the Extensions |extensions| tab on the left. 
 download the extension. Make sure that it's from Microsoft. Hereafter search for Jupyter, and
 download that extension as well. This also needs to be from Microsoft.
 
-.. image:: /menu/images/macos-package-managed-python.png
+.. image:: /images/install/macos-package-managed-python.png
       :width: 200
       :align: center
 
-.. image:: /menu/images/macos-package-managed-jupyter.png
+.. image:: /images/install/macos-package-managed-jupyter.png
       :width: 200
       :align: center
 

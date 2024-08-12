@@ -215,7 +215,7 @@ sphinx_tabs_disable_tab_closing = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_book_theme"
-html_static_path = ["_static"]
+html_static_path = ["_static", "../images"]
 
 # this move will work regardless of hover...
 _fa_move = "shake-hover"
