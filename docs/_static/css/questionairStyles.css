@@ -11,10 +11,10 @@
   border: solid transparent;
   border-width: var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
   background:
-    linear-gradient(-45deg, transparent var(--g), rgba(255, 255, 255, 0.6) 0) left / var(--c) 100%,
-    linear-gradient(135deg, transparent var(--g), rgba(255, 255, 255, 0.3) 0) bottom / 100% var(--c),
-    conic-gradient(from -90deg at top var(--b) right var(--b), currentColor 270deg, transparent 0),
-    conic-gradient(from 90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)), currentColor 270deg, transparent 0);
+    linear-gradient(-45deg, transparent var(--g), rgb(255 255 255 / 60%) 0) left / var(--c) 100%,
+    linear-gradient(135deg, transparent var(--g), rgb(255 255 255 / 30%) 0) bottom / 100% var(--c),
+    conic-gradient(from -90deg at top var(--b) right var(--b), currentcolor 270deg, transparent 0),
+    conic-gradient(from 90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)), currentcolor 270deg, transparent 0);
   background-repeat: no-repeat;
   background-origin: border-box;
   transform: translate(calc(var(--c) / -1), calc(var(--c) / 1));
@@ -26,6 +26,7 @@
     var(--c) calc(100% - var(--c)));
   cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
 }
+
 .PyS_d-1:hover {
   transform:translate(0,0);
   clip-path: 
@@ -37,18 +38,18 @@
 
 
 
-/**/
+/*  */
 .PyS_d-1, .PyS_d-2 {
   display:inline-block;
   font-size:40px;
-  font-family: 'NeoSans', sans-serif;
+  font-family: NeoSans, sans-serif;
   margin:25px;
   cursor:pointer;
   text-align:center;
 }
 
 #PyS_osSelector {
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgb(0 0 0 / 70%);
   padding: 10px;
 }
 
@@ -59,11 +60,11 @@
 #PyS_osSelector .title {
   text-align: center;
 }
+
 #PyS_osSelector .buttons {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 #PyS_d-1_icons {
@@ -72,30 +73,31 @@
 }
 
 @font-face {
-  font-family: 'NeoSans';
+  font-family: NeoSans;
   src: url('../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeoSans';
+  font-family: NeoSans;
   src: url('../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'NeoSans';
+  font-family: NeoSans;
   src: url('../fonts/Neo Sans Std Light/Neo Sans Std Light.otf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .PyS_d-1 {
     font-size: 1em;
   }
+
   #PyS_d-1_icons {
     padding-left: 5px;
     padding-right: 5px;
