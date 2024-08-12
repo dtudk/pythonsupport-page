@@ -291,6 +291,7 @@ html_css_files = [
     ("css/popupStyles.css", {"priority": 999}),
     ("css/custom_styles.css", {"priority": 998}),
     "css/colors.css",
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'
 ]
 
 

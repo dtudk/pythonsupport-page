@@ -4,10 +4,23 @@ Windows - Manual installation guide
 ===================================
 
 .. button-ref:: package-managed-reference-macos
-    :ref-type: ref
+   :ref-type: ref
+   :color: info
+
+   .. raw:: html
+
+      <i class="fa-brands fa-windows"></i> Not using **Windows**? Press here for **MacOS** guides.
+
+.. dropdown:: Video guide
     :color: info
 
-    Not using **Windows**? Press here for **MacOS** guides.
+    .. raw:: html
+    
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e5e4bea0-13f2-4b1e-85cd-b1c800e7391c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height=100%  style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+    
+
 
 .. todo::
     Change color?
