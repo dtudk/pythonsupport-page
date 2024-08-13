@@ -10,7 +10,7 @@ and :doc:`IDLE <idle>` sections after installing Python.
 there's no need to rush into this section. However, we encourage you to get a head start 
 by exploring it whenever you have some spare time.
 
-You should only dive into :doc:`Packages and Environments <packages_and_environments>` after you've 
+You should only dive into :doc:`Packages and Environments <packages-and-environments>` after you've 
 completed the others and have some free time, given that it won't be necessary during your first semester. 
 Nonetheless, this section will help you troubleshoot issues independently, and will be of great value during your education.
 
@@ -21,7 +21,7 @@ Nonetheless, this section will help you troubleshoot issues independently, and w
    :maxdepth: 1
    
    terminal
-   condensedidle
+   idle
    vscode
    packages-and-environments
    .. reproducibility
