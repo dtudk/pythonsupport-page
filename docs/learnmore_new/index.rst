@@ -6,8 +6,9 @@ Here you can find the essential tools needed to run and utilize Python during yo
 We strongly recommend first year students or those new to programming to go through the :doc:`Terminal <terminal>`
 and :doc:`IDLE <condensedidle>` sections after installing Python. 
 
-While :doc:`Visual Studio Code <vscode>` will be introduced around week 7, 
-we encourage you to get a head start by exploring this section whenever you have some spare time.
+Although :doc:Visual Studio Code <vscode> will be introduced around week 7, 
+there's no need to rush into this section. However, we encourage you to get a head start 
+by exploring it whenever you have some spare time.
 
 Finally, although :doc:`Packages and Environments <packages_and_environments>` will be covered in more detail later in your education, 
 it's beneficial to learn the basics early. This knowledge will be valuable throughout your engineering career 
