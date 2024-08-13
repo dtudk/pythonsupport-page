@@ -2,7 +2,7 @@ Frequently Asked Questions
 ==========================
 
 
-Can i use virutal environments with VS Code?
+Can I use virtual environments with VS Code?
 """"""""""""""""""""""""""""""""""""""""""""
 
    This is particularly tricky configuration since it depends

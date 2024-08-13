@@ -283,7 +283,7 @@ A good trick to use in Visual Studio Code is to open a folder in your sidebar, a
 #. Press the icon in the top left of the screen that looks like 2 pieces of paper on top of each other
 #. Press "open folder"
 #. Visual studio code will now open your files. Select the folder that you would like to work with by clicking on it
-#. Now you should see all the files and subfolders contained in the folder taht you selected on the left side of the screen
+#. Now you should see all the files and subfolders contained in the folder that you selected on the left side of the screen
 #. You can now right click a folder and press "copy path"
 #. type cd in your terminal and paste the path that you just copied 
 

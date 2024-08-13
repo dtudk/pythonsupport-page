@@ -116,7 +116,7 @@ Fixing module name error
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Introuction to Jupyter notebooks
+Introduction to Jupyter notebooks
 ---------------------------------
 
 .. card::

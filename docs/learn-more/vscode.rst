@@ -50,7 +50,7 @@ Selecting the right interpreter
 
     
 
-    Once you've created a python file you need to selecet your interpreter. In short, the interpreter is the version of Python that you use to execute your code.
+    Once you've created a python file you need to select your interpreter. In short, the interpreter is the version of Python that you use to execute your code.
 
     .. tab-set::
     
@@ -129,7 +129,7 @@ Terminal in VS Code
 
                 .. tab-item:: MacOS 
 
-                    Move your mouse to the top of the screen. Selcet "Terminal" followed by "New Terminal"
+                    Move your mouse to the top of the screen. Select "Terminal" followed by "New Terminal"
 
                     .. image:: images/VScode_mac4.png
                         :width: 450
