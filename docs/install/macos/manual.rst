@@ -22,7 +22,7 @@ The first thing to do is to download Miniconda. This is done by going to `this w
 Under the title ``Latest Miniconda installer links``, you will see different installers where you will have to download the correct one.
 
 * If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
-* If you have an M processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. *Even* if you have an M2 or M3.
+* If you have an **M** processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. *Even* if you have an **M2** or **M3**.
 
 .. image:: /images/install/macos-fully-manual-miniconda.png
     :width: 400
@@ -105,33 +105,5 @@ download that extension as well. This also needs to be from Microsoft.
 .. tip::
     When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
 
-Verification and Quick Troubleshooting
---------------------------------------
-Open up a terminal again. if you see ``(base)`` next to your username, you can proceed. Otherwise
-try to install miniconda again. Miniconda can be found on `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
-For further information, see step 1 :ref:`here <fully-manual-reference-mac>`.
 
-.. todo::
-    Insert image of the terminal with (base) next to the username
-
-Make sure that it says ``(base)`` next to your user name when opening the terminal.
-
-Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run Python code.
-
-Now ensure the following:
-
-• It says Python 3.11.xx in the top left.
-• You get no errors when typing ``import dtumathtools, uncertainties`` and press enter. This should open a new line without any text, as shown bellow.
-
-.. todo::
-    Insert image of ``idle3`` after import dtumathtools and uncertainties so they can see what it should look like.
-
-
-If it is not the case for one of the above, try to paste the following line of code in the terminal and press enter:
-
-.. code-block:: bash
-
-     conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
-
-
-If you are still having trouble or have any questions please do not hesitate to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+.. include:: verify.rst
