@@ -9,7 +9,7 @@
    :color: primary
    
 
-    Press here for macOs {{ apple_icon }}
+    Press here for {{ macos }} {{ apple_icon }}
    
 
 .. dropdown:: Video guide
