@@ -22,7 +22,6 @@ In this section, you will find an introduction to the primary tools and methods 
 
    core-tools/index.rst
    index-mgmt.rst
-   advanced-management/uninstall/uninstall.rst
 
 
 
