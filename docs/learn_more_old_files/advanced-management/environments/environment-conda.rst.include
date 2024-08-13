@@ -1,0 +1,171 @@
+
+
+`conda -- Environment <env-conda_>`_
+------------------------------------
+
+The conda Python package also allows you to create and manage environments with specific 
+packages and different Python versions. Once an environment has been created 
+and activated, all python and conda commands will only act within that environment.
+
+The ``conda`` Python package automatically incorporates `environments <env-conda_>`_.
+Not only will it allow environments with specific packages, one can
+also create environments with different Python versions. This can be useful if a specific
+package requires a specific Python version.
+
+Once an environment has been created and sourced (activated), all ``python`` commands only act in *that environment*.
+
+
+An environment can be created using:
+
+.. note::
+   
+   One can list the available *global* environments (created with ``--name``)
+   by executing ``conda env list``.
+
+.. tab-set::
+
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
+
+      .. code-block:: powershell
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
+
+      .. code-block:: winbatch
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+          # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
+
+      .. code-block:: bash
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
+
+      .. code-block:: bash
+
+         conda create --name <name of env>
+         # create an environment named 'course-A' (in the global environment list)
+         conda create --name course-A
+         # alternatively the environment can be placed in a sub directory
+         conda create --prefix course-A
+
+Once created, one can use the environment by *activating* it.
+Change ``course-A`` with the name of the environment.
+
+.. tab-set::
+
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
+
+      .. code-block:: powershell
+        
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate .\course-A
+
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
+
+      .. code-block:: winbatch
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate .\course-A
+
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
+
+      .. code-block:: bash
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
+
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
+
+      .. code-block:: bash
+
+         # if the enviroment was created with --name:
+         conda activate course-A
+         # if the environment was created in a sub directory (--prefix):
+         conda activate ./course-A
+
+
+Now every executed Python script will only use the packages installed
+in the environment. Every ``conda install`` will only install/remove
+packages in the environment.
+To get out of the environment, simply run the command ``conda deactivate``.
+
+Below is a complete example of creating an environment using a specific Python
+version, installing a specific
+package, running a code using the environment, and getting out of it.
+
+.. tab-set::
+
+   .. tab-item:: {{ win_powershell }}
+      :sync: powershell
+
+      .. code-block:: powershell
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+
+   .. tab-item:: {{ win_batch }}
+      :sync: batch
+
+      .. code-block:: winbatch
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+
+   .. tab-item:: {{ mac_bash }}
+      :sync: mac
+
+      .. code-block:: bash
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+
+   .. tab-item:: {{ linux_bash }}
+      :sync: bash
+
+      .. code-block:: bash
+
+         conda create --name numpy-env python=3.10
+         conda activate numpy-env
+         conda install "numpy=1.23"
+         python3 -c "import numpy as np ; print(np.__version__)"
+         conda deactivate
+
