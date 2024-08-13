@@ -8,82 +8,7 @@ IDLE is an integrated development environment (IDE) that is installed automatica
 
 IDLE is lightweight, simple and great for smaller coding projects. Therefore it is well suited for beginners. 
 
-Getting started
-----------------
 
-.. card::
-
-   You can access IDLE by searching for "IDLE" in your search tab on both windows and macOS.
-
-   Try typing or pasting the following code into the IDLE and press Enter
-
-   .. code-block:: 
-
-      print("hello")
-
-
-
-   .. image:: images/idle-gif1.gif
-      :width: 100%
-      :align: center
-
-
-Opening and Running a File
---------------------------
-
-.. card::
-
-
-   #. 
-      Open a file by clicking ``file`` > ``open``, and then selecting the file you want 
-
-      .. image:: images/idle-gif2.gif
-         :width: 100%
-         :align: center
-
-   #. 
-      When you start to edit a file a ``*`` symbol will apear on both sides of the name until you save the file 
-
-   #. 
-      You can run an open file by clicking ``Run``  > ``Run Module``
-
-      .. image:: images/idle-gif3.gif
-         :width: 100%
-         :align: center
-
-
-Creating and Saving a New File:
----------------------
-
-.. card::
-
-   #. 
-      You can create a new file by clicking ``New`` > ``New File``
-
-      .. image:: images/idle-gif4.gif
-         :width: 100%
-         :align: center
-   
-   #. 
-
-      try typing ``print(2+2)`` in the file.
-
-   #. 
-      You can now either run the file just like before (but you will be asked to save it first) or save it by clicking ``File`` followed by ``Save as``.
-      Once the file is saved you can run and edit it as much s you want. 
-
-
-   
-
-
-
-
-
-
-
-
-
-.. 
 Getting started
 ---------------
 
@@ -219,3 +144,72 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
 You can now modify and run the script as much as you want. The advantage here, is that the code can be modified and used without having to type at all.
 
 As mentioned, the IDLE is best suited for simple projects. Around week 8 you will probably start using VS Code. 
+
+
+
+Getting started
+----------------
+
+.. card::
+
+   You can access IDLE by searching for "IDLE" in your search tab on both windows and macOS.
+
+   Try typing or pasting the following code into the IDLE and press Enter
+
+   .. code-block:: 
+
+      print("hello")
+
+
+
+   .. image:: images/idle-gif1.gif
+      :width: 100%
+      :align: center
+
+
+Opening and Running a File
+--------------------------
+
+.. card::
+
+
+   #. 
+      Open a file by clicking ``file`` > ``open``, and then selecting the file you want 
+
+      .. image:: images/idle-gif2.gif
+         :width: 100%
+         :align: center
+
+   #. 
+      When you start to edit a file a ``*`` symbol will apear on both sides of the name until you save the file 
+
+   #. 
+      You can run an open file by clicking ``Run``  > ``Run Module``
+
+      .. image:: images/idle-gif3.gif
+         :width: 100%
+         :align: center
+
+
+Creating and Saving a New File:
+---------------------
+
+.. card::
+
+   #. 
+      You can create a new file by clicking ``New`` > ``New File``
+
+      .. image:: images/idle-gif4.gif
+         :width: 100%
+         :align: center
+   
+   #. 
+
+      try typing ``print(2+2)`` in the file.
+
+   #. 
+      You can now either run the file just like before (but you will be asked to save it first) or save it by clicking ``File`` followed by ``Save as``.
+      Once the file is saved you can run and edit it as much s you want. 
+
+
+   

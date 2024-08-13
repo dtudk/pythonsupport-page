@@ -10,7 +10,7 @@ We also encourage you to start exploring these key concepts to get a head start 
    terminal
    idle
    vscode
-   packages_and_environments
+   packages-and-environments
    .. reproducibility
 
 
