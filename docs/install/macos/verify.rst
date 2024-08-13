@@ -3,7 +3,7 @@ Verification and Quick Troubleshooting
 --------------------------------------
 
 Open up a terminal again (:kbd:`Command-Space`). if you see ``(base)`` next to your username, it indicates that everything worked as intended.
-Otherwise try to install Miniconda again. Miniconda can be found on `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_. 
+Otherwise try to install Miniconda again. Miniconda can be found on `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__. 
 For further information, see :ref:`step 1 here <fully-manual-reference-mac>`.
 
 
@@ -35,5 +35,5 @@ If it is not the case for any of the above, try to paste the following line of c
      conda install -c conda-forge python={{ python_version_recommended }} dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours, or contact us via :mailto:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours, or contact us via :mail:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.
 

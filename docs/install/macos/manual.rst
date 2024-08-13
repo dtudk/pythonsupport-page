@@ -18,7 +18,8 @@ Step 1: Install Miniconda
 ---------------------------
 
 
-The first thing to do is to download Miniconda. This is done by going to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
+The first thing to do is to download Miniconda.
+This is done by going to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__, and downloading the appropriate installer for your system.
 Under the title ``Latest Miniconda installer links``, you will see different installers where you will have to download the correct one.
 
 * If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
@@ -30,7 +31,7 @@ Under the title ``Latest Miniconda installer links``, you will see different ins
 
 
 You can find out which processor you have by pressing the Apple logo an the top left of your
-screen. Go to :menulabel:`About This Mac --> Chip/Processor`.
+screen. Go to :menuselection:`About This Mac --> Chip/Processor`.
 
 .. image:: /images/install/macos-fully-manual-processor.png
     :width: 200
@@ -67,7 +68,7 @@ Copy and paste the following lines of code into your terminal and press enter on
 
 
 Step 3: Install Visual Studio Code
-----------------------------
+-----------------------------------
 
 .. |applications| image:: /images/install/macos-applications.png
     :height: 25px

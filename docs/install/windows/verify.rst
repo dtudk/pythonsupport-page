@@ -17,7 +17,7 @@ Otherwise do the following:
 
 Now ensure the following:
 
-* It says Python {{ python_version_recommended }.xx in the top left (or in the range {{python_version_min}} -- {{python_version_max}}).
+* It says Python {{ python_version }}.xx in the top left (or in the range {{python_version_min}} -- {{python_version_max}}).
 * You get no errors when typing ``import dtumathtools, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
 
 .. todo::

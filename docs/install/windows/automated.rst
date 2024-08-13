@@ -11,8 +11,8 @@ Windows - Automated installation guide
 
 .. todo::
     Change color?
-#. 
 
+#. 
     The first thing you need to do is to open PowerShell as an administrator. This can be done
     by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
     Once you see Windows PowerShell, on the right hand side you can select *Run as administrator*. If not, right-click the
