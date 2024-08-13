@@ -8,6 +8,7 @@ IDLE is an integrated development environment (IDE) that is installed automatica
 
 IDLE is lightweight, simple and great for smaller coding projects. Therefore it is well suited for beginners. 
 
+
 Getting started
 ---------------
 
@@ -33,7 +34,7 @@ Getting started
    
             .. code-block:: Python
                
-               print("Hello World!")
+               print("hello")
 
       .. tab-item:: MacOS
 
@@ -46,9 +47,7 @@ Getting started
    
             .. code-block:: Python
                
-               print("Hello World!")
-
-
+               print("hello")
 
 
 Creating and running scripts
@@ -145,3 +144,6 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
 You can now modify and run the script as much as you want. The advantage here, is that the code can be modified and used without having to type at all.
 
 As mentioned, the IDLE is best suited for simple projects. Around week 8 you will probably start using VS Code. 
+
+
+

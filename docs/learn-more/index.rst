@@ -1,29 +1,32 @@
-.. _Documentation_index2:
+Core tools
+===========
 
-Learn More
-==================
+Here you can find the essential tools needed to run and utilize Python during your first year at DTU as a Bachelor student. 
 
-In this section, you will find an introduction to the primary tools and methods required for starting programming with Python.
+We strongly recommend first year students or those new to programming to go through the :doc:`Terminal <terminal>`
+and :doc:`IDLE <idle>` sections after installing Python. 
 
-.. note::
-   If you are a first year student, it is **strongly recommended** for you to go through 
-   the :ref:`Core tools <essentials-reference>` section after you install Python. The section 
-   covers important information on package management, IDE and Terminal usage.
+:doc:`Visual Studio Code <vscode>` will be introduced around week 7, and
+there's no need to rush into this section. However, we encourage you to get a head start 
+by exploring it whenever you have some spare time.
 
-.. note::
-   If you are a first year student, it is also recommended for you to go through the 
-   :ref:`Advanced management <Documentation_index3>` section when you get more comfortable 
-   with Python. This section gives detailed information on pip, environments, and more detailed
-   Termianl usage. 
+You should only dive into :doc:`Packages and Environments <packages-and-environments>` after you've 
+completed the others and have some free time, given that it won't be necessary during your first semester. 
+Nonetheless, this section will help you troubleshoot issues independently, and will be of great value during your education.
+
 
 
 .. toctree::
-   :maxdepth: 2
+   :caption: Core tools list
+   :maxdepth: 1
+   
+   terminal
+   idle
+   vscode
+   packages-and-environments
+   .. reproducibility
 
-   core-tools/index.rst
-   index-mgmt.rst
-   advanced-management/uninstall/uninstall.rst
-
-
-
+.. todo::
+   
+   add reproducibility section once reorganization is done 
    
