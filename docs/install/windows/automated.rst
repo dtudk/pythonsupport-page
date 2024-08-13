@@ -1,6 +1,6 @@
 .. _automated-reference-windows:
 
-Windows - Automated installation guide
+{{ windows_icon }}  --- Automated installation guide
 ======================================
 
 .. button-link:: ../macos/automated.html

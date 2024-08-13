@@ -824,8 +824,6 @@ label.sd-tab-label:focus {
 
 
 
-
-
 /* Target only the main section */
 .bd-article a.reference.external:visited {
   color:var(--bg-primary) ;
@@ -911,41 +909,6 @@ a.custom-link:hover {
 }
 
 
-
-/* Change button at the top of installation guide */
-
-
-/* Orange version */
-/* .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-info
-{
-  
-  background-color: var(--dtu-orange) !important;
-  border: 3px solid var(--dtu-orange)  !important;
-  
-  border-radius: 12px !important;
-  margin-bottom: -20px !important;
-  color:#DADADA !important;
-  
-  
-
-} */
-
-
-/* Grey version - white text */
-/* .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-info
-{
-  
-  background-color: #c5c1c1 !important;
-  border: 3px solid #c5c1c1  !important;
-  
-  border-radius: 12px !important;
-  margin-bottom: -20px !important;
-  color:white !important;
-  
-  
-
-} */
-
 /* Grey version - black text */
 
 .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
@@ -971,6 +934,9 @@ a.custom-link:hover {
   
 }
 
+
+
+/* Makes left-side bar static */
 .bd-sidebar-primary.bd-sidebar.noprint
 
 {
@@ -981,40 +947,3 @@ a.custom-link:hover {
 }
 
 
-/* Green version */
-/* .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-info
-{
-  background-color: #5ae1a7 !important;
-  border: 3px solid #1fd082   !important;
-  
-  border-radius: 12px !important;
-  margin-bottom: -20px !important;
-  color:white !important;
-}
- */
-
-
-
-
-.sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-info:hover
-{
-  
-  text-decoration: none !important;
-
-}
-
-
-/* 
-{
-  
-  background-color: var(--dtu-blue) !important;
-  border-color: var(--dtu-blue) !important;
-  border-radius: 12px !important;
-  font-weight: bold !important;
-  margin-bottom: -20px !important;
-  
-}
-
-
-
- */
