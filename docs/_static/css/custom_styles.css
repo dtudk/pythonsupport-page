@@ -957,10 +957,10 @@ a.custom-link:hover {
   color: #48566b !important;
   
   /* Add these properties */
-  /* display: flex;
+  
   justify-content: center;
   align-items: center;
-  text-align: left; */
+  text-align: center;
 }
 
 .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover

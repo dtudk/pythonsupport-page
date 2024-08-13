@@ -3,11 +3,11 @@
 Windows - Automated installation guide
 ======================================
 
-.. button-ref:: automated-reference-macos
-    :ref-type: ref
-    :color: info
-
-    Not using **Windows**? Press here for **MacOS** guides.
+.. button-link:: ../macos/automated.html
+   :align: right
+   :color: primary
+   
+    Press here for macOs {{ apple_icon }}
 
 .. todo::
     Change color?

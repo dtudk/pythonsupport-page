@@ -1,21 +1,16 @@
 .. _manual-reference-windows:
 
-Windows - Manual installation guide
+{{ windows_icon }} --- Manual installation 
 ===================================
 
 
-.. button-link:: https://www.google.com/search?q=cheatsheet+python+pip
+.. button-link:: ../macos/manual.html
+   :align: right
    :color: primary
-   :tooltip: Search google for cheatsheet
-
-   Not using Windows? Press here for MacOs guides  {{ apple_icon }}
    
 
-.. button-ref:: package-managed-reference-macos
-   :ref-type: ref
-   :color: info
-
-   {_windows_icon} Not using **Windows**? Press here for **MacOS** guides.
+    Press here for macOs {{ apple_icon }}
+   
 
 .. dropdown:: Video guide
     :color: info
