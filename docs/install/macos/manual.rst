@@ -55,7 +55,7 @@ Now you need to open your terminal. This is done by pressing the "command" and "
 Copy and paste the following lines of code into your terminal and press enter one line at a time:
 
 .. tip::
-    You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
+    You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
 .. code-block:: bash
         

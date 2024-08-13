@@ -10,7 +10,7 @@ Open up PowerShell again. if you see ``(base)`` next to your username, you can p
 
 Otherwise do the following:
 
-* Search for ``Miniconda PowerShell`` promt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
+* Search for ``Miniconda PowerShell`` prompt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
 * After opening the Miniconda shell, type ``conda init`` and press :kbd:`Enter`.
 * Open up PowerShell again and verify that you now see ``(base)``.
 * Finally type ``idle`` in PowerShell and press :kbd:`Enter`. This should open up a new window in which you will able to run Python code.

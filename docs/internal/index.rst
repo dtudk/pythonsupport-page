@@ -104,7 +104,7 @@ General IT questions
    | Office hours 305.027 8:00--15:00.
 DTU Learn
    Go here: :full-link:`https://learnsupport.dtu.dk`
-Counceling for students:
+Counseling for students:
    Go here: :full-link:`https://studraadgiv.ait.dtu.dk/`
 
 

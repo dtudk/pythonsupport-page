@@ -26,7 +26,7 @@ Next, copy the following line of code into your terminal and press :kbd:`Enter`:
 
 .. tip::
 
-    You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
+    You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
 .. code-block:: bash
 
