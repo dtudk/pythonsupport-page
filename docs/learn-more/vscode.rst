@@ -4,12 +4,44 @@ Visual Studio Code
 .. note::
     If you are in your first year, you probably will not need to use VS Code until **week 7 or 8 of your studies**. Just remember that this page is here to get you started with some basic tips whenever you need. 
 
-Similarly to the Idle, VS Code is a place to write your Python code. VS Code is great for larger projects. It is useful for things like debugging, organizing files and collaborating with other people for coding.
+Similarly to IDLE, VS Code is a place to write your Python code. VS Code is great for larger projects. It is useful for things like debugging, organizing files and collaborating with other people for coding.
 It also comes with extensions that can improve visual clarity, help you collaborate with 
-others and a particularly useful type of file called Jupyter notebooks (These will be explained below). 
+others and a particularly useful type of file called Jupyter notebooks. 
 
 
+Opening a Folder in VS Code
+------------------------
 
+.. card::
+
+    Opening a folder in VS Code allows you to manage all your project files in one place.
+
+    .. tab-set::
+
+        .. tab-item:: Windows
+
+            1. Press the "File" button in the top left corner of VS Code.
+            2. Select "Open Folder..." from the dropdown menu.
+
+            .. image:: images/NEEDS-TO-BE-CREATED.png
+                :width: 450
+                :align: center
+                :alt: Open Folder in VS Code
+
+            3. Browse to the folder you want to open and select it.
+
+
+        .. tab-item:: MacOS
+
+            1. Press the "File" button in the top left corner of your screen.
+            2. Select "Open Folder..." from the dropdown menu.
+
+            .. image:: images/openFolderMac.png
+                :width: 450
+                :align: center
+                :alt: Open Folder in VS Code
+
+            3. Browse to the folder you want to open and select it.    
 
 
 Creating a Python-file
@@ -20,7 +52,7 @@ Creating a Python-file
 
     You can create a Python file in VS code. This is useful if you are writing code that you will need again. 
 
-            .. tab-set::
+    .. tab-set::
 
                 .. tab-item:: Windows 
 
@@ -30,6 +62,14 @@ Creating a Python-file
                         :width: 450
                         :align: center
                         :alt: IDLE Shell
+
+                    Note that you can also use the Explorer to create a new File or Folder by using the top left side of VS Code:
+
+                    .. image:: images/createFileUsingLeftBar.png
+                        :width: 450
+                        :align: center
+                        :alt: IDLE Shell
+
 
                 .. tab-item:: MacOS 
 
@@ -41,6 +81,93 @@ Creating a Python-file
                         :align: center
                         :alt: IDLE Shell
 
+                    Note that you can also use the Explorer to create a new File or Folder by using the top left side of VS Code:
+
+                    .. image:: images/createFileUsingLeftBar.png
+                        :width: 450
+                        :align: center
+                        :alt: IDLE Shell
+
+                        
+
+Saving a File
+-----------
+
+.. card::
+
+    Saving a file in VS Code ensures that your work is not lost and can be accessed later.
+
+    .. tab-set::
+
+        .. tab-item:: Windows
+
+            1. Press the "File" button in the top left corner of VS Code.
+            2. Select "Save" or "Save As..." from the dropdown menu.
+            
+            .. image:: images/VScode_windows_save_file.png
+                :width: 450
+                :align: center
+                :alt: Save File in VS Code
+            3. Choose a location and name for your file, then save it.
+
+            Note that you can save a file by pressing "control" + "s".
+
+        .. tab-item:: MacOS
+
+            1. Press the "File" button in the top left corner of your screen.
+            2. Select "Save" or "Save As..." from the dropdown menu.
+            3. Choose a location and name for your file, then save it.
+
+            .. image:: images/saveFileMac.png
+                :width: 450
+                :align: center
+                :alt: Save File in VS Code
+
+            Note that you can save a file by pressing "command" + "s".
+
+    .. tip::
+
+        You can also autosave by pressing the "File" button in the top left corner of VS Code and then selecting "Auto save".
+
+Opening a File in VS Code
+----------------------
+
+.. card::
+
+    Opening a file in VS Code allows you to edit and run your code directly within the editor.
+
+    .. tab-set::
+
+        .. tab-item:: Windows
+
+            1. Press the "File" button in the top left corner of VS Code.
+            2. Select "Open..." from the dropdown menu.
+
+            .. image:: images/NEEDS-TO-BE-CREATED.png
+                :width: 450
+                :align: center
+                :alt: Open File in VS Code
+
+
+            3. Browse to the file you want to open and select it.
+
+            
+
+        .. tab-item:: MacOS
+
+            1. Press the "File" button in the top left corner of your screen.
+            2. Select "Open..." from the dropdown menu.
+
+            .. image:: images/openFileMac.png
+                :width: 450
+                :align: center
+                :alt: Open File in VS Code
+
+            3. Browse to the file you want to open and select it.    
+
+    .. tip::
+
+        You can also open a file by dragging and dropping it directly into the VS Code window.
 
 
 Selecting the right interpreter
@@ -48,23 +175,21 @@ Selecting the right interpreter
 
 .. card::
 
-    
-
-    Once you've created a python file you need to select your interpreter. In short, the interpreter is the version of Python that you use to execute your code.
+    Once you've created a Python file you need to select your interpreter. In short, the interpreter is the version of Python that you use to execute your code.
 
     .. tab-set::
     
         .. tab-item:: Windows 
 
             1. Press "CTRL" + "Shift" +"p"
-            2. type "Python: Select Interpreter" and press once this shows up under the options 
+            2. Type "Python: Select Interpreter" and press once this shows up under the options 
 
             .. image:: images/VScode_windows2.png
                         :width: 450
                         :align: center
                         :alt: IDLE Shell
 
-            3. Choose the option similar to "Python 3.11.5 ('base')" (You may have a different version of Python on your own PC)
+            3. Choose the option similar to "Python 3.11.5 ('base')". You may have a different version of Python on your own PC.
 
             
 
@@ -76,7 +201,7 @@ Selecting the right interpreter
 
             .. tip::
 
-                In VS Code, pressing "CTRL" + "Shift" +"p" brings down a search bar where you can search for anything you need help with
+                In VS Code, pressing "CTRL" + "Shift" +"p" brings down a search bar where you can search for anything you need help with.
 
         .. tab-item:: MacOS
 
@@ -88,7 +213,7 @@ Selecting the right interpreter
                         :align: center
                         :alt: IDLE Shell
                         
-            3. Choose the option similar to "Python 3.11.5 ('base')" (You may have a different version of Python on your own PC)
+            3. Choose the option similar to "Python 3.11.5 ('base')". You may have a different version of Python on your own PC.
 
             .. image:: images/VScode_mac3.png
                         :width: 450
@@ -106,9 +231,46 @@ Selecting the right interpreter
     Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
 
 
+Run a Python File - Needs to be redone according to video
+----------------------------------------------------------------
 
-Terminal in VS Code 
--------------------
+.. card::
+
+    Once you've written your Python code, you can easily run it in VS Code.
+
+    .. tab-set::
+
+        .. tab-item:: Windows
+
+            1. Open the Python file you want to run.
+            2. Press "CTRL" + "Shift" +"p".
+            3. Type "Run Python File in Terminal" and select it from the options.
+            4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
+
+            .. image:: images/VScode_windows_run_python.png
+                :width: 450
+                :align: center
+                :alt: Run Python File in VS Code
+
+        .. tab-item:: MacOS
+
+            1. Open the Python file you want to run.
+            2. Press "CMD" + "Shift" +"p".
+            3. Type "Run Python File in Terminal" and select it from the options.
+            4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
+
+            .. image:: images/VScode_mac_run_python.png
+                :width: 450
+                :align: center
+                :alt: Run Python File in VS Code
+
+    .. tip::
+
+        Running your Python file in VS Code allows you to see the output directly in the terminal, making it easier to debug and test your code.
+
+
+Difference between Terminal and Python shell in VS Code - Needs to be redone according to video
+------------------------------------------------------------------------------------------------------------------------
 
 
 .. card::      
@@ -116,7 +278,7 @@ Terminal in VS Code
 
     You can start a terminal from VS code, which works just like in the terminal app. 
 
-            .. tab-set::
+    .. tab-set::
 
                 .. tab-item:: Windows 
 
@@ -235,7 +397,7 @@ Jupyter notebooks give you a way to combine Python code, and plain text similar 
 
 .. warning:: 
     If it is your first time creating a notebook, running a code block may give you the following error:
-    *"Running cells with 'base (python 3.11.5)' requires the ipykernel package"*. 
+    *"Running cells with 'base (Python 3.11.5)' requires the ipykernel package"*. 
     Simply click "install" and wait for the code to run  
 
 
