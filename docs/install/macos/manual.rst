@@ -1,13 +1,16 @@
 .. _manual-reference-macos:
 
-MacOS - Manual installation
-=======================================
+{{ apple_icon }} --- Manual installation 
+==========================================
 
-.. button-ref:: manual-reference-windows
-    :ref-type: ref
-    :color: info
 
-    Not using **MacOS**? Press here for **Windows** guides.
+.. button-link:: ../windows/manual.html
+   :align: right
+   :color: primary
+   
+
+    Press here for Windows {{ windows_icon }}
+   
 
 .. todo::
     Change color?

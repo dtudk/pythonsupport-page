@@ -1,14 +1,14 @@
 .. _automated-reference-macos:
 
 
-MacOS - Automated installation
-==============================
+{{ apple_icon }} - Auto installation
+=====================================
 
-.. button-ref:: automated-reference-windows
-    :ref-type: ref
-    :color: info
-
-    Not using **MacOS**? Press here for **Windows** guides.
+.. button-link:: ../windows/automated.html
+   :align: right
+   :color: primary
+   
+    Press here for Windows {{ windows_icon }}
 
 .. todo::
     Change color?

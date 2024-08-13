@@ -1,14 +1,15 @@
 .. _package-managed-reference-macos:
 
 
-MacOS - Package managed installation guide
-==========================================
+{{ apple_icon }} --- Homebrew installation
+============================================
 
-.. button-ref:: manual-reference-windows
-    :ref-type: ref
-    :color: info
+.. button-link:: ../windows/manual.html
+   :align: right
+   :color: primary
+   
 
-    Not using **MacOS**? Press here for **Windows** guides.
+    Press here for Windows {{ windows_icon }}
 
 .. todo::
     Change color?

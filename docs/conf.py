@@ -61,6 +61,9 @@ author = "DTU Python support developers"
 
 # when we have a guideline:
 _pref_symbol = ":fas:`ranking-star`"
+
+
+
 # _pref_symbol = ""
 
 
@@ -219,6 +222,16 @@ html_static_path = ["_static", "../images"]
 
 # this move will work regardless of hover...
 _fa_move = "shake-hover"
+
+
+windows_link = [
+{
+    "name": "Windows",
+        "url": "https://www.microsoft.com/windows",
+        "icon": "fa-brands fa-windows",
+        "type": "fontawesome", }
+]
+
 
 _icon_links = [
     {
@@ -467,6 +480,8 @@ html_context = {
     # Cheatsheet information
     "cheatsheet_icon": ":fas:`toolbox`",
     "cheatsheet_color": "muted",
+    "windows_icon": ":fab:`windows`",
+    "apple_icon":  ":fab:`apple`",
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
     # online days
