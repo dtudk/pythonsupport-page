@@ -114,5 +114,5 @@ Office hours
    course/index.rst
    learn-more/index.rst
    videotutorials/index.rst
-   uninstall/uninstall.rst
+   uninstall/index.rst
 
