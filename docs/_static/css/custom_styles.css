@@ -872,7 +872,6 @@ a.custom-link:hover {
   text-decoration: underline;
 }
 
-
 /* Changes to cards on website - Currently only on main website */
 
 .sd-card-hover:hover {
@@ -909,18 +908,18 @@ a.custom-link:hover {
 }
 
 
-/* Grey version - black text */
+/* Button at the top of installation guide - The colors come from the default colors on sphinx documentation */
+
 
 .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
 {
-  background-color: #f3f4f5 !important;
+  background-color: #f3f4f5 !important; 
   border: 1px solid #d1d5d9 !important;
   border-radius: 10px !important;
   margin-bottom: -20px !important;
   color: #48566b !important;
-  
-  /* Add these properties */
-  
+
+
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -934,11 +933,8 @@ a.custom-link:hover {
   
 }
 
-
-
 /* Makes left-side bar static */
 .bd-sidebar-primary.bd-sidebar.noprint
-
 {
   position: sticky;
   top: 4rem; /* Adjust this value based on the height of your header */

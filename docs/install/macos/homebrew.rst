@@ -2,7 +2,7 @@
 
 
 {{ apple_icon }} --- Homebrew installation
-==========================================
+============================================
 
 .. button-link:: ../windows/manual.html
    :align: right

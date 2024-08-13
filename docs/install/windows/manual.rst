@@ -1,7 +1,7 @@
 .. _manual-reference-windows:
 
 {{ windows_icon }} --- Manual installation 
-===================================
+=============================================
 
 
 .. button-link:: ../macos/manual.html
