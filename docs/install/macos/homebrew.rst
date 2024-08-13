@@ -15,9 +15,7 @@ MacOS - Package managed installation guide
 
 Step 1: Install Homebrew 
 --------------------------
-First you need to download the package manager Homebrew. This is done by going to `this <https://brew.sh>`_ website
-and follow the instructions. The Homebrew website will ask you to open a terminal. This is
-done by pressing the "command" and "space" buttons at the same time and searching for terminal.
+First you need to download the package manager Homebrew. This is done by going to `this website <https://brew.sh>`_ and follow the instructions. The Homebrew website will ask you to open a terminal. This is done by pressing the "command" and "space" buttons at the same time and searching for terminal.
 
 .. todo::
    Insert image of spotlight search for terminal. 
@@ -26,7 +24,7 @@ done by pressing the "command" and "space" buttons at the same time and searchin
     :width: 400
     :align: center
 
-Be aware that Homebrew will need to be added to path. When the installation is done, it will ask
+Be aware that Homebrew will need to be added to **PATH**. When the installation is done, it will ask
 you to copy, paste and run some code in the terminal. Simply press enter once you have pasted the code.
 It should look similar to the following image, but might differ a little for different masOS versions.
 
@@ -39,7 +37,7 @@ It is VERY important that you close or restart your terminal after installing Ho
 
 Step 2: Install Miniconda and Python
 -------------------------------------
-Once Homebrew has been installed and you have RESTARTED you terminal, paste the following code in your terminal and press enter. 
+Once Homebrew has been installed and you have RESTARTED your terminal, paste the following code in your terminal and press enter. 
 
 .. tip::
     You can copy and paste all code in the grey code blocks below by hovering your mouse over the block and pressing the icon in the top right.
@@ -48,7 +46,7 @@ Once Homebrew has been installed and you have RESTARTED you terminal, paste the 
 
     brew install --cask miniconda
 
-Now run the following commands in terminal one at a time by inserting and pressing enter:
+Now run the following commands in terminal one at a time by pasting and pressing enter:
 
 .. code-block:: bash
 
@@ -62,8 +60,8 @@ Now run the following commands in terminal one at a time by inserting and pressi
 
 Step 3: Install VS Code 
 --------------------------
-After this you need to install Visual Studio Code. This is done by pasting the following in you
-terminal and executing it:
+After this you need to install Visual Studio Code. This is done by pasting the following in your
+terminal and pressing enter:
 
 .. code-block:: bash
 
@@ -78,7 +76,7 @@ Step 4: Install extensions for Visual Studio Code
 
 
 Finally you need to install some extensions in Visual Studio Code. This is done by pressing the
-Extensions |extensions| button on the left side. Here search for ``Python``, and download the extension. Make
+Extensions |extensions| button on the left side. Here search for ``Python``, and download the extensions. Make
 sure that it is from Microsoft. Hereafter search for ``Jupyter``, and download that extension as
 well. This also needs to be from Microsoft.
 
@@ -105,7 +103,7 @@ For further information, see step 1 :ref:`here <fully-manual-reference-mac>`.
 
 Make sure that it says ``(base)`` next to your user name when opening the terminal.
 
-Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run python code.
+Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run Python code.
 
 Now ensure the following:
 
@@ -123,4 +121,4 @@ If it is not the case for one of the above, try to paste the following line of c
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.

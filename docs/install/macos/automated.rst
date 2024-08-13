@@ -28,6 +28,7 @@ Next, copy the following line of code into your terminal and press :kbd:`Enter`:
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/AutoInstallMacOS.sh)"
 
+
 Please follow the script instructions. You might get asked for permissions and your password to make changes on your Mac. Please grant permission. Note that your password won't be shown when typing it.
 
 Once the script has finished, Python and Visual Studio Code will be ready to use.
@@ -73,4 +74,5 @@ If it is not the case for one of the above, try to paste the following line of c
      conda install -c conda-forge python={{ python_version_recommended }} dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via :mailto:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.
+
+If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours, or contact us via :mailto:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.

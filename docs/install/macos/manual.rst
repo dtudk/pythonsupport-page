@@ -17,6 +17,7 @@ MacOS - Manual installation
 Step 1: Install Miniconda
 ---------------------------
 
+
 The first thing to do is to download Miniconda. This is done by going to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_, and downloading the appropriate installer for your system.
 Under the title ``Latest Miniconda installer links``, you will see different installers where you will have to download the correct one.
 
@@ -65,7 +66,7 @@ Copy and paste the following lines of code into your terminal and press enter on
     conda install -c conda-forge dtumathtools uncertainties -y
 
 
-Step 3: Install VS Code
+Step 3: Install Visual Studio Code
 ----------------------------
 
 .. |applications| image:: /images/install/macos-applications.png
@@ -115,7 +116,7 @@ For further information, see step 1 :ref:`here <fully-manual-reference-mac>`.
 
 Make sure that it says ``(base)`` next to your user name when opening the terminal.
 
-Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run python code.
+Finally type ``idle3`` in the terminal and press enter. This should open up a new window in which you will able to run Python code.
 
 Now ensure the following:
 
@@ -133,4 +134,4 @@ If it is not the case for one of the above, try to paste the following line of c
      conda install -c conda-forge python=3.11 dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate visiting us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
