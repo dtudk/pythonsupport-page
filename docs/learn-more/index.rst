@@ -21,7 +21,7 @@ Nonetheless, this section will help you troubleshoot issues independently, and w
    :maxdepth: 1
    
    terminal
-   condensedidle
+   idle
    vscode
    packages-and-environments
    .. reproducibility
