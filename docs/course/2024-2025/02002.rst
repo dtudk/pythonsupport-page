@@ -19,5 +19,3 @@ These are the instructions for autumn 2024 (E24). The course base can be found :
 
 **insert instructions here**
 
-.. todo::
-    make sure that course bases in guidelines match the year of the guidelines. For example: if the guidelines are from 2023 the course base should be that of 2023 and not the current one. 

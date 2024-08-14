@@ -12,6 +12,3 @@ The primary guidelines for this course are located here:
 
 Once you have followed the above guide, you additionally need to install the
 ``Jupyter`` extension in VS Code, please read :ref:`here <ide-vscode>`.
-
-.. todo::
-    make sure that course bases in guidelines match the year of the guidelines. For example: if the guidelines are from 2023 the course base should be that of 2023 and not the current one. 

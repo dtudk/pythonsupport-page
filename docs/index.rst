@@ -16,13 +16,6 @@ DTU Python Installation Support
 ===============================
 
 
-.. todo::
-
-   On different machines the CSS might look different. Some have complete
-   Red-Coral as underlines, others have blue+orange and stuff...
-   Might be CSS problems, or something that
-
-
 .. raw:: html
       :file: html/main_banner.html
 
