@@ -110,7 +110,7 @@ Office hours
    :maxdepth: 2
    :hidden:
 
-   install-python/index.rst
+   install/python.rst
    course/index.rst
    learn-more/index.rst
    videotutorials/index.rst

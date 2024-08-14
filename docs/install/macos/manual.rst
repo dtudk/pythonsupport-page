@@ -1,6 +1,6 @@
 .. _manual-reference-macos:
 
-{{ apple_icon }} --- Manual installation 
+{{ apple_icon }} --- Manual Installation 
 ==========================================
 
 

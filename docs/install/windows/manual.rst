@@ -1,6 +1,6 @@
 .. _manual-reference-windows:
 
-{{ windows_icon }} --- Manual installation 
+{{ windows_icon }} --- Manual Installation 
 =============================================
 
 

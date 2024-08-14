@@ -1,7 +1,7 @@
 .. _package-managed-reference-macos:
 
 
-{{ apple_icon }} --- Homebrew installation
+{{ apple_icon }} --- Homebrew Installation
 ============================================
 
 .. button-link:: ../windows/manual.html
