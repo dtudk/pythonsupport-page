@@ -22,7 +22,7 @@ Nonetheless, this section will help you troubleshoot issues independently, and w
    
    terminal
    idle
-   vscode
+   vscode/index
    packages-and-environments
    .. reproducibility
 

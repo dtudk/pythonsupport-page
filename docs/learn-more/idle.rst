@@ -101,7 +101,7 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
 
    .. tab-item:: MacOS
 
-      #. to create a Python script, go to *File > New File* in the IDLE menu. 
+      #. To create a Python script, go to *File > New File* in the IDLE menu. 
 
          .. image:: images/idle_mac2.png
             :width: 550
