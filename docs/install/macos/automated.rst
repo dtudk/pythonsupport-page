@@ -2,7 +2,7 @@
 
 
 {{ apple_icon }} --- Automated Installation
-=====================================
+============================================
 
 .. button-link:: ../windows/automated.html
    :align: right
