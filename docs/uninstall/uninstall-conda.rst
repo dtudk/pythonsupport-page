@@ -5,11 +5,11 @@ Uninstalling Anaconda/Conda
 
 This guide will help you uninstall Anaconda from your computer. This can be useful if:
 
-1. Are trying to install packages with :ref:`pip`, but you cant import the package.
+* You are trying to install packages with :ref:`pip`, but you cannot import the package.
 
-2. Want to change to use :ref:`pip`.
+* You want to change to use :ref:`pip`.
 
-3. Generally have issues with packages.
+* You Generally have issues with packages.
 
 
 Windows
@@ -33,7 +33,7 @@ Windows
 
 2. Open your control panel, and press uninstall application
 
-3. Find all the applications regarding Anaconda, right click on the and press uninstall.
+3. Find all the applications regarding Anaconda, right click on them and press uninstall.
 
 
 MacOS and Linux

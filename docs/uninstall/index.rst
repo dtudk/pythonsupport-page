@@ -10,13 +10,12 @@ If you experience hard-to-resolve problems, it might be because you have
 installed all packages in your global Python home (i.e. using ``pip``
 in your base installation, *not* in a virtual environment).
 If this is the case, you are recommended to delete your installation,
-and when using a new one, please do remember to use :ref:`virtual environments <python-environments>`.
+and when using a new one, please do remember to use :doc:`virtual environments <../learn-more/packages-and-environments>`.
 
 .. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Deleting
+   :maxdepth: 1
+   :caption: Uninstallations
 
-   uninstall-python.rst
-   uninstall-conda.rst
-   uninstall-vscode.rst
+   Uninstalling Python <uninstall-python.rst>
+   Uninstalling Conda <uninstall-conda.rst>
+   Uninstalling VS Code <uninstall-vscode.rst>
