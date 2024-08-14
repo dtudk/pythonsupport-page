@@ -5,7 +5,7 @@ Verification and Quick Troubleshooting
 To ensure that your installation is working correctly, please go through the following steps.
 Open up PowerShell again. if you see ``(base)`` next to your username, you can proceed. If unsure see the image below:
 
-.. image:: ../images/windows-ps-base.admin.png
+.. image:: /images/install/windows-ps-base.png
             :width: 400
             :align: center
 
@@ -21,7 +21,7 @@ Now ensure the following:
 * It says Python {{ python_version }}.xx in the top left (or in the range {{python_version_min}} -- {{python_version_max}}).
 * You get no errors when typing ``import dtumathtools, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
 
-.. image:: ../images/windows-IDLE-import.png
+.. image:: /images/install/windows-IDLE-import.png
             :width: 400
             :align: center
 

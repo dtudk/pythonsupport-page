@@ -18,7 +18,7 @@ Each operating system opens terminals in a different way.
 
       This should open a **Terminal** looking *something* like this:
 
-      .. image:: ../../os/gifs/PS/terminal.gif
+      .. image:: /os/gifs/PS/terminal.gif
          :width: 100%
          :align: center
 
@@ -33,7 +33,7 @@ Each operating system opens terminals in a different way.
       
       This should open a **Terminal** looking *something* like this:
 
-      .. image:: ../../os/gifs/Unix/terminal.gif
+      .. image:: /os/gifs/Unix/terminal.gif
          :width: 100%
          :align: center
 
@@ -51,7 +51,7 @@ Opening Python in a Terminal
 
       This should look *something* like this in your **Terminal**:
       
-      .. image:: ../../os/gifs/PS/openPython.gif
+      .. image:: /os/gifs/PS/openPython.gif
          :width: 100%
          :align: center
 
@@ -63,7 +63,7 @@ Opening Python in a Terminal
 
       This should look *something* like this in your **Terminal**:
       
-      .. image:: ../../os/gifs/Unix/openPython.gif
+      .. image:: /os/gifs/Unix/openPython.gif
          :width: 100%
          :align: center
 
@@ -80,7 +80,7 @@ Exiting Python in a Terminal
       
       This should look *something* like this in your **Terminal**:
       
-      .. image:: ../../os/gifs/PS/exitPython.gif
+      .. image:: /os/gifs/PS/exitPython.gif
          :width: 100%
          :align: center
 
@@ -98,7 +98,7 @@ Exiting Python in a Terminal
 
       This should look *something* like this in your **Terminal**:
 
-      .. image:: ../../os/gifs/Unix/exitPython.gif
+      .. image:: /os/gifs/Unix/exitPython.gif
          :width: 100%
          :align: center
 
@@ -116,7 +116,7 @@ Running a Python script in the Terminal
 
       For example, if you wanted to run a script that has the absolute path ``C:\Users\python\test\helloWorld.py`` containing only the line ``print("Hello World")``, this should look *something* like this in your **Terminal**:
       
-      .. image:: ../../os/gifs/PS/runPython.gif
+      .. image:: /os/gifs/PS/runPython.gif
          :width: 100%
          :align: center
 
@@ -128,7 +128,7 @@ Running a Python script in the Terminal
 
       For example, if you wanted to run a script that has the absolute path ``/Users/yourname/Desktop/helloWorld.py`` containing only the line ``print("Hello World")``, this should look *something* like this in your **Terminal**:
       
-      .. image:: ../../os/gifs/Unix/runPython.gif
+      .. image:: /os/gifs/Unix/runPython.gif
          :width: 100%
          :align: center
 
@@ -143,7 +143,7 @@ Printing Working Directory
 
          Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
 
-         .. image:: ../../../os/gifs/PS/pwd.gif
+         .. image:: /os/gifs/PS/pwd.gif
             :width: 100%
             :align: center
          
@@ -151,7 +151,7 @@ Printing Working Directory
 
          Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
 
-         .. image:: ../../../os/gifs/Unix/pwd.gif
+         .. image:: /os/gifs/Unix/pwd.gif
             :width: 100%
             :align: center
 
@@ -166,7 +166,7 @@ Seeing What is in a Directory
 
          Use the command ``ls`` to print everything in the current working directory 
 
-         .. image:: ../../../os/gifs/PS/ls.gif
+         .. image:: /os/gifs/PS/ls.gif
             :width: 100%
             :align: center
          
@@ -174,7 +174,7 @@ Seeing What is in a Directory
 
          Use the command ``ls`` to print everything in the current working directory 
 
-         .. image:: ../../../os/gifs/Unix/ls.gif
+         .. image:: /os/gifs/Unix/ls.gif
             :width: 100%
             :align: center
    
@@ -189,9 +189,9 @@ Changing Directories
 
          | The command ``cd`` can be used to change your directory. For example one could write 
          | ``cd MyFolder`` in order to move to the a folder named ``MyFolder``
-         | The command ``cd .. `` can be used to move backwards by one directory
+         | The command ``cd .. `` can be used to move backwards by one directory.
 
-         .. image:: ../../../os/gifs/PS/cd.gif
+         .. image:: /os/gifs/PS/cd.gif
             :width: 100%
             :align: center
 
@@ -202,7 +202,7 @@ Changing Directories
          | ``cd MyFolder`` in order to move to the a folder named ``MyFolder``
          | The command ``cd .. `` can be used to move backwards by one directory
 
-         .. image:: ../../../os/gifs/Unix/cd.gif
+         .. image:: /os/gifs/Unix/cd.gif
             :width: 100%
             :align: center
 
@@ -219,7 +219,7 @@ Creating a Folder
          Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir NewPythonFolder`` will create a new folder with the name ``NewPythonFolder`` in the current working directory
 
 
-         .. image:: ../../../os/gifs/PS/mkdir.gif
+         .. image:: /os/gifs/PS/mkdir.gif
             :width: 100%
             :align: center  
       
@@ -228,7 +228,7 @@ Creating a Folder
          Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir NewPythonFolder`` will create a new folder with the name ``NewPythonFolder`` in the current working directory
 
 
-         .. image:: ../../../os/gifs/Unix/mkdir.gif
+         .. image:: /os/gifs/Unix/mkdir.gif
             :width: 100%
             :align: center  
 
@@ -244,7 +244,7 @@ Removing a Folder
          | ``rm -r`` followed by a folder name, will remove the given folder.
          | For example ``rm -r NewPythonFolder`` will remove the folder named ``NewPythonFolder``
 
-         .. image:: ../../../os/gifs/PS/rm.gif
+         .. image:: /os/gifs/PS/rm.gif
             :width: 100%
             :align: center
          
@@ -253,7 +253,7 @@ Removing a Folder
          | ``rm -r`` followed by a folder name, will remove the given folder.
          | For example ``rm -r NewPythonFolder`` will remove the folder named ``NewPythonFolder``
 
-         .. image:: ../../../os/gifs/Unix/rm.gif
+         .. image:: /os/gifs/Unix/rm.gif
             :width: 100%
             :align: center
 

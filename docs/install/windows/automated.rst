@@ -24,7 +24,7 @@ Install everything at once
         Once you see Windows PowerShell, on the right hand side you can select *Run as administrator*. If not, right-click the
         icon and select :menuselection:`Run as administrator`. 
 
-        .. image:: ../images/windows-ps-run.admin.png
+        .. image:: /images/install/windows-ps-run-admin.png
             :width: 400
             :align: center
 

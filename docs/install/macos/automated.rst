@@ -24,7 +24,7 @@ Install everything at once
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
 
 
-        .. image:: ../images/MacOS-spotlight-terminal.png
+        .. image:: /images/install/MacOS-spotlight-terminal.png
             :width: 100%
             :align: center
 

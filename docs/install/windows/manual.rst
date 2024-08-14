@@ -48,7 +48,7 @@ Step 1: Install Miniconda
         Follow the instructions during the installation.
         Make sure to cross off all the options regarding **PATH** as shows below.
 
-        .. image:: ../images/Miniconda-install-path.png
+        .. image:: /images/install/Miniconda-install-path.png
             :width: 400
             :align: center
 
@@ -68,7 +68,7 @@ Step 2: Install Python
         Once you see Windows PowerShell, on the right hand side you can select *Run as administrator*. If not, right-click the
         icon and select :menuselection:`Run as administrator`. 
 
-        .. image:: ../images/windows-ps-run.admin.png
+        .. image:: /images/install/windows-ps-run-admin.png
             :width: 400
             :align: center
 
@@ -132,8 +132,6 @@ Step 4: Install extensions for Visual Studio Code
         .. image:: /images/install/macos-package-managed-jupyter.png
             :width: 200
             :align: center
-
-
 
 
 

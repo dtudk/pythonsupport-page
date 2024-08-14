@@ -11,7 +11,7 @@ For further information, see :ref:`here <step2-homebrew-reference>`.
 
 Make sure that it says ``(base)`` next to your user name when opening the terminal.
 
-.. image:: ../images/MacOS-base-terminal.png
+.. image:: /images/install/MacOS-base-terminal.png
         :width: 100%
         :align: center
 
@@ -22,7 +22,7 @@ Now ensure the following:
 * It says Python {{ python_version }}.xx in the top left (or in the range {{python_version_min}} -- {{python_version_max}}).
 * You get no errors when typing ``import dtumathtools, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
 
-.. image:: ../images/MacOS-IDLE-import.png
+.. image:: /images/install/MacOS-IDLE-import.png
         :width: 100%
         :align: center
 

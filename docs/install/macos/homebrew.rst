@@ -28,7 +28,7 @@ Step 1: Install Homebrew
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
         Do *not* close the terminal once the installation script has finished.
 
-        .. image:: ../images/MacOS-spotlight-terminal.png
+        .. image:: /images/install/MacOS-spotlight-terminal.png
             :width: 100%
             :align: center
 
@@ -70,7 +70,7 @@ Step 2: Install Miniconda and Python
 
         .. code-block:: bash
 
-            conda install python=3.11 -y ; conda install -c conda-forge dtumathtools uncertainties -y
+            conda install python={{ python_version_recommened }} -y ; conda install -c conda-forge dtumathtools uncertainties -y
             
     .. tip::
         You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
@@ -100,7 +100,7 @@ Step 4: Install extensions for Visual Studio Code
     #. 
         Open Visual Studio Code and select the Extensions |extensions| tab on the left.
 
-         .. image:: ../images/VSC-extensions.png
+         .. image:: /images/install/VSC-extensions.png
             :width: 400
             :align: center
     
