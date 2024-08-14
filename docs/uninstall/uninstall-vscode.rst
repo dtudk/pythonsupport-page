@@ -20,10 +20,10 @@ Windows
 
    This will leave behind some files, which you can delete manually if you want to. To do this follow the steps below.
 
-1. Press the :kbd:`Windows + R` at the same time.
+1. Press the ``Windows`` and ``R`` buttons at the same time.
 2. Type in ``%appdata%`` and press enter.
 3. Find the folder named ``Code`` and delete it.
-4. Press the :kbd:`Windows + R` at the same time.
+4. Press the ``Windows`` and ``R`` buttons at the same time.
 5. Type in ``%userprofile%`` and press enter.
 6. Find the folder named ``.vscode`` and delete it.
 

@@ -4,11 +4,13 @@
 Uninstalling Python
 =========================================
 
-If you need to delete Python from your computer, follow these steps. This might be useful in the following scenarios:
+Deleting Python might be useful in the following scenarios. 
 
-1. Your current Python installation is not working properly. 
-2. You have several versions of Python that conflict with each other. 
-3. You have tried to install Python, but something went wrong, and you want to start from scratch. 
+* Your current Python installation is not working properly. 
+* You have several versions of Python that conflict with each other. 
+* You have tried to install Python, but something went wrong, and you want to start from scratch. 
+
+Follow the steps below to delete Python. 
 
 
 Deleting Python on Windows
@@ -34,14 +36,14 @@ Be sure to place the downloaded script on your *Desktop*.
 
 Once you have downloaded and placed on the *Desktop* open a terminal (:kbd:`Command + Space` then type ``terminal`` :kbd:`Enter`).
 
-Then run the following command:
+Then run the following command by copying, pasting into your temrinal and pressing enter:
 
 .. code-block:: bash
 
    cd ~/Desktop
    bash deletePythonMac.sh
 
-The script will ask you for your system password. Enter it and press enter.
+The script will ask you for your system password. Enter it and press enter (You will not be able to see your password as you type it).
 The script will then delete all versions of python that you have installed on your computer.
 
 If this does not work check out :ref:`this page <os-terminal>`.
