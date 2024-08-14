@@ -21,70 +21,102 @@ Step 1: Install Miniconda
 ---------------------------
 
 
-The first thing to do is to download Miniconda.
-This is done by going to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__, and downloading the appropriate installer for your system.
-Under the title ``Latest Miniconda installer links``, you will see different installers where you will have to download the correct one.
+.. card:: 
+    
 
-* If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
-* If you have an **M** processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. *Even* if you have an **M2** or **M3**.
+    #. 
+        Before starting, you need to know which processor you have. If you do not know which processor you have, you can find 
+        out which processor you have by pressing the {{ apple_icon }} logo on the top left of your
+        screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an M1, M2, M3 or an Intel processor.
 
-.. image:: /images/install/macos-fully-manual-miniconda.png
-    :width: 400
-    :align: center
+        .. image:: /images/install/macos-fully-manual-processor.png
+            :width: 200
+            :align: center
+
+        
+        
+    #.  
+        Go to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
+    
+
+    #. 
+        Look for the title "Latest Miniconda installer links". Here you you will see different installers where you will 
+        have to download the correct one.
+    
+        * If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
+        * If you have an **M** processor you need to select Miniconda3 MacOS Apple M1 64-bit pkg. *Even* if you have an **M2** or **M3**.
+
+        .. image:: /images/install/macos-fully-manual-miniconda.png
+            :width: 400
+            :align: center
+ 
 
 
-You can find out which processor you have by pressing the Apple logo an the top left of your
-screen. Go to :menuselection:`About This Mac --> Chip/Processor`.
+    #.
+        Follow the instructions from the package.
 
-.. image:: /images/install/macos-fully-manual-processor.png
-    :width: 200
-    :align: center
-
-
-Then you need to follow the instructions from the package.
-
-.. image:: /images/install/macos-fully-manual-miniconda-pkg.png
-    :width: 400
-    :align: center
+        .. image:: /images/install/macos-fully-manual-miniconda-pkg.png
+            :width: 400
+            :align: center
 
 
 Step 2: Install Python
 ---------------------------
 
-Now you need to open your terminal. This is done by pressing the "command" and "space" key at the same time, and searching for "terminal".
+.. card:: 
 
-.. todo::
-    Insert image of spotlight search for terminal.
 
-Copy and paste the following lines of code into your terminal and press enter one line at a time:
-
-.. tip::
-    You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
-
-.. code-block:: bash
-        
-    conda install python=3.11 -y
+    #. 
     
-.. code-block:: bash
+        Open the Terminal by pressing the "command" and "space" key at the same time, and searching for "terminal".  
 
-    conda install -c conda-forge dtumathtools uncertainties -y
+        .. todo::
+                Insert image of spotlight search for terminal.  
+
+    #.
+   
+        Copy and paste the following line of code into your terminal and press enter **one line at a time**:
+
+
+        .. code-block:: bash
+                
+            conda install python=3.11 -y ; conda install -c conda-forge dtumathtools uncertainties -y
+
+        .. tip::
+            You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
+
 
 
 Step 3: Install Visual Studio Code
 -----------------------------------
-
 .. |applications| image:: /images/install/macos-applications.png
     :height: 25px
 
-After the installation is finished, you need to download Visual Studio Code. This is done by going
-to `this website  <https://code.visualstudio.com>`_. Click the download button and follow the instructions. 
-Once downloaded make sure that Visual Studio Code is under the |applications| folder in Finder.
+.. card:: 
 
 
-.. image:: /images/install/macos-fully-manual-vsc-webpage.png
-      :width: 500
-      :align: center
+    After the installation is finished, you need to download Visual Studio Code. 
+    
+    #. 
+        Go to `this website  <https://code.visualstudio.com>`_. 
+        
+        
 
+    #.  
+        Click the download button and follow the instructions.
+
+        .. image:: /images/install/macos-fully-manual-vsc-webpage.png
+            :width: 500
+            :align: center
+
+    #.  
+        
+        Make sure that Visual Studio Code is under the |applications| folder in Finder.
+        
+        .. todo::
+                Insert images of how to do this.
+
+   
 
 Step 4: Install extensions for Visual Studio Code
 -------------------------------------------------
@@ -92,19 +124,29 @@ Step 4: Install extensions for Visual Studio Code
 .. |extensions| image:: /images/install/extensions.png
     :height: 25px
 
+.. card:: 
 
-Open Visual Studio Code and select the Extensions |extensions| tab on the left. Here search for Python, and
-download the extension. Make sure that it is from Microsoft. Hereafter search for Jupyter, and
-download that extension as well. This also needs to be from Microsoft.
+    #. 
+        Open Visual Studio Code and select the Extensions |extensions| tab on the left.
+
+        .. todo::
+            Add image to make it clearer?
+    
+    #.  
+        Search for Python, and download the extension. Make sure that it is from Microsoft. 
+
+        .. image:: /images/install/macos-package-managed-python.png
+            :width: 200
+            :align: center
+
+    #. 
+        Hereafter search for Jupyter, and download that extension as well. This also needs to be from Microsoft.
+        
+        .. image:: /images/install/macos-package-managed-jupyter.png
+            :width: 200
+            :align: center
 
 
-.. image:: /images/install/macos-package-managed-python.png
-      :width: 200
-      :align: center
-
-.. image:: /images/install/macos-package-managed-jupyter.png
-      :width: 200
-      :align: center
 
 .. tip::
     When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
