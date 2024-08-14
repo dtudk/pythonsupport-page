@@ -1,101 +1,169 @@
 Jupyter Notebooks (.ipynb)
 ==========================
 
-Jupyter Notebooks
------------------
 
-Jupyter notebooks give you a way to combine Python code, and plain text similar to a word document. 
+Creating a new Jupyter Notebook File
+------------------------------------
 
-.. card:: Creating a Jupyter notebook
+.. card::
+            
+    #.
+        Access the command palette by either pressing command+shift+P on Mac or control+shift+P in Windows or by clicking help in the menu bar at the top and then show all the commands from there on.
 
+    #. 
+        Search for create new Jupyter Notebook and click that option.
+
+
+    #. 
+        Select a kernel by going to the upper right corner, clicking select kernel and then choosing the version of Python you want to use.
+
+            PICTURE!!! 
+
+        Note: You may have different versions of Python installed on your computer, and it's therefore very important to choose the version with the packages that you want to use for this project.
+
+    .. tip::
+        If you accidentally chose the wrong kernel, don't worry,you can always go back by clicking the Python version you're currently using and then changing it.
+
+
+Importing packages
+-------------------
+
+.. card::
+
+    #. 
+    
+        Click on the first box.
+
+        PICTURE!!!
+
+    #.
+
+        Copy and paste the following code:
+        
+        .. code-block:: bash
+
+            important numpy as np
+
+    #. 
+
+       Press shift+Enter in order to execute the code from the box. A tick shows that the code from the specific box is executed 
+       and the time next to it shows how long it took.
+
+       In the rest of the document you will just have to write ``np.`` to use the functions from NumPy.
+
+
+Creating a new code box and running it
+---------------------------------------
+
+
+.. card::
+
+    #. 
+    
+        Create a new code box by hovering your mouse over an existing box and pressing the plus code. 
+        
+
+        PICTURE!!!
+        
+        If you to delete one, you can just hover your mouse over the right corner of the box 
+        and click on the trash.
+
+        PICTURE!!!
+
+
+    #.
+
+        Copy and paste the following code which will multiplicate the square root of 2 and pi:
+        
+        .. code-block:: bash
+
+            np.sqrt(2)*np.pi
+
+    #. 
+
+       Press shift+Enter in order to execute the code from the box. Below the code box you should see the result.
+
+       PICTURE!!!!
+
+       
+
+
+
+
+Writing text using Markdown
+----------------------------
+
+
+.. card::
+
+    #. 
+        
+        Add a Markdown box.
+
+        PICTURE!!!
+
+        You can use this option to write some text inside of your Jupyter Notebook using LaTeX. This is specially useful when you need
+        to write complex mathematical equations.
+
+    #. 
+
+        Copy and paste the following code as an example in the Markdown box:
+        
+        .. code-block:: bash
+
+            $$ 5/10 = \frac{1}{2} $$ 
+            
+            This is my solution!
+
+        
+    #. 
+
+        Press shift+Enter. This should give you the following output:
+
+            PICTURE!!!    
+
+        .. tip::
+
+            To run your code inside a Jupyter Notebook, you can also use the ``Execute Cell``, ``Execute Above Cells``, 
+            or ``Execute Cell and Below`` buttons.
+
+
+
+Saving a File
+--------------
+
+
+.. card::
+    
     .. tab-set::
 
-                .. tab-item:: Windows 
+        .. tab-item:: Windows
 
-                    1. Press "CTRL" + "Shift" + "p"
-                    2. Search for "Create: New Jupyter Notebook" and press
+            1. Press the "File" button in the top left corner of VS Code.
+            2. Select "Save" or "Save As..." from the dropdown menu.
+            
+            .. image:: ../images/VScode_windows_save_file.png
+                :width: 450
+                :align: center
+                :alt: Save File in VS Code
+            3. Choose a location and name for your file, then save it.
 
-                    .. image:: images/VScode_windows5.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+            Note that you can save a file by pressing "control" + "s".
 
-                    3. Press the "Select Kernel" button in the top right of the notebook
-                    4. Click "Python Environments" and "3.11.5 ('base') (You may have a different version of Python on your own PC)"
+        .. tab-item:: MacOS
 
-                    .. image:: images/VScode_windows6.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
-                    
-                    .. warning::
-                        If the "Create: New Jupyter notebook" option does not pop up, you need to install the Jupyter extension for VS Code. This is easily done by
-                        pressing "CTRL" + "Shift" + "X", searching for "Jupyter" and pressing install
-                        when Jupyter pops up. If it is still not working, open a terminal, type "pip install jupyter", 
-                        press "Enter" and wait for jupyter to be installed. You may need to restart VS Code
+            1. Press the "File" button in the top left corner of your screen.
+            2. Select "Save" or "Save As..." from the dropdown menu.
+            3. Choose a location and name for your file, then save it.
 
-                .. tab-item:: MacOS 
+            .. image:: ../images/saveFileMac.png
+                :width: 450
+                :align: center
+                :alt: Save File in VS Code
 
-                    1. Press "CMD" + "Shift" + "p"
-                    2. Search for "Create: New Jupyter Notebook" and press
+            Note that you can save a file by pressing "command" + "s".
 
-                    .. image:: images/VScode_mac5.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+    .. tip::
 
-                    3. Press the "Select Kernel" button in the top right of the notebook
-                    4. Click "Python Environments" and "3.11.5 ('base') (You may have a different version of Python on your own PC)"
-
-                    .. image:: images/VScode_mac6.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
-
-                    .. warning::
-                        If the "Create: New Jupyter notebook" option does not pop up, you need to install the Jupyter extension for VS Code. This is easily done by
-                        pressing "CMD" + "Shift" + "X", searching for "Jupyter" and pressing install
-                        when Jupyter pops up. If it is still not working, open a terminal, type "pip3 install jupyter", 
-                        press "Enter" and wait for jupyter to be installed. You may need to restart VS Code
-
-
-
-
-.. card:: Code blocks and Text Blocks
-
-    If you hover your mouse around the top of the notebook two icons will appear. "+ Code" and "+ Markdown".
-    Press "+ Code" to create a code block.
-
-    .. image:: images/VScode_windows7.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
-
-    You can execute the code in a block by pressing the play-button next to the code block or pressing "Shift"+"Enter".
-
-    .. image:: images/VScode_windows8.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
-
-    Markdown cells allow you to type plain text. Running these cells will just print the plain text. 
-    You can finish the markdown cell by pressing "Shift" + "Enter"
-
-    .. image:: images/VScode_windows9.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
-
-
-
-    You can create more blocks of either code or markdown by hovering your mouth below any code or markdown cell. 
-
-
-
-.. warning:: 
-    If it is your first time creating a notebook, running a code block may give you the following error:
-    *"Running cells with 'base (Python 3.11.5)' requires the ipykernel package"*. 
-    Simply click "install" and wait for the code to run  
-
-
+        You can also autosave by pressing the "File" button in the top left corner of VS Code and then selecting "Auto save".
 
