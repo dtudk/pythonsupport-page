@@ -27,10 +27,6 @@ Please install the uncertainties package by pasting the following into your term
 
    python3 -m pip install dtumathtools scipy pandas uncertainties
 
-.. todo::
-    make sure that course bases in guidelines match the year of the guidelines. For example: if the guidelines are from 2023 the course base should be that of 2023 and not the current one. 
-
-
 
 **The course databases can be found below:**
 
