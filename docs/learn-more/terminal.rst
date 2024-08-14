@@ -132,39 +132,148 @@ Running a Python script in the Terminal
          :width: 100%
          :align: center
 
+Printing Working Directory
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. card:: Printing Working Directory
+.. card::
 
-   Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
+   .. tab-set::
+
+      .. tab-item:: Windows
+
+         Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
+
+         .. image:: ../../../os/gifs/PS/pwd.gif
+            :width: 100%
+            :align: center
+         
+      .. tab-item:: MacOS
+
+         Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
+
+         .. image:: ../../../os/gifs/Unix/pwd.gif
+            :width: 100%
+            :align: center
+
+Seeing What is in a Directory 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. card::
+
+   .. tab-set::
+
+      .. tab-item:: Windows
+
+         Use the command ``ls`` to print everything in the current working directory 
+
+         .. image:: ../../../os/gifs/PS/ls.gif
+            :width: 100%
+            :align: center
+         
+      .. tab-item:: MacOS
+
+         Use the command ``ls`` to print everything in the current working directory 
+
+         .. image:: ../../../os/gifs/Unix/ls.gif
+            :width: 100%
+            :align: center
+   
+Changing Directories
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. card::
+
+   .. tab-set::
+
+      .. tab-item:: Windows
+
+         | The command ``cd`` can be used to change your directory. For example one could write 
+         | ``cd MyFolder`` in order to move to the a folder named ``MyFolder``
+         | The command ``cd .. `` can be used to move backwards by one directory
+
+         .. image:: ../../../os/gifs/PS/cd.gif
+            :width: 100%
+            :align: center
+
+         
+      .. tab-item:: MacOS
+
+         | The command ``cd`` can be used to change your directory. For example one could write 
+         | ``cd MyFolder`` in order to move to the a folder named ``MyFolder``
+         | The command ``cd .. `` can be used to move backwards by one directory
+
+         .. image:: ../../../os/gifs/Unix/cd.gif
+            :width: 100%
+            :align: center
 
 
-.. card:: Seeing What is in a Directory 
+Creating a Folder
+^^^^^^^^^^^^^^^^^^
 
-   Use the command ``ls`` to print everything in the current working directory 
+.. card::
 
-.. card:: Changing Directories
+   .. tab-set::
 
-   | The command ``cd`` can be used to change your directory. For example one could write 
-   | ``cd .\Desktop`` in order to move to the desktop
+      .. tab-item:: Windows
 
-
-.. card:: Moving Backwards
-
-   The command ``cd ..\`` will move you backwards by one directory. For example, if a folder named ``sub-folder`` is inside a folder nambed ``parent-folder`` and the current working directory is ``sub-folder``, using ``cd ..\`` will take you back to ``parent-folder``
-
-.. card:: Creating a folder
-
-   Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir new_folder`` will create a new folder with the name ``new-folder``
+         Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir NewPythonFolder`` will create a new folder with the name ``NewPythonFolder`` in the current working directory
 
 
-.. card:: Removing a Folder 
+         .. image:: ../../../os/gifs/PS/mkdir.gif
+            :width: 100%
+            :align: center  
+      
+      .. tab-item:: MacOS
 
-   | ``rm -r`` followed by a folder name, will remove the given folder.
-   | For example ``rm -r new_folder`` will remove the folder named ``new_folder``
+         Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir NewPythonFolder`` will create a new folder with the name ``NewPythonFolder`` in the current working directory
 
-.. card:: Clearing output
 
-   ``clear`` will clear all output from the terminal
+         .. image:: ../../../os/gifs/Unix/mkdir.gif
+            :width: 100%
+            :align: center  
+
+Removing a Folder 
+^^^^^^^^^^^^^^^^
+
+.. card:: 
+
+   .. tab-set::
+
+      .. tab-item:: Windows
+
+         | ``rm -r`` followed by a folder name, will remove the given folder.
+         | For example ``rm -r NewPythonFolder`` will remove the folder named ``NewPythonFolder``
+
+         .. image:: ../../../os/gifs/PS/rm.gif
+            :width: 100%
+            :align: center
+         
+      .. tab-item:: MacOS
+
+         | ``rm -r`` followed by a folder name, will remove the given folder.
+         | For example ``rm -r NewPythonFolder`` will remove the folder named ``NewPythonFolder``
+
+         .. image:: ../../../os/gifs/Unix/rm.gif
+            :width: 100%
+            :align: center
+
+Clearing output
+^^^^^^^^^^^^^^
+
+.. card::
+
+   .. tab-set::
+
+      .. tab-item:: Windows
+
+         ``clear`` will clear all output from the terminal
+
+         
+      .. tab-item:: MacOS
+
+         ``clear`` will clear all output from the terminal
+
+   
 
 
 
