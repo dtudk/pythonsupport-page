@@ -33,7 +33,7 @@ Windows
 
 2. Open your control panel, and press uninstall application
 
-3. Find all the applications regarding Anaconda, right click on them and press uninstall.
+3. Find all the applications regarding Anaconda (and Miniconda), right click on them and press uninstall.
 
 
 MacOS and Linux

@@ -21,9 +21,6 @@
 
 
 
-.. todo::
-    Change color?
-
 
 Step 1: Install Miniconda
 --------------------------
@@ -51,8 +48,9 @@ Step 1: Install Miniconda
         Follow the instructions during the installation.
         Make sure to cross off all the options regarding **PATH** as shows below.
 
-        .. todo::
-            Insert image showing **PATH** checkboxes when downloading miniconda on windows
+        .. image:: ../images/Miniconda-install-path.png
+            :width: 400
+            :align: center
 
 
 Step 2: Install Python
@@ -70,8 +68,9 @@ Step 2: Install Python
         Once you see Windows PowerShell, on the right hand side you can select *Run as administrator*. If not, right-click the
         icon and select :menuselection:`Run as administrator`. 
 
-        .. todo::
-            insert image of how to open PowerShell as described above.
+        .. image:: ../images/windows-ps-run.admin.png
+            :width: 400
+            :align: center
 
     #. 
         Copy the following line of code into your terminal and press enter:        

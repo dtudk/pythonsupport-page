@@ -9,9 +9,6 @@
    
     Press here for {{ macos }} {{ apple_icon }}
 
-.. todo::
-    Change color?
-
 
 Install everything at once
 ----------------------------
@@ -27,8 +24,9 @@ Install everything at once
         Once you see Windows PowerShell, on the right hand side you can select *Run as administrator*. If not, right-click the
         icon and select :menuselection:`Run as administrator`. 
 
-        .. todo::
-            insert image of how to open PowerShell as described above.    
+        .. image:: ../images/windows-ps-run.admin.png
+            :width: 400
+            :align: center
 
     #. 
         Copy the following line of code into your terminal and press enter:
