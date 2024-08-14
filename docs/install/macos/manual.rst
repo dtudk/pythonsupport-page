@@ -97,7 +97,7 @@ Step 3: Install Visual Studio Code
     After the installation is finished, you need to download Visual Studio Code. 
     
     #. 
-        Go to `this website  <https://code.visualstudio.com>`_. 
+        Go to `this website  <https://code.visualstudio.com>`__.
         
         
 

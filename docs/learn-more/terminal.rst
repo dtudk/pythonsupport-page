@@ -233,7 +233,7 @@ Creating a Folder
             :align: center  
 
 Removing a Folder 
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 
 .. card:: 
 
@@ -258,7 +258,7 @@ Removing a Folder
             :align: center
 
 Clearing output
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 .. card::
 

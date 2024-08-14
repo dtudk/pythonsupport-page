@@ -20,7 +20,7 @@ Step 1: Install Homebrew
 .. card:: 
 
     #.
-        Go to `this website <https://brew.sh>`_ and follow the instructions.
+        Go to `this website <https://brew.sh>`__ and follow the instructions.
         
     #.  
         The Homebrew website will ask you to open a terminal.

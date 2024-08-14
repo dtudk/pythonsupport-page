@@ -29,7 +29,7 @@ Step 1: Install Miniconda
 
     #. 
 
-        Go to to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`_.
+        Go to to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
 
 
     #. 
@@ -94,7 +94,7 @@ Step 3: Install Visual Studio Code
 
     #. 
     
-        Go to `this website  <https://code.visualstudio.com>`_. 
+        Go to `this website  <https://code.visualstudio.com>`__.
     
     #.
     
