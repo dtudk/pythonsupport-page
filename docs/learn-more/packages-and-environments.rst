@@ -4,6 +4,7 @@ Packages and Environments
 .. tip::
     You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
 
+
 Navigating packages
 ^^^^^^^^^^^^^^^^^^^
 

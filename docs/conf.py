@@ -482,6 +482,7 @@ html_context = {
     "cheatsheet_color": "muted",
     "windows_icon": ":fab:`windows`",
     "apple_icon":  ":fab:`apple`",
+    "app_store":   ":fab:`app-store`",
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
     # online days
