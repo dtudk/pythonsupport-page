@@ -9,8 +9,9 @@ same components (Python, packages, conda, and Visual Studio Code).
 Importantly, these installation guides are specifically designed for students who meet at least one of the following criteria:
 
 - First-year Bachelor students at DTU
-- Students taking Mathematics 1a/1b ( :course-base:`01001`)
-- Students taking Computer Programming (:course-base:`02002`)
+- Students taking Mathematics 1a/1b ( :course-base:`01001` /:course-base:`01002` /:course-base:`01003` /:course-base:`01004` )
+- Students taking Computer Programming (:course-base:`02002` / :course-base:`02002`)
+- Students taking Physics ( :course-base:`10060`)
 
 These guides, although tailored for 1\ :sup:`st`\  year students, are also ideal for anyone needing to use Python.
 
