@@ -1,7 +1,7 @@
 .. _automated-reference-macos:
 
 
-{{ apple_icon }} - Auto installation
+{{ apple_icon }} - Automated Installation
 =====================================
 
 .. button-link:: ../windows/automated.html
