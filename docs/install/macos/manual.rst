@@ -75,19 +75,15 @@ Step 2: Install Python
 
     #.
    
-        Copy and paste the following lines of code into your terminal and press enter **one line at a time**:
+        Copy and paste the following line of code into your terminal and press enter **one line at a time**:
 
 
         .. code-block:: bash
                 
-            conda install python=3.11 -y
-            
-        .. code-block:: bash
-
-            conda install -c conda-forge dtumathtools uncertainties -y
+            conda install python=3.11 -y ; conda install -c conda-forge dtumathtools uncertainties -y
 
         .. tip::
-            You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
+            You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
 
 
 
@@ -116,7 +112,9 @@ Step 3: Install Visual Studio Code
     #.  
         
         Make sure that Visual Studio Code is under the |applications| folder in Finder.
-
+        
+        .. todo::
+                Insert images of how to do this.
 
    
 
