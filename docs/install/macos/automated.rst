@@ -10,8 +10,6 @@
    
     Press here for Windows {{ windows_icon }}
 
-.. todo::
-    Change color?
 
 Install everything at once
 ----------------------------
@@ -25,11 +23,10 @@ Install everything at once
     #.    
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
 
-        .. todo::
-            Should these items be an enumerated list?
 
-        .. todo::
-            Insert image of spotlight search for terminal.
+        .. image:: ../images/MacOS-spotlight-terminal.png
+            :width: 100%
+            :align: center
 
     #.
 

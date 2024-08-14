@@ -12,8 +12,6 @@
     Press here for Windows {{ windows_icon }}
    
 
-.. todo::
-    Change color?
 
 .. _fully-manual-reference-mac:
 
@@ -70,8 +68,9 @@ Step 2: Install Python
     
         Open the Terminal by pressing the "command" and "space" key at the same time, and searching for "terminal".  
 
-        .. todo::
-                Insert image of spotlight search for terminal.  
+        .. image:: ../images/MacOS-spotlight-terminal.png
+            :width: 300
+            :align: center
 
     #.
    
@@ -113,8 +112,10 @@ Step 3: Install Visual Studio Code
         
         Make sure that Visual Studio Code is under the |applications| folder in Finder.
         
-        .. todo::
-                Insert images of how to do this.
+        .. image:: ../images/MacOS-finder-VSC.png
+            :width: 400
+            :align: center
+    
 
    
 
@@ -129,8 +130,9 @@ Step 4: Install extensions for Visual Studio Code
     #. 
         Open Visual Studio Code and select the Extensions |extensions| tab on the left.
 
-        .. todo::
-            Add image to make it clearer?
+        .. image:: ../images/VSC-extensions.png
+            :width: 400
+            :align: center
     
     #.  
         Search for Python, and download the extension. Make sure that it is from Microsoft. 

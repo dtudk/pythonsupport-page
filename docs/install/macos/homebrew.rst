@@ -11,8 +11,7 @@
 
     Press here for Windows {{ windows_icon }}
 
-.. todo::
-    Change color?
+
 
 Step 1: Install Homebrew 
 --------------------------
@@ -29,8 +28,9 @@ Step 1: Install Homebrew
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
         Do *not* close the terminal once the installation script has finished.
 
-        .. todo::
-            Insert image of spotlight search for terminal. 
+        .. image:: ../images/MacOS-spotlight-terminal.png
+            :width: 100%
+            :align: center
 
         .. image:: /images/install/macos-package-managed-homebrew.png
             :width: 400
@@ -47,6 +47,8 @@ Step 1: Install Homebrew
             :align: center
 
 
+
+.. _step2-homebrew-reference:
 
 Step 2: Install Miniconda and Python
 -------------------------------------
@@ -98,8 +100,9 @@ Step 4: Install extensions for Visual Studio Code
     #. 
         Open Visual Studio Code and select the Extensions |extensions| tab on the left.
 
-        .. todo::
-            Add image to make it clearer?
+         .. image:: ../images/VSC-extensions.png
+            :width: 400
+            :align: center
     
     #.  
         Search for Python, and download the extension. Make sure that it is from Microsoft. 
