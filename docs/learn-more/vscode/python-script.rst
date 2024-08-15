@@ -32,10 +32,10 @@ Opening a folder in VS Code allows you to manage all your project files in one p
             1. Press the "File" button in the top left corner of VS Code.
             2. Select "Open Folder..." from the dropdown menu.
 
-            .. image:: ../images/NEEDS-TO-BE-CREATED.png
+            .. image:: ../images/VSC-openfolder.png
                 :width: 450
                 :align: center
-                :alt: Open Folder in VS Code
+                :alt: Save File in VS Code
 
             3. Browse to the folder you want to open and select it.
 
@@ -72,12 +72,7 @@ You can create a Python file in VS code. This is useful if you are writing code 
                         :align: center
                         :alt: IDLE Shell
 
-                    Note that you can also use the Explorer to create a new File or Folder by using the top left side of VS Code:
-
-                    .. image:: ../images/createFileUsingLeftBar.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+        
 
 
                 .. tab-item:: MacOS 
@@ -90,12 +85,7 @@ You can create a Python file in VS code. This is useful if you are writing code 
                         :align: center
                         :alt: IDLE Shell
 
-                    Note that you can also use the Explorer to create a new File or Folder by using the top left side of VS Code:
-
-                    .. image:: ../images/createFileUsingLeftBar.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+        
 
                         
 
@@ -153,10 +143,10 @@ Opening a file in VS Code allows you to edit and run your code directly within t
             1. Press the "File" button in the top left corner of VS Code.
             2. Select "Open..." from the dropdown menu.
 
-            .. image:: ../images/NEEDS-TO-BE-CREATED.png
+            .. image:: ../images/VSC-openfile.png
                 :width: 450
                 :align: center
-                :alt: Open File in VS Code
+                :alt: Save File in VS Code
 
 
             3. Browse to the file you want to open and select it.
