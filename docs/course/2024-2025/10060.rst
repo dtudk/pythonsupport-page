@@ -17,10 +17,6 @@ This guideline is for students attending course :course-base:`2024:10060` in the
 
 
 
-.. todo::
-    Add newer years to dropdown menu as we progress
-
-
 Please install the uncertainties package by pasting the following into your terminal:
 
 .. code-block:: bash

@@ -13,13 +13,21 @@ Creating a new Jupyter Notebook File
     #. 
         Search for create new Jupyter Notebook and click that option.
 
+        .. image:: /learn-more/images/VSC-create-new-notebook.png
+            :width: 400
+            :align: center
+
 
     #. 
         Select a kernel by going to the upper right corner, clicking select kernel and then choosing the version of Python you want to use.
 
-            PICTURE!!! 
+        .. image:: /learn-more/images/VSC-select-kernel.png
+            :width: 100%
+            :align: center
 
-        Note: You may have different versions of Python installed on your computer, and it's therefore very important to choose the version with the packages that you want to use for this project.
+        .. note::
+
+            You may have different versions of Python installed on your computer, and it's therefore very important to choose the version with the packages that you want to use for this project.
 
     .. tip::
         If you accidentally chose the wrong kernel, don't worry,you can always go back by clicking the Python version you're currently using and then changing it.
@@ -32,58 +40,70 @@ Importing packages
 
     #. 
     
-        Click on the first box.
+        STart by clicking on the box in the top of the notebook
 
-        PICTURE!!!
 
     #.
 
         Copy and paste the following code:
         
-        .. code-block:: bash
+        .. code-block:: python
 
-            important numpy as np
+            import numpy as np
 
     #. 
 
        Press shift+Enter in order to execute the code from the box. A tick shows that the code from the specific box is executed 
-       and the time next to it shows how long it took.
+       and the time next to it shows how long it took. You can also press the play button next to the box to execute the code. 
 
-       In the rest of the document you will just have to write ``np.`` to use the functions from NumPy.
+       In the rest of the document you will just have to write ``np.`` to use the functions from NumPy. Your screen should now look like the following image:
+
+       .. image:: /learn-more/images/VSC-numpy-import.png
+                :width: 100%
+                :align: center
 
 
-Creating a new code box and running it
----------------------------------------
+
+
+Creating a new code cell and running it
+------------------------------------------
 
 
 .. card::
 
     #. 
     
-        Create a new code box by hovering your mouse over an existing box and pressing the plus code. 
+        Create a new code cell by hovering your mouse over an existing block and pressing the ``+ code`` option. 
         
 
-        PICTURE!!!
+        .. image:: /learn-more/images/VSC-codecell.png
+                :width: 100%
+                :align: center
         
-        If you to delete one, you can just hover your mouse over the right corner of the box 
-        and click on the trash.
+        To delete a code cell one, you can just hover your mouse over the right corner of the box 
+        and click on the trash shaped icon.
 
-        PICTURE!!!
+        .. image:: /learn-more/images/VSC-deletecell.png
+                :width: 100%
+                :align: center
 
 
     #.
 
         Copy and paste the following code which will multiplicate the square root of 2 and pi:
         
-        .. code-block:: bash
+        .. code-block:: python
 
-            np.sqrt(2)*np.pi
+            print(np.sqrt(2)*np.pi)
 
     #. 
 
-       Press shift+Enter in order to execute the code from the box. Below the code box you should see the result.
+       Press shift+Enter in order to execute the code from the box (or press the play button). Below the code box you should see the following  result.
 
-       PICTURE!!!!
+       .. image:: /learn-more/images/VSC-numpyprint.png
+                :width: 100%
+                :align: center
+
 
        
 
@@ -100,7 +120,11 @@ Writing text using Markdown
         
         Add a Markdown box.
 
-        PICTURE!!!
+        
+        .. image:: /learn-more/images/VSC-markdownadd.png
+                :width: 100%
+                :align: center
+        
 
         You can use this option to write some text inside of your Jupyter Notebook using LaTeX. This is specially useful when you need
         to write complex mathematical equations.
@@ -109,18 +133,24 @@ Writing text using Markdown
 
         Copy and paste the following code as an example in the Markdown box:
         
-        .. code-block:: bash
+        .. code-block:: 
 
             $$ 5/10 = \frac{1}{2} $$ 
             
             This is my solution!
+
+        .. image:: /learn-more/images/VSC-markdowntyping.png
+            :width: 100%
+            :align: center
 
         
     #. 
 
         Press shift+Enter. This should give you the following output:
 
-            PICTURE!!!    
+        .. image:: /learn-more/images/VSC-markdownfinish.png
+            :width: 100%
+            :align: center    
 
         .. tip::
 

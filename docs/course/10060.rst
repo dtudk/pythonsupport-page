@@ -17,9 +17,6 @@ This guideline is for students attending course :course-base:`10060` in the F25 
 |
 
 
-.. todo::
-    Add newer years to dropdown menu as we progress
-
 Please install the uncertainties package by pasting the following into your terminal:
 
 .. code-block:: bash

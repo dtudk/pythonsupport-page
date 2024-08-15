@@ -14,11 +14,6 @@ These are the instructions for the autumn 2024 (E24). The course base can be fou
 
 
 
-
-
-.. todo::
-    Add newer years to dropdown menu as we progress
-
 **Insert current instructions here**
 
 
