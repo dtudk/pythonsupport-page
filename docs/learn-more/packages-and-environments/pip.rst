@@ -86,14 +86,14 @@ When specifying more than one package on the line, dependencies will be checked 
 
    ``pip`` versions 21 and older:
 
-   .. image:: /learn-more/images/pip21_upgrade.png
+   .. image:: /images/pip/pip21_upgrade.png
       :width: 800
       :align: left
       :alt: pip upgrade notice from versions 21 and older
    
    ``pip`` versions 22 and newer:
 
-   .. image:: /learn-more/images/pip22_upgrade.png
+   .. image:: /images/pip/pip22_upgrade.png
       :width: 550
       :align: left
       :alt: pip upgrade notice from versions 22 and newer
@@ -268,4 +268,4 @@ To check possible conflicts in the current environment, use ``pip check``:
          python3 -m pip check
 
 .. tip:: 
-    Further documentation on pip is available `here <https://pip.pypa.io/en/stable/>`__.
+    Further documentation on ``pip`` is available `here <pip-org_>`_.
