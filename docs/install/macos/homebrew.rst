@@ -38,7 +38,7 @@ Step 1: Install Homebrew
 
     #.
         
-        Add Homebrew to the **PATH** by copying, pasting and running the code that Homebrew displays in the terminal (look at the picture for guidance). 
+        Add Homebrew to the **PATH** by copying, pasting and running the code that Homebrew displays in the Terminal (look at the picture for guidance). 
         Press :kbd:`Enter` once you have pasted the code. The code should look similar to the following image, 
         but might differ a little for different {{ macos }} versions.
 
@@ -56,17 +56,17 @@ Step 2: Install Miniconda and Python
 .. card::
 
     #. 
-        Close the previously used terminal, and open up a new terminal (:kbd:`Command+Space`).
+        Close the previously used Terminal, and open up a new Terminal (:kbd:`Command+Space`).
 
     #.
-        Paste the following code in the terminal and press :kbd:`Enter`.
+        Paste the following code in the Terminal and press :kbd:`Enter`.
 
         .. code-block:: bash
 
             brew install --cask miniconda
 
     #.
-        Run the following command in the terminal by pasting and pressing enter:
+        Run the following command in the Terminal by pasting and pressing enter:
 
         .. code-block:: bash
 

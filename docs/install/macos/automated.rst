@@ -18,7 +18,7 @@ Install everything at once
 
 
     #.
-        Open thing to do is to open your terminal by pressing :kbd:`Command+Space` at the same time.
+        The first thing to do is to open your Terminal by pressing :kbd:`Command+Space` at the same time.
 
     #.    
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
@@ -30,7 +30,7 @@ Install everything at once
 
     #.
 
-        Next, copy the following line of code into your terminal and press :kbd:`Enter`:
+        Next, copy the following line of code into your Terminal and press :kbd:`Enter`:
 
         .. code-block:: bash
 
