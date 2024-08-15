@@ -6,7 +6,7 @@ To ensure that your installation is working correctly, please go through the fol
 Open up PowerShell again. If you see ``(base)`` next to your username, you can proceed. If unsure see the image below:
 
 .. image:: /images/install/windows-ps-base.png
-            :width: 400
+            :width: 100% 
             :align: center
 
 Otherwise do the following:
@@ -22,7 +22,7 @@ Now ensure the following:
 * You get no errors when typing ``import dtumathtools, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
 
 .. image:: /images/install/windows-IDLE-import.png
-            :width: 400
+            :width: 100% 
             :align: center
 
 
