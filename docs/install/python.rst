@@ -1,5 +1,7 @@
 .. _install-python-reference:
 
+.. _install-python:
+
 Install Python 
 =================
 
@@ -23,6 +25,8 @@ Importantly, these installation guides are specifically designed for students wh
 These guides, although tailored for 1\ :sup:`st` year students, are also ideal for anyone needing to use Python.
 
 
+.. _install-python-windows:
+
 {{ windows_icon }} --- Installation on Windows
 -------------------------------------------------
 
@@ -31,6 +35,8 @@ These guides, although tailored for 1\ :sup:`st` year students, are also ideal f
 * The :doc:`manual installation guide <windows/manual>` allows you to set up Python step by step. 
 
 
+.. _install-python-macos:
+
 {{ apple_icon }} --- Installation on MacOS
 -------------------------------------------
 
@@ -38,8 +44,17 @@ These guides, although tailored for 1\ :sup:`st` year students, are also ideal f
 * The :doc:`package managed installation guide <macos/homebrew>` allows you to set up Python step by step.
 * The :doc:`manual installation guide <macos/manual>` is recommended if you have had previous failures with both of the above options. 
 
+
+.. _install-python-linux:
+
+{{ linux_icon }} --- Installation on Linux
+--------------------------------------------
+
+Please contact us by sending an `email <mailto:pythonsupport@dtu.dk>`_.
+
+
 .. note::
-    If you are using other operating systems, please send an `email <mailto:pythonsupport@dtu.dk>`_ to us and we will try to help you.
+    If you are using other operating systems than the above listed, please send an `email <mailto:pythonsupport@dtu.dk>`_ to us and we will try to help you.
 
 .. toctree::
     :maxdepth: 1

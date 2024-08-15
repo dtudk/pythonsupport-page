@@ -481,8 +481,9 @@ html_context = {
     "cheatsheet_icon": ":fas:`toolbox`",
     "cheatsheet_color": "muted",
     "windows_icon": ":fab:`windows`",
+    "linux_icon": ":fab:`linux`",
     "apple_icon":  ":fab:`apple`",
-    "app_store":   ":fab:`app-store`",
+    "apple_app_store":   ":fab:`app-store`",
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
     # online days

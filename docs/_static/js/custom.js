@@ -17,10 +17,10 @@ function PyS_isOperatingSytem() {
 function PyS_osSelector(os) {
     const baseUrl = getBaseUrl();
     console.log('Base URL:', baseUrl); // Debugging line
-    if (os === "windows") {
-        window.location.href = `${baseUrl}install/${os}/manual.html`;
+    if (os === "linux") {
+        window.location.href = `${baseUrl}install/python.html#installation-on-linux`;
     } else {
-        window.location.href = `${baseUrl}install/${os}/manual.html`;
+        window.location.href = `${baseUrl}install/${os}/automated.html`;
     }
 }
 
@@ -28,14 +28,10 @@ function PyS_redirectUser(UserLevel) {
     let os = PyS_isOperatingSytem();
     userLevel = UserLevel;
     console.log('Operating System:', os); // Debugging line
-    const baseUrl = getBaseUrl();
-    console.log('Base URL:', baseUrl); // Debugging line
     if (!os) {
-        toggleBanner(); // Show os selector
-    } else if (os === "windows") {
-        window.location.href = `${baseUrl}install/${os}/manual.html`;
+        PyS_toggleBanner(); // Show OS selector
     } else {
-        window.location.href = `${baseUrl}install/${os}/manual.html`;
+        PyS_osSelector(os);
     }
 }
 
@@ -58,7 +54,7 @@ function getBaseUrl() {
     return origin + newPathname + '/';
 }
 
-function toggleBanner() {
+function PyS_toggleBanner() {
     const bannerContainer = document.getElementById('bannerContainer');
     const topBanner = document.querySelector('.topBanner');
     const bottomBanner = document.querySelector('.bottomBanner');
@@ -78,7 +74,7 @@ function toggleBanner() {
     }
 }
 
-function noRed() {
+function PyS_noRed() {
     const bottomBanner = document.querySelector('.bottomBanner');
     if (bottomBanner) {
         bottomBanner.classList.toggle('hidden');
