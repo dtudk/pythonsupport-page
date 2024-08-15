@@ -1,4 +1,4 @@
-Core tools
+Learn more
 ===========
 
 Here you can find the essential tools needed to run and utilize Python during your first year at DTU as a Bachelor student. 
@@ -25,6 +25,11 @@ Nonetheless, this section will help you troubleshoot issues independently, and w
    vscode/index
    packages-and-environments
    .. reproducibility
+
+
+.. todo::
+
+   should idle be part of the index, or a learn-more for 1st year students
 
 .. todo::
    

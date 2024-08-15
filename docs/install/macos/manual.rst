@@ -10,7 +10,6 @@
    
 
     Press here for Windows {{ windows_icon }}
-   
 
 
 .. _fully-manual-reference-mac:
@@ -76,8 +75,7 @@ Step 2: Install Python
 
             conda config --add channels conda-forge ; conda config --remove channels defaults
 
-        .. tip::
-            You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
+        .. include:: /_rst_include/tip-copy.rst
 
     #.
         Copy and paste the following line of code into your terminal and press enter **one line at a time**:
@@ -150,9 +148,6 @@ Step 4: Install extensions for Visual Studio Code
             :align: center
 
 
-
-.. tip::
-    When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
-
+.. include:: /_rst_include/tip-finish.rst
 
 .. include:: verify.rst

@@ -36,10 +36,8 @@ Install everything at once
 
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
 
-        .. tip::
 
-             You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
-
+        .. include:: /_rst_includes/tip-copy.rst
     
 
     #.
@@ -56,9 +54,7 @@ Install everything at once
             Please let the script finish.
             When you see ``Script finished``, the installation has been successful!
 
-        .. tip::
 
-            When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
-
+.. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst

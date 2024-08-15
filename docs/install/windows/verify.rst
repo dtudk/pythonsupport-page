@@ -30,7 +30,7 @@ If it is not the case for any of the above, try to paste the following line of c
 
 .. code-block:: bash
 
-     conda install python={{ pythen_version_recommended }} dtumathtools uncertainties -y
+     conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
 
 
 If you are still having trouble or have any questions please do not hesitate to visit us at our office hours,

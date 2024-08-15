@@ -530,8 +530,5 @@ def rstjinja_include(app, relative_path, parent_docname, content):
 def setup(app):
 
     app.connect("source-read", rstjinja_source)
-    try:
-        # include-read was added in 7.2.5 of Sphinx
-        app.connect("include-read", rstjinja_include)
-    except BaseException as e:
-        print("cannot do jinja-replacements on included files")
+    app.connect("include-read", rstjinja_include)
+

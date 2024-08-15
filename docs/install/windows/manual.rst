@@ -3,7 +3,6 @@
 {{ windows_icon }} --- Manual Installation 
 =============================================
 
-
 .. button-link:: ../macos/homebrew.html
    :align: right
    :color: primary
@@ -18,7 +17,6 @@
     .. raw:: html
     
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e5e4bea0-13f2-4b1e-85cd-b1c800e7391c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height=100%  style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
 
 
 
@@ -54,36 +52,31 @@ Step 2: Install Python
 .. card:: 
 
     #. 
-        Open PowerShell as an Administrator by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
+       Open PowerShell as an Administrator by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
         
 
     #.
-        Once you see Windows PowerShell, on the right hand side you can select *Run as Administrator*. If not, right-click the
-        icon and select :menuselection:`Run as Administrator`. 
+       Once you see Windows PowerShell, on the right hand side you can select *Run as Administrator*. If not, right-click the
+       icon and select :menuselection:`Run as Administrator`. 
 
-        .. image:: /images/install/windows-ps-run-admin.png
-            :width: 400
-            :align: center
+       .. image:: /images/install/windows-ps-run-admin.png
+           :width: 400
+           :align: center
 
     #.
-        Run the following command in the Terminal by copying and pasting and pressing enter:
+       Run the following command in the Terminal by copying and pasting and pressing enter:
 
-        .. code-block:: bash
+       .. code-block:: bash
 
-            conda config --add channels conda-forge ; conda config --remove channels defaults
+           conda config --add channels conda-forge ; conda config --remove channels defaults
+       .. include:: /_rst_includes/tip-copy.rst
 
     #. 
-        Copy the following line of code into your PowerShell and press enter:        
-
+       Copy the following line of code into your PowerShell and press enter:        
 
        .. code-block:: bash
 
            conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
-
-    .. tip::
-        You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
-
-        
 
 
 
@@ -93,11 +86,9 @@ Step 3: Install Visual Studio Code
 .. card:: 
 
     #. 
-    
         Go to `this website  <https://code.visualstudio.com>`__.
     
     #.
-    
         Click the download button and follow the instructions.
 
         .. image:: /images/install/windows-fully-manual-vsc-webpage.png
@@ -115,7 +106,6 @@ Step 4: Install extensions for Visual Studio Code
 .. card:: 
 
     #. 
-
         Open Visual Studio Code and select the Extensions |extensions| tab on the left. 
         
     #.
@@ -134,11 +124,7 @@ Step 4: Install extensions for Visual Studio Code
             :align: center
 
 
-
-
-.. tip::
-    When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
-
+.. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst
 

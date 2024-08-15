@@ -1,7 +1,7 @@
 toml ; python_version < "3.11"
 
 # we should be build-able on any version (check minimal version)
-sphinx
+sphinx >=7.2.5
 
 # extensions used
 sphinx-book-theme
