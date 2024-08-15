@@ -36,14 +36,14 @@ Be sure to place the downloaded script on your *Desktop*.
 
 Once you have downloaded and placed on the *Desktop* open a terminal (:kbd:`Command + Space` then type ``terminal`` :kbd:`Enter`).
 
-Then run the following command by copying, pasting into your temrinal and pressing enter:
+Then run the following command by copying, pasting into your temrinal and pressing :kbd:`Enter`:
 
 .. code-block:: bash
 
    cd ~/Desktop
    bash deletePythonMac.sh
 
-The script will ask you for your system password. Enter it and press enter (You will not be able to see your password as you type it).
+The script will ask you for your system password. Enter it and press :kbd:`Enter` (You will not be able to see your password as you type it).
 The script will then delete all versions of python that you have installed on your computer.
 
 If this does not work check out :ref:`this page <os-terminal>`.

@@ -119,7 +119,7 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
                 :alt: Save File in VS Code
             3. Choose a location and name for your file, then save it.
 
-            Note that you can save a file by pressing "control" + "s".
+            Note that you can save a file by pressing :kbd:`Ctrl+S`.
 
         .. tab-item:: MacOS
 
@@ -132,11 +132,11 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
                 :align: center
                 :alt: Save File in VS Code
 
-            Note that you can save a file by pressing "command" + "s".
+            Note that you can save a file by pressing :kbd:`Command+S`.
 
     .. tip::
 
-        You can also autosave by pressing the "File" button in the top left corner of VS Code and then selecting "Auto save".
+        You can also autosave by pressing the :menuselection:`File` button in the top left corner of VS Code and then selecting :menuselection:`Auto save`.
 
 Opening a File
 ---------------------------
@@ -191,16 +191,15 @@ Once you've created a Python file you need to select your interpreter. In short,
     
         .. tab-item:: Windows 
 
-            1. Press "CTRL" + "Shift" +"p"
-            2. Type "Python: Select Interpreter" and press once this shows up under the options 
+            1. Press :kbd:`Ctrl+Shift+P`
+            2. Type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
 
             .. image:: ../images/VScode_windows2.png
                         :width: 450
                         :align: center
                         :alt: IDLE Shell
 
-            3. Choose the option similar to "Python 3.11.5 ('base')". You may have a different version of Python on your own PC.
-
+            3. Choose the option similar to ``Python 3.11.5 ('base')``. You may have a different version of Python on your own PC.
             
 
             .. image:: ../images/VScode_windows3.png
@@ -211,19 +210,19 @@ Once you've created a Python file you need to select your interpreter. In short,
 
             .. tip::
 
-                In VS Code, pressing "CTRL" + "Shift" +"p" brings down a search bar where you can search for anything you need help with.
+                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with.
 
         .. tab-item:: MacOS
 
-            1. Press "CMD" + "Shift" +"p"
-            2. type "Python: Select Interpreter" and press once this shows up under the options 
+            1. Press :kbd:`Ctrl+Shift+P`
+            2. type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
 
             .. image:: ../images/VScode_mac2.png
                         :width: 450
                         :align: center
                         :alt: IDLE Shell
                         
-            3. Choose the option similar to "Python 3.11.5 ('base')". You may have a different version of Python on your own PC.
+            3. Choose the option similar to ``Python 3.11.5 ('base')``. You may have a different version of Python on your own PC.
 
             .. image:: ../images/VScode_mac3.png
                         :width: 450
@@ -232,7 +231,7 @@ Once you've created a Python file you need to select your interpreter. In short,
 
             .. tip::
 
-                In VS Code, pressing "CMD" + "Shift" +"p" brings down a search bar where you can search for anything you need help with
+                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with
 
 
 
@@ -255,8 +254,8 @@ Once you've written your Python code, you can easily run it in VS Code.
         .. tab-item:: Windows
 
             1. Open the Python file you want to run.
-            2. Press "CTRL" + "Shift" +"p".
-            3. Type "Run Python File in Terminal" and select it from the options.
+            2. Press :kbd:`Ctrl+Shift+P`.
+            3. Type *Run Python File in Terminal* and select it from the options.
             4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
 
             .. image:: ../images/VScode_windows_run_python.png
@@ -267,8 +266,8 @@ Once you've written your Python code, you can easily run it in VS Code.
         .. tab-item:: MacOS
 
             1. Open the Python file you want to run.
-            2. Press "CMD" + "Shift" +"p".
-            3. Type "Run Python File in Terminal" and select it from the options.
+            2. Press :kbd:`Command+Shift+P`.
+            3. Type *Run Python File in Terminal* and select it from the options.
             4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
 
             .. image:: ../images/VScode_mac_run_python.png
@@ -288,28 +287,26 @@ You can start a terminal from VS code, which works just like in the terminal app
 
 .. card::      
     
-
-    
-
     .. tab-set::
 
-                .. tab-item:: Windows 
+       .. tab-item:: Windows 
 
-                    Press the three dots in the top menu bar. They are next to the "View" and "Go" options. Move your mouse to "Terminal" and click "New Terminal"
+           Press the three dots in the top menu bar. They are next to the :menuselection:`View` and :menuselection:`Go` options.
+           Move your mouse to :menuselection:`Terminal` and click :menuselection:`New Terminal`
 
-                    .. image:: ../images/VScode_windows4.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+           .. image:: ../images/VScode_windows4.png
+               :width: 450
+               :align: center
+               :alt: IDLE Shell
 
-                .. tab-item:: MacOS 
+       .. tab-item:: MacOS 
 
-                    Move your mouse to the top of the screen. Select "Terminal" followed by "New Terminal"
+           Move your mouse to the top of the screen. Select :menuselection:`Terminal --> New Terminal`
 
-                    .. image:: ../images/VScode_mac4.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+           .. image:: ../images/VScode_mac4.png
+               :width: 450
+               :align: center
+               :alt: IDLE Shell
 
 .. tip::
     You can have multiple terminals open at once. 

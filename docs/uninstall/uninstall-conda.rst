@@ -31,9 +31,9 @@ Windows
          
          conda activate base
 
-2. Open your control panel, and press uninstall application
+2. Open your control panel, and press *Uninstall application*
 
-3. Find all the applications regarding Anaconda (and Miniconda), right click on them and press uninstall.
+3. Find all the applications regarding Anaconda (and Miniconda), right click on them and press *Uninstall*.
 
 
 MacOS and Linux

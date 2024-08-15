@@ -20,7 +20,6 @@ Install everything at once
         
 
     #.
-
         Once you see Windows PowerShell, on the right hand side you can select *Run as Administrator*. If not, right-click the
         icon and select :menuselection:`Run as Administrator`. 
 
@@ -29,7 +28,7 @@ Install everything at once
             :align: center
 
     #. 
-        Copy the following line of code into your terminal and press enter:
+        Copy the following line of code into your terminal and press :kbd:`Enter`:
 
         .. code-block:: pwsh
 

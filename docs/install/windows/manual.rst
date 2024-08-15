@@ -64,15 +64,16 @@ Step 2: Install Python
            :align: center
 
     #.
-       Run the following command in the Terminal by copying and pasting and pressing enter:
+       Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
 
        .. code-block:: bash
 
            conda config --add channels conda-forge ; conda config --remove channels defaults
+
        .. include:: /_rst_includes/tip-copy.rst
 
     #. 
-       Copy the following line of code into your PowerShell and press enter:        
+       Copy the following line of code into your PowerShell and press :kbd:`Enter`:
 
        .. code-block:: bash
 

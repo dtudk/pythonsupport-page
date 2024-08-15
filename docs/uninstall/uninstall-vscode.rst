@@ -20,11 +20,11 @@ Windows
 
    This will leave behind some files, which you can delete manually if you want to. To do this follow the steps below.
 
-1. Press the ``Windows`` and ``R`` buttons at the same time.
-2. Type in ``%appdata%`` and press enter.
+1. Press the :kbd:`Win+R` buttons at the same time.
+2. Type in ``%appdata%`` and press :kbd:`Enter`.
 3. Find the folder named ``Code`` and delete it.
-4. Press the ``Windows`` and ``R`` buttons at the same time.
-5. Type in ``%userprofile%`` and press enter.
+4. Press the :kbd:`Win+R` buttons at the same time.
+5. Type in ``%userprofile%`` and press :kbd:`Enter`.
 6. Find the folder named ``.vscode`` and delete it.
 
 
@@ -33,8 +33,8 @@ MacOS
 
 1. Open Finder
 2. Open the Apps folder
-3. Find the Visual Studio Code App, right click and select move to Trash
-4. Open Trash and press Empty in the top right hand corner
+3. Find the Visual Studio Code App, right click and select move to :menuselection:`Trash`
+4. Open Trash and press :menuselection:`Empty` in the top right hand corner
 
 .. note::
 

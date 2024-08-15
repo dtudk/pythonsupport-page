@@ -64,7 +64,7 @@ Step 2: Install Miniconda and Python
             brew install --cask miniconda
 
     #.
-        Run the following command in the Terminal by copying and pasting and pressing enter:
+        Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
 
         .. code-block:: bash
 
@@ -74,7 +74,7 @@ Step 2: Install Miniconda and Python
 
 
     #.
-        Run the following command in the Terminal by copying and pasting and pressing enter:
+        Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
 
         .. code-block:: bash
 

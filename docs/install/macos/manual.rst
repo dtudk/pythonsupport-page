@@ -69,7 +69,7 @@ Step 2: Install Python
             :align: center
 
     #.
-        Run the following command in the Terminal by copying and pasting and pressing enter:
+        Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
 
         .. code-block:: bash
 
@@ -78,7 +78,7 @@ Step 2: Install Python
         .. include:: /_rst_includes/tip-copy.rst
 
     #.
-        Copy and paste the following line of code into your terminal and press enter **one line at a time**:
+        Copy and paste the following line of code into your terminal and press :kbd:`Enter`:
 
 
         .. code-block:: bash
