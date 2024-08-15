@@ -17,13 +17,13 @@ Nonetheless, this section will help you troubleshoot issues independently, and w
 
 
 .. toctree::
-   :caption: Core tools list
+   :caption: Content
    :maxdepth: 1
    
    terminal
    idle
    vscode/index
-   packages-and-environments
+   packages-and-environments/index.rst
    .. reproducibility
 
 
