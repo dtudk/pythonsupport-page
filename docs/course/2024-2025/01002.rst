@@ -14,7 +14,4 @@ These are the instructions for spring 2025 (F25). The course base can be found :
 
 
 
-.. todo::
-    Add newer years to dropdown menu as we progress
-
 **insert current instructions here**
