@@ -884,19 +884,33 @@ be that useful for the user experience  */
 
 iframe[src*='panopto'] {
   border-radius: 1em; /* Rounded corners for the video iframe using em units */
+  position: relative; /* Ensure the iframe is positioned relative */
 }
 
 .sticky-video {
-  position: fixed;
+  position: fixed!important; /* Ensure the video is fixed */  
   bottom: 2vh; /* 2% of the viewport height from the bottom */
   right: 2vw; /* 2% of the viewport width from the right */
   width: 20vw; /* 20% of the viewport width */
-  height: auto; /* Maintains aspect ratio based on width */
+  height: 15vw; /* Maintains aspect ratio based on width */
   z-index: 1000;
   border-radius: 2em; /* Rounded corners using em units */
   overflow: hidden; /* Ensures content within the iframe adheres to the border radius */
 }
 
+.video-placeholder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 640px;
+  height: 405px;
+  border-radius: 1em; /* Rounded corners using em units */
+  overflow: hidden; /* Ensures content within the iframe adheres to the border radius */
+  background-color: gray;
+  color: white;
+  z-index: 0;
+}
 
 
 
