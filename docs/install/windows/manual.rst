@@ -28,23 +28,17 @@ Step 1: Install Miniconda
 .. card:: 
 
     #. 
-
         Go to to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
 
 
     #. 
-        
         Under the title *Latest Miniconda installer links*, you will see different installers where you have to download the ``Miniconda3 Windows 64-bit``, as shown below.
-
-
 
         .. image:: /images/install/windows-fully-manual-miniconda.png
             :width: 400
             :align: center
 
-
     #. 
-
         Follow the instructions during the installation.
         Make sure to cross off all the options regarding **PATH** as shows below.
 
@@ -64,7 +58,6 @@ Step 2: Install Python
         
 
     #.
-
         Once you see Windows PowerShell, on the right hand side you can select *Run as Administrator*. If not, right-click the
         icon and select :menuselection:`Run as Administrator`. 
 
@@ -72,13 +65,20 @@ Step 2: Install Python
             :width: 400
             :align: center
 
+    #.
+        Run the following command in the Terminal by copying and pasting and pressing enter:
+
+        .. code-block:: bash
+
+            conda config --add channels conda-forge ; conda config --remove channels defaults
+
     #. 
         Copy the following line of code into your PowerShell and press enter:        
 
 
-    .. code-block:: bash
+       .. code-block:: bash
 
-        conda install python={{ python_version_recommended }} -y ; conda install -c conda-forge dtumathtools uncertainties -y
+           conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
 
     .. tip::
         You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.

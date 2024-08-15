@@ -7,8 +7,6 @@ Otherwise try to install Miniconda again. Miniconda can be found on `this websit
 For further information, see :ref:`here <step2-homebrew-reference>`.
 
 
-
-
 Make sure that it says ``(base)`` next to your user name when opening the Terminal.
 
 .. image:: /images/install/MacOS-base-terminal.png
@@ -31,11 +29,10 @@ If it is not the case for any of the above, try to paste the following line of c
 
 .. code-block:: bash
 
-     conda install -c conda-forge python={{ python_version_recommended }} dtumathtools uncertainties -y
+     conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
 
-If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours, or contact us via :mail:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.
-
-.. todo::
-   Add link to Discord
-
+If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours,
+or contact us via :mail:`email <pythonsupport@dtu.dk>`
+or `Discord <ps-discord-invite>`_.
+More information can be found at our :ref:`homepage <reach-us-reference>`.
 

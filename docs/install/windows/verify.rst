@@ -26,18 +26,16 @@ Now ensure the following:
             :align: center
 
 
-
 If it is not the case for any of the above, try to paste the following line of code in PowerShell and press :kbd:`Enter`:
 
 .. code-block:: bash
 
-     conda install -c conda-forge python={{ pythen_version_recommended }} dtumathtools uncertainties -y
+     conda install python={{ pythen_version_recommended }} dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours, or contact us via :mail:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.
-
-.. todo::
-   Add link to Discord
-
+If you are still having trouble or have any questions please do not hesitate to visit us at our office hours,
+or contact us via :mail:`email <pythonsupport@dtu.dk>`
+or `Discord <ps-discord-invite>`_.
+More information can be found at our :ref:`homepage <reach-us-reference>`.
 
 

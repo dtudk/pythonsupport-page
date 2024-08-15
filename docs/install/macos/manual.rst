@@ -32,7 +32,6 @@ Step 1: Install Miniconda
             :align: center
 
         
-        
     #.  
         Go to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
     
@@ -47,7 +46,6 @@ Step 1: Install Miniconda
         .. image:: /images/install/macos-fully-manual-miniconda.png
             :width: 400
             :align: center
- 
 
 
     #.
@@ -65,7 +63,6 @@ Step 2: Install Python
 
 
     #. 
-    
         Open the Terminal by pressing the :kbd:`Command+Space` key at the same time, and searching for *Terminal*.  
 
         .. image:: /images/install/MacOS-spotlight-terminal.png
@@ -73,16 +70,22 @@ Step 2: Install Python
             :align: center
 
     #.
-   
+        Run the following command in the Terminal by copying and pasting and pressing enter:
+
+        .. code-block:: bash
+
+            conda config --add channels conda-forge ; conda config --remove channels defaults
+
+        .. tip::
+            You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
+
+    #.
         Copy and paste the following line of code into your terminal and press enter **one line at a time**:
 
 
         .. code-block:: bash
-                
-            conda install python={{ python_version_recommended }} -y ; conda install -c conda-forge dtumathtools uncertainties -y
 
-        .. tip::
-            You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
+            conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
 
 
 
@@ -100,7 +103,6 @@ Step 3: Install Visual Studio Code
         Go to `this website  <https://code.visualstudio.com>`__.
         
         
-
     #.  
         Click the download button and follow the instructions.
 
@@ -109,7 +111,6 @@ Step 3: Install Visual Studio Code
             :align: center
 
     #.  
-        
         Make sure that Visual Studio Code is under the |applications| folder in Finder.
         
         .. image:: /images/install/MacOS-finder-VSC.png
