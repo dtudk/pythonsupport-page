@@ -12,10 +12,8 @@
     Press here for Windows {{ windows_icon }}
 
 
-
 Step 1: Install Homebrew 
 --------------------------
-
 
 .. card:: 
 
@@ -72,9 +70,8 @@ Step 2: Install Miniconda and Python
 
             conda config --add channels conda-forge ; conda config --remove channels defaults
 
-        .. tip::
-            You can copy and paste all code in the gray code blocks
-            by hovering your mouse over the block and pressing the icon in the top right.
+        .. include:: /_rst_includes/tip-copy.rst
+
 
     #.
         Run the following command in the Terminal by copying and pasting and pressing enter:
@@ -108,9 +105,9 @@ Step 4: Install extensions for Visual Studio Code
     #. 
         Open Visual Studio Code and select the Extensions |extensions| tab on the left.
 
-         .. image:: /images/install/VSC-extensions.png
-            :width: 400
-            :align: center
+        .. image:: /images/install/VSC-extensions.png
+           :width: 400
+           :align: center
     
     #.  
         Search for Python, and download the extension. Make sure that it is from Microsoft. 
@@ -126,8 +123,7 @@ Step 4: Install extensions for Visual Studio Code
             :width: 200
             :align: center
 
-.. tip::
-    When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
 
+.. include:: /_rst_include/tip-finish.rst
 
 .. include:: verify.rst

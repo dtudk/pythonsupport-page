@@ -1,8 +1,7 @@
 IDLE
 ====
 
-.. tip::
-    You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
+.. include:: /_rst_includes/tip-copy.rst
 
 IDLE is an integrated development environment (IDE) that is installed automatically with Python. It provides you with an environment where you can write Python scripts and run them, or you can write Python code line by line to execute immediately. 
 

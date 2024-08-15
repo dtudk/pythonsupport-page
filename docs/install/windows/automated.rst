@@ -35,16 +35,11 @@ Install everything at once
 
             PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Windows_AutoInstall.ps1' -UseBasicParsing).Content}"
 
-        .. tip::
-            You can copy and paste all code in the gray code blocks above by hovering your mouse over the block and pressing the icon in the top right.
-
+        .. include:: /_rst_includes/tip-copy.rst
 
     #.
         Wait until you see ``Script finished``
 
-    .. tip::
-        When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
-
-
+.. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst
