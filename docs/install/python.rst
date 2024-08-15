@@ -8,8 +8,7 @@ Install Python
 In this section, you will find different installation guides that cover the 
 same components
 
-- Python,
-- Python packages required for 1\ :sup:`st` year students,
+- Python and packages required for 1\ :sup:`st` year students,
 - ``conda`` and
 - Visual Studio Code.
 
