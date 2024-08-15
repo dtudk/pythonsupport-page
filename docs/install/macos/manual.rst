@@ -23,8 +23,8 @@ Step 1: Install Miniconda
     
 
     #. 
-        Before starting, you need to know which processor you have. If you do not know which processor you have, you can find 
-        out which processor you have by pressing the {{ apple_icon }} logo on the top left of your
+        Before starting, you need to know which processor you have. If you do not know which you have, you can find 
+        out by pressing the {{ apple_icon }} logo on the top left of your
         screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an M1, M2, M3 or an Intel processor.
 
         .. image:: /images/install/macos-fully-manual-processor.png
@@ -38,7 +38,7 @@ Step 1: Install Miniconda
     
 
     #. 
-        Look for the title "Latest Miniconda installer links". Here you you will see different installers where you will 
+        Look for the title *Latest Miniconda installer links*. Here you you will see different installers where you will 
         have to download the correct one.
     
         * If you have an Intel processor you need to select Miniconda3 MacOS Intel x86 64-bit pkg.
@@ -66,7 +66,7 @@ Step 2: Install Python
 
     #. 
     
-        Open the Terminal by pressing the "command" and "space" key at the same time, and searching for "terminal".  
+        Open the Terminal by pressing the :kbd:`Command+Space` key at the same time, and searching for *Terminal*.  
 
         .. image:: /images/install/MacOS-spotlight-terminal.png
             :width: 300

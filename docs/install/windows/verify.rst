@@ -3,7 +3,7 @@ Verification and Quick Troubleshooting
 --------------------------------------
 
 To ensure that your installation is working correctly, please go through the following steps.
-Open up PowerShell again. if you see ``(base)`` next to your username, you can proceed. If unsure see the image below:
+Open up PowerShell again. If you see ``(base)`` next to your username, you can proceed. If unsure see the image below:
 
 .. image:: /images/install/windows-ps-base.png
             :width: 400
@@ -11,8 +11,8 @@ Open up PowerShell again. if you see ``(base)`` next to your username, you can p
 
 Otherwise do the following:
 
-* Search for ``Miniconda PowerShell`` prompt on your computer and open it up. (if you cannot find it, try to install Miniconda again)
-* After opening the Miniconda shell, type ``conda init`` and press :kbd:`Enter`.
+* Search for ``Miniconda PowerShell`` prompt on your computer and open it up. (If you cannot find it, try to install Miniconda again)
+* After opening the Miniconda Shell, type ``conda init`` and press :kbd:`Enter`.
 * Open up PowerShell again and verify that you now see ``(base)``.
 * Finally type ``idle`` in PowerShell and press :kbd:`Enter`. This should open up a new window in which you will able to run Python code.
 
@@ -34,4 +34,10 @@ If it is not the case for any of the above, try to paste the following line of c
      conda install -c conda-forge python={{ pythen_version_recommended }} dtumathtools uncertainties -y
 
 
-If you are still having trouble or have any questions please do not hesitate to visit us at our office hours, or contact us via email or Discord. More information can be found at our :ref:`homepage <reach-us-reference>`.
+If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours, or contact us via :mail:`email <pythonsupport@dtu.dk>` or `Discord <ps-discord-invite>`_. More information can be found at our :ref:`homepage <reach-us-reference>`.
+
+.. todo::
+   Add link to Discord
+
+
+
