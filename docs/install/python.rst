@@ -5,6 +5,21 @@
 Install Python 
 =================
 
+
+.. dropdown:: Are you a DTU employee?
+   :color: warning
+
+   Using Anaconda services in research will violate their licenses.
+
+   However, the ``conda`` installation instructions in these guides ensures that
+   all subsequent installation of packages are done from the ``conda-forge`` channel
+   *only*, provided you don't actively re-enable the Anaconda default channels, do **NOT**
+   re-add that channel!
+
+   Note that Anaconda is still free to use in teaching (as of 2024).
+   For full details of the license, please read them on `Anacondas homepage <anaconda_>`_.
+
+
 In this section, you will find different installation guides that cover the 
 same components
 
