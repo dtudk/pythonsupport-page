@@ -1,3 +1,5 @@
+:orphan:
+
 .. _automated-error-reference-macos:
 
 {{ apple_icon }} --- Installation Error

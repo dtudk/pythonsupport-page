@@ -1,3 +1,5 @@
+:orphan:
+
 .. _automated-error-reference-windows:
 
 {{ windows_icon }}  --- Installation Error
