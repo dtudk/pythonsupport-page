@@ -66,15 +66,23 @@ Step 2: Install Miniconda and Python
             brew install --cask miniconda
 
     #.
-        Run the following command in the Terminal by pasting and pressing enter:
+        Run the following command in the Terminal by copying and pasting and pressing enter:
 
         .. code-block:: bash
 
-            conda install python={{ python_version_recommened }} -y ; conda install -c conda-forge dtumathtools uncertainties -y
+            conda config --add channels conda-forge ; conda config --remove channels defaults
+
+        .. tip::
+            You can copy and paste all code in the gray code blocks
+            by hovering your mouse over the block and pressing the icon in the top right.
+
+    #.
+        Run the following command in the Terminal by copying and pasting and pressing enter:
+
+        .. code-block:: bash
+
+            conda install python={{ python_version_recommened }} -y ; conda install dtumathtools uncertainties -y
             
-    .. tip::
-        You can copy and paste all code in the gray code blocks below by hovering your mouse over the block and pressing the icon in the top right.
-        
     
 
 Step 3: Install Visual Studio Code 
@@ -117,8 +125,6 @@ Step 4: Install extensions for Visual Studio Code
         .. image:: /images/install/macos-package-managed-jupyter.png
             :width: 200
             :align: center
-
-
 
 .. tip::
     When you have finished the guide, we **strongly recommend** checking out the :ref:`Python Essentials <essentials-reference>` to prepare you for coding.
