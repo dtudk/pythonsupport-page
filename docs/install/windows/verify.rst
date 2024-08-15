@@ -28,7 +28,7 @@ Now ensure the following:
 
 If it is not the case for any of the above, try to paste the following line of code in PowerShell and press :kbd:`Enter`:
 
-.. code-block:: bash
+.. code:: bash
 
      conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
 

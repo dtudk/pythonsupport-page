@@ -34,28 +34,28 @@ The ``pwd`` command displays the current working directory. It is particularly h
    .. tab-item:: {{win_powershell}}
       :sync: powershell
 
-      .. code-block:: bash
+      .. code:: bash
 
          pwd
 
    .. tab-item:: {{win_batch}}
       :sync: batch
 
-      .. code-block:: bash
+      .. code:: bash
 
          cd
 
    .. tab-item:: {{mac_bash}}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          pwd
 
    .. tab-item:: {{linux_bash}}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          pwd
 
@@ -70,28 +70,28 @@ The ``cd`` command is used to change the current working directory. It enables y
    .. tab-item:: {{win_powershell}}
       :sync: powershell
 
-      .. code-block:: bash
+      .. code:: bash
 
          cd NewFolder
 
    .. tab-item:: {{win_batch}}
       :sync: batch
 
-      .. code-block:: bash
+      .. code:: bash
 
          cd NewFolder
 
    .. tab-item:: {{mac_bash}}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          cd NewFolder
 
    .. tab-item:: {{linux_bash}}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          cd NewFolder
 
@@ -106,28 +106,28 @@ The ``ls`` command is used to list all files and directories in the current work
    .. tab-item::  {{win_powershell}}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          ls
 
    .. tab-item:: {{win_batch}}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          dir
 
    .. tab-item:: {{mac_bash}}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          ls
 
    .. tab-item:: {{linux_bash}}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          ls
 
@@ -142,28 +142,28 @@ The ``mkdir`` command is used to create a new directory. It is particularly help
    .. tab-item::  {{win_powershell}}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
            mkdir NewFolder
 
    .. tab-item:: {{win_batch}}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
            mkdir NewFolder
 
    .. tab-item:: {{mac_bash}}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
            mkdir NewFolder
 
    .. tab-item:: {{linux_bash}}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
            mkdir NewFolder
 
@@ -178,7 +178,7 @@ The ``rm`` or ``del`` command is used to delete files and ``rm -r`` or ``rmdir /
    .. tab-item::  {{win_powershell}}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          rm NewFile.txt
          rm -r NewFolder
@@ -186,7 +186,7 @@ The ``rm`` or ``del`` command is used to delete files and ``rm -r`` or ``rmdir /
    .. tab-item:: {{win_batch}}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          del NewFile.txt
          rmdir /s NewFolder
@@ -194,7 +194,7 @@ The ``rm`` or ``del`` command is used to delete files and ``rm -r`` or ``rmdir /
    .. tab-item:: {{mac_bash}}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          rm NewFile.txt
          rm -r NewFolder
@@ -202,7 +202,7 @@ The ``rm`` or ``del`` command is used to delete files and ``rm -r`` or ``rmdir /
    .. tab-item:: {{linux_bash}}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          rm NewFile.txt
          rm -r NewFolder
@@ -218,28 +218,28 @@ The ``pip`` command is a package installer for Python that simplifies the proces
    .. tab-item::  {{win_powershell}}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          pip install <package_name>
 
    .. tab-item:: {{win_batch}}
       :sync: batch
        
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          pip install <package_name>
 
    .. tab-item:: {{mac_bash}}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
        
          pip3 install <package_name>
 
    .. tab-item:: {{linux_bash}}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
        
          pip3 install <package_name>
 

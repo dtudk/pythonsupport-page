@@ -30,7 +30,7 @@ Install everything at once
     #. 
         Copy the following line of code into your terminal and press :kbd:`Enter`:
 
-        .. code-block:: pwsh
+        .. code:: pwsh
 
             PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Windows_AutoInstall.ps1' -UseBasicParsing).Content}"
 

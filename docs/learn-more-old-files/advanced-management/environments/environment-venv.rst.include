@@ -87,7 +87,7 @@ An environment can be created using:
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          python -m venv <path to venv>
          # create an environment named 'course-A' in the current directory
@@ -96,7 +96,7 @@ An environment can be created using:
    .. tab-item:: {{ win_batch }}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          python -m venv <path to venv>
          # create an environment named 'course-A' in the current directory
@@ -105,7 +105,7 @@ An environment can be created using:
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m venv <path to venv>
          # create an environment named 'course-A' in the current directory
@@ -114,7 +114,7 @@ An environment can be created using:
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m venv <path to venv>
          # create an environment named 'course-A' in the current directory
@@ -131,7 +131,7 @@ Change ``course-A`` with the name of the environment.
       .. warning::
          Please see :ref:`this FAQ entry <faq-win-ps-execution-policy>`!
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          course-A\Scripts\Activate.ps1
 
@@ -141,21 +141,21 @@ Change ``course-A`` with the name of the environment.
       .. warning::
          Please see :ref:`this FAQ entry <faq-win-ps-execution-policy>`!
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          course-A\Scripts\activate.bat
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          source course-A/bin/activate
 
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          source course-A/bin/activate
 
@@ -173,7 +173,7 @@ package, running a code using the environment, and exiting the environment.
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          python -m venv numpy-env
          numpy-env\Scripts\Activate.ps1
@@ -184,7 +184,7 @@ package, running a code using the environment, and exiting the environment.
    .. tab-item:: {{ win_batch }}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          python -m venv numpy-env
          numpy-env\Scripts\activate.bat
@@ -195,7 +195,7 @@ package, running a code using the environment, and exiting the environment.
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m venv numpy-env
          source numpy-env/bin/activate
@@ -206,7 +206,7 @@ package, running a code using the environment, and exiting the environment.
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m venv numpy-env
          source numpy-env/bin/activate

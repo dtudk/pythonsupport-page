@@ -27,7 +27,7 @@ An environment can be created using:
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          conda create --name <name of env>
          # create an environment named 'course-A' (in the global environment list)
@@ -38,7 +38,7 @@ An environment can be created using:
    .. tab-item:: {{ win_batch }}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          conda create --name <name of env>
          # create an environment named 'course-A' (in the global environment list)
@@ -49,7 +49,7 @@ An environment can be created using:
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda create --name <name of env>
          # create an environment named 'course-A' (in the global environment list)
@@ -60,7 +60,7 @@ An environment can be created using:
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda create --name <name of env>
          # create an environment named 'course-A' (in the global environment list)
@@ -76,7 +76,7 @@ Change ``course-A`` with the name of the environment.
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
         
          # if the enviroment was created with --name:
          conda activate course-A
@@ -86,7 +86,7 @@ Change ``course-A`` with the name of the environment.
    .. tab-item:: {{ win_batch }}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          # if the enviroment was created with --name:
          conda activate course-A
@@ -96,7 +96,7 @@ Change ``course-A`` with the name of the environment.
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          # if the enviroment was created with --name:
          conda activate course-A
@@ -106,7 +106,7 @@ Change ``course-A`` with the name of the environment.
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          # if the enviroment was created with --name:
          conda activate course-A
@@ -128,7 +128,7 @@ package, running a code using the environment, and getting out of it.
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          conda create --name numpy-env python=3.10
          conda activate numpy-env
@@ -139,7 +139,7 @@ package, running a code using the environment, and getting out of it.
    .. tab-item:: {{ win_batch }}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
 
          conda create --name numpy-env python=3.10
          conda activate numpy-env
@@ -150,7 +150,7 @@ package, running a code using the environment, and getting out of it.
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda create --name numpy-env python=3.10
          conda activate numpy-env
@@ -161,7 +161,7 @@ package, running a code using the environment, and getting out of it.
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda create --name numpy-env python=3.10
          conda activate numpy-env

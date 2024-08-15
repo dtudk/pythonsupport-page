@@ -51,7 +51,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
    .. tab-item:: {{ pip }}
       :sync: pip
 
-      .. code-block:: bash
+      .. code:: bash
 
          pip list
          # or "grep"'ing for a specific package
@@ -60,7 +60,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
    .. tab-item:: {{ conda }}
       :sync: conda
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda list
          # or "grep"'ing for a specific package
@@ -69,7 +69,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
 Once the package is listed in the package list, check version and
 import:
 
-.. code-block:: bash
+.. code:: bash
 
    python3 -c "import numpy ; print(numpy.__version__)
 
@@ -140,7 +140,7 @@ Exercise 2
 
 Create two virtual environments, using `venv <https://docs.python.org/3/library/venv.html>`__.
 
-.. code-block:: bash
+.. code:: bash
 
    # first environment
    numpy=1.24

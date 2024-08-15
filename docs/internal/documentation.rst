@@ -118,7 +118,7 @@ A more detailed description can be found `here <https://docs.github.com/en/get-s
    using local files, something like this in the terminal
    would work:
 
-   .. code-block:: shell
+   .. code:: shell
 
       cd <path to the pythonsupport-page folder>
       firefox build/html/index.html

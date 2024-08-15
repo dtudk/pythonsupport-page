@@ -32,7 +32,7 @@ Install everything at once
 
         Next, copy the following line of code into your Terminal and press :kbd:`Enter`:
 
-        .. code-block:: bash
+        .. code:: bash
 
             /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
 

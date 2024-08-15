@@ -38,14 +38,14 @@ Packages can be installed to your specific environment by using ``conda install`
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          conda install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
@@ -67,7 +67,7 @@ installed and their specific versions.
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          conda list
 
@@ -75,7 +75,7 @@ installed and their specific versions.
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda list
 
@@ -90,14 +90,14 @@ Packages can be updated by using ``conda update`` and specifying the package you
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          conda update numpy
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda update numpy
 
@@ -115,14 +115,14 @@ when you no longer need a package or want to replace it with a different version
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          conda remove numpy
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda remove numpy
 

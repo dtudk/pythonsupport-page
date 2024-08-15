@@ -31,7 +31,7 @@ Getting started
 
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
    
-            .. code-block:: Python
+            .. code:: Python
                
                print("hello")
 
@@ -44,7 +44,7 @@ Getting started
 
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
    
-            .. code-block:: Python
+            .. code:: Python
                
                print("hello")
 
@@ -68,7 +68,7 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
 
       #. You should see a blank page. Type or paste the following code 
 
-         .. code-block:: Python
+         .. code:: Python
 
             # This program is for adding 2 numbers
 
@@ -109,7 +109,7 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
 
       #. You should see a blank page. Type or paste the following code 
 
-         .. code-block:: Python
+         .. code:: Python
 
             # This program is for adding 2 numbers
 

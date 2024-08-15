@@ -71,7 +71,7 @@ Step 2: Install Python
     #.
         Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
 
-        .. code-block:: bash
+        .. code:: bash
 
             conda config --add channels conda-forge ; conda config --remove channels defaults
 
@@ -81,7 +81,7 @@ Step 2: Install Python
         Copy and paste the following line of code into your terminal and press :kbd:`Enter`:
 
 
-        .. code-block:: bash
+        .. code:: bash
 
             conda install python={{ python_version_recommended }} dtumathtools uncertainties -y
 

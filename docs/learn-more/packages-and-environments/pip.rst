@@ -53,14 +53,14 @@ You can install packages simply with `pip`. To install multiple packages at once
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
@@ -108,7 +108,7 @@ Requirements file
 A `requirements.txt` file is often used to replicate an environment. Many Python tutorials will share a ``requirements.txt`` file which contains
 lines of packages. For instance, to replicate the example installation shown in :ref:`pip-installing`, one could create a file called ``requirements.txt``:
 
-.. code-block::
+.. code::
 
    numpy==1.24.*
    scipy,1.10
@@ -126,14 +126,14 @@ To install using ``requirements.txt``, use the ``-r`` flag:
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          python -m pip install -r requirements.txt
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m pip install -r requirements.txt
 
@@ -152,7 +152,7 @@ packages. To list, show, or freeze the state of installed packages, use the foll
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          # List the packages installed
          python -m pip list
@@ -169,7 +169,7 @@ packages. To list, show, or freeze the state of installed packages, use the foll
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          # List the packages installed
          python3 -m pip list
@@ -199,7 +199,7 @@ Below is a constructed example of a dependency conflict arising.
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          $> python -m pip install dtumathtools==1.0.1
          ... lots of output
@@ -210,7 +210,7 @@ Below is a constructed example of a dependency conflict arising.
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          $> python3 -m pip install dtumathtools==1.0.1
          ... lots of output
@@ -240,7 +240,7 @@ are not satisfied.
 
    ``pip`` only obeys package requirements for packages installed on the same installation command:
 
-   .. code-block:: bash
+   .. code:: bash
    
       # this will install numpy and scipy in compatible versions
       ... pip install numpy scipy
@@ -256,14 +256,14 @@ To check possible conflicts in the current environment, use ``pip check``:
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          python -m pip check
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m pip check
 

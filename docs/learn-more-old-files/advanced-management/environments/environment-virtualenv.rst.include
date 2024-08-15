@@ -8,7 +8,7 @@ Once an environment has been created and sourced (activated), all ``pip`` comman
 
 Install it with :ref:`pip` using the package name ``virtualenv``:
 
-.. code-block:: shell
+.. code:: shell
 
          pip install virtualenv
 

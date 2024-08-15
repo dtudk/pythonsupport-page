@@ -62,7 +62,7 @@ execute the code in your Jupyter notebook by providing the necessary Python lang
 The simplest way to check whether your Jupyter Notebook is using your virtual environment
 is to execute the following code in a notebook cell:
 
-.. code-block:: python
+.. code:: python
 
    import sys
    print(sys.exec_prefix)
@@ -76,28 +76,28 @@ set. If not, install the kernel runner in the virtual environment:
    .. tab-item:: {{ win_powershell }}
       :sync: powershell
 
-      .. code-block:: powershell
+      .. code:: powershell
 
          python -m ipykernel install --prefix <path to venv|conda-env>
 
    .. tab-item:: {{ win_batch }}
       :sync: batch
 
-      .. code-block:: winbatch
+      .. code:: winbatch
          
          python -m ipykernel install --prefix <path to venv|conda-env>
 
    .. tab-item:: {{ mac_bash }}
       :sync: mac
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m ipykernel install --prefix <path to venv|conda-env>
 
    .. tab-item:: {{ linux_bash }}
       :sync: bash
 
-      .. code-block:: bash
+      .. code:: bash
 
          python3 -m ipykernel install --prefix <path to venv|conda-env>
 

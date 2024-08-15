@@ -17,7 +17,7 @@ Windows
 
 1. Open your terminal and run the following lines, one at a time
 
-   .. code-block:: bash
+   .. code:: bash
        
        conda install anaconda-clean
        anaconda-clean --yes
@@ -27,7 +27,7 @@ Windows
       If it does not say ``(base)`` in the beginning of the line,
       run the following command:
 
-      .. code-block:: bash
+      .. code:: bash
          
          conda activate base
 
@@ -41,7 +41,7 @@ MacOS and Linux
 
 1. Open your terminal and run the following lines, one at a time
 
-   .. code-block:: bash
+   .. code:: bash
        
        conda install anaconda-clean
        anaconda-clean --yes
@@ -53,7 +53,7 @@ MacOS and Linux
 
 2. Then run the following three lines, one at a time
 
-   .. code-block:: bash
+   .. code:: bash
        
        rm -rf anaconda3
        rm -rf ~/anaconda3
