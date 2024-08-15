@@ -161,7 +161,7 @@ extlinks = {
     # I don't know if it can work in other ways
     "full-link": ("%s", "%s"),
     # direct links to the course documentation @ pythonsupport.dtu.dk
-    "course": (":doc:`/courses/%s/index`", "%s"),
+    "course": (":doc:`/course/%s/index`", "%s"),
     # direct links to DTU's course database for the course
     # When courses changes numbers etc. some might
     "course-base": (

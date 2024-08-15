@@ -33,6 +33,6 @@ If it is not the case for any of the above, try to paste the following line of c
 
 If you are still having trouble or have any questions please do not hesitate  to visit us at our office hours,
 or contact us via :mail:`email <pythonsupport@dtu.dk>`
-or `Discord <ps-discord-invite>`_.
+or `Discord <ps-discord-invite_>`_.
 More information can be found at our :ref:`homepage <reach-us-reference>`.
 

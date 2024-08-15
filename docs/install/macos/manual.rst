@@ -75,7 +75,7 @@ Step 2: Install Python
 
             conda config --add channels conda-forge ; conda config --remove channels defaults
 
-        .. include:: /_rst_include/tip-copy.rst
+        .. include:: /_rst_includes/tip-copy.rst
 
     #.
         Copy and paste the following line of code into your terminal and press enter **one line at a time**:
@@ -148,6 +148,6 @@ Step 4: Install extensions for Visual Studio Code
             :align: center
 
 
-.. include:: /_rst_include/tip-finish.rst
+.. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst

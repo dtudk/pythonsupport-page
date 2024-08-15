@@ -124,6 +124,6 @@ Step 4: Install extensions for Visual Studio Code
             :align: center
 
 
-.. include:: /_rst_include/tip-finish.rst
+.. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst
