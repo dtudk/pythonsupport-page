@@ -1,27 +1,34 @@
 Learn more
 ===========
 
-Here you can find the essential tools needed to run and utilize Python during your first year at DTU as a Bachelor student. 
 
-We strongly recommend first year students or those new to programming to go through the :doc:`Terminal <terminal>`
-and :doc:`IDLE <idle>` sections after installing Python. 
+.. dropdown:: Are you a first year student?
+   :color: warning
+   :icon: accessibility
 
-:doc:`Visual Studio Code <vscode>` will be introduced around week 7, and
-there's no need to rush into this section. However, we encourage you to get a head start 
-by exploring it whenever you have some spare time.
+   For first year students we recommend going through the :doc:`Terminal <terminal>` and :doc:`IDLE <idle>` sections. 
+   The :doc:`Visual Studio Code <vscode/index>` section is also very useful, but **Visual Studio Code will not be introduced until later** 
+   in the semester. 
 
-You should only dive into :doc:`Packages and Environments <packages-and-environments>` after you've 
-completed the others and have some free time, given that it won't be necessary during your first semester. 
-Nonetheless, this section will help you troubleshoot issues independently, and will be of great value during your education.
+Here you will find the essential tools needed to get ready to code in Python. The following sections function as short introductions, helping you to understand the basics of these tools.
+
+* The :doc:`Terminal <terminal>` is the most direct line of communication between you and your computer
+
+* :doc:`IDLE <idle>` is recommended only for :course-base:`02002 <02002>` - Introduction to Python Programming
+
+* :doc:`Visual Studio Code <vscode/index>` is a strong tool for writing and editing Python code
+
+* :doc:`Packages and environments <packages-and-environments/index>` allow you to organize your python installation and packages
 
 
 
 .. toctree::
    :caption: Content
+   :hidden:
    :maxdepth: 1
    
    terminal
-   idle
+   IDLE (Only for 02002) <idle>
    vscode/index
    packages-and-environments/index.rst
    .. reproducibility
