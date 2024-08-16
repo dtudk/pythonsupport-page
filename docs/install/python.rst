@@ -33,7 +33,7 @@ Importantly, these installation guides are specifically designed for students wh
 - Students taking one of:
 
   - Mathematics 1a/1b (:course-base:`01001`/:course-base:`01002`/:course-base:`01003`/:course-base:`01004`)
-  - Computer Programming (:course-base:`02002`/:course-base:`02002`)
+  - Computer Programming (:course-base:`02002`/:course-base:`02003`)
   - Physics (:course-base:`10060`/:course-base:`10063`/:course-base:`10065`)
 
 These guides, although tailored for 1\ :sup:`st` year students, are also ideal for anyone needing to use Python.
@@ -41,8 +41,8 @@ These guides, although tailored for 1\ :sup:`st` year students, are also ideal f
 
 .. _install-python-windows:
 
-{{ windows_icon }} --- Installation on Windows
--------------------------------------------------
+{{ windows_icon }} --- Installation on {{windows}}
+---------------------------------------------------
 
 * **recommended** --- The :doc:`automated installation <windows/automated>` installs everything with minimal interventions required
 
@@ -51,8 +51,8 @@ These guides, although tailored for 1\ :sup:`st` year students, are also ideal f
 
 .. _install-python-macos:
 
-{{ apple_icon }} --- Installation on MacOS
--------------------------------------------
+{{ apple_icon }} --- Installation on {{macos}}
+-----------------------------------------------
 
 * **recommended** --- The :doc:`automated installation <macos/automated>` installs everything with minimial interventions required
 * The :doc:`package managed installation guide <macos/homebrew>` allows you to set up Python step by step.
@@ -70,14 +70,19 @@ Please contact us by sending an `email <mailto:pythonsupport@dtu.dk>`_.
 .. note::
     If you are using other operating systems than the above listed, please send an `email <mailto:pythonsupport@dtu.dk>`_ to us and we will try to help you.
 
+
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 2
     :hidden:
    
-    windows/automated.rst
+    Automated <windows/automated>
     windows/manual.rst
-    macos/automated.rst
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+    :caption: MacOS
+    
+    Automated <macos/automated>
     macos/homebrew.rst
     macos/manual.rst
-
-

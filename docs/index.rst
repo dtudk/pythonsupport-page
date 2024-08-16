@@ -74,7 +74,7 @@ personal computer, and helping you get ready to start programming with Python.
       | Find installation guides for specific DTU courses or host one if you are an instructor.
 
    .. grid-item-card:: :fas:`info-circle` -- Learn More
-      :link: Documentation_index2
+      :link: learn-more
       :link-type: ref
 
       | Navigate Python with information on pip, environments, terminal usage, and uninstallation.
@@ -94,7 +94,6 @@ Office hours
 .. include:: /timetable/timetables.rst
 
 *Available via online channels (e-mail and Discord) during all office hours.*
-
 
 .. toctree::
    :maxdepth: 2

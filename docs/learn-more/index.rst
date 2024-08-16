@@ -1,24 +1,34 @@
+.. _learn-more:
+
 Learn more
 ===========
 
 
-.. dropdown:: Are you a first year student?
+.. dropdown:: Are you a 1\ :sup:`st` year student?
    :color: warning
    :icon: accessibility
 
-   For first year students we recommend going through the :doc:`Terminal <terminal>` and :doc:`IDLE <idle>` sections. 
-   The :doc:`Visual Studio Code <vscode/index>` section is also very useful, but **Visual Studio Code will not be introduced until later** 
-   in the semester. 
+   For first year students we recommend going through the:
 
-Here you will find the essential tools needed to get ready to code in Python. The following sections function as short introductions, helping you to understand the basics of these tools.
+   - :doc:`Terminal <terminal>`
+   - :doc:`IDLE <idle>`
+
+   The :doc:`Visual Studio code <vscode/index>` section 
+   will be introduced *during* the semester, so this can wait until introduced in
+   the courses.
+
+Here you will find the essential tools needed to get ready to code in Python.
+The following sections function as short introductions,
+helping you to understand the basics of these tools.
 
 * The :doc:`Terminal <terminal>` is the most direct line of communication between you and your computer
 
-* :doc:`IDLE <idle>` is recommended only for :course-base:`02002 <02002>` - Introduction to Python Programming
+* :doc:`IDLE <idle>` (only recommended for students taking :course-base:`02002 <02002>`)
 
 * :doc:`Visual Studio Code <vscode/index>` is a strong tool for writing and editing Python code
 
-* :doc:`Packages and environments <packages-and-environments/index>` allow you to organize your python installation and packages
+* :doc:`Packages and environments <packages-and-environments/index>` allow you
+  to organize your Python installation and packages
 
 
 
@@ -28,15 +38,10 @@ Here you will find the essential tools needed to get ready to code in Python. Th
    :maxdepth: 1
    
    terminal
-   IDLE (Only for 02002) <idle>
+   IDLE (only for 02002) <idle>
    vscode/index
    packages-and-environments/index.rst
-   .. reproducibility
 
-
-.. todo::
-
-   should idle be part of the index, or a learn-more for 1st year students
 
 .. todo::
    

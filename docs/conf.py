@@ -235,13 +235,13 @@ windows_link = [
 
 _icon_links = [
     {
-        "name": "Python support - Discord channel invitation",
+        "name": "Chat with us on Discord",
         "url": _discord_invite,
         "icon": f"fa-brands fa-discord {_fa_move}",
         "type": "fontawesome",
     },
     {
-        "name": "Mail to Python support",
+        "name": "Contact us through email",
         "url": f"mailto:{_pythonsupport['mail']}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
         "type": "fontawesome",
@@ -253,21 +253,21 @@ _icon_links = [
         "type": "fontawesome",
     },
     {
-        "name": "Python homepage",
+        "name": "Official Python homepage",
         "url": "https://www.python.org",
         "icon": f"fa-brands fa-python {_fa_move}",
         "type": "fontawesome",
     },
     {
-        "name": "PyPi package installation repository",
-        "url": "https://pypi.org/",
-        "icon": "_static/logo-small.2a411bc6.svg",
-        "type": "local",
-    },
-    {
         "name": "Conda documentation",
         "url": "https://docs.conda.io/en/latest/index.html",
         "icon": "_static/anaconda_logo.svg",
+        "type": "local",
+    },
+    {
+        "name": "PyPi package installation repository",
+        "url": "https://pypi.org/",
+        "icon": "_static/logo-small.2a411bc6.svg",
         "type": "local",
     },
 ]
