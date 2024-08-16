@@ -1,7 +1,7 @@
 .. _manual-reference-windows:
 
 {{ windows_icon }} --- Manual Installation 
-=============================================
+-------------------------------------------
 
 .. button-link:: ../macos/homebrew.html
    :align: right
@@ -21,7 +21,7 @@
 
 
 Step 1: Install Miniconda
---------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. card:: 
 
@@ -46,8 +46,7 @@ Step 1: Install Miniconda
 
 
 Step 2: Install Python
--------------------------
-
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. card:: 
 
@@ -82,7 +81,7 @@ Step 2: Install Python
 
 
 Step 3: Install Visual Studio Code
-------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. card:: 
 
@@ -98,7 +97,7 @@ Step 3: Install Visual Studio Code
       
 
 Step 4: Install extensions for Visual Studio Code
--------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. |extensions| image:: /images/install/extensions.png
     :height: 25px

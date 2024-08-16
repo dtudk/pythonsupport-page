@@ -96,9 +96,6 @@ Office hours
 *Available via online channels (e-mail and Discord) during all office hours.*
 
 
-.. .. todo::
-
-
 .. toctree::
    :maxdepth: 2
    :hidden:

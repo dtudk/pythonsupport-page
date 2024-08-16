@@ -73,12 +73,11 @@ Please contact us by sending an `email <mailto:pythonsupport@dtu.dk>`_.
 .. toctree::
     :maxdepth: 1
     :hidden:
-    :titlesonly:
    
-    windows/automated
-    windows/manual
-    macos/automated
-    macos/homebrew
-    macos/manual
+    windows/automated.rst
+    windows/manual.rst
+    macos/automated.rst
+    macos/homebrew.rst
+    macos/manual.rst
 
 

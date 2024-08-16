@@ -2,7 +2,7 @@
 
 
 {{ apple_icon }} --- Automated Installation
-============================================
+--------------------------------------------
 
 .. button-link:: ../windows/automated.html
    :align: right
@@ -12,10 +12,9 @@
 
 
 Install everything at once
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. card:: 
-
 
     #.
         The first thing to do is to open your Terminal by pressing :kbd:`Command+Space` at the same time.
@@ -23,13 +22,11 @@ Install everything at once
     #.    
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
 
-
         .. image:: /images/install/MacOS-spotlight-terminal.png
             :width: 100%
             :align: center
 
     #.
-
         Next, copy the following line of code into your Terminal and press :kbd:`Enter`:
 
         .. code:: bash
@@ -38,10 +35,8 @@ Install everything at once
 
 
         .. include:: /_rst_includes/tip-copy.rst
-    
 
     #.
-
         Follow the script instructions.
         You might get asked for permissions and your password to make changes on your Mac.
         Please grant permission. Note that your password will not be shown while typing it. 
