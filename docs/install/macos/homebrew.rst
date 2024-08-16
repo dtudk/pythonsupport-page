@@ -36,7 +36,7 @@ Step 1: Install Homebrew
         Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
         Do *not* close the terminal once the installation script has finished.
 
-        .. image:: /images/install/MacOS-spotlight-terminal.png
+        .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
             :width: 100%
             :align: center
 
