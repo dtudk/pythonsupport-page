@@ -7,170 +7,149 @@ Video Tutorials
 Here you will find video tutorials on topics such as terminal usage, VS Code debugging and much more. 
 
 
-Introduction to VS Code
-------------------------
+Installation
+--------------
 
-.. card::
+Automatic Installation
+^^^^^^^^^^^^^^^^^^^^^^^
 
-    In this video you will learn how the basics about Visual Studio Code.
+.. tab-set::
 
-    .. raw:: html
+    .. tab-item:: {{ windows }}
+
+        .. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ffbe8bb5-accc-4bf1-be87-b1ce00aa5a97" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+    .. tab-item:: {{ macos }}
 
-
-What are workspaces?
-------------------------
-
-.. card::
-
-    In this video you will learn how to use workspaces on Visual Studio Code.
-
-    .. raw:: html
+        .. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ffbe8bb5-accc-4bf1-be87-b1ce00aa5a97" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Open the terminal in VS code 
-------------------------------
 
-.. card::
 
-    In this video you will learn how to use the terminal in Visual Studio Code.
+Manual Installation
+^^^^^^^^^^^^^^^^^^^^^^^
 
-    .. raw:: html
+.. tab-set::
+
+    .. tab-item:: {{ windows }}
+
+        .. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=bce1091c-e3dc-4e53-b785-b1ce00899666&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-        
+            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=045bfd79-bb8a-49af-b1d7-b1ce00a9662e" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-Run Code 
-------------------------
+    .. tab-item:: {{ macos }}
 
-.. card::
-
-    In this video you will learn how to run code using Visual Studio Code.
-
-    .. raw:: html
+        .. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c8043c3e-80f6-4dc1-97f9-b1ce00897b51" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Introduction to debugging
-----------------------------
+Package managed installation (MacOS ONLY)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. card::
-
-    In this video you will learn how to debug using Visual Studio Code.
-
-    .. raw:: html
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e7399c34-3ff7-4f9e-b8c3-b1ce00898e03&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=52941d0b-cc65-42a0-9ceb-b1ce00897b51" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Fixing module name error
-------------------------
+VS Code
+--------------
 
-.. card::
+Getting Started with VS Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    In this video you will learn how to fix the error ``No module named..`` error. 
-
-    .. raw:: html
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7aa61ea4-ecf3-40ec-8386-b1ce00b65be6" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Introduction to Jupyter Notebooks
----------------------------------
+Jupyter Notebooks 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. card::
-
-    In this video you will learn the basics of Jupyter Notebooks
+.. raw:: html
     
-    .. raw:: html
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e2325323-ea37-4216-bdf8-b1ce00b63fcf" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+
+Keybindings in VS Code
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c67b0cf8-d27c-4287-9e25-b1ce0089a101" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-What are extensions?
-------------------------
 
 
-.. card::
+Integrated Terminal in VS Code
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    In this video you will learn how to install and work with extensions in Visual Studio Code.
-
-    .. raw:: html
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1a8f7346-8daa-48e8-adfd-b1ce00898e08&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-        
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=bce1091c-e3dc-4e53-b785-b1ce00899666" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-How to import a package
-------------------------
 
-.. card::
 
-    In this video you will learn how to import a package in Visual Studio Code.
 
-    .. raw:: html
+Extensions in VS Code
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1a8f7346-8daa-48e8-adfd-b1ce00898e08" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Creating a Python environment 
-------------------------------
+Debugging Tool in VS Code
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. card::
-
-    In this video you will learn how to create a Python environment using Visual Studio Code.
-
-    .. raw:: html
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e7399c34-3ff7-4f9e-b8c3-b1ce00898e03" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-Using the terminal
-------------------------
 
-.. card::
 
+
+Terminal and packages
+-----------------------
+
+Using the Terminal 
+^^^^^^^^^^^^^^^^^^^^
+
+.. tab-set::
+
+    .. tab-item:: {{ windows }} 
+
+        .. raw:: html
     
+            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=b581660d-9d46-4142-91fd-b1ce00897b4d" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-    .. tab-set::
-        
-        .. tab-item:: {{ windows }}
-            :sync: powershell
-
-            In this video you will learn the terminal basics on Windows.
+    .. tab-item:: {{ macos }}
 
             .. raw:: html
-            
-                <iframe src=" https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=b581660d-9d46-4142-91fd-b1ce00897b4d&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-            
-
-        .. tab-item:: {{ mac_bash }}
-            :sync: bash
-
-            In this video you will learn the terminal basics on macOs.
-
-            .. raw:: html
-            
-                <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=b6c29370-cf95-493c-8c02-b1ce00897b51&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-        
     
-Keybindings
----------------
+                <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=b6c29370-cf95-493c-8c02-b1ce00897b51" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-.. card::
 
-   In this video you will learn how to work with key shortcuts on Visual Studio Code.
 
-   .. raw:: html
+Importing Packages
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+.. raw:: html
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c67b0cf8-d27c-4287-9e25-b1ce0089a101&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=159d52cb-1548-4ba8-bca6-b1ce00b6a2a7" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+
+
+
+
 
 
 
