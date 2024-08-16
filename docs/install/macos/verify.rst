@@ -9,9 +9,11 @@ For further information, see :ref:`here <step2-homebrew-reference>`.
 
 Make sure that it says ``(base)`` next to your user name when opening the Terminal.
 
-.. image:: /images/install/MacOS-base-terminal.png
-        :width: 100%
-        :align: center
+.. card::
+
+    .. image:: /images/install/MacOS-base-terminal.png
+            :width: 100%
+            :align: center
 
 Finally type ``idle3`` in the Terminal and press :kbd:`Enter`. This should open up a new window in which you will able to run Python code.
 
@@ -20,9 +22,11 @@ Now ensure the following:
 * It says Python {{ python_version }}.xx in the top left (or in the range {{python_version_min}} -- {{python_version_max}}).
 * You get no errors when typing ``import dtumathtools, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
 
-.. image:: /images/install/MacOS-IDLE-import.png
-        :width: 100%
-        :align: center
+.. card::
+
+    .. image:: /images/install/MacOS-IDLE-import.png
+            :width: 100%
+            :align: center
 
 
 If it is not the case for any of the above, try to paste the following line of code in the terminal and press :kbd:`Enter`:

@@ -11,13 +11,19 @@
     Press here for {{ macos }} {{ apple_icon }}
    
 
-.. dropdown:: Video guide
+
+
+.. dropdown:: Video Guide
+    :open:
     :color: info
 
-    .. raw:: html
+    .. raw:: html 
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e5e4bea0-13f2-4b1e-85cd-b1c800e7391c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height=100%  style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+
+.. todo::
+   Insert link to video between `"` and `&` in the iframe above.
 
 
 Step 1: Install Miniconda

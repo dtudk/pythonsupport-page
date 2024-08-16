@@ -12,6 +12,16 @@
     Press here for Windows {{ windows_icon }}
 
 
+
+.. dropdown:: Video Guide
+    :open:
+    :color: info
+
+    .. raw:: html 
+    
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=52941d0b-cc65-42a0-9ceb-b1ce00897b51&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
 Step 1: Install Homebrew 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
