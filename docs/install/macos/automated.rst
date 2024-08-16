@@ -11,6 +11,18 @@
     Press here for Windows {{ windows_icon }}
 
 
+
+.. dropdown:: Video Guide
+    :open:
+    :color: info
+
+    .. raw:: html 
+    
+        <iframe src="&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+.. todo::
+   Insert link to video between `"` and `&` in the iframe above.
+
 Install everything at once
 ----------------------------
 
