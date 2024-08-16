@@ -77,7 +77,7 @@ Windows execution policy in PowerShell
 
 
 Setting default terminal in VS code ( {{windows}} )
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The default terminal in VS Code can be changed in the following way:
 
