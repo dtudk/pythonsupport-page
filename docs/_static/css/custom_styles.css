@@ -183,7 +183,7 @@
 
   /* nav.navbar a.active, nav.navbar a.current {
     color: var(--bg-primary)  !important; 
-    font-weight: bold !important; 
+    // font-weight: bold !important; 
   } */
 
 
@@ -208,7 +208,7 @@
 .nav-item.current.active,
 .nav-item.current.active .nav-link {
     color: var(--bg-primary) !important; 
-    font-weight: bold !important;
+    // font-weight: bold !important;
     text-decoration: none !important;
     border-bottom: none !important;
     border-color: transparent !important;
@@ -457,7 +457,7 @@ a:hover {
 /* Hover state for the reference internal nav-link */
 a.reference.internal.nav-link:hover {
   text-decoration: underline !important;
-  font-weight: bold !important; 
+  // font-weight: bold !important; 
 
    /* Add underline on hover if needed */
 }
@@ -527,7 +527,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   border-left: none !important; /* Remove the left border */
   border-bottom: none !important; /* Remove the bottom border */
   color: var(--bg-primary) !important; /* Ensure the text color is inherited */
-  font-weight: bold !important; /* Make the text bold */
+  // font-weight: bold !important; /* Make the text bold */
   box-shadow: none !important; /* Remove any box shadow that might be creating the line */
 }
 
@@ -550,7 +550,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   text-decoration: none !important; /* Remove underline */
   box-shadow: none !important; /* Remove any box shadow */
   color: var(--bg-primary) !important; /* Ensure the text color is inherited */
-  font-weight: bold !important; /* Make the text bold */
+  // font-weight: bold !important; /* Make the text bold */
 }
 
 /* Ensure links in the sidebar are underlined on hover */
@@ -752,13 +752,13 @@ h6:hover .headerlink {
 
 .visible.nav.section-nav.flex-column li.toc-h2 a:hover {
   color:var(--bg-primary) !important;
-  font-weight: bold !important;
+  // font-weight: bold !important;
    
 }
 
 .visible.nav.section-nav.flex-column li.toc-h2 a.active {
   color:var(--bg-primary) !important;
-  font-weight: bold !important;
+  // font-weight: bold !important;
   content: none !important; 
   box-shadow:none !important;
 }
