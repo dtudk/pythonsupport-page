@@ -1,9 +1,9 @@
 .. _uninstall-conda:
 
-Uninstalling Anaconda/Conda
+Uninstalling Conda
 ===========================================
 
-This guide will help you uninstall Anaconda from your computer. This can be useful if:
+This guide will help you uninstall Conda from your computer. This can be useful if:
 
 * You are trying to install packages with :ref:`pip`, but you cannot import the package.
 
@@ -39,19 +39,31 @@ Windows
 MacOS and Linux
 -------------------------------------------
 
-1. Open your terminal and run the following lines, one at a time
+- If you have installed Miniconda through Homebrew, run the following command line in the terminal:
 
    .. code:: bash
        
-       conda install anaconda-clean
-       anaconda-clean --yes
+       brew remove miniconda
 
    .. tip::
-      In order to run the above command you need to be in the 'base' environment.
-      If it does not say (base) in the beginning of the line,
-      run the following command: ``conda activate base``
+      
+      If you are unsure how you installed Miniconda, you can check by running the following command in your terminal. If the command returns "miniconda", it confirms that it was installed via Homebrew:
+      
+      .. code:: bash
+      
+         brew list | grep miniconda
 
-2. Then run the following three lines, one at a time
+      
+
+- If you did not install Miniconda through Homebrew, you can remove it by running the following commands in your terminal:
+
+   .. code:: bash
+       
+       rm -rf miniconda3
+       rm -rf ~/miniconda3
+       rm -rf ~/opt/miniconda3
+
+- If want to uninstall Anaconda, run the following commands in your terminal:
 
    .. code:: bash
        
