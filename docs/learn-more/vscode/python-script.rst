@@ -107,6 +107,7 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
                 :width: 450
                 :align: center
                 :alt: Save File in VS Code
+
             3. Choose a location and name for your file, then save it.
 
             Note that you can save a file by pressing :kbd:`Ctrl+S`.
