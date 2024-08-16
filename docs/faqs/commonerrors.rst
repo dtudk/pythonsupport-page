@@ -73,3 +73,18 @@ Windows execution policy in PowerShell
    and double-click it.
 
    Now try to install the packages again.
+
+
+
+Setting default terminal in VS code (windows)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The default terminal in VS Code can be changed in the following way:
+
+#. Open a terminal in VS Code 
+
+#. Next to the ``+`` icon select the downwards arrow
+
+#. Click "Select Default Profile"
+
+#. Choose the terminal, that you wish to have as your default (Windows PowerShell is recommended)
