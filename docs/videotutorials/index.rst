@@ -25,7 +25,7 @@ Automatic Installation
 
         .. raw:: html
     
-            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ffbe8bb5-accc-4bf1-be87-b1ce00aa5a97" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+            <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=9f43eb27-2f54-46eb-b8cc-b1ce01428f3d" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 
@@ -48,7 +48,7 @@ Manual Installation
             <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c8043c3e-80f6-4dc1-97f9-b1ce00897b51" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Package managed installation (MacOS ONLY)
+Package Managed Installation (MacOS ONLY)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. raw:: html
