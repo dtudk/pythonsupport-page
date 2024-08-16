@@ -77,8 +77,8 @@ Step 2: Install Python
     #. 
         Open the Terminal by pressing the :kbd:`Command+Space` key at the same time, and searching for *Terminal*.  
 
-        .. image:: /images/install/MacOS-spotlight-terminal.png
-            :width: 300
+        .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
+            :width: 80%
             :align: center
 
     #.

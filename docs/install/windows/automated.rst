@@ -16,12 +16,7 @@
 
     .. raw:: html 
     
-        <iframe src="&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-
-.. todo::
-   Insert link to video between `"` and `&` in the iframe above.
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ffbe8bb5-accc-4bf1-be87-b1ce00aa5a97&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 Install everything at once
