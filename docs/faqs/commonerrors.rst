@@ -85,6 +85,6 @@ The default terminal in VS Code can be changed in the following way:
 
 #. Next to the ``+`` icon select the downwards arrow
 
-#. Click "Select Default Profile"
+#. CLick :menuselection:`Select Default Profile`
 
 #. Choose the terminal, that you wish to have as your default (Windows PowerShell is recommended)
