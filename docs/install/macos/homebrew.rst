@@ -2,7 +2,7 @@
 
 
 {{ apple_icon }} --- Homebrew Installation
--------------------------------------------
+============================================
 
 .. button-link:: ../windows/manual.html
    :align: right
@@ -23,7 +23,7 @@
 
 
 Step 1: Install Homebrew 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------
 
 .. card:: 
 
@@ -59,7 +59,7 @@ Step 1: Install Homebrew
 .. _step2-homebrew-reference:
 
 Step 2: Install Miniconda and Python
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------
 
 .. card::
 
@@ -93,7 +93,7 @@ Step 2: Install Miniconda and Python
     
 
 Step 3: Install Visual Studio Code 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. card::
     
@@ -105,7 +105,7 @@ Step 3: Install Visual Studio Code
 
 
 Step 4: Install extensions for Visual Studio Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. |extensions| image:: /images/install/extensions.png
     :height: 25px

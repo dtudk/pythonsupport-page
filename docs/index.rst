@@ -96,7 +96,7 @@ Office hours
 *Available via online channels (e-mail and Discord) during all office hours.*
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :hidden:
 
    install/python.rst

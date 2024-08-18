@@ -275,7 +275,7 @@ _icon_links = [
 
 html_theme_options = {
     "navbar_center": ["logo_button.html", "navbar-nav"],
-    "navbar_end": ["article-header-buttons", "theme-switcher"],
+    "navbar_end": ["theme-switcher", "article-header-buttons"],
     "icon_links": _icon_links,
     "header_links_before_dropdown": 10,
     "back_to_top_button": True,
@@ -484,6 +484,7 @@ html_context = {
     "linux_icon": ":fab:`linux`",
     "apple_icon":  ":fab:`apple`",
     "apple_app_store":   ":fab:`app-store`",
+    "arrow_icon": ":fas:`arrow-right`",
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
     # online days

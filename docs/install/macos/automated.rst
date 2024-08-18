@@ -2,7 +2,8 @@
 
 
 {{ apple_icon }} --- Automated Installation
---------------------------------------------
+============================================
+
 
 .. button-link:: ../windows/automated.html
    :align: right
@@ -24,22 +25,22 @@
    Insert link to video between `"` and `&` in the iframe above.
 
 Install everything at once
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. card:: 
 
     #.
-        The first thing to do is to open your Terminal by pressing :kbd:`Command+Space` at the same time.
+       Open your Terminal by pressing :kbd:`Command+Space` at the same time.
 
     #.    
-        Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
+       Search for :menuselection:`Terminal` and press :kbd:`Enter`.
 
         .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
             :width: 100%
             :align: center
 
     #.
-        Next, copy the following line of code into your Terminal and press :kbd:`Enter`:
+        Copy the following line of code into your Terminal and press :kbd:`Enter`:
 
         .. code:: bash
 

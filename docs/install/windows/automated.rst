@@ -1,7 +1,7 @@
 .. _automated-reference-windows:
 
 {{ windows_icon }}  --- Automated Installation
------------------------------------------------
+===============================================
 
 .. button-link:: ../macos/automated.html
    :align: right
@@ -20,7 +20,7 @@
 
 
 Install everything at once
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. card:: 
 

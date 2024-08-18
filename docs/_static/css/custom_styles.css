@@ -208,11 +208,6 @@
 .nav-item.current.active,
 .nav-item.current.active .nav-link {
     color: var(--bg-primary) !important; 
-    font-weight: bold !important;
-    text-decoration: none !important;
-    border-bottom: none !important;
-    border-color: transparent !important;
-    content: none !important;
     box-shadow: none !important;
   }
 
@@ -240,7 +235,7 @@ color: var(--bg-primary)!important;
 
 
 
-/* Changes that we need to discuss */
+/* Button top right - Header */
 
 
 /* Style for custom buttons in the header */
@@ -251,8 +246,8 @@ color: var(--bg-primary)!important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px; /* Set a fixed width */
-  height: 36px; /* Set a fixed height */
+  width: 35% ; /* Set a fixed width */
+  height: 35%; /* Set a fixed height */
 }
 
 /* Hide the download button */
@@ -263,8 +258,8 @@ color: var(--bg-primary)!important;
  
 /* Move the theme switch button to the left */
 .theme-switch-button {
-  margin-left: -1.5em; /* Remove any existing left margin */
-  margin-right: auto; /* Push the element to the left */
+  
+  margin-right: 23px !important;
 }
 
 
@@ -281,6 +276,7 @@ content: none !important;
 /* Hide the button with the specific class within article-header-buttons */
 .article-header-buttons .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button {
   display: none !important;
+  content: none !important;
 }
 
 /* Move the icon with the class 'svg-inline--fa fa-expand' to the left */
@@ -316,7 +312,6 @@ content: none !important;
   overflow-y: auto; /* Allow scrolling if content exceeds the viewport height */
 }
 
-
 body {
   padding-top: 60px; /* Adjust based on the height of your header */
 }
@@ -338,11 +333,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* end of changes that we need to discuss */
-
-
-
 
 
 
@@ -522,14 +512,63 @@ since it is also on the header.
 
 
 /* Target the selected sidebar item and remove the background and border */
-li.toctree-l1.current.active > a, li.toctree-l1.current > a {
-  background-color: transparent !important; /* Remove the light blue background */
+html[data-theme="light"] li.toctree-l1.current.active > a, li.toctree-l1.current > a {
+  background-color: #f3f4f5 !important; /* Remove the light blue background */
   border-left: none !important; /* Remove the left border */
   border-bottom: none !important; /* Remove the bottom border */
   color: var(--bg-primary) !important; /* Ensure the text color is inherited */
-  font-weight: bold !important; /* Make the text bold */
+  font-weight: normal !important; /* Make the text bold */
   box-shadow: none !important; /* Remove any box shadow that might be creating the line */
 }
+
+html[data-theme="light"] li.toctree-l2.current.active > a, li.toctree-l2.current > a {
+  background-color: #f3f4f5 !important; /* Remove the light blue background */
+  border-left: none !important; /* Remove the left border */
+  border-bottom: none !important; /* Remove the bottom border */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
+  font-weight: normal !important; /* Make the text bold */
+  box-shadow: none !important; /* Remove any box shadow that might be creating the line */
+}
+
+html[data-theme="light"] li.toctree-l3.current.active > a, li.toctree-l3.current > a {
+  background-color: #f3f4f5 !important; /* Remove the light blue background */
+  border-left: none !important; /* Remove the left border */
+  border-bottom: none !important; /* Remove the bottom border */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
+  font-weight: normal !important; /* Make the text bold */
+  box-shadow: none !important; /* Remove any box shadow that might be creating the line */
+}
+
+
+
+/* Target the selected sidebar item and remove the background and border */
+html[data-theme="dark"] li.toctree-l1.current.active > a, li.toctree-l1.current > a {
+  background-color: #222832!important; /* Remove the light blue background */
+  border-left: none !important; /* Remove the left border */
+  border-bottom: none !important; /* Remove the bottom border */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
+  font-weight: normal !important; /* Make the text bold */
+  box-shadow: none !important; /* Remove any box shadow that might be creating the line */
+}
+
+html[data-theme="dark"] li.toctree-l2.current.active > a, li.toctree-l2.current > a {
+  background-color: #222832 !important; /* Remove the light blue background */
+  border-left: none !important; /* Remove the left border */
+  border-bottom: none !important; /* Remove the bottom border */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
+  font-weight: normal !important; /* Make the text bold */
+  box-shadow: none !important; /* Remove any box shadow that might be creating the line */
+}
+
+html[data-theme="dark"] li.toctree-l3.current.active > a, li.toctree-l3.current > a {
+  background-color: #222832 !important; /* Remove the light blue background */
+  border-left: none !important; /* Remove the left border */
+  border-bottom: none !important; /* Remove the bottom border */
+  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
+  font-weight: normal !important; /* Make the text bold */
+  box-shadow: none !important; /* Remove any box shadow that might be creating the line */
+}
+
 
 
 /* Ensure the current link does not have an underline or border */
@@ -541,17 +580,7 @@ li.toctree-l1.current.active > a, li.toctree-l1.current > a {
   box-shadow: none !important; /* Remove any box shadow */
 }
 
-/* Ensure the current link does not have an underline or border */
-.toctree-l1.current > a, .toctree-l2.current > a, .toctree-l3.current > a, .toctree-l4.current > a, .toctree-l5.current > a, .toctree-l6.current > a,
-.toctree-l1.current.active > a, .toctree-l2.current.active > a, .toctree-l3.current.active > a, .toctree-l4.current.active > a, .toctree-l5.current.active > a, .toctree-l6.current.active > a {
-  background-color: transparent !important; /* Remove background color */
-  border-left: none !important; /* Remove left border */
-  border-bottom: none !important; /* Remove bottom border */
-  text-decoration: none !important; /* Remove underline */
-  box-shadow: none !important; /* Remove any box shadow */
-  color: var(--bg-primary) !important; /* Ensure the text color is inherited */
-  font-weight: bold !important; /* Make the text bold */
-}
+
 
 /* Ensure links in the sidebar are underlined on hover */
 .bd-sidebar-primary a:hover {
@@ -748,25 +777,31 @@ h6:hover .headerlink {
   /* Change this to your desired hover color */
 }
 
-/* The following affects the right side bar */
 
-.visible.nav.section-nav.flex-column li.toc-h2 a:hover {
-  color:var(--bg-primary) !important;
-  font-weight: bold !important;
-   
-}
+
+
+/* The following changes colors of the right side bar  */
+
 
 .visible.nav.section-nav.flex-column li.toc-h2 a.active {
-  color:var(--bg-primary) !important;
-  font-weight: bold !important;
+  color: var(--bg-primary) !important;
   content: none !important; 
   box-shadow:none !important;
 }
 
+
 .visible.nav.section-nav.flex-column li.toc-h2 a {
   color: currentcolor !important;
-  font-weight: normal!important; /* Change this to your desired hover color */
+  font-weight: normal!important; 
 }
+
+
+.visible.nav.section-nav.flex-column li.toc-h2 a:hover {
+  color: currentcolor !important;
+  font-weight: normal !important; 
+}
+
+
 
 
 /* Changes the switch theme button */
@@ -911,7 +946,7 @@ a.custom-link:hover {
 /* Button at the top of installation guide - The colors come from the default colors on sphinx documentation */
 
 
-.sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
 {
   background-color: #f3f4f5 !important; 
   border: 1px solid #d1d5d9 !important;
@@ -925,7 +960,30 @@ a.custom-link:hover {
   text-align: center;
 }
 
-.sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover
+{
+  color: var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
+  text-decoration: none !important;
+  
+}
+
+
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
+{
+  background-color: #222832 !important; 
+  border: 1px solid #48566b !important;
+  border-radius: 10px !important;
+  margin-bottom: -20px !important;
+  color: #9ba4af !important;
+
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover
 {
   color: var(--bg-primary) !important;
   border-color: var(--bg-primary) !important;

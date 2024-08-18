@@ -222,86 +222,87 @@ Once you've created a Python file you need to select your interpreter. In short,
 
             .. tip::
 
-                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with
+                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with.
 
+            .. tip::
 
-
-.. tip::
-
-    Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
-
-
-Run a Python File - Needs to be redone according to video
-----------------------------------------------------------------
-
-Once you've written your Python code, you can easily run it in VS Code.
-
-.. card::
-
-   
-
-    .. tab-set::
-
-        .. tab-item:: Windows
-
-            1. Open the Python file you want to run.
-            2. Press :kbd:`Ctrl+Shift+P`.
-            3. Type *Run Python File in Terminal* and select it from the options.
-            4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
-
-            .. image:: ../images/VScode_windows_run_python.png
-                :width: 450
-                :align: center
-                :alt: Run Python File in VS Code
-
-        .. tab-item:: MacOS
-
-            1. Open the Python file you want to run.
-            2. Press :kbd:`Command+Shift+P`.
-            3. Type *Run Python File in Terminal* and select it from the options.
-            4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
-
-            .. image:: ../images/VScode_mac_run_python.png
-                :width: 450
-                :align: center
-                :alt: Run Python File in VS Code
-
-    .. tip::
-
-        Running your Python file in VS Code allows you to see the output directly in the terminal, making it easier to debug and test your code.
-
-
-Difference between Terminal and Python shell in VS Code - Needs to be redone according to video
-------------------------------------------------------------------------------------------------------------------------
-
-You can start a terminal from VS code, which works just like in the terminal app. 
-
-.. card::      
+                Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
     
-    .. tab-set::
 
-       .. tab-item:: Windows 
 
-           Press the three dots in the top menu bar. They are next to the :menuselection:`View` and :menuselection:`Go` options.
-           Move your mouse to :menuselection:`Terminal` and click :menuselection:`New Terminal`
 
-           .. image:: ../images/VScode_windows4.png
-               :width: 450
-               :align: center
-               :alt: IDLE Shell
 
-       .. tab-item:: MacOS 
 
-           Move your mouse to the top of the screen. Select :menuselection:`Terminal --> New Terminal`
+.. todo::
+   Fill this section called Run a Python File accordingly once the video includes this info. Sotero should be done with the video during week 19/8 - 23/8
 
-           .. image:: ../images/VScode_mac4.png
-               :width: 450
-               :align: center
-               :alt: IDLE Shell
 
-.. tip::
-    You can have multiple terminals open at once. 
-    You can delete a terminal by hovering your mouse over it's name (bottom right) and pressing the icon shaped like a trash can
+.. Run a Python File - Needs to be redone according to video
+.. ----------------------------------------------------------------
+
+.. Once you've written your Python code, you can easily run it in VS Code.
+
+
+
+..         .. tab-item:: Windows
+
+..             1. Open the Python file you want to run.
+..             2. Press :kbd:`Ctrl+Shift+P`.
+..             3. Type *Run Python File in Terminal* and select it from the options.
+..             4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
+
+..             .. image:: ../images/VScode_windows_run_python.png
+..                 :width: 450
+..                 :align: center
+..                 :alt: Run Python File in VS Code
+
+..         .. tab-item:: MacOS
+
+..             1. Open the Python file you want to run.
+..             2. Press :kbd:`Command+Shift+P`.
+..             3. Type *Run Python File in Terminal* and select it from the options.
+..             4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
+
+..             .. image:: ../images/VScode_mac_run_python.png
+..                 :width: 450
+..                 :align: center
+..                 :alt: Run Python File in VS Code
+
+
+
+.. todo::
+   Fill this section called Difference between... accordingly once the video includes this info. Sotero should be done with the video during week 19/8 - 23/8
+
+.. Difference between Terminal and Python shell in VS Code - Needs to be redone according to video
+.. ------------------------------------------------------------------------------------------------------------------------
+
+.. You can start a terminal from VS code, which works just like in the terminal app. 
+
+.. .. card      
+    
+..     .. tab-set
+
+..        .. tab-item:: Windows 
+
+..            Press the three dots in the top menu bar. They are next to the :menuselection:`View` and :menuselection:`Go` options.
+..            Move your mouse to :menuselection:`Terminal` and click :menuselection:`New Terminal`
+
+..            .. image:: ../images/VScode_windows4.png
+..                :width: 450
+..                :align: center
+..                :alt: IDLE Shell
+
+..        .. tab-item:: MacOS 
+
+..            Move your mouse to the top of the screen. Select :menuselection:`Terminal --> New Terminal`
+
+..            .. image:: ../images/VScode_mac4.png
+..                :width: 450
+..                :align: center
+..                :alt: IDLE Shell
+.. tip
+..     You can have multiple terminals open at once. 
+..     You can delete a terminal by hovering your mouse over it's name (bottom right) and pressing the icon shaped like a trash can
 
 
 
