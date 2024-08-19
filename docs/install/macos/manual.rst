@@ -1,7 +1,7 @@
 .. _manual-reference-macos:
 
 {{ apple_icon }} --- Manual Installation 
------------------------------------------
+==========================================
 
 
 .. button-link:: ../windows/manual.html
@@ -28,7 +28,7 @@
 
 
 Step 1: Install Miniconda
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 
 .. card:: 
@@ -69,7 +69,7 @@ Step 1: Install Miniconda
 
 
 Step 2: Install Python
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. card:: 
 
@@ -101,7 +101,7 @@ Step 2: Install Python
 
 
 Step 3: Install Visual Studio Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. |applications| image:: /images/install/macos-applications.png
     :height: 25px
@@ -132,7 +132,7 @@ Step 3: Install Visual Studio Code
    
 
 Step 4: Install extensions for Visual Studio Code
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------------------------
 
 .. |extensions| image:: /images/install/extensions.png
     :height: 25px

@@ -21,7 +21,7 @@ Install Python
 
 
 In this section, you will find different installation guides that cover the 
-same components
+same components:
 
 - Python and packages required for 1\ :sup:`st` year students,
 - ``conda`` and
@@ -44,7 +44,7 @@ These guides, although tailored for 1\ :sup:`st` year students, are also ideal f
 {{ windows_icon }} --- Installation on {{windows}}
 ---------------------------------------------------
 
-* **recommended** --- The :doc:`automated installation <windows/automated>` installs everything with minimal interventions required
+* **Recommended** {{ arrow_icon }} The :doc:`automated installation <windows/automated>` installs everything with minimal interventions required.
 
 * The :doc:`manual installation guide <windows/manual>` allows you to set up Python step by step. 
 
@@ -54,7 +54,7 @@ These guides, although tailored for 1\ :sup:`st` year students, are also ideal f
 {{ apple_icon }} --- Installation on {{macos}}
 -----------------------------------------------
 
-* **recommended** --- The :doc:`automated installation <macos/automated>` installs everything with minimial interventions required
+* **Recommended** {{ arrow_icon }} The :doc:`automated installation <macos/automated>` installs everything with minimial interventions required
 * The :doc:`package managed installation guide <macos/homebrew>` allows you to set up Python step by step.
 * The :doc:`manual installation guide <macos/manual>` is recommended if you have had previous failures with both of the above options. 
 
@@ -74,8 +74,9 @@ Please contact us by sending an `email <mailto:pythonsupport@dtu.dk>`_.
 .. toctree::
     :maxdepth: 2
     :hidden:
+    :caption: Windows
    
-    Automated <windows/automated>
+    windows/automated
     windows/manual.rst
 
 .. toctree::
@@ -83,6 +84,6 @@ Please contact us by sending an `email <mailto:pythonsupport@dtu.dk>`_.
     :hidden:
     :caption: MacOS
     
-    Automated <macos/automated>
+    macos/automated
     macos/homebrew.rst
     macos/manual.rst

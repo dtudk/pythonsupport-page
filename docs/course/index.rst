@@ -18,7 +18,7 @@ Here you can find specific guidelines for different courses on how to install Py
 
 
 Template guide for new course
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 Teaching a DTU course? Host your guidelines here!
 Contact us at :mail:`pythonsupport@dtu.dk` or open a :gh-issue:`new issue <new>`.
