@@ -38,7 +38,7 @@ Install everything at once
             :align: center
 
     #. 
-        Copy the following line of code into your terminal and press :kbd:`Enter`:
+        Copy the following line of code into the PowerShell window and press :kbd:`Enter`:
 
         .. code:: pwsh
 
