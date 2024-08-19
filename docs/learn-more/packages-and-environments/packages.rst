@@ -7,9 +7,9 @@ Packages
 Python packages are an integral part of programming in Python. A package is a bundle 
 of modules. Modules are individual Python files that contain prewritten code pieces that 
 can be used in your projects which makes it easier to program. As an example, you will use 
-the package "sympy" quite often in your studies. "sympy" package is a collection of different modules which contain 
-code for different mathematical operations. The module "sympy.matrices" contains tools for 
-working with matrices, or "sympy.calculus" includes operations for derivatives and integrals.
+the package `sympy` quite often in your studies. `sympy` package is a collection of different modules which contain 
+code for different mathematical operations. The module `sympy.matrices` contains tools for 
+working with matrices, or `sympy.calculus` includes operations for derivatives and integrals.
 
 .. tip:: 
     It is important to make sure that you have activated the correct environment before proceeding.

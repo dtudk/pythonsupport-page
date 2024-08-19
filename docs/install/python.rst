@@ -23,8 +23,8 @@ Install Python
 In this section, you will find different installation guides that cover the 
 same components:
 
+- ``conda`` as the Python package manager,
 - Python and packages required for 1\ :sup:`st` year students,
-- ``conda`` and
 - Visual Studio Code.
 
 Importantly, these installation guides are specifically designed for students who meet at least one of the following criteria:

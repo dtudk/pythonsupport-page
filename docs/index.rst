@@ -36,7 +36,12 @@ Reach us
    .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
-      | You can find us at building **302**, room **92** {{online_days}}. Click to see our office hours.
+      | Mon -- Fri (10-16):
+      | Building **302**, room **92**.
+      | Thursday (12:15-16):
+      | Building **358**, room **43**.
+
+      | Click to see detailed office hours.
 
    .. grid-item-card:: :fas:`envelope` -- E-mail us
       :link: mailto:pythonsupport@dtu.dk
@@ -83,7 +88,7 @@ personal computer, and helping you get ready to start programming with Python.
       :link: video-tutorials-reference
       :link-type: ref
 
-      | Watch video guides on essential Python topics.
+      | Watch video guides on various Python topics.
 
 .. _office-hours:
 
