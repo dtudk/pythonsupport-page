@@ -246,8 +246,8 @@ color: var(--bg-primary)!important;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 35% ; /* Set a fixed width */
-  height: 35%; /* Set a fixed height */
+  width: 35% ; 
+  height: 35%; 
 }
 
 /* Hide the download button */

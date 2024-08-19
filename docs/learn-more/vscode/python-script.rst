@@ -224,11 +224,7 @@ Once you've created a Python file you need to select your interpreter. In short,
 
                 In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with.
 
-            .. tip::
-
-                Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
-    
-
+            
 
 
 
@@ -237,12 +233,16 @@ Once you've created a Python file you need to select your interpreter. In short,
    Fill this section called Run a Python File accordingly once the video includes this info. Sotero should be done with the video during week 19/8 - 23/8
 
 
+
 .. Run a Python File - Needs to be redone according to video
 .. ----------------------------------------------------------------
 
 .. Once you've written your Python code, you can easily run it in VS Code.
 
+.. .. tip
 
+..                 Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
+    
 
 ..         .. tab-item:: Windows
 
