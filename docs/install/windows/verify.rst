@@ -34,7 +34,7 @@ If it is not the case for any of the above, try to paste the following line of c
 
 .. code:: bash
 
-     conda install python={{ python_version_recommended }} dtumathtools scipy statsmodels pandas uncertainties -y
+     conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
 
 If you are still having trouble or have any questions please do not hesitate to visit us at our office hours,
