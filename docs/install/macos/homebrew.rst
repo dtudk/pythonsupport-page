@@ -88,7 +88,7 @@ Step 2: Install Miniconda and Python
 
         .. code:: bash
 
-            conda install python={{ python_version_recommended }} -y ; conda install dtumathtools pandas uncertainties -y
+            conda install python={{ python_version_recommended }} -y ; conda install dtumathtools scipy statsmodels pandas uncertainties -y
             
     
 
