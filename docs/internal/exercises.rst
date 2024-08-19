@@ -188,9 +188,9 @@ For the currently known recommend IDE's:
 
 *In order of priority, if time is limited, only do the first*.
 
-- :ref:`VS Code <ide-vscode>` (please also read the page linked for some additional information)
-- :ref:`Spyder <ide-spyder>`
-- :ref:`PyCharm <ide-pycharm>`
+- :doc:`VS Code </learn-more/vscode/index>` (please also read the page linked for some additional information)
+- `Spyder`
+- `PyCharm`
 
 Figure out the following:
 

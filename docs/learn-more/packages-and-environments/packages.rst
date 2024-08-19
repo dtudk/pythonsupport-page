@@ -1,3 +1,5 @@
+.. _installing-packages:
+
 Packages
 ========
 
@@ -18,7 +20,7 @@ working with matrices, or `sympy.calculus` includes operations for derivatives a
 
 Conda is an open-source package management system that can install, run, and 
 update packages and their dependencies in your Python development environment. Our recommendation is 
-using Conda to manage your packages. If you followed our installation guides, you already have Conda 
+using Conda to manage your packages. If you followed our :doc:`installation guides </install/python>`, you already have Conda 
 installed.
 
 .. button-link:: https://www.google.com/search?q=cheatsheet+python+conda

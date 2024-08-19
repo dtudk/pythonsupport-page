@@ -1,3 +1,5 @@
+
+
 Environments
 ============
 
@@ -25,6 +27,7 @@ completely different configurations without conflict. Using environments can be 
 It is recommended to create a separate environment for each course or project to ensure 
 that their requirements do not interfere with each other.
 
+
 Environment management with Conda
 ---------------------------------
 
@@ -49,6 +52,7 @@ package requires a specific Python version.
     all your environments. A subdirectory environment, created using --prefix, is stored within a specific project 
     directory, which would keep the environment self-contained within your project. Therefore, if 
     you wish to deliver the environment you used along with your code, you should create a subdirectory environment.
+
 
 Creating an environment
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -115,6 +119,7 @@ Once an environment has been created and sourced (activated), all ``python`` com
 Now every executed Python script will only use the packages installed
 in the environment. To get out of the environment, simply run the command ``conda deactivate``.
 
+
 Example environment management with Conda
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -128,7 +133,7 @@ version, installing a specific package, running a code using the environment, an
 
       .. code:: powershell
 
-         conda create --name numpy-env python=3.10
+         conda create --name numpy-env python={{python_version_recommended}}
          conda activate numpy-env
          conda install "numpy=1.23"
          python -c "import numpy as np ; print(np.__version__)"
@@ -139,18 +144,19 @@ version, installing a specific package, running a code using the environment, an
 
       .. code:: bash
 
-         conda create --name numpy-env python=3.10
+         conda create --name numpy-env python={{python_version_recommended}}
          conda activate numpy-env
          conda install "numpy=1.23"
          python3 -c "import numpy as np ; print(np.__version__)"
          conda deactivate
 
-This code creates a new Conda environment named numpy-env with Python 3.10 installed. It then 
+This code creates a new Conda environment named numpy-env with Python {{python_version_recommended}} installed. It then
 activates the environment and installs version 1.23 of the Numpy library. After installation, 
 it runs a Python command to import NumPy and print the installed version of Numpy to verify the installation. 
 Finally, the environment is deactivated, returning the user to their previous environment or base environment.
 
 .. tip::
+
     Further documentation is available on Conda's webpage on `environments <https://docs.anaconda.com/working-with-conda/environments/>`__ and 
     `management <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`__.
 
@@ -159,9 +165,10 @@ Environments with venv
 ----------------------
 
 Wwhile Conda offers powerful tools for managing complex environments and dependencies, there are 
-situations where **venv** might be more suitable. venv is ideal for simpler projects that only require 
+situations where ``venv`` might be more suitable. ``venv`` is ideal for simpler projects that only require 
 Python packages, as it is lightweight and easy to use. It is built into Python, so it doesn not require 
 any additional installation, making it convenient for managing environments directly tied to the system's Python.
+
 
 Using venv in VS Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -209,11 +216,13 @@ First, check that you are already in a virtual environment (see point 5 below). 
       :align: center
       :alt: Check if virtual environment is enabled through VS Code
 
+
 Using venv in the Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The package venv creates environments using the pip method. Once an environment has been created and 
-sourced (activated), all pip commands only act within that environment.
+The package ``venv`` creates environments using the ``pip`` method.
+Once an environment has been created and
+sourced (activated), all ``pip`` commands only act within that environment.
 
 .. tip:: 
     If you do not know what pip is, please check the description at the section on pip.
@@ -227,7 +236,7 @@ sourced (activated), all pip commands only act within that environment.
     it will be the same as deleting the environment.
 
 .. warning::
-   Environments in :ref:`ide-vscode` requires special handling when
+   Environments in :doc:`/learn-more/vscode/index` requires special handling when
    working in workspaces. Please see :ref:`here <faq-vscode-venv-workspace>`.
 
 
@@ -308,12 +317,13 @@ package, running a code using the environment, and exiting the environment.
          deactivate
 
 This code creates a Python virtual environment called numpy-env using venv, then activates 
-it to install version 1.23 of Numpy using pip. After installing, it verifies 
+it to install version 1.23 of Numpy using ``pip``. After installing, it verifies
 the installation by printing the installed Numpy version. Finally, the environment is deactivated, 
 returning the user to their previous environment or base environment.
 
 .. tip::
     Further documentation is available on VS Code's webpage on `environments <https://code.visualstudio.com/docs/python/environments>`__.
+
 
 Using Virtual Environments with Jupyter/IPython
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -355,8 +365,7 @@ set. If not, install the kernel runner in the virtual environment:
 
          python3 -m ipykernel install --prefix <path to venv|conda-env>
 
-Replace <path to venv|conda-env> with the path to your virtual environment. 
+Replace ``<path to venv|conda-env>`` with the path to your virtual environment. 
 The problem and the fix is described in greater detail
 `here <https://ipython.readthedocs.io/en/stable/install/kernel_install.html>`__.
-
 

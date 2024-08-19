@@ -2,13 +2,26 @@ Jupyter Notebooks (.ipynb)
 ==========================
 
 
+An ``.ipynb`` file is a notebook file that contains Python code, intermixed with
+`Markdown text <https://en.wikipedia.org/wiki/Markdown>`__.
+
+It works similar to other *cell based* execution models. For example individual segments
+of the notebook can be executed in arbitrary order.
+
+In this tutorial you will learn how to do all of these using Visual Studio Code:
+
+.. contents::
+   :local:
+   :depth: 2
+
+
 Creating a new Jupyter Notebook File
 ------------------------------------
 
 .. card::
             
     #.
-        Access the command palette by either pressing :kbd:`Command+Shift+P` ({{ macos }}) or :kbd:`Ctrl+Shift+P`` ({{ windows }})
+        Access the command palette by either pressing :kbd:`Command+Shift+P` ({{ macos }}) or :kbd:`Ctrl+Shift+P` ({{ windows }}),
         or by clicking help in the menu bar at the top and then show all the commands from there on.
 
     #. 
@@ -39,7 +52,7 @@ Importing packages
 .. card::
 
     #. 
-        Start by clicking on the box in the top of the notebook
+        Start by clicking on the first cell in the top of the notebook
 
 
     #.
@@ -50,8 +63,8 @@ Importing packages
             import numpy as np
 
     #. 
-       Press :kbd:`Shift+Enter` in order to execute the code from the box. A tick shows that the code from the specific box is executed 
-       and the time next to it shows how long it took. You can also press the play button next to the box to execute the code. 
+       Press :kbd:`Shift+Enter` in order to execute the code from the cell. A tick shows that the code from the specific cell is executed 
+       and the time next to it shows how long it took. You can also press the play button next to the cell to execute the code. 
 
        In the rest of the document you will just have to write ``np.`` to use the functions from `numpy`_. Your screen should now look like the following image:
 
@@ -75,7 +88,7 @@ Creating a new code cell and running it
              :width: 100%
              :align: center
         
-        To delete a code cell, first ensure it is activated, then you can hover your mouse over the right corner of the box 
+        To delete a code cell, first ensure it is activated, then you can hover your mouse over the right corner of the cell 
         and click on the trash shaped icon.
 
         .. image:: /learn-more/images/VSC-deletecell.png
@@ -90,7 +103,7 @@ Creating a new code cell and running it
             print(np.sqrt(2) * np.pi)
 
     #. 
-       Press :kbd:`Shift+Enter` in order to execute the code from the box (or press the play button). Below the code box you should see the following result.
+       Press :kbd:`Shift+Enter` in order to execute the code from the cell (or press the play button). Below the code box you should see the following result.
 
        .. image:: /learn-more/images/VSC-numpyprint.png
                 :width: 100%
@@ -114,11 +127,11 @@ Writing text using Markdown
         to write complex mathematical equations.
 
     #. 
-        Copy and paste the following code as an example in the Markdown box:
+        Copy and paste the following code as an example in the Markdown cell:
         
         .. code:: markdown
 
-            $$ 5/10 = \frac{1}{2} $$ 
+            $$ 5/10 = \frac{5}{10} $$ 
             
             This is my solution!
 

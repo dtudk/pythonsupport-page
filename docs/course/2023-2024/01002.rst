@@ -12,6 +12,6 @@ The primary guidelines for this course are located here:
 :full-link:`https://02002.compute.dtu.dk/installation/mat1.html`
 
 Once you have followed the above guide, you additionally need to install the
-``Jupyter`` extension in VS Code, please read :ref:`here <ide-vscode>`.
+``Jupyter`` extension in VS Code, please read :doc:`here </learn-more/vscode/index>`.
 
 

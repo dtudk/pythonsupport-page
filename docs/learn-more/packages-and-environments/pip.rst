@@ -1,3 +1,5 @@
+.. _pip:
+
 pip
 ===
 
@@ -20,7 +22,7 @@ in global or virtual environments. pip also handles package versioning
 to prevent compatibility issues. As a very fundamental tool for any Python developer, pip essentially 
 is an easy-to-use tool to manage your Python packages. It also has extensive `documentation <pip-org_>`_. 
 
-``pip`` comes with most Python installations, including :ref:`conda <conda>`.
+``pip`` comes with most Python installations, including ``conda``.
 This means you can use ``pip`` in both ``conda`` and standard Python installations and environments.
 For installing Python first, see :ref:`here <install-python>`.
 
@@ -105,7 +107,7 @@ When specifying more than one package on the line, dependencies will be checked 
 Requirements file
 ^^^^^^^^^^^^^^^^^
 
-A `requirements.txt` file is often used to replicate an environment. Many Python tutorials will share a ``requirements.txt`` file which contains
+A ``requirements.txt`` file is often used to replicate an environment. Many Python tutorials will share a ``requirements.txt`` file which contains
 lines of packages. For instance, to replicate the example installation shown in :ref:`pip-installing`, one could create a file called ``requirements.txt``:
 
 .. code::
@@ -220,7 +222,7 @@ Below is a constructed example of a dependency conflict arising.
 
 .. tip::
 
-   Always prefer to use :ref:`virtual environments <python-environments>`
+   Always prefer to use :doc:`virtual environments </learn-more/packages-and-environments/environments>`
    to reduce package conflicts.
 
 The first command completes the installation of the ``dtumathtools`` package 
