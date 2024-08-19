@@ -16,9 +16,9 @@
     :open:
     :color: info
 
-    .. raw:: html 
+    .. raw:: html
     
-        <iframe src="&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=9f43eb27-2f54-46eb-b8cc-b1ce01428f3d" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 .. todo::
    Insert link to video between `"` and `&` in the iframe above.
