@@ -3,7 +3,8 @@
 {{ windows_icon }} --- Manual Installation 
 ==========================================
 
-.. button-link:: ../macos/homebrew.html
+.. button-ref:: ../macos/homebrew
+   :ref-type: doc
    :align: right
    :color: primary
    

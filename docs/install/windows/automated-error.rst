@@ -9,7 +9,7 @@
 
    It looks like there was an error during the installation
    script which unfortunately happens sometimes.
-   Please try to use `this guide <manual.html>`_ instead.
+   Please try to use :doc:`this guide <manual>` instead.
    You are also more than welcome to visit us during our office hours,
    or contact us via :mail:`e-mail <pythonsupport@dtu.dk>`
    or `Discord <ps-discord-invite_>`_.

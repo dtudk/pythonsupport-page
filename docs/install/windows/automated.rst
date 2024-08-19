@@ -3,7 +3,8 @@
 {{ windows_icon }}  --- Automated Installation
 ===============================================
 
-.. button-link:: ../macos/automated.html
+.. button-ref:: ../macos/automated
+   :ref-type: doc
    :align: right
    :color: primary
    

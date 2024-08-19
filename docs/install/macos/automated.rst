@@ -4,8 +4,8 @@
 {{ apple_icon }} --- Automated Installation
 ============================================
 
-
-.. button-link:: ../windows/automated.html
+.. button-ref:: ../windows/automated
+   :ref-type: doc
    :align: right
    :color: primary
    

@@ -4,7 +4,8 @@
 {{ apple_icon }} --- Homebrew Installation
 ============================================
 
-.. button-link:: ../windows/manual.html
+.. button-ref:: ../windows/manual
+   :ref-type: doc
    :align: right
    :color: primary
    

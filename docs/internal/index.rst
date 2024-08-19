@@ -105,7 +105,7 @@ General IT questions
 DTU Learn
    Go here: :full-link:`https://learnsupport.dtu.dk`
 Counseling for students:
-   Go here: :full-link:`https://studraadgiv.ait.dtu.dk/`
+   Go here: :full-link:`https://www.dtu.dk/uddannelse/vejledning/studievejledningen`
 
 
 .. warning::

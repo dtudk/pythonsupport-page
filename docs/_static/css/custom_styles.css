@@ -946,7 +946,8 @@ a.custom-link:hover {
 /* Button at the top of installation guide - The colors come from the default colors on sphinx documentation */
 
 
-html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external,
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal
 {
   background-color: #f3f4f5 !important; 
   border: 1px solid #d1d5d9 !important;
@@ -960,7 +961,8 @@ html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.
   text-align: center;
 }
 
-html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover,
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal:hover
 {
   color: var(--bg-primary) !important;
   border-color: var(--bg-primary) !important;
@@ -969,7 +971,8 @@ html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.
 }
 
 
-html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external,
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal
 {
   background-color: #222832 !important; 
   border: 1px solid #48566b !important;
@@ -983,7 +986,8 @@ html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.r
   text-align: center;
 }
 
-html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover,
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal:hover
 {
   color: var(--bg-primary) !important;
   border-color: var(--bg-primary) !important;
