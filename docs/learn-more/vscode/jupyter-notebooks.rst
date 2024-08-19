@@ -8,7 +8,8 @@ Creating a new Jupyter Notebook File
 .. card::
             
     #.
-        Access the command palette by either pressing :kbd:`Command+Shift+P` on {{ macos }} or :kbd:`Ctrl+Shift+P`` in Windows or by clicking help in the menu bar at the top and then show all the commands from there on.
+        Access the command palette by either pressing :kbd:`Command+Shift+P` ({{ macos }}) or :kbd:`Ctrl+Shift+P`` ({{ windows }})
+        or by clicking help in the menu bar at the top and then show all the commands from there on.
 
     #. 
         Search for create new Jupyter Notebook and click that option.
@@ -16,7 +17,6 @@ Creating a new Jupyter Notebook File
         .. image:: /learn-more/images/VSC-create-new-notebook.png
             :width: 400
             :align: center
-
 
     #. 
         Select a kernel by going to the upper right corner, clicking select kernel and then choosing the version of Python you want to use.
@@ -30,7 +30,7 @@ Creating a new Jupyter Notebook File
             You may have different versions of Python installed on your computer, and it is therefore very important to choose the version with the packages that you want to use for this project.
 
     .. tip::
-        If you accidentally chose the wrong kernel, don't worry,you can always go back by clicking the Python version you're currently using and then changing it.
+        If you accidentally choose the wrong kernel, don't worry, you can always go back by clicking the Python version you're currently using and then changing it.
 
 
 Importing packages
@@ -69,13 +69,13 @@ Creating a new code cell and running it
 .. card::
 
     #. 
-        Create a new code cell by hovering your mouse over an existing block and pressing the ``+ code`` option. 
+        Create a new code cell by hovering your mouse over an existing block (near the border) and pressing the :menuselection:`+ Code` option. 
 
         .. image:: /learn-more/images/VSC-codecell.png
              :width: 100%
              :align: center
         
-        To delete a code cell one, you can just hover your mouse over the right corner of the box 
+        To delete a code cell, first ensure it is activated, then you can hover your mouse over the right corner of the box 
         and click on the trash shaped icon.
 
         .. image:: /learn-more/images/VSC-deletecell.png
@@ -83,16 +83,14 @@ Creating a new code cell and running it
              :align: center
 
     #.
-
-        Copy and paste the following code which will multiplicate the square root of 2 and pi:
+        Copy and paste the following code which will multiply the square root of 2 and pi:
         
         .. code:: python
 
             print(np.sqrt(2) * np.pi)
 
     #. 
-
-       Press shift+Enter in order to execute the code from the box (or press the play button). Below the code box you should see the following result.
+       Press :kbd:`Shift+Enter` in order to execute the code from the box (or press the play button). Below the code box you should see the following result.
 
        .. image:: /learn-more/images/VSC-numpyprint.png
                 :width: 100%
@@ -100,21 +98,19 @@ Creating a new code cell and running it
 
 
        
-
 Writing text using Markdown
 ----------------------------
-
 
 .. card::
 
     #. 
-        Add a Markdown box.
+        Create a new markdown cell by hovering your mouse over an existing block (near the border) and pressing the :menuselection:`+ Markdown` option. 
         
         .. image:: /learn-more/images/VSC-markdownadd.png
            :width: 100%
            :align: center
         
-        You can use this option to write some text inside of your Jupyter Notebook using LaTeX. This is specially useful when you need
+        You can use this option to write some text inside of your Jupyter Notebook using LaTeX. This is especially useful when you need
         to write complex mathematical equations.
 
     #. 
@@ -164,7 +160,8 @@ Saving a File
 
             3. Choose a location and name for your file, then save it.
 
-            Note that you can save a file by pressing :kbd:`Ctrl+S`.
+            .. tip::
+               You can save a file by pressing :kbd:`Ctrl+S`.
 
         .. tab-item:: {{ macos }}
 
@@ -177,9 +174,11 @@ Saving a File
                 :align: center
                 :alt: Save File in VS Code
 
-            Note that you can save a file by pressing :kbd:`Command+S`.
+            .. tip::
+               You can save a file by pressing :kbd:`Command+S`.
 
     .. tip::
 
-        You can also enable autosave by pressing the :menuselection:`File --> Auto save` button in the top left corner of VS Code.
+        You can also enable auto save by pressing the
+        :menuselection:`File --> Auto Save` button in the top left corner of VS Code.
 

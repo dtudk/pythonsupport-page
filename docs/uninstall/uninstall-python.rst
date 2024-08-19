@@ -36,7 +36,7 @@ Be sure to place the downloaded script on your *Desktop*.
 
 Once you have downloaded and placed on the *Desktop* open a terminal (:kbd:`Command + Space` then type ``terminal`` :kbd:`Enter`).
 
-Then run the following command by copying, pasting into your temrinal and pressing :kbd:`Enter`:
+Then run the following command by copying, pasting into your terminal and pressing :kbd:`Enter`:
 
 .. code:: bash
 
