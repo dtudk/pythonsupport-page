@@ -26,12 +26,12 @@ Can I use virtual environments with VS Code?
       In this case you can only get virtual environments to work by
       following this:
 
-      1. Open the VS Code terminal (press :kbd:`Ctrl-Shift-P`, or :kbd:`Command-Shift-P` on Mac)
+      1. Open the VS Code terminal (press :kbd:`Ctrl+Shift+P`, or :kbd:`Command+Shift+P` on {{ macos }})
          and search for ``python env``, select the menu
          ``Python: Create Environment``
       2. Now two additional options open up, choose ``Venv``
       3. Wait until it is done.
-      4. Execute a single line of code, e.g. ``exit()`` + :kbd:`Shift-Enter`
+      4. Execute a single line of code, e.g. ``exit()`` + :kbd:`Shift+Enter`
          to force the virtual environment being activated in the terminal
          associated with the workspace (you should see that the left of the
          terminal shows ``.venv``). Then it will execute the ``exit()`` code and

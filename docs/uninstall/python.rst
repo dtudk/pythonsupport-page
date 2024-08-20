@@ -34,7 +34,7 @@ This may include versions installed from the official Python website, anaconda o
 The deletion script can be :download:`downloaded here </_downloads/deletePythonMac.sh>`.
 Be sure to place the downloaded script on your *Desktop*.
 
-Once you have downloaded and placed it on the *Desktop*, open a terminal (:kbd:`Command + Space`, then type ``terminal`` :kbd:`Enter`).
+Once you have downloaded and placed it on the *Desktop*, open a terminal (:kbd:`Command+Space`, then type ``terminal`` :kbd:`Enter`).
 
 Then run the following command by copying, pasting into your terminal, and pressing :kbd:`Enter`:
 

@@ -214,7 +214,7 @@ First, check that you are already in a virtual environment (see point 5 below). 
 
 5. Check that the virtual environment is functional. Sometimes you must
    run a small Python script to enable the virtual environment,
-   either press :fas:`arrow-right`, or :kbd:`Shift-Enter`.
+   either press :fas:`arrow-right`, or :kbd:`Shift+Enter`.
 
    .. image:: /learn-more/images/environments-vscode-python-env-venv-check.png
       :width: 700

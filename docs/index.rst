@@ -107,6 +107,6 @@ Office hours
    install/python.rst
    course/index.rst
    learn-more/index.rst
-   videotutorials/index.rst
+   videos/index.rst
    uninstall/index.rst
 

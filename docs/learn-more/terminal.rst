@@ -13,7 +13,7 @@ Each operating system opens terminals in a different way.
       :sync: powershell
 
       Search for ``powershell`` in the Windows taskbar search or
-      press :kbd:`Win-R` buttons (simultaneously), then type
+      press :kbd:`Win+R` buttons (simultaneously), then type
       ``powershell`` in the small run window appearing, press :kbd:`Enter`.
 
       This should open a **Terminal** looking *something* like this:
@@ -26,7 +26,7 @@ Each operating system opens terminals in a different way.
    .. tab-item:: {{ mac_bash }}
       :sync: bash
 
-      Open the Launchpad icon in the Dock, or press :kbd:`Command-Space`; type ``Terminal`` and click on it.
+      Open the Launchpad icon in the Dock, or press :kbd:`Command+Space`; type ``Terminal`` and click on it.
 
       See more detailed explanation `here <https://support.apple.com/en-gb/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac>`__.
 
