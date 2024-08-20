@@ -2,10 +2,10 @@ Jupyter Notebooks (.ipynb)
 ==========================
 
 
-An ``.ipynb`` file is a notebook file that contains Python code, intermixed with
+A ``.ipynb`` file is a notebook file that contains Python code intermixed with
 `Markdown text <https://en.wikipedia.org/wiki/Markdown>`__.
 
-It works similar to other *cell based* execution models. For example individual segments
+It works similar to other *cell-based* execution models. For example, individual segments
 of the notebook can be executed in arbitrary order.
 
 In this tutorial you will learn how to do all of these using Visual Studio Code:
@@ -21,8 +21,8 @@ Creating a new Jupyter Notebook File
 .. card::
             
     #.
-        Access the command palette by either pressing :kbd:`Command+Shift+P` ({{ macos }}) or :kbd:`Ctrl+Shift+P` ({{ windows }}),
-        or by clicking help in the menu bar at the top and then show all the commands from there on.
+        Access the command palette by pressing :kbd:`Command+Shift+P` ({{ macos }}) or :kbd:`Ctrl+Shift+P` ({{ windows }})
+        or by clicking :menuselection:`Help` in the menu bar at the top, and then all the commands are shown
 
     #. 
         Search for create new Jupyter Notebook and click that option.
@@ -32,7 +32,7 @@ Creating a new Jupyter Notebook File
             :align: center
 
     #. 
-        Select a kernel by going to the upper right corner, clicking select kernel and then choosing the version of Python you want to use.
+        You can select a kernel by going to the upper right corner, clicking :menuselection:`Select Kernel`, and then choosing the version of Python you want to use.
 
         .. image:: /learn-more/images/VSC-select-kernel.png
             :width: 100%
@@ -40,7 +40,7 @@ Creating a new Jupyter Notebook File
 
         .. note::
 
-            You may have different versions of Python installed on your computer, and it is therefore very important to choose the version with the packages that you want to use for this project.
+            You may have different versions of Python installed on your computer, so it is very important to choose the version with the packages you want to use for this project.
 
     .. tip::
         If you accidentally choose the wrong kernel, don't worry, you can always go back by clicking the Python version you're currently using and then changing it.
@@ -52,8 +52,7 @@ Importing packages
 .. card::
 
     #. 
-        Start by clicking on the first cell in the top of the notebook
-
+        Start by clicking on the first cell at the top of the notebook
 
     #.
         Copy and paste the following code:
@@ -63,15 +62,14 @@ Importing packages
             import numpy as np
 
     #. 
-       Press :kbd:`Shift+Enter` in order to execute the code from the cell. A tick shows that the code from the specific cell is executed 
-       and the time next to it shows how long it took. You can also press the play button next to the cell to execute the code. 
+       Press :kbd:`Shift+Enter` to execute the code from the cell. A tick shows that the code from the specific cell is executed 
+       and the time next to it shows how long it took. Alternatively, you can press the play button next to the cell to execute the code. 
 
-       In the rest of the document you will just have to write ``np.`` to use the functions from `numpy`_. Your screen should now look like the following image:
+       In the rest of the document you will have to write ``np.`` to use `numpy`_ functions. Your screen should look like the following image:
 
        .. image:: /learn-more/images/VSC-numpy-import.png
           :width: 100%
           :align: center
-
 
 
 
@@ -171,7 +169,7 @@ Saving a File
                 :align: center
                 :alt: Save File in VS Code
 
-            3. Choose a location and name for your file, then save it.
+            3. Please choose a location and name for your file, then save it.
 
             .. tip::
                You can save a file by pressing :kbd:`Ctrl+S`.
@@ -180,7 +178,7 @@ Saving a File
 
             1. Press the :menuselection:`File` button in the top left corner of your screen.
             2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
-            3. Choose a location and name for your file, then save it.
+            3. Please choose a location and name for your file, then save it.
 
             .. image:: ../images/saveFileMac.png
                 :width: 450

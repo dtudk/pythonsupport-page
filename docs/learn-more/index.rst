@@ -17,9 +17,9 @@ Learn more
    will be introduced *during* the semester, so this can wait until introduced in
    the courses.
 
-Here you will find the essential tools needed to get ready to code in Python.
+Here you will find the essential tools needed to prepare to code in Python.
 The following sections function as short introductions,
-helping you to understand the basics of these tools.
+helping you understand the basics of these tools.
 
 * The :doc:`Terminal <terminal>` is the most direct line of communication between you and your computer
 

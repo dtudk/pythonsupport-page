@@ -15,7 +15,7 @@
    or `Discord <ps-discord-invite_>`_.
    More information can be found at our :ref:`homepage <reach-us-reference>`.
 
-   If you have the time, we would greately appreciate
+   If you have the time, we would appreciate
    if you could report the error to us,
    by simply visiting or writing an e-mail to us with what happened,
    and if possible a screenshot of the error.

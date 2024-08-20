@@ -22,6 +22,8 @@
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=52941d0b-cc65-42a0-9ceb-b1ce00897b51&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
+.. _install-python-macos-homebrew:
+
 Step 1: Install Homebrew 
 --------------------------
 
@@ -32,8 +34,8 @@ Step 1: Install Homebrew
         
     #.  
         The Homebrew website will ask you to open a terminal.
-        This can be done by pressing :kbd:`Command+Space` at the same time.
-        Then search for :menuselection:`Terminal` and press :kbd:`Enter`.
+        To do this, press :kbd:`Command+Space` at the same time.
+        Then, search for :menuselection:`Terminal` and press :kbd:`Enter`.
         Do *not* close the terminal once the installation script has finished.
 
         .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
@@ -46,17 +48,19 @@ Step 1: Install Homebrew
 
     #.
         
-        Add Homebrew to the **PATH** by copying, pasting and running the code that Homebrew displays in the Terminal (look at the picture for guidance). 
-        Press :kbd:`Enter` once you have pasted the code. The code should look similar to the following image, 
-        but might differ a little for different {{ macos }} versions.
+        Add Homebrew to the ``PATH`` by copying, pasting and running the code that Homebrew displays
+        in the Terminal (look at the picture below for guidance). 
+        Press :kbd:`Enter` once you have pasted the code. The code should look similar to the following image 
+        but might differ slightly for different {{ macos }} versions.
 
         .. image:: /images/install/macos-package-managed-homebrew-terminal-instructions.png
             :width: 400
             :align: center
 
 
+.. _install-python-macos-conda:
+.. _install-python-macos-python:
 
-.. _step2-homebrew-reference:
 
 Step 2: Install Miniconda and Python
 --------------------------------------
@@ -91,6 +95,7 @@ Step 2: Install Miniconda and Python
             conda install python={{ python_version_recommended }} -y ; conda install dtumathtools pandas scipy statsmodels uncertainties -y
             
     
+.. _install-python-macos-vscode:
 
 Step 3: Install Visual Studio Code 
 ---------------------------------------------------
@@ -103,6 +108,8 @@ Step 3: Install Visual Studio Code
 
         brew install --cask visual-studio-code
 
+
+.. _install-python-macos-vscode-exts:
 
 Step 4: Install extensions for Visual Studio Code
 ---------------------------------------------------
@@ -120,14 +127,14 @@ Step 4: Install extensions for Visual Studio Code
            :align: center
     
     #.  
-        Search for Python, and download the extension. Make sure that it is from Microsoft. 
+        Search for `Python`, and download the extension. Make sure that it is from Microsoft. 
 
         .. image:: /images/install/macos-package-managed-python.png
             :width: 200
             :align: center
 
     #. 
-        Hereafter search for Jupyter, and download that extension as well. This also needs to be from Microsoft.
+        Hereafter search for `Jupyter`, and download that extension as well. This also needs to be from Microsoft.
         
         .. image:: /images/install/macos-package-managed-jupyter.png
             :width: 200

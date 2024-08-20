@@ -1,4 +1,4 @@
-.. _manual-reference-windows:
+.. _install-python-windows:
 
 {{ windows_icon }} --- Manual Installation 
 ==========================================
@@ -12,8 +12,6 @@
     Press here for {{ macos }} {{ apple_icon }}
    
 
-
-
 .. dropdown:: Video Guide
     :open:
     :color: info
@@ -22,6 +20,7 @@
     
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=045bfd79-bb8a-49af-b1d7-b1ce00a9662e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+.. _install-python-windows-conda:
 
 Step 1: Install Miniconda
 --------------------------
@@ -29,11 +28,10 @@ Step 1: Install Miniconda
 .. card:: 
 
     #. 
-        Go to to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
-
+        Go to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
 
     #. 
-        Under the title *Latest Miniconda installer links*, you will see different installers where you have to download the ``Miniconda3 Windows 64-bit``, as shown below.
+        Under the title *Latest Miniconda installer links*, you will see different installers where you must download the ``Miniconda3 Windows 64-bit``, as shown below.
 
         .. image:: /images/install/windows-fully-manual-miniconda.png
             :width: 400
@@ -41,12 +39,14 @@ Step 1: Install Miniconda
 
     #. 
         Follow the instructions during the installation.
-        Make sure to cross off all the options regarding **PATH** as shows below.
+        Make sure to cross off all the options regarding ``PATH``, as shown below.
 
         .. image:: /images/install/Miniconda-install-path.png
             :width: 400
             :align: center
 
+
+.. _install-python-windows-python:
 
 Step 2: Install Python
 --------------------------
@@ -58,8 +58,8 @@ Step 2: Install Python
         
 
     #.
-       Once you see Windows PowerShell, on the right hand side you can select *Run as Administrator*. If not, right-click the
-       icon and select :menuselection:`Run as Administrator`. 
+       Once you see Windows PowerShell on the right-hand side, you can select *Run as Administrator*. If not, right-click the
+       icon and choose :menuselection:`Run as Administrator`. 
 
        .. image:: /images/install/windows-ps-run-admin.png
            :width: 400
@@ -82,6 +82,7 @@ Step 2: Install Python
            conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
 
+.. _install-python-windows-vscode:
 
 Step 3: Install Visual Studio Code
 -----------------------------------
@@ -99,6 +100,8 @@ Step 3: Install Visual Studio Code
             :align: center
       
 
+.. _install-python-windows-vscode-exts:
+
 Step 4: Install extensions for Visual Studio Code
 ---------------------------------------------------
 
@@ -112,14 +115,14 @@ Step 4: Install extensions for Visual Studio Code
         Open Visual Studio Code and select the Extensions |extensions| tab on the left. 
         
     #.
-        Here search for Python, and download the extension. Make sure that it's from Microsoft. 
+        Here search for `Python`, and download the extension. Make sure that it's from Microsoft. 
 
         .. image:: /images/install/macos-package-managed-python.png
             :width: 200
             :align: center
         
     #. 
-        Search for Jupyter, and download 
+        Search for `Jupyter`, and download 
         that extension as well. This also needs to be from Microsoft.
 
         .. image:: /images/install/macos-package-managed-jupyter.png

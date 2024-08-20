@@ -1,12 +1,13 @@
 Visual Studio Code
 ===================
 
-Similarly to IDLE, Visual Studio Code (VS Code) is a place to write your Python code. VS Code is great for larger projects.
-It is useful for things like debugging, organizing files and collaborating with other people for coding.
+Similarly to :doc:`IDLE <../idle>`, Visual Studio Code (VS Code) is a place to write your Python code.
+VS Code is built for large projects.
+It is useful for, but not limited to, debugging, organizing files, and collaborating on code with others.
 It also comes with extensions that can improve visual clarity, help you collaborate with 
-others and a particularly useful type of file called Jupyter notebooks. 
+others and a particularly useful type of file called Jupyter Notebooks. 
 
-We have created two tutorials that will introduce you to two different type of files and workflows:
+We have created some tutorials that will introduce you to different type of files and workflows:
 
 .. toctree:: 
    :maxdepth: 1
@@ -16,10 +17,8 @@ We have created two tutorials that will introduce you to two different type of f
 
 
 .. note::
-   
-   If you are in your 1\ :sup:`st` semester, VS Code will be gradually introduced.
+  
+   Visual Studio Code will be gradually introduced if you are in your 1\ :sup:`st` semester.
    You can return here later if needed.
-   Just remember that this page is here to get you started with some basic tips whenever you need. 
-
-
+   Remember that this page is here to get you started with some basic tips whenever needed. 
 

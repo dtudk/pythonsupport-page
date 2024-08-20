@@ -30,8 +30,8 @@ Install everything at once
         
 
     #.
-        Once you see Windows PowerShell, on the right hand side you can select *Run as Administrator*. If not, right-click the
-        icon and select :menuselection:`Run as Administrator`. 
+        Once you see Windows PowerShell on the right-hand side, you can select *Run as Administrator*.
+        If not, right-click the icon and select :menuselection:`Run as Administrator`. 
 
         .. image:: /images/install/windows-ps-run-admin.png
             :width: 400
@@ -47,7 +47,7 @@ Install everything at once
         .. include:: /_rst_includes/tip-copy.rst
 
     #.
-        Wait until you see ``Script finished``
+        Wait until you see ``Script finished``.
 
 .. include:: /_rst_includes/tip-finish.rst
 

@@ -61,7 +61,7 @@ What's on this website?
 
 Welcome to the DTU Python Installation Support website. This website provides 
 essential information and resources for installing Python on your 
-personal computer, and helping you get ready to start programming with Python.
+computer and helping you prepare to start programming with Python.
 
 .. grid:: 1 1 1 2
    :gutter: 1

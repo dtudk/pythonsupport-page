@@ -3,9 +3,10 @@ IDLE
 
 .. include:: /_rst_includes/tip-copy.rst
 
-IDLE is an integrated development environment (IDE) that is installed automatically with Python. It provides you with an environment where you can write Python scripts and run them, or you can write Python code line by line to execute immediately. 
+IDLE is an integrated development environment (IDE) installed automatically with Python.
+It provides you with an environment where you can write Python scripts and run them or write Python code line by line to execute immediately. 
 
-IDLE is lightweight, simple and great for smaller coding projects. Therefore it is well suited for beginners. 
+IDLE is lightweight, simple, and great for introducing how to do coding projects. Therefore, it is well suited for beginners. 
 
 
 Getting started
@@ -52,14 +53,14 @@ Getting started
 Creating and running scripts
 ----------------------------
 
-A Python *script* is a file with Python code. Once the script is *run* all the code is executed at once. This is great for larger jobs and allows for reusage of your code. 
+A Python *script* is a file with Python code. Once the script is *run*, all the code is executed. This is great for larger jobs and allows for reusage of your code. 
 
 .. tab-set::
 
 
    .. tab-item:: Windows
 
-      #. To create a Python script, go to *File > New File* in IDLE menu. 
+      #. Go to :menuselection:`File --> New File` in the IDLE menu to create a Python script. 
 
          .. image:: images/idle_windows2.png
             :width: 550
@@ -87,7 +88,7 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
             :align: center
             :alt: IDLE Shell
 
-      #. Go to *File* > *save as* and save the script as *sum.py*
+      #. Go to :menuselection:`File --> Save As` and save the script as ``sum.py``
 
           .. image:: images/idle_windows4.png
            :width: 550
@@ -95,12 +96,13 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
            :alt: IDLE Shell
 
       #. Run the script.
-         In the top menu, go to *run* > *run module*. You should now get some output. 
+         In the top menu, go to :menuselection:`Run --> Run Module` (or press :kbd:`F5`).
+         You should now see some output. 
 
 
    .. tab-item:: MacOS
 
-      #. To create a Python script, go to *File > New File* in the IDLE menu. 
+      #. Go to :menuselection:`File --> New File` in the IDLE menu to create a Python script.
 
          .. image:: images/idle_mac2.png
             :width: 550
@@ -128,7 +130,7 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
             :align: center
             :alt: IDLE Shell
 
-      #. Go to *File* > *save as* and save the script as *sum.py*
+      #. Go to :menuselection:`File --> Save As` and save the script as ``sum.py``
 
           .. image:: images/idle_mac4.png
            :width: 550
@@ -136,13 +138,12 @@ A Python *script* is a file with Python code. Once the script is *run* all the c
            :alt: IDLE Shell
 
       #. Run the script.
-         In the top menu, go to *run* > *run module*. You should now get some output. 
+         In the top menu, go to :menuselection:`Run --> Run Module` (or press :kbd:`F5`).
+         You should now see some output. 
 
 
+You can now modify and run the script as much as you want.
 
-You can now modify and run the script as much as you want. The advantage here, is that the code can be modified and used without having to type at all.
-
-As mentioned, the IDLE is best suited for simple projects. Around week 8 you will probably start using VS Code. 
-
-
+As mentioned, the IDLE is best suited for simple projects. Later during the 1\ :sup:`st` semester
+you will be introduced to Visual Studio Code.
 

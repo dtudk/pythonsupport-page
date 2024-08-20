@@ -12,7 +12,6 @@
     Press here for Windows {{ windows_icon }}
 
 
-
 .. dropdown:: Video Guide
     :open:
     :color: info
@@ -21,8 +20,6 @@
     
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=9f43eb27-2f54-46eb-b8cc-b1ce01428f3d" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-.. todo::
-   Insert link to video between `"` and `&` in the iframe above.
 
 Install everything at once
 ---------------------------------------------------
@@ -57,8 +54,8 @@ Install everything at once
 
         .. note::
 
-            During the installation you will see warnings and caveats etc.
-            These will all be resolved automatically by the script.
+            During the installation, you will see warnings and caveats, etc.
+            The script will resolve these automatically.
             Please let the script finish.
             When you see ``Script finished``, the installation has been successful!
 

@@ -52,7 +52,7 @@ Opening a folder in VS Code allows you to manage all your project files in one p
 Creating a Python-file
 -----------------------
 
-You can create a Python file in VS code. This is useful if you are writing code that you will need again. 
+You can create a Python file using VS code. This is useful if you are writing code that you will need again. 
 
 .. card::      
 
@@ -99,7 +99,7 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
                 :align: center
                 :alt: Save File in VS Code
 
-            3. Choose a location and name for your file, then save it.
+            3. Please choose a location and name for your file, then save it.
 
             Note that you can save a file by pressing :kbd:`Ctrl+S`.
 
@@ -107,7 +107,7 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
 
             1. Press the :menuselection:`File` button in the top left corner of your screen.
             2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
-            3. Choose a location and name for your file, then save it.
+            3. Please choose a location and name for your file, then save it.
 
             .. image:: ../images/saveFileMac.png
                 :width: 450
@@ -119,6 +119,7 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
     .. tip::
 
         You can also autosave by pressing the :menuselection:`File` button in the top left corner of VS Code and then selecting :menuselection:`Auto Save`.
+
 
 Opening a File
 ---------------------------
@@ -164,7 +165,7 @@ Opening a file in VS Code allows you to edit and run your code directly within t
 Selecting the right interpreter
 -------------------------------
 
-Once you have created a Python file you need to select your interpreter.
+Once you have created a Python file, select your interpreter.
 In short, the interpreter is the version of Python that you use to execute your code.
 
 .. card::
@@ -181,8 +182,8 @@ In short, the interpreter is the version of Python that you use to execute your 
                         :align: center
                         :alt: IDLE Shell
 
-            3. Choose the option similar to ``Python {{python_version_recommended}}.5 ('base')``.
-               You may have a different version of Python on your own PC.
+            3. Choose the option similar to ``Python {{python_version_recommended}}.X ('base')``.
+               Your PC may have a different version of Python.
             
 
             .. image:: ../images/VScode_windows3.png
@@ -193,7 +194,7 @@ In short, the interpreter is the version of Python that you use to execute your 
 
             .. tip::
 
-                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with.
+                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for help with anything.
 
         .. tab-item:: MacOS
 
@@ -214,8 +215,7 @@ In short, the interpreter is the version of Python that you use to execute your 
 
             .. tip::
 
-                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for anything you need help with.
-
+                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for help with anything.
             
 
 

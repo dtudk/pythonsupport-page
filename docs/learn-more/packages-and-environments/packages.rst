@@ -6,20 +6,23 @@ Packages
 .. include:: /_rst_includes/tip-copy.rst
 
 
-Python packages are an integral part of programming in Python. A package is a bundle 
-of modules. Modules are individual Python files that contain prewritten code pieces that 
-can be used in your projects which makes it easier to program. As an example, you will use 
-the package `sympy` quite often in your studies. `sympy` package is a collection of different modules which contain 
-code for different mathematical operations. The module `sympy.matrices` contains tools for 
+Python packages are an integral part of Python programming. A package is a bundle 
+of modules. Modules are individual Python files that contain code pieces that 
+can be used in your projects, which makes them easier to program.
+For example, you will often use 
+the package `sympy` in your studies.
+The `sympy` package is a collection of modules containing 
+code for different mathematical operations.
+The module `sympy.matrices` contain tools for 
 working with matrices, or `sympy.calculus` includes operations for derivatives and integrals.
 
 .. tip:: 
-    It is important to make sure that you have activated the correct environment before proceeding.
-    If you do not know what this means, please check the Environments section.
+   It is important to ensure that you have activated the correct environment before proceeding.
+   Please check the :doc:`environments` section, if you need to know what this means.
 
 
 Conda is an open-source package management system that can install, run, and 
-update packages and their dependencies in your Python development environment. Our recommendation is 
+update packages and their dependencies in your Python development environment. We recommend is 
 using Conda to manage your packages. If you followed our :doc:`installation guides </install/python>`, you already have Conda 
 installed.
 
@@ -60,8 +63,8 @@ Numpy, a Scipy version lower than 1.10, and the latest version of matplotlib.
 Navigating packages
 ^^^^^^^^^^^^^^^^^^^
 
-Quite often it is necessary to list and find out if you already have a certain package and see 
-what package version you have. Using ``conda list`` you can see all the packages that you have 
+Quite often, it is necessary to list and find out if you already have a certain package and what package version you have.
+Using the command ``conda list``, you can see all the packages that you have 
 installed and their specific versions.
 
 .. tab-set::
@@ -132,5 +135,6 @@ when you no longer need a package or want to replace it with a different version
 The above command will remove the numpy package from your environment.
 
 .. tip::
-    Further documentation is available on Conda's webpage on `packages <https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/packages.html>`__ and 
-    `installation <https://docs.anaconda.com/working-with-conda/packages/install-packages/>`__.
+    Further documentation on packages and installation is available on
+    `Conda's webpage <https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/packages.html>`__.
+
