@@ -15,7 +15,9 @@ If unsure see the image below:
 
 If you do not see ``(base)`` in your Terminal, please do the following:
 
-* Ensure that Miniconda is installed: Search for ``Miniconda PowerShell`` prompt on your computer and open it up. If you cannot find it, press :ref:`here to install Miniconda <install-python-windows-conda>`. 
+* Ensure that Miniconda is installed: Search for ``Anaconda Powershell`` (it will say ``Anaconda Powershell Prompt (Miniconda3)``)
+  prompt on your computer and open it up.
+  If you cannot find it, press :ref:`here to install Miniconda <install-python-windows-conda>`. 
 * After opening the Miniconda Shell, type ``conda init`` and press :kbd:`Enter`.
 * Open up PowerShell again and verify that you now see ``(base)``.
 
