@@ -1,45 +1,64 @@
 
-Verification and Quick Troubleshooting
+Verification
 --------------------------------------
 
-Please go through the following steps to ensure your installation is working correctly.
-Open up a Terminal again (:kbd:`Command+Space`).
-You can proceed if you see ``(base)`` next to your username.
-If unsure see the image below:
+Please verify the following steps:
 
-.. card::
+1. Open up a new Terminal (:kbd:`Command+Space`); ensure ``(base)`` is shown to the
+   left of your username.
+   Something like the image below:
 
-    .. image:: /images/install/MacOS-base-terminal.png
-            :width: 100%
-            :align: center
+   .. card::
 
-If you do not see ``(base)`` in your Terminal, please do the following:
+      .. image:: /os/gifs/Unix/conda-check-base.gif
+         :width: 100%
+         :align: center
+
+2. Type ``idle3`` in the Terminal, then press :kbd:`Enter`.
+   This should open a new window in which you can run Python code.
+
+3. Ensure the :guilabel:`IDLE` window says ``Python {{ python_version }}.X``
+   in the top left
+   (or in the range of {{python_version_min}} -- {{python_version_max}}).
+
+4. Run the following Python code, by copy-pasting it into the :guilabel:`IDLE` window, then press :kbd:`Enter`:
+
+   .. code:: python
+
+      import dtumathtools, pandas, scipy, statsmodels, uncertainties
+
+   It should simply show a new line (``>>>``) without any text (indicating everything got imported correctly).
+   See the below image for an example:
+
+   .. card::
+
+      .. image:: /images/install/MacOS-IDLE-import.png
+         :width: 100%
+         :align: center
+
+
+If some of the steps cannot be verified, please continue reading the Troubleshooting section.
+
+
+Troubleshooting
+^^^^^^^^^^^^^^^^
+
+Only follow these troubleshooting steps if something in the previous section did not check out.
+
 
 * Ensure that Miniconda is installed, follow
   :ref:`these instructions <install-python-macos-conda>`.
-* Open up a Terminal again and verify that you now see ``(base)``.
+
+* Ensure the packages are installed (if they are already installed, this will not do anything).
+
+  Paste the following line of code to the Terminal and press :kbd:`Enter`:
+
+  .. code:: bash
+
+     conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
 
-Now ensure the following:
-
-* Open up a Terminal and type ``idle3``, then press :kbd:`Enter`.
-  This should open a new window in which you can run Python code.
-* The Idle window says ``Python {{ python_version }}.X`` in the top left (or in the range of {{python_version_min}} -- {{python_version_max}}).
-* You get no errors when typing ``import dtumathtools, pandas, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
-
-.. card::
-
-    .. image:: /images/install/MacOS-IDLE-import.png
-            :width: 100%
-            :align: center
-
-
-If it is not the case for any of the above, try to paste the following line of code in the terminal and press :kbd:`Enter`:
-
-.. code:: bash
-
-   conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
-
+* Go back to the previous Verification section and check them again.
 
 If you are still having trouble or have any questions, please do not hesitate to visit us at during office hours
 or contact us via :mail:`email <pythonsupport@dtu.dk>`

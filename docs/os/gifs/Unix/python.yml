@@ -5,7 +5,7 @@ config:
 
 records:
   - delay: 100
-    content: "\r\e]0;python@system:~/test\e\\\e]7;file://system/home/python/test\e\\\e[?2004h\e]0;python@system: ~/test\a\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
+    content: "\r\e]0;\e[01;32mpython@system\e[00m:\e[01;34m~/test\e[00m$ "
   - delay: 2500
     content: p
   - delay: 100

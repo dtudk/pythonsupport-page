@@ -1,46 +1,67 @@
 
-Verification and Quick Troubleshooting
+Verification
 --------------------------------------
 
-Please go through the following steps to ensure your installation is working correctly.
-Open up PowerShell again.
-You can proceed if you see ``(base)`` next to your username.
-If unsure see the image below:
+Please verify the following steps:
 
-.. card::
+1. Open up a new PowerShell window; ensure ``(base)`` is shown to the left of the
+   text.
+   Something like the image below:
 
-    .. image:: /images/install/windows-ps-base.png
-                :width: 100% 
-                :align: center
+   .. card::
 
-If you do not see ``(base)`` in your Terminal, please do the following:
+      .. image:: /os/gifs/PS/conda-check-base.gif
+         :width: 100% 
+         :align: center
 
-* Ensure that Miniconda is installed: Search for ``Anaconda Powershell`` (it will say ``Anaconda Powershell Prompt (Miniconda3)``)
+2. Type ``idle`` in the Powershell window, then press :kbd:`Enter`.
+   This should open a new window in which you can run Python code.
+
+3. Ensure the :guilabel:`IDLE` window says ``Python {{ python_version }}.X``
+   in the top left
+   (or in the range of {{python_version_min}} -- {{python_version_max}}).
+
+4. Run the following Python code, by copy-pasting it into the :guilabel:`IDLE` window, then press :kbd:`Enter`:
+
+   .. code:: python
+
+      import dtumathtools, pandas, scipy, statsmodels, uncertainties
+
+   It should simply show a new line (``>>>``) without any text (indicating everything got imported correctly).
+   See the below image for an example:
+
+   .. card::
+
+      .. image:: /images/install/windows-IDLE-import.png
+         :width: 100% 
+         :align: center
+
+If some of the steps cannot be verified, please continue reading the Troubleshooting section.
+
+
+Troubleshooting
+^^^^^^^^^^^^^^^^
+
+Only follow these troubleshooting steps if something in the previous section did not check out.
+
+* Ensure that Miniconda is installed:
+  Search for ``Anaconda Powershell`` (it will say ``Anaconda Powershell Prompt (Miniconda3)``)
   prompt on your computer and open it up.
-  If you cannot find it, press :ref:`here to install Miniconda <install-python-windows-conda>`. 
-* After opening the Miniconda Shell, type ``conda init`` and press :kbd:`Enter`.
-* Open up PowerShell again and verify that you now see ``(base)``.
 
-Now ensure the following:
+  If you cannot find it, press :ref:`here to install Miniconda <install-python-windows-conda>`.
 
-* Open up Powershell and type ``idle``, then press :kbd:`Enter`.
-  This should open a new window in which you can run Python code.
-* The Idle window says ``Python {{ python_version }}.X`` in the top left (or in the range of {{python_version_min}} -- {{python_version_max}}).
-* You get no errors when typing ``import dtumathtools, pandas, uncertainties`` and press :kbd:`Enter`. This should open a new line (``>>>``) without any text, as shown below.
+* After opening the Anaconda Powershell, type ``conda init`` and press :kbd:`Enter`.
 
-.. card::
+* Ensure the packages are installed (if they are already installed, this will not do anything).
 
-    .. image:: /images/install/windows-IDLE-import.png
-                :width: 100% 
-                :align: center
+  Paste the following line of code to the PowerShell window and press :kbd:`Enter`:
+
+  .. code:: pwsh
+
+     conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
 
-If this is not the case for any of the above, try to paste the following line of code in PowerShell and press :kbd:`Enter`:
-
-.. code:: bash
-
-   conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
-
+* Go back to the previous Verification section and check them again.
 
 If you are still having trouble or have any questions, please do not hesitate to visit us at during office hours
 or contact us via :mail:`email <pythonsupport@dtu.dk>`
