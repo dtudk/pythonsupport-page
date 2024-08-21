@@ -22,7 +22,7 @@ Introduction to VS Code
 
     .. raw:: html
         
-        <div style="position: relative; width: 640px; height: 405px;">
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
         <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
         </div>
@@ -41,9 +41,12 @@ What are workspaces?
     Please insert description of video here and video link to panopto using the following format
 
     .. raw:: html
-    
+        
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
+        </div>
+        
 
 Open the terminal in VS code 
 ------------------------------
@@ -56,11 +59,14 @@ Open the terminal in VS code
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
 Run Code 
@@ -74,11 +80,14 @@ Run Code
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
 Introduction to debugging
@@ -92,11 +101,14 @@ Introduction to debugging
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
 Fixing module name error
@@ -110,14 +122,17 @@ Fixing module name error
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
-Introuction to Jupyter notebooks
+Introduction to Jupyter notebooks
 ---------------------------------
 
 .. card::
@@ -128,11 +143,14 @@ Introuction to Jupyter notebooks
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
 What are extensions?
@@ -146,11 +164,14 @@ What are extensions?
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
 How to import a package
@@ -164,11 +185,14 @@ How to import a package
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
 
 
 Creating a Python environment 
@@ -182,11 +206,15 @@ Creating a Python environment
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
+
 
 Using the terminal
 ------------------------
@@ -199,32 +227,32 @@ Using the terminal
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        </div>
+
 
 Keybindings
 ---------------
 
 .. card::
 
-   **Topics explained in this video:**
+    **Topics explained in this video:**
 
     * Topic 1
     * Topic 2
     * Etc...
 
-    Please insert description of video here and video link to panopto using the following format
+    Please insert description of video here and video link to Panopto using the following format
 
     .. raw:: html
-    
+
+        <div class="video-container" style="position: relative; width: 640px; height: 405px;">
+        <div class="video-placeholder"><p>Video on picture in picture</p></div>
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ed8bea53-566e-430b-800d-b18400b3ff31&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-
-
-
-
-
+        </div>
