@@ -63,9 +63,10 @@ Creating an environment
 For example, let us create an environment with Conda for Course A. An environment can be created by using:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
@@ -74,7 +75,7 @@ For example, let us create an environment with Conda for Course A. An environmen
          # alternatively, the environment can be placed in a subdirectory
          conda create --prefix course-A
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -96,9 +97,10 @@ Activating an environment
 Once the environment is created, one can use the environment by *activating* it.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
         
@@ -107,7 +109,7 @@ Once the environment is created, one can use the environment by *activating* it.
          # if the environment was created in a sub directory (--prefix):
          conda activate .\course-A
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -130,9 +132,10 @@ Below is a complete example of creating an environment using a specific Python
 version, installing a specific package, running code in the environment, and exiting it.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
@@ -142,7 +145,7 @@ version, installing a specific package, running code in the environment, and exi
          python -c "import numpy as np ; print(np.__version__)"
          conda deactivate
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -248,9 +251,10 @@ sourced (activated), all ``pip`` commands only act within that environment.
 An environment can be created using:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
@@ -258,7 +262,7 @@ An environment can be created using:
          # create an environment named 'course-A' in the current directory
          python -m venv course-A
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -271,9 +275,10 @@ Once created, one can *activate*/use the environment by *sourcing* a file.
 Change ``course-A`` with the name of the environment.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. warning::
          Please see :ref:`this FAQ entry <faq-win-ps-execution-policy>`!
@@ -282,7 +287,7 @@ Change ``course-A`` with the name of the environment.
 
          course-A\Scripts\Activate.ps1
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -298,9 +303,10 @@ Below is an example workflow of creating an environment, installing a specific
 package, running a code using the environment, and exiting the environment.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
@@ -310,7 +316,7 @@ package, running a code using the environment, and exiting the environment.
          python -c "import numpy as np ; print(np.__version__)"
          deactivate
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -355,15 +361,16 @@ If not, install the kernel runner in the virtual environment:
 
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          python -m ipykernel install --prefix <path to venv|conda-env>
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash

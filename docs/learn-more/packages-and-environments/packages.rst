@@ -39,15 +39,16 @@ Installing packages
 Packages can be installed to your specific environment by using ``conda install``:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          conda install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -68,16 +69,17 @@ Using the command ``conda list``, you can see all the packages that you have
 installed and their specific versions.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          conda list
 
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -91,15 +93,16 @@ Updating packages
 Packages can be updated by using ``conda update`` and specifying the package you wish to update:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          conda update numpy
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -116,15 +119,16 @@ The command ``conda remove`` allows you to remove a specific package from your e
 when you no longer need a package or want to replace it with a different version.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          conda remove numpy
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash

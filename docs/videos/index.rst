@@ -14,14 +14,17 @@ Automatic Installation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
 
    .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. raw:: html
 
          <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ffbe8bb5-accc-4bf1-be87-b1ce00aa5a97" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
    .. tab-item:: {{ macos }}
+      :sync: mac
 
       .. raw:: html
 
@@ -34,14 +37,17 @@ Manual Installation
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
 
    .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. raw:: html
 
          <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=045bfd79-bb8a-49af-b1d7-b1ce00a9662e" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
    .. tab-item:: {{ macos }}
+      :sync: mac
 
       .. raw:: html
 
@@ -52,12 +58,15 @@ Package Managed Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
    
    .. tab-item:: {{ windows }}
+      :sync: windows
 
       Not avaliable.
 
    .. tab-item:: {{ macos }}
+      :sync: mac
 
       .. raw:: html
 
@@ -71,14 +80,17 @@ Using the Terminal
 ^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
 
    .. tab-item:: {{ windows }} 
+      :sync: windows
 
       .. raw:: html
 
          <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=b581660d-9d46-4142-91fd-b1ce00897b4d" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
    .. tab-item:: {{ macos }}
+      :sync: mac
 
       .. raw:: html
 

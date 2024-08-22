@@ -55,15 +55,16 @@ to install multiple packages at once.
    Use ``pip list`` to view currently installed packages.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          python -m pip install "numpy==1.24.*" "scipy<1.10" "matplotlib"
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -129,15 +130,16 @@ single command on the same line or not to run the installation command multiple 
 To install using ``requirements.txt``, use the ``-r`` flag:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          python -m pip install -r requirements.txt
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -155,9 +157,10 @@ Below is a set of commands that can be useful for interacting with the ``pip``
 packages. To list, show, or freeze the state of installed packages, use the following commands:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
@@ -173,7 +176,7 @@ packages. To list, show, or freeze the state of installed packages, use the foll
          # as the command 'pipes' the output into that file
          python -m pip freeze > requirements.txt
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -202,9 +205,10 @@ and new dependency requirements of each package may arise.
 Below is a constructed example of a dependency conflict arising.
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
@@ -214,7 +218,7 @@ Below is a constructed example of a dependency conflict arising.
          ... lots of output ... then
          dtumathtools 1.0.1 requires numpy<1.24,>=1.21.1, but you have numpy 1.25.2 which is incompatible.
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
@@ -259,15 +263,16 @@ are not satisfied.
 To check possible conflicts in the current environment, use ``pip check``:
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item:: {{ win_powershell }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       .. code:: powershell
 
          python -m pip check
 
-   .. tab-item:: {{ mac_bash }}
+   .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash

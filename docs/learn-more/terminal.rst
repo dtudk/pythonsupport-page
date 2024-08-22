@@ -8,9 +8,10 @@ Opening a terminal
 Each operating system opens terminals in a different way.
 
 .. tab-set::
+   :sync-group: os
 
    .. tab-item:: {{ windows }}
-      :sync: powershell
+      :sync: windows
 
       Search for ``powershell`` in the Windows taskbar search or
       press :kbd:`Win+R` buttons (simultaneously), then type
@@ -23,8 +24,8 @@ Each operating system opens terminals in a different way.
          :align: center
 
 
-   .. tab-item:: {{ mac_bash }}
-      :sync: bash
+   .. tab-item:: {{ macos }}
+      :sync: mac
 
       Open the Launchpad icon in the Dock, or press :kbd:`Command+Space`; type ``Terminal`` and click on it.
 
@@ -42,9 +43,10 @@ Opening Python in a Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
 
    .. tab-item:: {{ windows }}
-      :sync: powershell
+      :sync: windows
 
       To launch Python using the Terminal, you can use ``python``.
 
@@ -55,8 +57,8 @@ Opening Python in a Terminal
          :align: center
 
 
-   .. tab-item:: {{ mac_bash }}
-      :sync: bash
+   .. tab-item:: {{ macos }}
+      :sync: mac
 
       To launch Python using the Terminal, you can use ``python3``.
 
@@ -71,9 +73,10 @@ Exiting Python in a Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
 
-   .. tab-item::  {{ windows }}
-      :sync: powershell
+   .. tab-item:: {{ windows }}
+      :sync: windows
 
       To exit Python in your Terminal you can use ``exit()``
 
@@ -85,8 +88,8 @@ Exiting Python in a Terminal
 
 
 
-   .. tab-item:: {{ mac_bash }}
-      :sync: MacOs
+   .. tab-item:: {{ macos }}
+      :sync: mac
 
       To check which Python version you have you can use ``python3 --version``
 
@@ -107,9 +110,10 @@ Running a Python script in the Terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. tab-set::
+   :sync-group: os
 
    .. tab-item:: {{ windows }}
-      :sync: powershell
+      :sync: windows
 
       To run a Python script using the terminal, you can use ``python`` + ``space`` + ``absolute path of your script``.
 
@@ -120,8 +124,8 @@ Running a Python script in the Terminal
          :align: center
 
 
-   .. tab-item:: {{ mac_bash }}
-      :sync: MacOs/Unix
+   .. tab-item:: {{ macos }}
+      :sync: mac
 
       To run a Python script using the terminal, you can use ``python3`` + ``space`` + ``absolute path of your script``.
 
@@ -138,8 +142,10 @@ Printing Working Directory
 .. card::
 
    .. tab-set::
+      :sync-group: os
 
       .. tab-item:: {{ windows }}
+         :sync: windows
 
          Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
 
@@ -148,6 +154,7 @@ Printing Working Directory
             :align: center
 
       .. tab-item:: {{ macos }}
+         :sync: mac
 
          Use the command ``pwd`` to print your current working directory. This tells you where in your file system, the terminal is operating.
 
@@ -161,8 +168,10 @@ Seeing What is in a Directory
 .. card::
 
    .. tab-set::
+      :sync-group: os
 
       .. tab-item:: {{ windows }}
+         :sync: windows
 
          Use the command ``ls`` to print everything in the current working directory
 
@@ -171,6 +180,7 @@ Seeing What is in a Directory
             :align: center
 
       .. tab-item:: {{ macos }}
+         :sync: mac
 
          Use the command ``ls`` to print everything in the current working directory
 
@@ -184,8 +194,10 @@ Changing Directories
 .. card::
 
    .. tab-set::
+      :sync-group: os
 
       .. tab-item:: {{ windows }}
+         :sync: windows
 
          The command ``cd`` can be used to change your directory. For example one could write
          ``cd MyFolder`` in order to move to the folder named ``MyFolder``
@@ -197,6 +209,7 @@ Changing Directories
 
 
       .. tab-item:: {{ macos }}
+         :sync: mac
 
          The command ``cd`` can be used to change your directory. For example one could write
          ``cd MyFolder`` in order to move to the a folder named ``MyFolder``
@@ -213,8 +226,10 @@ Creating a Folder
 .. card::
 
    .. tab-set::
+      :sync-group: os
 
       .. tab-item:: {{ windows }}
+         :sync: windows
 
          Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir NewPythonFolder`` will create a new folder with the name ``NewPythonFolder`` in the current working directory
 
@@ -224,6 +239,7 @@ Creating a Folder
             :align: center
 
       .. tab-item:: {{ macos }}
+         :sync: mac
 
          Use ``mkdir`` followed by the desired name of a new folder to create a new folder in the current working directory. For example ``mkdir NewPythonFolder`` will create a new folder with the name ``NewPythonFolder`` in the current working directory
 
@@ -238,8 +254,10 @@ Removing a Folder
 .. card::
 
    .. tab-set::
+      :sync-group: os
 
       .. tab-item:: {{ windows }}
+         :sync: windows
 
          | ``rm -r`` followed by a folder name, will remove the given folder.
          | For example ``rm -r NewPythonFolder`` will remove the folder named ``NewPythonFolder``
@@ -249,6 +267,7 @@ Removing a Folder
             :align: center
 
       .. tab-item:: {{ macos }}
+         :sync: mac
 
          | ``rm -r`` followed by a folder name, will remove the given folder.
          | For example ``rm -r NewPythonFolder`` will remove the folder named ``NewPythonFolder``
@@ -263,13 +282,16 @@ Clearing output
 .. card::
 
    .. tab-set::
+      :sync-group: os
 
       .. tab-item:: {{ windows }}
+         :sync: windows
 
          ``clear`` will clear all output from the terminal
 
 
       .. tab-item:: {{ macos }}
+         :sync: mac
 
          ``clear`` will clear all output from the terminal
 

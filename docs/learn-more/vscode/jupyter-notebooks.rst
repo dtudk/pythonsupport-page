@@ -157,39 +157,42 @@ Saving a File
 
 .. card::
     
-    .. tab-set::
+   .. tab-set::
+      :sync-group: os
 
-        .. tab-item:: {{ windows }}
+      .. tab-item:: {{ windows }}
+         :sync: windows
 
-            1. Press the :menuselection:`File` button in the top left corner of VS Code.
-            2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
-            
+         1. Press the :menuselection:`File` button in the top left corner of VS Code.
+         2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
+         
             .. image:: ../images/VScode_windows_save_file.png
-                :width: 450
-                :align: center
-                :alt: Save File in VS Code
+               :width: 450
+               :align: center
+               :alt: Save File in VS Code
 
-            3. Please choose a location and name for your file, then save it.
+         3. Please choose a location and name for your file, then save it.
 
-            .. tip::
-               You can save a file by pressing :kbd:`Ctrl+S`.
+         .. tip::
+            You can save a file by pressing :kbd:`Ctrl+S`.
 
-        .. tab-item:: {{ macos }}
+      .. tab-item:: {{ macos }}
+         :sync: mac
 
-            1. Press the :menuselection:`File` button in the top left corner of your screen.
-            2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
-            3. Please choose a location and name for your file, then save it.
+         1. Press the :menuselection:`File` button in the top left corner of your screen.
+         2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
+         3. Please choose a location and name for your file, then save it.
 
             .. image:: ../images/saveFileMac.png
                 :width: 450
                 :align: center
                 :alt: Save File in VS Code
 
-            .. tip::
-               You can save a file by pressing :kbd:`Command+S`.
+         .. tip::
+            You can save a file by pressing :kbd:`Command+S`.
 
-    .. tip::
+   .. tip::
 
-        You can also enable auto save by pressing the
-        :menuselection:`File --> Auto Save` button in the top left corner of VS Code.
+      You can enable auto save by pressing the
+      :menuselection:`File --> Auto Save` button in the top left corner of VS Code.
 

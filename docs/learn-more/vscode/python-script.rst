@@ -20,33 +20,35 @@ Opening a folder in VS Code allows you to manage all your project files in one p
 
 .. card::
 
+   .. tab-set::
+      :sync-group: os
 
-    .. tab-set::
+      .. tab-item:: {{ windows }}
+         :sync: windows
 
-        .. tab-item:: Windows
-
-            1. Press the :menuselection:`File` button in the top left corner of VS Code.
-            2. Select :menuselection:`Open Folder...` from the dropdown menu.
+         1. Press the :menuselection:`File` button in the top left corner of VS Code.
+         2. Select :menuselection:`Open Folder...` from the dropdown menu.
 
             .. image:: ../images/VSC-openfolder.png
-                :width: 450
-                :align: center
-                :alt: Save File in VS Code
+               :width: 80%
+               :align: center
+               :alt: Save File in VS Code
 
-            3. Browse to the folder you want to open and select it.
+         3. Browse to the folder you want to open and select it.
 
 
-        .. tab-item:: MacOS
+      .. tab-item:: {{ macos }}
+         :sync: mac
 
-            1. Press the :menuselection:`File` button in the top left corner of your screen.
-            2. Select :menuselection:`Open Folder...` from the dropdown menu.
+         1. Press the :menuselection:`File` button in the top left corner of your screen.
+         2. Select :menuselection:`Open Folder...` from the dropdown menu.
 
             .. image:: ../images/openFolderMac.png
-                :width: 450
-                :align: center
-                :alt: Open Folder in VS Code
+               :width: 80%
+               :align: center
+               :alt: Open Folder in VS Code
 
-            3. Browse to the folder you want to open and select it.    
+         3. Browse to the folder you want to open and select it.    
 
 
 Creating a Python-file
@@ -56,29 +58,32 @@ You can create a Python file using VS code. This is useful if you are writing co
 
 .. card::      
 
-    .. tab-set::
+   .. tab-set::
+      :sync-group: os
 
-          .. tab-item:: Windows 
+      .. tab-item:: {{ windows }}
+         :sync: windows
 
-              Press the :menuselection:`File` button in the top left corner of VS Code. Select :menuselection:`New File --> Python File` from the menu that drops down. 
+         Press the :menuselection:`File` button in the top left corner of VS Code. Select :menuselection:`New File --> Python File` from the menu that drops down. 
 
-              .. image:: ../images/VScode_windows1.png
-                  :width: 450
-                  :align: center
-                  :alt: IDLE Shell
+         .. image:: ../images/VScode_windows1.png
+            :width: 80%
+            :align: center
+            :alt: IDLE Shell
 
 
-          .. tab-item:: MacOS 
+      .. tab-item:: {{ macos }} 
+         :sync: mac
 
-              Press the :menuselection:`File` button in the top left corner of your screen. Select :menuselection:`New File --> Python File` from the menu that drops down. 
-              You may need to hover your mouse around the top of the screen for the menu bar to appear.
+         Press the :menuselection:`File` button in the top left corner of your screen. Select :menuselection:`New File --> Python File` from the menu that drops down. 
+         You may need to hover your mouse around the top of the screen for the menu bar to appear.
 
-              .. image:: ../images/VScode_mac1.png
-                  :width: 450
-                  :align: center
-                  :alt: IDLE Shell
+         .. image:: ../images/VScode_mac1.png
+            :width: 80%
+            :align: center
+            :alt: IDLE Shell
 
-                        
+                       
 
 Saving a File
 --------------
@@ -87,38 +92,41 @@ Saving a file in VS Code ensures that your work is not lost and can be accessed 
 
 .. card::
     
-    .. tab-set::
+   .. tab-set::
+      :sync-group: os
 
-        .. tab-item:: Windows
+      .. tab-item:: {{ windows }}
+         :sync: windows
 
-            1. Press the :menuselection:`File` button in the top left corner of VS Code.
-            2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
-            
+         1. Press the :menuselection:`File` button in the top left corner of VS Code.
+         2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
+
             .. image:: ../images/VScode_windows_save_file.png
-                :width: 450
-                :align: center
-                :alt: Save File in VS Code
+               :width: 80%
+               :align: center
+               :alt: Save File in VS Code
 
-            3. Please choose a location and name for your file, then save it.
+         3. Please choose a location and name for your file, then save it.
 
-            Note that you can save a file by pressing :kbd:`Ctrl+S`.
+         Note, you can save a file by pressing :kbd:`Ctrl+S`.
 
-        .. tab-item:: MacOS
+      .. tab-item:: {{ macos }}
+         :sync: mac
 
-            1. Press the :menuselection:`File` button in the top left corner of your screen.
-            2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
-            3. Please choose a location and name for your file, then save it.
+         1. Press the :menuselection:`File` button in the top left corner of your screen.
+         2. Select :menuselection:`Save` or :menuselection:`Save As...` from the dropdown menu.
+         3. Please choose a location and name for your file, then save it.
 
             .. image:: ../images/saveFileMac.png
-                :width: 450
-                :align: center
-                :alt: Save File in VS Code
+               :width: 80%
+               :align: center
+               :alt: Save File in VS Code
 
-            Note that you can save a file by pressing :kbd:`Command+S`.
+         Note, you can save a file by pressing :kbd:`Command+S`.
 
-    .. tip::
+   .. tip::
 
-        You can also autosave by pressing the :menuselection:`File` button in the top left corner of VS Code and then selecting :menuselection:`Auto Save`.
+      You can enable auto save by pressing the :menuselection:`File` button in the top left corner of VS Code and then selecting :menuselection:`Auto Save`.
 
 
 Opening a File
@@ -128,38 +136,39 @@ Opening a file in VS Code allows you to edit and run your code directly within t
 
 .. card::
 
+   .. tab-set::
+      :sync-group: os
 
-    .. tab-set::
+      .. tab-item:: {{ windows }}
+         :sync: windows
 
-        .. tab-item:: Windows
-
-            1. Press the :menuselection:`File` button in the top left corner of VS Code.
-            2. Select :menuselection:`Open...` from the dropdown menu.
+         1. Press the :menuselection:`File` button in the top left corner of VS Code.
+         2. Select :menuselection:`Open...` from the dropdown menu.
 
             .. image:: ../images/VSC-openfile.png
-                :width: 450
-                :align: center
-                :alt: Save File in VS Code
+               :width: 450
+               :align: center
+               :alt: Save File in VS Code
 
-
-            3. Browse to the file you want to open and select it.
+         3. Browse to the file you want to open and select it.
             
 
-        .. tab-item:: MacOS
+      .. tab-item:: {{ macos }}
+         :sync: mac
 
-            1. Press the ":menuselection:`File` button in the top left corner of your screen.
-            2. Select ":menuselection:`Open...` from the dropdown menu.
+         1. Press the ":menuselection:`File` button in the top left corner of your screen.
+         2. Select ":menuselection:`Open...` from the dropdown menu.
 
             .. image:: ../images/openFileMac.png
-                :width: 450
-                :align: center
-                :alt: Open File in VS Code
+               :width: 450
+               :align: center
+               :alt: Open File in VS Code
 
-            3. Browse to the file you want to open and select it.    
+         3. Browse to the file you want to open and select it.    
 
-    .. tip::
+   .. tip::
 
-        You can also open a file by dragging and dropping it directly into the VS Code window.
+      You can open a file by dragging and dropping it directly into the VS Code window.
 
 
 Selecting the right interpreter
@@ -170,54 +179,54 @@ In short, the interpreter is the version of Python that you use to execute your 
 
 .. card::
 
-    .. tab-set::
+   .. tab-set::
     
-        .. tab-item:: Windows 
+      .. tab-item:: {{ windows }} 
+         :sync: windows
 
-            1. Press :kbd:`Ctrl+Shift+P`
-            2. Type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
+         1. Press :kbd:`Ctrl+Shift+P`
+         2. Type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
 
             .. image:: ../images/VScode_windows2.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+               :width: 450
+               :align: center
+               :alt: IDLE Shell
 
-            3. Choose the option similar to ``Python {{python_version_recommended}}.X ('base')``.
-               Your PC may have a different version of Python.
+         3. Choose the option similar to ``Python {{python_version_recommended}}.X ('base')``.
+            Your PC may have a different version of Python.
             
-
             .. image:: ../images/VScode_windows3.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+               :width: 450
+               :align: center
+               :alt: IDLE Shell
 
 
-            .. tip::
+         .. tip::
 
-                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for help with anything.
+            In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for help with anything.
 
-        .. tab-item:: MacOS
+      .. tab-item:: {{ macos }}
+         :sync: mac
 
-            1. Press :kbd:`Ctrl+Shift+P`
-            2. type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
+         1. Press :kbd:`Ctrl+Shift+P`
+         2. type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
 
             .. image:: ../images/VScode_mac2.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+               :width: 450
+               :align: center
+               :alt: IDLE Shell
                         
-            3. Choose the option similar to ``Python {{python_version_recommended}}.5 ('base')``. You may have a different version of Python on your own PC.
+         3. Choose the option similar to ``Python {{python_version_recommended}}.5 ('base')``. You may have a different version of Python on your own PC.
 
             .. image:: ../images/VScode_mac3.png
-                        :width: 450
-                        :align: center
-                        :alt: IDLE Shell
+               :width: 450
+               :align: center
+               :alt: IDLE Shell
 
-            .. tip::
+         .. tip::
 
-                In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for help with anything.
+            In VS Code, pressing :kbd:`Ctrl+Shift+P` brings down a search bar where you can search for help with anything.
             
-
 
 .. todo::
    Fill this section called Run a Python File accordingly once the video includes this info. Sotero should be done with the video during week 19/8 - 23/8
@@ -234,7 +243,11 @@ In short, the interpreter is the version of Python that you use to execute your 
 ..                 Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
     
 
-..         .. tab-item:: Windows
+..   .. tab-set::
+..      :sync-group: os
+
+..         .. tab-item:: {{ windows }}
+..               :sync: windows
 
 ..             1. Open the Python file you want to run.
 ..             2. Press :kbd:`Ctrl+Shift+P`.
@@ -246,7 +259,8 @@ In short, the interpreter is the version of Python that you use to execute your 
 ..                 :align: center
 ..                 :alt: Run Python File in VS Code
 
-..         .. tab-item:: MacOS
+..         .. tab-item:: {{ macos }}
+..               :sync: mac
 
 ..             1. Open the Python file you want to run.
 ..             2. Press :kbd:`Command+Shift+P`.
@@ -271,8 +285,10 @@ In short, the interpreter is the version of Python that you use to execute your 
 .. .. card      
     
 ..     .. tab-set
+..      :sync-group: os
 
-..        .. tab-item:: Windows 
+..        .. tab-item:: {{ windows }}
+..         :sync: windows
 
 ..            Press the three dots in the top menu bar. They are next to the :menuselection:`View` and :menuselection:`Go` options.
 ..            Move your mouse to :menuselection:`Terminal` and click :menuselection:`New Terminal`
@@ -282,7 +298,8 @@ In short, the interpreter is the version of Python that you use to execute your 
 ..                :align: center
 ..                :alt: IDLE Shell
 
-..        .. tab-item:: MacOS 
+..        .. tab-item:: {{ macos }}
+..          :sync: mac
 
 ..            Move your mouse to the top of the screen. Select :menuselection:`Terminal --> New Terminal`
 
