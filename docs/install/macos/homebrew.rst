@@ -36,6 +36,8 @@ Step 1: Install Homebrew
         The Homebrew website will ask you to open a terminal.
         To do this, press :kbd:`Command+Space` at the same time.
         Then, search for :menuselection:`Terminal` and press :kbd:`Enter`.
+        You might get asked for permissions.
+        Please do this, note that your password will not be shown while typing it. 
         Do *not* close the terminal once the installation script has finished.
 
         .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
@@ -92,7 +94,7 @@ Step 2: Install Miniconda and Python
 
         .. code:: bash
 
-            conda install python={{ python_version_recommended }} -y ; conda install dtumathtools pandas scipy statsmodels uncertainties -y
+            conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
             
     
 .. _install-python-macos-vscode:

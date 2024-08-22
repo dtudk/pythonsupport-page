@@ -36,7 +36,7 @@ Please verify the following steps:
          :width: 100% 
          :align: center
 
-If some of the steps cannot be verified, please continue reading the Troubleshooting section.
+If some steps cannot be verified, please continue reading the Troubleshooting section.
 
 
 Troubleshooting
@@ -45,8 +45,8 @@ Troubleshooting
 Only follow these troubleshooting steps if something in the previous section did not check out.
 
 * Ensure that Miniconda is installed:
-  Search for ``Anaconda Powershell`` (it will say ``Anaconda Powershell Prompt (Miniconda3)``)
-  prompt on your computer and open it up.
+  Search for the ``Anaconda Powershell`` prompt (it will say ``Anaconda Powershell Prompt (Miniconda3)``)
+  on your computer and open it up.
 
   If you cannot find it, press :ref:`here to install Miniconda <install-python-windows-conda>`.
 
@@ -63,7 +63,7 @@ Only follow these troubleshooting steps if something in the previous section did
 
 * Go back to the previous Verification section and check them again.
 
-If you are still having trouble or have any questions, please do not hesitate to visit us at during office hours
+If you are still having trouble or have any questions, please do not hesitate to visit us during office hours
 or contact us via :mail:`email <pythonsupport@dtu.dk>`
 or `Discord <ps-discord-invite_>`_.
 More information can be found on our :ref:`homepage <reach-us-reference>`.

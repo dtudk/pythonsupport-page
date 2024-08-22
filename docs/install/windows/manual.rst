@@ -68,7 +68,7 @@ Step 2: Install Python
     #.
        Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
 
-       .. code:: bash
+       .. code:: pwsh
 
            conda config --add channels conda-forge ; conda config --remove channels defaults
 
@@ -77,7 +77,7 @@ Step 2: Install Python
     #. 
        Copy the following line of code into your PowerShell and press :kbd:`Enter`:
 
-       .. code:: bash
+       .. code:: pwsh
 
            conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 

@@ -37,7 +37,9 @@ Install everything at once
             :align: center
 
     #.
-        Copy the following line of code into your Terminal and press :kbd:`Enter`:
+        Copy the following line of code into your Terminal and press :kbd:`Enter`.
+        You might get asked for permissions.
+        Please do this, note that your password will not be shown while typing it. 
 
         .. code:: bash
 
@@ -48,8 +50,6 @@ Install everything at once
 
     #.
         Follow the script instructions.
-        You might get asked for permissions and your password to make changes on your Mac.
-        Please grant permission. Note that your password will not be shown while typing it. 
         Once the script has finished, Python and Visual Studio Code will be ready to use.
 
         .. note::

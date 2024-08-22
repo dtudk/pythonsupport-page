@@ -37,7 +37,7 @@ Please verify the following steps:
          :align: center
 
 
-If some of the steps cannot be verified, please continue reading the Troubleshooting section.
+If some steps cannot be verified, please continue reading the Troubleshooting section.
 
 
 Troubleshooting
@@ -60,7 +60,7 @@ Only follow these troubleshooting steps if something in the previous section did
 
 * Go back to the previous Verification section and check them again.
 
-If you are still having trouble or have any questions, please do not hesitate to visit us at during office hours
+If you are still having trouble or have any questions, please do not hesitate to visit us during office hours
 or contact us via :mail:`email <pythonsupport@dtu.dk>`
 or `Discord <ps-discord-invite_>`_.
 More information can be found on our :ref:`homepage <reach-us-reference>`.
