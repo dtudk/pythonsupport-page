@@ -1,26 +1,3 @@
 
-
-**Physics**
-============================================================================
-
-
-
-This guideline is for students attending course :course-base:`10060` in the F25 year. The course base can be found :course-base:`here <2024:10060>`
-
-
-.. dropdown:: Looking for previous years?
-    :icon: hourglass
-
-    * :doc:`spring 2024 (F24) <2023-2024/10060>`
-    * **ETC...**
-
-|
-
-
-Please install the uncertainties package by pasting the following into your terminal:
-
-.. code:: bash
-
-   python3 -m pip install dtumathtools scipy pandas uncertainties
-
+.. include:: 2024-2025/10060.rst
 

@@ -1,16 +1,3 @@
 
-**Mathematics 1a**
-===================
-
-.. dropdown:: Looking for previous years?
-    :icon: hourglass
-
-    * :doc:`Autumn 2023 (E23) <2023-2024/01001>`
-    * **ETC...**
-
-
-These are the instructions for the autumn 2024 (E24). The course base can be found :course-base:`here <2024:01001>`
-
-
-
+.. include:: 2024-2025/01001.rst
 

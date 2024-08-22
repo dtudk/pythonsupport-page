@@ -7,11 +7,6 @@
     :icon: hourglass
 
     * :doc:`Spring 2024 (F24) <../2023-2024/01002>`
-    * **ETC...**
 
+.. include:: /_rst_includes/course-default-pg-installation.rst
 
-These are the instructions for spring 2025 (F25). The course base can be found :course-base:`here <2024:01002>`
-
-
-
-**insert current instructions here**

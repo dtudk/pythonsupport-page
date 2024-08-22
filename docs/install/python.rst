@@ -65,10 +65,11 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
 {{ linux_icon }} --- Installation on Linux
 --------------------------------------------
 
-Please get in touch with us by `email <mailto:pythonsupport@dtu.dk>`_.
+* **Recommended** {{ arrow_icon }} The :doc:`manual installation guide <linux/manual>`.
 
 
 .. note::
+
    If you are using a different operating system than the ones listed above,
    please send an `email <mailto:pythonsupport@dtu.dk>`_ to us, and we will try to help you.
 
@@ -77,7 +78,7 @@ Please get in touch with us by `email <mailto:pythonsupport@dtu.dk>`_.
     :maxdepth: 2
     :hidden:
     :caption: Windows
-   
+
     windows/automated
     windows/manual.rst
 
@@ -85,7 +86,14 @@ Please get in touch with us by `email <mailto:pythonsupport@dtu.dk>`_.
     :maxdepth: 2
     :hidden:
     :caption: MacOS
-    
+
     macos/automated
     macos/homebrew.rst
     macos/manual.rst
+
+.. toctree::
+    :maxdepth: 2
+    :hidden:
+    :caption: Linux
+
+    linux/manual.rst

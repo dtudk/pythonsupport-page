@@ -18,7 +18,7 @@ function PyS_osSelector(os) {
     const baseUrl = getBaseUrl();
     console.log('Base URL:', baseUrl); // Debugging line
     if (os === "linux") {
-        window.location.href = `${baseUrl}install/python.html#installation-on-linux`;
+        window.location.href = `${baseUrl}install/${os}/manual.html`;
     } else {
         window.location.href = `${baseUrl}install/${os}/automated.html`;
     }

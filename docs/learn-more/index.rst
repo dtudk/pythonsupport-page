@@ -5,6 +5,7 @@ Learn more
 
 
 .. dropdown:: Are you a 1\ :sup:`st` year student?
+   :open:
    :color: warning
    :icon: accessibility
 
@@ -23,7 +24,7 @@ helping you understand the basics of these tools.
 
 * The :doc:`Terminal <terminal>` is the most direct line of communication between you and your computer
 
-* :doc:`IDLE <idle>` (only recommended for students taking :course-base:`02002 <02002>`)
+* :doc:`IDLE <idle>` (only recommended for students taking :course-base:`02002`/:course-base:`02003`)
 
 * :doc:`Visual Studio Code <vscode/index>` is a strong tool for writing and editing Python code
 
@@ -38,7 +39,7 @@ helping you understand the basics of these tools.
    :maxdepth: 1
    
    terminal
-   IDLE (only for 02002) <idle>
+   IDLE (only for 02002/02003) <idle>
    vscode/index
    packages-and-environments/index.rst
 

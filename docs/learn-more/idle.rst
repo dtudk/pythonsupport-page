@@ -10,7 +10,7 @@ It provides you with an environment where you can write Python scripts and run t
 
 
 .. warning::
-   We only recommend introductory students to use IDLE while following :course-base:`02002`.
+   We only recommend introductory students to use IDLE while following :course-base:`02002`/:course-base:`02003`.
 
    There are other more advanced IDE's that has much greater functionality than IDLE.
 
