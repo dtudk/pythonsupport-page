@@ -36,6 +36,7 @@ Reach us
    .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
+      | Open in 13 week semesters.
       | Mon -- Fri (10-16):
       | Building **302**, room **92**.
       | Thursday (12:15-16):
