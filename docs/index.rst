@@ -40,7 +40,7 @@ Reach us
       | Mon -- Fri (10-16):
       | Building **302**, room **92**.
       | Thursday (12:15-16):
-      | Building **358**, room **43**.
+      | Building **358**, room **46**.
 
       | Click to see detailed office hours.
 

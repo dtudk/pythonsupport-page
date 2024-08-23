@@ -34,8 +34,7 @@ Step 1: Install Homebrew
         
     #.  
         The Homebrew website will ask you to open a terminal.
-        To do this, press :kbd:`Command+Space` at the same time.
-        Then, search for :menuselection:`Terminal` and press :kbd:`Enter`.
+        Find the :menuselection:`Terminal` using your Spotlight search (:kbd:`Command+Space`) and press :kbd:`Enter`.
         You might get asked for permissions.
         Please do this, note that your password will not be shown while typing it. 
         Do *not* close the terminal once the installation script has finished.
@@ -49,7 +48,6 @@ Step 1: Install Homebrew
             :align: center
 
     #.
-        
         Add Homebrew to the ``PATH`` by copying, pasting and running the code that Homebrew displays
         in the Terminal (look at the picture below for guidance). 
         Press :kbd:`Enter` once you have pasted the code. The code should look similar to the following image 
@@ -68,34 +66,39 @@ Step 2: Install Miniconda and Python
 --------------------------------------
 
 .. card::
+   
+   Installs all packages required for the 1\ :sup:`st` year
+   Polytechnical Foundation courses at DTU. 
 
-    #. 
-        Close the previously used Terminal, and open up a new Terminal (:kbd:`Command+Space`).
+   #. 
+       Close the previously used :menuselection:`Terminal`,
+       and open up a new :menuselection:`Terminal` using
+       Spotlight search (:kbd:`Command+Space` and search for ``Terminal``).
 
-    #.
-        Paste the following code in the Terminal and press :kbd:`Enter`.
+   #.
+       Paste the following code in the Terminal and press :kbd:`Enter`.
 
-        .. code:: bash
+       .. code:: bash
 
-            brew install --cask miniconda
+           brew install --cask miniconda
 
-    #.
-        Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
+   #.
+       Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
-        .. code:: bash
+       .. code:: bash
 
-            conda config --add channels conda-forge ; conda config --remove channels defaults
+           conda config --add channels conda-forge ; conda config --remove channels defaults
 
-        .. include:: /_rst_includes/tip-copy.rst
+       .. include:: /_rst_includes/tip-copy.rst
 
 
-    #.
-        Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
+   #.
+       Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
-        .. code:: bash
+       .. code:: bash
 
-            conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
-            
+           conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+           
     
 .. _install-python-macos-vscode:
 
@@ -104,11 +107,11 @@ Step 3: Install Visual Studio Code
 
 .. card::
     
-    Install Visual Studio Code by pasting the following in your terminal and pressing :kbd:`Enter`.
+   Install Visual Studio Code by pasting the following in your terminal and pressing :kbd:`Enter`.
 
-    .. code:: bash
+   .. code:: bash
 
-        brew install --cask visual-studio-code
+      brew install --cask visual-studio-code
 
 
 .. _install-python-macos-vscode-exts:
@@ -121,26 +124,26 @@ Step 4: Install extensions for Visual Studio Code
 
 .. card:: 
 
-    #. 
-        Open Visual Studio Code and select the Extensions |extensions| tab on the left.
+   #. 
+       Open Visual Studio Code and select the Extensions |extensions| tab on the left.
 
-        .. image:: /images/install/VSC-extensions.png
-           :width: 400
+       .. image:: /images/install/VSC-extensions.png
+          :width: 400
+          :align: center
+   
+   #.  
+       Search for `Python`, and download the extension. Make sure that it is from Microsoft. 
+
+       .. image:: /images/install/macos-package-managed-python.png
+           :width: 200
            :align: center
-    
-    #.  
-        Search for `Python`, and download the extension. Make sure that it is from Microsoft. 
 
-        .. image:: /images/install/macos-package-managed-python.png
-            :width: 200
-            :align: center
-
-    #. 
-        Hereafter search for `Jupyter`, and download that extension as well. This also needs to be from Microsoft.
-        
-        .. image:: /images/install/macos-package-managed-jupyter.png
-            :width: 200
-            :align: center
+   #. 
+       Hereafter search for `Jupyter`, and download that extension as well. This also needs to be from Microsoft.
+       
+       .. image:: /images/install/macos-package-managed-jupyter.png
+           :width: 200
+           :align: center
 
 
 .. include:: /_rst_includes/tip-finish.rst

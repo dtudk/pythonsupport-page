@@ -1,6 +1,6 @@
 
 
-**Intro to programming**
+**Computer programming**
 ========================================================================
 
 .. dropdown:: Looking for previous years?

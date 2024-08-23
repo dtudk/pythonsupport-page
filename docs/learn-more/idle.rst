@@ -90,7 +90,7 @@ A Python *script* is a file with Python code. Once the script is *run*, all the 
             sum = num1 + num2
 
             # Printing the sum
-            print('Sum of {0} and {1} equals {2}'.format(num1, num2, sum))
+            print(f"Sum of {num1} and {num2} equals {sum}")
 
          .. image:: images/idle_windows3.png
             :width: 90%
@@ -133,7 +133,7 @@ A Python *script* is a file with Python code. Once the script is *run*, all the 
             sum = num1 + num2
 
             # Printing the sum
-            print('Sum of {0} and {1} equals {2}'.format(num1, num2, sum))
+            print(f"Sum of {num1} and {num2} equals {sum}")
 
          .. image:: images/idle_mac3.png
             :width: 90%

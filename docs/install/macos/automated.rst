@@ -24,40 +24,45 @@
 Install everything at once
 ---------------------------------------------------
 
-.. card:: 
+.. card::
 
-    #.
-       Open your Terminal by pressing :kbd:`Command+Space` at the same time.
+   Installs all packages and tools required for the 1\ :sup:`st` year
+   Polytechnical Foundation courses at DTU. 
 
-    #.    
-       Search for :menuselection:`Terminal` and press :kbd:`Enter`.
+   #.    
+      Search for :menuselection:`Terminal` using your Spotlight search (:kbd:`Command+Space`) and press :kbd:`Enter`.
 
-        .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
-            :width: 100%
-            :align: center
+       .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
+           :width: 100%
+           :align: center
 
-    #.
-        Copy the following line of code into your Terminal and press :kbd:`Enter`.
-        You might get asked for permissions.
-        Please do this, note that your password will not be shown while typing it. 
+   #.
+       Paste the following code into your Terminal and press :kbd:`Enter`.
+       You might get asked for permissions.
+       Please do this, note that your password will not be shown while typing it. 
 
-        .. code:: bash
+       .. code:: bash
 
-            /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
+           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
 
+       .. include:: /_rst_includes/tip-copy.rst
 
-        .. include:: /_rst_includes/tip-copy.rst
+   #.
+       Follow the script instructions.
 
-    #.
-        Follow the script instructions.
-        Once the script has finished, Python and Visual Studio Code will be ready to use.
+       The script has finished when you see something like:
 
-        .. note::
+       .. code:: bash
 
-            During the installation, you will see warnings and caveats, etc.
-            The script will resolve these automatically.
-            Please let the script finish.
-            When you see ``Script finished``, the installation has been successful!
+          Script has finished. You may now close the terminal...
+
+       Now, Python and Visual Studio Code will be ready to use.
+
+       .. note::
+
+           During the installation, you will see warnings and caveats, etc.
+           The script will resolve these automatically.
+           Please let the script finish.
 
 
 .. include:: /_rst_includes/tip-finish.rst

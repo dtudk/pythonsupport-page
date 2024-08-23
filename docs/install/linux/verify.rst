@@ -2,9 +2,9 @@
 Verification
 --------------------------------------
 
-Please verify the following steps:
+Verify that your installation is successfull by following these steps:
 
-1. Open up a new terminal; ensure ``(base)`` is shown to the
+1. Open up a new terminal. Verify that ``(base)`` is shown to the
    left of your username.
    Something like the image below:
 
@@ -17,17 +17,17 @@ Please verify the following steps:
 2. Type ``idle3`` in the Terminal, then press :kbd:`Enter`.
    This should open a new window in which you can run Python code.
 
-3. Ensure the :guilabel:`IDLE` window says ``Python {{ python_version }}.X``
+3. Verify the :guilabel:`IDLE` window says ``Python {{ python_version }}.X``
    in the top left
    (or in the range of {{python_version_min}} -- {{python_version_max}}).
 
-4. Run the following Python code, by copy-pasting it into the :guilabel:`IDLE` window, then press :kbd:`Enter`:
+4. Copy the following Python code into the :guilabel:`IDLE` window, then press :kbd:`Enter`:
 
    .. code:: python
 
       import dtumathtools, pandas, scipy, statsmodels, uncertainties
 
-   It should simply show a new line (``>>>``) without any text (indicating everything got imported correctly).
+   Verify that a new line (``>>>``) appears without any text (indicating everything got imported correctly).
    See the below image for an example:
 
    .. card::
@@ -36,8 +36,7 @@ Please verify the following steps:
          :width: 100%
          :align: center
 
-
-If some steps cannot be verified, please continue reading the Troubleshooting section.
+If some steps result in a different than described above, please continue reading the Troubleshooting section.
 
 
 Troubleshooting
