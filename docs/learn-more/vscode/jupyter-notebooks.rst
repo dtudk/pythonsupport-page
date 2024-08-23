@@ -2,6 +2,15 @@ Jupyter Notebooks (.ipynb)
 ==========================
 
 
+.. dropdown:: Video Tutorial
+   :color: muted
+   :open:
+
+   .. raw:: html 
+      
+         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e2325323-ea37-4216-bdf8-b1ce00b63fcf" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
 A ``.ipynb`` file is a notebook file that contains Python code intermixed with
 `Markdown text <https://en.wikipedia.org/wiki/Markdown>`__.
 

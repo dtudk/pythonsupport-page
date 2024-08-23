@@ -1,6 +1,15 @@
 IDLE
 ====
 
+.. dropdown:: Video Tutorial
+   :color: muted
+   :open:
+
+   .. raw:: html 
+      
+         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=81040637-95f5-4aa5-9133-b1ce0142fd86" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
 .. include:: /_rst_includes/tip-copy.rst
 
 :guilabel:`IDLE` is an integrated development environment (IDE) installed automatically with Python.
