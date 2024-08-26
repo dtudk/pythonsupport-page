@@ -1,6 +1,16 @@
 Python files (.py)
 ===================
 
+.. dropdown:: Video Tutorial
+   :color: muted
+   :open:
+
+   .. raw:: html 
+      
+         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7c0cdab0-d90e-4858-bb3e-b1d5009e11f8" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+
+
 A ``.py`` file is a text file that contains Python code. 
 It's the standard file format used for writing and executing Python programs. 
 When you write Python code in a ``.py`` file, you can run the file to execute the code it contains,
