@@ -1,0 +1,11 @@
+
+**Physics**
+============================================================================
+
+.. dropdown:: Looking for previous years?
+    :icon: hourglass
+
+    * :doc:`spring 2024 (F24) </course/2023-2024/10060>`
+
+.. include:: /_rst_includes/course-default-pg-installation.rst
+

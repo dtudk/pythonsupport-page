@@ -1,0 +1,15 @@
+
+
+
+E2023
+=====
+
+This guideline is for students attending course :course-base:`2023:02002` in the 2023 autumn
+semester.
+
+.. card:: Press here for instructions
+   :text-align: center
+   :link: https://02002.compute.dtu.dk/installation/index.html
+   :link-type: url
+   :margin: 0 2 auto auto
+   :width: 50%

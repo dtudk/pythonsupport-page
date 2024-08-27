@@ -104,8 +104,8 @@ General IT questions
    | Office hours 305.027 8:00--15:00.
 DTU Learn
    Go here: :full-link:`https://learnsupport.dtu.dk`
-Counceling for students:
-   Go here: :full-link:`https://studraadgiv.ait.dtu.dk/`
+Counseling for students:
+   Go here: :full-link:`https://www.dtu.dk/uddannelse/vejledning/studievejledningen`
 
 
 .. warning::
@@ -129,7 +129,7 @@ Quite often we tend to suggest solutions before we know the exact problem.
 It can be very useful to get some basic information about the system, before suggesting
 workarounds.
 
-.. code-block:: shell
+.. code:: shell
 
    - Which operating system, Windows, MacOS, Linux?
    - How did you install Python? App-store, download link, anaconda, other?

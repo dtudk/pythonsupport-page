@@ -6,18 +6,18 @@ __all__ = [
 
 
 def split_str(s, sep=None, maxsplit=-1):
-    """ split a string """
+    """split a string"""
     sl = s.split(sep, maxsplit)
     if maxsplit > 0:
         n_add = maxsplit + 1 - len(sl)
-        sl.extend([''] * n_add)
+        sl.extend([""] * n_add)
     print(sl)
     return sl
 
 
 class HomepageFormatter:
 
-    __slots__ = ('info',)
+    __slots__ = ("info",)
 
     def __init__(self):
         self.info = {}
@@ -27,6 +27,7 @@ class HomepageFormatter:
 
     def format(self, spec):
         return self.info[spec]
+
     __mod__ = format
 
     def __getstate__(self):
@@ -36,6 +37,7 @@ class HomepageFormatter:
         self.__init__()
         for course, page in state.items():
             self.add(course, page)
+
 
 class Coursebase:
 
@@ -62,9 +64,11 @@ class Coursebase:
 
     __mod__ = format
 
+
 class CourseStrip:
     def format(self, course):
         if ":" in course:
             return course.split(":", maxsplit=1)[-1]
         return course
+
     __mod__ = format

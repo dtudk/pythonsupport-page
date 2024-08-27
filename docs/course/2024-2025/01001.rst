@@ -1,0 +1,11 @@
+
+**Mathematics 1a**
+===================
+
+.. dropdown:: Looking for previous years?
+    :icon: hourglass
+
+    * :doc:`Autumn 2023 (E23) </course/2023-2024/01001>`
+
+.. include:: /_rst_includes/course-default-pg-installation.rst
+

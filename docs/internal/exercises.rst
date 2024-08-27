@@ -51,7 +51,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
    .. tab-item:: {{ pip }}
       :sync: pip
 
-      .. code-block:: bash
+      .. code:: bash
 
          pip list
          # or "grep"'ing for a specific package
@@ -60,7 +60,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
    .. tab-item:: {{ conda }}
       :sync: conda
 
-      .. code-block:: bash
+      .. code:: bash
 
          conda list
          # or "grep"'ing for a specific package
@@ -69,7 +69,7 @@ For instance, after having installed ``numpy==1.22`` one can check:
 Once the package is listed in the package list, check version and
 import:
 
-.. code-block:: bash
+.. code:: bash
 
    python3 -c "import numpy ; print(numpy.__version__)
 
@@ -140,7 +140,7 @@ Exercise 2
 
 Create two virtual environments, using `venv <https://docs.python.org/3/library/venv.html>`__.
 
-.. code-block:: bash
+.. code:: bash
 
    # first environment
    numpy=1.24
@@ -188,9 +188,9 @@ For the currently known recommend IDE's:
 
 *In order of priority, if time is limited, only do the first*.
 
-- :ref:`VS Code <ide-vscode>` (please also read the page linked for some additional information)
-- :ref:`Spyder <ide-spyder>`
-- :ref:`PyCharm <ide-pycharm>`
+- :doc:`VS Code </learn-more/vscode/index>` (please also read the page linked for some additional information)
+- `Spyder`
+- `PyCharm`
 
 Figure out the following:
 

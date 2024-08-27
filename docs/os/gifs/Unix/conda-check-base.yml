@@ -1,0 +1,8 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 85
+  rows: 3
+
+records:
+  - delay: 4000
+    content: "Last login: Mon Jan 1 12:00:00 on console\r\n\e[01;37m(base) \e[01;32muser@system\e[00m:\e[01;34m ~ \e[00m$ \e[?2004l"

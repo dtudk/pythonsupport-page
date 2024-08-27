@@ -1,0 +1,48 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 100
+  rows: 15
+
+records:
+  - delay: 100
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e[6;1H\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 2000
+    content: 'PS C:\Users\python\test>'
+  - delay: 100
+    content: "\e[93mp"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[93m\bpy"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hpyt\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hpyth\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hpytho\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hpython\e[?25h"
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\e[?25l\e[93m\e[6;25Hpython \e[?25h"
+  - delay: 100  
+    content: "\e[m"
+  - delay: 1000
+    content: 'C:\Users\python\test\helloWorld.py'
+  - delay: 100
+    content: "\e[m"
+  - delay: 100
+    content: "\r\n"
+  - delay: 100
+    content: "Hello Wolrd\r\n"
+  - delay: 5000
+    content: "\e"

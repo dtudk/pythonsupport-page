@@ -14,13 +14,14 @@ The current week *preferred* will be listed depending on the build-time of the
 document.
 After 18 on a Friday, the preferred week-number will be the following week.
 """
+
 import os
 import datetime
 from pathlib import Path
 
 
 def fill_defaults(semester, periods):
-    """ Fill defaults into the `semester` dictionary """
+    """Fill defaults into the `semester` dictionary"""
     # fill non-filled data from the generic periods
     for name, defaults in periods:
         period = semester[name]
@@ -31,7 +32,7 @@ def fill_defaults(semester, periods):
 
 
 def get_period(periods, semester, week):
-    """ Returns the period from `periods` where the current week is located in the semester
+    """Returns the period from `periods` where the current week is located in the semester
 
     Parameters
     ----------
@@ -65,12 +66,12 @@ def get_period(periods, semester, week):
 
 
 def extract_dateinfo(date):
-    """Returns year, week, day, hour of the date """
+    """Returns year, week, day, hour of the date"""
     return map(int, date.strftime("%G %V %u %H").split())
 
 
 def date_diff(date1, date2, what="week"):
-    """Returns year, week, day, hour of the date """
+    """Returns year, week, day, hour of the date"""
     diff = date2 - date1
     if what == "week":
         return int((diff.days + 3.5) // 7)
@@ -182,7 +183,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     semester_week -= count_weeks_after_breaks(week, week_start, week_breaks)
 
     # start writing out
-    f = open(out, 'w')
+    f = open(out, "w")
 
     # open the tabs
     week_diffs = date_diff(today, semester_start_date)
@@ -199,22 +200,24 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
         f.write(f"The current {name} semester week is {semester_week}.\n\n")
 
     # Determine if we should write a close notice
-    weeks_rng = list(range(max(1, semester_week), weeks+1))
+    weeks_rng = list(range(max(1, semester_week), weeks + 1))
     if len(weeks_rng) == 0:
         # we are not open, and not in any weeks
 
-        f.write("""\
+        f.write(
+            """\
 The Python support has no office hours. We will strive to be reachable on
 mails and Discord.
 Expect longer answering times!
-""")
+"""
+        )
 
         f.close()
         return
 
     # Now produce the content
     f.write(".. tab-set::\n")
-   
+
     timetable_path = Path("timetable").resolve()
 
     def indent(s, indent=8):
@@ -228,14 +231,21 @@ Expect longer answering times!
         iso_week += count_weeks_after_breaks(iso_week, week_start, week_breaks)
 
         start, end = get_weekdates(year, iso_week)
-       
-        f.write(indent(f"""\
+
+        f.write(
+            indent(
+                f"""\
 .. tab-item:: {first}{sem_week}
 
-""", 4))
+""",
+                4,
+            )
+        )
 
         # add dates, note this REQUIRES AN EXTRA newline!
-        f.write(indent(f"| *Dates*: {start.strftime('%d/%m')} -- {end.strftime('%d/%m')}"))
+        f.write(
+            indent(f"| *Dates*: {start.strftime('%d/%m')} -- {end.strftime('%d/%m')}")
+        )
         f.write(indent(f"| *Danish week #*: {iso_week}\n"))
 
         if (timetable_path / f"{year}{iso_week}.rst").exists():
@@ -245,7 +255,7 @@ Expect longer answering times!
         else:
             f.write(indent("To be determined, come back later!"))
         f.write("\n")
-        
+
         # signal nothing for the first one
         first = ""
 
