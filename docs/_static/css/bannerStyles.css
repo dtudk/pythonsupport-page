@@ -14,7 +14,7 @@
     max-height: 100vh; /* Use max-height for smooth collapsing */
     background: url('../DTU_bld324.png');
     background-size: 80%;
-    background-position: -24% 33%;
+    background-position: 0% 502%;
     position: relative;
     border-radius: 15px; /* Rounded corners for the container */
     overflow: hidden; /* Ensure content is hidden when collapsed */
@@ -39,7 +39,7 @@
 
 
 .topBanner {
-    background-color: rgb(31 208 130 / 70%); /* Change to your desired background color */
+    background-color: #2f3feabc; /* DTU BLUE */
     border-top-left-radius: 15px; /* Rounded corners for the banners */
     border-top-right-radius: 15px; /* Rounded corners for the banners */
 }
