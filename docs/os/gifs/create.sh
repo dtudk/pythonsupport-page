@@ -2,17 +2,39 @@
 #
 # Create all the terminalizer stuff
 #
+only_hash=0
 np=1
-if [[ $# -gt 0 ]]; then
-  np=$1
+while [[ $# -gt 0 ]]; do
+
+  arg=$1
   shift
-fi
+  case $arg in
+    -n)
+      np=$1
+      shift
+      ;;
+    --hash)
+      only_hash=1
+      shift
+      ;;
+    *)
+      echo "Unknown argument: $arg"
+      exit 1
+      ;;
+  esac
+
+done
 
 run=commands.run
 rm -f $run
 mkdir -p tmp
 echo "Running creation of $run script"
 python3 merge.py $run
+
+if [ $only_hash -eq 1 ]; then
+  echo "Only created the hash tables"
+  exit 0
+fi
 
 echo "Will run:"
 cat $run

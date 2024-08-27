@@ -30,27 +30,27 @@ jobs:
       with:
         submodules: false
 
-    - name: Restore cached hash-file
-      uses: actions/cache@v3
-      id: cache-gif-hash
+    - name: Python installation
+      uses: actions/setup-python@v4
       with:
-        key: gifs-hash
-        path: docs/os/gifs/hashes.yml
+        python-version: "3.12"
 
-    - name: Restore cached gifs
-      uses: actions/cache@v3
-      id: cache-gif
-      with:
-        key: gifs-${{ hashFiles('docs/os/gifs/hashes.yml') }}
-        path: |
-          docs/os/gifs/*/*.gif
+    - name: Install requirements
+      run: |
+        python -m pip install -r requirements.txt
 
     - name: Node.js setup
-      if: ${{ steps.cache-gif.outputs.cache-hit != 'true' || steps.cache-gif-hash.outputs.cache-hit != 'true' }}
       uses: actions/setup-node@v4
+
+    - name: Restore cached gifs
+      uses: actions/cache@v4
+      id: cache-gif
+      with:
+        key: gifs
+        path: |
+          docs/os/gifs/*/*.gif
     
     - name: Run gifs
-      if: ${{ steps.cache-gif.outputs.cache-hit != 'true' || steps.cache-gif-hash.outputs.cache-hit != 'true' }}
       run: |
         sudo apt-get install xvfb
         npm install -g terminalizer
@@ -58,20 +58,6 @@ jobs:
         xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
         echo pwd=$(pwd)
         exit 0
-
-    - name: Python installation
-      uses: actions/setup-python@v4
-      with:
-        python-version: "3.11"
-
-    - name: Install requirements
-      run: |
-        python -m pip install -r requirements.txt
-        # upgrade to the latest sphinx
-        # currently sphinx-book-theme[1.0.1] has a <7 dependency,
-        # but it works locally and fixes some problems related to
-        # included documents and jinja replacements
-        python -m pip install -U "sphinx>=7.2.5"
 
     - name: Build and tar.gz documentation
       run: |
