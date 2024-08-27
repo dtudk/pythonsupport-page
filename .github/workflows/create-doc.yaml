@@ -46,7 +46,7 @@ jobs:
       uses: actions/cache@v4
       id: cache-gif
       with:
-        key: gifs
+        key: gifs-${{ hashFiles('docs/os/gifs/**/*.yml') }}
         path: |
           docs/os/gifs/*/*.gif
     
