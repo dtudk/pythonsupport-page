@@ -1,10 +1,5 @@
 .. _homepage-reference:
 
-.. pythonsupport documentation master file, created by
-   sphinx-quickstart on Mon Aug  7 12:41:08 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 .. meta::
    :description: Technical University of Denmark (DTU) Python Installation Support
    :keywords: dtudk, dtu, support, python, python3, pip, pip3, conda, venv, virtualenv
@@ -17,11 +12,10 @@ DTU Python Installation Support
 
 
 .. raw:: html
-      :file: html/main_banner.html
+   :file: html/main_banner.html
 
 Our goal is to ensure that students can get a Python
-environment up and running according to the needs of DTU courses.  
-Help can be requested through various channels:
+environment up and running according to the needs of DTU courses.
 
 
 .. _reach-us-reference:
@@ -37,7 +31,7 @@ Reach us
       :link: #office-hours
 
       | Open in 13 week semesters.
-      | Mon -- Fri (10-16):
+      | Mon -- Fri (see table):
       | Building **302**, room **92**.
       | Thursday (12:15-16):
       | Building **358**, room **43**.
@@ -55,6 +49,7 @@ Reach us
       :link-type: url
 
       | Join our Discord channel to reach us online, even after normal working hours.
+
 
 ------------------------
 What's on this website?

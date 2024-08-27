@@ -33,8 +33,8 @@ Install everything at once
       Search for :menuselection:`Terminal` using your Spotlight search (:kbd:`Command+Space`) and press :kbd:`Enter`.
 
        .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
-           :width: 100%
-           :align: center
+          :width: 100%
+          :align: center
 
    #.
        Paste the following code into your Terminal and press :kbd:`Enter`.
@@ -43,7 +43,7 @@ Install everything at once
 
        .. code:: bash
 
-           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
 
        .. include:: /_rst_includes/tip-copy.rst
 
@@ -60,9 +60,9 @@ Install everything at once
 
        .. note::
 
-           During the installation, you will see warnings and caveats, etc.
-           The script will resolve these automatically.
-           Please let the script finish.
+          During the installation, you will see warnings and caveats, etc.
+          The script will resolve these automatically.
+          Please let the script finish.
 
 
 .. include:: /_rst_includes/tip-finish.rst

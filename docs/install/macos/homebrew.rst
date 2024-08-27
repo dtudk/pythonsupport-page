@@ -40,12 +40,12 @@ Step 1: Install Homebrew
         Do *not* close the terminal once the installation script has finished.
 
         .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png
-            :width: 100%
-            :align: center
+           :width: 100%
+           :align: center
 
         .. image:: /images/install/macos-package-managed-homebrew.png
-            :width: 400
-            :align: center
+           :width: 400
+           :align: center
 
     #.
         Add Homebrew to the ``PATH`` by copying, pasting and running the code that Homebrew displays
@@ -54,13 +54,12 @@ Step 1: Install Homebrew
         but might differ slightly for different {{ macos }} versions.
 
         .. image:: /images/install/macos-package-managed-homebrew-terminal-instructions.png
-            :width: 400
-            :align: center
+           :width: 400
+           :align: center
 
 
 .. _install-python-macos-conda:
 .. _install-python-macos-python:
-
 
 Step 2: Install Miniconda and Python
 --------------------------------------
@@ -80,25 +79,32 @@ Step 2: Install Miniconda and Python
 
        .. code:: bash
 
-           brew install --cask miniconda
+          brew install --cask miniconda
+
+   #.
+       Paste the following code in the Terminal and press :kbd:`Enter`.
+
+       .. code:: bash
+
+          conda init "$(basename "${SHELL}")"
+          eval "$(conda "shell.$(basename "${SHELL}")" hook)"
 
    #.
        Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
        .. code:: bash
 
-           conda config --add channels conda-forge ; conda config --remove channels defaults
+          conda config --add channels conda-forge ; conda config --remove channels defaults
 
        .. include:: /_rst_includes/tip-copy.rst
 
-
    #.
        Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
        .. code:: bash
 
-           conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
-           
+          conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+
     
 .. _install-python-macos-vscode:
 
@@ -135,15 +141,15 @@ Step 4: Install extensions for Visual Studio Code
        Search for `Python`, and download the extension. Make sure that it is from Microsoft. 
 
        .. image:: /images/install/macos-package-managed-python.png
-           :width: 200
-           :align: center
+          :width: 200
+          :align: center
 
    #. 
        Hereafter search for `Jupyter`, and download that extension as well. This also needs to be from Microsoft.
        
        .. image:: /images/install/macos-package-managed-jupyter.png
-           :width: 200
-           :align: center
+          :width: 200
+          :align: center
 
 
 .. include:: /_rst_includes/tip-finish.rst
