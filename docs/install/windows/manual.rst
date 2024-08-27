@@ -18,7 +18,7 @@
 
     .. raw:: html 
     
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=045bfd79-bb8a-49af-b1d7-b1ce00a9662e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&captions=false&interactivity=all" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=045bfd79-bb8a-49af-b1d7-b1ce00a9662e" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 .. _install-python-windows-conda:
