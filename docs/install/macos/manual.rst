@@ -14,7 +14,7 @@
 
 .. _fully-manual-reference-mac:
 
-.. dropdown:: Video Guide
+.. dropdown:: {{ video_install }}
     :open:
     :color: info
 

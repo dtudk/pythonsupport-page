@@ -459,6 +459,8 @@ html_context = {
     "conda": "conda",
     "poetry": "poetry",
     "pyenv": "pyenv",
+    # Default naming conventions
+    "video_install": "Video Guide --- description found below :fas:`down-long`",
     # dates
     "current_year": f"{year}",
     # Virtual environment methods

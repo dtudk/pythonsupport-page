@@ -11,7 +11,7 @@
     Press here for {{ macos }} {{ apple_icon }}
 
 
-.. dropdown:: Video Guide
+.. dropdown:: {{ video_install }}
     :open:
     :color: info
 

@@ -13,7 +13,7 @@
     Press here for Windows {{ windows_icon }}
 
 
-.. dropdown:: Video Guide
+.. dropdown:: {{ video_install }}
     :open:
     :color: info
 
