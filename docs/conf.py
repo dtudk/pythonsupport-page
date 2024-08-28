@@ -241,7 +241,7 @@ _icon_links = [
         "type": "fontawesome",
     },
     {
-        "name": "Contact us through email",
+        "name": "Contact us by mail",
         "url": f"mailto:{_pythonsupport['mail']}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
         "type": "fontawesome",
