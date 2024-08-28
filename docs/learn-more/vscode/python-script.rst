@@ -1,6 +1,8 @@
 Python files (.py)
 ===================
 
+.. _learn-more-vscode-script-top:
+
 .. dropdown:: Video Tutorial
    :color: muted
    :open:
@@ -181,6 +183,8 @@ Opening a file in VS Code allows you to edit and run your code directly within t
       You can open a file by dragging and dropping it directly into the VS Code window.
 
 
+.. _learn-more-vscode-script-select-interpreter:
+
 Selecting the right interpreter
 -------------------------------
 
@@ -243,49 +247,21 @@ In short, the interpreter is the version of Python that you use to execute your 
 
 
 
-.. Run a Python File - Needs to be redone according to video
-.. ----------------------------------------------------------------
+Run a Python File
+----------------------------------------------------------------
 
-.. Once you've written your Python code, you can easily run it in VS Code.
-
-.. .. tip
-
-..                 Once you've selected the right interpreter you can run all the code in your python file by clicking the icon shaped like a play button in the top right of VS Code.
-    
-
-..   .. tab-set::
-..      :sync-group: os
-
-..         .. tab-item:: {{ windows }}
-..               :sync: windows
-
-..             1. Open the Python file you want to run.
-..             2. Press :kbd:`Ctrl+Shift+P`.
-..             3. Type *Run Python File in Terminal* and select it from the options.
-..             4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
-
-..             .. image:: ../images/VScode_windows_run_python.png
-..                 :width: 450
-..                 :align: center
-..                 :alt: Run Python File in VS Code
-
-..         .. tab-item:: {{ macos }}
-..               :sync: mac
-
-..             1. Open the Python file you want to run.
-..             2. Press :kbd:`Command+Shift+P`.
-..             3. Type *Run Python File in Terminal* and select it from the options.
-..             4. Alternatively, you can click the play button icon in the top right corner of the VS Code window.
-
-..             .. image:: ../images/VScode_mac_run_python.png
-..                 :width: 450
-..                 :align: center
-..                 :alt: Run Python File in VS Code
+Once you've written your Python code, you can easily run it in VS Code.
 
 
+.. card::
 
-.. todo::
-   Fill this section called Difference between... accordingly once the video includes this info. Sotero should be done with the video during week 19/8 - 23/8
+   Running Python files/scripts requires one to have set the interpreter, see :ref:`here <learn-more-vscode-script-select-interpreter>`.
+
+   When a Python file is open in VS Code, a :fas:`play` button will appear
+   in the top-right of VS Code.
+   When pressing that button, the currently opened file will be executed.
+
+   An example is found towards the end of :ref:`this video<learn-more-vscode-script-top>`.
 
 .. Difference between Terminal and Python shell in VS Code - Needs to be redone according to video
 .. ------------------------------------------------------------------------------------------------------------------------
