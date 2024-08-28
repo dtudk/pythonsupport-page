@@ -48,6 +48,10 @@ Step 1: Install Homebrew
            :align: center
 
     #.
+        *NOTE*: Not all {{ macos }} requires this step!
+
+        If Homebrew requests you to execute commands under :guilabel:`Next steps:`, then complete this step.
+
         Add Homebrew to the ``PATH`` by copying, pasting and running the code that Homebrew displays
         in the Terminal (look at the picture below for guidance). 
         Press :kbd:`Enter` once you have pasted the code. The code should look similar to the following image 
