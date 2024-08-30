@@ -4,7 +4,7 @@
    :keywords: IT, file, directory, directories, compress, zip
 
 
-Drop-in Cafe Basic IT skills
+Drop-in Café Basic IT skills
 ==================================
 
 
