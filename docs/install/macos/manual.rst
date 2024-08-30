@@ -18,10 +18,9 @@
     :open:
     :color: info
 
-    .. raw:: html 
-    
-       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c8043c3e-80f6-4dc1-97f9-b1ce00897b51" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    .. raw:: html
 
+       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=6e4b5e83-a182-4f4d-936c-b1dc00bb2e1d" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 

@@ -17,9 +17,9 @@
     :open:
     :color: info
 
-    .. raw:: html 
-    
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=52941d0b-cc65-42a0-9ceb-b1ce00897b51" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    .. raw:: html
+
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8c88a2cb-25a5-485a-8131-b1dc00bb2dee" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 .. _install-python-macos-homebrew:
