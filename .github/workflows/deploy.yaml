@@ -51,7 +51,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
-            rm -rf ./*
+            rm -rf ./index.html [^d]*
             tar xfz docs.tar.gz
             rm docs.tar.gz
 
