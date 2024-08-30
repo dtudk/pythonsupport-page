@@ -1,6 +1,6 @@
 
 
-**Introduction to Intelligent Systems**
+02461 --- E2023
 ============================================================================
 
 This guideline is for students attending course :course-base:`2023:02461` in the E23 year.

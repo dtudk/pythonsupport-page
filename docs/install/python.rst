@@ -12,7 +12,7 @@ Install Python
    Anaconda/Miniconda defaults to installing packages from the
    Anaconda repositories. There are license restrictions on how
    to use these. Please carefully
-   `read them <https://legal.anaconda.com/policies/en/?name=terms-of-service#anaconda-terms-of-service>`__ for your own sake.
+   `read them <https://legal.anaconda.com/policies/en/?name=terms-of-service>`__ for your own sake.
 
    The ``conda`` provided through our installation guidelines will default
    to use the ``conda-forge`` channel. However, the Anaconda repositories

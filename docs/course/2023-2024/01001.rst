@@ -1,14 +1,12 @@
 
 
-E2023
-=====
+01001 --- E2023
+============================================================================
 
-This guideline is for students attending course :course-base:`2023:01001` and :course-base:`2023:01003`
-in the 2023 autumn semester.
+.. warning::
 
-The primary guidelines for this course are located here:
+   This guideline has been removed and is no longer available.
 
-:full-link:`https://02002.compute.dtu.dk/installation/mat1.html`
+   Please contact the tearchers if you want to install the course
+   material for the E23 semester.
 
-Once you have followed the above guide, you additionally need to install the
-``Jupyter`` extension in VS Code, please read :doc:`here </learn-more/vscode/index>`.

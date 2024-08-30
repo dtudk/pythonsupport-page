@@ -1,6 +1,6 @@
 
-**Mathematics 1a**
-===================
+01001 --- E2024
+==============================
 
 .. dropdown:: Looking for previous years?
     :icon: hourglass

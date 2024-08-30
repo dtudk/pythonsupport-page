@@ -10,67 +10,8 @@ Here you will find video tutorials on topics such as terminal usage, VS Code deb
 Installation
 --------------
 
-Automatic Installation
-^^^^^^^^^^^^^^^^^^^^^^^
+Please find your installation video :ref:`here <install-python>`.
 
-.. tab-set::
-   :sync-group: os
-
-   .. tab-item:: {{ windows }}
-      :sync: windows
-
-      .. raw:: html
-
-         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=ffbe8bb5-accc-4bf1-be87-b1ce00aa5a97" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-   .. tab-item:: {{ macos }}
-      :sync: mac
-
-      .. raw:: html
-
-         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=9f43eb27-2f54-46eb-b8cc-b1ce01428f3d" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-
-
-Manual Installation
-^^^^^^^^^^^^^^^^^^^^^^^
-
-.. tab-set::
-   :sync-group: os
-
-   .. tab-item:: {{ windows }}
-      :sync: windows
-
-      .. raw:: html
-
-         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=045bfd79-bb8a-49af-b1d7-b1ce00a9662e" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-   .. tab-item:: {{ macos }}
-      :sync: mac
-
-      .. raw:: html
-
-         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c8043c3e-80f6-4dc1-97f9-b1ce00897b51" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-Package Managed Installation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. tab-set::
-   :sync-group: os
-   
-   .. tab-item:: {{ windows }}
-      :sync: windows
-
-      Not avaliable.
-
-   .. tab-item:: {{ macos }}
-      :sync: mac
-
-      .. raw:: html
-
-         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=52941d0b-cc65-42a0-9ceb-b1ce00897b51" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 Terminal and packages
@@ -132,7 +73,7 @@ Getting Started with VS Code
 
 .. raw:: html
 
-   <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7aa61ea4-ecf3-40ec-8386-b1ce00b65be6" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+   <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7c0cdab0-d90e-4858-bb3e-b1d5009e11f8" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 Workspaces and Files in VS Code
