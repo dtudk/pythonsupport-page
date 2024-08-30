@@ -30,15 +30,21 @@ Getting started
 
 .. card::
 
-   You can access :guilabel:`IDLE` by searching for `IDLE` in your search tab (both for {{ windows }} and {{ macos }}). 
-
-   When you open :guilabel:`IDLE`, you will see the following screen:
+   Open :guilabel:`IDLE` .
 
    .. tab-set::
       :sync-group: os
 
       .. tab-item:: {{ windows }}
          :sync: windows
+
+         Open up a terminal (see :ref:`here <learn-more-open-terminal>`) and type, then press :kbd:`Enter`
+
+         .. code:: pwsh
+
+            idle
+
+         You will see the following screen:
 
          .. image:: images/idle_windows1.png
             :width: 90%
@@ -47,7 +53,7 @@ Getting started
 
 
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
-   
+
          .. code:: python
                
             print("hello")
@@ -55,13 +61,21 @@ Getting started
       .. tab-item:: {{ macos }}
          :sync: mac
 
+         Open up a terminal (see :ref:`here <learn-more-open-terminal>`) and type, then press :kbd:`Enter`
+
+         .. code:: bash
+
+            idle3
+
+         You will see the following screen:
+
          .. image:: images/idle_mac1.png
             :width: 90%
             :align: center
             :alt: IDLE Shell
 
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
-   
+
          .. code:: python
                
             print("hello")

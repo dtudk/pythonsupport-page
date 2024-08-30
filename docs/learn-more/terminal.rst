@@ -20,6 +20,9 @@ Terminal
             <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=b6c29370-cf95-493c-8c02-b1ce00897b51" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
+
+.. _learn-more-open-terminal:
+
 Opening a terminal
 ^^^^^^^^^^^^^^^^^^
 
