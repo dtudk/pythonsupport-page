@@ -29,12 +29,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
           name: docs
 
       - name: Deployment -- rsync
-        uses: Burnett01/rsync-deployments@6.0.0
+        uses: Burnett01/rsync-deployments@7.0.1
         with:
           switches: -vr --delete
           path: docs.tar.gz
@@ -44,13 +44,14 @@ jobs:
           remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
 
       - name: Access and unpack
-        uses: appleboy/ssh-action@v1.0.0
+        uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
+            rm -rf [^d]* dropincafe
             tar xfz docs.tar.gz
             rm docs.tar.gz
 

@@ -1,6 +1,12 @@
 # The configurations that used for the recording, feel free to edit them
 config:
 
+  # No styling of the frame
+  frameBox:
+    type: solid
+    title: null
+    style:
+      backgroundColor: rgb(1, 36, 86)
   # Specify a command to be executed
   # like `/bin/bash -l`, `ls`, or any other commands
   # the default is bash for Linux

@@ -1,0 +1,34 @@
+
+
+02461 --- E2023
+============================================================================
+
+This guideline is for students attending course :course-base:`2023:02461` in the E23 year.
+
+The course requires:
+
+* A working Python (can be install :ref:`here <install-python>`)
+* A working VS Code (is installed by following :ref:`these guides <install-python>`)
+
+Ensure you have Python installed by following :ref:`this guide <install-python>`.
+Note this will install Python using ``conda``.
+
+We recommend you to create an :ref:`environment <learn-more-environments>` for this course:
+
+.. code:: bash
+
+   conda create --name IntelligentSystems
+
+Everytime you need to run code in the course, you need to activate the environment:
+
+.. code:: bash
+
+   conda activate IntelligentSystems
+
+The required packages should be installed in the above environment,
+and can be done by executing this command:
+
+.. code:: bash
+
+   conda install torch torchvision torchaudio matplotlib opencv-python imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
+

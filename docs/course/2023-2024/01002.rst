@@ -1,0 +1,14 @@
+
+
+
+01002 --- F2024
+============================================================================
+
+
+.. warning::
+
+   This guideline has been removed and is no longer available.
+
+   Please contact the tearchers if you want to install the course
+   material for the F24 semester.
+

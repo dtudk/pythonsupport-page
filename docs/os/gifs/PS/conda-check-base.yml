@@ -1,0 +1,8 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+  cols: 85
+  rows: 5
+
+records:
+  - delay: 4000
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HLoading personal and system profiles took 543ms.\r\n\e[01;37m(base)\e[00m PS C:\\Users\\user> \e[?2004l"

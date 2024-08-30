@@ -1,0 +1,16 @@
+<div class="popup" id="popup-pythonsupport">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <h1>Test popup</h1>
+        <div class="buttons">
+            <a class="install-python" href="quickstart/index.html" onclick="togglePopup()">Button One</a>
+            <a class="essentials" href="essentials_first/index.html" onclick="togglePopup()">Button Two</a>
+        </div>
+    </div>
+</div>
+<script>
+    function togglePopup() {
+        document.getElementById("popup-pythonsupport").classList.toggle("inactive");
+    }
+</script>

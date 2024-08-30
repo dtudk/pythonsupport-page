@@ -13,7 +13,7 @@ certain extensions.
 
    Usage:
 
-   .. code-block:: rst
+   .. code:: rst
 
       :course:`01001`
 
@@ -27,7 +27,7 @@ certain extensions.
 
    Usage:
 
-   .. code-block:: rst
+   .. code:: rst
 
       :course-home:`01001`
 
@@ -57,7 +57,7 @@ certain extensions.
 
    Example usage:
 
-   .. code-block:: rst
+   .. code:: rst
 
       .. 1. Simple reference
 
