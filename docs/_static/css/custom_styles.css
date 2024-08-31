@@ -1005,3 +1005,50 @@ html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.r
 }
 
 
+
+img {
+  cursor: zoom-in;
+}
+
+.zoom-overlay img {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left:0;
+  right:0;
+  bottom: 0;
+  max-height: 0%;
+  max-width: 0%;
+  border: 3px solid white;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+img.zoomed-in-image-display{
+  max-height: 90% !important;
+  max-width: 80% !important;
+  cursor: pointer;
+}
+
+.zoom-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0; 
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.zoom-overlay-display {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 10000 !important;
+  opacity: 1; 
+  cursor: zoom-out;
+  border-radius: 0px;
+}
