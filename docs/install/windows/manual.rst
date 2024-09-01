@@ -65,6 +65,18 @@ Step 2: Install Python
           :width: 400
           :align: center
 
+    #. 
+        Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
+
+        .. code:: pwsh
+
+            Set-ExecutionPolicy Unrestricted
+        
+        .. include:: /_rst_includes/tip-copy.rst
+    
+
+
+
     #.
        Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
@@ -72,7 +84,7 @@ Step 2: Install Python
 
           conda config --add channels conda-forge ; conda config --remove channels defaults
 
-       .. include:: /_rst_includes/tip-copy.rst
+       
 
     #. 
        Copy the following line of code into your PowerShell and press :kbd:`Enter`:
@@ -80,6 +92,23 @@ Step 2: Install Python
        .. code:: pwsh
 
           conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+
+    #. 
+
+        Search for Anaconda prompt and select :menuselection:`Run as Administrator` just as with the poweshell. 
+        Now paste in the following command and press Enter
+        
+        .. code:: pwsh
+
+            conda init
+        
+        .. image:: /images/install/Windows_open_conda_prompt.png
+          :width: 400
+          :align: center
+        
+        
+
+            
 
 
 .. _install-python-windows-vscode:
