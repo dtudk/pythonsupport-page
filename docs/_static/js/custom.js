@@ -82,3 +82,45 @@ function PyS_noRed() {
         console.error('bottomBanner element not found');
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    var images = document.getElementsByTagName("img");
+    var overlay = document.createElement('div'); 
+    overlay.className = 'zoom-overlay'
+    document.body.appendChild(overlay);
+
+
+    for (var i = 0; i < images.length; i++) {
+        images[i].addEventListener('click', function() {
+            event.preventDefault(); // Prevent the default behavior of the image or link
+            var clonedImage = this.cloneNode(true);
+            clonedImage.classList.toggle('zoomed-in-image');
+            console.log(overlay.childNodes.length);
+            if (overlay.firstChild){
+                console.log('in the if')
+                overlay.removeChild(overlay.firstChild);
+            }
+            overlay.appendChild(clonedImage);
+            console.log('child appended');
+            clonedImage.classList.toggle('zoomed-in-image-display');
+            overlay.classList.toggle('zoom-overlay-display');
+            
+
+        });
+    };
+
+    overlay.addEventListener("click", function() {
+        let childImage = this.childNodes[0];
+        overlay.classList.toggle('zoom-overlay-display');
+        childImage.classList.toggle('zoomed-in-image-display');
+    })
+
+    document.body.addEventListener('keydown', function(e) {
+        if (e.key == "Escape") {
+          if (overlay.classList.contains('zoom-overlay-display')) {
+            overlay.classList.toggle('zoom-overlay-display');
+            childImage.classList.toggle('zoomed-in-image-display');
+          }
+        }
+      });
+});
