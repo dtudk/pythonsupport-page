@@ -54,6 +54,27 @@ Step 2: Install Python
 
 .. card:: 
 
+
+    #. 
+       Open PowerShell as an `Administrator` by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
+
+    #.
+       Once you see Windows PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
+       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
+
+       .. image:: /images/install/windows-ps-run-admin.png
+          :width: 400
+          :align: center
+
+    #. 
+        Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
+
+        .. code:: pwsh
+
+            Set-ExecutionPolicy RemoteSigned
+        
+        Make sure to keep the PowerShell open for later 
+
     #. 
 
         Open the :menuselection:`Anconda prompt` as an `Administrator` by opening the menu bar, then search for :menuselection:`Anaconda Prompt`.
@@ -78,23 +99,7 @@ Step 2: Install Python
         
 
 
-    #. 
-       Open PowerShell as an `Administrator` by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
 
-    #.
-       Once you see Windows PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
-       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
-
-       .. image:: /images/install/windows-ps-run-admin.png
-          :width: 400
-          :align: center
-
-    #. 
-        Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
-
-        .. code:: pwsh
-
-            Set-ExecutionPolicy Unrestricted
         
         
     
