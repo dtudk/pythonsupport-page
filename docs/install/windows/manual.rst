@@ -55,77 +55,43 @@ Step 2: Install Python
 .. card:: 
 
 
-    #. 
-       Open PowerShell as an `Administrator` by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
-
     #.
-       Once you see Windows PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
+       Open :menuselection:`Anaconda PowerShell` as an `Administrator` by opening the menu bar, then search for :menuselection:`Anaconda PowerShell`.
+
+       Once you see Anaconda PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
        If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
 
-       .. image:: /images/install/windows-ps-run-admin.png
+       .. image:: /images/install/windows-anaconda-ps-run-admin.png
           :width: 400
           :align: center
-
-    #. 
-        Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
-
-        .. code:: pwsh
-
-            Set-ExecutionPolicy RemoteSigned
-        
-        Make sure to keep the PowerShell open for later 
-
-    #. 
-
-        Open the :menuselection:`Anconda prompt` as an `Administrator` by opening the menu bar, then search for :menuselection:`Anaconda Prompt`.
-    
-    #.
-       Once you see Anaconda Prompt on the right-hand side, you can select :menuselection:`Run as Administrator`.
-       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
-
-       .. image:: /images/install/Windows_open_conda_prompt.png
-          :width: 400
-          :align: center
-
-    #. 
-
-        Run the following command in the Anaconda Prompt window by copying, pasting and pressing :kbd:`Enter`:
-        
-        .. code:: pwsh
-
-            conda init
-        
-        .. include:: /_rst_includes/tip-copy.rst
-        
-
-
-
-        
-        
-    
-
-
 
     #.
        Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
        .. code:: pwsh
 
+          Set-ExecutionPolicy RemoteSigned
+
+       .. include:: /_rst_includes/tip-copy.rst
+
+    #.
+       Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
+
+       .. code:: pwsh
+
+          conda init
+
+       .. code:: pwsh
+
           conda config --add channels conda-forge ; conda config --remove channels defaults
 
-       
-
-    #. 
-       Copy the following line of code into your PowerShell and press :kbd:`Enter`:
+    #.
+       Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
        .. code:: pwsh
 
           conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
-        
-        
-
-            
 
 
 .. _install-python-windows-vscode:
