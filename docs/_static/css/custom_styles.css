@@ -1027,7 +1027,7 @@ img {
 img.zoomed-in-image-display{
   max-height: 90% !important;
   max-width: 80% !important;
-  cursor: pointer;
+  cursor: zoom-out;
 }
 
 .zoom-overlay {
@@ -1049,6 +1049,6 @@ img.zoomed-in-image-display{
   transform: translate(-50%, -50%) scale(1);
   z-index: 10000 !important;
   opacity: 1; 
-  cursor: zoom-out;
+  cursor: pointer !important;
   border-radius: 0px;
 }

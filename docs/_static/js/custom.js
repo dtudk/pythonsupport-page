@@ -110,10 +110,17 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     overlay.addEventListener("click", function() {
-        if (event.target === overlay) { // Check if clicked outside the image
-            let childImage = this.childNodes[0];
+        let childImage = this.childNodes[0];
+        overlay.classList.toggle('zoom-overlay-display');
+        childImage.classList.toggle('zoomed-in-image-display');
+    })
+
+    document.body.addEventListener('keydown', function(e) {
+        if (e.key == "Escape") {
+          if (overlay.classList.contains('zoom-overlay-display')) {
             overlay.classList.toggle('zoom-overlay-display');
             childImage.classList.toggle('zoomed-in-image-display');
+          }
         }
-    })
+      });
 });
