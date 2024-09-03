@@ -11,10 +11,10 @@
      - Friday
    * - 8-10
      - 302.A92, or online
-     -
-     -
      - 302.A92, or online
-     -
+     - 302.A92, or online
+     - 302.A92, or online
+     - 302.A92, or online
    * - 10-12:30
      - 302.A92, or online
      - 302.A92, or online
