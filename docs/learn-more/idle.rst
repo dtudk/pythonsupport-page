@@ -84,7 +84,8 @@ Getting started
 Creating and running scripts
 ----------------------------
 
-A Python *script* is a file with Python code. Once the script is *run*, all the code is executed. This is great for larger jobs and allows for reusage of your code. 
+A Python *script* is a file with Python code. Once the script is *run*, all the code is executed.
+This is great for larger jobs and allows for reuse of your code.
 
 .. tab-set::
    :sync-group: os

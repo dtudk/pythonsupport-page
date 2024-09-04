@@ -2,7 +2,7 @@
 Verification
 --------------------------------------
 
-Verify that your installation is successfull by following these steps:
+Verify that your installation is successful by following these steps:
 
 1. Open PowerShell by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
    Verify that ``(base)`` is shown to the left of the

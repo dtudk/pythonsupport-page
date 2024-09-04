@@ -2,7 +2,7 @@
 Verification
 --------------------------------------
 
-Verify that your installation is successfull by following these steps:
+Verify that your installation is successful by following these steps:
 
 1. Search for :menuselection:`Terminal` using your
    Spotlight search (:kbd:`Command+Space`) and press :kbd:`Enter`.

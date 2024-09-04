@@ -95,9 +95,9 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
    * - Compressed files
      - Files can be reduced in size by re-arranging the internals of the file.
-       This makes them un-readable until one decompresses the files.
+       This makes them unreadable until one decompresses the files.
 
-       Some files are more succeptible for large compressions (text files), while
+       Some files are more susceptible to large compression (text files), while
        other files will rarely be compressed further (JPEG images).
 
    * - Command
@@ -174,7 +174,7 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
    * - :guilabel:`Applications` folder
      - The directory on {{macos}} where installed applications are stored.
-       Deleting applications here will un-install them.
+       Deleting applications here will uninstall them.
 
    * - :guilabel:`Dock`
      - The Dock is a place to fast access certain applications and features.
@@ -198,7 +198,7 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
    * - :guilabel:`Add/Remove Programs`
      - Allows uninstalling Programs. Generally applications are installed through
-       dedicated files, so this feature is typically only used for un-installing software.
+       dedicated files, so this feature is typically only used for uninstalling software.
 
    * - :guilabel:`File Explorer`
      - The :ref:`File Explorer <it-skills-tbl-file-explorer>` for {{windows}}.

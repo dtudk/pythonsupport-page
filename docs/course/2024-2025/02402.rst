@@ -1,0 +1,7 @@
+
+
+02402 --- E2024
+=================================================================
+
+.. include:: /_rst_includes/course-default-pg-installation.rst
+

@@ -16,7 +16,7 @@ Install Python
 
    The ``conda`` provided through our installation guidelines will default
    to use the ``conda-forge`` channel. However, the Anaconda repositories
-   are hard-coded in the ``conda`` infrastructure as fallbacks.
+   are hard-coded in the ``conda`` infrastructure as fallback.
    Therefore users should be aware, at install time, where the packages originates from.
 
    .. todo::

@@ -20,7 +20,7 @@ We recommend you to create an :ref:`environment <learn-more-environments>` for t
    conda config --add channels conda-forge
    conda create --name IntelligentSystems python=3.11 -y
 
-Everytime you need to run code in the course, you need to activate the environment:
+Every time you need to run code in the course, you need to activate the environment:
 
 .. code:: bash
 
