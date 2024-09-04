@@ -1011,6 +1011,10 @@ img {
   cursor: zoom-in;
 }
 
+img.logo {
+  cursor: pointer; /* Prevents the logo from being zoomed in */
+}
+
 /* Styling for images inside the zoom overlay */
 .zoom-overlay img {
   margin: auto; /* Centers the image within the overlay */

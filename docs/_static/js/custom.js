@@ -91,18 +91,22 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(overlay);
 
   for (var i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", function () {
-      event.preventDefault(); // Prevent the default behavior of the image or link
-      let clonedImage = this.cloneNode(true);
-      clonedImage.classList.toggle("zoomed-in-image");
-      if (overlay.firstChild) {
-        overlay.removeChild(overlay.firstChild);
-      }
-      overlay.appendChild(clonedImage);
-      childImage = overlay.childNodes[0];
-      clonedImage.classList.toggle("zoomed-in-image-display");
-      overlay.classList.toggle("zoom-overlay-display");
-    });
+    if (images[i].src.includes("_static")) {
+      images[i].classList.add("logo");
+    } else {
+      images[i].addEventListener("click", function () {
+        event.preventDefault(); // Prevent the default behavior of the image or link
+        let clonedImage = this.cloneNode(true);
+        clonedImage.classList.toggle("zoomed-in-image");
+        if (overlay.firstChild) {
+          overlay.removeChild(overlay.firstChild);
+        }
+        overlay.appendChild(clonedImage);
+        childImage = overlay.childNodes[0];
+        clonedImage.classList.toggle("zoomed-in-image-display");
+        overlay.classList.toggle("zoom-overlay-display");
+      });
+    }
   }
 
   overlay.addEventListener("click", function () {
