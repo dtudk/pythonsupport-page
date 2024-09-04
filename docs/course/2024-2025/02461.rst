@@ -22,6 +22,7 @@ We recommend you to create an :ref:`environment <learn-more-environments>` for t
 
 .. code:: bash
 
+   conda config --add channels conda-forge
    conda create --name IntelligentSystems
 
 Everytime you need to run code in the course, you need to activate the environment:
@@ -36,7 +37,6 @@ and can be done by executing these commands, one by one:
 .. code:: bash
 
    conda activate IntelligentSystems
-   conda config --add channels conda-forge
    conda config --env --add channels pytorch
    conda install pytorch torchvision torchaudio matplotlib opencv imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
 

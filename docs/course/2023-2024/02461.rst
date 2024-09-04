@@ -17,7 +17,8 @@ We recommend you to create an :ref:`environment <learn-more-environments>` for t
 
 .. code:: bash
 
-   conda create --name IntelligentSystems
+   conda config --add channels conda-forge
+   conda create --name IntelligentSystems python=3.11 -y
 
 Everytime you need to run code in the course, you need to activate the environment:
 
@@ -30,5 +31,5 @@ and can be done by executing this command:
 
 .. code:: bash
 
-   conda install torch torchvision torchaudio matplotlib opencv-python imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
+   pip install torch torchvision torchaudio matplotlib opencv-python imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
 
