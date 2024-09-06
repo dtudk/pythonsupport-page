@@ -123,9 +123,14 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
        It is located somewhere else in the world, and requires internet access to interact
        with files on said storage.
 
-   * - Terminal
+   * - .. _it-skills-tbl-terminal:
+
+       Terminal
      - A program that allows one to execute commands by *writing what to do*.
        See :ref:`this table for commands <it-skills-tbl-term>`.
+
+   * - Shell
+     - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
    * - PowerShell ({{windows}})
      - The recommended terminal program in Windows.

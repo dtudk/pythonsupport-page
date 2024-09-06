@@ -38,8 +38,9 @@ Install everything at once
 
    #.
        Paste the following code into your Terminal and press :kbd:`Enter`.
-       You might get asked for permissions.
-       Please do this, note that your password will not be shown while typing it. 
+       You might get asked several times for your password to grant permissions.
+
+       **Note**: your password will not be shown while typing it.
 
        .. code:: bash
 

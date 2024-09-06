@@ -35,8 +35,10 @@ Step 1: Install Homebrew
     #.  
         The Homebrew website will ask you to open a terminal.
         Find the :menuselection:`Terminal` using your Spotlight search (:kbd:`Command+Space`) and press :kbd:`Enter`.
-        You might get asked for permissions.
-        Please do this, note that your password will not be shown while typing it. 
+        You might get asked several times for your password to grant permissions.
+       
+        **Note**: your password will not be shown while typing it.
+
         Do *not* close the terminal once the installation script has finished.
 
         .. image:: /images/install/MacOS-SpotlightSearch-Terminal.png

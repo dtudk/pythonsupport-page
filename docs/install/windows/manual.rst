@@ -70,7 +70,7 @@ Step 2: Install Python
 
        .. code:: pwsh
 
-          Set-ExecutionPolicy RemoteSigned
+          Set-ExecutionPolicy -Force RemoteSigned
 
        .. include:: /_rst_includes/tip-copy.rst
 
