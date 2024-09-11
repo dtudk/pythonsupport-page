@@ -21,7 +21,7 @@ apparent and descriptive to enable you as a student.
 When?
 -------
 
-The Drop-in Cafe will be open 
+The Drop-in Cafe will be open
 
 * in weeks 38 --- 49 (except 42).
 * in building 306, 1st floor
@@ -34,7 +34,7 @@ Activities
 
 * File System scavenger hunt
 
-   
+
   .. card::
 
      A visual exploration of how files and folders are organized on
@@ -61,7 +61,7 @@ Terminology
 
 This is a non-exhaustive list of terminologies used when interacting with a computer.
 Some are language specific which means they may have different names on your computer
-if you have a different language setting (e.g. :guilabel:`File Explorer` on Windows is named :guilabel:`Stifinder` in the Danish version). 
+if you have a different language setting (e.g. :guilabel:`File Explorer` on Windows is named :guilabel:`Stifinder` in the Danish version).
 
 
 .. list-table:: Terminology
@@ -72,7 +72,7 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
    * - File/folder tree
      - The hierarchical structure of directories and files on a computer.
-   
+
    * - Filesystem
      - The actual representation of the file/folder tree on the computers harddrives (disks).
 
@@ -85,7 +85,7 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
    * - Extension
      - Files can have *extensions* that is formatted by a ``.`` and the extension.
-       E.g. ``.txt``. The extension informs the operating system how the file should
+       The extension informs the operating system how the file should
        be handled. For instance ``.docx`` files are Word documents, ``.py`` files
        are Python scripts.
 
@@ -98,10 +98,15 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
        This makes them unreadable until one decompresses the files.
 
        Some files are more susceptible to large compression (text files), while
-       other files will rarely be compressed further (JPEG images).
+       others will rarely be compressed further (JPEG images).
 
-   * - Command
-     - An instruction given to a computer program on the command line interface (terminal)
+   * - .. _it-skills-tbl-command:
+
+       Command
+     - An instruction given to a computer program on the command line interface (terminal).
+
+   * - Command line interface
+     - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
    * - Directory separator
      - On {{ windows }} the directory separator is ``\``, while for {{ macos }}, the separator
@@ -110,8 +115,8 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
    * - .. _it-skills-tbl-hard-disk:
 
        Hard disk/drive
-     - The hardware that hosts everything on the computer. The operating system, files
-       required for the computer to work, as well as files that the user creates, images,
+     - The hardware that stores everything on the computer. The operating system, files
+       required for the computer to work, as well as files that the user creates; images,
        text documents, etc.
 
    * - Memory
@@ -126,25 +131,18 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
    * - .. _it-skills-tbl-terminal:
 
        Terminal
-     - A program that allows one to execute commands by *writing what to do*.
+     - A program that allows one to execute :ref:`commands <it-skills-tbl-command>`
+       by *writing what to do*.
+
        See :ref:`this table for commands <it-skills-tbl-term>`.
 
    * - Shell
      - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
-   * - PowerShell ({{windows}})
-     - The recommended terminal program in Windows.
-
-   * - Command prompt ({{windows}})
-     - A non-recommended terminal program in Windows.
-
-       Windows has both PowerShell and Command prompt. We highly encourage
-       users to stick with PowerShell.
-
 
 .. _it-skills-tbl-term:
 
-.. list-table:: Terminal
+.. list-table:: Terminal :ref:`commands <it-skills-tbl-command>`
    :header-rows: 1
 
    * - Command
@@ -161,11 +159,17 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
        Notice that ``mv file1 file2``
        will simply rename the file from ``file1`` to ``file2``.
-   
+
    * - ``rm <?>``
      - Deletes files/folders named ``<?>``.
 
-   * - ``python3``
+   * - ``pwd``
+     - Shows the currently *opened* directory in the terminal.
+
+   * - ``conda``
+     - Package manager for Python programs.
+
+   * - ``python``/``python3``
      - Used to run Python programs from the terminal. Either scripts or interactively.
 
 
@@ -185,12 +189,22 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
      - The Dock is a place to fast access certain applications and features.
        It can be re-arranged to any of the screen edges. By default
        it is located at the bottom of the screen.
-   
+
    * - :guilabel:`Finder`
      - The :ref:`File Explorer <it-skills-tbl-file-explorer>` for {{macos}}.
 
    * - ``/``
      - The directory separator for {{macos}}.
+
+   * - ``bash``
+     - A commonly encountered terminal program in {{macos}}.
+
+       ``bash`` and ``zsh`` can be considered equivalent.
+
+   * - ``zsh``
+     - A commonly encountered terminal program in {{macos}}.
+
+       ``bash`` and ``zsh`` can be considered equivalent.
 
 
 .. _it-skills-tbl-windows:
@@ -210,4 +224,19 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
 
    * - ``\``
      - The directory separator for {{windows}}.
+
+   * - PowerShell
+     - The recommended terminal program in Windows.
+
+   * - .. _it-skills-tbl-windows-command-prompt:
+
+       Command prompt
+     - A non-recommended terminal program in Windows.
+
+       Many :ref:`commands <it-skills-tbl-command>` listed in :ref:`it-skills-tbl-term`
+       does not work in the command prompt. We thus highly recommend users to
+       stick with PowerShell.
+
+   * - CMD
+     - Same as :ref:`Command prompt <it-skills-tbl-windows-command-prompt>`.
 
