@@ -32,12 +32,24 @@ The Drop-in Cafe will be open
 Activities
 ------------
 
-* File System scavenger hunt
-
+* Analogue file system scavenger hunt
 
   .. card::
 
      A visual exploration of how files and folders are organized on
+     a computer.
+
+     After this activity the student will have experience in:
+
+     - Understanding the file-explorer
+
+     - Know that renaming files is equivalent to moving files (and vice versa)
+
+* Digital file system scavenger hunt
+
+  .. card::
+
+     A direct exploration of how files and folders are organized on
      a computer.
 
      After this activity the student will have experience in:
@@ -61,7 +73,8 @@ Terminology
 
 This is a non-exhaustive list of terminologies used when interacting with a computer.
 Some are language specific which means they may have different names on your computer
-if you have a different language setting (e.g. :guilabel:`File Explorer` on Windows is named :guilabel:`Stifinder` in the Danish version).
+if you have a different language setting
+(e.g. Windows :guilabel:`File Explorer` is named :guilabel:`Stifinder` in the Danish version).
 
 
 .. list-table:: Terminology
@@ -83,13 +96,17 @@ if you have a different language setting (e.g. :guilabel:`File Explorer` on Wind
        This is the primary way for users of a computer to interact with their files
        and folders.
 
-   * - Extension
+   * - .. _it-skills-tbl-extension:
+
+       Extension
      - Files can have *extensions* that is formatted by a ``.`` and the extension.
        The extension informs the operating system how the file should
        be handled. For instance ``.docx`` files are Word documents, ``.py`` files
        are Python scripts.
 
-   * - Path
+   * - .. _it-skills-tbl-path:
+
+       Path
      - The full file-tree name of a file or folder in the file/folder tree.
        E.g. ``C:\Users\MyName\my_document.docx``.
 
