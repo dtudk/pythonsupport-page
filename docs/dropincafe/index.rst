@@ -3,6 +3,7 @@
    :description: Technical University of Denmark (DTU) IT Cafe
    :keywords: IT, file, directory, directories, compress, zip
 
+.. _it-skills:
 
 Drop-in Café Basic IT skills
 ==================================
@@ -17,6 +18,7 @@ and navigate their computer file systems. We also strive to make basic terminolo
 apparent and descriptive to enable you as a student.
 
 
+.. _it-skills-when:
 
 When?
 -------
@@ -28,6 +30,7 @@ The Drop-in Cafe will be open
 * Tuesday and Thursdays between 17-19.
 
 
+.. _it-skills-activities:
 
 Activities
 ------------
@@ -49,6 +52,9 @@ Activities
 
   .. card::
 
+     File used during exercise:
+     :download:`ScavengerHunt.pdf <files/ScavengerHunt.pdf>`
+
      A direct exploration of how files and folders are organized on
      a computer.
 
@@ -61,12 +67,13 @@ Activities
 
      - Know that renaming files is equivalent to moving files (and vice versa)
 
-     - Understand where Downloaded files (from a browser) is placed in the
+     - Understand where Downloaded files (from a browser) are placed in the
        file system.
 
 * More are in the works...
 
 
+.. _it-skills-terminology:
 
 Terminology
 ------------
@@ -154,6 +161,9 @@ if you have a different language setting
        See :ref:`this table for commands <it-skills-tbl-term>`.
 
    * - Shell
+     - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
+
+   * - Console
      - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
 
@@ -256,4 +266,5 @@ if you have a different language setting
 
    * - CMD
      - Same as :ref:`Command prompt <it-skills-tbl-windows-command-prompt>`.
+
 
