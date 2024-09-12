@@ -75,41 +75,41 @@ Step 2: Install Miniconda and Python
    Installs all packages required for the 1\ :sup:`st` year
    Polytechnical Foundation courses at DTU. 
 
-   #. 
-       Close the previously used :menuselection:`Terminal`,
-       and open up a new :menuselection:`Terminal` using
-       Spotlight search (:kbd:`Command+Space` and search for ``Terminal``).
+   #.
+      Close the previously used :menuselection:`Terminal`,
+      and open up a new :menuselection:`Terminal` using
+      Spotlight search (:kbd:`Command+Space` and search for ``Terminal``).
 
    #.
-       Paste the following code in the Terminal and press :kbd:`Enter`.
+      Paste the following code in the Terminal and press :kbd:`Enter`.
 
-       .. code:: bash
+      .. code:: bash
 
-          brew install --cask miniconda
-
-   #.
-       Paste the following code in the Terminal and press :kbd:`Enter`.
-
-       .. code:: bash
-
-          conda init "$(basename "${SHELL}")"
-          eval "$(conda "shell.$(basename "${SHELL}")" hook)"
+         brew install --cask miniconda
 
    #.
-       Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
+      Paste the following code in the Terminal and press :kbd:`Enter`.
 
-       .. code:: bash
+      .. code:: bash
 
-          conda config --add channels conda-forge ; conda config --remove channels defaults
-
-       .. include:: /_rst_includes/tip-copy.rst
+         conda init "$(basename "${SHELL}")"
+         eval "$(conda "shell.$(basename "${SHELL}")" hook)"
 
    #.
-       Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
+      Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
-       .. code:: bash
+      .. code:: bash
 
-          conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+         conda config --add channels conda-forge ; conda config --remove channels defaults ; conda config --set channel_priority strict
+
+      .. include:: /_rst_includes/tip-copy.rst
+
+   #.
+      Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
+
+      .. code:: bash
+
+         conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
     
 .. _install-python-macos-vscode:
