@@ -87,37 +87,59 @@ if you have a different language setting
 .. list-table:: Terminology
    :header-rows: 1
 
-   * - Term
+   * - English
+     - Dansk
      - Explanation
 
    * - File/folder tree
+     - Fil/mappe struktur
      - The hierarchical structure of directories and files on a computer.
 
    * - Filesystem
+     - Filsystem
      - The actual representation of the file/folder tree on the computers harddrives (disks).
 
    * - .. _it-skills-tbl-file-explorer:
 
        File Explorer/Finder
+     - Stifinder/Finder
      - The operating systems interactive view of the File/folder tree.
        This is the primary way for users of a computer to interact with their files
        and folders.
 
+   * - .. _it-skills-tbl-favorites:
+
+       Favorites
+     - Favoritter
+     - Easy access folders in your :ref:`File Explorer/Finder <it-skills-tbl-file-explorer>`.
+       These are typically located to the top-left with `Desktop`, `Downloads`, `Documents`, etc.
+       Add your most commonly used folders here by drag-and-dropping folders into the list.
+
    * - .. _it-skills-tbl-extension:
 
        Extension
+     - Filtypenavn
      - Files can have *extensions* that is formatted by a ``.`` and the extension.
        The extension informs the operating system how the file should
        be handled. For instance ``.docx`` files are Word documents, ``.py`` files
        are Python scripts.
 
+   * - .. _it-skills-tbl-desktop:
+
+       Desktop
+     - Skrivebord
+     - A special folder that is shown when you turn on your machine.
+       However, in the filesystem this is just a regular folder, like any other.
+
    * - .. _it-skills-tbl-path:
 
        Path
+     - Sti
      - The full file-tree name of a file or folder in the file/folder tree.
        E.g. ``C:\Users\MyName\my_document.docx``.
 
    * - Compressed files
+     - Komprimeret filer
      - Files can be reduced in size by re-arranging the internals of the file.
        This makes them unreadable until one decompresses the files.
 
@@ -127,43 +149,60 @@ if you have a different language setting
    * - .. _it-skills-tbl-command:
 
        Command
+     - Kommando
      - An instruction given to a computer program on the command line interface (terminal).
 
    * - Command line interface
+     - Kommando linje
      - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
    * - Directory separator
+     - Mappe separator
      - On {{ windows }} the directory separator is ``\``, while for {{ macos }}, the separator
        is ``/``.
 
    * - .. _it-skills-tbl-hard-disk:
 
        Hard disk/drive
+     - Hard disk/drev
      - The hardware that stores everything on the computer. The operating system, files
        required for the computer to work, as well as files that the user creates; images,
        text documents, etc.
 
-   * - Memory
+   * - Memory/RAM
+     - Hukommelse
      - A dedicated place of space meant for the operating system to hold temporary disk space.
        This is very fast for the computer to work with. As opposed to the :ref:`Hard disk <it-skills-tbl-hard-disk>` which is rather slow.
 
    * - Cloud/Remote storage
+     - Skylager
      - A :ref:`hard disk <it-skills-tbl-hard-disk>` that is not physically on your computer.
        It is located somewhere else in the world, and requires internet access to interact
        with files on said storage.
 
+   * - :guilabel:`Trash`
+     - :guilabel:`Papirkurv`
+     - Deleting files will, generally, move the files to the trash-bin (typically located
+       on your :ref:`Desktop <it-skills-tbl-desktop>`, or in your :ref:`favourites <it-skills-tbl-favorites>`).
+
+       This allows one to recover files that were not intended to be deleted, but most
+       importantly, they still occupy disk-space on your :ref:`hard drive <it-skills-tbl-hard-disk>`. Deleting files in the :guilabel:`Trash` will completely delete it.
+
    * - .. _it-skills-tbl-terminal:
 
        Terminal
+     - Terminal
      - A program that allows one to execute :ref:`commands <it-skills-tbl-command>`
        by *writing what to do*.
 
        See :ref:`this table for commands <it-skills-tbl-term>`.
 
    * - Shell
+     - Skal
      - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
    * - Console
+     - Konsol
      - Another name for a :ref:`Terminal <it-skills-tbl-terminal>`.
 
 
@@ -205,19 +244,23 @@ if you have a different language setting
 .. list-table:: {{macos}} specific terms
    :header-rows: 1
 
-   * - Term
+   * - English
+     - Dansk
      - Explanation
 
    * - :guilabel:`Applications` folder
+     - :guilabel:`Programmer` folder
      - The directory on {{macos}} where installed applications are stored.
        Deleting applications here will uninstall them.
 
    * - :guilabel:`Dock`
+     - :guilabel:`Dock`
      - The Dock is a place to fast access certain applications and features.
        It can be re-arranged to any of the screen edges. By default
        it is located at the bottom of the screen.
 
    * - :guilabel:`Finder`
+     - :guilabel:`Finder`
      - The :ref:`File Explorer <it-skills-tbl-file-explorer>` for {{macos}}.
 
    * - ``/``
@@ -239,14 +282,17 @@ if you have a different language setting
 .. list-table:: {{windows}} specific terms
    :header-rows: 1
 
-   * - Term
+   * - English
+     - Dansk
      - Explanation
 
    * - :guilabel:`Add/Remove Programs`
+     - :guilabel:`Tilføj/Fjern Programmer`
      - Allows uninstalling Programs. Generally applications are installed through
        dedicated files, so this feature is typically only used for uninstalling software.
 
    * - :guilabel:`File Explorer`
+     - :guilabel:`Stifinder`
      - The :ref:`File Explorer <it-skills-tbl-file-explorer>` for {{windows}}.
 
    * - ``\``
@@ -258,6 +304,7 @@ if you have a different language setting
    * - .. _it-skills-tbl-windows-command-prompt:
 
        Command prompt
+     - Kommando prompt
      - A non-recommended terminal program in Windows.
 
        Many :ref:`commands <it-skills-tbl-command>` listed in :ref:`it-skills-tbl-term`
@@ -265,6 +312,7 @@ if you have a different language setting
        stick with PowerShell.
 
    * - CMD
+     - CMD
      - Same as :ref:`Command prompt <it-skills-tbl-windows-command-prompt>`.
 
 
