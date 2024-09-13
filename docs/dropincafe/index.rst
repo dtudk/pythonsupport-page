@@ -107,14 +107,6 @@ if you have a different language setting
        This is the primary way for users of a computer to interact with their files
        and folders.
 
-   * - .. _it-skills-tbl-favorites:
-
-       Favorites
-     - Favoritter
-     - Easy access folders in your :ref:`File Explorer/Finder <it-skills-tbl-file-explorer>`.
-       These are typically located to the top-left with `Desktop`, `Downloads`, `Documents`, etc.
-       Add your most commonly used folders here by drag-and-dropping folders into the list.
-
    * - .. _it-skills-tbl-extension:
 
        Extension
@@ -124,12 +116,23 @@ if you have a different language setting
        be handled. For instance ``.docx`` files are Word documents, ``.py`` files
        are Python scripts.
 
+   * - .. _it-skills-tbl-favorites:
+
+       Favorites
+     - Favoritter
+     - Easy access folders in your :ref:`File Explorer/Finder <it-skills-tbl-file-explorer>`.
+       These are typically located to the top-left with `Desktop`, `Downloads`, `Documents`, etc.
+       Add your most commonly used folders here by drag-and-dropping folders into the list.
+
    * - .. _it-skills-tbl-desktop:
 
        Desktop
      - Skrivebord
      - A special folder that is shown when you turn on your machine.
        However, in the filesystem this is just a regular folder, like any other.
+
+       This folder is user dependent, and thus exists in the file tree below
+       the user.
 
    * - .. _it-skills-tbl-path:
 
@@ -264,14 +267,17 @@ if you have a different language setting
      - The :ref:`File Explorer <it-skills-tbl-file-explorer>` for {{macos}}.
 
    * - ``/``
+     - ``/``
      - The directory separator for {{macos}}.
 
    * - ``bash``
+     - ``bash``
      - A commonly encountered terminal program in {{macos}}.
 
        ``bash`` and ``zsh`` can be considered equivalent.
 
    * - ``zsh``
+     - ``zsh``
      - A commonly encountered terminal program in {{macos}}.
 
        ``bash`` and ``zsh`` can be considered equivalent.
@@ -296,9 +302,11 @@ if you have a different language setting
      - The :ref:`File Explorer <it-skills-tbl-file-explorer>` for {{windows}}.
 
    * - ``\``
+     -
      - The directory separator for {{windows}}.
 
    * - PowerShell
+     - PowerShell
      - The recommended terminal program in Windows.
 
    * - .. _it-skills-tbl-windows-command-prompt:
