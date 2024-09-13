@@ -101,7 +101,9 @@ General IT questions
      (MFA) to work, VPN, etc. they should ask AIT.
    | Mail: :mail:`itsupport@student.dtu.dk`
    | Their phone number is: +45 452 55555.
-   | Office hours 305.027 8:00--15:00.
+   | Located in building 189
+   | Other information can be found :full-link:`here <https://www.inside.dtu.dk/en/undervisning/faglig/it-systemer-og-vaerktoejer>`.
+
 DTU Learn
    Go here: :full-link:`https://learnsupport.dtu.dk`
 Counseling for students:
