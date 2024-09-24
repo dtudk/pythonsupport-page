@@ -1,0 +1,21 @@
+name: IntelligentSystems
+channels:
+  - pytorch
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - pytorch
+  - torchvision
+  - torchaudio
+  - matplotlib
+  - opencv
+  - imageio
+  - scikit-learn
+  - scikit-image
+  - jupyter
+  - pygame
+  - scipy
+  - nltk
+  - ipywidgets
+  - tqdm

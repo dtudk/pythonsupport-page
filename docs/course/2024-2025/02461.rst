@@ -9,34 +9,52 @@
    * :doc:`Autumn 2023 (E23) </course/2023-2024/02461>`
 
 
+.. button-link:: https://www.google.com/search?q=cheatsheet+python+conda
+   :color: {{ cheatsheet_color }}
+   :align: right
+   :tooltip: Search Google for cheatsheet
+
+   Find a Conda cheatsheet {{ cheatsheet_icon }}
+
 This guideline is for students attending course :course-base:`2024:02461` in the E24 year.
 
 The course requires:
 
-* A working Python (can be install :ref:`here <install-python>`)
+* A working Python (can be installed :ref:`here <install-python>`)
 * A working VS Code (is installed by following :ref:`these guides <install-python>`)
 
-Ensure you have Python installed by following :ref:`this guide <install-python>`.
+Choose one of these installation procedures:
 
-We recommend you to create an :ref:`environment <learn-more-environments>` for this course:
+.. card:: Semi-manual installation
 
-.. code:: bash
+   Download the :download:`02461.yml </course/2024-2025/02461.yml>` and install
+   it using :ref:`this environment.yml guide <learn-more-environments-yaml>`.
 
-   conda config --add channels conda-forge
-   conda create --name IntelligentSystems
+   This will create an environment named ``IntelligentSystems`` that you should
+   activate when following the course.
 
-Every time you need to run code in the course, you need to activate the environment:
 
-.. code:: bash
+.. card:: Fully-manual installation
 
-   conda activate IntelligentSystems
+   We recommend you to create an :ref:`environment <learn-more-environments>` for this course:
 
-The required packages should be installed in the above environment,
-and can be done by executing these commands, one by one:
+   .. code:: bash
 
-.. code:: bash
+      conda config --add channels conda-forge
+      conda create --name IntelligentSystems
 
-   conda activate IntelligentSystems
-   conda config --env --add channels pytorch
-   conda install pytorch torchvision torchaudio matplotlib opencv imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
+   Every time you need to run code in the course, you need to activate the environment:
+
+   .. code:: bash
+
+      conda activate IntelligentSystems
+
+   The required packages should be installed in the above environment,
+   and can be done by executing these commands, one by one:
+
+   .. code:: bash
+
+      conda activate IntelligentSystems
+      conda config --env --add channels pytorch
+      conda install pytorch torchvision torchaudio matplotlib opencv imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
 

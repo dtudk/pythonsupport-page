@@ -46,6 +46,25 @@ manage packages each time a different project is used. The Conda manager allows 
 environments with specific packages and Python versions. This can be useful if a specific
 package requires a specific Python version.
 
+One can list all *global* environments by:
+
+.. tab-set::
+   :sync-group: os
+
+   .. tab-item:: {{ windows }}
+      :sync: windows
+
+      .. code:: powershell
+
+         conda env list
+
+   .. tab-item:: {{ macos }}
+      :sync: mac
+
+      .. code:: bash
+
+         conda env list
+
 .. note::
 
     A *global* environment, created using ``conda create --name`` is stored in Conda's default directory.
@@ -57,8 +76,8 @@ package requires a specific Python version.
     folder, which would keep the environment self-contained within your project.
 
 
-Creating an environment
-^^^^^^^^^^^^^^^^^^^^^^^
+Creating an environment with commands
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For example, let us create an environment with Conda for Course A. An environment can be created by using:
 
@@ -85,10 +104,46 @@ For example, let us create an environment with Conda for Course A. An environmen
          # alternatively, the environment can be placed in a subdirectory
          conda create --prefix course-A
 
-.. note::
-   
-   Executing ``conda env list`` can list the available *global* environments
-   (those created with ``--name``).
+
+.. _learn-more-environments-yaml:
+
+Creating an environment from an ``environment.yml`` file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In some cases an installation guide will share an `environment.yml <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-file-manually>`__ file.
+This file contains the full details to reproduce an environment.
+When having an ``environment.yml`` file, it can be installed with (note, the file
+can have *any* name):
+
+.. tab-set::
+   :sync-group: os
+
+   .. tab-item:: {{ windows }}
+      :sync: windows
+
+      .. code:: powershell
+
+         conda env create -f environment.yml
+
+   .. tab-item:: {{ macos }}
+      :sync: mac
+
+      .. code:: bash
+
+         conda env create -f environment.yml
+
+Here is an example ``environment.yml`` file that creates an environment
+named ``course-A``, with Python and ``numpy``:
+
+.. code:: yaml
+
+   name: course-A
+   channels:
+     - conda-forge
+     - nodefaults
+   dependencies:
+     - python
+     - numpy
 
 
 Activating an environment
@@ -166,6 +221,16 @@ Finally, the environment is deactivated, returning the user to their previous en
     Further documentation on environments can be found
     `here <https://docs.anaconda.com/working-with-conda/environments/>`__ while
     management of the environments can be found `here <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`__.
+
+
+The equivalent ``environment.yml`` file would look like this:
+
+.. code:: yaml
+
+   name: numpy-env
+   dependencies:
+     - python={{python_version_recommended}}
+     - numpy=1.23
 
 
 Environments with venv
