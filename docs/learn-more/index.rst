@@ -40,7 +40,6 @@ helping you understand the basics of these tools.
    
    terminal
    IDLE (only for 02002/02003) <idle>
-   vscode/index
    packages-and-environments/index.rst
 
 
