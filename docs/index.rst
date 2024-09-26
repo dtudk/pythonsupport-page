@@ -101,6 +101,7 @@ Office hours
    :hidden:
 
    install/python.rst
+   learn-more/vscode/index.rst
    course/index.rst
    learn-more/index.rst
    videos/index.rst
