@@ -1062,3 +1062,13 @@ img.zoomed-in-image-display {
   border-radius: 0px; /* Removes border radius when overlay is displayed */
 }
 
+
+
+
+@media only screen and (width <= 1200px) {
+  .bd-sidebar-primary,.bd-sidebar-secondary {
+      display: none !important;
+  }
+}
+
+
