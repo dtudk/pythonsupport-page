@@ -1064,11 +1064,12 @@ img.zoomed-in-image-display {
 
 
 
+/* Takes out the primary and secondary bar when making a windows narrower on a computer,
+  and also on mobile devices */
 
 @media only screen and (width <= 1200px) {
   .bd-sidebar-primary,.bd-sidebar-secondary {
       display: none !important;
   }
 }
-
 
