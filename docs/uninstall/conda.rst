@@ -17,7 +17,7 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 {{ windows }}
 -------------------------------------------
 
-1. Ensure all shells, command promts are closed i.e. make sure Anaconda (or related files) aren't open anywhere.  
+1. Ensure all shells, command prompts are closed i.e. make sure no files related to Anaconda/Miniconda are open anywhere.  
 
 2. Open your control panel, and press :guilabel:`Uninstall application`.
 
