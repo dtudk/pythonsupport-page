@@ -260,7 +260,6 @@ html_theme_options = {
     "repository_url": _pythonsupport["repository"],
 }
 
-
 _course_json_url = "_static/course_switcher.json"
 if False:
     html_theme_options["switcher"] = {
