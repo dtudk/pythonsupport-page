@@ -19,6 +19,3 @@ sphinxcontrib-jquery
 
 # yaml
 pyyaml
-
-# Auto-reload when changes are detected
-sphinx-autobuild

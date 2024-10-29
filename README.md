@@ -28,7 +28,7 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-       python3 -m pip install -r requirements.txt
+       python3 -m pip install -r requirements.txt sphinx-autobuild
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
        # will allow updating a package that breaks compatibility, we
@@ -37,23 +37,23 @@ The steps can be outlined like this:
        #    :fingers_crossed:
        python3 -m pip install -U "sphinx>=7.2.5"
 
-3. Build documentation
+3. Development server
+
+       make livehtml
+
+   This will open a local webserver that autoreloads when changes are made to the website.
+
+4. Build documentation
 
        make
 
    Now the documentation is build and can be found in `build/html`.
 
-4. Open the documentation:
+5. Open the documentation:
 
        firefox build/html/index.html
 
    And you should be ready to see the just build documentation.
-
-5. (Serve locally for development)
-
-       make livehtml
-
-   This will open a local webserver that autoreloads when changes are made to the website.
 
 Running Locally in Podman
 -------------------------
