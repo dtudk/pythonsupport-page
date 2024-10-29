@@ -41,7 +41,8 @@ The steps can be outlined like this:
 
        make livehtml
 
-   This will open a local webserver that autoreloads when changes are made to the website.
+   This will open a local webserver that auto-reloads whenever you make 
+   changes to the `rst` documentation or any files in the `docs/` directory.
 
 4. Build documentation
 
