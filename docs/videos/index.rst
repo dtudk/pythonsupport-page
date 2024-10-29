@@ -4,7 +4,7 @@
 Video Tutorials
 ======================
 
-Here you will find video tutorials on topics such as terminal usage, VS Code debugging and much more. 
+Here you will find video tutorials on topics such as terminal usage, VS Code, debugging and much more. 
 
 .. card-carousel:: 3
 
