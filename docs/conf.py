@@ -245,37 +245,13 @@ _icon_links = [
         "url": f"mailto:{_pythonsupport['mail']}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
         "type": "fontawesome",
-    },
-#    {
-#       "name": "DTU help | External pages",
-#       "url": "#;",
-#       "icon": "fa-solid fa-ellipsis-vertical",
-#       "type": "fontawesome",
-#   },
-#   {
-#       "name": "Official Python homepage",
-#       "url": "https://www.python.org",
-#       "icon": f"fa-brands fa-python {_fa_move}",
-#       "type": "fontawesome",
-#   },
-#   {
-#       "name": "Conda documentation",
-#       "url": "https://docs.conda.io/en/latest/index.html",
-#       "icon": "_static/anaconda_logo.svg",
-#       "type": "local",
-#   },
-#   {
-#       "name": "PyPi package installation repository",
-#       "url": "https://pypi.org/",
-#       "icon": "_static/logo-small.2a411bc6.svg",
-#       "type": "local",
-#   },
+    }
 ]
 
 
 html_theme_options = {
     "navbar_center": ["logo_button.html", "navbar-nav"],
-    "navbar_end": ["theme-switcher", "article-header-buttons"],
+    "navbar_end": ["theme-switcher"],
     "icon_links": _icon_links,
     "header_links_before_dropdown": 10,
     "back_to_top_button": True,
@@ -283,7 +259,6 @@ html_theme_options = {
     "repository_provider": "github",
     "repository_url": _pythonsupport["repository"],
 }
-
 
 _course_json_url = "_static/course_switcher.json"
 if False:
@@ -303,7 +278,7 @@ html_css_files = [
     ("css/questionairStyles.css", {"priority": 999}),
     ("css/popupStyles.css", {"priority": 999}),
     ("css/custom_styles.css", {"priority": 998}),
-    "css/colors.css",
+    ("css/colors.css", {"priority": 997}),
 ]
 
 

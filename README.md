@@ -49,6 +49,11 @@ The steps can be outlined like this:
 
    And you should be ready to see the just build documentation.
 
+5. (Serve locally for development)
+
+       make livehtml
+
+   This will open a local webserver that autoreloads when changes are made to the website.
 
 Running Locally in Podman
 -------------------------
