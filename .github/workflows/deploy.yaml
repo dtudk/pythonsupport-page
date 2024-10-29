@@ -44,7 +44,7 @@ jobs:
           remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
 
       - name: Access and unpack
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.1.0
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
