@@ -322,10 +322,10 @@ have an extra effect since there is previous code taking care of this */
   /* Hover state for hyperlinks - Changes all, but there are other 
 hovers that are also interfering so it doesn't have effect on all  */
 
-  a:hover {
+  /* a:hover {
     color: var(--bg-primary) !important;
     border-bottom-color: var(--bg-primary) !important;
-  }
+  } */
 
   /* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
 
