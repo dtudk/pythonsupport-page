@@ -255,89 +255,6 @@ color: var(--bg-primary)!important;
 /* .svg-inline--fa.fa-download {
     display: none;
 } */
- 
-/* Move the theme switch button to the left */
-.theme-switch-button {
-  
-  margin-right: 23px !important;
-}
-
-
-/* Target the GitHub SVG icon specifically and delete it */
-.svg-inline--fa.fa-github {
-display: none !important;
-content: none !important;
-}
-
-.btn.btn-sm.btn-source-repository-button {
-  display: none !important;
-}
-
-/* Hide the button with the specific class within article-header-buttons */
-.article-header-buttons .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button {
-  display: none !important;
-  content: none !important;
-}
-
-/* Move the icon with the class 'svg-inline--fa fa-expand' to the left */
-.svg-inline--fa.fa-expand {
-  margin-left: -10px; /* Ensure no left margin */ /* Push it to the left within a flex container */
-  vertical-align: middle; /* Ensure it is vertically aligned */
-  width: 21px;  /* Adjust width as needed */
-  height: 21px; 
-}
-
-
-/* Ensure the header is fixed and static */
-.bd-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure it is above other elements */
-}
-
-/* Ensure the header is fixed and static */
-.bd-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000; /* Ensure it is above other elements */
-}
-
-
-.bd-sidebar-secondary {
-  position: sticky;
-  top: 4rem; /* Adjust this value based on the height of your header */
-  z-index: 900; /* Slightly lower than the header's z-index */
-  overflow-y: auto; /* Allow scrolling if content exceeds the viewport height */
-}
-
-body {
-  padding-top: 60px; /* Adjust based on the height of your header */
-}
-
-/* Reduce space between icons and titles */
-.navbar-header-items__center {
-  display: flex;
-  align-items: center;
-}
-
-.article-header-buttons {
-  margin-left: -12px; /* Adjust to reduce space between titles and icons */
-}
-
-
-/* Ensure the header buttons are aligned with the rest of the header */
-.article-header-buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-
-
 
   
 /* Ensure all titles formatted with `=` are bold - doesn't seem to 
@@ -491,15 +408,6 @@ since it is also on the header.
   display: none !important;
 }
 
-
-/* Takes out a repeated list appearing on the phone/tablet version */
-@media only screen and (width <= 992px) {
-  .sidebar-header-items.sidebar-primary__section {
-      display: none;
-  }
-}
-
-
 /* Remove the light blue line below selected items in the header */
 .navbar a:focus, .navbar a:hover, .navbar a.active, .navbar a.current {
   border-bottom: none !important; /* Remove the underline */
@@ -595,94 +503,6 @@ html[data-theme="dark"] li.toctree-l3.current.active > a, li.toctree-l3.current 
   display: none;
 }
 
-/* Ensure the navbar itself is taking up the full width and height without extra space */
-.navbar {
-  display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center;     /* Center items vertically */
-  width: 100%;
-  height: auto;            /* Allow the height to adjust based on content */
-  padding: 0;              /* Remove default padding */
-  margin: 0;
-  border-bottom-color: var(--bg-primary)               /* Remove default margin */
-}
-
-
-
-
-/* Center and style .navbar-icon-links */
-.navbar-icon-links {
-  display: flex;
-  justify-content: center; /* Center icons horizontally */
-  align-items: center;     /* Center icons vertically */
-  width: auto;             /* Adjust width based on content */
-  padding: 0;              /* Remove default padding */
-  margin: 0;               /* Remove default margin */
-  list-style-type: none;   /* Remove list style */
-  flex-wrap: nowrap;  
-  border-bottom-color: var(--bg-primary);     /* Prevent wrapping to the next line */
-}
-
-/* Ensure each icon is evenly spaced */
-.navbar-icon-links > li {
-  display: flex;           /* Ensure each item is flex */
-  align-items: center;     /* Center items vertically */
-  justify-content: center; /* Center items horizontally */
-  margin: 0 10px;  
-  border-bottom-color: var(--bg-primary);     /* Prevent wrapping to the next line */
-
-  /* Adjust the spacing as needed */
-}
-
-/* Ensure the icons are properly sized and styled */
-.navbar-icon-links > li > a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 1.5em;
-  border-bottom-color: var(--bg-primary);     /* Prevent wrapping to the next line */
-
-  /* Adjust the size of the icons */
-
-     /* Set the color to match the text color */
-}
-
-
-/* Reduce the space in sidebar */
-.bd-sidebar-primary {
-  padding-top: 0;          /* Remove any top padding */
-  margin-top: 0;           /* Remove any top margin */
-}
-
-.sidebar-primary-item {
-  margin-top: 0;           /* Remove any top margin */
-  padding-top: 0;          /* Remove any top padding */
-}
-
-.bd-container__inner {
-  padding-top: 0;          /* Remove any top padding */
-  margin-top: 0;           /* Remove any top margin */
-}
-
-.bd-container {
-  padding-top: 0;          /* Remove any top padding */
-  margin-top: 0;           /* Remove any top margin */
-}
-
-/* Additional adjustments if needed */
-.body {
-  margin-top: 0;           /* Remove any top margin */
-  padding-top: 0;          /* Remove any top padding */
-}
-
-/* Specific adjustment for the main container if applicable */
-.main-container {
-  padding-top: 0 !important; /* Force remove top padding if present */
-  margin-top: 0 !important;  /* Force remove top margin if present */
-}
-
-
  /* General hyperlink styles */
  a {
   color: var(--bg-primary); /* Red color */
@@ -730,10 +550,6 @@ a.reference.external:visited {
 }
 
 
-/* Hide the header link initially */
-.headerlink {
-  display: none;
-}
 
 /* Show the header link when hovering over the header */
 h1:hover .headerlink,
@@ -995,17 +811,6 @@ html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.r
   
 }
 
-/* Makes left-side bar static */
-.bd-sidebar-primary.bd-sidebar.noprint
-{
-  position: sticky;
-  top: 4rem; /* Adjust this value based on the height of your header */
-  z-index: 900; /* Slightly lower than the header's z-index */
-  overflow-y: auto; /* Allow scrolling if content exceeds the viewport height */
-}
-
-
-
 /* Base styling for all images - cursor changes to zoom-in on hover */
 img {
   cursor: zoom-in;
@@ -1062,14 +867,44 @@ img.zoomed-in-image-display {
   border-radius: 0px; /* Removes border radius when overlay is displayed */
 }
 
+/* To ensure responsiveness */
+.navbar {
+  border-bottom-color: var(--bg-primary);
+  position: sticky;
+}
 
+.navbar-nav {
+  flex-direction: row;
+}
 
-/* Takes out the primary and secondary bar when making a windows narrower on a computer,
-  and also on mobile devices */
+.bd-article {
+  padding-top: 3rem !important;
+}
 
-@media only screen and (width <= 1200px) {
-  .bd-sidebar-primary,.bd-sidebar-secondary {
-      display: none !important;
+.bd-sidebar-secondary {
+  top: var(--pst-header-height);
+}
+.bd-sidebar-primary {
+  top: var(--pst-header-height);
+}
+
+@media (max-width: 960px) {
+  button.sidebar-toggle.primary-toggle {
+    display: flex;
+  }
+  .navbar-header-items {
+    display: flex !important;
+    flex: 1 !important;
+  }
+  .me-auto nav {
+    display: none !important;
+  }
+
+  .sidebar-header-items.sidebar-primary__section {
+    display: none;
+  }
+  .bd-sidebar-primary {
+    top: 0;
   }
 }
 
