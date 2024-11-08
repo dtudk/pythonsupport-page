@@ -867,52 +867,71 @@ img.zoomed-in-image-display {
   border-radius: 0px; /* Removes border radius when overlay is displayed */
 }
 
-/* To ensure responsiveness */
+/* Sets the position of the navbar to follow the user */
 .navbar {
   border-bottom-color: var(--bg-primary);
   position: sticky;
 }
 
+/* Sets the nav to be displayed as a row */
 .navbar-nav {
   flex-direction: row;
 }
 
+/* Add padding to align article contents to left sidebar */
 .bd-article {
   padding-top: 3rem !important;
 }
 
+/* Sets the correct position from the top when scrolling */
 .bd-sidebar-secondary {
   top: var(--pst-header-height);
 }
 .bd-sidebar-primary {
   top: var(--pst-header-height);
 }
+
+/* Fixes sidebar overflow issues */
 .bd-sidebar-primary {
   max-height: calc(100vh - 65px);
   overflow: hidden;
 }
+
+/* Sets the width and padding of the left sidebar to ensure the sidebar takes up as much space as possible */
 .bd-sidenav {
   width: 100%;
   padding-right: 12px;
 }
+
+/* Fixes scaling issues with the site */
 @media (max-width: 960px) {
+  /* Show the sidebar toggle */
   button.sidebar-toggle.primary-toggle {
     display: flex;
   }
+
+  /* Ensures that header items are displayed as flex */
   .navbar-header-items {
     display: flex !important;
     flex: 1 !important;
   }
+
+  /* Hides the me-auto element */
   .me-auto nav {
     display: none !important;
   }
 
+  /* Hides the primary__section element */
   .sidebar-header-items.sidebar-primary__section {
     display: none;
   }
+
+  /* Ensure that the sidebar sticks to the top */
   .bd-sidebar-primary {
     top: 0;
   }
+
+  /* Ensure that the sidebar fills the whole height of the page */
   .bd-sidebar-primary {
     max-height: 100vh;
     overflow: hidden;
