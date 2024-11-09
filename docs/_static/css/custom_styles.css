@@ -867,10 +867,9 @@ img.zoomed-in-image-display {
   border-radius: 0px; /* Removes border radius when overlay is displayed */
 }
 
-/* Sets the position of the navbar to follow the user */
 .navbar {
-  border-bottom-color: var(--bg-primary);
-  position: sticky;
+  position: sticky; /* Sets the position of the navbar to follow the user */
+  border-bottom-color: var(--bg-primary); /* Ensures that the bottom border is visible */
 }
 
 /* Sets the nav to be displayed as a row */
@@ -903,9 +902,9 @@ img.zoomed-in-image-display {
   padding-right: 12px;
 }
 
-/* Fixes scaling issues with the site */
+/* Fixes responsiveness issues on smaller screens */
 @media (max-width: 960px) {
-  /* Show the sidebar toggle */
+  /* Show the sidebar toggle on smaller screens */
   button.sidebar-toggle.primary-toggle {
     display: flex;
   }
@@ -921,7 +920,7 @@ img.zoomed-in-image-display {
     display: none !important;
   }
 
-  /* Hides the primary__section element */
+  /* Hides the top navbar */
   .sidebar-header-items.sidebar-primary__section {
     display: none;
   }
