@@ -2,7 +2,8 @@
     position: relative;
     text-align: center;
     color: white;
-    margin-bottom: 20px; /* Create space below the image */
+    margin-bottom: 20px;
+    /* Create space below the image */
 }
 
 
@@ -11,50 +12,66 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 100vh; /* Use max-height for smooth collapsing */
+    max-height: 100vh;
+    /* Use max-height for smooth collapsing */
     background: url('../DTU_bld324.png');
     background-size: 80%;
     background-position: 0% 502%;
     position: relative;
-    border-radius: 15px; /* Rounded corners for the container */
-    overflow: hidden; /* Ensure content is hidden when collapsed */
-    transition: max-height 0.5s ease-in-out; /* Smooth transition for max-height change */
+    border-radius: 15px;
+    /* Rounded corners for the container */
+    overflow: hidden;
+    /* Ensure content is hidden when collapsed */
+    transition: max-height 0.5s ease-in-out;
+    /* Smooth transition for max-height change */
 }
 
 .banner-container.collapsed {
-    max-height: 0; /* Collapsed state */
+    max-height: 0;
+    /* Collapsed state */
 }
 
-.topBanner, .bottomBanner {
+.topBanner,
+.bottomBanner {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
+    /* Stack items vertically */
     padding: 10px;
     width: 100%;
     box-sizing: border-box;
-    flex: 1; /* Ensure both banners take up equal space */
-    
-    
+    flex: 1;
+    /* Ensure both banners take up equal space */
+
+
 }
 
 
 
 .topBanner {
-    background-color: #2f3feabc; /* DTU BLUE */
-    border-top-left-radius: 15px; /* Rounded corners for the banners */
-    border-top-right-radius: 15px; /* Rounded corners for the banners */
+    background-color: #2f3feabc;
+    /* DTU BLUE */
+    border-top-left-radius: 15px;
+    /* Rounded corners for the banners */
+    border-top-right-radius: 15px;
+    /* Rounded corners for the banners */
 }
 
 .bottomBanner {
-    background-color: rgb(232 63 72 / 70%); /* Change to your desired background color */
-    border-bottom-left-radius: 15px; /* Rounded corners for the banners */
-    border-bottom-right-radius: 15px; /* Rounded corners for the banners */
+    background-color: rgb(232 63 72 / 70%);
+    /* Change to your desired background color */
+    border-bottom-left-radius: 15px;
+    /* Rounded corners for the banners */
+    border-bottom-right-radius: 15px;
+    /* Rounded corners for the banners */
 }
 
-.top-text, .bottom-text {
+.top-text,
+.bottom-text {
     text-align: left;
     font-size: 27px;
     color: white;
-    align-self: flex-start; /* Align text to the left */
+    align-self: flex-start;
+    /* Align text to the left */
     margin-left: 12px;
 }
 
@@ -63,18 +80,21 @@
     text-align: left;
     font-size: 27px;
     color: white;
-    align-self: flex-start; /* Align text to the left */
+    align-self: flex-start;
+    /* Align text to the left */
     margin-left: 12px;
 }
 
-.top-link, .bottom-link {
+.top-link,
+.bottom-link {
     font-size: 27px;
     color: white;
-    align-self: flex-end; /* Align link to the left */
+    align-self: flex-end;
+    /* Align link to the left */
     margin-right: 12px;
 }
 
-.bottom-link{
+.bottom-link {
     margin-bottom: 5px;
 }
 
@@ -82,17 +102,20 @@
 
 
 
-.top-text-bold, .bottom-text-bold {
+.top-text-bold,
+.bottom-text-bold {
     font-size: 36px;
     font-weight: bold;
 }
 
 .first-link-hover a:hover {
-    color: #E83F48; /* Change this to your desired hover color */
+    color: #E83F48;
+    /* Change this to your desired hover color */
 }
 
 .special-hover a:hover {
-    color: #1fd082; /* Change this to your desired hover color */
+    color: #1fd082;
+    /* Change this to your desired hover color */
 }
 
 * {
@@ -103,12 +126,17 @@
 }
 
 /* Media Queries for smaller screens */
-@media (width <= 600px) {
-    .top-text, .bottom-text, .top-link, .bottom-link {
+@media (width <=600px) {
+
+    .top-text,
+    .bottom-text,
+    .top-link,
+    .bottom-link {
         font-size: 18px !important;
     }
 
-    .top-text-bold, .bottom-text-bold {
+    .top-text-bold,
+    .bottom-text-bold {
         font-size: 24px !important;
     }
 }
