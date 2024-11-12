@@ -15,6 +15,7 @@
     --dtu-green: #008835;
     --dtu-purple: #79238E;
     --bg-primary: var(--dtu-red);
+    --bs-primary-rgb: 232, 63, 72;
     --bg-primary-highlight: var(dtu-red-corporate);
 
     /* --sd-color-primary: #007bff ;
@@ -69,5 +70,5 @@
     --sd-color-tabs-underline-inactive: transparent;
     --sd-color-tabs-overline: rgb(222 222 222);
     --sd-color-tabs-underline: rgb(222 222 222);
-    --sd-fontsize-tabs-label: 1rem
+    --sd-fontsize-tabs-label: 1rem;
 }
