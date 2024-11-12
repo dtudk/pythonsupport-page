@@ -9,6 +9,7 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = docs
 BUILDDIR      = build
+LINKCHECKDIR  = $(BUILDDIR)/linkcheck
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -24,7 +25,6 @@ help:
 .PHONY: all
 all: clean html
 
-LINKCHECKDIR  = build/linkcheck
 
 .PHONY: spelling spell
 spell: spelling
@@ -39,5 +39,10 @@ linkcheck:
 	@echo
 	@echo "Check finished. Report is in $(LINKCHECKDIR)."
 
+
 livehtml:
 	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) --ignore docs/_static/course_switcher.json --ignore docs/timetable/timetable.rst
+
+
+gifs:
+	(cd docs/os/gifs ; bash create.sh)t

@@ -1,5 +1,4 @@
-DTU Python support homepage
-===========================
+# DTU Python support homepage
 
 Welcome to the DTU Python support development site.
 
@@ -11,8 +10,7 @@ packages for a course at DTU, please visit
 
 
 
-Building the documentation
---------------------------
+## Building the documentation
 
 To build the documentation in a controlled environment we recommend you
 to use a virtual environment.
@@ -37,7 +35,7 @@ The steps can be outlined like this:
        #    :fingers_crossed:
        python3 -m pip install -U "sphinx>=7.2.5"
 
-3. Development server
+3. Development server (optional)
 
        make livehtml
 
@@ -56,8 +54,24 @@ The steps can be outlined like this:
 
    And you should be ready to see the just build documentation.
 
-Running Locally in Podman
--------------------------
+### Creating the `gifs`
+
+There are some gifs used to show how the terminal looks like.
+
+In order to create these one requires these small packages (which are javascript):
+
+- `npm` (Node.js package manager)
+- `terminalizer` (the script that generates GIFs from `yaml` files)
+
+Once these are installed, simply do:
+
+    make gifs
+
+and the gifs should be created. The script will only create them once,
+and keep them around. So this should only be required to be done once.
+
+
+## Running Locally in Podman
 
 You can easily run the site locally (and deployed) using containers. You'll need:
 - `podman` (or `docker`)
