@@ -275,7 +275,7 @@ _icon_links = [
 
 html_theme_options = {
     "navbar_center": ["logo_button.html", "navbar-nav"],
-    "navbar_end": ["theme-switcher", "article-header-buttons"],
+    "navbar_end": ["theme-switcher"],
     "icon_links": _icon_links,
     "header_links_before_dropdown": 10,
     "back_to_top_button": True,

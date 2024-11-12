@@ -1,18 +1,18 @@
-.popup .overlay{
+.popup .overlay {
     position: fixed;
-    top:0;
-    left:0;
-    width:100vw;
-    height:100vh;
-    background:rgb(0 0 0 / 70%);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0 0 0 / 70%);
     z-index: 1;
 }
 
-.popup .content{
+.popup .content {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%) scale(1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     background: rgb(87 86 86);
     padding: 20px;
     z-index: 2;
@@ -23,7 +23,7 @@
     text-align: center;
 }
 
-.popup .close-btn{
+.popup .close-btn {
     cursor: pointer;
     position: absolute;
     right: 20px;
@@ -37,23 +37,23 @@
     border-radius: 50%;
 }
 
-.popup.inactive .overlay{
+.popup.inactive .overlay {
     display: none;
 }
 
-.popup.inactive .content{
+.popup.inactive .content {
     transition: all 300ms ease-in-out;
-    transform: translate(-50%,-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
 }
 
 
-.popup .content .buttons{
+.popup .content .buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.popup .content a{
+.popup .content a {
     padding: 10px 15px;
     border-radius: 5px;
     border: none;
@@ -64,10 +64,10 @@
 
 }
 
-.popup .content .buttons .install-python{
+.popup .content .buttons .install-python {
     background-color: var(--dtu-bright-green);
 }
 
-.popup .content .buttons .essentials{
+.popup .content .buttons .essentials {
     background-color: var(--dtu-red);
 }
