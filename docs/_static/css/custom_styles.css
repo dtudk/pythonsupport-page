@@ -920,6 +920,7 @@ since it is also on the header.
     color: var(--bg-primary) !important;
     border-color: var(--bg-primary) !important;
     text-decoration: none !important;
+  }
 
     /* Base styling for all images - cursor changes to zoom-in on hover */
     img {
