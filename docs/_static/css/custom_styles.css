@@ -1073,9 +1073,3 @@ since it is also on the header.
       overflow: hidden;
     }
   }
-
-  .bd-sidebar-primary,
-  .bd-sidebar-secondary {
-    display: none !important;
-  }
-  }
