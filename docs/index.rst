@@ -1,12 +1,13 @@
 :html_theme.sidebar_secondary.remove: true
-.. _homepage-reference:
 
 .. meta::
    :description: Technical University of Denmark (DTU) Python Installation Support
    :keywords: dtudk, dtu, support, python, python3, pip, pip3, conda, venv, virtualenv
 
 .. todolist::
-   
+
+.. _homepage-reference:
+
 .. raw:: html
    :file: html/hero.html
 

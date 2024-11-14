@@ -16,8 +16,6 @@ import sys
 html_logo = "_static/DTU_logo_Coral_RGB.png"
 
 
-templates_path = ["_templates"]
-
 _cwd = Path().resolve()
 
 # add the exts folder
