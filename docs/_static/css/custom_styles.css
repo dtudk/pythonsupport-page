@@ -315,7 +315,7 @@ hovers that are also interfering so it doesn't have effect on all  */
 
   a:hover {
     color: var(--bg-primary) !important;
-    border-bottom-color: var(--bg-primary) !important;
+    /* border-bottom-color: var(--bg-primary) !important; */
   }
 
   /* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
@@ -399,10 +399,16 @@ hovers that are also interfering so it doesn't have effect on all  */
     display: none !important;
   }
 
-  /* Changes colors of all buttons */
-  .btn:hover {
-    color: var(--bg-primary) ! important;
-    box-decoration-break: var(--bg-primary) ! important;
+  .btn-primary {
+    --bs-btn-color: var(--dtu-white);
+    --bs-btn-bg: var(--dtu-red);
+    --bs-btn-border-color: var(--dtu-red);
+    --bs-btn-hover-bg: var(--dtu-red-corporate);
+    --bs-btn-hover-border-color: var(--dtu-red-corporate);
+    --bs-btn-active-bg: var(--dtu-red-corporate);
+    --bs-btn-active-border-color: var(--dtu-red-corporate);
+    --bs-btn-disabled-bg: var(--dtu-red);
+    --bs-btn-disabled-border-color: var(--dtu-red);
   }
 
   /* Changes the aesthetics of the search button in the toggle primary side bar */
