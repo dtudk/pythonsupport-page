@@ -29,7 +29,9 @@ Step 1: Install Miniconda
 .. card:: 
 
    #.
-      Go to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
+      Go to `this website  <https://www.anaconda.com/download/success>`__.
+   
+   #. make sure to scroll all the way down to **Miniconda Installers**
 
    #.
       Under the title *Latest Miniconda installer links*, you will see different installers where you must download the ``Miniconda3 Windows 64-bit``, as shown below.
