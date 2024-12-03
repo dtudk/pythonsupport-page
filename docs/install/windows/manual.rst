@@ -31,10 +31,10 @@ Step 1: Install Miniconda
    #.
       Go to `this website  <https://www.anaconda.com/download/success>`__.
    
-   #. make sure to scroll all the way down to **Miniconda Installers**
+   #. Make sure to scroll all the way down to **Miniconda Installers**
 
    #.
-      simply click the link as seen on the image below 
+      Click the link as seen on the image below 
 
       .. image:: /images/install/anaconda_windows_link.png
          :width: 400

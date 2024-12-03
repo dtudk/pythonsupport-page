@@ -43,7 +43,7 @@ Step 1: Install Miniconda
       Go to `this website <https://www.anaconda.com/download/success>`__.
    
    #. 
-      make sure to scroll all the way down to **Miniconda Installers**
+      Make sure to scroll all the way down to **Miniconda Installers**
 
    #.
       Look for the title *Latest Miniconda installer links*. Here, you will see different installers, and you must
