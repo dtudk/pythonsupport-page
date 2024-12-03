@@ -34,9 +34,9 @@ Step 1: Install Miniconda
    #. make sure to scroll all the way down to **Miniconda Installers**
 
    #.
-      Under the title *Latest Miniconda installer links*, you will see different installers where you must download the ``Miniconda3 Windows 64-bit``, as shown below.
+      simply click the link as seen on the image below 
 
-      .. image:: /images/install/windows-fully-manual-miniconda.png
+      .. image:: /images/install/anaconda_windows_link.png
          :width: 400
          :align: center
 

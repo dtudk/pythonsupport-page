@@ -40,16 +40,19 @@ Step 1: Install Miniconda
          :align: center
       
    #. 
-      Go to `this website <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
+      Go to `this website <https://www.anaconda.com/download/success>`__.
+   
+   #. 
+      make sure to scroll all the way down to **Miniconda Installers**
 
    #.
       Look for the title *Latest Miniconda installer links*. Here, you will see different installers, and you must
       download the correct one.
    
-      * If you have an Intel processor, select `Miniconda3 MacOS Intel x86 64-bit pkg`.
-      * If you have an **M** processor, select `Miniconda3 MacOS Apple M1 64-bit pkg`. *Even* if you have an **M2** or **M3**.
+      * If you have an Intel processor, select `64-Bit (Intel chip) Graphical Installer `.
+      * If you have an **M** processor, select `64-Bit (Apple silicon) Graphical Installer `..
 
-      .. image:: /images/install/macos-fully-manual-miniconda.png
+      .. image:: /images/install/anaconda_apple_link.png
          :width: 400
          :align: center
 
