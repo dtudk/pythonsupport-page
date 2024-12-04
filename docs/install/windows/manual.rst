@@ -29,7 +29,7 @@ Step 1: Install Miniconda
 .. card:: 
 
    #.
-      Go to `this website  <https://www.anaconda.com/download/success>`__.
+      Go to `this website  <https://www.anaconda.com/download/success#miniconda>`__.
    
    #. Make sure to scroll all the way down to **Miniconda Installers**
 

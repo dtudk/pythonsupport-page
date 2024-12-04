@@ -33,14 +33,14 @@ Step 1: Install Miniconda
    #.
       Before starting, you need to know which processor you have. If you do not know which you have, you can find 
       out by pressing the {{ apple_icon }} logo at the top left of your
-      screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an M1, M2, M3 or Intel processor.
+      screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an **M** or Intel processor.
 
       .. image:: /images/install/macos-fully-manual-processor.png
          :width: 200
          :align: center
       
    #. 
-      Go to `this website <https://www.anaconda.com/download/success>`__.
+      Go to `this website <https://www.anaconda.com/download/success#miniconda>`__.
    
    #. 
       Make sure to scroll all the way down to **Miniconda Installers**
