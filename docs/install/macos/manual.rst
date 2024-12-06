@@ -48,9 +48,10 @@ Step 1: Install Miniconda
    #.
       Look for the title *Latest Miniconda installer links*. Here, you will see different installers, and you must
       download the correct one.
-   
-      * If you have an Intel processor, select `64-Bit (Intel chip) Graphical Installer `.
-      * If you have an **M** processor, select `64-Bit (Apple silicon) Graphical Installer `..
+
+      - If you have an Intel processor, select `64-Bit (Intel chip) Graphical Installer`.
+
+      - If you have an **M** processor, select `64-Bit (Apple silicon) Graphical Installer`.
 
       .. image:: /images/install/anaconda_apple_link.png
          :width: 400

@@ -55,7 +55,7 @@ Videos related to VS Code
 
 
 
-.. drodown:: Extensions in VS Code
+.. dropdown:: Extensions in VS Code
 
 
     .. raw:: html
