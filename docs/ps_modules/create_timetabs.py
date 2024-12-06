@@ -145,8 +145,9 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     period = get_period(periods, semester, week)
 
     if period is None:
-        print("Failed current semester, trying next year, this will likely fail!")
+        print(f"Failed current semester, trying next year({year+1}), this will likely fail!")
         year = year + 1
+        week = 1
         semester = semester_info[f"{year}"]
         fill_defaults(semester, periods)
         period = get_period(periods, semester, week)

@@ -48,6 +48,15 @@ autumn.weeks = 13
 autumn.week = []
 autumn.week-breaks = []
 
+[semester.2026]
+january.week-start = 2
+spring.week-start = 6
+spring.week-breaks = 16
+june.week-start = 23
+august.week-start = 32
+autumn.week-start = 36
+autumn.week-breaks = 42
+
 [semester.2025]
 january.week-start = 2
 spring.week-start = 6
