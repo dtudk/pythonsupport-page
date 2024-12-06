@@ -8,12 +8,6 @@
 
 .. article-info::
    :author: Extra exam period open!
-   :date: Friday 6th of December, 2024
-   :read-time: 10-16 and 18-22
-   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
-
-.. article-info::
-   :author: Extra exam period open!
    :date: Thursday 19th of December, 2024
    :read-time: 10-14
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
@@ -98,7 +92,12 @@ computer and helping you prepare to start programming with Python.
 ------------
 Office hours
 ------------
- 
+
+.. warning::
+
+   **Closed outside of 13 week semester**
+
+
 .. include:: /timetable/timetables.rst
 
 *Available via online channels (e-mail and Discord) during all office hours.*
