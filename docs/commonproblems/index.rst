@@ -13,11 +13,9 @@ Problems with Python and its Installation
 .. dropdown:: "The term import is not recognized..."
 
     It is likely that Python code is being run in the terminal and not in the Python interpreter. To fix this, run the code in the Python interpreter either by running `python` in the terminal or by running the code in a Python script.
-    
-    Terminal example:
-    =================
 
     .. code-block:: bash
+        :caption: Example
 
         % import "module_name"
         import: The term import is not recognized as the name of a cmdlet, function, script file, or operable program. 
@@ -29,17 +27,13 @@ Problems with Python and its Installation
         >>> import "module_name"
         >>>
 
-    
-
 
 .. dropdown:: "unable to initialize device PRN"
 
     It is likely that Python code is being run in the terminal and not in the Python interpreter. To fix this, run the code in the Python interpreter either by running `python` in the terminal or by running the code in a Python script.
-    
-    Terminal example:
-    =================
 
     .. code-block:: bash
+        :caption: Example
 
         % print("Hello, World!")
         unable to initialize device PRN
@@ -55,14 +49,14 @@ Problems with Python and its Installation
 .. dropdown:: "urllib2.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED]..."
 
     This is likely due to missing certificates in the Python installation. 
-    
+
     To fix this:
 
-    1. Open Finder or file browser press the Apps or Applications folder to the left.
+    1. Open Finder or file browser press the :file:`Apps` or :file:`Applications` folder to the left.
 
     2. Find the Python 3.X folder.
 
-    3. Locate the file name “Install Certificates.com” and and press it, it will quickly run a terminal command to install the certificates.
+    3. Locate the file name :file:`Install Certificates.com` and and press it, it will quickly run a terminal command to install the certificates.
 
     (Optional) Another fix could be to install the certifi package from pip by running ``pip3 install certifi`` in the terminal.
 
@@ -71,9 +65,11 @@ Problems with Python and its Installation
 
     This is due to the TeX Live version being outdated. To fix this reinstall TeX Live with the latest version.
 
+
 .. dropdown:: Getting requirements to build editable did not run successfully
 
     This is likely due to corrupt files inside the folder. To fix this remove the corrupt files and try again.
+
 
 .. dropdown:: "Error loading webview: Error: Could not register service workers: InvalidStateError: Failed to register a ServiceWorker: The document is in an invalid state"
 
@@ -85,7 +81,7 @@ Problems with Python and its Installation
 
             1. Close VSCode and kill any background processes running in the task manager.
 
-            2. Go to the file explorer and to the path :file:`C:\Users\<user_name>\AppData\Roaming\Code` and clear the contents of the folders Cache, CachedData, CachedExtensions, CachedExtensionVSIXs (if this folder exists) and Code Cache.
+            2. Go to the file explorer and to the path :file:`C:\Users\<user_name>\AppData\Roaming\Code` and clear the contents of the folders :file:`Cache`, :file:`CachedData`, :file:`CachedExtensions`, :file:`CachedExtensionVSIXs` (if this folder exists) and :file:`Code Cache`.
 
             3. Restart VSCode.
 
@@ -93,7 +89,7 @@ Problems with Python and its Installation
 
             1. Close VSCode and kill any background processes running in the task manager.
 
-            2. Go to the file explorer and to the path :file:`/Users/<user_name>/Library/Application Support/Code` and clear the contents of the folders Cache, CachedData, CachedExtensions, CachedExtensionVSIXs (if this folder exists) and Code Cache.
+            2. Go to the file explorer and to the path :file:`/Users/<user_name>/Library/Application Support/Code` and clear the contents of the folders :file:`Cache`, :file:`CachedData`, :file:`CachedExtensions`, :file:`CachedExtensionVSIXs` (if this folder exists) and :file:`Code Cache`.
 
             3. Restart VSCode.
 
@@ -101,10 +97,10 @@ Problems with Python and its Installation
 
             1. Close VSCode and kill any background processes running in the task manager.
 
-            2. Go to the file explorer and to the path :fil:`/home/<user_name>/.config/Code` and clear the contents of the folders Cache, CachedData, CachedExtensions, CachedExtensionVSIXs (if this folder exists) and Code Cache.
+            2. Go to the file explorer and to the path :file:`/home/<user_name>/.config/Code` and clear the contents of the folders :file:`Cache`, :file:`CachedData`, :file:`CachedExtensions`, :file:`CachedExtensionVSIXs` (if this folder exists) and :file:`Code Cache`.
 
             3. Restart VSCode.
-      
+
 
 .. dropdown:: "OSError: [Error 86] Bad CPU type in executable: <path_to_cbc_binaries> "
 
@@ -112,20 +108,21 @@ Problems with Python and its Installation
 
     .. code-block:: bash
 
-        /usr/sbin/softwareupdate --install-rosetta --agree-to-license 
+        /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
 .. dropdown:: While loop getting stuck in IDLE
 
-    This is a problem native to the installation, which occur in all version of idle from 11.4 and newer. This can be solved by downgrading the idle version, by running the following command in the terminal:
+    This is a problem native to the installation, which occur in versions of `idle` from 3.11.4 up till and excluding the 3.12 release (bug fixed in 3.12 and later).
+    This can be solved by downgrading the `idle` version, by running the following command in the terminal:
 
     .. code-block:: bash
 
         conda install python=3.11.3
- 
+
 
 .. dropdown:: "OSError: ... Error loading ....\lib\fbgemm.dll.."
 
-    This is a windows specific error. This happens because of a problem that is related to the released torch version and is likely due to a conflict between pip and conda. To fix this, uninstall the torch package and reinstall it using conda:
+    This is a Windows specific error. This happens because of a problem that is related to the released torch version and is likely due to a conflict between pip and conda. To fix this, uninstall the torch package and reinstall it using conda:
 
     .. code-block:: bash
 
@@ -142,7 +139,7 @@ Problems with Conda and Packages
     The solution is the same on MacOS, Linux and Windows:
 
     .. code-block:: bash
-        
+
         conda install --upgrade --force-reinstall <package>
 
 
@@ -151,7 +148,7 @@ Problems with Conda and Packages
     If you have not previously installed the package the solution is to open your `Terminal` and write:
 
     .. code-block:: bash
-        
+
         conda install <package>
 
 
@@ -159,7 +156,7 @@ Problems with Conda and Packages
 
     If you have installed the package before, you need to change your kernel.
     If you are using a `Jupyter Notebook` you have to go to the to right corner, where it says `Python 3.XX.XX` (this is the python version you are using). You need to click on it, after which a dropdown will come down.
-    Here you need to click `Select Another Kernel...` -> `Python Environments` -> `base (Python 3.11.XX)`.
+    Here you need to click :menuselection:`Select Another Kernel... --> Python Environments --> base (Python 3.11.XX)`.
     This will open the Python downloaded using our installation guides.
 
     If you are using a normal Python script, go to the bottom right corner. Her it will only show the Python version, for example `3.12.XX 64-bit`. You need to click this, after which a dropdown will come down. Here you can see your Python versions. If you want to use the version installed using our guides, select `Python 3.11.XX ('base')`. 
@@ -184,7 +181,7 @@ Problems with Conda and Packages
 
 .. dropdown:: Multiple conda installations
 
-    If you have multiple installations of conda we highly recommend that you uninstall Anaconda using `this link <https://pythonsupport.dtu.dk/uninstall/conda.html>`__ .
+    If you have multiple installations of conda we highly recommend that you uninstall Anaconda using `this link <https://pythonsupport.dtu.dk/uninstall/conda.html>`__.
 
 
 
