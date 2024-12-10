@@ -6,11 +6,12 @@
 
 .. Temporary extra open information
 
-.. article-info::
-   :author: Extra exam period open!
-   :date: Thursday 19th of December, 2024
-   :read-time: 10-14
-   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+.. comment
+   .. article-info::
+      :author: Extra exam period open!
+      :date: Thursday 19th of December, 2024
+      :read-time: 10-14
+      :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 
 .. _homepage-reference:
@@ -56,8 +57,8 @@ Reach us
 What's on this website?
 ------------------------
 
-Welcome to the DTU Python Installation Support website. This website provides 
-essential information and resources for installing Python on your 
+Welcome to the DTU Python Installation Support website. This website provides
+essential information and resources for installing Python on your
 computer and helping you prepare to start programming with Python.
 
 .. grid:: 1 1 1 2
@@ -87,20 +88,25 @@ computer and helping you prepare to start programming with Python.
 
       | Watch video guides on various Python topics.
 
+
 .. _office-hours:
 
 ------------
 Office hours
 ------------
 
-.. warning::
+.. article-info::
+   :author: Closed until the Spring semester
+   :date: Monday 3rd of February, 2025
+   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-   **Closed outside of 13 week semester**
+.. note::
 
+   To be decided. Come back during the 3-weeks course to see our opening hours.
 
-.. include:: /timetable/timetables.rst
+.. .. include:: /timetable/timetables.rst
 
-*Available via online channels (e-mail and Discord) during all office hours.*
+*Available via online channels (e-mail and Discord) during office hours.*
 
 .. toctree::
    :maxdepth: 1
