@@ -100,8 +100,11 @@ Office hours
    :date: Monday 3rd of February, 2025
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
+.. note::
 
-.. include:: /timetable/timetables.rst
+   To be decided. Come back during the 3-weeks course to see our opening hours.
+
+.. .. include:: /timetable/timetables.rst
 
 *Available via online channels (e-mail and Discord) during office hours.*
 
