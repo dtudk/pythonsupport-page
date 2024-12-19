@@ -38,6 +38,11 @@ june.weeks = 3
 june.week = ["Closed", "Closed", "Closed"]
 june.week-breaks = []
 
+july.name = "3 weeks July"
+july.weeks = 3
+july.week = ["Closed", "Closed", "Closed"]
+july.week-breaks = []
+
 august.name = "3 weeks August"
 august.weeks = 3
 august.week = ["Closed", "Closed", "Closed"]
@@ -51,8 +56,9 @@ autumn.week-breaks = []
 [semester.2026]
 january.week-start = 2
 spring.week-start = 6
-spring.week-breaks = 16
-june.week-start = 23
+spring.week-breaks = 14
+june.week-start = 24
+july.week-start = 28
 august.week-start = 32
 autumn.week-start = 36
 autumn.week-breaks = 42
@@ -62,6 +68,7 @@ january.week-start = 2
 spring.week-start = 6
 spring.week-breaks = 16
 june.week-start = 23
+july.week-start = 28
 august.week-start = 32
 autumn.week-start = 36
 autumn.week-breaks = 42

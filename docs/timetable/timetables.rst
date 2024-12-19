@@ -1,4 +1,4 @@
-.. office hours for spring 2024
+
 .. list-table::
    :widths: 15 17 17 17 17 17
    :header-rows: 1
