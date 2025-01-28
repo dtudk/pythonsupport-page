@@ -35,8 +35,9 @@ Reach us
       | Open in 13 week semesters.
       | Mon -- Fri (see table):
       | Building **302**, room **92**.
-      | Thursday (12:15-16):
-      | Building **358**, room **43**.
+
+      .. comment | Thursday (12:15-16):
+      .. | Building **358**, room **43**.
 
       | Click to see detailed office hours.
 
@@ -95,16 +96,13 @@ computer and helping you prepare to start programming with Python.
 Office hours
 ------------
 
-.. article-info::
-   :author: Closed until the Spring semester
-   :date: Monday 3rd of February, 2025
-   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+.. comment
+   .. article-info::
+      :author: Closed until the Spring semester
+      :date: Monday 3rd of February, 2025
+      :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. note::
-
-   To be decided. Come back during the 3-weeks course to see our opening hours.
-
-.. .. include:: /timetable/timetables.rst
+.. include:: /timetable/timetables.rst
 
 *Available via online channels (e-mail and Discord) during office hours.*
 
