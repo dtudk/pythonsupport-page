@@ -109,7 +109,7 @@ Exercise 1
    Likely there will be some students with a prior ``conda`` installation.
    It is thus important that you know how to have a ``conda`` installation
    *and* navigate a regular Python installation.
-   
+
    Create a `new environment <https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#activating-an-environment>`_ in a local folder.
 
    Understand that:
@@ -121,9 +121,9 @@ Exercise 1
       a. Packages can be installed from an *external* command, such as ``conda install -n <path to environment> <packages>``,
       b. Packages will be installed directly if the environment is already the activated one: ``conda activate <path to environment>``
 
-  
+
    4. How can you see if you are in a ``conda`` environment? 
-   
+
    5. Ensure you can navigate between both the ``conda`` and the official Python installation.
 
 

@@ -56,7 +56,7 @@ something they do not really care for.
 If it seems that the student *just* want a working installation, then opt in to
 aid with few, if any, side steps.
 
-   
+
 .. danger::
    Engaging through online channels may, sometimes, spur comments that are
    inappropriate.

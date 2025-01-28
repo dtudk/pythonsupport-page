@@ -2,8 +2,8 @@
 
 .. _install-python:
 
-Install Python 
-=================
+Install Python
+==============
 
 
 .. dropdown:: License and terms of use of Anaconda
@@ -30,7 +30,7 @@ Install Python
       vs.
 
       .. code:: shell
-         
+
          numpy              pkgs/linux-64::numpy-2.1.0-py311hed257a2_0 
 
    We are pursuing strategies to completely remove the Anaconda repositories
@@ -39,6 +39,8 @@ Install Python
    Note that Anaconda is free to use in teaching (as of 2024).
    For full details of the license, please read them on
    `here <https://legal.anaconda.com/policies/en/?name=terms-of-service#anaconda-terms-of-service>`__.
+
+   See :ref:`here <rec-conda>` for more details.
 
 
 In this section, you will find different installation guides that cover the 

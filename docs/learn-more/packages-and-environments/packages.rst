@@ -46,19 +46,19 @@ Packages can be installed to your specific environment by using ``conda install`
 
       .. code:: powershell
 
-         conda install "numpy==1.24.*" "scipy<1.10" "matplotlib"
+         conda install "package-a==1.24.*" "package-b<1.10" "package-c"
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
       .. code:: bash
 
-         conda install "numpy==1.24.*" "scipy<1.10" "matplotlib"
+         conda install "package-a==1.24.*" "package-b<1.10" "package-c"
 
 
 The above command will install specific versions of the listed packages, which can be important for 
 maintaining compatibility and stability in your environment. The above will install version 1.24 of 
-Numpy, a Scipy version lower than 1.10, and the latest version of matplotlib.
+`package-a`, a `package-b` version lower than 1.10, and the latest compatible version of `package-c`.
 
 
 Navigating packages
