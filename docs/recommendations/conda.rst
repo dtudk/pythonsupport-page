@@ -91,3 +91,24 @@ Miniforge
 This ``conda`` provider defaults to not use any Anaconda channels, and will
 thus be the easiest one to ensure no license violations.
 
+
+
+.. _rec-conda-students:
+
+Students
+========
+
+In general students can *freely* install and use the **Anaconda** software stack.
+
+A student should, however, still be aware of the limitations of the above policy.
+For instance, if the student is hired in a company (not DTU) with more than
+200 employees, then they cannot use **Anaconda** for anything in that company.
+
+
+Additionally, if a student creates work that is used in a DTU research project, it is
+not fully clear how the interpretation should be. When a student has
+signed a **G**-declaration then one could interpret the developed software/research as
+a work from DTU.
+
+Therefore, for simplicity, and to be future proof, we ask that you, as a student,
+follow the same guidelines as DTU employees.
