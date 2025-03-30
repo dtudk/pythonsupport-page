@@ -31,34 +31,21 @@ Step 1: Install Miniconda
 .. card:: 
     
    #.
-      Before starting, you need to know which processor you have. If you do not know which you have, you can find 
+      Before starting, you need to know which processor you have. If you do not know, you can find 
       out by pressing the {{ apple_icon }} logo at the top left of your
-      screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an **M** or Intel processor.
+      screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an **M** or **Intel** processor.
 
       .. image:: /images/install/macos-fully-manual-processor.png
          :width: 200
          :align: center
-      
-   #. 
-      Go to `this website <https://www.anaconda.com/download/success#miniconda>`__.
    
    #. 
-      Make sure to scroll all the way down to **Miniconda Installers**
 
+      * If you have an **M** processor, click `here <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg>`__.
+
+      * If you have an **Intel** processor, click `here <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`__.
    #.
-      Look for the title *Latest Miniconda installer links*. Here, you will see different installers, and you must
-      download the correct one.
-
-      - If you have an Intel processor, select `64-Bit (Intel chip) Graphical Installer`.
-
-      - If you have an **M** processor, select `64-Bit (Apple silicon) Graphical Installer`.
-
-      .. image:: /images/install/anaconda_apple_link.png
-         :width: 400
-         :align: center
-
-   #.
-      Follow the instructions from the package.
+      When the installer has been downloaded, open it and follow the instructions.
 
       .. image:: /images/install/macos-fully-manual-miniconda-pkg.png
          :width: 400
@@ -106,10 +93,11 @@ Step 3: Install Visual Studio Code
    After the installation is finished, you need to download Visual Studio Code. 
    
    #.
-      Go to `this website  <https://code.visualstudio.com>`__.
+   
+      Go to `this website  <https://code.visualstudio.com/Download#>`__.
       
    #. 
-      Click the download button and follow the instructions.
+      Click the **Mac** button and follow the instructions.
 
       .. image:: /images/install/macos-fully-manual-vsc-webpage.png
          :width: 500
