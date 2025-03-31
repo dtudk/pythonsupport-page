@@ -29,19 +29,12 @@ Step 1: Install Miniconda
 .. card:: 
 
    #.
-      Go to `this website  <https://www.anaconda.com/download/success#miniconda>`__.
-   
-   #. Make sure to scroll all the way down to **Miniconda Installers**
+      Click `here  <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`__ to download the installer.
+
+   #. Open the installer, once it has been downloaded. 
 
    #.
-      Click the link as seen on the image below 
-
-      .. image:: /images/install/anaconda_windows_link.png
-         :width: 400
-         :align: center
-
-   #.
-      Follow the instructions during the installation.
+      Follow the instructions from the installer.
       Make sure to cross off all the options regarding ``PATH``, as shown below.
 
       .. image:: /images/install/Miniconda-install-path.png
@@ -103,10 +96,10 @@ Step 3: Install Visual Studio Code
 .. card:: 
 
    #.
-      Go to `this website  <https://code.visualstudio.com>`__.
+      Go to `this website  <https://code.visualstudio.com/Download>`__.
    
    #.
-      Click the download button and follow the instructions.
+      Click the **Windows** button and follow the instructions.
 
       .. image:: /images/install/windows-fully-manual-vsc-webpage.png
          :width: 500
