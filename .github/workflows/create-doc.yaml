@@ -50,16 +50,26 @@ jobs:
     - name: Node.js setup
       if: ${{ steps.cache-gif.outputs.cache-hit != 'true' }}
       uses: actions/setup-node@v4
-    
+
     - name: Run gifs
       if: ${{ steps.cache-gif.outputs.cache-hit != 'true' }}
       run: |
         sudo apt-get install xvfb
-        npm install -g terminalizer
+        npm install terminalizer
+        path=$(dirname $(which terminalizer))/..
+        chrome_sandbox=$path/lib/node_modules/terminalizer/node_modules/electron/dist/chrome-sandbox
+        sudo chown root:root $chrome_sandbox
+        sudo chmod 4755 $chrome_sandbox
+        ls -l $chrome_sandbox
         cd docs/os/gifs
         xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
         echo pwd=$(pwd)
-        exit 0
+        if [ ! -e Unix/terminal.gif ]; then
+          echo "Could not find Unix/terminal.gif... something went wrong..."
+          exit 1
+        else
+          exit 0
+        fi
 
     - name: Build and tar.gz documentation
       run: |
