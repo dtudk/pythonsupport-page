@@ -46,10 +46,12 @@ jobs:
       if: ${{ steps.cache-gif.outputs.cache-hit != 'true' }}
       run: |
         sudo apt-get install xvfb
-        npm install terminalizer
+        npm install -g terminalizer
         npm config list
         prefix=$(npm config list | grep -e "^prefix\s*=" | awk '{print $NF}')
         echo prefix=$prefix
+        find . -name terminalizer -type d
+        which terminalizer
         path=$(dirname $(which terminalizer))/..
         chrome_sandbox=$path/lib/node_modules/terminalizer/node_modules/electron/dist/chrome-sandbox
         sudo chown root:root $chrome_sandbox
