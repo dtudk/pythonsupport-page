@@ -56,7 +56,7 @@ jobs:
         ls -l $chrome_sandbox
 
         cd docs/os/gifs
-        xvfb-run --auto-servernum bash create.sh || echo "Forced succeed $?"
+        xvfb-run --auto-servernum bash create.sh -n 2 || echo "Forced succeed $?"
         echo pwd=$(pwd)
         if [ ! -e Unix/terminal.gif ]; then
           echo "Could not find Unix/terminal.gif... something went wrong..."
