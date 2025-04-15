@@ -30,15 +30,6 @@ jobs:
       with:
         submodules: false
 
-    - name: Python installation
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.12"
-
-    - name: Install requirements
-      run: |
-        python -m pip install -r requirements.txt
-
     - name: Restore cached gifs
       uses: actions/cache@v4
       id: cache-gif
@@ -51,11 +42,14 @@ jobs:
       if: ${{ steps.cache-gif.outputs.cache-hit != 'true' }}
       uses: actions/setup-node@v4
 
-    - name: Run gifs
+    - name: Create gifs
       if: ${{ steps.cache-gif.outputs.cache-hit != 'true' }}
       run: |
         sudo apt-get install xvfb
         npm install terminalizer
+        npm config list
+        prefix=$(npm config list | grep -e "^prefix\s*=" | awk '{print $NF}')
+        echo prefix=$prefix
         path=$(dirname $(which terminalizer))/..
         chrome_sandbox=$path/lib/node_modules/terminalizer/node_modules/electron/dist/chrome-sandbox
         sudo chown root:root $chrome_sandbox
@@ -71,6 +65,15 @@ jobs:
           exit 0
         fi
 
+    - name: Python installation
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    - name: Install requirements
+      run: |
+        python -m pip install -r requirements.txt
+
     - name: Build and tar.gz documentation
       run: |
         make all
@@ -82,5 +85,5 @@ jobs:
       with:
         name: ${{ inputs.name }}
         path: ${{ inputs.targz_name }}
-        retention-days: 3
+        retention-days: 7
 
