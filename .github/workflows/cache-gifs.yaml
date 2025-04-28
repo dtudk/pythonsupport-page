@@ -1,27 +1,20 @@
-# A reusable workflow for
-# anything that needs to create the
-# documentation pages.
-# This will accept some input arguments
-# and will upload an artifact that contains
-# the html directory.
-name: "Build doc and upload build/html as tar.gz"
+---
+name: cache gifs by running terminalizer
 
+# Change this to whatever you want
 on:
-  workflow_call:
-    inputs:
-      name:
-        required: true
-        type: string
-      targz_name:
-        required: true
-        type: string
+  schedule:
+    # every Wednesday @ 20:31
+    # It is important to do it within a week, to ensure
+    # the cache is touched.
+    # So now, this will touch, and the create docs will touch.
+    # It ensures we can react from Wednesday till Friday.
+    - cron: '31 20 * * WED'
+  workflow_dispatch:
 
 jobs:
 
-  # The actual job of the build-script
-  build-documentation:
-
-    name: Build documentation
+  create-gifs:
     runs-on: ubuntu-latest
 
     steps:
@@ -67,26 +60,3 @@ jobs:
         else
           exit 0
         fi
-
-    - name: Python installation
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.12"
-
-    - name: Install requirements
-      run: |
-        python -m pip install -r requirements.txt
-
-    - name: Build and tar.gz documentation
-      run: |
-        make all
-        # tar gz the build/html dir
-        tar -czf ${{ inputs.targz_name }} -C build/html .
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: ${{ inputs.name }}
-        path: ${{ inputs.targz_name }}
-        retention-days: 7
-
