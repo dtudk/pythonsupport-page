@@ -546,9 +546,31 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
+from jinja2 import Environment, FileSystemLoader
+
+def generate_pages_from_json(app):
+    src_dir = app.srcdir
+    json_path = os.path.join(src_dir, 'data.json')
+    template_dir = os.path.join(src_dir, 'templates')
+    output_dir = os.path.join(src_dir, 'environments/course')
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Load template
+    env = Environment(loader=FileSystemLoader(template_dir))
+    template = env.get_template('env.rst.j2')
+
+    for course_name, years in html_context["environments"].items():
+        for year, metadata in years.items():
+            rendered = template.render(course_name=course_name, metadata=metadata)
+            filepath = os.path.join(output_dir, f"{metadata["course_env_name"]}.rst")
+            with open(filepath, 'w') as out:
+                out.write(rendered)
+
 
 def setup(app):
 
+    app.connect('builder-inited', generate_pages_from_json)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
 
