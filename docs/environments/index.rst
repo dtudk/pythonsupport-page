@@ -2,10 +2,8 @@ Find environments for courses
 ====
 
 .. raw:: html
-
-    <div class="input-group mb-3">
-        <input type="text" class="form-control" id="searchInput" placeholder="Search courses..." aria-label="Search courses">
-    </div>
+    
+    <input type="search" class="form-control env-search" id="searchInput" placeholder="Search courses..." aria-label="Search courses">
     <script>
         window.addEventListener('DOMContentLoaded', function() {
             const urlParams = new URLSearchParams(window.location.search);
@@ -16,7 +14,7 @@ Find environments for courses
             const items = document.querySelectorAll('[data-environment]');
             items.forEach(item => {
                 const name = item.getAttribute('data-environment').toLowerCase();
-                if (name.includes(searchValue) && (searchValue.length !== 0)) {
+                if (name.includes(searchValue) || (searchValue.length == 0)) {
                     item.style.display = '';
                 } else {
                     item.style.display = 'none';
@@ -31,7 +29,7 @@ Find environments for courses
             window.history.replaceState({}, '', url);
             items.forEach(item => {
                 const name = item.getAttribute('data-environment').toLowerCase();
-                if (name.includes(searchValue) && (searchValue.length !== 0)) {
+                if (name.includes(searchValue) || (searchValue.length == 0)) {
                     item.style.display = '';
                 } else {
                     item.style.display = 'none';
@@ -44,7 +42,7 @@ Find environments for courses
 .. raw:: html
 
     {% for course_name, years in environments.items() %}
-    <div data-environment="{{course_name}}" style="display: none;">
+    <div data-environment="{{course_name}}">
         <h3>{{course_name}}</h3>
         {% for year, metadata in years.items() %}
             <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
