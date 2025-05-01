@@ -41,7 +41,7 @@ linkcheck:
 
 
 livehtml:
-	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) --ignore docs/_static/course_switcher.json --ignore docs/timetable/timetable.rst --ignore docs/environments/course/**
+	sphinx-autobuild "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O) --ignore docs/_static/course_switcher.json --ignore docs/timetable/timetable.rst --ignore docs/environments/course
 
 
 gifs:
