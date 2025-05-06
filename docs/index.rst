@@ -13,6 +13,10 @@
       :read-time: 10-14
       :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
+.. article-info::
+   :author: Closing for the semester. No help during exam period!
+   :date: 13th of May -- 1st of September
+   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. _homepage-reference:
 
@@ -96,11 +100,10 @@ computer and helping you prepare to start programming with Python.
 Office hours
 ------------
 
-.. comment
-   .. article-info::
-      :author: Closed until the Spring semester
-      :date: Monday 3rd of February, 2025
-      :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+.. article-info::
+   :author: Closing for the semester. No help during exam period!
+   :date: 13th of May -- 1st of September
+   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. include:: /timetable/timetables.rst
 
