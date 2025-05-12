@@ -14,7 +14,7 @@
       :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. article-info::
-   :author: Closing for the semester. No help during exam period!
+   :author: Closed until the Autumn semester. No help during exam period!
    :date: 13th of May -- 1st of September
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
@@ -101,13 +101,13 @@ Office hours
 ------------
 
 .. article-info::
-   :author: Closing for the semester. No help during exam period!
+   :author: Closed until the Autumn semester. No help during exam period!
    :date: 13th of May -- 1st of September
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. include:: /timetable/timetables.rst
 
-*Available via online channels (e-mail and Discord) during office hours.*
+.. *Available via online channels (e-mail and Discord) during office hours.*
 
 .. toctree::
    :maxdepth: 1
