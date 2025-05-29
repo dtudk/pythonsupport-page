@@ -1,3 +1,5 @@
+.. _learn-more.idle:
+
 IDLE
 ====
 
@@ -5,23 +7,24 @@ IDLE
    :color: muted
    :open:
 
-   .. raw:: html 
-      
+   .. raw:: html
+
          <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=81040637-95f5-4aa5-9133-b1ce0142fd86" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 .. include:: /_rst_includes/tip-copy.rst
 
 :guilabel:`IDLE` is an integrated development environment (IDE) installed automatically with Python.
-It provides you with an environment where you can write Python scripts and run them or write Python code line by line to execute immediately. 
+It provides you with an environment where you can write Python scripts and run them or write Python code line by line to execute immediately.
 
-:guilabel:`IDLE` is lightweight, simple, and great for introducing how to do coding projects. Therefore, it is well suited for beginners. 
+:guilabel:`IDLE` is lightweight, simple, and great for introducing how to do coding projects. Therefore, it is well suited for beginners.
 
 
-.. warning::
+.. note::
    We only recommend introductory students to use IDLE while following :course-base:`02002`/:course-base:`02003`.
 
-   There are other more advanced IDE's that has much greater functionality than IDLE.
+   :guilabel:`IDLE` is mainly useful for learning how to interact with Python scripts and snippets.
+   More advanced IDE's will be introduced in many DTU courses.
 
 
 Getting started
@@ -30,7 +33,7 @@ Getting started
 
 .. card::
 
-   Open :guilabel:`IDLE` .
+   Open :guilabel:`IDLE`.
 
    .. tab-set::
       :sync-group: os
@@ -55,7 +58,7 @@ Getting started
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
 
          .. code:: python
-               
+
             print("hello")
 
       .. tab-item:: {{ macos }}
@@ -173,11 +176,11 @@ This is great for larger jobs and allows for reuse of your code.
 
       #. Run the script.
          In the top menu, go to :menuselection:`Run --> Run Module` (or press :kbd:`F5`).
-         You should now see some output. 
+         You should now see some output.
 
 
 You can now modify and run the script as much as you want.
 
-As mentioned, the IDLE is best suited for simple projects. Later during the 1\ :sup:`st` semester
-you will be introduced to Visual Studio Code.
+As mentioned, :guilabel:`IDLE` is best suited for simple projects. Later during the 1\ :sup:`st` semester
+you will be introduced to :ref:`Visual Studio Code <learn-more.vscode>`.
 

@@ -13,6 +13,10 @@
       :read-time: 10-14
       :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
+.. article-info::
+   :author: Closed until the Autumn semester. No help during exam period!
+   :date: 13th of May -- 1st of September
+   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. _homepage-reference:
 
@@ -29,17 +33,23 @@ Reach us
 .. grid:: 1 1 1 3
    :gutter: 1
 
+   .. comment
+      .. grid-item-card:: :fas:`person-running` -- Visit us
+         :link: #office-hours
+
+         | Open in 13 week semesters.
+         | Mon -- Fri (see table):
+         | Building **302**, room **92**.
+
+         .. comment | Thursday (12:15-16):
+         .. | Building **358**, room **43**.
+
+         | Click to see detailed office hours.
+
    .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
-      | Open in 13 week semesters.
-      | Mon -- Fri (see table):
-      | Building **302**, room **92**.
-
-      .. comment | Thursday (12:15-16):
-      .. | Building **358**, room **43**.
-
-      | Click to see detailed office hours.
+      Closed until the Autumn semester (1st of September).
 
    .. grid-item-card:: :fas:`envelope` -- E-mail us
       :link: mailto:pythonsupport@dtu.dk
@@ -96,15 +106,14 @@ computer and helping you prepare to start programming with Python.
 Office hours
 ------------
 
-.. comment
-   .. article-info::
-      :author: Closed until the Spring semester
-      :date: Monday 3rd of February, 2025
-      :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+.. article-info::
+   :author: Closed until the Autumn semester. No help during exam period!
+   :date: 13th of May -- 1st of September
+   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. include:: /timetable/timetables.rst
 
-*Available via online channels (e-mail and Discord) during office hours.*
+.. *Available via online channels (e-mail and Discord) during office hours.*
 
 .. toctree::
    :maxdepth: 1

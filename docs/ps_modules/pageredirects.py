@@ -17,8 +17,6 @@ def split_str(s, sep=None, maxsplit=-1):
 
 class HomepageFormatter:
 
-    __slots__ = ("info",)
-
     def __init__(self):
         self.info = {}
 
@@ -37,6 +35,10 @@ class HomepageFormatter:
         self.__init__()
         for course, page in state.items():
             self.add(course, page)
+
+    def __eq__(self, other) -> bool:
+        """ When they are the same, the docs won't be fully rebuild """
+        return self.info == other.info
 
 
 class Coursebase:
@@ -64,6 +66,16 @@ class Coursebase:
 
     __mod__ = format
 
+    def __getstate__(self):
+        return {"prefix": self.prefix}
+
+    def __setstate__(self, state):
+        self.__init__(state["prefix"])
+
+    def __eq__(self, other) -> bool:
+        """ When they are the same, the docs won't be fully rebuild """
+        return self.prefix == other.prefix
+
 
 class CourseStrip:
     def format(self, course):
@@ -72,3 +84,14 @@ class CourseStrip:
         return course
 
     __mod__ = format
+
+    def __getstate__(self):
+        return {}
+
+    def __setstate__(self, state):
+        self.__init__()
+
+    def __eq__(self, other) -> bool:
+        """ When they are the same, the docs won't be fully rebuild """
+        # This is a special case, it strips, and is thus always the same!
+        return True
