@@ -14,7 +14,7 @@ import datetime
 import sys
 import urllib.parse
 import yaml
-
+from jinja2 import Environment, FileSystemLoader
 html_logo = "_static/DTU_logo_Coral_RGB.png"
 
 
@@ -596,14 +596,14 @@ from jinja2 import Environment, FileSystemLoader
 def generate_pages_from_json(app):
     src_dir = app.srcdir
     json_path = os.path.join(src_dir, 'data.json')
-    template_dir = os.path.join(src_dir, 'templates')
+    template_dir = os.path.join(src_dir, '_templates')
     output_dir = os.path.join(src_dir, 'environments/course')
 
     os.makedirs(output_dir, exist_ok=True)
 
     # Load template
     env = Environment(loader=FileSystemLoader(template_dir))
-    template = env.get_template('env.rst.j2')
+    template = env.get_template('environment_installation.rst')
 
     for course_name, years in html_context["environments"].items():
         for year, metadata in years.items():
