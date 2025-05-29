@@ -1,7 +1,7 @@
 metadata:
   course_name: "02612 Constrained Optimization"
   course_number: "02612"
-  course_year: "Spring 2026"
+  course_identifier: "Spring 2026"
   course_env_name: "02612_S26"
 
 channels:

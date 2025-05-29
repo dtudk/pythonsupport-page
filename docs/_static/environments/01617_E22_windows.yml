@@ -1,8 +1,8 @@
 metadata:
-  course_name: "02612 Constrained Optimization"
-  course_number: "02612"
-  course_identifier: "Spring 2025"
-  course_env_name: "02612_S25"
+  course_name: "01617 Introduction to Dynamical Systems"
+  course_number: "01617"
+  course_identifier: "Autumn 2022 (windows)"
+  course_env_name: "01617_E22_windows"
 
 channels:
   - eumetsat

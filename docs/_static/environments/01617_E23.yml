@@ -1,7 +1,7 @@
 metadata:
   course_name: "01617 Introduction to Dynamical Systems"
   course_number: "01617"
-  course_year: "Autumn 2023"
+  course_identifier: "Autumn 2023"
   course_env_name: "01617_E23"
 
 channels:
