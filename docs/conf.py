@@ -538,8 +538,8 @@ for yaml_file in environments_dir.glob("*.yml"):
             if metadata["course_name"] not in html_context["environments"]:
                 html_context["environments"][metadata["course_name"]] = {}
 
-            html_context["environments"][metadata["course_name"]][metadata["course_year"]] = metadata
-            html_context["environments"][metadata["course_name"]][metadata["course_year"]]["env_path"] = "https://pythonsupport.dtu.dk/"+str(yaml_file)
+            html_context["environments"][metadata["course_name"]][metadata["course_identifier"]] = metadata
+            html_context["environments"][metadata["course_name"]][metadata["course_identifier"]]["env_path"] = "https://pythonsupport.dtu.dk/"+str(yaml_file)
 
         except yaml.YAMLError as e:
             print(f"Error reading {yaml_file}: {e}")
@@ -608,7 +608,8 @@ def generate_pages_from_json(app):
     for course_name, years in html_context["environments"].items():
         for year, metadata in years.items():
             rendered = template.render(course_name=course_name, metadata=metadata)
-            filepath = os.path.join(output_dir, f"{metadata["course_env_name"]}.rst")
+            filename = metadata["course_env_name"]
+            filepath = os.path.join(output_dir, f"{filename}.rst")
             with open(filepath, 'w') as out:
                 out.write(rendered)
 
