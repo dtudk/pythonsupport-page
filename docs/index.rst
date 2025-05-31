@@ -1,4 +1,5 @@
 :html_theme.sidebar_secondary.remove: true
+:title: DTU Python Installation Support
 
 .. meta::
    :description: Technical University of Denmark (DTU) Python Installation Support

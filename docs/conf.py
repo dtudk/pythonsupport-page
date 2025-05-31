@@ -527,9 +527,22 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
+def add_title_to_context(app, pagename, templatename, context, doctree):
+    # If there's no document tree (e.g., for special pages like search or genindex), do nothing.
+    if doctree is None:
+        return
+    
+    # Retrieve metadata for the current page
+    metadata = app.env.metadata.get(pagename, {})
+
+    # If a 'title' is specified in the page metadata, add it to the template context
+    title = metadata.get('title')
+    if title:
+        context['title'] = title
 
 def setup(app):
 
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
+    app.connect("html-page-context", add_title_to_context)
 
