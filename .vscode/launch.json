@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "name": "Sphinx",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "sphinx_autobuild",
+            "args": [
+                "docs",
+                "build"
+            ]
+        }
+    ]
+}
