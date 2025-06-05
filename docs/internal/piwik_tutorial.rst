@@ -3,16 +3,16 @@
 .. _piwik-custom-event-tutorial:
 
 Piwik custom event tutorial
-----
+---------------------------
 
 In this tutorial we will be creating a custom event for capturing a specific user interaction on the site. We will be doing this in two ways:
 
+#. Using **widgets**
 #. Using **goals**
-#. Using **custom events**
 
 
 Introduction
-====
+============
 
 Lets say we want to find out how many visitors clicks on the "Download python" button in the main hero. This button has the classes "btn btn-primary btn-lg px-4 me-md-2" attached to it. We will be using the class selector in order to determine if the button has been pressed.
 
@@ -22,11 +22,9 @@ Lets say we want to find out how many visitors clicks on the "Download python" b
          :align: center
 
 
-First approach: Custom event
-====
-
 1. Define custom trigger
-~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 The first thing to do is to create a custom trigger that captures the user clicking on the button. This is done in (Tag Manager / Triggers ) and clicking "Add a trigger".
 
 .. image:: ./images/piwik_tutorial/piwik_add_trigger.png
@@ -47,7 +45,7 @@ Since we are capturing clicks on the "Download python" button we set conditions 
 
 
 2. Create custom event tag
-~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Go to (Tag manager / Tags) and press "Add tag".
 
@@ -107,7 +105,7 @@ This tag will not at the moment work for other visitors since it hasn't been pub
 Great successes! We are now tracking the when users click on the "Download python" button.
 
 3. Analyze custom events in a widget
-~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In order to see the number of user clicks on the "Download python" button we will create a custom widget on a dashboard. Go to (Analytics / Dashboards) select a dashboard and click "Add widget" and then click "line chart".
 
@@ -122,7 +120,34 @@ In order to only see the download python events we will filter by the event name
          :align: center
 
 
-Second approach: Goal
-====
+4. Analyze custom event in goals
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-TODO
+Another way to analyze how many people clicked on the download button is to setup a goal.
+A goal is intended for events on the site that are of special interest. An example could 
+be a person sining up for a newsletter or completes a purchase.
+
+To setup a goal go to ( Analytics / Goals ) and click the "Add a goal" button.
+
+.. image:: ./images/piwik_tutorial/piwik_add_goal.png
+         :width: 600
+         :align: center
+
+Next we have to specify when a goal is reached. In this example we already 
+have the "Download python event" so we only have to connect this event as the
+condition.
+
+.. image:: ./images/piwik_tutorial/piwik_add_goal_edit.png
+         :width: 600
+         :align: center
+
+We can now see the goal and analyze how it is being fulfilled.
+
+.. image:: ./images/piwik_tutorial/piwik_goal_analysis.png
+         :width: 600
+         :align: center
+
+.. tip::
+
+    It can take some time to get enough data for piwik to be able to
+    visualize the data. Be patient.
