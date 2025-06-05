@@ -1,0 +1,12 @@
+metadata:
+  course_full_name: "2450 testing course 2"
+  course_number: "2450"
+  course_identifier: "Spring 2026"
+  course_env_name: "02450_S26"
+
+name: 02450_S26
+channels:
+  - conda-forge
+dependencies:
+  - numpy=2.2.0
+  - python=3.13.4
