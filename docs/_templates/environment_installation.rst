@@ -1,7 +1,7 @@
-{{full_course_name}} - {{metadata.course_identifier}}
+{{course_full_name}} - {{metadata.course_identifier}}
 ---------------------------------------------------
 
-In order to install python requirements for {{full_course_name}} {{metadata.course_identifier}} do the following steps.
+In order to install python requirements for {{course_full_name}} {{metadata.course_identifier}} do the following steps.
 
 .. card:: Install course environment steps
 
@@ -14,7 +14,7 @@ In order to install python requirements for {{full_course_name}} {{metadata.cour
 
         .. code:: bash
 
-            conda create -f "{{metadata.env_path}}" -n "{{metadata.course_env_name}}"
+            conda env create -f "{{metadata.env_path}}" -n "{{metadata.course_env_name}}"
     
     #.
 

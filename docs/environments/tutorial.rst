@@ -13,7 +13,7 @@ For conda to install the correct dependencies use the following template:
 .. code:: yml
 
     metadata:
-      full_course_name: "0xxxx Course name"
+      course_full_name: "0xxxx Course name"
       course_number: "0xxxx"
       course_identifier: "Spring 2026"
       course_env_name: "0xxxx_S26" or "0xxxx_E26"
