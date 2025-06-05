@@ -21,6 +21,7 @@ For conda to install the correct dependencies use the following template:
     channels:
       - conda-forge
     dependencies:
+      - ipykernel
       - numpy=2.2.0
       - python=3.13.4
       - pip
@@ -28,6 +29,10 @@ For conda to install the correct dependencies use the following template:
         - matplotlib
 
 Here conda-forge requirements go into "dependencies:", while pip requirements go into "pip:".
+
+.. tip::
+
+  Consider adding "ipykernel" or "jupyter" to the dependencies if you expect the students to work in jupyter notebooks.
 
 .. important::
     Due to licensing problems we are not allowed to use packages from the default anaconda channel. 
