@@ -39,12 +39,12 @@ Find environments for courses
     </script>
 
 
-{% for course_name, years in environments.items() %}
+{% for full_course_name, years in environments.items() %}
 .. raw:: html
     
-    <div data-environment="{{course_name}}">
+    <div data-environment="{{full_course_name}}">
 
-.. dropdown:: {{course_name}}
+.. dropdown:: {{full_course_name}}
 
     {% for year, metadata in years.items() %}
     `{{metadata.course_identifier}} <./course/{{metadata.course_env_name}}.html>`_
