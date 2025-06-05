@@ -1,3 +1,6 @@
+.. _environments-list:
+
+
 Find environments for courses
 ====
 
