@@ -67,7 +67,7 @@ Dashboards are a collection of widgets that presents a data collected over a per
 Current dashboards:
 
 *
-    **Test**: Test dashboard that includes a counter of the custom event: **ErrorName**.
+    **Test**: Test dashboard that shows the number of clicks to the "Download python" button.
 
 * 
     **Weekly review**: Shows number of unique visitors, mean session time, mean time on install page, number of automated install errors, page views.
@@ -75,6 +75,10 @@ Current dashboards:
 .. image:: ./images/piwik_documentation/piwik_dashboard.png
          :width: 600
          :align: center
+
+.. Note::
+
+    It can take a bit of time for Piwik to show data from user sessions.
 
 Widgets (Analytics)
 ====
@@ -112,7 +116,7 @@ Variables can be used for setting conditions for when triggers are supposed to f
 Current variables:
 
 *
-    **Error get variable**: This variable tracks the ?error=... get parameter on all pages. Is used for determining when the **Error trigger** fires.
+    **There are no current variables**
 
 .. figure:: ./images/piwik_documentation/piwik_variables.png
          :width: 600
@@ -144,7 +148,7 @@ Current triggers:
     **Click trigger**: This trigger is fired for all clicks that happens on the site. It calls the **Heatmap** tag to get statistics on what the user is clicking on.
 
 *
-    **Error trigger**: This trigger fires when the **Error get variable** is equal to "error". That is, it is fired when the URL includes "?error=error". It fires the tags: **Error event** and **Error popup**.
+    **Download Python button click**: This trigger fires when a user clicks on the "Download python" button on the main page.
 
 
 .. figure:: ./images/piwik_documentation/piwik_triggers.png
@@ -184,10 +188,7 @@ A very useful way to confirm that a tag is working in the intended way is to use
 Current tags:
 
 *
-    **Error popup**: When a url includes ?error=error, then a test popup is opened.
-
-*
-    **Error event**: When a url includes ?error=error, a custom event named ErrorName is recorded and shown in the test dashboard.
+    **Download python tag**: This tag is fired by the "Download Python button click" trigger. It creates a custom event called "Download python event" which is visualize in the "test" dashboard and under (Analytics / Goals).
 
 *
     **Heatmap**: Every time a user clicks on a page the item being clicked on is recorded and send to the server. The resulting heatmap and scrollmap can be seen using the `Piwik chrome extension <https://chromewebstore.google.com/detail/njcnagohlmamfijimejlnelenhahnoce?utm_source=item-share-cb>`_. This is very insightful when analyzing how visitors use the page. 
@@ -215,7 +216,7 @@ The process of setting up a goal is similar to setting up a trigger, with the im
 
 Current goals:
 
-* **Error goal**: A test goal to track how many install errors happens.
+* **Download python button click**: How many people clicks the "Download python" button on the main page.
 
 .. figure:: ./images/piwik_documentation/piwik_goals.png
          :width: 600
@@ -225,6 +226,9 @@ Current goals:
 
 .. Note::
     The term conversion rate is the percentage of visitors for where a goal event has happened.
+
+.. Note::
+    A goal can capture more information about how it was triggered. Only after creating a goal with a specific trigger event will this data get tracked.
 
 Using goals automatically creates analyses to viewed  under the "Reports" tab. Much of the same information in the reports can be included by widgets in custom dashboards. The must useful reports are:
 
