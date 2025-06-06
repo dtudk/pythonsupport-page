@@ -4,13 +4,18 @@
 
 Piwik documentation
 ----
+This page contains information on how to use Piwik. The subjects covered are:
 
-This page contains information on how to use Piwik.
+.. contents::
+   :backlinks: none
+   :local:
+
+For a tutorial to set up a custom event see: :ref:`this guide <piwik-custom-event-tutorial>`.
+
 Helpful links:
 
 * `Piwik PRO Help Center <https://help.piwik.pro>`_
 * `Piwik PRO YouTube Tutorial <https://www.youtube.com/watch?v=O_its-ChPTg&list=PLgjjMVHirGE_7ET0nb7ZUv7wN2P4sTRpE>`_
-
 
 The parenthesis of the sections below: "()" indicate where to find the topics of the section in piwik. Use the "Menu" button to navigate to the indicated page.
 
@@ -22,7 +27,6 @@ The parenthesis of the sections below: "()" indicate where to find the topics of
 
 *
     **Consent manager**: Settings for how the "allow-cookies" popup should look like.
-
 
 
 .. image:: ./images/piwik_documentation/piwik_navigation.png
@@ -44,6 +48,26 @@ Terminology
 * 
     **Goal**: An important event that happens on the site. Could for example be that a visitor successfully downloads and installs Python.
 
+User Consent (Consent manager)
+=======
+
+In order to GDPR appliant Piwik will insert a pop-up on the website when the user is first visiting.
+Here a user will be able to choose which metrics we can collect and use them. Even if the user rejects
+all options, Piwik will still be able to track certain parameters. The triggers an tags we use relies on
+the user accepts "Analytics", which is the only thing we ask them to accept at the moment.
+
+Other consent types include:
+
+*
+    **AB Testing and Personalization**: Can for example be used to open pop-ups from tags.
+
+*
+    **User feedback**: Surveys, on-site-polls, etc..
+
+.. image:: ./images/piwik_documentation/piwik_consent.png
+         :width: 600
+         :align: center
+
 
 Segments (Analytics)
 ====
@@ -53,6 +77,8 @@ Current segments:
 
 *
     **"Denmark"**: which filters IP-addresses from denmark. This is useful in accessing how well the website performs on DTU students.
+
+Other possible segments could for example be filtering IP-addresses from DTU, or which operating system a visitor is using.
 
 
 .. image:: ./images/piwik_documentation/piwik_segments.png
@@ -67,7 +93,7 @@ Dashboards are a collection of widgets that presents a data collected over a per
 Current dashboards:
 
 *
-    **Test**: Test dashboard that shows the number of clicks to the "Download python" button.
+    **Custom events**: This dashboard shows the analytics of the custom events that have been configured by us. These include: "Download python" clicks, number of failed installations, number of successful installations. 
 
 * 
     **Weekly review**: Shows number of unique visitors, mean session time, mean time on install page, number of automated install errors, page views.
@@ -132,11 +158,11 @@ When specific conditions are met a trigger can be fired. The code that a trigger
 For example a trigger can executed when:
 
 * 
-    A user scrolls past a specific percentage down the screen
+    A user scrolls past a specific percentage down the screen.
 * 
-    A user clicks on a specific element/button
+    A user clicks on a specific element/button.
 * 
-    A user visits a specific URL with query elements
+    A user visits a specific URL with query elements.
 
 
 Current triggers:
@@ -149,6 +175,12 @@ Current triggers:
 
 *
     **Download Python button click**: This trigger fires when a user clicks on the "Download python" button on the main page.
+
+*
+    **Automatic installation error page visit**: This trigger fires when a user visits a URL that contains "automated-success".
+
+*
+    **Automatic installation success page visit**: This trigger fires when a user visits a URL that contains "automated-error".
 
 
 .. figure:: ./images/piwik_documentation/piwik_triggers.png
@@ -188,13 +220,19 @@ A very useful way to confirm that a tag is working in the intended way is to use
 Current tags:
 
 *
-    **Download python tag**: This tag is fired by the "Download Python button click" trigger. It creates a custom event called "Download python event" which is visualize in the "test" dashboard and under (Analytics / Goals).
+    **Download python tag**: This tag is fired by the "Download Python button click" trigger. It creates a custom event called "Download python event" which is visualize in the "Custom events" dashboard and under (Analytics / Goals).
 
 *
     **Heatmap**: Every time a user clicks on a page the item being clicked on is recorded and send to the server. The resulting heatmap and scrollmap can be seen using the `Piwik chrome extension <https://chromewebstore.google.com/detail/njcnagohlmamfijimejlnelenhahnoce?utm_source=item-share-cb>`_. This is very insightful when analyzing how visitors use the page. 
 
 * 
     **Piwik PRO**: The basic tracking analytics for the site.
+
+*
+    **Automatic installation error tag**: This tag is triggered by "Automatic installation error page visit", and sends a custom event: "Automatic installation error event". Analytics of this event can be seen in the "Custom events" dashboard and under (Analytics / Goals).
+
+*
+    **Automatic installation success tag**: This tag is triggered by "Automatic installation success page visit", and sends a custom event: "Automatic installation success event". Analytics of this event can be seen in the "Custom events" dashboard and under (Analytics / Goals).
 
 
 .. figure:: ./images/piwik_documentation/piwik_heatmap.png
@@ -212,7 +250,7 @@ In Piwik goals are the must important interactions that happen on the site. For 
 * How many visitors sign up for the newsletter.
 * How many visitors that creates an account on the site.
 
-The process of setting up a goal is similar to setting up a trigger, with the important addition that a goal can also be fired from a custom event happening.
+A goal can be fired by one or more custom events, or be tracked manually.
 
 Current goals:
 
@@ -237,7 +275,6 @@ Using goals automatically creates analyses to viewed  under the "Reports" tab. M
 * **Engagement**: The amount of returning visitors
 * **Channels**: From which other website are visitors being directed from.
 * **Pages**: What pages are people visiting
-
 
 Useful report for debugging:
 

@@ -12,7 +12,7 @@ In this tutorial we will be creating a custom event for capturing a specific use
 
 
 Introduction
-============
+~~~~~~~~~~~~
 
 Lets say we want to find out how many visitors clicks on the "Download python" button in the main hero. This button has the classes "btn btn-primary btn-lg px-4 me-md-2" attached to it. We will be using the class selector in order to determine if the button has been pressed.
 
@@ -123,9 +123,10 @@ In order to only see the download python events we will filter by the event name
 4. Analyze custom event in goals
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Another way to analyze how many people clicked on the download button is to setup a goal.
+Another way to analyze how many people clicked on the download button is to use a goal.
 A goal is intended for events on the site that are of special interest. An example could 
-be a person sining up for a newsletter or completes a purchase.
+be a person sining up for a newsletter or completes a purchase. A goal gives better analytics
+per default.
 
 To setup a goal go to ( Analytics / Goals ) and click the "Add a goal" button.
 
