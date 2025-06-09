@@ -12,7 +12,8 @@ from pathlib import Path
 import os
 import datetime
 import sys
-
+import yaml
+from jinja2 import Environment, FileSystemLoader
 html_logo = "_static/DTU_logo_Coral_RGB.png"
 
 
@@ -496,8 +497,29 @@ html_context = {
     "timetable_widths": "15 17 17 17 17 17",
     # online days
     "online_days": _online_days,
+    "environments": {},
 }
 
+
+# Read all YAML files in "new_course/environments" directory
+environments_dir = Path("./_static/environments")
+for yaml_file in environments_dir.glob("*.yml"):
+    with open(yaml_file, "r") as file:
+        try:
+            env_data = yaml.safe_load(file)
+            metadata = env_data["metadata"]
+
+            if metadata["course_full_name"] not in html_context["environments"]:
+                html_context["environments"][metadata["course_full_name"]] = {}
+
+            html_context["environments"][metadata["course_full_name"]][metadata["course_identifier"]] = metadata
+            html_context["environments"][metadata["course_full_name"]][metadata["course_identifier"]]["env_path"] = "https://pythonsupport.dtu.dk/"+str(yaml_file)
+
+        except yaml.YAMLError as e:
+            print(f"Error reading {yaml_file}: {e}")
+        
+        except KeyError:
+            print(f"Error reading metadata from {yaml_file}")
 
 print("^^^^^ DONE conf.py ^^^^^")
 
@@ -534,9 +556,30 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
+def generate_pages_from_json(app):
+    src_dir = app.srcdir
+    json_path = os.path.join(src_dir, 'data.json')
+    template_dir = os.path.join(src_dir, '_templates')
+    output_dir = os.path.join(src_dir, 'environments/course')
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Load template
+    env = Environment(loader=FileSystemLoader(template_dir))
+    template = env.get_template('environment_installation.rst')
+
+    for course_full_name, years in html_context["environments"].items():
+        for year, metadata in years.items():
+            rendered = template.render(course_full_name=course_full_name, metadata=metadata)
+            filename = metadata["course_env_name"]
+            filepath = os.path.join(output_dir, f"{filename}.rst")
+            with open(filepath, 'w') as out:
+                out.write(rendered)
+
 
 def setup(app):
 
+    app.connect('builder-inited', generate_pages_from_json)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
 
