@@ -421,7 +421,9 @@ hovers that are also interfering so it doesn't have effect on all  */
     background-color: var(--dtu-red) !important;
   }
 
+  /* This code snippet modifies the structure of an active text input form element, such as a search bar. */
   .form-control:focus {
+    /* Change the box-shadow to be aligned to the DTU color scheme */
     box-shadow: 0 0 0 .1875rem var(--dtu-red);
   }
 
