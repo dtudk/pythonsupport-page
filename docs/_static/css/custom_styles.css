@@ -398,7 +398,9 @@ hovers that are also interfering so it doesn't have effect on all  */
   .bd-header-article.noprint {
     display: none !important;
   }
-
+  .btn-link {
+    color: var(--dtu-red) !important;
+  }
   .btn-primary {
     --bs-btn-color: var(--dtu-white);
     --bs-btn-bg: var(--dtu-red);
