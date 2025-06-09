@@ -421,6 +421,10 @@ hovers that are also interfering so it doesn't have effect on all  */
     background-color: var(--dtu-red) !important;
   }
 
+  .form-control:focus {
+    box-shadow: 0 0 0 .1875rem var(--dtu-red);
+  }
+
   /* Changes the aesthetics of the search button in the toggle primary side bar */
   .btn.btn-sm.navbar-btn.search-button.search-button__button:hover {
     color: var(--bg-primary);
