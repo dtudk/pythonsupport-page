@@ -1,0 +1,4 @@
+*.gif
+tmp/*
+commands.run
+hashes.yml
