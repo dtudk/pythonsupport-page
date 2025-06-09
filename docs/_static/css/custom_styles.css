@@ -413,6 +413,14 @@ hovers that are also interfering so it doesn't have effect on all  */
     --bs-btn-disabled-border-color: var(--dtu-red);
   }
 
+  .table thead tr {
+    border-bottom: 2px solid var(--dtu-red-corporate) !important;
+  }
+
+  .table tbody tr:hover {
+    background-color: var(--dtu-red) !important;
+  }
+
   /* Changes the aesthetics of the search button in the toggle primary side bar */
   .btn.btn-sm.navbar-btn.search-button.search-button__button:hover {
     color: var(--bg-primary);
