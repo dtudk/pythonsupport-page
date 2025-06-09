@@ -54,4 +54,5 @@ In order to install python requirements for {{course_full_name}} {{metadata.cour
     In order to activate the course environment in a terminal, run the following command:
 
     .. code:: bash
+        
         conda activate {{metadata.course_env_name}}
