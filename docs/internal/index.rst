@@ -185,6 +185,10 @@ Piwik setup is documented :ref:`here <piwik-documentation>`.
 
 Piwik custom event tutorial can be found :ref:`here <piwik-custom-event-tutorial>`.
 
+Panopto tutorial
+----------------
+
+How to use Panopto and how to make video tutorials are documented `here <internal-panopto>`_.
 
 :ref:`Exercises <internal-exercises>`
 -------------------------------------
@@ -197,6 +201,7 @@ Go :ref:`here <internal-exercises>` for the exercises.
 
 Go :ref:`here <internal-documentation>` for instructions on how to
 fix/add new documentation.
+
 
 
 .. toctree::
