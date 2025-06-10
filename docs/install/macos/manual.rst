@@ -89,19 +89,11 @@ Step 3: Install Visual Studio Code
     :height: 25px
 
 .. card:: 
-
-   After the installation is finished, you need to download Visual Studio Code. 
    
    #.
    
-      Go to `this website  <https://code.visualstudio.com/Download#>`__.
+      Click `here <https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal>`__ to download the installer.
       
-   #. 
-      Click the **Mac** button and follow the instructions.
-
-      .. image:: /images/install/macos-fully-manual-vsc-webpage.png
-         :width: 500
-         :align: center
 
    #. 
       Make sure that Visual Studio Code is under the |applications| folder in Finder.
