@@ -1,3 +1,9 @@
+:nosearch:
+
+.. Ensure no search in this file
+
+.. _internal-panopto:
+
 Panopto documentation
 =====================
 
