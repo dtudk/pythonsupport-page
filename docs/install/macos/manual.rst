@@ -92,7 +92,7 @@ Step 3: Install Visual Studio Code
    
    #.
    
-      Click `here <https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal>`__ to download the installer.
+      Click `here <https://code.visualstudio.com/sha/download?build=stable&os=darwin-universal>`__ to download the Visual Studio Code.
       
 
    #. 
