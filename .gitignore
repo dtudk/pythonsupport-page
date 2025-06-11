@@ -12,3 +12,9 @@ Thumbs.db
 ehthumbs.db
 
 .fake
+
+# gif files
+docs/os/gifs/**/*.gif
+docs/os/gifs/tmp/*
+docs/os/gifs/commands.run
+docs/os/gifs/hashes.yml
