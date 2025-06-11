@@ -94,14 +94,7 @@ Step 3: Install Visual Studio Code
    
    #.
    
-      Go to `this website  <https://code.visualstudio.com/Download#>`__.
-      
-   #. 
-      Click the **Mac** button and follow the instructions.
-
-      .. image:: /images/install/macos-fully-manual-vsc-webpage.png
-         :width: 500
-         :align: center
+      Click `here  <https://code.visualstudio.com/Download#>`__ to download Visual Studio Code.
 
    #. 
       Make sure that Visual Studio Code is under the |applications| folder in Finder.

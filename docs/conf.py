@@ -102,6 +102,9 @@ except ImportError:
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+    "matplotlib": ("https://matplotlib.org/stable/", None),
 }
 
 sphinxemoji_style = "twemoji"
@@ -216,7 +219,7 @@ sphinx_tabs_disable_tab_closing = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "sphinx_book_theme"
-html_static_path = ["_static", "../images"]
+html_static_path = ["_static", "images"]
 
 # this move will work regardless of hover...
 _fa_move = "shake-hover"
@@ -294,7 +297,11 @@ if False:
     ] = "file:///home/nicpa/dcc/python-support/ps-webpage/build/html/_static/course_switcher.json"
     html_theme_options["navbar_center"].append("version-switcher")
 
-html_js_files = ["js/external_tab.js", "js/custom.js"]
+html_js_files = [
+    "js/external_tab.js",
+    "js/custom.js",
+    "js/piwik.js",
+]
 
 html_css_files = [
     ("css/bannerStyles.css", {"priority": 999}),
@@ -527,9 +534,22 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
+def add_title_to_context(app, pagename, templatename, context, doctree):
+    # If there's no document tree (e.g., for special pages like search or genindex), do nothing.
+    if doctree is None:
+        return
+    
+    # Retrieve metadata for the current page
+    metadata = app.env.metadata.get(pagename, {})
+
+    # If a 'title' is specified in the page metadata, add it to the template context
+    title = metadata.get('title')
+    if title:
+        context['title'] = title
 
 def setup(app):
 
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
+    app.connect("html-page-context", add_title_to_context)
 

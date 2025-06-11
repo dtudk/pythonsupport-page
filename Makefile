@@ -45,4 +45,4 @@ livehtml:
 
 
 gifs:
-	(cd docs/os/gifs ; bash create.sh)t
+	(cd docs/os/gifs ; bash create.sh)
