@@ -96,14 +96,10 @@ Step 3: Install Visual Studio Code
 .. card:: 
 
    #.
-      Go to `this website  <https://code.visualstudio.com/Download>`__.
+      Click `here  <https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user>`__ to download the installer.
    
    #.
-      Click the **Windows** button and follow the instructions.
-
-      .. image:: /images/install/windows-fully-manual-vsc-webpage.png
-         :width: 500
-         :align: center
+      Open the installer and follow the instructions.
       
 
 .. _install-python-windows-vscode-exts:
