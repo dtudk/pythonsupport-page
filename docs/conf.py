@@ -556,7 +556,7 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
-def generate_pages_from_json(app):
+def generate_env_pages_from_json(app):
     src_dir = app.srcdir
     json_path = os.path.join(src_dir, 'data.json')
     template_dir = os.path.join(src_dir, '_templates')
@@ -579,7 +579,7 @@ def generate_pages_from_json(app):
 
 def setup(app):
 
-    app.connect('builder-inited', generate_pages_from_json)
+    app.connect('builder-inited', generate_env_pages_from_json)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
 
