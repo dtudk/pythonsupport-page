@@ -7,7 +7,11 @@
             "module": "sphinx_autobuild",
             "args": [
                 "docs",
-                "build"
+                "build",
+                "--ignore",
+                "docs/_static/course_switcher.json",
+                "--ignore",
+                "docs/timetable/timetable.rst"
             ]
         }
     ]
