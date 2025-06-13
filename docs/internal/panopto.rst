@@ -51,7 +51,7 @@ When installed follow this guide on how to create videos:
 
     <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1e57bf91-1de4-4717-9cfc-b2fa00ee6061&autoplay=false&offerviewer=false&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-The title screen / thumb nail template can be found here.
+The intro screen template can be found `here <https://discord.com/channels/1138793943526539266/1291313327435288617/1382382267099512923>`_.
 
 
 How to upload and add subtitles
