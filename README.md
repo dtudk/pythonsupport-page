@@ -26,7 +26,7 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-       python3 -m pip install -r requirements.txt sphinx-autobuild ruff
+       python3 -m pip install -r requirements.txt sphinx-autobuild ruff pre-commit
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
        # will allow updating a package that breaks compatibility, we

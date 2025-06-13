@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: ruff-lint
+        name: ruff lint
+        entry: ./ps-page-env/bin/ruff
+        language: system
+        args: [check, --fix]
+        types: [python]
