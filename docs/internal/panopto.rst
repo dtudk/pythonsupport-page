@@ -53,6 +53,10 @@ When installed follow this guide on how to create videos:
 
 The intro screen template can be found `here <https://discord.com/channels/1138793943526539266/1291313327435288617/1382382267099512923>`_.
 
+.. todo::
+
+    Host the file above on own server.
+
 
 How to upload and add subtitles
 -------------------------------
