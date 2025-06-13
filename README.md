@@ -79,6 +79,12 @@ To lint and format your code use
 
 Ruff has an extension for vs-code which can be used to visually inspect errors: [Ruff - Visual Studio code extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff).
 
+## Pre-commit
+
+Use `pre-commit install` in order to automatically lint Python files on commit.
+This will install a hook that will not let you commit unless your code meets a
+certain standard.
+
 ## Running Locally in Podman
 
 You can easily run the site locally (and deployed) using containers. You'll need:
