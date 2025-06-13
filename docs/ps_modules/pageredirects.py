@@ -1,12 +1,12 @@
 __all__ = [
-    "HomepageFormatter",
-    "Coursebase",
     "CourseStrip",
+    "Coursebase",
+    "HomepageFormatter",
 ]
 
 
 def split_str(s, sep=None, maxsplit=-1):
-    """split a string"""
+    """Split a string"""
     sl = s.split(sep, maxsplit)
     if maxsplit > 0:
         n_add = maxsplit + 1 - len(sl)
@@ -37,7 +37,7 @@ class HomepageFormatter:
             self.add(course, page)
 
     def __eq__(self, other) -> bool:
-        """ When they are the same, the docs won't be fully rebuild """
+        """When they are the same, the docs won't be fully rebuild"""
         return self.info == other.info
 
 
@@ -73,7 +73,7 @@ class Coursebase:
         self.__init__(state["prefix"])
 
     def __eq__(self, other) -> bool:
-        """ When they are the same, the docs won't be fully rebuild """
+        """When they are the same, the docs won't be fully rebuild"""
         return self.prefix == other.prefix
 
 
@@ -92,6 +92,6 @@ class CourseStrip:
         self.__init__()
 
     def __eq__(self, other) -> bool:
-        """ When they are the same, the docs won't be fully rebuild """
+        """When they are the same, the docs won't be fully rebuild"""
         # This is a special case, it strips, and is thus always the same!
         return True
