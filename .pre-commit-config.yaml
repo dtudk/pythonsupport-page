@@ -1,9 +1,11 @@
 repos:
-  - repo: local
+  - repo: local               # Ruff is installed as an additional_dependency within a local Python environment.
     hooks:
-      - id: ruff-lint
-        name: ruff lint
-        entry: ./ps-page-env/bin/ruff
-        language: system
-        args: [check, --fix]
-        types: [python]
+      - id: ruff-lint         # id of the hook
+        name: ruff lint       # name of the hook
+        entry: ruff           # the command to execute
+        args: [check, --fix]  # the arguments to ruff
+        language: python      # tells pre-commit to use a python env
+        types: [python]       # tells pre-commit what files to check
+        additional_dependencies:
+          - ruff              # set ruff as a pip dependency
