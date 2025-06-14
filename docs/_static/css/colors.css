@@ -9,11 +9,11 @@
     --dtu-navy-blue: #030f4f;
     --dtu-yellow: #f6d04d;
     --dtu-orange: #fc7634;
-    --dtu-pink: #F7BBB1;
-    --dtu-grey: #DADADA;
-    --dtu-red: #E83F48;
+    --dtu-pink: #f7bbb1;
+    --dtu-grey: #dadada;
+    --dtu-red: #e83f48;
     --dtu-green: #008835;
-    --dtu-purple: #79238E;
+    --dtu-purple: #79238e;
     --bg-primary: var(--dtu-red);
     --bs-primary-rgb: 232, 63, 72;
     --bg-primary-highlight: var(dtu-red-corporate);

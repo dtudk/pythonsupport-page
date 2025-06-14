@@ -1,258 +1,236 @@
-  /* _static/css/custom_styles.css */
+/* _static/css/custom_styles.css */
 
+/*
 
+  This part of the code imports and changes the font style of the website.
 
-
-  /* 
-  
-  This part of the code imports and changes the font style of the website. 
-  
   The main font is DTUs official font called NeoSans and is located in _static/fonts
-  
-  */
 
-  @font-face {
+*/
+
+@font-face {
     font-family: NeoSans;
-    src: url('../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf') fort('truetype');
+    src: url("../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf") fort("truetype");
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: NeoSans;
-    src: url('../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf') format('truetype');
+    src: url("../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf") format("truetype");
     font-weight: bold;
     font-style: bold;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: NeoSans;
-    src: url('../fonts/Neo Sans Std Light/Neo Sans Std Light.otf') format('truetype');
+    src: url("../fonts/Neo Sans Std Light/Neo Sans Std Light.otf") format("truetype");
     font-weight: 300;
     font-style: light;
-  }
+}
 
-  /* Apply the font to the body */
-  body {
+/* Apply the font to the body */
+body {
     font-family: NeoSans, sans-serif;
-  }
+}
 
-  /* Apply the font to the headings. It also makes all titles bold */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+/* Apply the font to the headings. It also makes all titles bold */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: NeoSans, sans-serif;
     font-weight: bold !important;
     /* Bold headings */
-  }
+}
 
+/* vvvvv STYLES TO MAKE TABS MORE VISUAL vvvvv */
 
+/* The parent container of tabs */
+.tab-set {
+    border: 1px solid #ccc;
+}
 
-  /* vvvvv STYLES TO MAKE TABS MORE VISUAL vvvvv */
+/* Individual box of each tab */
+.tab-set > label {
+    margin-bottom: 0;
+}
 
-  /* The parent container of tabs */
-  .tab-set {
-    border: 1px solid #ccc
-  }
-
-  /* Individual box of each tab */
-  .tab-set>label {
-    margin-bottom: 0
-  }
-
-
-
-  /* Initial paragraph of the content. By default there's a top margin 
+/* Initial paragraph of the content. By default there's a top margin
   but we already specify a padding of 20 px for the content no matter what the
   first child is. */
-  .tab-content>p:first-child {
-    margin-top: 0
-  }
+.tab-content > p:first-child {
+    margin-top: 0;
+}
 
-  /* ^^^^^ STYLES TO MAKE TABS MORE VISUAL ^^^^^ */
+/* ^^^^^ STYLES TO MAKE TABS MORE VISUAL ^^^^^ */
 
-  /* To center the logo on the page */
+/* To center the logo on the page */
 
-  /* Actual logo */
-  .microsoft-logo {
+/* Actual logo */
+.microsoft-logo {
     position: relative;
     width: 50vmin;
     height: 50vmin;
     overflow: hidden;
-  }
+}
 
-  #microsoft-::before {
+#microsoft-::before {
     content: "";
     position: absolute;
     height: 24.1vmin;
     width: 50vmin;
-    background: linear-gradient(90deg,
-        #f25022 48%,
-        transparent 48%,
-        transparent 52%,
-        #7fba00 52%);
-  }
+    background:
+        linear-gradient(
+            90deg,
+            #f25022 48%,
+            transparent 48%,
+            transparent 52%,
+            #7fba00 52%
+        );
+}
 
-  #microsoft-logo::after {
+#microsoft-logo::after {
     content: "";
     position: absolute;
     bottom: 0;
     height: 24.1vmin;
     width: 50vmin;
-    background: linear-gradient(90deg,
-        #00a4ef 48%,
-        transparent 48%,
-        transparent 52%,
-        #ffb900 52%);
-  }
+    background:
+        linear-gradient(
+            90deg,
+            #00a4ef 48%,
+            transparent 48%,
+            transparent 52%,
+            #ffb900 52%
+        );
+}
 
+/* Add bullets to the toctree items */
 
-
-  /* Add bullets to the toctree items */
-
-  .toctree-wrapper ul {
+.toctree-wrapper ul {
     list-style-type: disc !important;
     /* Disc bullet for the first level */
     padding-left: 20px;
     /* Adjust the padding as needed */
-  }
+}
 
-  .toctree-wrapper ul ul {
+.toctree-wrapper ul ul {
     list-style-type: circle !important;
     /* Circle bullet for nested levels */
     padding-left: 40px;
     /* Adjust the padding for nested levels */
-  }
+}
 
-  .toctree-wrapper ul ul ul {
+.toctree-wrapper ul ul ul {
     list-style-type: square !important;
     /* Square bullet for deeper nested levels */
     padding-left: 60px;
     /* Adjust the padding for deeper nested levels */
-  }
+}
 
-  /* Ensure the list items are displayed correctly */
-  .toctree-wrapper li {
+/* Ensure the list items are displayed correctly */
+.toctree-wrapper li {
     display: list-item !important;
     list-style: inherit !important;
     /* Ensure bullets are inherited */
-  }
+}
 
-  /* Set bullet points to always appear in the specified red - Does not seem to have an effect right now */
+/* Set bullet points to always appear in the specified red - Does not seem to have an effect right now */
 
-  /* .toctree-wrapper ul li {
-    color: var(--bg-primary) !important; 
+/* .toctree-wrapper ul li {
+    color: var(--bg-primary) !important;
   } */
 
-  /* Set bullet points to always appear in the specified red */
-  .toctree-wrapper ul li::marker {
+/* Set bullet points to always appear in the specified red */
+.toctree-wrapper ul li::marker {
     color: var(--bg-primary) !important;
-  }
+}
 
-  /* Set headers inside the toctree to the specified red */
-  .toctree-wrapper .toctree-l1 a {
+/* Set headers inside the toctree to the specified red */
+.toctree-wrapper .toctree-l1 a {
     color: var(--bg-primary) !important;
     /* Ensure the headers inside the toctree are the specified red */
-  }
+}
 
-  /* This changes the color of the toctree letters, not bullet points */
-  .toctree-wrapper .toctree-l1 a:hover,
-  .toctree-wrapper .toctree-l1 a:visited,
-  .toctree-wrapper .toctree-l1 a:active {
+/* This changes the color of the toctree letters, not bullet points */
+.toctree-wrapper .toctree-l1 a:hover,
+.toctree-wrapper .toctree-l1 a:visited,
+.toctree-wrapper .toctree-l1 a:active {
     color: var(--bg-primary) !important;
-  }
+}
 
+/* Set sidebar links and headers to the specified red - doesn't seem to have any effect */
 
-  /* Set sidebar links and headers to the specified red - doesn't seem to have any effect */
-
-  /* div[role="navigation"] a.nav-link {
+/* div[role="navigation"] a.nav-link {
     color: var(--bg-primary) !important;
   } */
 
+/*
+  Changes the color of the list below a section.
+  For example, in all the courses below 'DTU Courses' when selected.
+*/
 
-  /* Changes the color of the list below a section - For example, in all the courses below 'DTU Courses' when selected. */
-
-  .toctree-l1.current a {
+.toctree-l1.current a {
     color: var(--bg-primary) !important;
     /* Ensure text is readable */
-  }
+}
 
+/* Default navbar link styles - does not seem to be working */
 
-  /* Default navbar link styles - does not seem to be working */
-
-  /* nav.navbar a {
-    color: yellow ; 
-    font-weight: normal; 
+/* nav.navbar a {
+    color: yellow ;
+    font-weight: normal;
   } */
 
+/* Styles for the active or selected navbar link - doesn't seem to be working */
 
-
-  /* Styles for the active or selected navbar link - doesn't seem to be working */
-
-  /* nav.navbar a.active, nav.navbar a.current {
-    color: var(--bg-primary)  !important; 
-    font-weight: bold !important; 
+/* nav.navbar a.active, nav.navbar a.current {
+    color: var(--bg-primary)  !important;
+    font-weight: bold !important;
   } */
 
-
-
-
-
-
-
-
-
-
-
-  /* It underlines header title when selected - color red */
-  .nav-item .nav-link:hover {
+/* It underlines header title when selected - color red */
+.nav-item .nav-link:hover {
     color: var(--bg-primary) !important;
     text-decoration: underline 3.2px solid var(--bg-primary) !important;
     /* Add red underline */
-  }
+}
 
+/* Makes text bold and red when you are in a specific section - For example, Install Python */
 
-  /* Makes text bold and red when you are in a specific section - For example, Install Python */
-
-  .nav-item.current.active,
-  .nav-item.current.active .nav-link {
+.nav-item.current.active,
+.nav-item.current.active .nav-link {
     color: var(--bg-primary) !important;
     box-shadow: none !important;
-  }
+}
 
+/* Takes out the huge underline below the header titles when selected */
 
-  /* Takes out the huge underline below the header titles when selected */
-
-  .nav-item .nav-link::before,
-  .nav-item .nav-link::after {
+.nav-item .nav-link::before,
+.nav-item .nav-link::after {
     content: none !important;
     /* Remove any pseudo-element content */
-  }
+}
 
-
-
-  /* Hover styles for the switch theme button on header */
-  .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before,
-  .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before {
+/* Hover styles for the switch theme button on header */
+.btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before,
+.btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button::before {
     content: none !important;
     color: var(--bg-primary) !important;
-  }
+}
 
-  .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button:active * {
+.btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button:active * {
     color: var(--bg-primary) !important;
     /* Red text color for all inner elements when clicking */
-  }
+}
 
+/* Button top right - Header */
 
-
-  /* Button top right - Header */
-
-
-  /* Style for custom buttons in the header */
-  .article-header-buttons .btn {
+/* Style for custom buttons in the header */
+.article-header-buttons .btn {
     margin: 0 2.5px;
     padding: 5px;
     color: currentcolor !important;
@@ -261,145 +239,138 @@
     justify-content: center;
     width: 35%;
     height: 35%;
-  }
+}
 
-  /* Hide the download button */
+/* Hide the download button */
 
-  /* .svg-inline--fa.fa-download {
+/* .svg-inline--fa.fa-download {
     display: none;
 } */
 
-
-  /* Ensure all titles formatted with `=` are bold - doesn't seem to 
+/* Ensure all titles formatted with `=` are bold - doesn't seem to
 have an extra effect since there is previous code taking care of this */
 
-  /* h1, h2 {
+/* h1, h2 {
     font-weight: bold !important;
   } */
 
+/* General hyperlink styles - doesn't seem to have any effect */
 
-
-  /* General hyperlink styles - doesn't seem to have any effect */
-
-  /* a {
-    color: green; 
-    text-decoration: none; 
+/* a {
+    color: green;
+    text-decoration: none;
   } */
 
-  /* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
+/* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
 
-  /* .nav-button a {
+/* .nav-button a {
     color: var(--bg-primary) !important;
-    text-decoration: none !important; 
-    border-bottom-color:  var(--bg-primary) !important; 
-  
+    text-decoration: none !important;
+    border-bottom-color:  var(--bg-primary) !important;
+
   } */
 
-  /* Ensure the bottom navigation links are also styled - doesn't seem to have any effect */
+/* Ensure the bottom navigation links are also styled - doesn't seem to have any effect */
 
-  /* .wy-nav-content a[href] {
+/* .wy-nav-content a[href] {
     color: var(--bg-primary); /* Red color */
 
-  /* text-decoration: none; /* Remove underline
+/* text-decoration: none; /* Remove underline
   } */
 
+/* General hyperlink styles - Changes ALL hyperlinks on the website, therefore it is disabled */
 
-  /* General hyperlink styles - Changes ALL hyperlinks on the website, therefore it is disabled */
-
-  /* a {
+/* a {
   color: var(--bg-primary) ;
 } */
 
-  /* Hover state for hyperlinks - Changes all, but there are other 
+/* Hover state for hyperlinks - Changes all, but there are other
 hovers that are also interfering so it doesn't have effect on all  */
 
-  a:hover {
+a:hover {
     color: var(--bg-primary) !important;
     /* border-bottom-color: var(--bg-primary) !important; */
-  }
+}
 
-  /* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
+/* Styles for navigation buttons (Previous and Next) - doesn't seem to have any effect */
 
-  /* .nav-button a {
-  color: var(--bg-primary) !important; 
+/* .nav-button a {
+  color: var(--bg-primary) !important;
   border-bottom-color: var(--bg-primary) !important
-  
+
 } */
 
+/*
+  Change the color of the Next and Previous navigation links to red
+  and remove underline - doesn't seem to be working
+*/
 
-
-  /* Change the color of the Next and Previous navigation links to red and remove underline - doesn't seem to be working */
-
-  /* .sphinxsidebar a, .sphinxsidebar a:visited, .sphinxsidebar a:active {
-  color: var(--bg-primary) !important; 
-  border-bottom-color: var(--bg-primary) !important;
-} */
-
-
-
-  /* Ensure the bottom navigation links are also styled - doesn't seem to be working */
-
-  /* .wy-nav-content a[href] {
-  color: var(--bg-primary) !important; /* Red color */
-
-  /* text-decoration: none;  */
-
-  /* } */
-
-  /* .wy-nav-content a[href]:hover {
+/* .sphinxsidebar a, .sphinxsidebar a:visited, .sphinxsidebar a:active {
   color: var(--bg-primary) !important;
   border-bottom-color: var(--bg-primary) !important;
 } */
 
+/* Ensure the bottom navigation links are also styled - doesn't seem to be working */
 
+/* .wy-nav-content a[href] {
+  color: var(--bg-primary) !important; /* Red color */
 
-  /* Changes style of next and previous buttons at the bottom of the page -
+/* text-decoration: none;  */
+
+/* } */
+
+/* .wy-nav-content a[href]:hover {
+  color: var(--bg-primary) !important;
+  border-bottom-color: var(--bg-primary) !important;
+} */
+
+/* Changes style of next and previous buttons at the bottom of the page -
  Note that you can change both 'Next' and the subtitle behind.
  Here both are changed simultaneously */
 
-  .prev-next-subtitle,
-  .prev-next-title {
+.prev-next-subtitle,
+.prev-next-title {
     color: currentcolor !important;
     text-decoration: none !important;
     /* Remove underline */
     font-weight: normal !important;
-  }
+}
 
+/* General styles for the reference internal nav-link class - doesn't seem to be working */
 
-  /* General styles for the reference internal nav-link class - doesn't seem to be working */
-
-  /* a.reference.internal.nav-link {
-  color: var(--bg-primary) !important; 
+/* a.reference.internal.nav-link {
+  color: var(--bg-primary) !important;
   text-decoration: none !important; /* Remove underline */
 
-  /* } 
-
+/* }
 
 /* Hover state for the reference internal nav-link */
-  a.reference.internal.nav-link:hover {
+a.reference.internal.nav-link:hover {
     text-decoration: underline !important;
     font-weight: bold !important;
 
     /* Add underline on hover if needed */
-  }
+}
 
-  /* Hide the homepage element that's on top in the primary side bar  */
-  .navbar-brand.logo {
+/* Hide the homepage element that's on top in the primary side bar  */
+.navbar-brand.logo {
     display: none !important;
-  }
+}
 
-  /* Hide the element with class header-article-items header-article_inner */
-  .header-article-items.header-article_inner {
+/* Hide the element with class header-article-items header-article_inner */
+.header-article-items.header-article_inner {
     display: none !important;
-  }
+}
 
-  /* This takes out the toggle side bar */
+/* This takes out the toggle side bar */
 
-  .bd-header-article.noprint {
+.bd-header-article.noprint {
     display: none !important;
-  }
-
-  .btn-primary {
+}
+.btn-link {
+    color: var(--dtu-red) !important;
+}
+.btn-primary {
     --bs-btn-color: var(--dtu-white);
     --bs-btn-bg: var(--dtu-red);
     --bs-btn-border-color: var(--dtu-red);
@@ -409,69 +380,65 @@ hovers that are also interfering so it doesn't have effect on all  */
     --bs-btn-active-border-color: var(--dtu-red-corporate);
     --bs-btn-disabled-bg: var(--dtu-red);
     --bs-btn-disabled-border-color: var(--dtu-red);
-  }
+}
 
-  /* Change the bottom border color of the table header to match the DTU color scheme */ 
-  .table thead tr {
+.table thead tr {
     border-bottom: 2px solid var(--dtu-red-corporate) !important;
-  }
+}
 
-  /* Modify the hover background colors for table rows to match the DTU color scheme */
-  .table tbody tr:hover {
+.table tbody tr:hover {
     background-color: var(--dtu-red) !important;
-  }
+}
 
-  /* Changes the aesthetics of the search button in the toggle primary side bar */
-  .btn.btn-sm.navbar-btn.search-button.search-button__button:hover {
+/* Changes the aesthetics of the search button in the toggle primary side bar */
+.btn.btn-sm.navbar-btn.search-button.search-button__button:hover {
     color: var(--bg-primary);
     /* Change text color */
     box-shadow: none !important;
-  }
+}
 
-  /* Removes the switch theme button on the toggle primary side bar - This is to avoid repetition,
+/* Removes the switch theme button on the toggle primary side bar - This is to avoid repetition,
 since it is also on the header.
 */
-  .bd-header-article.noprint .btn.btn-sm.navbar-btn.theme-switch-button {
+.bd-header-article.noprint .btn.btn-sm.navbar-btn.theme-switch-button {
     display: none;
-  }
+}
 
-  .bd-header-article.d-print-none.noprint .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button {
+.bd-header-article.d-print-none.noprint .btn.btn-sm.nav-link.pst-navbar-icon.theme-switch-button {
     display: none !important;
-  }
+}
 
-  /* Remove the light blue line below selected items in the header */
-  .navbar a:focus,
-  .navbar a:hover,
-  .navbar a.active,
-  .navbar a.current {
+/* Remove the light blue line below selected items in the header */
+.navbar a:focus,
+.navbar a:hover,
+.navbar a.active,
+.navbar a.current {
     border-bottom: none !important;
     /* Remove the underline */
-  }
+}
 
-  /* Additional rule to ensure no underline for selected nav items */
-  .navbar a {
+/* Additional rule to ensure no underline for selected nav items */
+.navbar a {
     border-bottom: none !important;
-  }
+}
 
-
-  /* Remove the light blue line below selected items in the header */
-  .navbar a:focus,
-  .navbar a:hover,
-  .navbar a.active,
-  .navbar a.current {
+/* Remove the light blue line below selected items in the header */
+.navbar a:focus,
+.navbar a:hover,
+.navbar a.active,
+.navbar a.current {
     border-bottom: none !important;
     /* Remove the underline */
-  }
+}
 
-  /* Additional rule to ensure no underline for selected nav items */
-  .navbar a {
+/* Additional rule to ensure no underline for selected nav items */
+.navbar a {
     border-bottom: none !important;
-  }
+}
 
-
-  /* Target the selected sidebar item and remove the background and border */
-  html[data-theme="light"] li.toctree-l1.current.active>a,
-  li.toctree-l1.current>a {
+/* Target the selected sidebar item and remove the background and border */
+html[data-theme="light"] li.toctree-l1.current.active > a,
+li.toctree-l1.current > a {
     background-color: #f3f4f5 !important;
     /* Remove the light blue background */
     border-left: none !important;
@@ -484,10 +451,10 @@ since it is also on the header.
     /* Make the text bold */
     box-shadow: none !important;
     /* Remove any box shadow that might be creating the line */
-  }
+}
 
-  html[data-theme="light"] li.toctree-l2.current.active>a,
-  li.toctree-l2.current>a {
+html[data-theme="light"] li.toctree-l2.current.active > a,
+li.toctree-l2.current > a {
     background-color: #f3f4f5 !important;
     /* Remove the light blue background */
     border-left: none !important;
@@ -500,10 +467,10 @@ since it is also on the header.
     /* Make the text bold */
     box-shadow: none !important;
     /* Remove any box shadow that might be creating the line */
-  }
+}
 
-  html[data-theme="light"] li.toctree-l3.current.active>a,
-  li.toctree-l3.current>a {
+html[data-theme="light"] li.toctree-l3.current.active > a,
+li.toctree-l3.current > a {
     background-color: #f3f4f5 !important;
     /* Remove the light blue background */
     border-left: none !important;
@@ -516,13 +483,11 @@ since it is also on the header.
     /* Make the text bold */
     box-shadow: none !important;
     /* Remove any box shadow that might be creating the line */
-  }
+}
 
-
-
-  /* Target the selected sidebar item and remove the background and border */
-  html[data-theme="dark"] li.toctree-l1.current.active>a,
-  li.toctree-l1.current>a {
+/* Target the selected sidebar item and remove the background and border */
+html[data-theme="dark"] li.toctree-l1.current.active > a,
+li.toctree-l1.current > a {
     background-color: #222832 !important;
     /* Remove the light blue background */
     border-left: none !important;
@@ -535,10 +500,10 @@ since it is also on the header.
     /* Make the text bold */
     box-shadow: none !important;
     /* Remove any box shadow that might be creating the line */
-  }
+}
 
-  html[data-theme="dark"] li.toctree-l2.current.active>a,
-  li.toctree-l2.current>a {
+html[data-theme="dark"] li.toctree-l2.current.active > a,
+li.toctree-l2.current > a {
     background-color: #222832 !important;
     /* Remove the light blue background */
     border-left: none !important;
@@ -551,10 +516,10 @@ since it is also on the header.
     /* Make the text bold */
     box-shadow: none !important;
     /* Remove any box shadow that might be creating the line */
-  }
+}
 
-  html[data-theme="dark"] li.toctree-l3.current.active>a,
-  li.toctree-l3.current>a {
+html[data-theme="dark"] li.toctree-l3.current.active > a,
+li.toctree-l3.current > a {
     background-color: #222832 !important;
     /* Remove the light blue background */
     border-left: none !important;
@@ -567,12 +532,10 @@ since it is also on the header.
     /* Make the text bold */
     box-shadow: none !important;
     /* Remove any box shadow that might be creating the line */
-  }
+}
 
-
-
-  /* Ensure the current link does not have an underline or border */
-  .bd-sidebar-primary a.current {
+/* Ensure the current link does not have an underline or border */
+.bd-sidebar-primary a.current {
     color: var(--bg-primary) !important;
     border-left: none !important;
     /* Ensure no left border for the current link */
@@ -582,81 +545,71 @@ since it is also on the header.
     /* Remove underline */
     box-shadow: none !important;
     /* Remove any box shadow */
-  }
+}
 
-
-
-  /* Ensure links in the sidebar are underlined on hover */
-  .bd-sidebar-primary a:hover {
+/* Ensure links in the sidebar are underlined on hover */
+.bd-sidebar-primary a:hover {
     color: var(--bg-primary) !important;
     border-bottom-color: var(--bg-primary) !important;
-  }
+}
 
+/* This code deletes both sidebars */
 
-  /* This code deletes both sidebars */
-
-  /* .bd-sidebar-primary,.bd-sidebar-secondary { 
+/* .bd-sidebar-primary,.bd-sidebar-secondary {
   display: none;
 }
 
  /* General hyperlink styles */
-  a {
+a {
     color: var(--bg-primary);
     /* Red color */
     text-decoration: none;
     /* Remove underline */
-  }
+}
 
-  /* External hyperlink styles */
-  .reference.external {
+/* External hyperlink styles */
+.reference.external {
     color: var(--bg-primary);
-  }
+}
 
-  /* Change the color of the hover effect in external links */
-  a.reference.external:hover {
+/* Change the color of the hover effect in external links */
+a.reference.external:hover {
     color: var(--bg-primary);
     border-bottom-color: var(--bg-primary);
     text-decoration: underline;
-  }
+}
 
-
-  /* Change the color of the external visited link */
-  a.reference.external:visited {
+/* Change the color of the external visited link */
+a.reference.external:visited {
     color: var(--bg-primary);
-  }
+}
 
-
-  /* Ensure no underline or border for the link and its child elements */
-  .navbar-icon-links .nav-item .nav-link,
-  .navbar-icon-links .nav-item .nav-link span,
-  .navbar-icon-links .nav-item .nav-link svg {
+/* Ensure no underline or border for the link and its child elements */
+.navbar-icon-links .nav-item .nav-link,
+.navbar-icon-links .nav-item .nav-link span,
+.navbar-icon-links .nav-item .nav-link svg {
     border-bottom: none !important;
     text-decoration: none !important;
     box-shadow: none !important;
-  }
+}
 
-
-
-
-  /* Add red underline for active, focus, and hover states */
-  .navbar-icon-links .nav-item .nav-link.active,
-  .navbar-icon-links .nav-item .nav-link:focus,
-  .navbar-icon-links .nav-item .nav-link:hover {
+/* Add red underline for active, focus, and hover states */
+.navbar-icon-links .nav-item .nav-link.active,
+.navbar-icon-links .nav-item .nav-link:focus,
+.navbar-icon-links .nav-item .nav-link:hover {
     border-bottom: 3.2px solid var(--bg-primary) !important;
     /* Add red underline */
     text-decoration: none !important;
     box-shadow: none !important;
-  }
+}
 
-
-
-  /* Show the header link when hovering over the header */
-  h1:hover .headerlink,
-  h2:hover .headerlink,
-  h3:hover .headerlink,
-  h4:hover .headerlink,
-  h5:hover .headerlink,
-  h6:hover .headerlink {
+/* Show the header link when hovering over the header */
+h1:hover .headerlink,
+h2:hover .headerlink,
+h3:hover .headerlink,
+h4:hover .headerlink,
+h5:hover .headerlink,
+h6:hover .headerlink {
     display: inline;
     color: var(--bg-primary);
     /* Custom color */
@@ -666,290 +619,266 @@ since it is also on the header.
     /* Remove underline */
     margin-left: 5px;
     /* Add some spacing */
-  }
+}
 
-
-
-  /* This was for the previous image */
-  .rounded-corners {
+/* This was for the previous image */
+.rounded-corners {
     border-radius: 6px;
     /* Adjust the value as needed */
     margin-top: 20px;
     /* Adjust the value to match the desired spacing */
     margin-bottom: 20px;
     /* Adjust the value to match the desired spacing */
-  }
+}
 
-
-  .first-link-hover a:hover {
+.first-link-hover a:hover {
     border-bottom: 3.9px solid !important;
     /* Desired hover color for the first link */
-  }
+}
 
-  .special-hover a:hover {
+.special-hover a:hover {
     color: #1fd082 !important;
     border-bottom: 3.9px solid !important;
     /* Desired hover color for the last link */
-  }
+}
 
-
-  .visible.nav.section-nav.flex-column li.toc-h2 a:hover {
+.visible.nav.section-nav.flex-column li.toc-h2 a:hover {
     color: none !important;
     border-bottom: none !important;
     text-decoration: none !important;
 
     /* Change this to your desired hover color */
-  }
+}
 
+/* The following changes colors of the right side bar  */
 
-
-
-  /* The following changes colors of the right side bar  */
-
-
-  .visible.nav.section-nav.flex-column li.toc-h2 a.active {
+.visible.nav.section-nav.flex-column li.toc-h2 a.active {
     color: var(--bg-primary) !important;
     content: none !important;
     box-shadow: none !important;
-  }
+}
 
-
-  .visible.nav.section-nav.flex-column li.toc-h2 a {
+.visible.nav.section-nav.flex-column li.toc-h2 a {
     color: currentcolor !important;
     font-weight: normal !important;
-  }
+}
 
-
-  .visible.nav.section-nav.flex-column li.toc-h2 a:hover {
+.visible.nav.section-nav.flex-column li.toc-h2 a:hover {
     color: currentcolor !important;
     font-weight: normal !important;
-  }
+}
 
-
-
-
-  /* Changes the switch theme button */
-  .theme-switch a:hover {
+/* Changes the switch theme button */
+.theme-switch a:hover {
     color: var(--bg-primary) !important;
     /* Example text color */
     box-shadow: none;
     /* Remove underline */
-  }
+}
 
-
-  /* Change hover, active, and focus effects for theme switch button */
-  button.btn.btn-sm.navbar-btn.theme-switch-button:hover,
-  button.btn.btn-sm.navbar-btn.theme-switch-button:active,
-  button.btn.btn-sm.navbar-btn.theme-switch-button:focus {
+/* Change hover, active, and focus effects for theme switch button */
+button.btn.btn-sm.navbar-btn.theme-switch-button:hover,
+button.btn.btn-sm.navbar-btn.theme-switch-button:active,
+button.btn.btn-sm.navbar-btn.theme-switch-button:focus {
     color: var(--bg-primary);
     /* Specific text color */
     box-shadow: none;
-  }
+}
 
-  /* Specifically target each mode button within the theme switch button */
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:hover,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:active,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:focus,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]:hover,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]:active,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]:focus,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:hover,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:active,
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:focus {
+/* Specifically target each mode button within the theme switch button */
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:hover,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:active,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="light"]:focus,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]:hover,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]:active,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="dark"]:focus,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:hover,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:active,
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch[data-mode="auto"]:focus {
     color: var(--bg-primary);
     /* Specific text color for inner buttons */
     box-shadow: none;
     /* Remove underline */
-  }
+}
 
-  /* Ensure no underlines for links within the button theme switch button */
-  button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch.nav-link {
+/* Ensure no underlines for links within the button theme switch button */
+button.btn.btn-sm.navbar-btn.theme-switch-button .theme-switch.nav-link {
     box-shadow: none;
     /* Remove underline */
-  }
+}
 
-  /* Change text color on hover */
-  label.sd-tab-label:hover {
+/* Change text color on hover */
+label.sd-tab-label:hover {
     color: var(--bg-primary) !important;
     border-color: var(--bg-primary) !important;
 
     /* Change to your desired hover color */
-  }
+}
 
-  /* Change background and text color when selected */
-  .sd-tab-set input:checked+label.sd-tab-label {
+/* Change background and text color when selected */
+.sd-tab-set input:checked + label.sd-tab-label {
     color: var(--bg-primary) !important;
     border-bottom-color: var(--bg-primary) !important;
     /* Change to your desired text color when selected */
-  }
+}
 
-  /* Optional: Change border color on focus */
-  label.sd-tab-label:focus {
+/* Optional: Change border color on focus */
+label.sd-tab-label:focus {
     border-bottom-color: var(--bg-primary) !important;
     /* Change to your desired focus border color */
-  }
+}
 
-
-
-  /* Target only the main section */
-  .bd-article a.reference.external:visited {
+/* Target only the main section */
+.bd-article a.reference.external:visited {
     color: var(--bg-primary);
-  }
+}
 
-  /* Target only the main section */
-  .bd-article a.reference.internal:visited {
+/* Target only the main section */
+.bd-article a.reference.internal:visited {
     /* Your desired styles for visited internal links */
     color: var(--bg-primary);
-  }
+}
 
-  .bd-article a.reference.internal:hover {
+.bd-article a.reference.internal:hover {
     /* Your desired styles for visited internal links */
     color: var(--bg-primary) !important;
     text-decoration: underline !important;
-  }
+}
 
-
-  /* Custom styles for the back to top button */
-  #pst-back-to-top {
+/* Custom styles for the back to top button */
+#pst-back-to-top {
     background-color: var(--bg-primary);
     /* Blue background */
     color: #fff;
     /* White text */
     border-color: var(--bg-primary);
     /* Darker blue border */
-  }
+}
 
-  /* Optional: Add hover, focus, and active states */
-  #pst-back-to-top:hover,
-  #pst-back-to-top:focus,
-  #pst-back-to-top:active {
+/* Optional: Add hover, focus, and active states */
+#pst-back-to-top:hover,
+#pst-back-to-top:focus,
+#pst-back-to-top:active {
     background-color: var(--dtu-red-corporate);
     /* Darker blue background on hover */
     color: #fff;
     /* White text */
     border-color: var(--dtu-red-corporate);
     /* Even darker blue border */
-  }
+}
 
-  @import url('bannerStyles.css');
+@import url("bannerStyles.css");
 
-  /* Changes to link colors */
+/* Changes to link colors */
 
-  a.custom-link {
+a.custom-link {
     color: var(--bg-primary);
     /* Normal color */
     text-decoration: none;
-  }
+}
 
-  a.custom-link:hover {
+a.custom-link:hover {
     color: var(--bg-primary);
     /* Hover color */
     text-decoration: underline;
-  }
+}
 
-  /* Changes to cards on website - Currently only on main website */
+/* Changes to cards on website - Currently only on main website */
 
-  .sd-card-hover:hover {
+.sd-card-hover:hover {
     border-color: var(--bg-primary) !important;
     /* Optional: Add a border or change its color */
-  }
+}
 
-  .sd-card.sd-sphinx-override.sd-w-100.sd-shadow-sm.sd-card-hover.docutils {
+.sd-card.sd-sphinx-override.sd-w-100.sd-shadow-sm.sd-card-hover.docutils {
     border-radius: 15px;
     /* Adjust the value as needed */
-  }
+}
 
-  /* Change color for the selected tab label within the tab set */
-  .sd-tab-set.docutils input[type="radio"]:checked+.sd-tab-label {
+/* Change color for the selected tab label within the tab set */
+.sd-tab-set.docutils input[type="radio"]:checked + .sd-tab-label {
     color: var(--bg-primary) !important;
     /* Change to your desired text color */
     border-color: var(--bg-primary) !important;
     /* Optionally change the border color */
-  }
+}
 
-  /* Change color for the selected tab label within the tab set */
-  .sd-tab-set.docutils input[type="radio"]:checked+.sd-tab-label+.sd-tab-content {
+/* Change color for the selected tab label within the tab set */
+.sd-tab-set.docutils input[type="radio"]:checked + .sd-tab-label + .sd-tab-content {
     border-color: var(--bg-primary) !important;
     /* Optionally change the border color */
-  }
+}
 
-
-  /* Reduce space between the icons in the navbar-icon-links section */
-  .navbar-icon-links .nav-item {
+/* Reduce space between the icons in the navbar-icon-links section */
+.navbar-icon-links .nav-item {
     margin-left: 5px;
     /* Adjust the left margin as needed */
     margin-right: 5px;
     /* Adjust the right margin as needed */
     padding: 0;
     /* Ensure no padding */
-  }
+}
 
-  /* Change hover effect for the search button */
-  .btn.search-button-field.search-button__button:hover {
+/* Change hover effect for the search button */
+.btn.search-button-field.search-button__button:hover {
     box-shadow: none !important;
     border: 3.2px solid var(--bg-primary) !important;
-  }
+}
 
+/* Button at the top of installation guide - The colors come from the default colors on sphinx documentation */
 
-  /* Button at the top of installation guide - The colors come from the default colors on sphinx documentation */
-
-
-  html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external,
-  html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal {
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external,
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal {
     background-color: #f3f4f5 !important;
     border: 1px solid #d1d5d9 !important;
     border-radius: 10px !important;
     margin-bottom: -20px !important;
     color: #48566b !important;
 
-
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
-  html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover,
-  html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal:hover {
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover,
+html[data-theme="light"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal:hover {
     color: var(--bg-primary) !important;
     border-color: var(--bg-primary) !important;
     text-decoration: none !important;
+}
 
-  }
-
-
-  html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external,
-  html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal {
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external,
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal {
     background-color: #222832 !important;
     border: 1px solid #48566b !important;
     border-radius: 10px !important;
     margin-bottom: -20px !important;
     color: #9ba4af !important;
 
-
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
+}
 
-  html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover,
-  html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal:hover {
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.external:hover,
+html[data-theme="dark"] .sd-sphinx-override.sd-btn.sd-text-wrap.sd-btn-primary.reference.internal:hover {
     color: var(--bg-primary) !important;
     border-color: var(--bg-primary) !important;
     text-decoration: none !important;
-  }
+}
 
-  /* Base styling for all images - cursor changes to zoom-in on hover */
-  img {
+/* Base styling for all images - cursor changes to zoom-in on hover */
+img {
     cursor: zoom-in;
-  }
+}
 
-  img.logo {
+img.logo {
     cursor: pointer;
     /* Prevents the logo from being zoomed in */
-  }
+}
 
-  /* Styling for images inside the zoom overlay */
-  .zoom-overlay img {
+/* Styling for images inside the zoom overlay */
+.zoom-overlay img {
     margin: auto;
     /* Centers the image within the overlay */
     position: absolute;
@@ -966,20 +895,20 @@ since it is also on the header.
     border-radius: 10px;
     transition: 0.5s ease-in-out;
     /* Smooth transition for zoom effect */
-  }
+}
 
-  /* Styling applied to the image when zoomed in */
-  img.zoomed-in-image-display {
+/* Styling applied to the image when zoomed in */
+img.zoomed-in-image-display {
     max-height: 90% !important;
     /* Image expands to 90% of its container's height */
     max-width: 80% !important;
     /* Image expands to 80% of its container's width */
     cursor: zoom-out;
     /* Changes cursor to zoom-out when image is zoomed in */
-  }
+}
 
-  /* Base styling for the overlay that covers the screen */
-  .zoom-overlay {
+/* Base styling for the overlay that covers the screen */
+.zoom-overlay {
     position: fixed;
     /* Fixes the overlay to the viewport */
     top: 50%;
@@ -1000,10 +929,10 @@ since it is also on the header.
     /* Hides overflow content */
     border-radius: 100px;
     /* Rounds the corners of the overlay */
-  }
+}
 
-  /* Active state for the overlay when displayed */
-  .zoom-overlay-display {
+/* Active state for the overlay when displayed */
+.zoom-overlay-display {
     transform: translate(-50%, -50%) scale(1);
     /* Scales overlay to full size */
     z-index: 10000 !important;
@@ -1014,78 +943,78 @@ since it is also on the header.
     /* Changes cursor to pointer over the overlay */
     border-radius: 0px;
     /* Removes border radius when overlay is displayed */
-  }
+}
 
-  .navbar {
+.navbar {
     position: sticky;
     /* Sets the position of the navbar to follow the user */
     border-bottom-color: var(--bg-primary);
     /* Ensures that the bottom border is visible */
-  }
+}
 
-  /* Sets the nav to be displayed as a row */
-  .navbar-nav {
+/* Sets the nav to be displayed as a row */
+.navbar-nav {
     flex-direction: row;
-  }
+}
 
-  /* Add padding to align article contents to left sidebar */
-  .bd-article {
+/* Add padding to align article contents to left sidebar */
+.bd-article {
     padding-top: 3rem !important;
-  }
+}
 
-  /* Sets the correct position from the top when scrolling */
-  .bd-sidebar-secondary {
+/* Sets the correct position from the top when scrolling */
+.bd-sidebar-secondary {
     top: var(--pst-header-height);
-  }
+}
 
-  .bd-sidebar-primary {
+.bd-sidebar-primary {
     top: var(--pst-header-height);
-  }
+}
 
-  /* Fixes sidebar overflow issues */
-  .bd-sidebar-primary {
+/* Fixes sidebar overflow issues */
+.bd-sidebar-primary {
     max-height: calc(100vh - 65px);
     overflow: hidden;
-  }
+}
 
-  /* Sets the width and padding of the left sidebar to ensure the sidebar takes up as much space as possible */
-  .bd-sidenav {
+/* Sets the width and padding of the left sidebar to ensure the sidebar takes up as much space as possible */
+.bd-sidenav {
     width: 100%;
     padding-right: 12px;
-  }
+}
 
-  /* Fixes responsiveness issues on smaller screens */
-  @media (max-width: 960px) {
+/* Fixes responsiveness issues on smaller screens */
+@media (max-width: 960px) {
 
     /* Show the sidebar toggle on smaller screens */
     button.sidebar-toggle.primary-toggle {
-      display: flex;
+        display: flex;
     }
 
     /* Ensures that header items are displayed as flex */
     .navbar-header-items {
-      display: flex !important;
-      flex: 1 !important;
+        display: flex !important;
+        flex: 1 !important;
     }
 
     /* Hides the me-auto element */
     .me-auto nav {
-      display: none !important;
+        display: none !important;
     }
 
     /* Hides the top navbar */
     .sidebar-header-items.sidebar-primary__section {
-      display: none;
+        display: none;
     }
 
     /* Ensure that the sidebar sticks to the top */
     .bd-sidebar-primary {
-      top: 0;
+        top: 0;
     }
 
     /* Ensure that the sidebar fills the whole height of the page */
     .bd-sidebar-primary {
-      max-height: 100vh;
-      overflow: hidden;
+        max-height: 100vh;
+        overflow: hidden;
     }
-  }
+}
