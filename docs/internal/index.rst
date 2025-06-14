@@ -178,6 +178,11 @@ It is vital we also keep a nice and healthy internal tone.
 .. include:: /internal/rt.rst.include
 
 
+:ref:`Panopto tutorial <internal-panopto>`
+----------------
+
+How to use Panopto and how to make video tutorials are documented :ref:`here <internal-panopto>`.
+
 :ref:`Exercises <internal-exercises>`
 -------------------------------------
 
@@ -189,6 +194,7 @@ Go :ref:`here <internal-exercises>` for the exercises.
 
 Go :ref:`here <internal-documentation>` for instructions on how to
 fix/add new documentation.
+
 
 
 .. toctree::
