@@ -1,113 +1,126 @@
 .PyS_d-1 {
-  --b: 4px;
-  /* border length */
-  --c: 20px;
-  /* the cube perspective */
-  --g: calc(var(--c) * 0.707);
-  /* 0.707 = cos(45deg) = sin(45deg) */
+    --b: 4px;
+    /* border length */
+    --c: 20px;
+    /* the cube perspective */
+    --g: calc(var(--c) * 0.707);
+    /* 0.707 = cos(45deg) = sin(45deg) */
 
-  display: inline-flex;
-  /* Use inline-flex to adapt to the content size */
-  align-items: center;
-  /* Center the content vertically */
-  justify-content: center;
-  /* Center the content horizontally */
-  padding: 8px;
-  transition: 0.5s;
-  border: solid transparent;
-  border-width: var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
-  background:
-    linear-gradient(-45deg, transparent var(--g), rgb(255 255 255 / 60%) 0) left / var(--c) 100%,
-    linear-gradient(135deg, transparent var(--g), rgb(255 255 255 / 30%) 0) bottom / 100% var(--c),
-    conic-gradient(from -90deg at top var(--b) right var(--b), currentcolor 270deg, transparent 0),
-    conic-gradient(from 90deg at bottom calc(var(--c) + var(--b)) left calc(var(--c) + var(--b)), currentcolor 270deg, transparent 0);
-  background-repeat: no-repeat;
-  background-origin: border-box;
-  transform: translate(calc(var(--c) / -1), calc(var(--c) / 1));
-  clip-path:
-    polygon(var(--c) 0%, var(--c) 0%,
-      100% 0%,
-      100% calc(100% - var(--c)), 100% calc(100% - var(--c)),
-      var(--c) calc(100% - var(--c)),
-      var(--c) calc(100% - var(--c)));
-  cursor: pointer;
-  /* Change cursor to pointer to indicate it's clickable */
+    display: inline-flex;
+    /* Use inline-flex to adapt to the content size */
+    align-items: center;
+    /* Center the content vertically */
+    justify-content: center;
+    /* Center the content horizontally */
+    padding: 8px;
+    transition: 0.5s;
+    border: solid transparent;
+    border-width: var(--b) var(--b) calc(var(--c) + var(--b)) calc(var(--c) + var(--b));
+    background:
+        linear-gradient(-45deg, transparent var(--g), rgb(255 255 255 / 60%) 0) left / var(--c) 100%,
+        linear-gradient(135deg, transparent var(--g), rgb(255 255 255 / 30%) 0) bottom / 100% var(--c),
+        conic-gradient(from -90deg at top var(--b) right var(--b), currentcolor 270deg, transparent 0),
+        conic-gradient(
+            from 90deg at
+            bottom calc(var(--c) + var(--b))
+            left calc(var(--c) + var(--b)),
+            currentcolor 270deg,
+            transparent 0
+        );
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    transform: translate(calc(var(--c) / -1), calc(var(--c) / 1));
+    clip-path:
+        polygon(
+            var(--c) 0%,
+            var(--c) 0%,
+            100% 0%,
+            100% calc(100% - var(--c)),
+            100% calc(100% - var(--c)),
+            var(--c) calc(100% - var(--c)),
+            var(--c) calc(100% - var(--c))
+        );
+    cursor: pointer;
+    /* Change cursor to pointer to indicate it's clickable */
 }
 
 .PyS_d-1:hover {
-  transform: translate(0, 0);
-  clip-path:
-    polygon(0% var(--c), var(--c) 0%,
-      100% 0%,
-      100% calc(100% - var(--c)), calc(100% - var(--c)) 100%,
-      0% 100%, 0% 100%);
+    transform: translate(0, 0);
+    clip-path:
+        polygon(
+            0% var(--c),
+            var(--c) 0%,
+            100% 0%,
+            100% calc(100% - var(--c)),
+            calc(100% - var(--c)) 100%,
+            0% 100%,
+            0% 100%
+        );
 }
-
-
 
 /*  */
 .PyS_d-1,
 .PyS_d-2 {
-  display: inline-block;
-  font-size: 40px;
-  font-family: NeoSans, sans-serif;
-  margin: 25px;
-  cursor: pointer;
-  text-align: center;
+    display: inline-block;
+    font-size: 40px;
+    font-family: NeoSans, sans-serif;
+    margin: 25px;
+    cursor: pointer;
+    text-align: center;
 }
 
 #PyS_osSelector {
-  background-color: rgb(0 0 0 / 70%);
-  padding: 10px;
+    background-color: rgb(0 0 0 / 70%);
+    padding: 10px;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 #PyS_osSelector .title {
-  text-align: center;
+    text-align: center;
 }
 
 #PyS_osSelector .buttons {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 #PyS_d-1_icons {
-  padding-left: 15px;
-  padding-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 @font-face {
-  font-family: NeoSans;
-  src: url('../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: NeoSans;
+    src: url("../fonts/Neo Sans Std Regular/Neo Sans Std Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: NeoSans;
-  src: url('../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+    font-family: NeoSans;
+    src: url("../fonts/Neo Sans Std Bold/Neo Sans Std Bold.otf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: NeoSans;
-  src: url('../fonts/Neo Sans Std Light/Neo Sans Std Light.otf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
+    font-family: NeoSans;
+    src: url("../fonts/Neo Sans Std Light/Neo Sans Std Light.otf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
 }
 
-@media (width <=600px) {
-  .PyS_d-1 {
-    font-size: 1em;
-  }
+@media (width <= 600px) {
+    .PyS_d-1 {
+        font-size: 1em;
+    }
 
-  #PyS_d-1_icons {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+    #PyS_d-1_icons {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
