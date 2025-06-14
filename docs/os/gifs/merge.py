@@ -3,10 +3,12 @@ import sys
 from pathlib import Path
 
 import yaml
+
 try:
-    from yaml import CLoader as Loader, CDumper as Dumper
+    from yaml import CDumper as Dumper
+    from yaml import CLoader as Loader
 except ImportError:
-    from yaml import Loader, Dumper
+    from yaml import Dumper, Loader
 
 cwd = Path()
 
@@ -16,12 +18,12 @@ commands_out = sys.argv[1]
 
 def read_yaml(file: Path):
     """Read a yaml file, and return the dictionary"""
-    return yaml.load(open(file, 'r'), Loader=Loader)
+    return yaml.load(open(file), Loader=Loader)
 
 
 def write_yaml(content: dict, file: Path):
     """Write a dictionary to a yaml file"""
-    with open(file, 'w') as fh:
+    with open(file, "w") as fh:
         yaml.dump(content, fh, Dumper=Dumper)
 
 def sortdict(d):
@@ -42,7 +44,7 @@ if hash_file.is_file():
 
 # Read the default configuration
 def_config = read_yaml(cwd / "config.yml")
-commands = open(commands_out, 'w')
+commands = open(commands_out, "w")
 
 for path in cwd.glob("*/*.yml"):
     if not path.is_file():
@@ -69,7 +71,7 @@ for path in cwd.glob("*/*.yml"):
 
     # Correct the output files
     stem = path.stem
-    out = tmpdir / '_'.join(top_path.parts)
+    out = tmpdir / "_".join(top_path.parts)
     gif = path.with_suffix(".gif")
     if old_hash == current_hash and gif.is_file():
         print(f"Skipping {top_path_str} as it already exists with same hash")

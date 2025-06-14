@@ -26,7 +26,7 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-       python3 -m pip install -r requirements.txt sphinx-autobuild
+       python3 -m pip install -r requirements.txt sphinx-autobuild ruff pre-commit
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
        # will allow updating a package that breaks compatibility, we
@@ -70,6 +70,20 @@ Once these are installed, simply do:
 and the gifs should be created. The script will only create them once,
 and keep them around. So this should only be required to be done once.
 
+## Python formatting and linting
+
+In order for the python code to the same style guide we use the "ruff" linter and formatter.
+To lint and format your code use
+
+``ruff check --fix docs/**/*.py``
+
+Ruff has an extension for vs-code which can be used to visually inspect errors: [Ruff - Visual Studio code extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff).
+
+## Pre-commit
+
+Use `pre-commit install` in order to automatically lint Python files on commit.
+This will install a hook that will not let you commit unless your code meets a
+certain standard.
 
 ## Running Locally in Podman
 

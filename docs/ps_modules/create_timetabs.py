@@ -15,8 +15,8 @@ document.
 After 18 on a Friday, the preferred week-number will be the following week.
 """
 
-import os
 import datetime
+import os
 from pathlib import Path
 
 
@@ -38,6 +38,7 @@ def get_period(periods, semester, week):
     ----------
     periods : tuple of (str, dict)
         name of period, and information about period
+
     """
     closests = [None, 0]
     for name, period in periods:
@@ -49,16 +50,13 @@ def get_period(periods, semester, week):
             breaks = [breaks]
 
         last = start + weeks + len(breaks) - 1
-        if start <= week and week <= last:
+        if start <= week <= last:
             return (name, period)
 
         # check if this could be the closests one
         if week < start:
             diff = start - week
-            if closests[0] is None:
-                closests[0] = (name, period)
-                closests[1] = diff
-            elif diff < closests[1]:
+            if closests[0] is None or diff < closests[1]:
                 closests[0] = (name, period)
                 closests[1] = diff
 
@@ -98,6 +96,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
         - semester breaks (also ISO-8601 week numbers). Generally, only Easter and autumn break
     out : Path or str
         where to write the information
+
     """
     ps_date = os.environ.get("PS_DATE")
     if ps_date is not None:
@@ -160,7 +159,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     # get semester information
     name = semester["name"]
     week_start = semester["week-start"]
-    semester_start_date = get_weekdates(year, week_start)[0]
+    # semester_start_date = get_weekdates(year, week_start)[0]
     # [Closed | Open, ...]
     week_info = semester["week"]
     weeks = semester["weeks"]
@@ -187,7 +186,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
     f = open(out, "w")
 
     # open the tabs
-    week_diffs = date_diff(today, semester_start_date)
+    # week_diffs = date_diff(today, semester_start_date)
     msg_week_info = {
         "start": week_start,
         "week": week,
@@ -210,7 +209,7 @@ def create_time_table(semester_info, out=Path("timetable/timetable.rst")):
 The Python support has no office hours. We will strive to be reachable on
 mails and Discord.
 Expect longer answering times!
-"""
+""",
         )
 
         f.close()
@@ -240,12 +239,12 @@ Expect longer answering times!
 
 """,
                 4,
-            )
+            ),
         )
 
         # add dates, note this REQUIRES AN EXTRA newline!
         f.write(
-            indent(f"| *Dates*: {start.strftime('%d/%m')} -- {end.strftime('%d/%m')}")
+            indent(f"| *Dates*: {start.strftime('%d/%m')} -- {end.strftime('%d/%m')}"),
         )
         f.write(indent(f"| *Danish week #*: {iso_week}\n"))
 
