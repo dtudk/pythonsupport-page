@@ -70,7 +70,7 @@ Once these are installed, simply do:
 and the gifs should be created. The script will only create them once,
 and keep them around. So this should only be required to be done once.
 
-### CSS linter
+## CSS linter
 
 In order to lint the CSS we use stylelint which requires npm.
 
@@ -81,6 +81,9 @@ Install:
 Run linter and fix mistakes:
 
 `npx stylelint "docs/**/*.css" --fix --config .styleintrc.json`
+
+In order to auto lint style sheets install the pre-commit hook:
+`pre-commit install`
 
 ## Running Locally in Podman
 
