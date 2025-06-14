@@ -178,6 +178,14 @@ It is vital we also keep a nice and healthy internal tone.
 .. include:: /internal/rt.rst.include
 
 
+Piwik setup
+----
+
+Piwik setup is documented :ref:`here <piwik-documentation>`.
+
+Piwik custom event tutorial can be found :ref:`here <piwik-custom-event-tutorial>`.
+
+
 :ref:`Exercises <internal-exercises>`
 -------------------------------------
 
