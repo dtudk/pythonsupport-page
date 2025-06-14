@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "validator": "^13.15.15"
+  },
+  "name": "python-support-survey",
+  "version": "1.0.0",
+  "description": "Simple survery and API Proxy for collection of customer satisfaction data for internal review and analisis",
+  "main": "backendProxy.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backendProxy.js",
+    "dev": "nodemon backendProxy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manufer20/python-support-survey.git"
+  },
+  "author": "Manu & Tiago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manufer20/python-support-survey/issues"
+  },
+  "homepage": "https://github.com/manufer20/python-support-survey#readme"
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="color-scheme" content="light">
+  <title>Student Satisfaction Survey</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-white dark:bg-white flex items-center justify-center min-h-screen">
+  <div class="w-full max-w-lg md:max-w-2xl mx-auto bg-white rounded shadow p-8 transform scale-150 origin-center">
+    <h1 class="text-2xl font-bold mb-4 text-gray-700">Student Satisfaction Survey</h1>
+
+    <form id="surveyForm" class="space-y-4">
+      <!-- Student Number -->
+      <div>
+        <label class="block text-gray-700 mb-1" for="student_number">Student Number:</label>
+        <div class="flex">
+          <span class="inline-flex items-center px-3 text-gray-700 bg-gray-200 border border-r-0 border-gray-300 rounded-l">
+            s
+          </span>
+          <input
+            id="student_number"
+            name="student_number"
+            type="text"
+            pattern="[0-9]{6}"
+            placeholder="e.g. 123456"
+            class="flex-1 border border-gray-300 p-2 rounded-r"
+            required
+          />
+        </div>
+      </div>
+
+      <!-- Satisfaction 1‑5 -->
+      <div>
+        <span class="block text-gray-700 mb-1">Satisfaction (1 to 5):</span>
+        <div class="flex justify-between">
+          <label class="flex flex-col items-center text-gray-600">
+            <input type="radio" name="satisfaction" value="1" class="form-radio mb-1" required />
+            <img src="face1.png" alt="Satisfaction level 1" class="w-10 h-10" />
+          </label>
+          <label class="flex flex-col items-center text-gray-600">
+            <input type="radio" name="satisfaction" value="2" class="form-radio mb-1" />
+            <img src="face2.png" alt="Satisfaction level 2" class="w-10 h-10" />
+          </label>
+          <label class="flex flex-col items-center text-gray-600">
+            <input type="radio" name="satisfaction" value="3" class="form-radio mb-1" />
+            <img src="face3.png" alt="Satisfaction level 3" class="w-10 h-10" />
+          </label>
+          <label class="flex flex-col items-center text-gray-600">
+            <input type="radio" name="satisfaction" value="4" class="form-radio mb-1" />
+            <img src="face4.png" alt="Satisfaction level 4" class="w-10 h-10" />
+          </label>
+          <label class="flex flex-col items-center text-gray-600">
+            <input type="radio" name="satisfaction" value="5" class="form-radio mb-1" />
+            <img src="face5.png" alt="Satisfaction level 5" class="w-10 h-10" />
+          </label>
+        </div>
+      </div>
+
+      <!-- Course Name or Name -->
+      <div>
+        <label class="block text-gray-700 mb-1" for="course_number">Course Number or Name (optional):</label>
+        <input
+          id="course_number"
+          name="course_number"
+          list="courses"
+          type="text"
+          placeholder="e.g. 01003 - Mathematics 1a"
+          class="w-full border border-gray-300 p-2 rounded"
+        />
+        <datalist id="courses"></datalist>
+      </div>
+
+      <button
+        type="submit"
+        id="submitBtn"
+        class="bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600 w-full disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!-- Error display -->
+    <div id="errorMessage" class="hidden mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded"></div>
+  </div>
+
+  <!-- Thank‑You Modal -->
+  <div id="thankYouModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-xs mx-auto">
+      <h2 class="text-xl font-semibold mb-2">We value your time</h2>
+      <p class="mb-4">Thank you for your feedback!</p>
+      <button id="closeModal" class="mt-2 bg-red-500 text-white px-4 py-2 rounded-full hover:bg-red-600">
+        Close
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
