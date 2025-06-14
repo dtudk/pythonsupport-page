@@ -1,7 +1,11 @@
 {
   "plugins": [
-		"@stylistic/stylelint-plugin"
-	],
-  "extends": "@stylistic/stylelint-config",
-  "indentation": [ 4, { "baseIndentLevel": 0 } ]
+    "@stylistic/stylelint-plugin"
+  ],
+  "extends": [
+    "@stylistic/stylelint-config"
+  ],
+  "rules": {
+    "@stylistic/indentation": [4, { "baseIndentLevel": 0 }]
+  }
 }
