@@ -1,0 +1,14 @@
+repos:
+  - repo: local
+    hooks:
+      - id: stylelint
+        name: stylelint
+        entry: stylelint --config .styleintrc.json
+        language: node
+        types: [css]
+        additional_dependencies:
+          - stylelint
+          - stylelint-config-standard 
+          - "@stylistic/stylelint-config"
+          - "@stylistic/stylelint-plugin"
+          - postcss
