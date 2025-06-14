@@ -21,31 +21,33 @@ most conda packages are not compiled for win-arm64. See compatibility here:
 
 
 1. Solution: Native Python
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 The first solution is not to use conda at all. By downloading Python from 
 the official website at `python.org <https://www.python.org/downloads/>`_ 
 and installing packages using pip, all binaries will compile to native Arm64.
 
-Pros:
+**Pros**:
 
 * Easy to set up
 
-Cons:
+**Cons**:
 
 * Can only use pip packages
 
 
 2. Solution: Use WSL and conda
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Another solution is to use conda on a Windows Subsystem for Linux since most
 conda packages are compiled to both linux-x64 and linux-arm64. This is a
-viable option since the subsystem adds very little overhead.
+viable option since the subsystem adds very little overhead compared to translation
+of x64 to arm64.
 
-Pros:
+**Pros**:
 
 * Most conda packages can be used
 
-Cons:
+**Cons**:
 
 * More complicated to setup and use
 
