@@ -1,7 +1,7 @@
 {{course_full_name}} - {{metadata.course_identifier}}
 ---------------------------------------------------
 
-In order to install python requirements for {{course_full_name}} {{metadata.course_identifier}} do the following steps.
+In order to install python requirements for {{course_full_name}} do the following steps.
 
 .. card:: Install course environment steps
 
@@ -20,7 +20,7 @@ In order to install python requirements for {{course_full_name}} {{metadata.cour
 
         When the above command has finished, a new Conda environment named "{{metadata.course_env_name}}" will have been installed on your computer. In order to use it, follow the activation guides bellow.
 
-.. dropdown:: Activate environment in Visual Studio Code
+.. dropdown:: Activate in VS Code
 
         1. Press :kbd:`Ctrl+Shift+P` (windows), :kbd:`Cmd+Shift+P` (macos)
         2. Type *Python: Select Interpreter* and press :kbd:`Enter` once this shows up under the options 
@@ -37,7 +37,7 @@ In order to install python requirements for {{course_full_name}} {{metadata.cour
                 :align: center
                 :alt: IDLE Shell
 
-.. dropdown:: Activate environment in Jupyter Notebook
+.. dropdown:: Activate in Jupyter
 
     You can select the course environment by going to the upper right corner, clicking :menuselection:`Select Kernel`, and then choose ``{{metadata.course_env_name}} (Python x.x.x)``.
 
@@ -49,7 +49,7 @@ In order to install python requirements for {{course_full_name}} {{metadata.cour
         If you accidentally choose the wrong kernel, don't worry, you can always go back by clicking the Python version you're currently using and then changing it.
 
 
-.. dropdown:: Activate environment in terminal
+.. dropdown:: Activate in Terminal
 
     In order to activate the course environment in a terminal, run the following command:
 
