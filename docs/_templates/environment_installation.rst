@@ -1,7 +1,7 @@
 {{course_full_name}} - {{metadata.course_identifier}}
 ---------------------------------------------------
 
-In order to install python requirements for {{course_full_name}} do the following steps.
+In order to install python requirements for "{{course_full_name}}" do the following steps.
 
 .. card:: Install course environment steps
 
