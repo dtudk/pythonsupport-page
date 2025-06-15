@@ -10,7 +10,7 @@ channels:
 dependencies:
   - ipykernel
   - numpy=2.2.0
-  - python=3.13.4
+  - python=3.13.5
   - pip
   - pip:
     - matplotlib
