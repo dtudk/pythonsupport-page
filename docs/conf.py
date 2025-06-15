@@ -594,7 +594,6 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
     title = metadata.get('title')
     if title:
         context['title'] = title
-from jinja2 import Environment, FileSystemLoader
 
 def generate_env_pages_from_json(app):
     src_dir = app.srcdir
