@@ -18,3 +18,7 @@ docs/os/gifs/**/*.gif
 docs/os/gifs/tmp/*
 docs/os/gifs/commands.run
 docs/os/gifs/hashes.yml
+
+# course environment install pages
+docs/environments/course/*.rst
+
