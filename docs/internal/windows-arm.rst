@@ -7,6 +7,14 @@ Following our guides users currently install a x64 conda release which
 is emulated by windows. For most use cases emulation is enough for
 students to get by.
 
+The development status of win-arm64 can be followed in the following
+issues:
+
+* `conda-forge [enable windows arm64 #1940] <https://github.com/conda-forge/conda-forge.github.io/issues/1940>`_
+* `conda [Support for Windows on Arm #11472] <https://github.com/conda/conda/issues/11472>`_
+
+It looks like there is a long way until conda adopts win-arm64 into its ecosystem.
+
 When Emulation is Not a Viable Option
 -------------------------------------
 
