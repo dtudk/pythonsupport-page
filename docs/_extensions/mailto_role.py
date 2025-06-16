@@ -1,40 +1,52 @@
 
 from docutils import nodes
 import urllib.parse
-import re
-
-# Matches a string with a prefix and a custom tag in angle brackets, extracting:
-# - the leading text (non-greedy),
-# - the main tag name before the first pipe '|',
-# - and optionally, one or more parameters separated by '|'.
-# Example matches: "Text<tag>", "Prefix<name|param1|param2>"
-pattern = re.compile(r"(.*?)<([^>|]+)(?:\|([^>|]+))(?:\|([^>|]+))*>")
 
 def mailto_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
-    
-    parsed_input = pattern.match(text).groups()
-    
-    if len(parsed_input) == 1:
-        display = parsed_input[0]
-        email_part = parsed_input[0]
+    """
+    This function implements a mailto role with the following syntaxes:
 
-    if len(parsed_input) == 2:
-        display = parsed_input[0]
-        email_part = parsed_input[1]
-
-    elif len(parsed_input) == 4:
-        display = parsed_input[0]
-        email_part = parsed_input[1]
-        subject = parsed_input[2]
-        body = parsed_input[3]
+    1.
+        :mailto:`pythonsupport@dtu.dk`
+    2.
+        :mailto:`mail <pythonsupport@dtu.dk>`
+    3.
+        :mailto:`mail <pythonsupport@dtu.dk|subject|body>`
+    """
     
+    if "<" not in text and ">" not in text:
+        display = text.strip()
+        email = text.strip()
+
+        uri = f"mailto:{email}"
+        node = nodes.reference(rawtext, display, refuri=uri, **options)
+        return [node], []
+
     else:
-        raise ValueError("Mailto takes none or one or three options.")
+        display, params = text.split("<", 1)
+        params, _ = params.rsplit(">", 1)
+        parsed_input = params.split("|")
 
-    email = email_part.strip()
-    subject = urllib.parse.quote(subject.strip())
-    body = urllib.parse.quote(body.strip())
-    uri = f"mailto:{email}?subject={subject}&body={body}"
+        display = display.strip()
 
-    node = nodes.reference(display, email, refuri=uri, **options)
-    return [node], []
+        if len(parsed_input) == 1:
+            email = parsed_input[0].strip()
+            uri = f"mailto:{email}"
+            node = nodes.reference(rawtext, display, refuri=uri, **options)
+            return [node], []
+            
+        elif len(parsed_input) == 3:
+            email = parsed_input[0].strip()
+            subject = parsed_input[1].strip()
+            body = parsed_input[2].strip()
+            email = email.strip()
+
+            subject = urllib.parse.quote(subject)
+            body = urllib.parse.quote(body)
+
+            uri = f"mailto:{email}?subject={subject}&body={body}"
+            node = nodes.reference(rawtext, display, refuri=uri, **options)
+            return [node], []
+            
+        else:
+            raise ValueError("The :mailto: role takes none, one or three parameters.")

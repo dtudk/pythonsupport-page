@@ -20,7 +20,7 @@ _cwd = Path().resolve()
 
 # add the exts folder
 sys.path.insert(1, str(_cwd))
-from docs._extensions.mailto_role import mailto_role
+from _extensions.mailto_role import mailto_role
 from ps_modules.pageredirects import *
 from ps_modules.create_timetabs import create_time_table
 
