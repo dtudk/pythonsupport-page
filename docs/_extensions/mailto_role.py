@@ -2,7 +2,7 @@
 from docutils import nodes
 import urllib.parse
 
-def mailto_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
+def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[]):
     """
     This function implements a mailto role with the following syntaxes:
 
@@ -12,7 +12,11 @@ def mailto_role(name, rawtext, text, lineno, inliner, options={}, content=[]):
         :mailto:`mail <pythonsupport@dtu.dk>`
     3.
         :mailto:`mail <pythonsupport@dtu.dk|subject|body>`
+
+    Newlines in subject and body are formatted with \\n
     """
+
+    text = text.replace("\x00\\n", "\n")
     
     if "<" not in text and ">" not in text:
         display = text.strip()
