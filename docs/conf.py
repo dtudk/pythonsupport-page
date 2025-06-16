@@ -20,6 +20,7 @@ _cwd = Path().resolve()
 
 # add the exts folder
 sys.path.insert(1, str(_cwd))
+from docs._extensions.mailto_role import mailto_role
 from ps_modules.pageredirects import *
 from ps_modules.create_timetabs import create_time_table
 
@@ -548,7 +549,7 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
         context['title'] = title
 
 def setup(app):
-
+    app.add_role("mailto", mailto_role)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
     app.connect("html-page-context", add_title_to_context)
