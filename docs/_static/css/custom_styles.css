@@ -399,6 +399,11 @@ hovers that are also interfering so it doesn't have effect on all  */
     display: none !important;
   }
 
+  /* This changes the button links from the default blue to dtu-red */
+  .btn-link {
+    color: var(--dtu-red) !important;
+  }
+
   .btn-primary {
     --bs-btn-color: var(--dtu-white);
     --bs-btn-bg: var(--dtu-red);
