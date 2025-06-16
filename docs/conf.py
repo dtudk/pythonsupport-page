@@ -210,7 +210,7 @@ rst_epilog = f"""\
 .. _env-venv: https://docs.python.org/3/library/venv.html
 .. _env-conda: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 .. _env-virtualenv: https://virtualenv.pypa.io/en/latest/
-.. |mail_link| replace:: :mailto:`pythonsupport@dtu.dk <pythonsupport@dtu.dk|Python Support Request - [Brief Description of the Problem]|a>`
+.. |mail_link| replace:: :mailto:`pythonsupport@dtu.dk <pythonsupport@dtu.dk|Python Support Request - [Brief Description of the Problem]|Please include the following information:\\n- Relevant course number (if any):\\n- Description of the issue:\\n- Error messages (if any):>`
 """
 
 
