@@ -501,6 +501,8 @@ html_context = {
     "timetable_widths": "15 17 17 17 17 17",
     # online days
     "online_days": _online_days,
+    "mail_template_subject": urllib.parse.quote(mail_template_subject),
+    "mail_template_body": urllib.parse.quote(mail_template_body)
 }
 
 
