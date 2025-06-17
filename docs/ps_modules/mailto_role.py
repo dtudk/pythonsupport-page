@@ -2,6 +2,9 @@
 from docutils import nodes
 import urllib.parse
 
+def escape_backslash(text:str):
+    return text.replace("\n", "\x00n")
+
 def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[]):
     """
     This function implements a mailto role with the following syntaxes:
@@ -16,8 +19,8 @@ def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[
     Newlines in subject and body are formatted with \\n
     """
 
-    text = text.replace("\x00\\n", "\n")    # Handles .rst documents
-    text = text.replace("\x00n", "\n")      # Handles from python
+    # Needed since sphinx sends escaped backslashes
+    text = text.replace("\x00n", "\n")
     
     if "<" not in text and ">" not in text:
         display = text.strip()
