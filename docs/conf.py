@@ -501,8 +501,12 @@ html_context = {
     "timetable_widths": "15 17 17 17 17 17",
     # online days
     "online_days": _online_days,
-    "mail_template_subject": urllib.parse.quote(mail_template_subject),
-    "mail_template_body": urllib.parse.quote(mail_template_body)
+    # to use in custom links: mailto:pythonsupport@dtu.dk?subject={{escaped_mail_template_subject}}&body={{escaped_mail_template_body}}
+    "escaped_mail_template_subject": urllib.parse.quote(mail_template_subject), 
+    "escaped_mail_template_body": urllib.parse.quote(mail_template_body),
+    # tou use in :mailto: roles: :mailto:`contact us <pythonsupport@dtu.dk|{{mailto_template_subject}}|{{mailto_template_body}}>`.
+    "mailto_template_subject": escape_backslash(mail_template_subject),         
+    "mailto_template_body": escape_backslash(mail_template_body)
 }
 
 
