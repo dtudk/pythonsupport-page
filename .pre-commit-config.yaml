@@ -3,7 +3,7 @@ repos:
     hooks:
       - id: stylelint
         name: stylelint
-        entry: stylelint --config .styleintrc.json
+        entry: stylelint --fix --config .styleintrc.json
         language: node
         types: [css]
         additional_dependencies:
