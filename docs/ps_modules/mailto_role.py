@@ -16,7 +16,8 @@ def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[
     Newlines in subject and body are formatted with \\n
     """
 
-    text = text.replace("\x00\\n", "\n")
+    text = text.replace("\x00\\n", "\n")    # Handles .rst documents
+    text = text.replace("\x00n", "\n")      # Handles from python
     
     if "<" not in text and ">" not in text:
         display = text.strip()
