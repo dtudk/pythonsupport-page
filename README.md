@@ -26,7 +26,7 @@ The steps can be outlined like this:
 
 2. Install the requirements:
 
-       python3 -m pip install -r requirements.txt sphinx-autobuild
+       python3 -m pip install -r requirements.txt sphinx-autobuild ruff pre-commit
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
        # will allow updating a package that breaks compatibility, we
@@ -35,20 +35,28 @@ The steps can be outlined like this:
        #    :fingers_crossed:
        python3 -m pip install -U "sphinx>=7.2.5"
 
-3. Development server (optional)
+3. Install pre-commit:
+
+       `pre-commit install`
+
+       We use pre-commit in order to automatically lint Python files on commit.
+       This will install a hook that will not let you commit unless your code meets a
+       certain standard.
+
+4. Development server (optional)
 
        make livehtml
 
    This will open a local webserver that auto-reloads whenever you make 
    changes to the `rst` documentation or any files in the `docs/` directory.
 
-4. Build documentation
+5. Build documentation
 
        make
 
    Now the documentation is build and can be found in `build/html`.
 
-5. Open the documentation:
+6. Open the documentation:
 
        firefox build/html/index.html
 
@@ -70,6 +78,19 @@ Once these are installed, simply do:
 and the gifs should be created. The script will only create them once,
 and keep them around. So this should only be required to be done once.
 
+## Pre-commit python linting
+
+In order for the python code to the same style guide we use the "ruff" linter and formatter.
+Ruff is automatically run on commit to check if the code adheres to the style-guide defined 
+in pyproject.toml. To run the linter yourself use:
+
+``ruff check docs/**/*.py``
+
+Ruff can automatically fix many common linting issues with the `--fix` flag:
+
+``ruff check --fix docs/**/*.py``
+
+Ruff has an extension for vs-code which can be used to visually inspect errors: [Ruff - Visual Studio code extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff).
 
 ## Running Locally in Podman
 

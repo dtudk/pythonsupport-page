@@ -3,15 +3,18 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import datetime
+import importlib.util
+import os
+import sys
+from pathlib import Path
+
+import pydata_sphinx_theme
 
 print("vvvvv INITIALIZING conf.py vvvvv")
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-from pathlib import Path
-import os
-import datetime
-import sys
 
 html_logo = "_static/DTU_logo_Coral_RGB.png"
 
@@ -20,8 +23,13 @@ _cwd = Path().resolve()
 
 # add the exts folder
 sys.path.insert(1, str(_cwd))
-from ps_modules.pageredirects import *
-from ps_modules.create_timetabs import create_time_table
+
+from ps_modules.create_timetabs import create_time_table  # noqa: E402
+from ps_modules.pageredirects import (  # noqa: E402, F403
+    Coursebase,
+    CourseStrip,
+    HomepageFormatter,
+)
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -40,11 +48,11 @@ def version2tuple(vers):
         for vv in vers:
             try:
                 v.append(int(vv))
-            except:
+            except Exception:
                 return tuple(v)
         return tuple(v)
 
-    raise NotImplementedError()
+    raise NotImplementedError
 
 
 year = datetime.date.today().year
@@ -92,12 +100,10 @@ extensions = [
 
 
 # Add the spelling extension if available
-try:
-    import sphinxcontrib.spelling
-
+if importlib.util.find_spec("sphinxcontrib.spelling") is not None:
     # spell checking
     extensions.append("sphinxcontrib.spelling")
-except ImportError:
+else:
     print("cannot do spell checks! sphinxcontrib.spelling cannot be imported")
 
 intersphinx_mapping = {
@@ -136,7 +142,7 @@ _year = get_current_years()
 print(
     f"""\
 ps: Links to DTU's course database will be to the year:
-ps:      {_year[0]}-{_year[1]}"""
+ps:      {_year[0]}-{_year[1]}""",
 )
 
 
@@ -230,7 +236,7 @@ windows_link = [
     "name": "Windows",
         "url": "https://www.microsoft.com/windows",
         "icon": "fa-brands fa-windows",
-        "type": "fontawesome", }
+        "type": "fontawesome" },
 ]
 
 
@@ -311,9 +317,6 @@ html_css_files = [
     "css/colors.css",
 ]
 
-
-import pydata_sphinx_theme
-
 if version2tuple(pydata_sphinx_theme.__version__) >= (0, 14):
     print("ps: will use fontawesome 6 css")
     html_css_files.append("css/fontawesome6.css")
@@ -355,8 +358,8 @@ def course_switcher(out=_course_json_url):
     This small snippet will automatically search the directories in:
     `courses/` and add any course to the file
     """
-    from pathlib import Path
     import json
+    from pathlib import Path
 
     # current path
     cwd = Path(__file__).parent
@@ -370,9 +373,9 @@ def course_switcher(out=_course_json_url):
             "name": "courses",
             "version": "courses",
             # "url": f"pathto(courses/index.html, 1)",
-            "url": f"courses/index.html",
+            "url": "courses/index.html",
             "preferred": True,
-        }
+        },
     ]
 
     for course in courses.glob("*"):
@@ -388,7 +391,7 @@ def course_switcher(out=_course_json_url):
                 "version": course.name,
                 # "url": f"pathto(courses/{course.name}/index.rst, 1)",
                 "url": f"courses/{course.name}/index.rst",
-            }
+            },
         )
 
     json.dump(data, open(out, "w"), indent=4)
@@ -503,8 +506,7 @@ print("^^^^^ DONE conf.py ^^^^^")
 
 
 def rstjinja(app, source):
-    """
-    Render pages as a jinja template for fancy templating goodness.
+    """Render pages as a jinja template for fancy templating goodness.
 
     The reason for resorting to the jinja templating is simply because
     the directives might not always like combinations of replacement
@@ -538,14 +540,14 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
     # If there's no document tree (e.g., for special pages like search or genindex), do nothing.
     if doctree is None:
         return
-    
+
     # Retrieve metadata for the current page
     metadata = app.env.metadata.get(pagename, {})
 
     # If a 'title' is specified in the page metadata, add it to the template context
-    title = metadata.get('title')
+    title = metadata.get("title")
     if title:
-        context['title'] = title
+        context["title"] = title
 
 def setup(app):
 
