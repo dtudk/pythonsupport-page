@@ -94,7 +94,7 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
 .. note::
 
    If you are using a different operating system than the ones listed above,
-   please send an `email <mailto:pythonsupport@dtu.dk>`_ to us, and we will try to help you.
+   please send an :mailto:`email <pythonsupport@dtu.dk>` to us, and we will try to help you.
 
 
 .. toctree::
