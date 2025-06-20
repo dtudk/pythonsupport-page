@@ -1094,3 +1094,8 @@ since it is also on the header.
       overflow: hidden;
     }
   }
+
+
+html[data-theme="dark"] .env-search::placeholder {
+  color: darkgray;
+}

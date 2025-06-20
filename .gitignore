@@ -12,3 +12,7 @@ Thumbs.db
 ehthumbs.db
 
 .fake
+
+# course environment install pages
+
+docs/environments/course/*.rst
