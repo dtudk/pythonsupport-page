@@ -177,6 +177,10 @@ It is vital we also keep a nice and healthy internal tone.
 .. include:: /internal/discord.rst.include
 .. include:: /internal/rt.rst.include
 
+:ref:`Customizing Sphinx  <internal-sphinx>`
+--------------------------------------------
+
+Sphinx documentation can be found :ref:`here <internal-sphinx>`.
 
 Piwik setup
 ----
