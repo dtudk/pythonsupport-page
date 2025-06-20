@@ -3,7 +3,8 @@
 .. _internal-sphinx:
 
 Sphinx Development Documentation
---------------------------------
+================================
+
 This document outlines some of the internals of Sphinx and how to extend it.
 A good resource to get started with the internals of Sphinx include:
 
