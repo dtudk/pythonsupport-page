@@ -301,6 +301,7 @@ html_js_files = [
     "js/external_tab.js",
     "js/custom.js",
     "js/piwik.js",
+    "js/auto-open-dropdown-link.js",
 ]
 
 html_css_files = [
