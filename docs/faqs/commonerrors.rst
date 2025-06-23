@@ -58,7 +58,7 @@ Windows execution policy in PowerShell
    2. Install the application
    3. Re-start your editor (or machine) and try again
       If it still does not work, then try the X86 version.
-   4. If problems still occur, please write us at :mail:`pythonsupport@dtu.dk`
+   4. If problems still occur, please write us at :mailto:`pythonsupport@dtu.dk<pythonsupport@dtu.dk|{{mailto_template_subject}}|{{mailto_template_body}}>`
 
 
 
