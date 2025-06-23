@@ -1,6 +1,3 @@
-.. _uninstall-python:
-
-
 Uninstalling Python
 =========================================
 
@@ -18,23 +15,6 @@ Deleting Python might be helpful in the following scenarios.
 * You have tried to install Python, but something went wrong, and you want to start from scratch. 
 
 Follow the steps below to delete Python. 
-
-
-Deleting Python on {{ windows }}
------------------------------------------
-
-1. In the ``Search`` tab, search for **add or remove programs**.
-2. Search for **Python**, click the three dots on the right hand side, and press ``Uninstall``
-3. Follow the instructions from the uninstaller
-4. Repeat for every version of Python that you see in **add or remove programs**
-
-      .. image:: /images/install/python_uninstall.png
-         :width: 500
-         :align: center
-
-
-Deleting Python on {{ macos }}
------------------------------------------
 
 A version of Python comes pre-installed with {{ macos }}. The operating system uses this version of Python and should *not* be deleted.
 Other versions of Python may be deleted using a script supplied here.
