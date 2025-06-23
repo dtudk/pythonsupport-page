@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Sphinx",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "sphinx_autobuild",
+            "args": [
+                "docs",
+                "build",
+                "--ignore",
+                "docs/_static/course_switcher.json",
+                "--ignore",
+                "docs/timetable/timetable.rst"
+            ]
+        }
+    ]
+}
