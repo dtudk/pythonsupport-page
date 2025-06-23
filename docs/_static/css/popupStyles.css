@@ -46,7 +46,6 @@
     transform: translate(-50%, -50%) scale(0);
 }
 
-
 .popup .content .buttons {
     display: flex;
     justify-content: space-between;
@@ -61,7 +60,6 @@
     color: white;
     font-size: 18px;
     cursor: pointer;
-
 }
 
 .popup .content .buttons .install-python {

@@ -6,15 +6,13 @@
     /* Create space below the image */
 }
 
-
-
 .banner-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     max-height: 100vh;
     /* Use max-height for smooth collapsing */
-    background: url('../DTU_bld324.png');
+    background: url("../DTU_bld324.png");
     background-size: 80%;
     background-position: 0% 502%;
     position: relative;
@@ -41,11 +39,7 @@
     box-sizing: border-box;
     flex: 1;
     /* Ensure both banners take up equal space */
-
-
 }
-
-
 
 .topBanner {
     background-color: #2f3feabc;
@@ -75,7 +69,6 @@
     margin-left: 12px;
 }
 
-
 .bottom-text {
     text-align: left;
     font-size: 27px;
@@ -98,10 +91,6 @@
     margin-bottom: 5px;
 }
 
-
-
-
-
 .top-text-bold,
 .bottom-text-bold {
     font-size: 36px;
@@ -109,7 +98,7 @@
 }
 
 .first-link-hover a:hover {
-    color: #E83F48;
+    color: #e83f48;
     /* Change this to your desired hover color */
 }
 
@@ -120,13 +109,13 @@
 
 * {
     --dtu-bright-green: #1fd082;
-    --dtu-red: #E83F48;
+    --dtu-red: #e83f48;
     --dtu-green: #008835;
     --dtu-red-corporate: #900;
 }
 
 /* Media Queries for smaller screens */
-@media (width <=600px) {
+@media (width <= 600px) {
 
     .top-text,
     .bottom-text,
