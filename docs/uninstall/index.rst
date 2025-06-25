@@ -4,7 +4,7 @@ Uninstall Software
 ------------------
 
 In some cases, removing Python or an editor is necessary.
-Here you will find guides on how to uninstall **Python**, **Conda** and **Visual Studio Code**. 
+Here you will find guides on how to uninstall **Conda**, **Python** and **Visual Studio Code**. 
 
 If you experience hard-to-resolve problems, it might be because you have
 installed all packages in your global Python home (i.e. using ``pip``
