@@ -13,7 +13,7 @@ This can be useful if Visual Studio Code is not working correctly and you want a
 
    This will leave behind some files, which you can delete manually if you want to. To do this follow the steps below.
 
-* Open up a terminal and run the following command:
+* Open up a :ref:`terminal <learn-more.terminal>` and run the following command:
 
 .. code:: bash
 

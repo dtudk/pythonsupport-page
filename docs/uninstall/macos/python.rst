@@ -4,7 +4,7 @@ Uninstalling Python
 
 .. note::
 
-   If you are running Python using Miniconda, you will have to :ref:`uninstall Miniconda <uninstall-conda>` to get rid of Python. 
+   If you are running Python using Miniconda, you will have to :ref:`uninstall Miniconda <uninstall-conda>`. 
 
 
 
