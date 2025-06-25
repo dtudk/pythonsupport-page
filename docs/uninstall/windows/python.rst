@@ -4,7 +4,7 @@ Uninstalling Python
 
 .. note::
 
-   If you are running python using miniconda, you will have to :ref:`uninstall miniconda <uninstall-conda>` to get rid of python. 
+   If you are running Python using Miniconda, you will have to :ref:`uninstall Miniconda <uninstall-conda>` to get rid of Python. 
 
 
 
@@ -16,10 +16,10 @@ Deleting Python might be helpful in the following scenarios.
 
 Follow the steps below to delete Python. 
 
-1. In the ``Search`` tab, search for **add or remove programs**.
+1. In the ``Search`` tab, search for **Add or remove programs**.
 2. Search for **Python**, click the three dots on the right hand side, and press ``Uninstall``
 3. Follow the instructions from the uninstaller
-4. Repeat for every version of Python that you see in **add or remove programs**
+4. Repeat for every version of Python that you see in **Add or remove programs**
 
       .. image:: /images/install/python_uninstall.png
          :width: 500

@@ -15,7 +15,7 @@ This can be useful if Visual Studio Code is not working correctly and you want a
 
 
 
-1. In the ``Search`` tab, search for **add or remove programs**.
+1. In the ``Search`` tab, search for **Add or remove programs**.
 2. Search for **Visual Studio Code**
 3. Press the three dots on the right hand side, click **uninstall** and follow the instructions. 
 
