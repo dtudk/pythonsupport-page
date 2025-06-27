@@ -1,5 +1,3 @@
-.. _uninstall-conda:
-
 Uninstalling Conda
 ===========================================
 
@@ -11,21 +9,8 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 
 * You have issues with packages.
 
-* You already have the Anaconda distribution installed, but need to switch to miniconda. 
+* You already have the Anaconda distribution installed, but need to switch to Miniconda. 
 
-
-{{ windows }}
--------------------------------------------
-
-1. Ensure all shells, command prompts are closed i.e. make sure no files related to Anaconda/Miniconda are open anywhere.  
-
-2. Open your control panel, and press :guilabel:`Uninstall application`.
-
-3. Please find all the applications regarding Anaconda (and Miniconda), right click on them and press :guilabel:`Uninstall`.
-
-
-{{ macos }} and Linux
--------------------------------------------
 
 * If you have installed Miniconda through Homebrew, run the following command line in the terminal:
 
@@ -65,5 +50,3 @@ This guide will help you uninstall Conda from your computer. This can be useful 
      cd
      sudo rm -rf ~/anaconda3
      sudo rm -rf /opt/anaconda3
-
-
