@@ -1,15 +1,36 @@
 <!-- This hero is a modified version an example found here https://getbootstrap.com/docs/5.0/examples/heroes/ -->
+<script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
 <div class="flex py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-5 me-auto ms-auto d-flex justify-content-center mt-0">
-            <img src="/_static/python_support_mascot_2_3.png" class="d-block mx-lg-auto img-fluid pe-none bg-transparent" alt="Bootstrap Themes" width="300"
-                height="300" loading="lazy">
+        <div class="col-10 col-sm-8 col-lg-5 me-auto ms-auto d-flex justify-content-center mt-0"
+            style="position: relative;">
+
+            <img src="/_static/Coral_Red_CMYK.svg" id="hero_logo" class="d-block mx-lg-auto img-fluid pe-none"
+                width="170" height="200" loading="lazy">
+
+            <img id="numpy_logo" class="hero-icon pe-none" src="https://numpy.org/images/logo.svg" width="50"
+                height="50" loading="lazy">
+
+            <img id="pandas_logo" class="hero-icon pe-none" src="https://pandas.pydata.org/static/img/pandas_mark.svg"
+                width="50" height="50" loading="lazy">
+            <img id="matplotlib_logo" class="hero-icon pe-none" src="https://matplotlib.org/_static/images/logo2.svg" width="50"
+                height="50" loading="lazy">
+            <img id="scipy_logo" class="hero-icon pe-none" src="https://scipy.org/images/logo.svg" width="50"
+                height="50" loading="lazy">
+            <img id="jupyter_logo" class="hero-icon pe-none" src="https://jupyter.org/assets/homepage/main-logo.svg"
+                width="50" height="50" loading="lazy">
+            <img id="pytorch_logo" class="hero-icon pe-none" src="https://pytorch.org/assets/images/pytorch-logo.png"
+                width="50" height="50" loading="lazy">
+
         </div>
         <div class="d-grid col-lg-7 gap-3 mt-0">
             <h1 class="display-4 fw-bold lh-1 mb-3">DTU Python Installation Support</h1>
-            <p class="fs-5 text">Our goal is to ensure that students can get a Python environment up and running according to the needs of DTU courses.</p>
+            <p class="fs-5 text">Our goal is to ensure that students can get a Python environment up and running
+                according to the needs of DTU courses.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="PyS_redirectUser('package-managed.html');">Download python</button>
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+                    onclick="PyS_redirectUser('package-managed.html');">Download python</button>
                 <a href="learn-more/index.html" class="btn btn-link btn-lg px-4">See tutorials</a>
             </div>
         </div>
@@ -20,15 +41,87 @@
     .prev-next-footer {
         display: none;
     }
+
     section {
         margin-bottom: 4rem;
     }
+
     @media (min-width: 960px) {
         .bd-article-container {
             margin: auto;
         }
+
         .bd-sidebar-primary {
             display: none;
         }
     }
+    #hero_logo {
+        background-color: var(--dtu-dark-bg) !important;
+    }
+    .hero-icon {
+        position: absolute;
+        background-color: var(--dtu-dark-bg) !important;
+    }
 </style>
+
+<script>
+    const { animate, utils, createDraggable, createSpring, createTimeline } = anime;
+
+    logo_animation = animate('#hero_logo', {
+        scale: [
+            { to: 1.1, ease: 'inOut(3)', duration: 50 },
+            { to: 1, ease: createSpring({ stiffness: 300 }), duration: 50 }
+        ],
+        delay: 500
+    });
+
+    // Generalized orbit animation for any logo
+    function orbitLogo(centerId, logoId, phaseOffset = 0) {
+        const centerEl = document.getElementById(centerId);
+        const logoEl = document.getElementById(logoId);
+
+        let radius = 180;
+        const duration = 50_000;
+
+        const animate = (startTime) => {
+            const step = (time) => {
+
+                const centerElTop = centerEl.offsetTop;
+                const centerElLeft = centerEl.offsetLeft;
+
+                const centerWidth = centerEl.offsetWidth;
+                const centerHeight = centerEl.offsetHeight;
+
+                const logoWidth = logoEl.offsetWidth;
+                const logoHeight = logoEl.offsetHeight;
+
+                // value from 0 to 1
+                progress = ((time - startTime) % duration) / duration
+
+                let radiusTime = (time / 1000 - startTime / 1000) - 0.5
+                radiusTime = radiusTime > 0 ? radiusTime : 0
+                aniProgress = Math.pow(Math.tanh(radiusTime), 1 / 5)
+                radiusAni = radius * aniProgress
+
+                // update position
+                logoEl.style.left = centerElLeft + centerWidth / 2 + radiusAni * Math.cos(2 * Math.PI * progress + phaseOffset) - logoWidth/2 + "px"
+                logoEl.style.top = centerElTop + centerHeight / 2 + radiusAni * Math.sin(2 * Math.PI * progress + phaseOffset) - logoHeight/2 + "px"
+                logoEl.style.opacity = aniProgress
+                requestAnimationFrame(step)
+            }
+
+            requestAnimationFrame(step)
+        }
+
+        animate(performance.now())
+    }
+    // Start orbits
+    document.addEventListener("DOMContentLoaded", () => {
+        orbitLogo('hero_logo', 'numpy_logo', 0);
+        orbitLogo('hero_logo', 'pandas_logo', Math.PI / 3);
+        orbitLogo('hero_logo', 'matplotlib_logo', 2 * Math.PI / 3);
+        orbitLogo('hero_logo', 'scipy_logo', Math.PI);
+        orbitLogo('hero_logo', 'jupyter_logo', 4 * Math.PI / 3);
+        orbitLogo('hero_logo', 'pytorch_logo', 5 * Math.PI / 3);
+    });
+</script>
