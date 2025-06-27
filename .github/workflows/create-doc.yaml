@@ -15,6 +15,10 @@ on:
       targz_name:
         required: true
         type: string
+      piwik:
+        required: false
+        type: boolean
+        default: false
 
 jobs:
 
@@ -79,6 +83,7 @@ jobs:
 
     - name: Build and tar.gz documentation
       run: |
+        export PS_PIWIK=${{ inputs.piwik }}
         make all
         # tar gz the build/html dir
         tar -czf ${{ inputs.targz_name }} -C build/html .

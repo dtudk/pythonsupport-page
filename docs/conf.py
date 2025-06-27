@@ -300,9 +300,21 @@ if False:
 html_js_files = [
     "js/external_tab.js",
     "js/custom.js",
-    "js/piwik.js",
     "js/auto-open-dropdown-link.js",
 ]
+
+use_piwik = os.environ.get("PS_PIWIK", "false")
+use_piwik = {
+    "false": False,
+    "true": True,
+    "0": False,
+}.get(use_piwik.lower(), True)
+if use_piwik:
+    print("ps: Will enable Piwik support")
+    html_js_files.append("js/piwik.js")
+else:
+    print("ps: Will *not* enable Piwik support")
+
 
 html_css_files = [
     ("css/bannerStyles.css", {"priority": 999}),

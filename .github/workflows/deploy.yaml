@@ -21,6 +21,7 @@ jobs:
     with:
       name: docs
       targz_name: docs.tar.gz
+      piwik: true
 
   deploy_docs_first:
 
