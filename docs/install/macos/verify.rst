@@ -2,6 +2,14 @@
 Verification
 --------------------------------------
 
+.. dropdown:: {{ video_install }}
+    :open:
+    :color: info
+
+    .. raw:: html
+      
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1e5c5e32-74df-49f8-8bec-b308006414a1" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
 Verify that your installation is successful by following these steps:
 
 1. Search for :menuselection:`Terminal` using your
