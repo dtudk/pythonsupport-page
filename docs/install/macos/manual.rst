@@ -3,11 +3,10 @@
 {{ apple_icon }} --- Manual Installation 
 ==========================================
 
-.. button-ref:: ../windows/manual
+.. .. button-ref:: ../windows/manual
    :ref-type: doc
    :align: right
    :color: primary
-   
 
     Press here for Windows {{ windows_icon }}
 
