@@ -13,14 +13,14 @@ pip
 .. include:: /_rst_includes/tip-copy.rst
 
 Although we recommend using Conda for managing packages and environments due to 
-its comprehensive features and easy dependency management, `pip <pypi-org_>`_ remains a valuable 
+its comprehensive features and dependency management, `pip <pypi-org_>`_ remains a valuable 
 tool, especially when certain packages are not yet available or up-to-date in Conda.
 
 `pip <pypi-org_>`_ is the *de-facto* standard tool for installing, upgrading, and maintaining
 Python packages. It simplifies the management of package dependencies and supports installation 
 in global or virtual environments. ``pip`` also handles package versioning 
 to prevent compatibility issues. As a fundamental tool for any Python developer, ``pip`` is essentially 
-an easy-to-use tool for managing your Python packages.
+a tool for managing your Python packages.
 It also has extensive `documentation <pip-org_>`_. 
 
 ``pip`` comes with most Python installations, including Conda.

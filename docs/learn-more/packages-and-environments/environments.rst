@@ -17,7 +17,7 @@ package lists and easily swap between them.
     If you need to know what packages are, please check :doc:`here <packages>`.
 
 Python environments allow you to maintain separate sets of packages, making switching
-between configurations easy without conflicts.
+between configurations without conflicts.
 Using environments can be used for a variety of things:
 
 1. Quickly testing whether certain packages conflicts
@@ -68,7 +68,7 @@ One can list all *global* environments by:
 .. note::
 
     A *global* environment, created using ``conda create --name`` is stored in Conda's default directory.
-    Creating your environment in the global environment list will make it easy
+    Creating your environment in the global environment list will make it
     to activate just the environment name and centrally manage all your environments.
 
     Alternatively, one can create *subdirectory* environments.
