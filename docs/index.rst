@@ -34,7 +34,7 @@ Reach us
 .. grid:: 1 1 1 3
    :gutter: 1
 
-   .. comment
+   ..
       .. grid-item-card:: :fas:`person-running` -- Visit us
          :link: #office-hours
 
@@ -42,12 +42,12 @@ Reach us
          | Mon -- Fri (see table):
          | Building **302**, room **92**.
 
-         .. comment | Thursday (12:15-16):
-         .. | Building **358**, room **43**.
+         | Thursday (12:15-16):
+         | Building **358**, room **43**.
 
          | Click to see detailed office hours.
 
-   .. grid-item-card:: :fas:`person-running` -- Visit us
+   .. .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
       Closed until the Autumn semester (1st of September).
@@ -112,7 +112,7 @@ Office hours
    :date: 13th of May -- 1st of September
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. include:: /timetable/timetables.rst
+.. .. include:: /timetable/timetables.rst
 
 .. *Available via online channels (e-mail and Discord) during office hours.*
 
