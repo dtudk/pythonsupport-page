@@ -5,7 +5,7 @@ Course specific conda environments
 ==================================
 
 .. raw:: html
-    
+
     <input type="search" class="form-control env-search" id="searchInput" placeholder="Search courses..." aria-label="Search courses"> <br/>
     <script>
         window.addEventListener('DOMContentLoaded', function() {
@@ -42,7 +42,7 @@ Course specific conda environments
     </script>
 
 
-{% for course_number, course_periods in course_environments.items() %}
+{% for course_number, course_periods in course_environments %}
 {% set course_full_name = course_periods[-1].course_full_name %}
 .. raw:: html
 

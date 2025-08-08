@@ -529,7 +529,6 @@ html_context = {
 }
 
 course_environments = defaultdict(list)
-html_context["course_environments"] = course_environments
 
 # Read all YAML files in "new_course/environments" directory
 environments_dir = Path() / "_static" / "environments"
@@ -546,6 +545,8 @@ for yaml_file in environments_dir.glob("*.yml"):
 
             # Copy the environment name into the `course_env_name` key.
             metadata["course_env_name"] = env_data["name"]
+            # Prepend the course number to the name of the course
+            metadata["course_full_name"] = f"{metadata['course_number']} {metadata['course_full_name']}"
 
             # Specify the path to the environment file
             metadata["env_path"] = f"https://pythonsupport.dtu.dk/{yaml_file!s}"
@@ -560,6 +561,16 @@ for yaml_file in environments_dir.glob("*.yml"):
         except KeyError:
             print(f"Error reading metadata from {yaml_file}")
 
+# Sort the keys to be able to sort the output
+course_environments = [kv
+    for kv in sorted(course_environments.items(),
+                    key=lambda k: int(k[0]))
+    ]
+
+
+# Now, when we have sorted it, lets store it in the course_environments context
+html_context["course_environments"] = course_environments
+
 ## Now sort the environments
 def _course_periods_sort(course):
     year = int(course["course_year"])
@@ -571,10 +582,11 @@ def _course_periods_sort(course):
         "july",
         "august",
         "autumn",
+        "spring & autumn",
     ].index(course["course_semester"].lower())
     return year, semester
 
-for _course_periods in course_environments.values():
+for _, _course_periods in course_environments:
     _course_periods.sort(key=_course_periods_sort)
 
 print("^^^^^ DONE conf.py ^^^^^")
@@ -638,7 +650,7 @@ def generate_env_pages_from_json(app):
     env = Environment(loader=FileSystemLoader(template_dir))
     template = env.get_template("environment_installation.rst")
 
-    for course_number, course_periods in course_environments.items():
+    for course_number, course_periods in course_environments:
         for metadata in course_periods:
             rendered = rstjinja(app, template.render(metadata))
             filename = metadata["course_env_name"]

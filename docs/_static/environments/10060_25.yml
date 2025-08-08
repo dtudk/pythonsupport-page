@@ -1,0 +1,17 @@
+metadata:
+  course_full_name: "Physics"
+  course_number: "10060"
+  course_year: "2025"
+  course_semester: "Spring & Autumn"
+
+name: "10060_25"
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - numpy
+  - uncertainties
+  - scipy
+  - matplotlib
+  - pandas

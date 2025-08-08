@@ -1,0 +1,15 @@
+metadata:
+  course_full_name: "Mathematics 1a"
+  course_number: "01001"
+  course_year: "2024"
+  course_semester: "Autumn"
+
+name: 01001_A24
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - dtumathtools
+  - pandas
+  - scipy
