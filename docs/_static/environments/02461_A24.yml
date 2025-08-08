@@ -1,0 +1,27 @@
+metadata:
+  course_full_name: "Introduction to Intelligent Systems"
+  course_number: "02461"
+  course_year: "2024"
+  course_semester: "Autumn"
+
+name: 02461_A24
+channels:
+  # With multiple channels, the top one has priority!
+  - pytorch
+  - conda-forge
+dependencies:
+  - python
+  - pytorch
+  - torchvision
+  - torchaudio
+  - matplotlib
+  - opencv
+  - imageio
+  - scikit-learn
+  - scikit-image
+  - jupyter
+  - pygame
+  - scipy
+  - nltk
+  - ipywidgets
+  - tqdm

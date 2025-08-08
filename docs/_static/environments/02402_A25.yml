@@ -1,0 +1,15 @@
+metadata:
+  course_full_name: "Statistic"
+  course_number: "02402"
+  course_year: "2025"
+  course_semester: "Autumn"
+
+name: 02402_A25
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - pandas
+  - statsmodels
+  - scipy
