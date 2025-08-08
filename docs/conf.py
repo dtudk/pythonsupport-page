@@ -9,6 +9,7 @@ print("vvvvv INITIALIZING conf.py vvvvv")
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 from pathlib import Path
+from collections import defaultdict
 import os
 import datetime
 import sys
@@ -492,6 +493,7 @@ html_context = {
     "virtualenv": "virtualenv",
     "condaenv": "conda",
     # Operating systems
+    "win": "Windows",
     "windows": "Windows",
     "macos": "MacOS",
     "linux": "Linux",
@@ -526,26 +528,54 @@ html_context = {
     "environments": {},
 }
 
+course_environments = defaultdict(list)
+html_context["course_environments"] = course_environments
 
 # Read all YAML files in "new_course/environments" directory
-environments_dir = Path("./_static/environments")
+environments_dir = Path() / "_static" / "environments"
 for yaml_file in environments_dir.glob("*.yml"):
     with open(yaml_file, "r") as file:
         try:
             env_data = yaml.safe_load(file)
             metadata = env_data["metadata"]
 
-            if metadata["course_full_name"] not in html_context["environments"]:
-                html_context["environments"][metadata["course_full_name"]] = {}
+            # Correct the year to be 20XX
+            _year = int(metadata["course_year"])
+            if _year < 100:
+                metadata["course_year"] = str(_year + 2000)
 
-            html_context["environments"][metadata["course_full_name"]][metadata["course_identifier"]] = metadata
-            html_context["environments"][metadata["course_full_name"]][metadata["course_identifier"]]["env_path"] = "https://pythonsupport.dtu.dk/"+str(yaml_file)
+            # Copy the environment name into the `course_env_name` key.
+            metadata["course_env_name"] = env_data["name"]
+
+            # Specify the path to the environment file
+            metadata["env_path"] = f"https://pythonsupport.dtu.dk/{yaml_file!s}"
+
+            # Extract the environment dictionary
+            env_course = course_environments[metadata["course_number"]]
+            env_course.append(metadata)
 
         except yaml.YAMLError as e:
             print(f"Error reading {yaml_file}: {e}")
-        
+
         except KeyError:
             print(f"Error reading metadata from {yaml_file}")
+
+## Now sort the environments
+def _course_periods_sort(course):
+    year = int(course["course_year"])
+
+    semester = [
+        "january",
+        "spring",
+        "june",
+        "july",
+        "august",
+        "autumn",
+    ].index(course["course_semester"].lower())
+    return year, semester
+
+for _course_periods in course_environments.values():
+    _course_periods.sort(key=_course_periods_sort)
 
 print("^^^^^ DONE conf.py ^^^^^")
 
@@ -586,7 +616,7 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
     # If there's no document tree (e.g., for special pages like search or genindex), do nothing.
     if doctree is None:
         return
-    
+
     # Retrieve metadata for the current page
     metadata = app.env.metadata.get(pagename, {})
 
@@ -595,21 +625,22 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
     if title:
         context['title'] = title
 
+
 def generate_env_pages_from_json(app):
+    """Create all course environment pages """
     src_dir = app.srcdir
-    json_path = os.path.join(src_dir, 'data.json')
-    template_dir = os.path.join(src_dir, '_templates')
-    output_dir = os.path.join(src_dir, 'environments/course')
+    template_dir = os.path.join(src_dir, "_templates")
+    output_dir = os.path.join(src_dir, "environments", "course")
 
     os.makedirs(output_dir, exist_ok=True)
 
     # Load template
     env = Environment(loader=FileSystemLoader(template_dir))
-    template = env.get_template('environment_installation.rst')
+    template = env.get_template("environment_installation.rst")
 
-    for course_full_name, years in html_context["environments"].items():
-        for year, metadata in years.items():
-            rendered = template.render(course_full_name=course_full_name, metadata=metadata)
+    for course_number, course_periods in course_environments.items():
+        for metadata in course_periods:
+            rendered = rstjinja(app, template.render(metadata))
             filename = metadata["course_env_name"]
             filepath = os.path.join(output_dir, f"{filename}.rst")
             with open(filepath, 'w') as out:

@@ -1,8 +1,8 @@
 .. _environments-list:
 
 
-Find environments for courses
-====
+Course specific conda environments
+==================================
 
 .. raw:: html
     
@@ -42,15 +42,16 @@ Find environments for courses
     </script>
 
 
-{% for course_full_name, years in environments.items() %}
+{% for course_number, course_periods in course_environments.items() %}
+{% set course_full_name = course_periods[-1].course_full_name %}
 .. raw:: html
-    
+
     <div data-environment="{{course_full_name}}">
 
 .. dropdown:: {{course_full_name}}
 
-    {% for year, metadata in years.items() %}
-    `{{metadata.course_identifier}} <./course/{{metadata.course_env_name}}.html>`_
+    {% for metadata in course_periods %}
+    :doc:`{{metadata.course_year}} {{metadata.course_semester}} </environments/course/{{metadata.course_env_name}}>`
     {% endfor %}
 
 .. raw:: html

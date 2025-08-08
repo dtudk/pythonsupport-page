@@ -1,8 +1,8 @@
 metadata:
   course_full_name: "2451 second testing course"
   course_number: "2451"
-  course_identifier: "Spring 2027"
-  course_env_name: "02451_S27"
+  course_year: "2027"
+  course_semester: "Spring"
 
 name: 02451_S27
 channels:
