@@ -107,8 +107,6 @@ Step 3: Install Visual Studio Code
    #. 
       Open the installer and follow the instructions. 
 
-.. _install-python-windows-vscode-exts:
-      
 
 .. _install-python-windows-vscode-exts:
 

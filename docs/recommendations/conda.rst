@@ -79,7 +79,7 @@ correct tree.
 
    Please be aware of installation instructions that install packages
    from the Anaconda channels. If in doubt, feel free to
-   :mail:`contact us <pythonsupport@dtu.dk>`.
+   :mailto:`contact us <pythonsupport@dtu.dk>`.
 
 
 

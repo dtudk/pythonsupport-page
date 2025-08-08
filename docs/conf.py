@@ -12,6 +12,7 @@ from pathlib import Path
 import os
 import datetime
 import sys
+import urllib.parse
 
 html_logo = "_static/DTU_logo_Coral_RGB.png"
 
@@ -20,8 +21,10 @@ _cwd = Path().resolve()
 
 # add the exts folder
 sys.path.insert(1, str(_cwd))
-from ps_modules.pageredirects import *
+
 from ps_modules.create_timetabs import create_time_table
+from ps_modules.mailto_role import escape_backslash, mailto_role
+from ps_modules.pageredirects import *
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -181,6 +184,7 @@ extlinks = {
 _discord_general = _pythonsupport["discord-channel"]
 _discord_invite = _pythonsupport["discord-invite"]
 
+mailto_template = _pythonsupport["mailtemplate"]
 
 # Add common links to all
 rst_epilog = f"""\
@@ -243,7 +247,8 @@ _icon_links = [
     },
     {
         "name": "Contact us by mail",
-        "url": f"mailto:{_pythonsupport['mail']}",
+        "url":
+        f"mailto:{_pythonsupport['mail']}?subject={urllib.parse.quote(mailto_template['subject'])}&body={urllib.parse.quote(mailto_template['body'])}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
         "type": "fontawesome",
     },
@@ -509,6 +514,14 @@ html_context = {
     "timetable_widths": "15 17 17 17 17 17",
     # online days
     "online_days": _online_days,
+    # to use in custom links:
+    #  mailto:pythonsupport@dtu.dk?subject={{qmailto_subject}}&body={{qmailto_body}}
+    "qmailto_subject": urllib.parse.quote(mailto_template["subject"]),
+    "qmailto_body": urllib.parse.quote(mailto_template["body"]),
+    # to use in :mailto: roles:
+    #  :mailto:`contact us <pythonsupport@dtu.dk>|{{mailto_subject}}|{{mailto_body}}>`.
+    "mailto_subject": escape_backslash(mailto_template["subject"]),
+    "mailto_body": escape_backslash(mailto_template["body"]),
 }
 
 
@@ -561,7 +574,7 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
         context['title'] = title
 
 def setup(app):
-
+    app.add_role("mailto", mailto_role)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
     app.connect("html-page-context", add_title_to_context)

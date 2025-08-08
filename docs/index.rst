@@ -53,7 +53,7 @@ Reach us
       Closed until the Autumn semester (1st of September).
 
    .. grid-item-card:: :fas:`envelope` -- E-mail us
-      :link: mailto:pythonsupport@dtu.dk
+      :link: mailto:pythonsupport@dtu.dk?subject={{qmailto_subject}}&body={{qmailto_body}}
       :link-type: url
 
       | You can contact us via email at pythonsupport@dtu.dk.
