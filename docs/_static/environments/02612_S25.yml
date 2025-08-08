@@ -2,6 +2,7 @@ metadata:
   course_name: "02612 Constrained Optimization"
   course_number: "02612"
   course_year: "Spring 2025"
+  course_env_name: "02612_S25"
 
 channels:
   - eumetsat

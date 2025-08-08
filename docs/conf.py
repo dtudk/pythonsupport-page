@@ -523,7 +523,7 @@ html_context = {
     #  :mailto:`contact us <pythonsupport@dtu.dk>|{{mailto_subject}}|{{mailto_body}}>`.
     "mailto_subject": escape_backslash(mailto_template["subject"]),
     "mailto_body": escape_backslash(mailto_template["body"]),
-    "ENVIRONMENTS": {},
+    "environments": {},
 }
 
 
@@ -535,18 +535,14 @@ for yaml_file in environments_dir.glob("*.yml"):
             env_data = yaml.safe_load(file)
             metadata = env_data["metadata"]
 
-            if metadata["course_name"] not in html_context["ENVIRONMENTS"]:
-                html_context["ENVIRONMENTS"][metadata["course_name"]] = {}
+            if metadata["course_name"] not in html_context["environments"]:
+                html_context["environments"][metadata["course_name"]] = {}
 
-            html_context["ENVIRONMENTS"][metadata["course_name"]][metadata["course_year"]] = metadata
-            
-            html_context["ENVIRONMENTS"][metadata["course_name"]][metadata["course_year"]]["course_env_name"] = f"{metadata['course_number']}_{metadata['course_year'].replace(' ', '_').lower()}"
-            html_context["ENVIRONMENTS"][metadata["course_name"]][metadata["course_year"]]["env_path"] = "https://pythonsupport.dtu.dk/"+str(yaml_file)
+            html_context["environments"][metadata["course_name"]][metadata["course_year"]] = metadata
+            html_context["environments"][metadata["course_name"]][metadata["course_year"]]["env_path"] = "https://pythonsupport.dtu.dk/"+str(yaml_file)
 
         except yaml.YAMLError as e:
             print(f"Error reading {yaml_file}: {e}")
-
-    print(html_context["ENVIRONMENTS"])
 
 print("^^^^^ DONE conf.py ^^^^^")
 

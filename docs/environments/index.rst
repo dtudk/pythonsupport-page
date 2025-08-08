@@ -43,7 +43,7 @@ Find environments for courses
 
 .. raw:: html
 
-    {% for course_name, years in ENVIRONMENTS.items() %}
+    {% for course_name, years in environments.items() %}
     <div data-environment="{{course_name}}" style="display: none;">
         <h3>{{course_name}}</h3>
         {% for year, metadata in years.items() %}
@@ -57,8 +57,29 @@ Find environments for courses
                     </span>
                 </summary>
                 <div class="sd-summary-content sd-card-body docutils">
-                    <p>Run this command to create a conda environment for the course:</p>
-                    <pre>conda create -f "{{metadata.env_path}}" -n "{{metadata.course_env_name}}"</pre>
+                    <p>In order to install python requirements for {{course_name}} {{metadata.course_year}} do the following steps:</p>
+                    <ol>
+                        <li><p>Make sure that you have a conda installation on your PC. If you do not have a conda installation on your computer please follow the guide: <a href="#" onclick="PyS_redirectUser('../package-managed.html');">How To Install Python</a>.</p></li>
+                        <li>
+                            <p>Run the following command in a terminal to create a conda environment with all course requirements:</p>
+                            <div class="highlight-bash notranslate"><div class="highlight">
+                                <pre>conda create -f "{{metadata.env_path}}" -n "{{metadata.course_env_name}}"</pre>
+                            </div></div>
+                        </li>
+                        <li>
+                            <p>In order to use the environment you have activate it.</p>
+                            <p><b>Jupyter notebook</b>: select "{{metadata.course_env_name}}" in the kernel selection:
+                            <img alt="/_images/VSC-select-kernel.png" class="align-center" src="../../_images/VSC-select-kernel.png" style="width: 100%;"></p>
+
+                            <p><b>.py file</b>: press <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <kbd class="kbd docutils literal notranslate">shift</kbd> + <kbd class="kbd docutils literal notranslate">P</kbd> type "Python: Select Interpreter" and press <kbd class="kbd docutils literal notranslate">enter</kbd>. Choose the option "{{metadata.course_env_name}}". </p>
+
+                            <p><b>Terminal</b>: run the command:
+                            <div class="highlight-bash notranslate"><div class="highlight">
+                                <pre id="codecell_activate_{{metadata.course_env_name}}">conda activate "{{metadata.course_env_name}}"</pre>
+                            </div></div> </p>
+                        </li>
+                        
+                    <ol>
                 </div>
             </details>
         {% endfor %}
