@@ -24,7 +24,7 @@ How to record your screen
             :align: center
 
         The snipping tool in Windows 11 includes screen recording capabilities.
-        A thorough guide can be found on Microsoft's website: `here <https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11>`_.
+        A thorough guide can be found on Microsoft's website: `here <https://www.microsoft.com/en-us/windows/learning-center/how-to-record-screen-windows-11>`__.
         
     .. tab-item:: {{ macos }}
         :sync: mac
@@ -36,14 +36,14 @@ How to record your screen
         In order to record your screen on your mac press :kbd:`Cmd+Shift+5`, select an area and press record. 
         When finished turn of the recording by pressing the stop icon the the menu bar. 
         The recording will by default be saved to the desktop.
-        A thorough guide can be found on Apple's website: `here <https://support.apple.com/en-us/102618>`_.
+        A thorough guide can be found on Apple's website: `here <https://support.apple.com/en-us/102618>`__.
 
 
 How to edit videos
 ------------------
 
 In order to edit the screen recordings we use the DaVinci resolve editor.
-Install DaVinci resolve by clicking `here <https://www.blackmagicdesign.com/products/davinciresolve>`_.
+Install DaVinci resolve by clicking `here <https://www.blackmagicdesign.com/products/davinciresolve>`__.
 
 When installed follow this guide on how to create videos:
 
@@ -51,7 +51,7 @@ When installed follow this guide on how to create videos:
 
     <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1e57bf91-1de4-4717-9cfc-b2fa00ee6061&autoplay=false&offerviewer=false&showtitle=true&showbrand=true&captions=false&interactivity=all" height="405" width="720" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-The intro screen template can be found `here <https://discord.com/channels/1138793943526539266/1291313327435288617/1382382267099512923>`_.
+The intro screen template can be found `here <https://discord.com/channels/1138793943526539266/1291313327435288617/1382382267099512923>`__.
 
 .. todo::
 
@@ -65,7 +65,7 @@ How to upload and add subtitles
 ~~~~~~~~~
 
 We use the Panopto user *dccvide* to upload videos.
-Go to `panopto.dtu.dk <https://panopto.dtu.dk>`_ and login with *dccvide*.
+Go to `panopto.dtu.dk <https://panopto.dtu.dk>`__ and login with *dccvide*.
 
 2. Upload
 ~~~~~~~~~

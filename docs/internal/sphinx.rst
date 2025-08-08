@@ -38,7 +38,7 @@ that implements both a directive and a role.
 Custom directives
 -----------------
 
-Examples of directives can be found in the Sphinx documentation `here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`_.
+Examples of directives can be found in the Sphinx documentation `here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html>`__.
 These directives are all from the Sphinx source code.
 
 A hello world directive looks like:
@@ -79,7 +79,7 @@ becomes "Hello, world!" when rendered.
 Custom roles
 ------------
 
-Roles can be seen as an inline directive in paragraphs. Examples of roles can be found `here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html>`_.
+Roles can be seen as an inline directive in paragraphs. Examples of roles can be found `here <https://www.sphinx-doc.org/en/master/usage/restructuredtext/roles.html>`__.
 
 A hello world role looks like:
 
@@ -93,7 +93,7 @@ A hello world role looks like:
 
 In conf.py add :code:`app.add_role('hello', hello_role)` to the setup(app) function so it ends up looking like this:
 
-.. code-block::
+.. code-block:: python
 
     def setup(app):
         app.add_role('hello', hello_role)
@@ -103,7 +103,7 @@ In conf.py add :code:`app.add_role('hello', hello_role)` to the setup(app) funct
 
 **Current custom roles:**
 
-* No custom roles
+* ``mailto`` allows a custom specification of a mail with a template.
 
 
 Custom extensions
@@ -122,6 +122,7 @@ If :title: is not provided then the title of the page would be the text of the f
 section title.
 
 .. code-block:: rst
+
     :title: This is my custom page title
 
     My old title
@@ -147,13 +148,14 @@ with the information about the environment.yml files located in "docs/_static/en
 These .yml files have the same structure as the environment files produced by :code:`conda export --no-builds`
 with the exception of removing the "prefix" field and adding the metadata as shown below.
 
-.. code-block:: yml
+.. code-block:: yaml
 
     metadata:
-        course_full_name: "0xxxx Course name"
-        course_number: "0xxxx"
-        course_identifier: "Spring 2026"
-        course_env_name: "0xxxx_S26" or "0xxxx_E26"
+        course_full_name: "Course name"
+        course_number: "xxxxx"
+        course_year: "2026"
+        course_semester: "Spring"
+
     name: "0xxxx_S26" or "0xxxx_E26"
     channels:
         - conda-forge

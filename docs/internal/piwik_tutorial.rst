@@ -1,4 +1,4 @@
-:nosearch:
+:orphan:
 
 .. _piwik-custom-event-tutorial:
 

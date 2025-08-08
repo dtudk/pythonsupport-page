@@ -183,7 +183,7 @@ It is vital we also keep a nice and healthy internal tone.
 Sphinx documentation can be found :ref:`here <internal-sphinx>`.
 
 Piwik setup
-----
+-----------
 
 Piwik setup is documented :ref:`here <piwik-documentation>`.
 
@@ -191,7 +191,7 @@ Piwik custom event tutorial can be found :ref:`here <piwik-custom-event-tutorial
 
 
 :ref:`Panopto tutorial <internal-panopto>`
-----------------
+------------------------------------------
 
 How to use Panopto and how to make video tutorials are documented :ref:`here <internal-panopto>`.
 

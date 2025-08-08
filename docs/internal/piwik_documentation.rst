@@ -1,9 +1,10 @@
-:nosearch:
+:orphan:
 
 .. _piwik-documentation:
 
 Piwik documentation
-----
+===================
+
 This page contains information on how to use Piwik. The subjects covered are:
 
 .. contents::
@@ -34,7 +35,7 @@ The parenthesis of the sections below: "()" indicate where to find the topics of
          :align: center
 
 Terminology
-====
+--------------------
 
 *
     **Tag**: Javascript function that runs on the users computer and is fired by a trigger.
@@ -45,13 +46,13 @@ Terminology
 *
     **Event**: Events are sent by tags when specific triggers are fired. Events can be analyzed by creating custom widgets on the dashboard. An event could for example be that an error occurs while the visitor is installing Python.  
 
-* 
+*
     **Goal**: An important event that happens on the site. Could for example be that a visitor successfully downloads and installs Python.
 
 User Consent (Consent manager)
-=======
+------------------------------
 
-In order to GDPR appliant Piwik will insert a pop-up on the website when the user is first visiting.
+In order to be GDPR appliance Piwik will insert a pop-up on the website when the user is first visiting.
 Here a user will be able to choose which metrics we can collect and use them. Even if the user rejects
 all options, Piwik will still be able to track certain parameters. The triggers an tags we use relies on
 the user accepts "Analytics", which is the only thing we ask them to accept at the moment.
@@ -70,13 +71,14 @@ Other consent types include:
 
 
 Segments (Analytics)
-====
+------------------------------
+
 Segments are filters to be applied globally when viewing a dashboard of widgets.
 
 Current segments:
 
 *
-    **"Denmark"**: which filters IP-addresses from denmark. This is useful in accessing how well the website performs on DTU students.
+    **"Denmark"**: which filters IP-addresses from Denmark. This is useful in accessing how well the website performs on DTU students.
 
 Other possible segments could for example be filtering IP-addresses from DTU, or which operating system a visitor is using.
 
@@ -86,7 +88,7 @@ Other possible segments could for example be filtering IP-addresses from DTU, or
          :align: center
 
 Dashboards (Analytics)
-====
+------------------------------
 
 Dashboards are a collection of widgets that presents a data collected over a period. This period can be set in the top right corner.
 
@@ -107,7 +109,7 @@ Current dashboards:
     It can take a bit of time for Piwik to show data from user sessions.
 
 Widgets (Analytics)
-====
+------------------------------
 
 Widgets are self contained graphs/tables/counters that display information about the site.
 On creation of a widget you are presented with a list of:
@@ -131,11 +133,12 @@ Examples are:
 .. figure:: ./images/piwik_documentation/piwik_widget.png
          :width: 600
          :align: center
-         
+
          Example of how to use the filtering with a dimension to get useful statistics on the number of install errors.
 
 Variables (Tag manager)
-====
+------------------------------
+
 
 Variables can be used for setting conditions for when triggers are supposed to fire. Variables can get information from the URL, Cookies, DOM elements, and more.
 
@@ -152,7 +155,7 @@ Current variables:
 
 
 Triggers (Tag manager)
-====
+------------------------------
 
 When specific conditions are met a trigger can be fired. The code that a trigger executes is called a Tag. 
 For example a trigger can executed when:
@@ -190,7 +193,7 @@ Current triggers:
          Example of how a custom trigger can look. This trigger used a custom variable and fires when that variable contains "error".
 
 Tags (Tag manager)
-====
+------------------------------
 
 Tags are small self contained javascript functions that runs on the users browser as a part of a trigger. Tags can have different priorities which can be set in (Tag Manager / Settings).
 
@@ -242,7 +245,7 @@ Current tags:
          Heatmap for the home page of the site.
 
 Goals and Reports (Analytics)
-====
+------------------------------
 
 In Piwik goals are the must important interactions that happen on the site. For a shopping website an example of a goal could for example be:
 
