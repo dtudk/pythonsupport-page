@@ -70,7 +70,7 @@ Miniconda will be installed if you follow the
 The change is a one-time change that defaults the installation sources to the
 correct tree.
 
-.. code:: shell
+.. code-block:: shell
 
    conda config --add channels conda-forge
    conda config --remove channels defaults

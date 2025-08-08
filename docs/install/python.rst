@@ -23,13 +23,13 @@ Install Python
 
       add examples of how this may look
 
-      .. code:: shell
+      .. code-block:: shell
 
          numpy              conda-forge/linux-64::numpy-2.1.0-py311hed25524_0 
 
       vs.
 
-      .. code:: shell
+      .. code-block:: shell
 
          numpy              pkgs/linux-64::numpy-2.1.0-py311hed257a2_0 
 

@@ -12,7 +12,7 @@ This guideline is for students attending course :course-base:`10060` in the F24 
 
 Please install the uncertainties package by pasting the following into your terminal:
 
-.. code:: bash
+.. code-block:: bash
 
    python3 -m pip install dtumathtools scipy pandas uncertainties
 

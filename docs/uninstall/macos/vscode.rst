@@ -16,7 +16,7 @@ This can be useful if Visual Studio Code is not working correctly and you want a
 
 * Open up a :ref:`terminal <learn-more.terminal>` and run the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    rm -rf ~/.vscode
    rm -rf "~/Library/Application Support/Code"

@@ -44,14 +44,14 @@ Packages can be installed to your specific environment by using ``conda install`
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda install "package-a==1.24.*" "package-b<1.10" "package-c"
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda install "package-a==1.24.*" "package-b<1.10" "package-c"
 
@@ -74,7 +74,7 @@ installed and their specific versions.
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda list
 
@@ -82,7 +82,7 @@ installed and their specific versions.
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda list
 
@@ -98,14 +98,14 @@ Packages can be updated by using ``conda update`` and specifying the package you
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda update numpy
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda update numpy
 
@@ -124,14 +124,14 @@ when you no longer need a package or want to replace it with a different version
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda remove numpy
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda remove numpy
 

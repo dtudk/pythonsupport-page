@@ -131,7 +131,7 @@ Quite often we tend to suggest solutions before we know the exact problem.
 It can be very useful to get some basic information about the system, before suggesting
 workarounds.
 
-.. code:: shell
+.. code-block:: shell
 
    - Which operating system, Windows, MacOS, Linux?
    - How did you install Python? App-store, download link, anaconda, other?

@@ -38,21 +38,21 @@ Choose one of these installation procedures:
 
    We recommend you to create an :ref:`environment <learn-more-environments>` for this course:
 
-   .. code:: bash
+   .. code-block:: bash
 
       conda config --add channels conda-forge
       conda create --name IntelligentSystems
 
    Every time you need to run code in the course, you need to activate the environment:
 
-   .. code:: bash
+   .. code-block:: bash
 
       conda activate IntelligentSystems
 
    The required packages should be installed in the above environment,
    and can be done by executing these commands, one by one:
 
-   .. code:: bash
+   .. code-block:: bash
 
       conda activate IntelligentSystems
       conda config --env --add channels pytorch

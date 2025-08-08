@@ -12,7 +12,7 @@ Windows execution policy in PowerShell
 
    This happens when you find an error message looking like:
 
-   .. code:: powershell
+   .. code-block:: powershell
 
       AuthorizationManager check failed.
       At line:1 char:1
@@ -30,7 +30,7 @@ Windows execution policy in PowerShell
    2. Select ``Run as administrator``
    3. Execute this code:
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          Set-ExecutionPolicy Unrestricted
 
@@ -49,7 +49,7 @@ Windows execution policy in PowerShell
 
    The error can look similar to this:
 
-   .. code:: powershell
+   .. code-block:: powershell
 
       ImportError: DLL load failed while importing _cext: The specified module could not be found
 

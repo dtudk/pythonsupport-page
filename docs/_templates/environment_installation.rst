@@ -14,7 +14,7 @@ In order to install Python requirements for ``{{course_full_name}}`` do the foll
     #.
         Run the following command in a terminal to create a Conda environment with all course requirements.
 
-        .. code:: bash
+        .. code-block:: bash
 
             conda env create -f "{{env_path}}" -n {{course_env_name}}
 
@@ -55,6 +55,6 @@ In order to install Python requirements for ``{{course_full_name}}`` do the foll
 
     In order to activate the course environment in a terminal, run the following command:
 
-    .. code:: bash
+    .. code-block:: bash
 
         conda activate {{course_env_name}}

@@ -28,7 +28,7 @@ Once you have downloaded and placed it on the *Desktop*, open a terminal (:kbd:`
 
 Then run the following command by copying, pasting into your terminal, and pressing :kbd:`Enter`:
 
-.. code:: bash
+.. code-block:: bash
 
    cd ~/Desktop
    bash deletePythonMac.sh

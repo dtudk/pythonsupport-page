@@ -66,7 +66,7 @@ Importing packages
     #.
         Copy and paste the following code:
         
-        .. code:: python
+        .. code-block:: python
 
             import numpy as np
 
@@ -105,7 +105,7 @@ Creating a new code cell and running it
     #.
         Copy and paste the following code which will multiply the square root of 2 and pi:
         
-        .. code:: python
+        .. code-block:: python
 
             print(np.sqrt(2) * np.pi)
 
@@ -136,7 +136,7 @@ Writing text using Markdown
     #. 
         Copy and paste the following code as an example in the Markdown cell:
         
-        .. code:: markdown
+        .. code-block:: markdown
 
             $$ 5/10 = \frac{5}{10} $$ 
             

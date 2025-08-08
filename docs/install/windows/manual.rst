@@ -61,7 +61,7 @@ Step 2: Install Python
    #.
       Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
-      .. code:: pwsh
+      .. code-block:: pwsh
 
          Set-ExecutionPolicy -Force RemoteSigned
 
@@ -70,18 +70,18 @@ Step 2: Install Python
    #.
       Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
-      .. code:: pwsh
+      .. code-block:: pwsh
 
          conda init
 
-      .. code:: pwsh
+      .. code-block:: pwsh
 
          conda config --add channels conda-forge ; conda config --remove channels defaults ; conda config --set channel_priority strict
 
    #.
       Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
-      .. code:: pwsh
+      .. code-block:: pwsh
 
          conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 

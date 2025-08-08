@@ -14,7 +14,7 @@ If there are no requirements that depend on the operating system then `_{os}` ca
 
 For `conda` to install the correct dependencies use the following template:
 
-.. code:: yaml
+.. code-block:: yaml
 
     metadata:
       course_full_name: "xxxxx Course name"
@@ -49,7 +49,7 @@ as a subentry ``pip:``.
 .. note::
     If you already have a conda environment that satisfies the licensing requirements, then a `.yml` file can be exported with the following command:
 
-    .. code:: bash
+    .. code-block:: bash
 
         conda env export --from-history --no-builds --name {course_number}_{year} | grep -v "^prefix:" > {course_number}_{year}_{os}.yml
 
@@ -62,13 +62,13 @@ as a subentry ``pip:``.
 It is important to verify that that the newly created ``environment.yml`` file creates the correct environment.
 In order to create a testing environment, use the following command:
 
-.. code:: bash
+.. code-block:: bash
 
    conda create -f {course_number}_{year}.yml -n testing_{course_number}_{year}_{os}
 
 Activate the testing environment with:
 
-.. code:: bash
+.. code-block:: bash
 
    conda activate testing_{course_number}_{year}_{os}
 

@@ -44,7 +44,7 @@ Install everything at once
 
        **Note**: please copy *the entire line*.
 
-       .. code:: pwsh
+       .. code-block:: pwsh
 
           PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Windows_AutoInstall.ps1' -UseBasicParsing).Content}"
 
@@ -53,7 +53,7 @@ Install everything at once
    #.
        The script has finished when you see something like:
 
-       .. code:: bash
+       .. code-block:: bash
 
           Script has finished. You may now close the terminal...
 

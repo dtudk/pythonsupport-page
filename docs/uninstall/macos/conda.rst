@@ -15,7 +15,7 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 
 * If you have installed Miniconda through Homebrew, run the following command line in the terminal:
 
-  .. code:: bash
+  .. code-block:: bash
        
      brew remove miniconda
 
@@ -23,14 +23,14 @@ This guide will help you uninstall Conda from your computer. This can be useful 
       
      If you are unsure how you installed Miniconda, you can check by running the following command in your terminal. If the command returns ``miniconda``, it confirms that it was installed via Homebrew:
       
-     .. code:: bash
+     .. code-block:: bash
       
         brew list | grep miniconda
       
 
 * If you did not install Miniconda through Homebrew, you can remove it by running the following commands in your terminal:
 
-  .. code:: bash
+  .. code-block:: bash
      
      conda activate
      conda init --reverse --all
@@ -43,7 +43,7 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 
 * If you want to uninstall Anaconda, run the following commands in your terminal:
 
-  .. code:: bash
+  .. code-block:: bash
       
      
      conda activate

@@ -43,7 +43,7 @@ Getting started
 
          Open up a terminal (see :ref:`here <learn-more-open-terminal>`) and type, then press :kbd:`Enter`
 
-         .. code:: pwsh
+         .. code-block:: pwsh
 
             idle
 
@@ -57,7 +57,7 @@ Getting started
 
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
 
-         .. code:: python
+         .. code-block:: python
 
             print("hello")
 
@@ -66,7 +66,7 @@ Getting started
 
          Open up a terminal (see :ref:`here <learn-more-open-terminal>`) and type, then press :kbd:`Enter`
 
-         .. code:: bash
+         .. code-block:: bash
 
             idle3
 
@@ -79,7 +79,7 @@ Getting started
 
          The text you see indicates that you have opened a *Python Shell*. The lines starting with ">>>" are meant for Python code. Try typing or pasting in the following and press enter. 
 
-         .. code:: python
+         .. code-block:: python
                
             print("hello")
 
@@ -105,7 +105,7 @@ This is great for larger jobs and allows for reuse of your code.
 
       #. You should see a blank page. Type or paste the following code 
 
-         .. code:: python
+         .. code-block:: python
 
             # This program is for adding 2 numbers
 
@@ -148,7 +148,7 @@ This is great for larger jobs and allows for reuse of your code.
 
       #. You should see a blank page. Type or paste the following code 
 
-         .. code:: python
+         .. code-block:: python
 
             # This program is for adding 2 numbers
 

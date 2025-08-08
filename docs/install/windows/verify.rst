@@ -32,7 +32,7 @@ Verify that your installation is successful by following these steps:
 
 4. Copy the following Python code into the :guilabel:`IDLE` window, then press :kbd:`Enter`:
 
-   .. code:: python
+   .. code-block:: python
 
       import dtumathtools, pandas, scipy, statsmodels, uncertainties
 
@@ -65,7 +65,7 @@ Only follow these troubleshooting steps if something in the previous section did
 
   Paste the following line of code to the PowerShell window and press :kbd:`Enter`:
 
-  .. code:: pwsh
+  .. code-block:: pwsh
 
      conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 

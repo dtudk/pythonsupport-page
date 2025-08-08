@@ -54,14 +54,14 @@ One can list all *global* environments by:
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda env list
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda env list
 
@@ -87,7 +87,7 @@ For example, let us create an environment with Conda for Course A. An environmen
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          # create an environment named 'course-A' (in the global environment list)
          conda create --name course-A
@@ -97,7 +97,7 @@ For example, let us create an environment with Conda for Course A. An environmen
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          # create an environment named 'course-A' (in the global environment list)
          conda create --name course-A
@@ -121,21 +121,21 @@ can have *any* name):
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda env create -f environment.yml
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda env create -f environment.yml
 
 Here is an example ``environment.yml`` file that creates an environment
 named ``course-A``, with Python and ``numpy``:
 
-.. code:: yaml
+.. code-block:: yaml
 
    name: course-A
    channels:
@@ -157,7 +157,7 @@ Once the environment is created, one can use the environment by *activating* it.
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
         
          # if the enviroment was created with --name:
          conda activate course-A
@@ -167,7 +167,7 @@ Once the environment is created, one can use the environment by *activating* it.
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          # if the enviroment was created with --name:
          conda activate course-A
@@ -192,7 +192,7 @@ version, installing a specific package, running code in the environment, and exi
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          conda create --name numpy-env python={{python_version_recommended}}
          conda activate numpy-env
@@ -203,7 +203,7 @@ version, installing a specific package, running code in the environment, and exi
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda create --name numpy-env python={{python_version_recommended}}
          conda activate numpy-env
@@ -225,7 +225,7 @@ Finally, the environment is deactivated, returning the user to their previous en
 
 The equivalent ``environment.yml`` file would look like this:
 
-.. code:: yaml
+.. code-block:: yaml
 
    name: numpy-env
    dependencies:
@@ -321,7 +321,7 @@ An environment can be created using:
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          python -m venv <path to venv>
          # create an environment named 'course-A' in the current directory
@@ -330,7 +330,7 @@ An environment can be created using:
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          python3 -m venv <path to venv>
          # create an environment named 'course-A' in the current directory
@@ -348,14 +348,14 @@ Change ``course-A`` with the name of the environment.
       .. warning::
          Please see :ref:`this FAQ entry <faq-win-ps-execution-policy>`!
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          course-A\Scripts\Activate.ps1
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          source course-A/bin/activate
 
@@ -373,7 +373,7 @@ package, running a code using the environment, and exiting the environment.
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          python -m venv numpy-env
          numpy-env\Scripts\Activate.ps1
@@ -384,7 +384,7 @@ package, running a code using the environment, and exiting the environment.
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          python3 -m venv numpy-env
          source numpy-env/bin/activate
@@ -416,7 +416,7 @@ execute the code in your Jupyter Notebook by providing the necessary Python lang
 The simplest way to check whether your Jupyter Notebook is using your virtual environment
 is to execute the following code in a notebook cell:
 
-.. code:: python
+.. code-block:: python
 
    import sys
    print(sys.exec_prefix)
@@ -431,14 +431,14 @@ If not, install the kernel runner in the virtual environment:
    .. tab-item:: {{ windows }}
       :sync: windows
 
-      .. code:: powershell
+      .. code-block:: powershell
 
          python -m ipykernel install --prefix <path to venv|conda-env>
 
    .. tab-item:: {{ macos }}
       :sync: mac
 
-      .. code:: bash
+      .. code-block:: bash
 
          python3 -m ipykernel install --prefix <path to venv|conda-env>
 

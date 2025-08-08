@@ -42,7 +42,7 @@ Install everything at once
 
        **Note**: your password will not be shown while typing it.
 
-       .. code:: bash
+       .. code-block:: bash
 
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
 
@@ -53,7 +53,7 @@ Install everything at once
 
        The script has finished when you see something like:
 
-       .. code:: bash
+       .. code-block:: bash
 
           Script has finished. You may now close the terminal...
 

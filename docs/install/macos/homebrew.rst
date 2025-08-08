@@ -83,14 +83,14 @@ Step 2: Install Miniconda and Python
    #.
       Paste the following code in the Terminal and press :kbd:`Enter`.
 
-      .. code:: bash
+      .. code-block:: bash
 
          brew install --cask miniconda
 
    #.
       Paste the following code in the Terminal and press :kbd:`Enter`.
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda init "$(basename "${SHELL}")"
          eval "$(conda "shell.$(basename "${SHELL}")" hook)"
@@ -98,7 +98,7 @@ Step 2: Install Miniconda and Python
    #.
       Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda config --add channels conda-forge ; conda config --remove channels defaults ; conda config --set channel_priority strict
 
@@ -107,7 +107,7 @@ Step 2: Install Miniconda and Python
    #.
       Run the following command in the Terminal by copying, pasting and pressing :kbd:`Enter`:
 
-      .. code:: bash
+      .. code-block:: bash
 
          conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
@@ -121,7 +121,7 @@ Step 3: Install Visual Studio Code
     
    Install Visual Studio Code by pasting the following in your terminal and pressing :kbd:`Enter`.
 
-   .. code:: bash
+   .. code-block:: bash
 
       brew install --cask visual-studio-code
 
