@@ -17,6 +17,24 @@ python-version.min = "3.8"
 python-version.recommended = "3.11"
 python-version.max = "3.11"
 
+[pythonsupport.mailtemplate]
+
+mail = "pythonsupport@dtu.dk"
+subject = "Python Support Request - [replace with problem]"
+body = """
+
+- Relevant course number (if applicable):
+
+- Description of the issue experienced:
+
+- Error messages (if any):
+
+- Which versions of Python and/or packages do you have:
+
+Kind regards
+<insert name>
+"""
+
 
 [semester]
 # General, fill in information for all semesters

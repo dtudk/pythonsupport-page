@@ -2,7 +2,7 @@
 from docutils import nodes
 import urllib.parse
 
-def escape_backslash(text:str):
+def escape_backslash(text: str):
     return text.replace("\n", "\x00n")
 
 def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[]):
@@ -21,40 +21,33 @@ def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[
 
     # Needed since sphinx sends escaped backslashes
     text = text.replace("\x00n", "\n")
-    
-    if "<" not in text and ">" not in text:
-        display = text.strip()
-        email = text.strip()
 
-        uri = f"mailto:{email}"
-        node = nodes.reference(rawtext, display, refuri=uri, **options)
-        return [node], []
+    # Split into subject, body
+    display_email, *subject_body = text.split("|")
+
+    # Split text into display and email
+    display, *email = display_email.strip().split("<")
+    display = display.strip()
+
+    assert len(email) <= 1, "Email specification is longer than 1!"
+    if len(email) == 0:
+        email = display
+    email = email[0].strip()
+
+    subject_body = list(map(urllib.parse.quote, subject_body))
+    assert len(subject_body) <= 2, "Subject+body specification can maximally be 2 long!"
+
+    if len(subject_body) == 1:
+        subject = subject_body[0]
+        uri = f"mailto:{email}?subject={subject}"
+
+    elif len(subject_body) == 2:
+        subject, body = subject_body
+        uri = f"mailto:{email}?subject={subject}&body={body}"
 
     else:
-        display, params = text.split("<", 1)
-        params, _ = params.rsplit(">", 1)
-        parsed_input = params.split("|")
+        uri = f"mailto:{email}"
 
-        display = display.strip()
+    node = nodes.reference(rawtext, display, refuri=uri, **options)
 
-        if len(parsed_input) == 1:
-            email = parsed_input[0].strip()
-            uri = f"mailto:{email}"
-            node = nodes.reference(rawtext, display, refuri=uri, **options)
-            return [node], []
-            
-        elif len(parsed_input) == 3:
-            email = parsed_input[0].strip()
-            subject = parsed_input[1].strip()
-            body = parsed_input[2].strip()
-            email = email.strip()
-
-            subject = urllib.parse.quote(subject)
-            body = urllib.parse.quote(body)
-
-            uri = f"mailto:{email}?subject={subject}&body={body}"
-            node = nodes.reference(rawtext, display, refuri=uri, **options)
-            return [node], []
-            
-        else:
-            raise ValueError("The :mailto: role takes none, one or three parameters.")
+    return [node], []

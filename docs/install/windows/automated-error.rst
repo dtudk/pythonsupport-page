@@ -11,7 +11,7 @@
    script which unfortunately happens sometimes.
    Please try to use :doc:`this guide <manual>` instead.
    You are also more than welcome to visit us during our office hours,
-   or contact us via :mailto:`email <pythonsupport@dtu.dk|{{mailto_template_subject}}|{{mailto_template_body}}>`
+   or contact us via :mailto:`email <pythonsupport@dtu.dk>|{{mailto_subject}}|{{mailto_body}}>`
    or `Discord <ps-discord-invite_>`_.
    More information can be found at our :ref:`homepage <reach-us-reference>`.
 

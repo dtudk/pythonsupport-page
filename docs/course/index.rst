@@ -22,7 +22,7 @@ Template guide for a new course
 -------------------------------
 
 Are you teaching a DTU course? Host your guidelines here!
-Contact us at :mailto:`pythonsupport@dtu.dk<pythonsupport@dtu.dk|{{mailto_template_subject}}|{{mailto_template_body}}>` or open a :gh-issue:`new issue <new>`.
+Contact us at :mailto:`pythonsupport@dtu.dk|{{mailto_subject}}|{{mailto_body}}>` or open a :gh-issue:`new issue <new>`.
 The course template is below.
 
 .. note::
@@ -35,7 +35,7 @@ The course template is below.
 .. tip::
 
    If an error occurs during the installation process, it is *vital*
-   to report it to :mailto:`pythonsupport@dtu.dk<pythonsupport@dtu.dk|{{mailto_template_subject}}|{{mailto_template_body}}>` so we can correct it or
+   to report it to :mailto:`pythonsupport@dtu.dk|{{mailto_subject}}|{{mailto_body}}>` so we can correct it or
    add content for workarounds.
 
    Thanks!

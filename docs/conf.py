@@ -21,9 +21,10 @@ _cwd = Path().resolve()
 
 # add the exts folder
 sys.path.insert(1, str(_cwd))
+
+from ps_modules.create_timetabs import create_time_table
 from ps_modules.mailto_role import escape_backslash, mailto_role
 from ps_modules.pageredirects import *
-from ps_modules.create_timetabs import create_time_table
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -183,8 +184,7 @@ extlinks = {
 _discord_general = _pythonsupport["discord-channel"]
 _discord_invite = _pythonsupport["discord-invite"]
 
-mail_template_subject = "Python Support Request - [Brief Description of the Problem]"
-mail_template_body = "Please include the following information:\n- Relevant course number (if any):\n- Description of the issue:\n- Error messages (if any):"
+mailto_template = _pythonsupport["mailtemplate"]
 
 # Add common links to all
 rst_epilog = f"""\
@@ -213,7 +213,6 @@ rst_epilog = f"""\
 .. _env-venv: https://docs.python.org/3/library/venv.html
 .. _env-conda: https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 .. _env-virtualenv: https://virtualenv.pypa.io/en/latest/
-.. |mail_link| replace:: :mailto:`pythonsupport@dtu.dk <pythonsupport@dtu.dk|{escape_backslash(mail_template_subject)}|{escape_backslash(mail_template_body)}>`
 """
 
 
@@ -248,7 +247,8 @@ _icon_links = [
     },
     {
         "name": "Contact us by mail",
-        "url": f"mailto:{_pythonsupport['mail']}?subject={urllib.parse.quote(mail_template_subject)}&body={urllib.parse.quote(mail_template_body)}",
+        "url":
+        f"mailto:{_pythonsupport['mail']}?subject={urllib.parse.quote(mailto_template['subject'])}&body={urllib.parse.quote(mailto_template['body'])}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
         "type": "fontawesome",
     },
@@ -501,12 +501,14 @@ html_context = {
     "timetable_widths": "15 17 17 17 17 17",
     # online days
     "online_days": _online_days,
-    # to use in custom links: mailto:pythonsupport@dtu.dk?subject={{escaped_mail_template_subject}}&body={{escaped_mail_template_body}}
-    "escaped_mail_template_subject": urllib.parse.quote(mail_template_subject), 
-    "escaped_mail_template_body": urllib.parse.quote(mail_template_body),
-    # tou use in :mailto: roles: :mailto:`contact us <pythonsupport@dtu.dk|{{mailto_template_subject}}|{{mailto_template_body}}>`.
-    "mailto_template_subject": escape_backslash(mail_template_subject),         
-    "mailto_template_body": escape_backslash(mail_template_body)
+    # to use in custom links:
+    #  mailto:pythonsupport@dtu.dk?subject={{qmailto_subject}}&body={{qmailto_body}}
+    "qmailto_subject": urllib.parse.quote(mailto_template["subject"]),
+    "qmailto_body": urllib.parse.quote(mailto_template["body"]),
+    # to use in :mailto: roles:
+    #  :mailto:`contact us <pythonsupport@dtu.dk>|{{mailto_subject}}|{{mailto_body}}>`.
+    "mailto_subject": escape_backslash(mailto_template["subject"]),
+    "mailto_body": escape_backslash(mailto_template["body"]),
 }
 
 
