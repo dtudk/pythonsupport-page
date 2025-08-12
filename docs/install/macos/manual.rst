@@ -19,8 +19,7 @@
 
     .. raw:: html
 
-       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=6e4b5e83-a182-4f4d-936c-b1dc00bb2e1d" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
+       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=14a24352-1f46-4f4a-b6c1-b30000851b4f&start=0" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 Step 1: Install Miniconda
