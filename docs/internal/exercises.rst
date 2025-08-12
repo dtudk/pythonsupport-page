@@ -103,7 +103,7 @@ Exercise 1
    It might be a good idea if you also try and install Python like this (forcefully)
    to know how the error message looks.
 
-2. Install :ref:`conda <install-conda>` in its minimal installation (MiniConda).
+2. Install :ref:`conda <install-python>` in its minimal (manual) installation (MiniConda).
 
    In the semester 2023; the recommended usage will be ``pip``.
    Likely there will be some students with a prior ``conda`` installation.

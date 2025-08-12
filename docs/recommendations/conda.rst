@@ -1,3 +1,5 @@
+:orphan:
+
 .. _rec-conda:
 
 Conda
