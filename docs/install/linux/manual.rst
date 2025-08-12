@@ -3,13 +3,6 @@
 {{ linux_icon }} --- Manual Installation 
 ==========================================
 
-.. .. button-ref:: ../macos/homebrew
-   :ref-type: doc
-   :align: right
-   :color: primary
-
-   Press here for {{ macos }} {{ apple_icon }}
-
 
 .. _install-python-linux-conda:
 

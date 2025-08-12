@@ -4,13 +4,6 @@
 {{ apple_icon }} --- Automated Installation
 ============================================
 
-.. button-ref:: ../windows/automated
-   :ref-type: doc
-   :align: right
-   :color: primary
-   
-    Press here for Windows {{ windows_icon }}
-
 
 .. dropdown:: {{ video_install }}
     :open:

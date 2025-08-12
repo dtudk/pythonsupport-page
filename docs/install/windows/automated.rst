@@ -3,14 +3,6 @@
 {{ windows_icon }}  --- Automated Installation
 ===============================================
 
-.. button-ref:: ../macos/automated
-   :ref-type: doc
-   :align: right
-   :color: primary
-   
-    Press here for {{ macos }} {{ apple_icon }}
-
-
 .. dropdown:: {{ video_install }}
     :open:
     :color: info
