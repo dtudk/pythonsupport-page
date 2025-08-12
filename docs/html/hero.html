@@ -6,23 +6,25 @@
         <div class="col-10 col-sm-8 col-lg-5 me-auto ms-auto d-flex justify-content-center mt-0"
             style="position: relative;">
 
-            <img src="/_static/Coral_Red_CMYK.svg" id="hero_logo" class="d-block mx-lg-auto img-fluid pe-none"
-                width="170" height="200" loading="lazy">
+            <a href="https://www.dtu.dk" id="hero_logo" class="logo-container">
+            <img src="_static/DTU_logo_Coral_Red_CMYK.svg" id="hero_logo_img" class="d-block mx-lg-auto img-fluid pe-none"
+                width="170" height="200" alt="DTU Logo">
+            </a>
 
+            <!-- Rotating logo's -->
             <img id="numpy_logo" class="hero-icon pe-none" src="https://numpy.org/images/logo.svg" width="50"
-                height="50" loading="lazy">
-
+                height="50" loading="lazy" alt="numpy">
             <img id="pandas_logo" class="hero-icon pe-none" src="https://pandas.pydata.org/static/img/pandas_mark.svg"
-                width="50" height="50" loading="lazy">
+                width="50" height="50" loading="lazy" alt="pandas">
             <img id="matplotlib_logo" class="hero-icon pe-none" src="https://matplotlib.org/_static/images/logo2.svg" width="50"
-                height="50" loading="lazy">
+                height="50" loading="lazy" alt="matplotlib">
             <img id="scipy_logo" class="hero-icon pe-none" src="https://scipy.org/images/logo.svg" width="50"
-                height="50" loading="lazy">
+                height="50" loading="lazy" alt="scipy">
             <img id="jupyter_logo" class="hero-icon pe-none" src="https://jupyter.org/assets/homepage/main-logo.svg"
-                width="50" height="50" loading="lazy">
-            <img id="pytorch_logo" class="hero-icon pe-none" src="https://pytorch.org/assets/images/pytorch-logo.png"
-                width="50" height="50" loading="lazy">
-
+                width="50" height="50" loading="lazy" alt="jupyter">
+            <img id="python_logo" class="hero-icon pe-none"
+                src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                width="50" height="60" loading="lazy" alt="Python">
         </div>
         <div class="d-grid col-lg-7 gap-3 mt-0">
             <h1 class="display-4 fw-bold lh-1 mb-3">DTU Python Installation Support</h1>
@@ -96,16 +98,16 @@
                 const logoHeight = logoEl.offsetHeight;
 
                 // value from 0 to 1
-                progress = ((time - startTime) % duration) / duration
+                progress = ((time - startTime) % duration) / duration * 2 * Math.PI
 
-                let radiusTime = (time / 1000 - startTime / 1000) - 0.5
+                let radiusTime = (time - startTime) / 1000 - 0.5
                 radiusTime = radiusTime > 0 ? radiusTime : 0
                 aniProgress = Math.pow(Math.tanh(radiusTime), 1 / 5)
                 radiusAni = radius * aniProgress
 
                 // update position
-                logoEl.style.left = centerElLeft + centerWidth / 2 + radiusAni * Math.cos(2 * Math.PI * progress + phaseOffset) - logoWidth/2 + "px"
-                logoEl.style.top = centerElTop + centerHeight / 2 + radiusAni * Math.sin(2 * Math.PI * progress + phaseOffset) - logoHeight/2 + "px"
+                logoEl.style.left = centerElLeft + centerWidth / 2 + radiusAni * Math.cos(progress + phaseOffset) - logoWidth/2 + "px"
+                logoEl.style.top = centerElTop + centerHeight / 2 + radiusAni * Math.sin(progress + phaseOffset) - logoHeight/2 + "px"
                 logoEl.style.opacity = aniProgress
                 requestAnimationFrame(step)
             }
@@ -122,6 +124,6 @@
         orbitLogo('hero_logo', 'matplotlib_logo', 2 * Math.PI / 3);
         orbitLogo('hero_logo', 'scipy_logo', Math.PI);
         orbitLogo('hero_logo', 'jupyter_logo', 4 * Math.PI / 3);
-        orbitLogo('hero_logo', 'pytorch_logo', 5 * Math.PI / 3);
+        orbitLogo('hero_logo', 'python_logo', 5 * Math.PI / 3);
     });
 </script>
