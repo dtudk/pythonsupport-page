@@ -82,10 +82,10 @@
 
     logo_animation = animate('#hero_logo', {
         scale: [
-            { to: 1.1, ease: 'inOut(3)', duration: 50 },
-            { to: 1, ease: createSpring({ stiffness: 300 }), duration: 50 }
+            { to: 1.1, ease: 'inOut(3)', speed: 20 },
+            { to: 1, ease: createSpring({ stiffness: 300 }), speed: 20 }
         ],
-        delay: 500
+        delay: 100
     });
 
     // Generalized orbit animation for any logo
@@ -93,32 +93,26 @@
         const centerEl = document.getElementById(centerId);
         const logoEl = document.getElementById(logoId);
 
-        let radius = 180;
-        const duration = 50_000;
+        const radius = 130;
+        const speed = 50_000;
 
         const animate = (startTime) => {
             const step = (time) => {
 
-                const centerElTop = centerEl.offsetTop;
-                const centerElLeft = centerEl.offsetLeft;
-
-                const centerWidth = centerEl.offsetWidth;
-                const centerHeight = centerEl.offsetHeight;
-
                 const logoWidth = logoEl.offsetWidth;
                 const logoHeight = logoEl.offsetHeight;
 
-                // value from 0 to 1
-                progress = ((time - startTime) % duration) / duration * 2 * Math.PI
+                // value from 0 to 2pi
+                progress = (time - startTime) % speed / speed * 2 * Math.PI
 
                 let radiusTime = (time - startTime) / 1000 - 0.5
                 radiusTime = radiusTime > 0 ? radiusTime : 0
-                aniProgress = Math.pow(Math.tanh(radiusTime), 1 / 5)
+                aniProgress = Math.pow(Math.tanh(radiusTime), 1 / 6)
                 radiusAni = radius * aniProgress
 
                 // update position
-                logoEl.style.left = centerElLeft + centerWidth / 2 + radiusAni * Math.cos(progress + phaseOffset) - logoWidth/2 + "px"
-                logoEl.style.top = centerElTop + centerHeight / 2 + radiusAni * Math.sin(progress + phaseOffset) - logoHeight/2 + "px"
+                logoEl.style.left = centerEl.offsetLeft + centerEl.offsetWidth / 2 + radiusAni * Math.cos(progress + phaseOffset) - logoWidth/2 + "px"
+                logoEl.style.top = centerEl.offsetTop + centerEl.offsetHeight / 2 + radiusAni * Math.sin(progress + phaseOffset) - logoHeight/2 + "px"
                 logoEl.style.opacity = aniProgress
                 requestAnimationFrame(step)
             }
