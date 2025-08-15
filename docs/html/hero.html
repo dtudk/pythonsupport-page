@@ -109,6 +109,7 @@
                 radiusTime = radiusTime > 0 ? radiusTime : 0
                 aniProgress = Math.pow(Math.tanh(radiusTime), 1 / 6)
                 radiusAni = radius * aniProgress
+                progress = 0
 
                 // update position
                 logoEl.style.left = centerEl.offsetLeft + centerEl.offsetWidth / 2 + radiusAni * Math.cos(progress + phaseOffset) - logoWidth/2 + "px"
