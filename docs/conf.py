@@ -16,7 +16,8 @@ import sys
 import urllib.parse
 import yaml
 from jinja2 import Environment, FileSystemLoader
-html_logo = "_static/DTU_logo_Coral_RGB.png"
+
+
 
 
 _cwd = Path().resolve()
@@ -58,6 +59,7 @@ project = "DTU Python support"
 # conf.py
 html_title = ""
 html_short_title = ""
+html_logo = "_static/DTU_logo_Coral_Red_CMYK.svg"
 
 copyright = f"{year}, DTU Python support"
 author = "DTU Python support developers"

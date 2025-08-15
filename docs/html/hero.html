@@ -1,15 +1,47 @@
 <!-- This hero is a modified version an example found here https://getbootstrap.com/docs/5.0/examples/heroes/ -->
+<script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
+
 <div class="flex py-5">
-    <div class="row flex-lg-row-reverse align-items-center py-5">
-        <div class="col-10 col-sm-8 col-lg-5">
-            <!-- <img src="/_static/hero_image.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="300"
-                height="300" loading="lazy"> -->
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-5 me-auto ms-auto d-flex justify-content-center mt-0"
+            style="position: relative;">
+
+            <a href="https://www.dtu.dk" id="hero_logo" class="logo-container">
+            <img src="_static/DTU_logo_Coral_Red_CMYK.svg" id="hero_logo_img" class="d-block mx-lg-auto img-fluid pe-none"
+                width="100" height="117" alt="DTU Logo"
+                title="Visit the homepage of DTU">
+            </a>
+
+            <!-- Rotating logo's -->
+            <img id="numpy_logo" class="hero-icon pe-none" src="https://numpy.org/images/logo.svg"
+                loading="lazy" alt="numpy"
+                 title="The most widely used numerical infrastructure!">
+            <img id="pandas_logo" class="hero-icon pe-none" src="https://pandas.pydata.org/static/img/pandas_mark.svg"
+                loading="lazy" alt="pandas"
+                title="Providing dataframe and data-science tools">
+            <img id="matplotlib_logo" class="hero-icon pe-none" src="https://matplotlib.org/_static/images/logo2.svg"
+                loading="lazy" alt="matplotlib"
+                title="Plots, plots, plots...">
+            <img id="scipy_logo" class="hero-icon pe-none" src="https://scipy.org/images/logo.svg"
+                loading="lazy" alt="scipy"
+                title="Scientific package for anything that's not in numpy.">
+            <img id="jupyter_logo" class="hero-icon pe-none" src="https://jupyter.org/assets/homepage/main-logo.svg"
+                loading="lazy" alt="jupyter"
+                title="Notebooks with Python, a widely used GUI for programming.">
+            <img id="python_logo" class="hero-icon pe-none"
+                src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                height="56px" loading="lazy" alt="Python"
+                title="Python... That's why we are here, right?">
         </div>
-        <div class="d-grid col-lg-7 gap-3">
+        <div class="d-grid col-lg-7 gap-3 mt-0">
             <h1 class="display-4 fw-bold lh-1 mb-3">DTU Python Installation Support</h1>
-            <p class="fs-5 text">Our goal is to ensure that students can get a Python environment up and running according to the needs of DTU courses.</p>
+            <p class="fs-5 text">Our goal is to ensure that students can get a Python environment up and running
+                according to the needs of DTU courses.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" onclick="PyS_redirectUser('package-managed.html');">Download Python</button>
+                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"
+                    onclick="PyS_redirectUser('package-managed.html');"
+                    title="Install Python according to the Polytechnical foundation courses"
+                    >Download Python</button>
                 <a href="learn-more/index.html" class="btn btn-link btn-lg px-4">See tutorials</a>
             </div>
         </div>
@@ -17,18 +49,87 @@
 </div>
 
 <style>
-    .prev-next-footer {
-        display: none;
+  .prev-next-footer {
+    display: none;
+  }
+
+  section {
+    margin-bottom: 4rem;
+  }
+
+  @media (min-width: 960px) {
+    .bd-article-container {
+      margin: auto;
     }
-    section {
-        margin-bottom: 4rem;
+
+    .bd-sidebar-primary {
+      display: none;
     }
-    @media (min-width: 960px) {
-        .bd-article-container {
-            margin: auto;
-        }
-        .bd-sidebar-primary {
-            display: none;
-        }
-    }
+  }
+  #hero_logo {
+    background-color: var(--dtu-white) !important;
+  }
+  .hero-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: var(--dtu-white) !important;
+  }
 </style>
+
+<script>
+    const { animate, utils, createDraggable, createSpring, createTimeline } = anime;
+
+    logo_animation = animate('#hero_logo', {
+        scale: [
+            { to: 1.1, ease: 'inOut(3)', speed: 20 },
+            { to: 1, ease: createSpring({ stiffness: 300 }), speed: 20 }
+        ],
+        delay: 100
+    });
+
+    // Generalized orbit animation for any logo
+    function orbitLogo(centerId, logoId, phaseOffset = 0) {
+        const centerEl = document.getElementById(centerId);
+        const logoEl = document.getElementById(logoId);
+
+        const radius = 130;
+        const speed = 50_000;
+
+        const animate = (startTime) => {
+            const step = (time) => {
+
+                const logoWidth = logoEl.offsetWidth;
+                const logoHeight = logoEl.offsetHeight;
+
+                // value from 0 to 2pi
+                progress = (time - startTime) % speed / speed * 2 * Math.PI
+
+                let radiusTime = (time - startTime) / 1000 - 0.5
+                radiusTime = radiusTime > 0 ? radiusTime : 0
+                aniProgress = Math.pow(Math.tanh(radiusTime), 1 / 6)
+                radiusAni = radius * aniProgress
+                progress = 0
+
+                // update position
+                logoEl.style.left = centerEl.offsetLeft + centerEl.offsetWidth / 2 + radiusAni * Math.cos(progress + phaseOffset) - logoWidth/2 + "px"
+                logoEl.style.top = centerEl.offsetTop + centerEl.offsetHeight / 2 + radiusAni * Math.sin(progress + phaseOffset) - logoHeight/2 + "px"
+                logoEl.style.opacity = aniProgress
+                requestAnimationFrame(step)
+            }
+
+            requestAnimationFrame(step)
+        }
+
+        animate(performance.now())
+    }
+    // Start orbits
+    document.addEventListener("DOMContentLoaded", () => {
+        orbitLogo('hero_logo', 'numpy_logo', 0);
+        orbitLogo('hero_logo', 'pandas_logo', Math.PI / 3);
+        orbitLogo('hero_logo', 'matplotlib_logo', 2 * Math.PI / 3);
+        orbitLogo('hero_logo', 'scipy_logo', Math.PI);
+        orbitLogo('hero_logo', 'jupyter_logo', 4 * Math.PI / 3);
+        orbitLogo('hero_logo', 'python_logo', 5 * Math.PI / 3);
+    });
+</script>
