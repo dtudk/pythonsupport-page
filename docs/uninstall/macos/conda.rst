@@ -34,9 +34,10 @@ This guide will help you uninstall Conda from your computer. This can be useful 
      
      conda activate
      conda init --reverse --all
-     cd
      sudo rm -rf ~/miniconda3
      sudo rm -rf /opt/miniconda3
+     rm -rf ${HOME}/.conda
+     rm -f "${HOME}/.condarc"
 
 
       
@@ -48,9 +49,10 @@ This guide will help you uninstall Conda from your computer. This can be useful 
      
      conda activate
      conda init --reverse --all
-     cd
      sudo rm -rf ~/anaconda3
      sudo rm -rf /opt/anaconda3
+     rm -rf ${HOME}/.conda
+     rm -f "${HOME}/.condarc"
 
 * If you want to uninstall Miniforge, run the following commands in your terminal:
 
@@ -61,5 +63,5 @@ This guide will help you uninstall Conda from your computer. This can be useful 
      conda init --reverse --all
      CONDA_BASE_ENVIRONMENT=$(conda info --base)
      rm -rf ${CONDA_BASE_ENVIRONMENT}
+     rm -rf ${HOME}/.conda
      rm -f "${HOME}/.condarc"
-     rm -fr ${HOME}/.conda
