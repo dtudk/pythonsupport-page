@@ -47,6 +47,8 @@ Step 1: Install Miniforge
          source "${HOME}/conda/etc/profile.d/conda.sh"
          conda activate
          conda init zsh | conda init bash
+       
+      .. include:: /_rst_includes/tip-copy.rst
 
    #.
       Close and reopen your terminal for the changes to take effect.
