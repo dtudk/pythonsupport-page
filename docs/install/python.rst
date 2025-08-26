@@ -77,9 +77,9 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
 -----------------------------------------------
 
 * **Recommended** {{ arrow_icon }} The :doc:`automated installation <macos/automated>` requires minimal intervention.
-.. * The :doc:`package-managed installation guide <macos/homebrew>` allows you to set up Python step by step.
 * The :doc:`manual installation guide <macos/manual>` is recommended if you have had previous failures with both of the above options. 
 
+..  * The :doc:`package-managed installation guide <macos/homebrew>` allows you to set up Python step by step.
 
 .. _install-python-linux-list:
 

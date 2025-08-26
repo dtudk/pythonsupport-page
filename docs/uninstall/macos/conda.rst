@@ -1,6 +1,6 @@
 
 Uninstalling Conda
-===========================================
+-------------------
 
 This guide will help you uninstall Conda from your computer. This can be useful if:
 

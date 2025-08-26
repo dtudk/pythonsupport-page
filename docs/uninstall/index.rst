@@ -1,7 +1,7 @@
 .. _python-uninstall:
 
 Uninstall Software
-------------------
+===================
 
 In some cases, removing Python or an editor is necessary.
 Here you will find guides on how to uninstall **Conda**, **Python** and **Visual Studio Code**. 
