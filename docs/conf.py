@@ -15,6 +15,7 @@ import datetime
 import sys
 import urllib.parse
 import yaml
+from warnings import warn
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -661,6 +662,30 @@ def generate_env_pages_from_json(app):
                 out.write(rendered)
 
 
+def install_survey(app, exception):
+    """Copy in the survey links to the surveyq directory.
+
+    We will keep the `survey` for something else.
+    """
+    # Copy all files from `<root>/survey` into `outdir/surveyq`
+    print("install_survey")
+    top_dir = app.confdir / ".."
+    survey_dir = top_dir / "survey"
+    if not survey_dir.is_dir():
+        warn("Could not locate <>/survey folder, cannot enable survey sources")
+        return
+
+    import shutil
+
+    # Copy the folder, then delete the unnecessary files
+    survey_out_dir = app.outdir / "surveyq"
+    shutil.copytree(survey_dir, survey_out_dir)
+
+    # Clear out the files not necessary
+    for del_file in ("readme.md",):
+        (survey_out_dir / del_file).unlink(True)
+
+
 def setup(app):
 
     app.connect('builder-inited', generate_env_pages_from_json)
@@ -669,4 +694,6 @@ def setup(app):
     app.connect("html-page-context", add_title_to_context)
 
     app.add_role("mailto", mailto_role)
+
+    app.connect('build-finished', install_survey)
 

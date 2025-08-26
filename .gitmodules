@@ -1,0 +1,3 @@
+[submodule "survey"]
+	path = survey
+	url = git@github.com:dtudk/pythonsupport-survey.git
