@@ -17,7 +17,7 @@ For `conda` to install the correct dependencies use the following template:
 .. code-block:: yaml
 
     metadata:
-      course_full_name: "xxxxx Course name"
+      course_full_name: "Course name"
       course_number: "xxxxx"
       course_year: "2026"
       course_semester: "Spring"
@@ -84,5 +84,4 @@ In order for DTU Pythonsupport to provide guides and support for the course plea
 send the environment file and verification script to :mailto:`pythonsupport@dtu.dk`.
 
 When we have verified the installation process, the course will be listed on the :ref:`environments list <environments-list>`.
-
 
