@@ -43,7 +43,7 @@ Reach us
       | Building **302**, room **92**.
 
       | Thursday (12:15-16):
-      | Building **358**, room to be desided (**??**).
+      | Building **358**, room **43**.
 
       | Click to see detailed office hours.
 

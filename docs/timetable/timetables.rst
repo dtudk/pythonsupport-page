@@ -18,7 +18,7 @@
      - 302.A92, or online
      - 302.A92, or online
      - 302.A92, or online
-     - 302.A92 / 358.??, or online
+     - 302.A92 / 358.43, or online
      - 302.A92, or online
    * - 18-20
      - Online only
