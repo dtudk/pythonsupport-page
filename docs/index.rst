@@ -31,9 +31,13 @@
 Reach us
 --------
 
+.. .. grid-item-card:: :fas:`person-running` -- Visit us
+      :link: #office-hours
+
+      Closed until the Autumn semester (1st of September).
+
 .. grid:: 1 1 1 3
    :gutter: 1
-
 
    .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
@@ -46,11 +50,6 @@ Reach us
       | Building **358**, room **43**.
 
       | Click to see detailed office hours.
-
-  .. .. grid-item-card:: :fas:`person-running` -- Visit us
-      :link: #office-hours
-
-      Closed until the Autumn semester (1st of September).
 
    .. grid-item-card:: :fas:`envelope` -- E-mail us
       :link: mailto:pythonsupport@dtu.dk?subject={{qmailto_subject}}&body={{qmailto_body}}
