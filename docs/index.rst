@@ -14,7 +14,7 @@
       :read-time: 10-14
       :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. article-info::
+.. .. article-info::
    :author: Closed until the Autumn semester. No help during exam period!
    :date: 13th of May -- 1st of September
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
@@ -34,20 +34,20 @@ Reach us
 .. grid:: 1 1 1 3
    :gutter: 1
 
-   ..
-      .. grid-item-card:: :fas:`person-running` -- Visit us
-         :link: #office-hours
 
-         | Open in 13 week semesters.
-         | Mon -- Fri (see table):
-         | Building **302**, room **92**.
+   .. grid-item-card:: :fas:`person-running` -- Visit us
+      :link: #office-hours
 
-         | Thursday (12:15-16):
-         | Building **358**, room **43**.
+      | Open in 13 week semesters.
+      | Mon -- Fri (see table):
+      | Building **302**, room **92**.
 
-         | Click to see detailed office hours.
+      | Thursday (12:15-16):
+      | Building **358**, room to be desided (**??**).
 
-   .. .. grid-item-card:: :fas:`person-running` -- Visit us
+      | Click to see detailed office hours.
+
+  .. .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
       Closed until the Autumn semester (1st of September).
@@ -107,14 +107,14 @@ computer and helping you prepare to start programming with Python.
 Office hours
 ------------
 
-.. article-info::
+.. .. article-info::
    :author: Closed until the Autumn semester. No help during exam period!
    :date: 13th of May -- 1st of September
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. .. include:: /timetable/timetables.rst
+.. include:: /timetable/timetables.rst
 
-.. *Available via online channels (e-mail and Discord) during office hours.*
+*Available via online channels (e-mail and Discord) during office hours.*
 
 .. toctree::
    :maxdepth: 1
