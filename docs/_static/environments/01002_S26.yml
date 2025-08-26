@@ -1,0 +1,15 @@
+metadata:
+  course_full_name: "Mathematics 1b"
+  course_number: "01002"
+  course_year: "2026"
+  course_semester: "Spring"
+
+name: 01002_S26
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyter
+  - dtumathtools
+  - pandas
+  - scipy

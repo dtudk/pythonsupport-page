@@ -1,9 +1,11 @@
+:orphan:
 
 Windows Arm Support
 ===================
 
 Currently conda is not officially supported on ARM windows machines.
-Following our guides users currently install a x64 conda release which
+However, Windows implements an x86-64 emulator similarly to MacOS.
+Following our guides users currently install an x64 conda release which
 is emulated by windows. For most use cases emulation is enough for
 students to get by.
 
@@ -14,6 +16,7 @@ issues:
 * `conda [Support for Windows on Arm #11472] <https://github.com/conda/conda/issues/11472>`_
 
 It looks like there is a long way until conda adopts win-arm64 into its ecosystem.
+
 
 When Emulation is Not a Viable Option
 -------------------------------------
