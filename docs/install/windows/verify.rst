@@ -53,11 +53,16 @@ Troubleshooting
 
 Only follow these troubleshooting steps if something in the previous section did not check out.
 
-* Ensure that Miniconda is installed:
+
+.. todo::
+
+   check how this should be done
+
+* Ensure that Miniforge is installed:
   Search for the ``Anaconda Powershell`` prompt (it will say ``Anaconda Powershell Prompt (Miniconda3)``)
   on your computer and open it up.
 
-  If you cannot find it, press :ref:`here to install Miniconda <install-python-windows-conda>`.
+  If you cannot find it, press :ref:`here to install conda <install-python-windows-manual-conda>`.
 
 * After opening the Anaconda Powershell, type ``conda init`` and press :kbd:`Enter`.
 

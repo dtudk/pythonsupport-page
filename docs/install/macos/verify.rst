@@ -7,7 +7,7 @@ Verification
     :color: info
 
     .. raw:: html
-      
+
         <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1e5c5e32-74df-49f8-8bec-b308006414a1" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 Verify that your installation is successful by following these steps:
@@ -55,8 +55,8 @@ Troubleshooting
 Only follow these troubleshooting steps if something in the previous section did not check out.
 
 
-* Ensure that Miniconda is installed, follow
-  :ref:`these instructions <install-python-macos-conda>`.
+* Ensure that Miniforge is installed, follow
+  :ref:`these instructions <install-python-macos-manual-conda>`.
 
 * Ensure the packages are installed (if they are already installed, this will not do anything).
 

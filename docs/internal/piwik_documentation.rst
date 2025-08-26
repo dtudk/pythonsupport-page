@@ -127,7 +127,7 @@ Examples are:
     **Number of install errors**: Display the "Visitors" and "Operating system" and filter against all URL's that contain "automated-error". This is useful since it can tell us if we have a major problem with the automatic install on a specific system.
 
 *
-    **Mean time on install page**: Display "average time on page" and filter for "Page URL" contains "https://pythonsupport.dtu.dk/install/". This is useful in that it can indicate how easy the install guides are to follow.
+    **Mean time on install page**: Display "average time on page" and filter for "Page URL" contains ``https://pythonsupport.dtu.dk/install/``. This is useful in that it can indicate how easy the install guides are to follow.
 
 
 .. figure:: ./images/piwik_documentation/piwik_widget.png

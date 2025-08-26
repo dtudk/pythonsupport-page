@@ -1,4 +1,4 @@
-.. _install-python-windows:
+.. _install-python-windows-manual:
 
 {{ windows_icon }} --- Manual Installation 
 ==========================================
@@ -7,43 +7,60 @@
     :open:
     :color: info
 
-    .. raw:: html
+    This video is currently outdated. An updated one will be posted as soon as possible.
+
+    Sorry for the inconvenience!
+
+    .. .. raw:: html
 
        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=5ed67b06-49e4-4ebe-a021-b2fe00947439" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-.. _install-python-windows-conda:
+.. _install-python-windows-manual-conda:
 
-Step 1: Install Miniconda
+Step 1: Install Miniforge
 --------------------------
 
 .. card:: 
 
    #.
-      Click `here  <https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe>`__ to download the installer.
+      Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe>`__ to download the installer.
 
    #. Open the installer, once it has been downloaded. 
 
    #.
       Follow the instructions from the installer.
       Make sure to cross off all the options regarding ``PATH``, as shown below.
+      
+      .. todo::
+
+	 fix this image!
 
       .. image:: /images/install/Miniconda-install-path.png
          :width: 400
          :align: center
 
 
-.. _install-python-windows-python:
+.. _install-python-windows-manual-python:
 
 Step 2: Install Python
 --------------------------
 
 .. card:: 
 
+   .. todo::
+    
+      change this, it is not updated to reflect the actual behaviour
+
    #.
       Open :menuselection:`Anaconda PowerShell` as an `Administrator` by opening the menu bar, then search for :menuselection:`Anaconda PowerShell`.
 
       Once you see Anaconda PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
+
+
+      .. todo::
+
+	 fix this image
 
       .. image:: /images/install/windows-anaconda-ps-run-admin.png
          :width: 400
@@ -65,10 +82,6 @@ Step 2: Install Python
 
          conda init
 
-      .. code-block:: pwsh
-
-         conda config --add channels conda-forge ; conda config --remove channels defaults ; conda config --set channel_priority strict
-
    #.
       Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
 
@@ -78,7 +91,7 @@ Step 2: Install Python
 
 
 
-.. _install-python-windows-vscode:
+.. _install-python-windows-manual-vscode:
 
 Step 3: Install Visual Studio Code
 -----------------------------------
@@ -99,7 +112,7 @@ Step 3: Install Visual Studio Code
       Open the installer and follow the instructions. 
 
 
-.. _install-python-windows-vscode-exts:
+.. _install-python-windows-manual-vscode-exts:
 
 Step 4: Install extensions for Visual Studio Code
 ---------------------------------------------------

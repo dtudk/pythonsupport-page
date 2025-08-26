@@ -22,7 +22,7 @@ Problems with Python and its Installation
         Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
 
         % python
-        Python 3.9.7 (default, Sep 16 2021, 16:59:01) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+        Python {{python_version_recommended}}.1 (default, Sep 16 2021, 16:59:01) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
         Type "help", "copyright", "credits" or "license" for more information.
         >>> import "module_name"
         >>>
@@ -39,7 +39,7 @@ Problems with Python and its Installation
         unable to initialize device PRN
 
         % python
-        Python 3.9.7 (default, Sep 16 2021, 16:59:01) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+        Python {{python_version_recommended}}.1 (default, Sep 16 2021, 16:59:01) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
         Type "help", "copyright", "credits" or "license" for more information.
         >>> print("Hello, World!")
         Hello, World!
@@ -156,10 +156,10 @@ Problems with Conda and Packages
 
     If you have installed the package before, you need to change your kernel.
     If you are using a `Jupyter Notebook` you have to go to the to right corner, where it says `Python 3.XX.XX` (this is the python version you are using). You need to click on it, after which a dropdown will come down.
-    Here you need to click :menuselection:`Select Another Kernel... --> Python Environments --> base (Python 3.11.XX)`.
+    Here you need to click :menuselection:`Select Another Kernel... --> Python Environments --> base (Python {{python_version_recommended}}.XX)`.
     This will open the Python downloaded using our installation guides.
 
-    If you are using a normal Python script, go to the bottom right corner. Her it will only show the Python version, for example `3.12.XX 64-bit`. You need to click this, after which a dropdown will come down. Here you can see your Python versions. If you want to use the version installed using our guides, select `Python 3.11.XX ('base')`. 
+    If you are using a normal Python script, go to the bottom right corner. Here it will only show the Python version, for example `3.9.XX 64-bit`. You need to click this, after which a dropdown will come down. Here you can see your Python versions. If you want to use the version installed using our guides, select `Python {{python_version_recommended}}.XX ('base')`. 
 
 
 .. dropdown:: Sympy pretty print not functioning properly
@@ -181,7 +181,7 @@ Problems with Conda and Packages
 
 .. dropdown:: Multiple conda installations
 
-    If you have multiple installations of conda we highly recommend that you uninstall Anaconda using `this link <https://pythonsupport.dtu.dk/uninstall/conda.html>`__.
+    If you have multiple installations of conda we highly recommend that you :ref:`uninstall <python-uninstall>`.
 
 
 

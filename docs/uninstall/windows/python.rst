@@ -6,7 +6,7 @@ Uninstalling Python
 
 .. note::
 
-   If you are running Python using Miniconda, you will have to :ref:`uninstall Miniconda <python-uninstall>`.
+   If you are running Python using Miniforge, you will have to :ref:`uninstall conda <python-uninstall>`.
 
 
 Deleting Python might be helpful in the following scenarios.

@@ -1,3 +1,7 @@
+:orphan:
+
+.. this is currently outdated, we'll keep it in case we need the homebrew for miniforge as well
+
 .. _package-managed-reference-macos:
 
 
@@ -59,7 +63,7 @@ Step 1: Install Homebrew
 .. _install-python-macos-conda:
 .. _install-python-macos-python:
 
-Step 2: Install Miniconda and Python
+Step 2: Install Miniforge and Python
 --------------------------------------
 
 .. card::
@@ -77,7 +81,7 @@ Step 2: Install Miniconda and Python
 
       .. code-block:: bash
 
-         brew install --cask miniconda
+         brew install --cask miniforge
 
    #.
       Paste the following code in the Terminal and press :kbd:`Enter`.

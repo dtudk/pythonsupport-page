@@ -6,7 +6,7 @@ Uninstalling Python
 
 .. note::
 
-   If you are running Python using Miniconda, you will have to :ref:`uninstall Miniconda <python-uninstall>`.
+   If you are running Python using Miniforge, you will have to :ref:`uninstall conda <python-uninstall>`.
 
 
 Deleting Python might be helpful in the following scenarios.
@@ -19,7 +19,7 @@ Follow the steps below to delete Python.
 
 A version of Python comes pre-installed with {{ macos }}. The operating system uses this version of Python and should *not* be deleted.
 Other versions of Python may be deleted using a script supplied here.
-This may include versions installed from the official Python website, Anaconda or Miniconda.
+This may include versions installed from the official Python website, Anaconda and/or Miniconda/Miniforge.
 
 The deletion script can be :download:`downloaded here </_downloads/deletePythonMac.sh>`.
 Be sure to place the downloaded script on your *Desktop*.

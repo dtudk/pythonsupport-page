@@ -12,9 +12,9 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 
 * You already have the Anaconda distribution installed, but need to switch to Miniconda. 
 
+* You already have the Miniconda distribution installed, but need to switch to Miniforge. 
 
-
-1. Ensure all shells, command prompts are closed i.e. make sure no files related to Anaconda/Miniconda are open anywhere.  
+1. Ensure all shells, command prompts are closed i.e. make sure no files related to Anaconda/Miniconda/Miniforge are open anywhere.  
 
 2. In the ``Search`` tab, search for :menuselection:`Add or remove programs`.
 

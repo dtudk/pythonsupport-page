@@ -1,5 +1,14 @@
 :orphan:
 
+
+.. danger::
+
+   All recommendations and comments here are provided *as is* and should not be taken as
+   legal advice.
+
+   Always consult the official license terms of the software you are using and installing.
+
+
 .. _rec-conda:
 
 Conda
@@ -29,26 +38,25 @@ Anaconda
    Anaconda installations default to download content from
    a *channel* that is licensed, i.e. *not free*!
 
-   The `terms of service <https://legal.anaconda.com/policies/en/>`__
-   has this small snippet (as of January 2025):
+   The `terms of service <https://www.anaconda.com/legal/terms/terms-of-service>`__
+   has this small snippet (as of July 2025):
 
-   | Your registration, download, use, installation, access, or enjoyment
-   | of all Anaconda Offerings on behalf of an organization that has two
-   | hundred (200) or more employees or contractors (“Organizational Use”)
-   | requires a paid license of Anaconda Business or Anaconda Enterprise.
-   | For sake of clarity, use by government entities and nonprofit entities
-   | with over 200 employees or contractors is considered Organizational Use.
+   | (1) you are an individual that is using the Platform for your own personal, non-commercial purposes; 
+   | 
+   | (2) you are using the Platform on behalf of or in association with an Eligible Academic Institution (as defined in our Academic Policy and conditioned upon your acceptance of the Academic End User License Agreement); 
+   | 
+   | (3) you are using the Platform on behalf of or in association with an Eligible Non-Profit and Research Organization (as defined in our Non-Profit and Research Policy); or 
+   | 
+   | (4) you are using the Platform on behalf of a for-profit organization with 200 or fewer total employees or contractors (including all Affiliates).  
+   | 
+   | Anaconda reserves the right to request proof of verification of your eligibility status for free usage from you. 
 
-   This means that in order to install and use software provided through the
-   Anaconda channels (which is the default!) is requiring one to pay for the
-   software.
 
-DTU does *not* recommend the installation of **Anaconda** since any non-teaching
-use will violate their terms of service.
+DTU does *not* recommend the installation of **Anaconda**.
 
 Instead please follow the installation instructions :ref:`here <install-python>`
-which will ensure that you are only installing things from the ``conda-forge`` channel,
-which is free.
+which will ensure that you are using Miniforge that only installs packages from
+the ``conda-forge`` channel, which is free.
 
 
 
@@ -66,11 +74,11 @@ in a *free* form by changing the default channel to ``conda-forge``.
    to ensure no terms of service violation.
 
 
-Miniconda will be installed if you follow the
-:ref:`installation instructions <install-python>`.
+Since July 2025, Anaconda has changed its approach to enforcing the license
+terms of service. We there do not recommend installing Miniconda either.
 
-The change is a one-time change that defaults the installation sources to the
-correct tree.
+If you still want to use Miniconda, here is a one-time change that defaults
+the installation sources to the correct tree.
 
 .. code-block:: shell
 
@@ -93,6 +101,10 @@ Miniforge
 This ``conda`` provider defaults to not use any Anaconda channels, and will
 thus be the easiest one to ensure no license violations.
 
+This is the ``conda`` provider that our guides will install for you.
+It is not under any license terms and can be used for teaching and/or
+commercial use.
+
 
 
 .. _rec-conda-students:
@@ -103,9 +115,8 @@ Students
 In general students can *freely* install and use the **Anaconda** software stack.
 
 A student should, however, still be aware of the limitations of the above policy.
-For instance, if the student is hired in a company (not DTU) with more than
-200 employees, then they cannot use **Anaconda** for anything in that company.
-
+For instance, if the student is hired in a company with more than
+200 employees, then the company is responsible for obeying the license.
 
 Additionally, if a student creates work that is used in a DTU research project, it is
 not fully clear how the interpretation should be. When a student has

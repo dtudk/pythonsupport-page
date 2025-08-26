@@ -13,9 +13,9 @@ online-days = [
 ]
 
 python-org-recommended = "https://www.python.org/downloads/release/python-31112/"
-python-version.min = "3.8"
+python-version.min = "3.10"
 python-version.recommended = "3.11"
-python-version.max = "3.11"
+python-version.max = "3.12"
 
 [pythonsupport.mailtemplate]
 

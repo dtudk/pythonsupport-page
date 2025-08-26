@@ -1,28 +1,33 @@
-.. _install-python-linux:
+.. _install-python-linux-manual:
 
 {{ linux_icon }} --- Manual Installation 
 ==========================================
 
 
-.. _install-python-linux-conda:
+.. _install-python-linux-manual-conda:
 
-Step 1: Install Miniconda
+Step 1: Install Miniforge
 --------------------------
 
 .. card:: 
 
    #.
-      Go to `this website  <https://docs.anaconda.com/miniconda/index.html#latest-miniconda-installer-links>`__.
+      Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh>`__ to download the installer.
+      Change the ``x86_64`` to your hardware architechture, if it is not ``x86-64``.
 
    #.
-      Under the title *Latest Miniconda installer links*, you will see different installers where you must download the ``Miniconda3 Linux xxx`` that fits your hardware.
+      Run the installer in a terminal:
 
-   #.
-      It will be easier to use if ``conda`` is added to the ``PATH``
-      in your shell startup scripts as the installer will suggest you to do.
+      .. code-block:: bash
 
+         bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/conda"
+         source "${HOME}/conda/etc/profile.d/conda.sh"
+         conda activate
+         conda init zsh | conda init bash
 
-.. _install-python-linux-python:
+      .. include:: /_rst_includes/tip-copy.rst
+
+.. _install-python-linux-manual-python:
 
 Step 2: Install Python
 --------------------------
@@ -32,24 +37,16 @@ Step 2: Install Python
    #. 
       Open a Terminal.
 
-   #.
-      Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
-
-      .. code-block:: bash
-
-         conda config --add channels conda-forge ; conda config --remove channels defaults ; conda config --set channel_priority strict
-
-      .. include:: /_rst_includes/tip-copy.rst
-
    #. 
       Copy the following line of code into your terminal and press :kbd:`Enter`:
 
       .. code-block:: bash
 
          conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+      
 
 
-.. _install-python-linux-vscode:
+.. _install-python-linux-manual-vscode:
 
 Step 3: Install Visual Studio Code
 -----------------------------------
@@ -63,7 +60,7 @@ Step 3: Install Visual Studio Code
       Click the download button and follow the instructions.
       
 
-.. _install-python-linux-vscode-exts:
+.. _install-python-linux-manual-vscode-exts:
 
 Step 4: Install extensions for Visual Studio Code
 ---------------------------------------------------

@@ -10,8 +10,9 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 
 * You have issues with packages.
 
-* You already have the Anaconda distribution installed, but need to switch to Miniconda. 
+* You already have the Anaconda distribution installed, but need to switch to Miniforge. 
 
+* You already have the Miniconda distribution installed, but need to switch to Miniforge. 
 
 * If you have installed Miniconda through Homebrew, run the following command line in the terminal:
 
@@ -39,14 +40,10 @@ This guide will help you uninstall Conda from your computer. This can be useful 
      rm -rf ${HOME}/.conda
      rm -f "${HOME}/.condarc"
 
-
-      
-
 * If you want to uninstall Anaconda, run the following commands in your terminal:
 
   .. code-block:: bash
       
-     
      conda activate
      conda init --reverse --all
      sudo rm -rf ~/anaconda3
@@ -57,7 +54,6 @@ This guide will help you uninstall Conda from your computer. This can be useful 
 * If you want to uninstall Miniforge, run the following commands in your terminal:
 
   .. code-block:: bash
-      
      
      conda activate
      conda init --reverse --all

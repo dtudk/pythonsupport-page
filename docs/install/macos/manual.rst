@@ -1,3 +1,4 @@
+.. _install-python-macos-manual:
 .. _manual-reference-macos:
 
 {{ apple_icon }} --- Manual Installation 
@@ -5,14 +6,19 @@
 
 .. _fully-manual-reference-mac:
 
-.. .. dropdown:: {{ video_install }}
-..     :open:
-..     :color: info
+.. dropdown:: {{ video_install }}
+    :open:
+    :color: info
+    
+    This video is currently outdated. An updated one will be posted as soon as possible.
 
-..     .. raw:: html
+    Sorry for the inconvenience!
 
-..        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=14a24352-1f46-4f4a-b6c1-b30000851b4f&start=0" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+    .. .. raw:: html
 
+       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=14a24352-1f46-4f4a-b6c1-b30000851b4f&start=0" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+.. _install-python-macos-manual-conda:
 
 Step 1: Install Miniforge
 ---------------------------------------------------
@@ -45,6 +51,9 @@ Step 1: Install Miniforge
    #.
       Close and reopen your terminal for the changes to take effect.
 
+
+.. _install-python-macos-manual-python:
+
 Step 2: Install Python
 ---------------------------------------------------
 
@@ -58,6 +67,7 @@ Step 2: Install Python
          conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
 
 
+.. _install-python-macos-manual-vscode:
 
 Step 3: Install Visual Studio Code
 ---------------------------------------------------
@@ -80,6 +90,8 @@ Step 3: Install Visual Studio Code
          :width: 400
          :align: center
 
+
+.. _install-python-macos-manual-vscode-exts:
 
 Step 4: Install extensions for Visual Studio Code
 ---------------------------------------------------

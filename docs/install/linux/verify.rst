@@ -45,8 +45,8 @@ Troubleshooting
 Only follow these troubleshooting steps if something in the previous section did not check out.
 
 
-* Ensure that Miniconda is installed, follow
-  :ref:`these instructions <install-python-linux-conda>`.
+* Ensure that Miniforge is installed, follow
+  :ref:`these instructions <install-python-linux-manual-conda>`.
 
 * Ensure the packages are installed (if they are already installed, this will not do anything).
 
