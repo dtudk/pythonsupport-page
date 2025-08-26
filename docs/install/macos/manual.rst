@@ -5,45 +5,18 @@
 
 .. _fully-manual-reference-mac:
 
-.. dropdown:: {{ video_install }}
-    :open:
-    :color: info
+.. .. dropdown:: {{ video_install }}
+..     :open:
+..     :color: info
 
-    .. raw:: html
+..     .. raw:: html
 
-       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=14a24352-1f46-4f4a-b6c1-b30000851b4f&start=0" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+..        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=14a24352-1f46-4f4a-b6c1-b30000851b4f&start=0" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-Step 1: Install Miniconda
+Step 1: Install Miniforge
 ---------------------------------------------------
 
-
-.. card:: 
-    
-   #.
-      Before starting, you need to know which processor you have. If you do not know, you can find 
-      out by pressing the {{ apple_icon }} logo at the top left of your
-      screen. Go to :menuselection:`About This Mac --> Chip/Processor`. You need to know if it is an **M** or **Intel** processor.
-
-      .. image:: /images/install/macos-fully-manual-processor.png
-         :width: 200
-         :align: center
-   
-   #. 
-
-      * If you have an **M** processor, click `here <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.pkg>`__.
-
-      * If you have an **Intel** processor, click `here <https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.pkg>`__.
-   #.
-      When the installer has been downloaded, open it and follow the instructions.
-
-      .. image:: /images/install/macos-fully-manual-miniconda-pkg.png
-         :width: 400
-         :align: center
-
-
-Step 2: Install Python
----------------------------------------------------
 
 .. card:: 
 
@@ -55,13 +28,27 @@ Step 2: Install Python
          :align: center
 
    #.
-      Run the following command in the Terminal by copying and pasting and pressing :kbd:`Enter`:
+      Copy and paste the following line of code into your terminal and press :kbd:`Enter`:
+
+      .. note::
+
+         By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
 
       .. code-block:: bash
 
-         conda config --add channels conda-forge ; conda config --remove channels defaults ; conda config --set channel_priority strict
+         curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
+         bash Miniforge3.sh -b -p "${HOME}/conda"
+         source "${HOME}/conda/etc/profile.d/conda.sh"
+         conda activate
+         conda init zsh | conda init bash
 
-      .. include:: /_rst_includes/tip-copy.rst
+   #.
+      Close and reopen your terminal for the changes to take effect.
+
+Step 2: Install Python
+---------------------------------------------------
+
+.. card:: 
 
    #.
       Copy and paste the following line of code into your terminal and press :kbd:`Enter`:
