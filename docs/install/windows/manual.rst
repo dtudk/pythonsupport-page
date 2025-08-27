@@ -21,6 +21,7 @@ Step 1: Install Miniforge
 --------------------------
 
 .. card:: 
+
    .. todo::
     
       change this by adding image of the blue screen
