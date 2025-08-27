@@ -1,9 +1,7 @@
 .. _automated-reference-macos:
 
-
 {{ apple_icon }} --- Automated Installation
 ============================================
-
 
 .. dropdown:: {{ video_install }}
     :open:
@@ -37,7 +35,7 @@ Install everything at once
 
        .. code-block:: bash
 
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS_AutoInstall.sh)"
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS/releases/dtu-python-installer-macos.sh)"
 
        .. include:: /_rst_includes/tip-copy.rst
 

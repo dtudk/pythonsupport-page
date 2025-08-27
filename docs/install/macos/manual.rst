@@ -34,21 +34,19 @@ Step 1: Install Miniforge
          :align: center
 
    #.
-      Copy and paste the following line of code into your terminal and press :kbd:`Enter`:
-
-      .. note::
-
-         By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
+      Copy and paste the following lines of code into your terminal and press :kbd:`Enter`
+      (be sure to execute both lines of code before proceeding):
 
       .. code-block:: bash
 
          curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
-         bash Miniforge3.sh -b -p "${HOME}/conda"
-         source "${HOME}/conda/etc/profile.d/conda.sh"
-         conda activate
-         conda init zsh | conda init bash
+         bash Miniforge3.sh -b -p "${HOME}/conda" ; source "${HOME}/conda/etc/profile.d/conda.sh" ; conda activate ; conda init zsh | conda init bash
        
       .. include:: /_rst_includes/tip-copy.rst
+      
+      .. note::
+
+         By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
 
    #.
       Close and reopen your terminal for the changes to take effect.

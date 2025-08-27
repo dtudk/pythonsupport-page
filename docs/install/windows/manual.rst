@@ -26,6 +26,10 @@ Step 1: Install Miniforge
       Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe>`__ to download the installer.
 
    #. Open the installer, once it has been downloaded. 
+      
+      .. note::
+
+         By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
 
    #.
       Follow the instructions from the installer.
@@ -52,9 +56,9 @@ Step 2: Install Python
       change this, it is not updated to reflect the actual behaviour
 
    #.
-      Open :menuselection:`Anaconda PowerShell` as an `Administrator` by opening the menu bar, then search for :menuselection:`Anaconda PowerShell`.
+      Open :menuselection:`Miniforge prompt` as an `Administrator` by opening the menu bar, then search for :menuselection:`Miniforge Prompt`.
 
-      Once you see Anaconda PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
+      Once you see the Miniforge prompt on the right-hand side, you can select :menuselection:`Run as Administrator`.
       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
 
 
@@ -67,7 +71,7 @@ Step 2: Install Python
          :align: center
 
    #.
-      Run the following command in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
+      Run the following command in the terminal window by copying, pasting and pressing :kbd:`Enter`:
 
       .. code-block:: pwsh
 
@@ -76,14 +80,14 @@ Step 2: Install Python
       .. include:: /_rst_includes/tip-copy.rst
 
    #.
-      Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
+      Run the following commands in the terminal window by copying, pasting and pressing :kbd:`Enter`:
 
       .. code-block:: pwsh
 
          conda init
 
    #.
-      Run the following commands in the PowerShell window by copying, pasting and pressing :kbd:`Enter`:
+      Run the following commands in the terminal window by copying, pasting and pressing :kbd:`Enter`:
 
       .. code-block:: pwsh
 
