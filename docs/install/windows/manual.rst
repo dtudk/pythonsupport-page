@@ -56,9 +56,9 @@ Step 2: Install Python
       change this, it is not updated to reflect the actual behaviour
 
    #.
-      Open :menuselection:`Miniforge prompt` as an `Administrator` by opening the menu bar, then search for :menuselection:`Miniforge Prompt`.
+      Open :menuselection:`Powershell` as an `Administrator` by opening the menu bar, then search for :menuselection:`Powershell`.
 
-      Once you see the Miniforge prompt on the right-hand side, you can select :menuselection:`Run as Administrator`.
+      Once you see the Powershell on the right-hand side, you can select :menuselection:`Run as Administrator`.
       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
 
 
