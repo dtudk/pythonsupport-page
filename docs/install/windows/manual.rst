@@ -66,7 +66,7 @@ Step 2: Install Python
 
 	 fix this image
 
-      .. image:: /images/install/windows-anaconda-ps-run-admin.png
+      .. image:: /images/install/windows-ps-run-admin.png
          :width: 400
          :align: center
 
