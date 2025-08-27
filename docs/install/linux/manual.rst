@@ -20,8 +20,8 @@ Step 1: Install Miniforge
 
       .. code-block:: bash
 
-         bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/conda"
-         source "${HOME}/conda/etc/profile.d/conda.sh"
+         bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/miniforge3"
+         source "${HOME}/miniforge3/etc/profile.d/conda.sh"
          conda activate
          conda init zsh | conda init bash
 
