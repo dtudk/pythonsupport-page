@@ -21,6 +21,9 @@ Step 1: Install Miniforge
 --------------------------
 
 .. card:: 
+   .. todo::
+    
+      change this by adding image of the blue screen
 
    #.
       Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe>`__ to download the installer.
@@ -35,10 +38,6 @@ Step 1: Install Miniforge
       Follow the instructions from the installer.
       Make sure to cross off all the options regarding ``PATH``, as shown below.
       
-      .. todo::
-
-	 fix this image!
-
       .. image:: /images/install/Miniconda-install-path.png
          :width: 400
          :align: center
@@ -51,9 +50,6 @@ Step 2: Install Python
 
 .. card:: 
 
-   .. todo::
-    
-      change this, it is not updated to reflect the actual behaviour
 
    #.
       Open :menuselection:`Powershell` as an `Administrator` by opening the menu bar, then search for :menuselection:`Powershell`.
@@ -61,10 +57,6 @@ Step 2: Install Python
       Once you see the Powershell on the right-hand side, you can select :menuselection:`Run as Administrator`.
       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
 
-
-      .. todo::
-
-	 fix this image
 
       .. image:: /images/install/windows-ps-run-admin.png
          :width: 400
