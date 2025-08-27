@@ -35,6 +35,19 @@ Step 1: Install Miniforge
 
          By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
 
+   #. Once the installer is open you might encounter a security warning. Simply click on the :guilabel:`More info` button and then :guilabel:`Run anyway`.
+      
+      .. container:: images-side-by-side
+
+         .. image:: /images/install/windows-miniforge-security-warning.png
+            :width: 45%
+            :align: left
+
+         .. image:: /images/install/windows-miniforge-run-anyway.png
+            :width: 45%
+            :align: right
+
+
    #.
       Follow the instructions from the installer.
       Make sure to cross off all the options regarding ``PATH``, as shown below.
