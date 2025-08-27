@@ -23,7 +23,6 @@
 Step 1: Install Miniforge
 ---------------------------------------------------
 
-
 .. card:: 
 
    #.
@@ -40,14 +39,10 @@ Step 1: Install Miniforge
       .. code-block:: bash
 
          curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
-         bash Miniforge3.sh -b -p "${HOME}/miniforge3" ; source "${HOME}/miniforge3/etc/profile.d/conda.sh" ; conda activate ; conda init zsh || conda init bash
+         bash Miniforge3.sh -b -p "${HOME}/miniforge3" ; source "${HOME}/miniforge3/etc/profile.d/conda.sh" ; conda activate ; conda init $SHELL
        
       .. include:: /_rst_includes/tip-copy.rst
       
-      .. note::
-
-         By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
-
    #.
       Close and reopen your terminal for the changes to take effect.
 
@@ -80,7 +75,6 @@ Step 3: Install Visual Studio Code
    After the installation is finished, you need to download Visual Studio Code. 
    
    #.
-   
       Click `here  <https://code.visualstudio.com/Download#>`__ to download Visual Studio Code.
 
    #. 

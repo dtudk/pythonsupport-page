@@ -213,6 +213,7 @@ rst_epilog = f"""\
 .. _anaconda: https://www.anaconda.com/
 .. _anaconda-down: https://www.anaconda.com/download#downloads
 .. _miniconda: https://docs.conda.io/en/latest/miniconda.html
+.. _miniforge: https://conda-forge.org/download/
 .. _mamba: https://mamba.readthedocs.io/
 
 .. _env-venv: https://docs.python.org/3/library/venv.html

@@ -19,23 +19,15 @@
 
 Step 1: Install Miniforge
 --------------------------
-
+      
 .. card:: 
-
-   .. todo::
-    
-      change this by adding image of the blue screen
 
    #.
       Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe>`__ to download the installer.
 
    #. Open the installer, once it has been downloaded. 
-      
-      .. note::
 
-         By running this command, you agree to the `Miniforge license terms <https://github.com/conda-forge/miniforge/blob/main/LICENSE>`__.
-
-   #. Once the installer is open you might encounter a security warning. Simply click on the :guilabel:`More info` button and then :guilabel:`Run anyway`.
+   #. Once the installer is open you might encounter a security warning. Click on the :guilabel:`More info` button and then :guilabel:`Run anyway`.
       
       .. container:: images-side-by-side
 
@@ -66,9 +58,9 @@ Step 2: Install Python
 
 
    #.
-      Open :menuselection:`Powershell` as an `Administrator` by opening the menu bar, then search for :menuselection:`Powershell`.
+      Open :menuselection:`PowerShell` as an `Administrator` by opening the menu bar, then search for :menuselection:`PowerShell`.
 
-      Once you see the Powershell on the right-hand side, you can select :menuselection:`Run as Administrator`.
+      Once you see the PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
       If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
 
 

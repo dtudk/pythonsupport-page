@@ -39,7 +39,7 @@ Here is our current segmentation of the categories and channels on Discord:
      a more interactive discussion with the questioner.
    | Moving a ticket requires us to create a new ``Thread`` with the
      ticket number/ID as the thread name.
-     This ensures we can easily correlate questions.
+     This ensures we can correlate questions.
 
    **Remember**: If you solve the question on Discord, ensure you
    *resolve* the ticket in the RT system.

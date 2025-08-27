@@ -23,7 +23,7 @@ Verify that your installation is successful by following these steps:
          :width: 100% 
          :align: center
 
-2. Type ``idle`` in the Powershell window, then press :kbd:`Enter`.
+2. Type ``idle`` in the PowerShell window, then press :kbd:`Enter`.
    This should open a new window in which you can run Python code.
 
 3. Verify the :guilabel:`IDLE` window says ``Python {{ python_version }}.X``
@@ -55,16 +55,16 @@ Only follow these troubleshooting steps if something in the previous section did
 
 
 * Ensure that Miniforge is installed:
-  Search for the ``Powershell`` prompt (it will say ``Windows Powershell``)
+  Search for the ``PowerShell`` prompt (it will say ``Windows PowerShell``)
   on your computer and open it up.
 
   If you cannot find it, press :ref:`here to install conda <install-python-windows-manual-conda>`.
 
-* After opening Powershell, type ``conda init`` and press :kbd:`Enter`.
+* After opening PowerShell, type ``conda init`` and press :kbd:`Enter`.
 
 * Ensure the packages are installed (if they are already installed, this will not do anything).
 
-  Paste the following line of code to the Powershell window and press :kbd:`Enter`:
+  Paste the following line of code to the PowerShell window and press :kbd:`Enter`:
 
   .. code-block:: pwsh
 

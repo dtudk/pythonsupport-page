@@ -17,6 +17,6 @@
 
    If you have the time, we would appreciate
    if you could report the error to us,
-   by simply visiting or writing an e-mail to us with what happened,
+   by visiting or writing an e-mail to us with what happened,
    and if possible a screenshot of the error.
 

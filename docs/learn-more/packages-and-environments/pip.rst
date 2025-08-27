@@ -47,7 +47,7 @@ Testing updates in a separate environment before applying them broadly is a good
 Installing packages
 -------------------
 
-You can install packages simply with `pip`. List them during a single ``pip`` command
+You can install packages with `pip`. List them during a single ``pip`` command
 to install multiple packages at once.
 
 .. note::

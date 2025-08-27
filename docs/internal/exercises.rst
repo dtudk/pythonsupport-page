@@ -151,7 +151,7 @@ Create two virtual environments, using `venv <https://docs.python.org/3/library/
    matplotlib=3.6
 
 
-Check that you can easily swap between these two environments.
+Check that you can swap between these two environments.
 
 
 .. note::

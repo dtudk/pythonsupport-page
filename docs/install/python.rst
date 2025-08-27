@@ -5,6 +5,24 @@
 Install Python
 ==============
 
+In this section, you will find different installation guides that cover the 
+same components:
+
+- ``conda`` as the Python package manager,
+- Python and packages required for 1\ :sup:`st` year students,
+- Visual Studio Code.
+
+Importantly, these installation guides are specifically designed for students who meet at least one of the following criteria:
+
+- First-year Bachelor students at DTU
+- Students taking one of:
+
+  - Mathematics 1a/1b (:course-base:`01001`/:course-base:`01002`/:course-base:`01003`/:course-base:`01004`)
+  - Computer Programming (:course-base:`02002`/:course-base:`02003`)
+  - Physics (:course-base:`10060`/:course-base:`10063`/:course-base:`10065`)
+  - Statistics (:course-base:`02402`)
+
+Although tailored for 1\ :sup:`st` year students, these guides are also ideal for anyone needing to use Python.
 
 .. dropdown:: License and terms of use of Anaconda
    :color: warning
@@ -39,26 +57,6 @@ Install Python
    `here <https://www.anaconda.com/legal/terms/terms-of-service>`__.
 
    See :ref:`here <rec-conda>` for more details.
-
-
-In this section, you will find different installation guides that cover the 
-same components:
-
-- ``conda`` as the Python package manager,
-- Python and packages required for 1\ :sup:`st` year students,
-- Visual Studio Code.
-
-Importantly, these installation guides are specifically designed for students who meet at least one of the following criteria:
-
-- First-year Bachelor students at DTU
-- Students taking one of:
-
-  - Mathematics 1a/1b (:course-base:`01001`/:course-base:`01002`/:course-base:`01003`/:course-base:`01004`)
-  - Computer Programming (:course-base:`02002`/:course-base:`02003`)
-  - Physics (:course-base:`10060`/:course-base:`10063`/:course-base:`10065`)
-  - Statistics (:course-base:`02402`)
-
-Although tailored for 1\ :sup:`st` year students, these guides are also ideal for anyone needing to use Python.
 
 
 .. _install-python-windows-list:

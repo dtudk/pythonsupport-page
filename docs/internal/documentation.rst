@@ -134,7 +134,7 @@ A more detailed description can be found `here <https://docs.github.com/en/get-s
    2. WinSCP is a client to move files between remote servers and your local machine. You should use your
       student number and DTU password to access our remote servers (the guide above should clarify all details).
    3. On our DTU servers all users have a homepage, see `here <https://www.gbar.dtu.dk/index.php/faq/50-homepage>`__.
-   4. Once you can connect to our remote servers, simply copy the ``build/html`` folder to the ``~/public_html/``
+   4. Once you can connect to our remote servers, copy the ``build/html`` folder to the ``~/public_html/``
       directory.
    
    Once the above steps are completed, you can go to your home page like this: ``https://www.student.dtu.dk/~<your student ID>/``

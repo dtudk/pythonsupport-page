@@ -11,7 +11,7 @@ same package. For example, one project might require ``numpy==1.23``, while anot
 are incompatible, switching back and forth between them for different 
 projects can become quite annoying. Instead of reinstalling the correct version each time you switch projects, 
 you can use environments that allow you to keep fully functional and separate
-package lists and easily swap between them.
+package lists and swap between them.
 
 .. tip:: 
     If you need to know what packages are, please check :doc:`here <packages>`.

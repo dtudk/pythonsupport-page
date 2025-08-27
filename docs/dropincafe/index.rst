@@ -228,7 +228,7 @@ if you have a different language setting
      - Will move file/folder ``<from>`` to ``<to>``.
 
        Notice that ``mv file1 file2``
-       will simply rename the file from ``file1`` to ``file2``.
+       will rename the file from ``file1`` to ``file2``.
 
    * - ``rm <?>``
      - Deletes files/folders named ``<?>``.

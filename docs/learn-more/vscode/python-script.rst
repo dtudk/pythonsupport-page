@@ -250,7 +250,7 @@ In short, the interpreter is the version of Python that you use to execute your 
 Run a Python File
 ----------------------------------------------------------------
 
-Once you've written your Python code, you can easily run it in VS Code.
+Once you've written your Python code, you can run it in VS Code.
 
 
 .. card::

@@ -38,7 +38,7 @@ Interacting with students
 
 Students will arrive with a variety of backgrounds. Some are very interested
 in programming, while others are not interested, *at all*, in the inner workings
-of Python and simply want to be able to attend courses.
+of Python and want to be able to attend courses.
 
 .. tip::
    Sometimes you will get frustrated that your message did not come across,
