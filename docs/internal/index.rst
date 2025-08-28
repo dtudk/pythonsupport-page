@@ -201,6 +201,11 @@ How to use Panopto and how to make video tutorials are documented :ref:`here <in
 Go :ref:`here <internal-exercises>` for the exercises.
 
 
+:ref:`New Team Member Onboarding <internal-onboarding>`
+---------------------------------------------------------
+
+Complete onboarding guide for new Python Installation Support team members :ref:`here <internal-onboarding>`.
+
 :ref:`Editing documentation <internal-documentation>`
 -----------------------------------------------------
 
@@ -215,3 +220,4 @@ fix/add new documentation.
 
    exercises.rst
    documentation.rst
+   onboarding/index.rst
