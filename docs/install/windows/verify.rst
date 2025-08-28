@@ -8,7 +8,7 @@ Verification
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=60846e74-3f42-40da-b0cd-b34700c00f84" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e47d9eac-3269-4754-9666-b34700a2fb5c" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 Verify that your installation is successful by following these steps:
 
