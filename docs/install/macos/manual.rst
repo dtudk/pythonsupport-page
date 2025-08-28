@@ -9,14 +9,10 @@
 .. dropdown:: {{ video_install }}
     :open:
     :color: info
-    
-    This video is currently outdated. An updated one will be posted as soon as possible.
 
-    Sorry for the inconvenience!
+    .. raw:: html
 
-    .. .. raw:: html
-
-       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=14a24352-1f46-4f4a-b6c1-b30000851b4f&start=0" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=85315562-d12c-4789-b209-b34700b616bf" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 .. _install-python-macos-manual-conda:
 
