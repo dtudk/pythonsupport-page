@@ -11,9 +11,9 @@
 
     Sorry for the inconvenience!
 
-    .. .. raw:: html
+   .. raw:: html
 
-       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=5ed67b06-49e4-4ebe-a021-b2fe00947439" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+       <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c32bf464-ce24-4955-ba68-b34700a2ff92" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 .. _install-python-windows-manual-conda:
 

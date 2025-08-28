@@ -9,7 +9,7 @@
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=5b582377-000f-49dd-b2e9-b1dc00da49e7" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7ec56b9b-895a-4ad8-b617-b34700a303bb" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 Install everything at once
