@@ -32,7 +32,8 @@ def mailto_role(name, rawtext, text: str, lineno, inliner, options={}, content=[
     assert len(email) <= 1, "Email specification is longer than 1!"
     if len(email) == 0:
         email = display
-    email = email[0].strip()
+    else:
+        email = email[0].strip().strip(">")
 
     subject_body = list(map(urllib.parse.quote, subject_body))
     assert len(subject_body) <= 2, "Subject+body specification can maximally be 2 long!"
