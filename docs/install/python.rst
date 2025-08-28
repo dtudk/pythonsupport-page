@@ -32,6 +32,8 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
    to use these. Please carefully
    `read them <https://www.anaconda.com/legal/terms/terms-of-service>`__ for your own sake.
 
+   These terms does *not* apply to Miniforge (which is what our guides use)!
+
    The ``conda`` provided through our installation guidelines will default
    to use the ``conda-forge`` channel (and so are not under the Anaconda
    terms of service). However, one may accidentially follow a guide that adds
@@ -90,7 +92,7 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
 .. note::
 
    If you are using a different operating system than the ones listed above,
-   please send an :mailto:`email <pythonsupport@dtu.dk>` to us, and we will try to help you.
+   please send an :mailto:`email <pythonsupport@dtu.dk|Unsupported operating system: >` to us, and we will try to help you.
 
 
 .. toctree::
