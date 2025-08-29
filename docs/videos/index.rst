@@ -76,7 +76,7 @@ Videos related to VS Code
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/EMbed.aspx?id=8521f56a-5620-4b4a-9b20-b1ce0142e7d8" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8521f56a-5620-4b4a-9b20-b1ce0142e7d8" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 
