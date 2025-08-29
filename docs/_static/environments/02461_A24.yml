@@ -10,8 +10,8 @@ channels:
   - pytorch
   - conda-forge
 dependencies:
-  - python
-  - pytorch
+  - python=3.11
+  - pytorch=2.7.1
   - torchvision
   - torchaudio
   - matplotlib
