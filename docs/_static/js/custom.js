@@ -17,15 +17,22 @@ function PyS_isOperatingSytem() {
 function PyS_osSelector(os) {
   const baseUrl = getBaseUrl();
   console.log("Base URL:", baseUrl); // Debugging line
-  if (os === "linux") {
-    window.location.href = `${baseUrl}install/${os}/manual.html`;
-  } else {
-    window.location.href = `${baseUrl}install/${os}/automated.html`;
+  switch ( os ) {
+    case "windows":
+      window.location.href = `${baseUrl}install/${os}/automated.html`;
+      break;
+    case "macos":
+      window.location.href = `${baseUrl}install/${os}/automated.html`;
+      break;
+    default:
+      // TODO, we need to handle "non-unix" OS to pop up an email to us!
+      window.location.href = `${baseUrl}install/${os}/manual.html`;
+      break;
   }
 }
 
 function PyS_redirectUser(UserLevel) {
-  let os = PyS_isOperatingSytem();
+  const os = PyS_isOperatingSytem();
   userLevel = UserLevel;
   console.log("Operating System:", os); // Debugging line
   if (!os) {
