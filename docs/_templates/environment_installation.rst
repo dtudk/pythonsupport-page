@@ -14,13 +14,15 @@ In order to install Python requirements for ``{{course_full_name}}`` do the foll
 
     #.
         Run the following command in a terminal to create a Conda environment with all course requirements.
+        (Or download the environment file :download:`here <{{env_path}}>`).
 
         .. code-block:: bash
 
-            conda env create -f "{{env_path}}" -n {{course_env_name}}
+            conda env create -n {{course_env_name}} -f "{{env_path}}"
 
     #.
-        When the above command has finished, a new Conda environment named ``{{course_env_name}}`` will have been installed on your computer.
+        When the above command has finished, a new Conda environment named ``{{course_env_name}}``
+        will have been installed on your computer.
         In order to use it, follow the activation guides bellow.
 
 .. dropdown:: Activate in VS Code
@@ -49,7 +51,7 @@ In order to install Python requirements for ``{{course_full_name}}`` do the foll
             :align: center
 
     .. tip::
-        If you accidentally choose the wrong kernel, do not worry, you can always go back by clicking the Python version you are currently using and then changing it.
+        If you accidentally choose the wrong kernel, you can always go back by clicking the Python version you are currently using and then changing it.
 
 
 .. dropdown:: Activate in Terminal
