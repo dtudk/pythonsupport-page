@@ -66,7 +66,15 @@
       display: none;
     }
   }
+  
   .orbit-stage{
+    /* 
+      This container ensures enough space to display the DTU logo in the center 
+      and all orbiting logos around it. Since the orbiting elements are 
+      positioned absolutely (and don’t affect normal document flow), this div 
+      uses a calculated minimum height based on the orbit radius, the center logo 
+      height, and some padding to ensure the layout stays properly scaled. 
+    */
     --orbit-radius: clamp(90px, 22vw, 160px);   /* responsive radius */
     --center-h: 117px;                          /* DTU logo height */
     position: relative;
