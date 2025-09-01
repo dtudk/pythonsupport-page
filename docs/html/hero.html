@@ -9,7 +9,8 @@
             <a href="https://www.dtu.dk" id="hero_logo" class="logo-container">
             <img src="_static/DTU_logo_Coral_Red_CMYK.svg" id="hero_logo_img" class="d-block mx-lg-auto img-fluid pe-none"
                 width="100" height="117" alt="DTU Logo"
-                title="Visit the homepage of DTU">
+                title="Visit the homepage of DTU"
+                style="background-color: transparent !important;">
             </a>
 
             <!-- Rotating logo's -->
@@ -17,19 +18,21 @@
                 loading="lazy" alt="numpy"
                  title="The most widely used numerical infrastructure!">
             <img id="pandas_logo" class="hero-icon pe-none" src="https://pandas.pydata.org/static/img/pandas_mark.svg"
-                loading="lazy" alt="pandas"
+                data-light-src="https://pandas.pydata.org/static/img/pandas_mark.svg"
+                data-dark-src="https://pandas.pydata.org/static/img/pandas_mark_white.svg" loading="lazy" alt="pandas"
                 title="Providing dataframe and data-science tools">
-            <img id="matplotlib_logo" class="hero-icon pe-none" src="https://matplotlib.org/_static/images/logo2.svg"
+
+            <img id="matplotlib_logo" class="hero-icon pe-none" src="https://matplotlib.org/_static/images/documentation.svg"
                 loading="lazy" alt="matplotlib"
                 title="Plots, plots, plots...">
             <img id="scipy_logo" class="hero-icon pe-none" src="https://scipy.org/images/logo.svg"
                 loading="lazy" alt="scipy"
                 title="Scientific package for anything that's not in numpy.">
-            <img id="jupyter_logo" class="hero-icon pe-none" src="https://jupyter.org/assets/homepage/main-logo.svg"
+            <img id="jupyter_logo" class="hero-icon pe-none" src="_static/jupyter_logo_notext.svg"
                 loading="lazy" alt="jupyter"
                 title="Notebooks with Python, a widely used GUI for programming.">
             <img id="python_logo" class="hero-icon pe-none"
-                src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
+                src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
                 height="56px" loading="lazy" alt="Python"
                 title="Python... That's why we are here, right?">
         </div>
@@ -85,20 +88,70 @@
     padding-bottom: 3rem !important;
   }
   #hero_logo {
-    background-color: var(--dtu-white) !important;
+    background-color: transparent !important;
   }
   .hero-icon {
     width: 40px;
     height: 40px;
     position: absolute;
-    background-color: var(--dtu-white) !important;
+    background-color: transparent !important;
   }
 </style>
 
 <script>
-    const { animate, utils, createDraggable, createSpring, createTimeline } = anime;
+  const { animate, utils, createDraggable, createSpring, createTimeline } = anime;
 
-    logo_animation = animate('#hero_logo', {
+  // Theme-aware logo swapping
+  (function themeLogoSwapper() {
+    const DOC_EL = document.documentElement;
+
+    function isDark() {
+      return (DOC_EL.getAttribute('data-theme') || '').toLowerCase() === 'dark';
+    }
+
+    function getTargetSrc(img, darkMode) {
+      const lightSrc = img.getAttribute('data-light-src') || img.getAttribute('src');
+      const darkSrc  = img.getAttribute('data-dark-src');
+      return darkMode ? (darkSrc || lightSrc) : lightSrc;
+    }
+
+    function applyThemeLogos() {
+      const dark = isDark();
+      document.querySelectorAll('img[data-dark-src]').forEach(img => {
+        // Save original src as data-light-src if not already set
+        if (!img.getAttribute('data-light-src')) {
+          img.setAttribute('data-light-src', img.getAttribute('src'));
+        }
+        const target = getTargetSrc(img, dark);
+        if (target && img.src !== target) img.src = target;
+      });
+    }
+
+    function preloadDarkAssets() {
+      document.querySelectorAll('img[data-dark-src]').forEach(img => {
+        const url = img.getAttribute('data-dark-src');
+        if (url) { const preload = new Image(); preload.src = url; }
+      });
+    }
+
+    const observer = new MutationObserver(muts => {
+      for (const m of muts) {
+        if (m.type === 'attributes' && m.attributeName === 'data-theme') {
+          applyThemeLogos();
+          break;
+        }
+      }
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      preloadDarkAssets();
+      applyThemeLogos();
+      observer.observe(DOC_EL, { attributes: true, attributeFilter: ['data-theme'] });
+    });
+  })();
+
+  // Animations
+  logo_animation = animate('#hero_logo', {
         scale: [
             { to: 1.1, ease: 'inOut(3)', speed: 20 },
             { to: 1, ease: createSpring({ stiffness: 300 }), speed: 20 }
@@ -151,3 +204,4 @@
         orbitLogo('hero_logo', 'python_logo', 5 * Math.PI / 3);
     });
 </script>
+
