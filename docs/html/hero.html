@@ -2,8 +2,8 @@
 <script src="https://cdn.jsdelivr.net/npm/animejs/lib/anime.iife.min.js"></script>
 
 <div class="flex py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-10 col-sm-8 col-lg-5 me-auto ms-auto d-flex justify-content-center mt-0"
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5" style="padding-top: 0rem !important;">
+        <div class="orbit-stage col-10 col-sm-8 col-lg-5 me-auto ms-auto d-flex justify-content-center mt-0"
             style="position: relative;">
 
             <a href="https://www.dtu.dk" id="hero_logo" class="logo-container">
@@ -65,6 +65,24 @@
     .bd-sidebar-primary {
       display: none;
     }
+  }
+  
+  .orbit-stage{
+    /* 
+      This container ensures enough space to display the DTU logo in the center 
+      and all orbiting logos around it. Since the orbiting elements are 
+      positioned absolutely (and don’t affect normal document flow), this div 
+      uses a calculated minimum height based on the orbit radius, the center logo 
+      height, and some padding to ensure the layout stays properly scaled. 
+    */
+    --orbit-radius: clamp(90px, 22vw, 160px);   /* responsive radius */
+    --center-h: 117px;                          /* DTU logo height */
+    position: relative;
+    /* height = diameter of orbit + center logo height + a bit of padding */
+    min-height: calc(2 * var(--orbit-radius) + var(--center-h) + 24px);
+    display: grid;
+    place-items: center;                        /* keep center logo centered */
+    padding-bottom: 3rem !important;
   }
   #hero_logo {
     background-color: var(--dtu-white) !important;
