@@ -35,7 +35,7 @@ jobs:
           name: docs
 
       - name: Deployment -- rsync
-        uses: Burnett01/rsync-deployments@7.0.2
+        uses: Burnett01/rsync-deployments@7.1.0
         with:
           switches: -vr --delete
           path: docs.tar.gz
