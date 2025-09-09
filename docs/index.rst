@@ -7,6 +7,12 @@
 
 .. Temporary extra open information
 
+.. article-info::
+   :author: Workshops on Computational thinking!
+   :date: 22nd of September and rest of semester.
+   :read-time: :fas:`less-than` 20 min
+   :class-container: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+
 .. comment
    .. article-info::
       :author: Extra exam period open!
@@ -99,6 +105,14 @@ computer and helping you prepare to start programming with Python.
 
       | Watch video guides on various Python topics.
 
+   .. grid-item-card:: :fas:`book-open` -- Workshop
+      :columns: 12
+      :link: workshops
+      :link-type: ref
+
+      | Join our on-site workshops on computational thinking.
+      | Workshops on functions, loops, conditionals and variables.
+
 
 .. _office-hours:
 
@@ -114,6 +128,7 @@ Office hours
 .. include:: /timetable/timetables.rst
 
 *Available via online channels (e-mail and Discord) during office hours.*
+
 
 .. toctree::
    :maxdepth: 1
