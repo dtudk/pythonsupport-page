@@ -7,11 +7,25 @@
 
 .. Temporary extra open information
 
-.. article-info::
-   :author: Workshops on Computational thinking!
+.. comment .. article-info::
+   :author: **Workshops on Computational thinking!**
    :date: 22nd of September and rest of semester.
    :read-time: :fas:`less-than` 20 min
+   :avatar-link: he
    :class-container: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+
+.. button-link:: ./workshops/index.html
+   :ref-type: ref
+   :outline:
+   :shadow:
+   :expand:
+   :align: center
+   :class: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+
+   **Workshops on Computational thinking!**
+
+   :far:`calendar` 22nd of September and rest of semester. :far:`clock` :fas:`less-than` 20 min
+
 
 .. comment
    .. article-info::
@@ -111,7 +125,7 @@ computer and helping you prepare to start programming with Python.
       :link-type: ref
 
       | Join our on-site workshops on computational thinking.
-      | Workshops on functions, loops, conditionals and variables.
+      | Topics on functions, loops, conditionals and variables.
 
 
 .. _office-hours:
