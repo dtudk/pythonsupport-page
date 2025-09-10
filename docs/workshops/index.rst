@@ -7,41 +7,43 @@ Workshops -- Computational Thinking
 ===================================
 
 
-The Python installation support provides introductory drop-in workshops
-on computational thinking. They are aimed towards students following courses
-in programming, and can help understand the logic behind program flow.
+The Python installation support offers introductory drop-in workshops
+focused on computational thinking.
+These workshops are designed for students taking programming courses and aim
+to help them understand the logic behind program flow.
 
-They can be a supplement to those students having difficulties following
-the programming and/or using the following concepts.
+They serve as a supplementary resource for students who may have
+difficulties in using programming concepts.
 
 .. grid:: 1 1 1 2
    :gutter: 1
 
    .. grid-item-card:: :fas:`x` -- Variables
 
-      Understanding how variables gets (re-)assigned.
-      A dive into lists and how they can be manipulated and
-      reordered to ones liking.
+      Understanding how variables are (re)assigned is crucial
+      for effective programming.
+      We will explore lists and how they can be manipulated and
+      reordered.
 
    .. grid-item-card:: :fas:`not-equal` -- Conditionals
 
-      Conditionals are used throughout :code:`if` statements
-      to control program flow. There will be focus on how
-      they influence the execution and how one should utilize
-      them, critically.
+      Conditionals, such as :code:`if` statements, are essential for
+      controlling program flow.
+      We will focus on how they affect execution and how to use them
+      efficiently.
 
    .. grid-item-card:: :fas:`repeat` -- Loops
 
-      Understanding loops enables code flow that repeats
-      sections; either a set number of times or repeated based
-      on some criteria.
+      Understanding loops enables repetitive code execution,
+      either for a specified number of times or
+      based on specific criteria.
 
    .. grid-item-card:: :fas:`diagram-project` -- Functions
 
-      Splitting code into functions can greatly ease understanding
-      complex functions. Here focus will be on understanding
-      how functions work and how they can aid in the program
-      logic.
+      Breaking code into functions can significantly improve the
+      understanding of complex operations.
+      This section will emphasize how functions work and how they can
+      enhance program logic.
 
 
 .. _workshops-hours:
@@ -50,8 +52,9 @@ the programming and/or using the following concepts.
 Workshop hours
 --------------
 
-Each exercise lasts up to 20 min and they are provided on a *demand*
-basis. Drop-in and talk with our supporters about possibilities!
+Each exercise lasts up to 20 min and they are provided on a demand
+basis. Feel free to drop in and consult with our supporters about
+the available options!
 
 
 .. important::
