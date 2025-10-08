@@ -40,26 +40,30 @@ from markdownify import markdownify as md
 
 ## md() stringifies HTML from course descriptions into a readable form.
 
+COURSE_YEAR = 2020
+COURSE_YEAR_STR = str(COURSE_YEAR)
+
 
 class Lang(enum.StrEnum):
     ENGLISH = "en"
     DANISH = "dk"
 
 
-COURSE_SCRAPES_URL = "https://kurser.dtu.dk/course/{course_id}"
+COURSE_SCRAPES_URL = \
+f"https://kurser.dtu.dk/course/{COURSE_YEAR}-{COURSE_YEAR+1}/{{course_id}}"
 
 COURSE_SCRAPES_PATHS = {
-    Lang.ENGLISH: Path(__file__).parent / "course-scrapes" / "en",
-    Lang.DANISH: Path(__file__).parent / "course-scrapes" / "dk",
+    Lang.ENGLISH: Path(__file__).parent / COURSE_YEAR_STR / "course-scrapes" / "en",
+    Lang.DANISH: Path(__file__).parent / COURSE_YEAR_STR / "course-scrapes" / "dk",
 }
 list(COURSE_SCRAPES_PATHS.values())[0].parent.mkdir(exist_ok=True)
 for course_scrape_lang_path in COURSE_SCRAPES_PATHS.values():
     course_scrape_lang_path.mkdir(exist_ok=True)
 
-SEARCH_SCRAPES_PATH = Path(__file__).parent / "search-scrapes"
+SEARCH_SCRAPES_PATH = Path(__file__).parent / COURSE_YEAR_STR / "search-scrapes"
 SEARCH_SCRAPES_PATH.mkdir(exist_ok=True)
 
-COURSE_CONFIGS_PATH = Path(__file__).parent / "courses"
+COURSE_CONFIGS_PATH = Path(__file__).parent / COURSE_YEAR_STR / "courses"
 COURSE_CONFIGS_PATH.mkdir(exist_ok=True)
 
 
@@ -104,7 +108,7 @@ class DTUDepartment(enum.StrEnum):
     DTU_ENTREPRENEURSHIP = "Centre for Technology Entrepreneurship"
     DTU_FOOD = "National Food Institute"
     DTU_HEALTH_TECH = "Department of Health Technology"
-    DTU_LEARN_FOR_LIGE = "DTU Learn for Life"
+    DTU_LEARN_FOR_LIFE = "DTU Learn for Life"
     DTU_MANAGEMENT = "Department of Technology, Management and Economics"
     DTU_NANOLAB = "National Centre for Nano Fabrication and Characterization"
     DTU_OFFSHORE = "Danish Offshore Technology Centre"
@@ -327,7 +331,11 @@ def parse_course_information(course_id: str, soups: dict[Lang, BeautifulSoup]):
         "tr",
         recursive=False,
     ):
-        label = row.find("label").get_text(strip=True)
+        try:
+            label = row.find("label").get_text(strip=True)
+        except AttributeError:
+            print("Skipping course" + str(row))
+            continue
 
         match label:
             case "Schedule":
@@ -569,6 +577,7 @@ if __name__ == "__main__":
     print()
     print()
 
+
     # for course_id in {"28150"}:
     for course_id in course_ids:
         url = COURSE_SCRAPES_URL.format(course_id=course_id)
@@ -578,7 +587,11 @@ if __name__ == "__main__":
             Lang.ENGLISH: g_course_soup(course_id, Lang.ENGLISH),
             Lang.DANISH: g_course_soup(course_id, Lang.DANISH),
         }
-        course_config = parse_course_information(course_id, course_soups)
+        try:
+            course_config = parse_course_information(course_id, course_soups)
+        except (RuntimeError, KeyError):
+            print(f"[{url}] Could not find information, we'll skip the course...")
+            continue
 
         def reparse_toml(toml_string):
             lines = toml_string.split("\n")
