@@ -139,7 +139,7 @@ Office hours
    :date: 13th of May -- 1st of September
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. article-info::
+.. .. article-info::
    :author: Closed during the Autumn break! Week 42.
    :date: 13th of October -- 19th of October
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
