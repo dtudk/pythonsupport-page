@@ -690,6 +690,7 @@ def install_survey(app, exception):
 def setup(app):
 
     app.connect('builder-inited', generate_env_pages_from_json)
+    app.connect("builder-inited", create_news_carousel)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
     app.connect("html-page-context", add_title_to_context)

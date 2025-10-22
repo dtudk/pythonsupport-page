@@ -23,3 +23,5 @@ docs/os/gifs/hashes.yml
 # course environment install pages
 docs/environments/course/*.rst
 
+# Latest news 
+docs/_rst_includes/latest_news.rst
