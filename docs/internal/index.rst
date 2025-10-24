@@ -98,8 +98,8 @@ close it like this:
 
 General IT questions
    | If they have questions related to Wireless, getting Multi-Factor-Authentication
-     (MFA) to work, VPN, etc. they should ask AIT.
-   | Mail: :mail:`itsupport@student.dtu.dk`
+     (MFA) to work, VPN, mail, etc. they should ask AIT.
+   | Report a ticket here: `<https://serviceportal.dtu.dk/HEAT/service/>`__
    | Their phone number is: +45 452 55555.
    | Located in building 189
    | Other information can be found :full-link:`here <https://www.inside.dtu.dk/en/undervisning/faglig/it-systemer-og-vaerktoejer>`.
