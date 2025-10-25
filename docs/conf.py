@@ -19,8 +19,6 @@ from warnings import warn
 from jinja2 import Environment, FileSystemLoader
 
 
-
-
 _cwd = Path().resolve()
 
 # add the exts folder
@@ -29,6 +27,7 @@ sys.path.insert(1, str(_cwd))
 from ps_modules.create_timetabs import create_time_table
 from ps_modules.mailto_role import escape_backslash, mailto_role
 from ps_modules.pageredirects import *
+from ps_modules.latest_news import create_news_carousel
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -69,7 +68,6 @@ author = "DTU Python support developers"
 _pref_symbol = ":fas:`ranking-star`"
 
 
-
 # _pref_symbol = ""
 
 
@@ -96,6 +94,8 @@ extensions = [
     "sphinx_design",
     # enable target=_blank via jquery
     "sphinxcontrib.jquery",
+    # carousel for news/image slideshows
+    # "sphinx_carousel.carousel",  # Replaced with sphinx-design card carousel
 ]
 
 
@@ -236,11 +236,12 @@ _fa_move = "shake-hover"
 
 
 windows_link = [
-{
-    "name": "Windows",
+    {
+        "name": "Windows",
         "url": "https://www.microsoft.com/windows",
         "icon": "fa-brands fa-windows",
-        "type": "fontawesome", }
+        "type": "fontawesome",
+    }
 ]
 
 
@@ -253,35 +254,34 @@ _icon_links = [
     },
     {
         "name": "Contact us by mail",
-        "url":
-        f"mailto:{_pythonsupport['mail']}?subject={urllib.parse.quote(mailto_template['subject'])}&body={urllib.parse.quote(mailto_template['body'])}",
+        "url": f"mailto:{_pythonsupport['mail']}?subject={urllib.parse.quote(mailto_template['subject'])}&body={urllib.parse.quote(mailto_template['body'])}",
         "icon": f"fa-solid fa-envelope {_fa_move}",
         "type": "fontawesome",
     },
-#    {
-#       "name": "DTU help | External pages",
-#       "url": "#;",
-#       "icon": "fa-solid fa-ellipsis-vertical",
-#       "type": "fontawesome",
-#   },
-#   {
-#       "name": "Official Python homepage",
-#       "url": "https://www.python.org",
-#       "icon": f"fa-brands fa-python {_fa_move}",
-#       "type": "fontawesome",
-#   },
-#   {
-#       "name": "Conda documentation",
-#       "url": "https://docs.conda.io/en/latest/index.html",
-#       "icon": "_static/anaconda_logo.svg",
-#       "type": "local",
-#   },
-#   {
-#       "name": "PyPi package installation repository",
-#       "url": "https://pypi.org/",
-#       "icon": "_static/logo-small.2a411bc6.svg",
-#       "type": "local",
-#   },
+    #    {
+    #       "name": "DTU help | External pages",
+    #       "url": "#;",
+    #       "icon": "fa-solid fa-ellipsis-vertical",
+    #       "type": "fontawesome",
+    #   },
+    #   {
+    #       "name": "Official Python homepage",
+    #       "url": "https://www.python.org",
+    #       "icon": f"fa-brands fa-python {_fa_move}",
+    #       "type": "fontawesome",
+    #   },
+    #   {
+    #       "name": "Conda documentation",
+    #       "url": "https://docs.conda.io/en/latest/index.html",
+    #       "icon": "_static/anaconda_logo.svg",
+    #       "type": "local",
+    #   },
+    #   {
+    #       "name": "PyPi package installation repository",
+    #       "url": "https://pypi.org/",
+    #       "icon": "_static/logo-small.2a411bc6.svg",
+    #       "type": "local",
+    #   },
 ]
 
 
@@ -514,8 +514,8 @@ html_context = {
     "cheatsheet_color": "muted",
     "windows_icon": ":fab:`windows`",
     "linux_icon": ":fab:`linux`",
-    "apple_icon":  ":fab:`apple`",
-    "apple_app_store":   ":fab:`app-store`",
+    "apple_icon": ":fab:`apple`",
+    "apple_app_store": ":fab:`app-store`",
     "arrow_icon": ":fas:`arrow-right`",
     # Timetable
     "timetable_widths": "15 17 17 17 17 17",
@@ -550,7 +550,9 @@ for yaml_file in environments_dir.glob("*.yml"):
             # Copy the environment name into the `course_env_name` key.
             metadata["course_env_name"] = env_data["name"]
             # Prepend the course number to the name of the course
-            metadata["course_full_name"] = f"{metadata['course_number']} {metadata['course_full_name']}"
+            metadata["course_full_name"] = (
+                f"{metadata['course_number']} {metadata['course_full_name']}"
+            )
 
             # Specify the path to the environment file
             metadata["env_path"] = f"https://pythonsupport.dtu.dk/{yaml_file!s}"
@@ -566,14 +568,14 @@ for yaml_file in environments_dir.glob("*.yml"):
             print(f"Error reading metadata from {yaml_file}")
 
 # Sort the keys to be able to sort the output
-course_environments = [kv
-    for kv in sorted(course_environments.items(),
-                    key=lambda k: int(k[0]))
-    ]
+course_environments = [
+    kv for kv in sorted(course_environments.items(), key=lambda k: int(k[0]))
+]
 
 
 # Now, when we have sorted it, lets store it in the course_environments context
 html_context["course_environments"] = course_environments
+
 
 ## Now sort the environments
 def _course_periods_sort(course):
@@ -589,6 +591,7 @@ def _course_periods_sort(course):
         "spring & autumn",
     ].index(course["course_semester"].lower())
     return year, semester
+
 
 for _, _course_periods in course_environments:
     _course_periods.sort(key=_course_periods_sort)
@@ -628,6 +631,7 @@ def rstjinja_include(app, relative_path, parent_docname, content):
     """include-read event"""
     content[0] = rstjinja(app, content[0])
 
+
 def add_title_to_context(app, pagename, templatename, context, doctree):
     # If there's no document tree (e.g., for special pages like search or genindex), do nothing.
     if doctree is None:
@@ -637,13 +641,13 @@ def add_title_to_context(app, pagename, templatename, context, doctree):
     metadata = app.env.metadata.get(pagename, {})
 
     # If a 'title' is specified in the page metadata, add it to the template context
-    title = metadata.get('title')
+    title = metadata.get("title")
     if title:
-        context['title'] = title
+        context["title"] = title
 
 
 def generate_env_pages_from_json(app):
-    """Create all course environment pages """
+    """Create all course environment pages"""
     src_dir = app.srcdir
     template_dir = os.path.join(src_dir, "_templates")
     output_dir = os.path.join(src_dir, "environments", "course")
@@ -659,7 +663,7 @@ def generate_env_pages_from_json(app):
             rendered = rstjinja(app, template.render(metadata))
             filename = metadata["course_env_name"]
             filepath = os.path.join(output_dir, f"{filename}.rst")
-            with open(filepath, 'w') as out:
+            with open(filepath, "w") as out:
                 out.write(rendered)
 
 
@@ -690,11 +694,13 @@ def install_survey(app, exception):
 def setup(app):
 
     app.connect('builder-inited', generate_env_pages_from_json)
+    app.connect("builder-inited", create_news_carousel)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
     app.connect("html-page-context", add_title_to_context)
 
     app.add_role("mailto", mailto_role)
 
-    app.connect('build-finished', install_survey)
+    app.connect("build-finished", install_survey)
+
 
