@@ -1,9 +1,9 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
-from textwrap import dedent, indent, shorten
+from textwrap import indent, shorten
 from typing import Iterable, List, Dict, Optional, Tuple
 from docutils import nodes
 from docutils.core import publish_doctree
@@ -16,7 +16,8 @@ class Article:
     date: datetime
     keywords: List[str]
     description: str
-    priority: int
+    priority: int = field(default=10)
+    show_date: bool = field(default=True)
 
     @property
     def datef(self) -> str:
@@ -50,12 +51,8 @@ def parse_article(path: Path) -> Article:
     meta = _meta(doc)
 
     title = (meta.get("title") or path.stem).strip()
-
-    priority = meta.get("priority")
-    if priority and priority.strip():
-        priority = int(priority)
-    else:
-        priority = 100
+    priority = int(meta.get("priority", 10))
+    show_date = meta.get("show-date", "true").strip().lower() != "false"
 
     date_raw = (meta.get("date") or "").strip()
     if not date_raw:
@@ -66,21 +63,23 @@ def parse_article(path: Path) -> Article:
     desc = _first_nonempty_paragraph(doc) or ""
 
     return Article(
-        filename=path.stem, title=title, date=date, keywords=kw, description=desc, priority=priority
+        filename=path.stem, title=title, date=date, keywords=kw, description=desc,
+        priority=priority, show_date=show_date
     )
 
 
 # ------------------------------ Rendering -------------------------------------
-IND_TAB = " " * 3
-IND_CARD = " " * 6
+def _indent(level: int) -> str:
+    """Return indentation string for the given level (each level = 3 spaces)."""
+    return " " * (level * 3)
 
-EMPTY_NOTE = dedent("""\
+EMPTY_NOTE = """\
 .. note::
    No news posts available.
 
-""")
+"""
 
-CARD_TMPL = dedent("""\
+CARD_TMPL_WITH_DATE = """\
 .. card::
    :link: {link}
    :link-type: doc
@@ -90,23 +89,27 @@ CARD_TMPL = dedent("""\
 
    **{title}**
 
-   {description}
-""").rstrip()
+   {description}"""
 
-TABSET_HEADER = dedent("""\
-.. tab-set::
-""").rstrip()
+CARD_TMPL_NO_DATE = """\
+.. card::
+   :link: {link}
+   :link-type: doc
+   :shadow: none
 
-FIRST_TAB = dedent("""\
+   **{title}**
+
+   {description}"""
+
+TABSET_HEADER = ".. tab-set::"
+
+FIRST_TAB = """\
 .. tab-item:: All
-   :selected:
-""").rstrip()
+   :selected:"""
 
 TAB_ITEM_TMPL = ".. tab-item:: {keyword}"
 
-CAROUSEL_HEADER = dedent("""\
-.. card-carousel:: 3
-""").rstrip()
+CAROUSEL_HEADER = ".. card-carousel:: 3"
 
 
 
@@ -117,32 +120,32 @@ def render_carousel(posts: Iterable[Article]) -> str:
 
     parts = [CAROUSEL_HEADER, ""]
     for a in posts:
-        card = CARD_TMPL.format(
+        template = CARD_TMPL_WITH_DATE if a.show_date else CARD_TMPL_NO_DATE
+        card = template.format(
             link=a.link, datef=a.datef, title=a.title, description=a.description
         )
-        parts.append(indent(card, IND_TAB))
+        parts.append(indent(card, _indent(1)))
 
-    return "\n\n".join(parts).rstrip() + "\n"
+    return "\n\n".join(parts) + "\n"
 
 def render_tabset(dir_path: Path) -> str:
     all_posts, all_keywords = build_index(dir_path, keyword_filter=None)
 
-    title = dedent("""\
+    title = """\
 Latest news
--------------
-""").rstrip()
+-------------"""
 
     out: List[str] = [title, TABSET_HEADER]
-    out.append(indent(FIRST_TAB, IND_TAB))
-    out.append(indent(render_carousel(all_posts), IND_CARD))
+    out.append(indent(FIRST_TAB, _indent(1)))
+    out.append(indent(render_carousel(all_posts), _indent(2)))
 
     for kw in all_keywords:
         kw_posts = [a for a in all_posts if kw in a.keywords]
         tab_item = TAB_ITEM_TMPL.format(keyword=kw.title())
-        out.append(indent(tab_item, IND_TAB))
-        out.append(indent(render_carousel(kw_posts), IND_CARD))
+        out.append(indent(tab_item, _indent(1)))
+        out.append(indent(render_carousel(kw_posts), _indent(2)))
 
-    return "\n\n".join(out).rstrip() + "\n"
+    return "\n\n".join(out) + "\n"
 
 
 # ------------------------------ Indexing (single pass) ------------------------

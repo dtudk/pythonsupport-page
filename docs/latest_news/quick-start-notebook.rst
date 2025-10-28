@@ -1,7 +1,8 @@
 .. meta::
    :title: Quick Start Jupyter Notebook
-   :date: 21-10-2025
+   :date: 15-10-2025
    :keywords: vscode, jupyter notebook 
+   :show-date: false
 
 
 Quick Start Jupyter Notebook
@@ -36,4 +37,3 @@ Guide
 - To create a markdown cell hover below an existing cell and click the :kbd:`Markdown` button.
 - To write mathematical equations and so on you can use the Markdown or LaTeX syntax.
 - To render the markdown cell, press :kbd:`Shift+Enter` just as a code cell.
-
