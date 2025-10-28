@@ -30,6 +30,8 @@ Following the steps below solve a lot of the common issues we have seen recently
 - Select version 2024.11.0 and it will install.
 - Click Restart extention.
 
+.. TODO: Upgrading Ipykernel may solve it
+
 **Step 3: Uninstall the VSCode PDF extention**
 - On the left hand side in VSCode press the extentions tab.
 - Scroll down and finde the extention called "vscode-pdf" and click it.
