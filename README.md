@@ -24,16 +24,19 @@ The steps can be outlined like this:
        python3 -m venv ps-page-env
        source ps-page-env/bin/activate
 
+   `ps-page-env/bin/` contains other scripts like `activate.fish` if you use a
+   different shell. The default will work for Bash and Zsh.
+
 2. Install the requirements:
 
-       python3 -m pip install -r requirements.txt sphinx-autobuild
+       ps-page-env/bin/pip install -r requirements.txt sphinx-autobuild
        # currently there is a blocking dependency on some of the
        # packages listed in requirements.txt, however, since pip
        # will allow updating a package that breaks compatibility, we
        # can use this to our advantage. The documentation builds fine.
        # Only some non-used features will not work. So we should be fine.
        #    :fingers_crossed:
-       python3 -m pip install -U "sphinx>=7.2.5"
+       ps-page-env/bin/pip install -U "sphinx>=7.2.5"
 
 3. Development server (optional)
 
@@ -48,7 +51,7 @@ The steps can be outlined like this:
 
    Now the documentation is build and can be found in `build/html`.
 
-5. Open the documentation:
+5. Open the documentation (replace `firefox` with the browser of your choice):
 
        firefox build/html/index.html
 
