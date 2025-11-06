@@ -63,6 +63,22 @@ Opening a folder in VS Code allows you to manage all your project files in one p
          3. Browse to the folder you want to open and select it.    
 
 
+.. warning::
+
+   Opening a folder in VS Code forces the *current working directory* (CWD) to that
+   of the opened folder.
+
+   Therefore, all scripts executed via VS Code will run the script from that folder
+   which may have unexpected side-effects. Especially when trying to read/write files
+   in specific folders. Always use this code snippet to figure out where the script
+   is executed if unexpected IO errors occur:
+
+   .. code::
+
+      import os
+      print(os.getcwd())
+
+
 Creating a Python-file
 -----------------------
 
