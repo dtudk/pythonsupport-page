@@ -69,9 +69,12 @@ Opening a folder in VS Code allows you to manage all your project files in one p
    of the opened folder.
 
    Therefore, all scripts executed via VS Code will run the script from that folder
-   which may have unexpected side-effects. Especially when trying to read/write files
-   in specific folders. Always use this code snippet to figure out where the script
-   is executed if unexpected IO errors occur:
+   which may have unexpected side-effects.
+   Therefore, the same script may read/write different files depending on which folder
+   you have opened in VS Code.
+
+   When unexpected read/write errors occur, one can use the below script to figure
+   out where the *current working directory* is:
 
    .. code::
 
