@@ -29,6 +29,7 @@ sys.path.insert(1, str(_cwd))
 from ps_modules.create_timetabs import create_time_table
 from ps_modules.mailto_role import escape_backslash, mailto_role
 from ps_modules.pageredirects import *
+from ps_modules.latest_news import create_news_carousel
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
