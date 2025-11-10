@@ -28,7 +28,11 @@ In this tutorial you will learn how to do all of these using Visual Studio Code:
 Opening a Folder
 ------------------
 
-Opening a folder in VS Code allows you to manage all your project files in one place.
+Opening a folder in VS Code, by default, sets the *current working directory* (CWD)
+to that folder and applies any VS Code settings that have been changed while the
+folder was open last time.
+Therefore, scripts that interact with files are dependent on which folder
+is open in VS Code when they are executed.
 
 .. card::
 
@@ -63,14 +67,15 @@ Opening a folder in VS Code allows you to manage all your project files in one p
          3. Browse to the folder you want to open and select it.    
 
 
-.. warning::
+.. dropdown:: Current working directory
+   :color: warning
 
    Opening a folder in VS Code forces the *current working directory* (CWD) to that
-   of the opened folder.
+   of the opened folder (this may be changed through settings).
 
    Therefore, all scripts executed via VS Code will run the script from that folder
    which may have unexpected side-effects.
-   Therefore, the same script may read/write different files depending on which folder
+   Thus, the same script may read/write different files depending on which folder
    you have opened in VS Code.
 
    When unexpected read/write errors occur, one can use the below script to figure
