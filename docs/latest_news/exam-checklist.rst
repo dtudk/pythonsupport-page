@@ -1,6 +1,5 @@
 .. meta::
   :title: Exam Checklist
-  :description: Things to check before exams
   :date: 12-11-2025
   :keywords: exam exams checklist preparation
 
