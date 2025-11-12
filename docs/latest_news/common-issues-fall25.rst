@@ -11,7 +11,7 @@ Current Common Issues - Fall 2025
 Description
 -----------
 
-This is page shows current common python related issues for DTU students an works a checklist for solving them.
+This page shows current common python related issues for DTU students and a checklist for solving them.
 
 
 Checklist
