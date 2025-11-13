@@ -29,6 +29,7 @@ sys.path.insert(1, str(_cwd))
 from ps_modules.create_timetabs import create_time_table
 from ps_modules.mailto_role import escape_backslash, mailto_role
 from ps_modules.pageredirects import *
+from ps_modules.latest_news import create_news_carousel
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -689,7 +690,8 @@ def install_survey(app, exception):
 
 def setup(app):
 
-    app.connect('builder-inited', generate_env_pages_from_json)
+    app.connect("builder-inited", generate_env_pages_from_json)
+    app.connect("builder-inited", create_news_carousel)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
     app.connect("html-page-context", add_title_to_context)
