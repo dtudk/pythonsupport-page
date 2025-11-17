@@ -28,14 +28,18 @@ class Article:
 
     @property
     def link(self) -> str:
-        return f"latest_news/{self.filename}"
+        return f"/latest_news/{self.filename}"
 
 
 # ------------------------------ Parsing ---------------------------------------
 
 def _first_nonempty_paragraph(doc: nodes.document) -> Optional[str]:
     p = doc.next_node(nodes.paragraph)
-    return p.astext().strip() if p else None
+    p = p.astext().strip()
+    if p:
+        p = p.split("\n\n")[0]
+    p = " ".join(p.split("\n"))
+    return p if p else None
 
 def _meta(doc: nodes.document) -> Dict[str, str]:
     out: Dict[str, str] = {}
