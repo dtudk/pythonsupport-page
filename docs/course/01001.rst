@@ -1,3 +1,4 @@
+.. _course-01001:
 
 .. include:: /course/2024-2025/01001.rst
 
