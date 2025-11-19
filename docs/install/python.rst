@@ -66,9 +66,9 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
 {{ windows_icon }} --- Installation on {{windows}}
 ---------------------------------------------------
 
-* **Recommended** {{ arrow_icon }} The :doc:`automated installation <windows/automated>` requires minimal intervention.
+* **Recommended** {{ arrow_icon }} The :ref:`automated installation <automated-reference-windows>` requires minimal intervention.
 
-* The :doc:`manual installation guide <windows/manual>` allows you to set up Python step by step. 
+* The :ref:`manual installation guide <install-python-windows-manual>` allows you to set up Python step by step. 
 
 
 .. _install-python-macos-list:
@@ -76,17 +76,17 @@ Although tailored for 1\ :sup:`st` year students, these guides are also ideal fo
 {{ apple_icon }} --- Installation on {{macos}}
 -----------------------------------------------
 
-* **Recommended** {{ arrow_icon }} The :doc:`automated installation <macos/automated>` requires minimal intervention.
-* The :doc:`manual installation guide <macos/manual>` allows you to set up Python step by step. 
+* **Recommended** {{ arrow_icon }} The :ref:`automated installation <automated-reference-macos>` requires minimal intervention.
+* The :ref:`manual installation guide <install-python-macos-manual>` allows you to set up Python step by step. 
 
-..  * The :doc:`package-managed installation guide <macos/homebrew>` allows you to set up Python step by step.
+..  * The :ref:`package-managed installation guide <package-managed-reference-macos>` allows you to set up Python step by step.
 
 .. _install-python-linux-list:
 
 {{ linux_icon }} --- Installation on Linux
 --------------------------------------------
 
-* **Recommended** {{ arrow_icon }} The :doc:`manual installation guide <linux/manual>`.
+* **Recommended** {{ arrow_icon }} The :ref:`manual installation guide <install-python-linux-manual>`.
 
 
 .. note::

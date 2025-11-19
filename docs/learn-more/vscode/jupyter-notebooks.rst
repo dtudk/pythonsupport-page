@@ -1,5 +1,3 @@
-.. _learn-more.vscode.notebooks:
-
 Jupyter Notebooks (.ipynb)
 ==========================
 
