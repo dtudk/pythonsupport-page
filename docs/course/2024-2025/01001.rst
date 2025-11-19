@@ -1,4 +1,4 @@
-.. _course-24-01001:
+.. _course-2024-2025-01001:
 
 01001 --- E2024
 ==============================
@@ -6,7 +6,7 @@
 .. dropdown:: Looking for previous years?
     :icon: hourglass
 
-    * :ref:`Autumn 2023 (E23) <course-23-01001>`
+    * :ref:`Autumn 2023 (E23) <course-2023-2024-01001>`
 
 .. include:: /_rst_includes/course-default-pg-installation.rst
 
