@@ -18,12 +18,12 @@ working with matrices, or `sympy.calculus` includes operations for derivatives a
 
 .. tip:: 
    It is important to ensure that you have activated the correct environment before proceeding.
-   Please check the :doc:`environments` section, if you need to know what this means.
+   Please check the :ref:`environments` section, if you need to know what this means.
 
 
 Conda is an open-source package management system that can install, run, and 
 update packages and their dependencies in your Python development environment. We recommend is 
-using Conda to manage your packages. If you followed our :doc:`installation guides </install/python>`, you already have Conda 
+using Conda to manage your packages. If you followed our :ref:`installation guides <install-python>`, you already have Conda 
 installed.
 
 .. button-link:: https://www.google.com/search?q=cheatsheet+python+conda

@@ -14,7 +14,7 @@ you can use environments that allow you to keep fully functional and separate
 package lists and swap between them.
 
 .. tip:: 
-    If you need to know what packages are, please check :doc:`here <packages>`.
+    If you need to know what packages are, please check :ref:`here <installing-packages>`.
 
 Python environments allow you to maintain separate sets of packages, making switching
 between configurations without conflicts.
@@ -298,7 +298,7 @@ Once an environment has been created and
 sourced (activated), all ``pip`` commands only act within that environment.
 
 .. tip:: 
-    If you need to learn what ``pip`` is, please check the description in :doc:`pip`.
+    If you need to learn what ``pip`` is, please check the description in :ref:`pip`.
 
 .. note::
 
@@ -309,7 +309,7 @@ sourced (activated), all ``pip`` commands only act within that environment.
     it will be the same as deleting the environment.
 
 .. warning::
-   Environments in :doc:`/learn-more/vscode/index` requires special handling when
+   Environments in :ref:`learn-more.vscode` requires special handling when
    working in workspaces. Please see :ref:`here <faq-vscode-venv-workspace>`.
 
 

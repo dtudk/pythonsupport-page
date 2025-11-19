@@ -35,7 +35,7 @@ Below are some common tips and tricks about pip:
    Environments allow you to  manage installations without interfering with your main
    system.
    If you do not know what an environment is, please check the 
-   description in the :doc:`environments` section.
+   description in the :ref:`environments <learn-more-environments>` section.
 
 Using `pip <pypi-org_>`_ in a clean environment (meaning *no prior installed packages*) typically avoids installation issues. However, 
 the risk of dependency conflicts increases with prolonged use of the same environment.
@@ -231,7 +231,7 @@ Below is a constructed example of a dependency conflict arising.
 
 .. tip::
 
-   Always prefer to use :doc:`environments </learn-more/packages-and-environments/environments>`
+   Always prefer to use :ref:`environments <learn-more-environments>`
    to reduce package conflicts.
 
 The first command completes installing the ``dtumathtools`` package 

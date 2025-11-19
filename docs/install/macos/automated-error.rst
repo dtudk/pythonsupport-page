@@ -9,7 +9,7 @@
 
    It looks like there was an error during the installation
    script which unfortunately happens sometimes.
-   Please try to use :doc:`this guide <homebrew>` instead.
+   Please try to use :ref:`this guide <package-managed-reference-macos>` instead.
    You are also more than welcome to visit us during our office hours,
    or contact us via :mailto:`email <pythonsupport@dtu.dk>|{{mailto_subject}}|{{mailto_body}}>`
    or `Discord <ps-discord-invite_>`_.
