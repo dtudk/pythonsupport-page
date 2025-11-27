@@ -3,7 +3,7 @@
 Visual Studio Code
 ===================
 
-Similarly to :doc:`IDLE <../idle>`, Visual Studio Code (VS Code) is a place to write your Python code.
+Similarly to :ref:`learn-more.idle`, Visual Studio Code (VS Code) is a place to write your Python code.
 VS Code is built for large projects.
 It is useful for, but not limited to, debugging, organizing files, and collaborating on code with others.
 It also comes with extensions that can improve visual clarity, help you collaborate with
