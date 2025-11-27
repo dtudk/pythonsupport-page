@@ -24,4 +24,4 @@ docs/os/gifs/hashes.yml
 docs/environments/course/*.rst
 
 # Latest news 
-docs/_rst_includes/latest_news.rst
+docs/_rst_includes/latest-news.rst

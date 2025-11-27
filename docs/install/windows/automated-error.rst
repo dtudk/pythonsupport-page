@@ -9,7 +9,7 @@
 
    It looks like there was an error during the installation
    script which unfortunately happens sometimes.
-   Please try to use :doc:`this guide <manual>` instead.
+   Please try to use :ref:`this guide <install-python-windows-manual>` instead.
    You are also more than welcome to visit us during our office hours,
    or contact us via :mailto:`email <pythonsupport@dtu.dk>|{{mailto_subject}}|{{mailto_body}}>`
    or `Discord <ps-discord-invite_>`_.

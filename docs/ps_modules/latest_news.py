@@ -28,14 +28,18 @@ class Article:
 
     @property
     def link(self) -> str:
-        return f"latest_news/{self.filename}"
+        return f"/latest-news/{self.filename}"
 
 
 # ------------------------------ Parsing ---------------------------------------
 
 def _first_nonempty_paragraph(doc: nodes.document) -> Optional[str]:
     p = doc.next_node(nodes.paragraph)
-    return p.astext().strip() if p else None
+    p = p.astext().strip()
+    if p:
+        p = p.split("\n\n")[0]
+    p = " ".join(p.split("\n"))
+    return p if p else None
 
 def _meta(doc: nodes.document) -> Dict[str, str]:
     out: Dict[str, str] = {}
@@ -132,7 +136,7 @@ def render_tabset(dir_path: Path) -> str:
     all_posts, all_keywords = build_index(dir_path, keyword_filter=None)
 
     title = """\
-Latest news
+Latest News
 -------------"""
 
     out: List[str] = [title, TABSET_HEADER]
@@ -170,10 +174,10 @@ def build_index(
 # ------------------------------ Sphinx hook -----------------------------------
 def create_news_carousel(app) -> None:
     src = Path(app.srcdir)
-    news_dir = src / "latest_news"
+    news_dir = src / "latest-news"
     out_dir = src / "_rst_includes"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    (out_dir / "latest_news.rst").write_text(
+    (out_dir / "latest-news.rst").write_text(
         render_tabset(news_dir), encoding="utf-8"
     )
