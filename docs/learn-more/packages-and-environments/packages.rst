@@ -16,9 +16,9 @@ code for different mathematical operations.
 The module `sympy.matrices` contain tools for 
 working with matrices, or `sympy.calculus` includes operations for derivatives and integrals.
 
-.. tip:: 
+.. tip::
    It is important to ensure that you have activated the correct environment before proceeding.
-   Please check the :ref:`environments` section, if you need to know what this means.
+   Please check the :ref:`learn-more-environments` section, if you need to know what this means.
 
 
 Conda is an open-source package management system that can install, run, and 
