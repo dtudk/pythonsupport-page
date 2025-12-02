@@ -7,6 +7,11 @@
 
 .. Temporary extra open information
 
+.. article-info::
+   :author: Closed in exam period until the Spring semester. No help during exam period!
+   :date: Closed: 8th of December -- 1st of February
+   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+
 .. comment .. article-info::
    :author: **Workshops on Computational thinking!**
    :date: 22nd of September and rest of semester.
@@ -24,8 +29,7 @@
 
    **Workshops on Computational thinking!**
 
-   :far:`calendar` 22nd of September and rest of semester. :far:`clock` :fas:`less-than` 20 min
-
+   :far:`calendar` until the 5th of December. :far:`clock` :fas:`less-than` 20 min
 
 .. comment
    .. article-info::
@@ -34,10 +38,6 @@
       :read-time: 10-14
       :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. .. article-info::
-   :author: Closed until the Autumn semester. No help during exam period!
-   :date: 13th of May -- 1st of September
-   :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. _homepage-reference:
 
