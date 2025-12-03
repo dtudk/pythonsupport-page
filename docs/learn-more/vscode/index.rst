@@ -27,5 +27,5 @@ We have created some tutorials that will introduce you to different type of file
 .. warning::
    Visual Studio Code offers Copilot support for AI-generation of code. While
    this may seem useful, we recommend students **not** to use it when learning
-   Python. Struggling is the best way to learn, and you may find yourself
+   Python. Experimentation is the best way to learn, and you may find yourself
    struggling in exams if you have become reliant on Copilot to program for you.
