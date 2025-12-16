@@ -15,7 +15,7 @@
 .. article-info::
    :author: Extra exam period open in 302!
    :date: Friday 19th of December, 2025
-   :read-time: To be decided
+   :read-time: 12-16
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. comment .. article-info::
@@ -70,7 +70,9 @@ Reach us
    .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
-      Closed until the Spring semester (1st of February).
+      | We have *exam* open on the 19th of December in 302, otherwise we are closed!
+
+      | Closed until the Spring semester (1st of February).
 
    .. grid-item-card:: :fas:`envelope` -- E-mail us
       :link: mailto:pythonsupport@dtu.dk?subject={{qmailto_subject}}&body={{qmailto_body}}
@@ -136,9 +138,14 @@ Office hours
 ------------
 
 .. article-info::
-   :author: Closed until the Spring semester. No help during exam period!
-   :date: Closed: 8th of Decmeber -- 1st of February
+   :author: Extra exam period open in 302!
+   :date: Friday 19th of December, 2025
+   :read-time: 12-16
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
+
+We are closed in the exam period until the Spring semester.
+There will be no supporters available until 1st of February (except on the 19th of
+December).
 
 .. .. article-info::
    :author: Closed during the Autumn break! Week 42.
