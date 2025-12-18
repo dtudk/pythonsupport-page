@@ -14,7 +14,7 @@ Videos related to VS Code
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Viewer.aspx?id=cde199ec-14ac-47bc-83fc-b1d500d4d82c" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=cde199ec-14ac-47bc-83fc-b1d500d4d82c" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 .. dropdown:: Workspaces and Files in VS Code
