@@ -7,7 +7,7 @@
 
 .. Temporary extra open information
 
-.. article-info::
+.. .. article-info::
    :author: Closed in exam period until the Spring semester.
    :date: Closed: 8th of December -- 1st of February
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
@@ -25,7 +25,7 @@
    :avatar-link: he
    :class-container: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. .. button-link:: ./workshops/index.html
+.. button-link:: ./workshops/index.html
    :ref-type: ref
    :outline:
    :shadow:
@@ -35,7 +35,7 @@
 
    **Workshops on Computational thinking!**
 
-   :far:`calendar` until the 5th of December. :far:`clock` :fas:`less-than` 20 min
+   :far:`calendar` drop-in workshops. :far:`clock` :fas:`less-than` 20 min
 
 
 .. _homepage-reference:
@@ -51,17 +51,6 @@
 Reach us
 --------
 
-..  .. grid-item-card:: :fas:`person-running` -- Visit us
-      :link: #office-hours
-
-      | Open in 13 week semesters.
-      | Mon -- Fri (see table):
-      | Building **302**, room **92**.
-
-      | Thursday (12:15-16):
-      | Building **358**, room **43**.
-
-      | Click to see detailed office hours.
 
 .. grid:: 1 1 1 3
    :gutter: 1
@@ -70,7 +59,11 @@ Reach us
    .. grid-item-card:: :fas:`person-running` -- Visit us
       :link: #office-hours
 
-      | Closed until the Spring semester (1st of February).
+      | Open in 13 week semesters.
+      | Mon -- Fri (see table):
+      | Building **302**, room **92**.
+
+      | Click to see detailed office hours.
 
    .. grid-item-card:: :fas:`envelope` -- E-mail us
       :link: mailto:pythonsupport@dtu.dk?subject={{qmailto_subject}}&body={{qmailto_body}}
@@ -143,9 +136,9 @@ There will be no supporters available until 1st of February.
    :date: 13th of October -- 19th of October
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. .. include:: /timetable/timetables.rst
+.. include:: /timetable/timetables.rst
 
-.. *Available via online channels (e-mail and Discord) during office hours.*
+*Available via online channels (e-mail and Discord) during office hours.*
 
 
 .. toctree::
