@@ -22,7 +22,7 @@ function PyS_osSelector(os) {
       window.location.href = `${baseUrl}install/${os}/automated.html`;
       break;
     case "macos":
-      window.location.href = `${baseUrl}install/${os}/automated.html`;
+      window.location.href = `${baseUrl}install/${os}/manual.html`;
       break;
     default:
       // TODO, we need to handle "non-unix" OS to pop up an email to us!
