@@ -3,12 +3,12 @@
 
 .. _workshops:
 
-Workshops -- Computational Thinking
+Workshops -- Programming concepts
 ===================================
 
 
 The Python installation support offers introductory drop-in workshops
-focused on computational thinking.
+focused on concepts in programming.
 These workshops are designed for students taking programming courses and aim
 to help them understand the logic behind program flow.
 
