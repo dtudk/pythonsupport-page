@@ -57,12 +57,6 @@ basis. Feel free to drop in and consult with our supporters about
 the available options!
 
 
-.. important::
-
-   The workshops will be available from the 22nd of September and
-   the rest of the autumn semester.
-
-
 .. list-table::
    :widths: 15 17 17 17 17 17
    :header-rows: 1
