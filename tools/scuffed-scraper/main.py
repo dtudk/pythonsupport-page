@@ -40,7 +40,10 @@ from markdownify import markdownify as md
 
 ## md() stringifies HTML from course descriptions into a readable form.
 
-COURSE_YEAR = 2020
+if len(sys.argv) > 1:
+    COURSE_YEAR = int(sys.argv[1])
+else:
+    COURSE_YEAR = 2020
 COURSE_YEAR_STR = str(COURSE_YEAR)
 
 

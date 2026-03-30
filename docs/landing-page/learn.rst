@@ -43,6 +43,5 @@ At :ref:`this page <learn-more>` there is a lot of information on
 
 * managing and using :ref:`conda environments <packages-and-environments>`
 
-* and more...
-
+* and much more...
 
