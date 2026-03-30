@@ -128,8 +128,8 @@ computer and helping you prepare to start programming with Python.
 Office hours
 ------------
 
-We are closed until the Spring semester.
-There will be no supporters available until 1st of February.
+The office is *only* open during the 13 semester weeks, we are closed
+in holidays and 3-week periods.
 
 .. .. article-info::
    :author: Closed during the Autumn break! Week 42.
