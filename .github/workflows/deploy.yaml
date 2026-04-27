@@ -37,7 +37,10 @@ jobs:
       - name: Deployment -- rsync
         uses: Burnett01/rsync-deployments@v8
         with:
-          switches: -vr --delete --exclude ps-files/
+          # While rsync is nice to handle excludes and deletes
+          # It is not stable in the sense that we want to
+          # access through ssh and then do stuff (next item)
+          switches: -vr
           path: docs.tar.gz
           remote_path: ${{ secrets.DEPLOY_PATH }}
           remote_host: ${{ secrets.DEPLOY_HOST }}
@@ -45,14 +48,17 @@ jobs:
           remote_key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
 
       - name: Access and unpack
-        uses: appleboy/ssh-action@v1.2.5
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_KEY_PRIVATE }}
           script: |
             cd ${{ secrets.DEPLOY_PATH }}
-            rm -rf [^d]* dropincafe
+            # We use:
+            #  'd' to keep docs.tar.gz
+            #  'p' to keep ps-files
+            rm -rf [^dp]* dropincafe
             tar xfz docs.tar.gz
             rm docs.tar.gz
 
