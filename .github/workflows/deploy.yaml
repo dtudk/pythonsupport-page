@@ -35,9 +35,9 @@ jobs:
           name: docs
 
       - name: Deployment -- rsync
-        uses: Burnett01/rsync-deployments@8.0.5
+        uses: Burnett01/rsync-deployments@v8
         with:
-          switches: -vr --delete
+          switches: -vr --delete --exclude ps-files/
           path: docs.tar.gz
           remote_path: ${{ secrets.DEPLOY_PATH }}
           remote_host: ${{ secrets.DEPLOY_HOST }}
