@@ -28,7 +28,6 @@ if not all(
     sys.exit(1)
 
 import enum
-import json
 import re
 from pathlib import Path
 from urllib.parse import quote as urlquote

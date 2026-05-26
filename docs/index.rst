@@ -7,9 +7,9 @@
 
 .. Temporary extra open information
 
-.. .. article-info::
-   :author: Closed in exam period until the Spring semester.
-   :date: Closed: 8th of December -- 1st of February
+.. article-info::
+   :author: Closed in exam period until the Autumn semester.
+   :date: Closed
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. .. article-info::
@@ -25,7 +25,7 @@
    :avatar-link: he
    :class-container: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. button-link:: ./workshops/index.html
+.. .. button-link:: ./workshops/index.html
    :ref-type: ref
    :outline:
    :shadow:
@@ -129,7 +129,7 @@ Office hours
 ------------
 
 The office is *only* open during the 13 semester weeks, we are closed
-in holidays and 3-week periods.
+on holidays, 3-week periods and during exams.
 
 .. .. article-info::
    :author: Closed during the Autumn break! Week 42.
