@@ -1,47 +1,59 @@
 :orphan:
+:html_theme.sidebar_secondary.remove: true
+:title: DTU Python Installation Support
 
 .. meta::
-   :description: Technical University of Denmark (DTU) Learn landing page
-   :keywords: Learn, teaching, DTU
+   :description: DTU Python Installation Support landing page for Learn
+   :keywords: DTU, Learn, Python, installation, support, VS Code, conda, terminal
 
+Welcome to DTU Python Installation Support
+==========================================
 
-Welcome to Python Installation Support. You have reached this page
-from DTU Learn.
-In the following there are several options that could relate to your
-requirements.
+.. container:: PyS_learnLandingPage
 
+   We help DTU students get a working Python setup. You can use our
+   installation guides to install Python yourself, visit us or reach us on
+   Discord if your current installation needs fixing, and use our tutorials
+   when you want help with VS Code, conda environments, the terminal, and
+   other tools used in Python courses.
 
-.. contents::
-   :backlinks: none
-   :local:
+   .. rubric:: Here we can help you with:
 
+   .. grid:: 1 1 1 1
+      :gutter: 1
+      :class-container: PyS_learnLandingCards
 
-Course specific environments
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      .. grid-item-card:: Fixing your current Python installation
+         :link: ../index.html#reach-us
+         :link-type: url
+         :class-card: PyS_learnLandingCard
 
-Python Installation Support have predefined conda Environments enabling
-to have multiple course specific Python installations co-existing.
-Please visit :ref:`this page <environments-list>` to install your course
-specific environment.
+         Reach DTU Python Support if your setup is broken, confusing, or course software is not working.
 
-.. warning::
+      .. grid-item-card:: Installing Python on your computer
+         :link: ../install/python.html
+         :link-type: url
+         :class-card: PyS_learnLandingCard
 
-   We only have course environments where the teacher has provided a
-   requirements list. Therefore we cannot guarentee that all courses
-   are represented.
+         Go directly to the recommended installation guide for your operating system.
 
+      .. grid-item-card:: Video tutorials and help with VS Code
+         :link: ../learn-more/vscode/index.html#learn-more-vscode
+         :link-type: url
+         :class-card: PyS_learnLandingCard
 
+         Learn how to write Python scripts, use notebooks, and select the right Python environment.
 
-Guides and videos
-^^^^^^^^^^^^^^^^^
+      .. grid-item-card:: Video tutorials and help with conda environments
+         :link: ../learn-more/packages-and-environments/index.html#packages-and-environments
+         :link-type: url
+         :class-card: PyS_learnLandingCard
 
-At :ref:`this page <learn-more>` there is a lot of information on
+         Understand packages, environments, and how to keep course setups separate.
 
-* using the :ref:`terminal <learn-more.terminal>`
+      .. grid-item-card:: Introductory video tutorials to the terminal
+         :link: ../learn-more/terminal.html#learn-more-terminal
+         :link-type: url
+         :class-card: PyS_learnLandingCard
 
-* using :ref:`Visual Studio Code <learn-more.vscode>`
-
-* managing and using :ref:`conda environments <packages-and-environments>`
-
-* and much more...
-
+         Get comfortable with the command line commands used in Python courses and installation guides.

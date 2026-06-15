@@ -1099,3 +1099,218 @@ since it is also on the header.
 html[data-theme="dark"] .env-search::placeholder {
   color: darkgray;
 }
+
+/* vvvvv PYTHON SUPPORT LANDING CARD LIST vvvvv */
+
+/* The RST uses PyS_* class names; Docutils writes them as lowercase HTML classes. */
+
+/* Keep pages that use this landing component at a readable, card-friendly width. */
+.bd-article-container:has(.pys-learnlandingpage) {
+  max-width: 1120px !important;
+}
+
+/* Hide previous/next navigation on pages that act as standalone landing pages. */
+.bd-main:has(.pys-learnlandingpage) .prev-next-footer {
+  display: none;
+}
+
+/* Landing section heading inside the page wrapper. */
+.pys-learnlandingpage .rubric {
+  font-size: 2.15rem;
+  /* Keeps the rubric visually close to the original second-level heading. */
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0 1.25rem;
+  /* Gives the intro text room before the card list begins. */
+}
+
+/* Landing card list container. These variables control the reusable layout. */
+.pys-learnlandingcards {
+  margin-top: 0.75rem;
+  /* Space between the intro/heading and the first card. */
+  --PyS-learn-badge-center: 5%;
+  /* Horizontal center point for the numbered badge. */
+  --PyS-learn-badge-size: 2.6rem;
+  /* Width and height of the numbered badge. */
+  --PyS-learn-card-height: 7.2rem;
+  /* Fixed desktop height so all cards line up evenly. */
+  --PyS-learn-icon-inset: 3%;
+  /* Distance from the right card edge to the action icon. */
+  --PyS-learn-text-start: 11%;
+  /* Left padding where the card title and description begin. */
+}
+
+/* Reset the CSS counter once for each Sphinx Design grid row. */
+.pys-learnlandingcards .sd-row {
+  counter-reset: PyS_learnLandingCard;
+}
+
+/* Base card layout used by each landing option. */
+.pys-learnlandingcards .sd-card.pys-learnlandingcard {
+  counter-increment: PyS_learnLandingCard;
+  /* Increases the visible card number. */
+  display: grid;
+  /* Lets the card body and stretched link share the same card area. */
+  grid-template-columns: minmax(0, 1fr);
+  /* Keeps the card text column responsive. */
+  align-items: center;
+  /* Vertically centers the card body in the fixed-height card. */
+  height: var(--PyS-learn-card-height);
+  /* Gives every desktop card the same height. */
+  padding: 1rem 7% 1rem var(--PyS-learn-text-start);
+  /* Leaves room for the number badge on the left and icon on the right. */
+  border-radius: 8px;
+  /* Matches the site's card corner style. */
+  position: relative;
+  /* Anchors the number badge and action icon pseudo-elements. */
+  transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  /* Smooth hover feedback without moving surrounding content. */
+}
+
+/* Make the Sphinx Design stretched link cover the full custom grid card. */
+.pys-learnlandingcards .sd-card.pys-learnlandingcard>.sd-stretched-link {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+/* Number badge shown on the left side of each card. */
+.pys-learnlandingcards .sd-card.pys-learnlandingcard::before {
+  content: counter(PyS_learnLandingCard);
+  /* Prints the current card number. */
+  display: inline-grid;
+  /* Enables simple centering of the number. */
+  place-items: center;
+  /* Centers the number inside the badge. */
+  position: absolute;
+  /* Positions the badge independently of the card body text. */
+  top: 50%;
+  left: var(--PyS-learn-badge-center);
+  transform: translate(-50%, -50%);
+  /* Centers the badge exactly around its target point. */
+  width: var(--PyS-learn-badge-size);
+  height: var(--PyS-learn-badge-size);
+  border: 2px solid var(--dtu-red);
+  border-radius: 8px;
+  color: var(--dtu-red);
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+/* Action icon shown on the right side of each card. */
+.pys-learnlandingcards .sd-card.pys-learnlandingcard::after {
+  display: inline-grid;
+  /* Enables simple centering of the icon glyph. */
+  place-items: center;
+  /* Centers the icon inside its pseudo-element box. */
+  position: absolute;
+  /* Positions the icon independently of the card body text. */
+  top: 50%;
+  right: var(--PyS-learn-icon-inset);
+  transform: translateY(-50%);
+  /* Vertically centers the icon. */
+  color: var(--dtu-blue);
+  font-family: "Font Awesome 6 Free";
+  /* Uses the icon font already loaded by the site. */
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+/* Card 1 icon: arrow to support/contact information. */
+.pys-learnlandingcards .sd-col:nth-child(1) .sd-card.pys-learnlandingcard::after {
+  content: "\f061";
+}
+
+/* Card 2 icon: download/install guide. */
+.pys-learnlandingcards .sd-col:nth-child(2) .sd-card.pys-learnlandingcard::after {
+  content: "\f019";
+}
+
+/* Card 3 icon: code editor/tutorials. */
+.pys-learnlandingcards .sd-col:nth-child(3) .sd-card.pys-learnlandingcard::after {
+  content: "\f121";
+}
+
+/* Card 4 icon: environments/packages. */
+.pys-learnlandingcards .sd-col:nth-child(4) .sd-card.pys-learnlandingcard::after {
+  content: "\f5fd";
+}
+
+/* Card 5 icon: terminal. */
+.pys-learnlandingcards .sd-col:nth-child(5) .sd-card.pys-learnlandingcard::after {
+  content: "\f120";
+}
+
+/* Hover state for mouse users. */
+.pys-learnlandingcards .sd-card.pys-learnlandingcard:hover {
+  border-color: var(--dtu-red) !important;
+  /* Overrides the Sphinx Design default hover border. */
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+  /* Adds a subtle lift. */
+  transform: translateY(-1px);
+  /* Moves the card slightly without changing layout. */
+}
+
+/* Card body grid keeps titles and descriptions aligned between cards. */
+.pys-learnlandingcards .sd-card-body {
+  display: grid;
+  grid-template-rows: 1.45rem 2.6rem;
+  /* Reserves consistent vertical slots for title and description. */
+  align-content: start;
+  align-self: center;
+  gap: 0.45rem;
+  height: 4.5rem;
+  min-width: 0;
+  padding: 0;
+}
+
+/* Card title typography. */
+.pys-learnlandingcards .sd-card-title {
+  font-size: 1.06rem;
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+/* Card description typography. */
+.pys-learnlandingcards .sd-card-text {
+  font-size: 0.95rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* Mobile layout: stack the number badge into the card grid and hide action icons. */
+@media (max-width: 600px) {
+
+  /* Mobile cards grow with their content instead of using the desktop fixed height. */
+  .pys-learnlandingcards .sd-card.pys-learnlandingcard {
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+    gap: 0.85rem;
+    height: auto;
+    min-height: var(--PyS-learn-card-height);
+    padding: 1rem;
+  }
+
+  /* Mobile number badge becomes part of the card grid. */
+  .pys-learnlandingcards .sd-card.pys-learnlandingcard::before {
+    position: static;
+    transform: none;
+    width: 2.35rem;
+    height: 2.35rem;
+    font-size: 1rem;
+  }
+
+  /* Mobile card text uses natural height to avoid overflow. */
+  .pys-learnlandingcards .sd-card-body {
+    height: auto;
+    grid-template-rows: auto auto;
+    align-content: center;
+  }
+
+  /* Mobile layout removes the decorative action icon to save horizontal space. */
+  .pys-learnlandingcards .sd-card.pys-learnlandingcard::after {
+    display: none;
+  }
+}
+
+/* ^^^^^ PYTHON SUPPORT LANDING CARD LIST ^^^^^ */
