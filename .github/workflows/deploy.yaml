@@ -35,7 +35,7 @@ jobs:
           name: docs
 
       - name: Deployment -- rsync
-        uses: Burnett01/rsync-deployments@v8
+        uses: Burnett01/rsync-deployments@v9
         with:
           # While rsync is nice to handle excludes and deletes
           # It is not stable in the sense that we want to
