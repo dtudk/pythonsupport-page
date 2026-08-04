@@ -70,6 +70,16 @@ autumn.weeks = 13
 autumn.week = []
 autumn.week-breaks = []
 
+[semester.2027]
+january.week-start = 1
+spring.week-start = 5
+spring.week-breaks = 12
+june.week-start = 23
+july.week-start = 27
+august.week-start = 31
+autumn.week-start = 35
+autumn.week-breaks = 42
+
 [semester.2026]
 january.week-start = 2
 spring.week-start = 6
