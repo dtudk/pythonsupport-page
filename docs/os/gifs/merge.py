@@ -12,7 +12,8 @@ cwd = Path()
 
 tmpdir = cwd / "tmp"
 hash_file = cwd / "hashes.yml"
-commands_out = sys.argv[1]
+commands_out = sys.argv[-1]
+force = "--force" in sys.argv[1:]
 
 def read_yaml(file: Path):
     """Read a yaml file, and return the dictionary"""
@@ -71,7 +72,7 @@ for path in cwd.glob("*/*.yml"):
     stem = path.stem
     out = tmpdir / '_'.join(top_path.parts)
     gif = path.with_suffix(".gif")
-    if old_hash == current_hash and gif.is_file():
+    if old_hash == current_hash and gif.is_file() and not force:
         print(f"Skipping {top_path_str} as it already exists with same hash")
         continue
     elif top_path_str in hashes and gif.is_file():

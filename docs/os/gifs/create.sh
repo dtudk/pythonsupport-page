@@ -2,6 +2,11 @@
 #
 # Create all the terminalizer stuff
 #
+
+# Detect whether parallel is here
+which parallel
+has_parallel=$?
+
 only_hash=0
 np=1
 while [[ $# -gt 0 ]]; do
@@ -10,7 +15,9 @@ while [[ $# -gt 0 ]]; do
   shift
   case $arg in
     -n)
-      np=$1
+      if [[ $has_parallel -eq 0 ]]; then
+        np=$1
+      fi
       shift
       ;;
     --hash)
@@ -38,9 +45,8 @@ fi
 
 echo "Will run:"
 cat $run
-echo "in parallel"
 
-if [[ $np -eq 1 ]]; then
+if [[ $np -gt 1 ]]; then
   while read line ; do
     echo "Running: ${line}"
     ${line}
