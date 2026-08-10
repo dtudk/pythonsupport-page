@@ -27,6 +27,8 @@ The steps can be outlined like this:
    `ps-page-env/bin/` contains other scripts like `activate.fish` if you use a
    different shell. The default will work for Bash and Zsh.
 
+   Note: Only Python >= 3.11 are allowed.
+
 2. Install the requirements:
 
        ps-page-env/bin/pip install -r requirements.txt sphinx-autobuild

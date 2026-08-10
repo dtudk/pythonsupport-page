@@ -34,7 +34,7 @@ from ps_modules.latest_news import create_news_carousel
 if sys.version_info >= (3, 11):
     import tomllib as toml
 else:
-    import toml
+    raise ValueError("Python installation page requires python >= 3.11")
 
 
 def version2tuple(vers):
