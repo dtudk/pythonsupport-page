@@ -109,8 +109,12 @@ A more detailed description can be found `here <https://docs.github.com/en/get-s
 
       In this one follow the instructions in the `README.md` file.
 
-2. Now you can build it using the top level makefile system.
-   
+2. Recommended workflow is *always* to work on a separate branch.
+
+   So, before doing anything, create a branch, and switch to the branch.
+
+   Now you can build it using the top level makefile system.
+
    *NOTE* I haven't tried on a Windows machine yet. So we should
    probably sit together to fix the build there.
 
@@ -139,3 +143,19 @@ A more detailed description can be found `here <https://docs.github.com/en/get-s
    
    Once the above steps are completed, you can go to your home page like this: ``https://www.student.dtu.dk/~<your student ID>/``
    and view your home page remotely stored.
+
+5. You can re-iterate as many times as you want on your own branch.
+   But at some point you would like to merge the changes back into the Python support
+   home page.
+
+   To do this, you should:
+
+   1. Push your local branch to your *fork*. Be sure to name your branch and the
+      remote branch something different than `main`.
+   2. Then goto https://github.com/dtudk/pythonsupport-page/pulls where a green button
+      should appear with your newly pushed branch.
+
+      Press that and fill in details so others can see what you changed.
+
+   3. Now wait for somebody with super-powers to merge your fantastic
+      changes!
