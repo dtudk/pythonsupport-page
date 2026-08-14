@@ -12,10 +12,10 @@ online-days = [
    "Thursday",
 ]
 
-python-org-recommended = "https://www.python.org/downloads/release/python-31112/"
+python-org-recommended = "https://www.python.org/downloads/release/python-3147/"
 python-version.min = "3.10"
-python-version.recommended = "3.12"
-python-version.max = "3.12"
+python-version.recommended = "3.14"
+python-version.max = "3.15"
 
 [pythonsupport.mailtemplate]
 
