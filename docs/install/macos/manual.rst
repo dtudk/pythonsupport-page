@@ -1,7 +1,7 @@
 .. _install-python-macos-manual:
 .. _manual-reference-macos:
 
-{{ apple_icon }} --- Manual Installation 
+{{ apple_icon }} Manual Installation
 ==========================================
 
 .. _fully-manual-reference-mac:
@@ -34,8 +34,8 @@ Step 1: Install Miniforge
 
       .. code-block:: bash
 
-         curl -fsSLo Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
-         bash Miniforge3.sh -b -p "${HOME}/miniforge3" ; source "${HOME}/miniforge3/etc/profile.d/conda.sh" ; conda activate ; conda init $(basename "$SHELL")
+         curl -fsSLo Miniforge3.sh "https://github.com/dtudk/pythonsupport-forge/releases/latest/download/Miniforge3-MacOSX-$(uname -m).sh"
+         bash Miniforge3.sh -b -p "${HOME}/miniforge3-dtu" ; source "${HOME}/miniforge3-dtu/etc/profile.d/conda.sh" ; conda activate ; conda init $(basename "$SHELL")
        
       .. include:: /_rst_includes/tip-copy.rst
       
@@ -43,24 +43,9 @@ Step 1: Install Miniforge
       Close and reopen your terminal for the changes to take effect.
 
 
-.. _install-python-macos-manual-python:
-
-Step 2: Install Python
----------------------------------------------------
-
-.. card:: 
-
-   #.
-      Copy and paste the following line of code into your terminal and press :kbd:`Enter`:
-
-      .. code-block:: bash
-
-         conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
-
-
 .. _install-python-macos-manual-vscode:
 
-Step 3: Install Visual Studio Code
+Step 2: Install Visual Studio Code
 ---------------------------------------------------
 
 .. |applications| image:: /images/install/macos-applications.png
@@ -83,7 +68,7 @@ Step 3: Install Visual Studio Code
 
 .. _install-python-macos-manual-vscode-exts:
 
-Step 4: Install extensions for Visual Studio Code
+Step 3: Install extensions for Visual Studio Code
 ---------------------------------------------------
 
 .. |extensions| image:: /images/install/extensions.png
@@ -112,6 +97,7 @@ Step 4: Install extensions for Visual Studio Code
           :width: 200
           :align: center
 
+.. include:: /_rst_includes/vscode-ai.rst
 
 .. include:: /_rst_includes/tip-finish.rst
 
