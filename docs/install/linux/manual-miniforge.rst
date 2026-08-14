@@ -1,18 +1,20 @@
-.. _install-python-linux-manual:
+:orphan:
+
+.. _install-python-linux-manual-miniforge:
 
 {{ linux_icon }} Manual Installation 
 ==========================================
 
 
-.. _install-python-linux-manual-conda:
+.. _install-python-linux-manual-miniforge-conda:
 
-Step 1: Install DTU Miniforge
------------------------------
+Step 1: Install Miniforge
+--------------------------
 
 .. card:: 
 
    #.
-      Click `here <https://github.com/dtudk/pythonsupport-forge/releases/latest/download/Miniforge3-Linux-x86_64.sh>`__ to download the installer.
+      Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh>`__ to download the installer.
       Change the ``x86_64`` to your hardware architechture, if it is not ``x86-64``.
 
    #.
@@ -20,17 +22,35 @@ Step 1: Install DTU Miniforge
 
       .. code-block:: bash
 
-         bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/miniforge3-dtu"
-         source "${HOME}/miniforge3-dtu/etc/profile.d/conda.sh"
+         bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/miniforge3"
+         source "${HOME}/miniforge3/etc/profile.d/conda.sh"
          conda activate
          conda init $(basename $SHELL)
 
       .. include:: /_rst_includes/tip-copy.rst
 
+.. _install-python-linux-manual-miniforge-python:
 
-.. _install-python-linux-manual-vscode:
+Step 2: Install Python
+--------------------------
 
-Step 2: Install Visual Studio Code
+.. card:: 
+
+   #. 
+      Open a Terminal.
+
+   #. 
+      Copy the following line of code into your terminal and press :kbd:`Enter`:
+
+      .. code-block:: bash
+
+	 conda install python={{ python_version_recommended }} matplotlib jupyter ipykernel pandas scipy scikit-learn statsmodels uncertainties -y
+      
+
+
+.. _install-python-linux-manual-miniforge-vscode:
+
+Step 3: Install Visual Studio Code
 -----------------------------------
 
 .. card:: 
@@ -42,9 +62,9 @@ Step 2: Install Visual Studio Code
       Click the download button and follow the instructions.
       
 
-.. _install-python-linux-manual-vscode-exts:
+.. _install-python-linux-manual-miniforge-vscode-exts:
 
-Step 3: Install extensions for Visual Studio Code
+Step 4: Install extensions for Visual Studio Code
 ---------------------------------------------------
 
 .. |extensions| image:: /images/install/extensions.png

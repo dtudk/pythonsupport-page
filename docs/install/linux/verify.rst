@@ -25,7 +25,7 @@ Verify that your installation is successful by following these steps:
 
    .. code-block:: python
 
-      import dtumathtools, pandas, scipy, statsmodels, uncertainties
+      import matplotlib, pandas, scipy, sklearn, spb, statsmodels, uncertainties
 
    Verify that a new line (``>>>``) appears without any text (indicating everything got imported correctly).
    See the below image for an example:
@@ -54,7 +54,7 @@ Only follow these troubleshooting steps if something in the previous section did
 
   .. code-block:: bash
 
-     conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+     conda install python={{ python_version_recommended }} matplotlib jupyter ipykernel pandas scipy scikit-learn statsmodels uncertainties -y
 
 
 * Go back to the previous Verification section and check them again.

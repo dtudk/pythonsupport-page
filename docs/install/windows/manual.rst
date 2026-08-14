@@ -1,6 +1,6 @@
 .. _install-python-windows-manual:
 
-{{ windows_icon }} --- Manual Installation 
+{{ windows_icon }} Manual Installation
 ==========================================
 
 .. dropdown:: {{ video_install }}
@@ -20,7 +20,7 @@ Step 1: Install Miniforge
 .. card:: 
 
    #.
-      Click `here <https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Windows-x86_64.exe>`__ to download the installer.
+      Click `here <https://github.com/dtudk/pythonsupport-forge/releases/latest/download/Miniforge3-Windows-x86_64.exe>`__ to download the installer.
 
    #. Open the installer, once it has been downloaded. 
 
@@ -46,53 +46,9 @@ Step 1: Install Miniforge
          :align: center
 
 
-.. _install-python-windows-manual-python:
-
-Step 2: Install Python
---------------------------
-
-.. card:: 
-
-
-   #.
-      Open :menuselection:`PowerShell` as an `Administrator` by opening the menu bar, then search for :menuselection:`PowerShell`.
-
-      Once you see the PowerShell on the right-hand side, you can select :menuselection:`Run as Administrator`.
-      If not, right-click the icon and choose :menuselection:`Run as Administrator`. 
-
-
-      .. image:: /images/install/windows-ps-run-admin.png
-         :width: 400
-         :align: center
-
-   #.
-      Run the following command in the terminal window by copying, pasting and pressing :kbd:`Enter`:
-
-      .. code-block:: pwsh
-
-         Set-ExecutionPolicy -Force RemoteSigned
-
-      .. include:: /_rst_includes/tip-copy.rst
-
-   #.
-      Run the following commands in the terminal window by copying, pasting and pressing :kbd:`Enter`:
-
-      .. code-block:: pwsh
-
-         conda init
-
-   #.
-      Run the following commands in the terminal window by copying, pasting and pressing :kbd:`Enter`:
-
-      .. code-block:: pwsh
-
-         conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
-
-
-
 .. _install-python-windows-manual-vscode:
 
-Step 3: Install Visual Studio Code
+Step 2: Install Visual Studio Code
 -----------------------------------
 
 .. card:: 
@@ -113,7 +69,7 @@ Step 3: Install Visual Studio Code
 
 .. _install-python-windows-manual-vscode-exts:
 
-Step 4: Install extensions for Visual Studio Code
+Step 3: Install extensions for Visual Studio Code
 ---------------------------------------------------
 
 .. |extensions| image:: /images/install/extensions.png
@@ -140,6 +96,8 @@ Step 4: Install extensions for Visual Studio Code
          :width: 200
          :align: center
 
+
+.. include:: /_rst_includes/vscode-ai.rst
 
 .. include:: /_rst_includes/tip-finish.rst
 
