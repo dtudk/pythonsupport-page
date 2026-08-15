@@ -38,16 +38,24 @@ Install everything at once
 
        .. code-block:: pwsh
 
-          PowerShell -ExecutionPolicy Bypass -Command "& {Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Windows/install.ps1' -UseBasicParsing).Content}"
+          
+            $env:PS_REPO_URL = "https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main"; irm "$env:PS_REPO_URL/Core/Orchestration/install_all_windows.ps1" | iex
 
        .. include:: /_rst_includes/tip-copy.rst
 
+       When the script starts, your terminal should look something like this:
+    
+       .. image:: /images/install/startingscriptwindows.jpg
+            :width: 400
+            :align: center
+    
+
    #.
-       The script has finished when you see something like:
+       The script has finished when your terminal looks like this:
 
-       .. code-block:: bash
-
-          Script has finished. You may now close the terminal...
+       .. image:: /images/install/finishingscriptwindows.jpg
+        :width: 400
+        :align: center
 
        Now, Python and Visual Studio Code will be ready to use.
 
@@ -61,3 +69,5 @@ Install everything at once
 .. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst
+
+.. include:: /_rst_includes/vscode-ai.rst

@@ -41,7 +41,7 @@ Verify that your installation is successful by following these steps:
 
    .. card::
 
-      .. image:: /images/install/windows-IDLE-import.png
+      .. image:: /images/install/windows-IDLE-import2026.jpg
          :width: 100% 
          :align: center
 
