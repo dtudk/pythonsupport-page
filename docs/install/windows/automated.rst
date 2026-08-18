@@ -45,7 +45,7 @@ Install everything at once
 
        When the script starts, your terminal should look something like this:
     
-       .. image:: /images/install/startingscriptwindows.jpg
+       .. image:: /images/install/windows-startingscript.jpg
             :width: 400
             :align: center
     
@@ -53,9 +53,9 @@ Install everything at once
    #.
        The script has finished when your terminal looks like this:
 
-       .. image:: /images/install/finishingscriptwindows.jpg
-        :width: 400
-        :align: center
+       .. image:: /images/install/windows-finishingscript.jpg
+            :width: 400
+            :align: center
 
        Now, Python and Visual Studio Code will be ready to use.
 
@@ -66,8 +66,9 @@ Install everything at once
           Please let the script finish.
 
 
+.. include:: /_rst_includes/vscode-ai.rst
+
 .. include:: /_rst_includes/tip-finish.rst
 
 .. include:: verify.rst
 
-.. include:: /_rst_includes/vscode-ai.rst

@@ -12,7 +12,7 @@ Verification
 
 Verify that your installation is successful by following these steps:
 
-1. Open PowerShell by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
+1. Open PowerShell by opening the menu bar, then search for :menuselection:`Miniforge Prompt`.
    Verify that ``(base)`` is shown to the left of the
    text.
    Something like the image below:
