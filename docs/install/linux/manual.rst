@@ -20,7 +20,7 @@ Step 1: Install DTU Miniforge
 
       .. code-block:: bash
 
-         bash Miniforge3-Linux-x86_64.sh -b -p "${HOME}/miniforge3-dtu"
+         bash Miniforge3-Linux-$(uname -m).sh -b -p "${HOME}/miniforge3-dtu"
          source "${HOME}/miniforge3-dtu/etc/profile.d/conda.sh"
          conda activate
          conda init $(basename $SHELL)

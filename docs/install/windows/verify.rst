@@ -12,7 +12,7 @@ Verification
 
 Verify that your installation is successful by following these steps:
 
-1. Open PowerShell by opening the menu bar, then search for :menuselection:`Windows PowerShell`.
+1. Open PowerShell by opening the menu bar, then search for :menuselection:`Miniforge Prompt`.
    Verify that ``(base)`` is shown to the left of the
    text.
    Something like the image below:
@@ -22,6 +22,20 @@ Verify that your installation is successful by following these steps:
       .. image:: /os/gifs/PS/conda-check-base.gif
          :width: 100% 
          :align: center
+
+   .. dropdown:: If ``(base)`` does not show?
+      :animate: fade-in-slide-down
+      :color: danger
+      :icon: alert
+
+      You may have opened the *regular* PowerShell terminal which does
+      not enable the Miniforge environment, and hence you will not have
+      access to the installed Python and the packages.
+
+      It is important to search for :menuselection:`Miniforge Prompt` in the
+      menu bar. If it does not exist, please try and install again, or
+      stop by us.
+      
 
 2. Type ``idle`` in the PowerShell window, then press :kbd:`Enter`.
    This should open a new window in which you can run Python code.
@@ -41,7 +55,7 @@ Verify that your installation is successful by following these steps:
 
    .. card::
 
-      .. image:: /images/install/windows-IDLE-import.png
+      .. image:: /images/install/windows-IDLE-import2026.png
          :width: 100% 
          :align: center
 

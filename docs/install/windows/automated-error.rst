@@ -2,7 +2,7 @@
 
 .. _automated-error-reference-windows:
 
-{{ windows_icon }}  --- Installation Error
+{{ windows_icon }} Installation Error
 =============================================
 
 .. card::

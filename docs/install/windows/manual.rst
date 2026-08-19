@@ -30,20 +30,13 @@ Step 1: Install Miniforge
 
          .. image:: /images/install/windows-miniforge-security-warning.png
             :width: 45%
-            :align: left
 
          .. image:: /images/install/windows-miniforge-run-anyway.png
             :width: 45%
-            :align: right
 
 
    #.
       Follow the instructions from the installer.
-      Make sure to cross off all the options regarding ``PATH``, as shown below.
-      
-      .. image:: /images/install/Miniconda-install-path.png
-         :width: 400
-         :align: center
 
 
 .. _install-python-windows-manual-vscode:
@@ -82,7 +75,7 @@ Step 3: Install extensions for Visual Studio Code
       Open Visual Studio Code and select the Extensions |extensions| tab on the left. 
       
    #.
-      Here search for `Python`, and download the extension. Make sure that it's from Microsoft. 
+      Here search for `Python`, and download the extension. Make sure that it is from Microsoft. 
 
       .. image:: /images/install/macos-package-managed-python.png
          :width: 200
