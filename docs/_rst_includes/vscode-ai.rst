@@ -15,13 +15,13 @@ How to turn AI on/off in VS Code
 #. 
     Search for "Disable AI Features" and check or uncheck the box
 
-    .. image:: /images/install/vscode-ai-checkbox.jpg
+    .. image:: /images/install/vscode_ai_checkbox.png
         :width: 400
         :align: center
 
-    If AI is enabled, you should have an option to sign in in the top right corner, and a Copilot icon (:fab:`copilot`) in the bottom right corner
+    If AI is enabled, you should have a Copilot icon (:fab:`copilot`) in the bottom right corner with an option to sign in.
 
-    .. image:: /images/install/vscode-ai-features.jpg
+    .. image:: /images/install/vscode_ai_signin.png
         :width: 400
         :align: center
 

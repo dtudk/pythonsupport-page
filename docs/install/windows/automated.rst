@@ -45,7 +45,7 @@ Install everything at once
 
        When the script starts, your terminal should look something like this:
     
-       .. image:: /images/install/windows-startingscript.jpg
+       .. image:: /images/install/windows-startingscript.png
             :width: 400
             :align: center
     
@@ -53,7 +53,7 @@ Install everything at once
    #.
        The script has finished when your terminal looks like this:
 
-       .. image:: /images/install/windows-finishingscript.jpg
+       .. image:: /images/install/windows-finishingscript.png
             :width: 400
             :align: center
 
