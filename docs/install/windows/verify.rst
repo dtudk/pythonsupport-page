@@ -23,6 +23,20 @@ Verify that your installation is successful by following these steps:
          :width: 100% 
          :align: center
 
+   .. dropdown:: If ``(base)`` does not show?
+      :animate: fade-in-slide-down
+      :color: danger
+      :icon: alert
+
+      You may have opened the *regular* PowerShell terminal which does
+      not enable the Miniforge environment, and hence you will not have
+      access to the installed Python and the packages.
+
+      It is important to search for :menuselection:`Miniforge Prompt` in the
+      menu bar. If it does not exist, please try and install again, or
+      stop by us.
+      
+
 2. Type ``idle`` in the PowerShell window, then press :kbd:`Enter`.
    This should open a new window in which you can run Python code.
 

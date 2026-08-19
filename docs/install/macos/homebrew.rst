@@ -5,7 +5,7 @@
 .. _package-managed-reference-macos:
 
 
-{{ apple_icon }} --- Homebrew Installation
+{{ apple_icon }} Homebrew Installation
 ============================================
 
 

@@ -1,6 +1,6 @@
 .. _automated-reference-windows:
 
-{{ windows_icon }}  --- Automated Installation
+{{ windows_icon }} Automated Installation
 ===============================================
 
 .. dropdown:: {{ video_install }}

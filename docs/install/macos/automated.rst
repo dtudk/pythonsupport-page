@@ -1,6 +1,6 @@
 .. _automated-reference-macos:
 
-{{ apple_icon }} --- Automated Installation
+{{ apple_icon }} Automated Installation
 ============================================
 
 .. dropdown:: {{ video_install }}
@@ -56,6 +56,8 @@ Install everything at once
           The script will resolve these automatically.
           Please let the script finish.
 
+
+.. include:: /_rst_includes/vscode-ai.rst
 
 .. include:: /_rst_includes/tip-finish.rst
 

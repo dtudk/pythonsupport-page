@@ -97,6 +97,7 @@ Step 3: Install extensions for Visual Studio Code
           :width: 200
           :align: center
 
+
 .. include:: /_rst_includes/vscode-ai.rst
 
 .. include:: /_rst_includes/tip-finish.rst

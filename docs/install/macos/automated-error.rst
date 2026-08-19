@@ -2,7 +2,7 @@
 
 .. _automated-error-reference-macos:
 
-{{ apple_icon }} --- Installation Error
+{{ apple_icon }} Installation Error
 ==========================================
 
 .. card::

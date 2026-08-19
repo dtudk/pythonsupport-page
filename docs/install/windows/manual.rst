@@ -38,6 +38,7 @@ Step 1: Install Miniforge
    #.
       Follow the instructions from the installer.
 
+
 .. _install-python-windows-manual-vscode:
 
 Step 2: Install Visual Studio Code
@@ -74,7 +75,7 @@ Step 3: Install extensions for Visual Studio Code
       Open Visual Studio Code and select the Extensions |extensions| tab on the left. 
       
    #.
-      Here search for `Python`, and download the extension. Make sure that it's from Microsoft. 
+      Here search for `Python`, and download the extension. Make sure that it is from Microsoft. 
 
       .. image:: /images/install/macos-package-managed-python.png
          :width: 200
