@@ -10,7 +10,7 @@ How to turn AI on/off in VS Code
 
 #. 
 
-    Press :kbd:`Ctrl+,` on Windows, and :kbd:`Command+,` on MacOS to open settings in Visual Studio Code.
+    Press :kbd:`Ctrl+,` on Windows, or :kbd:`Command+,` on MacOS, to open the settings in Visual Studio Code.
 
 #. 
     Search for "Disable AI Features" and check or uncheck the box

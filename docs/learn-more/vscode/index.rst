@@ -29,3 +29,7 @@ We have created some tutorials that will introduce you to different type of file
    this may seem useful, we recommend students **not** to use it when learning
    Python. Experimentation is the best way to learn, and you may find yourself
    struggling in exams if you have become reliant on Copilot to program for you.
+
+   .. dropdown:: Turning On/Off AI in VS Code
+
+      .. include:: /_rst_includes/vscode-ai.rst
