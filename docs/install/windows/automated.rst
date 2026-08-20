@@ -38,8 +38,7 @@ Install everything at once
 
        .. code-block:: pwsh
 
-          
-            $env:PS_REPO_URL = "https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main"; irm "$env:PS_REPO_URL/Core/Orchestration/install_all_windows.ps1" | iex
+            irm "https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Core/Orchestration/install_all_windows.ps1" | iex
 
        .. include:: /_rst_includes/tip-copy.rst
 
@@ -48,7 +47,7 @@ Install everything at once
        .. image:: /images/install/windows-startingscript.png
             :width: 400
             :align: center
-    
+
 
    #.
        The script has finished when your terminal looks like this:

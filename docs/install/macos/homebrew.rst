@@ -105,7 +105,7 @@ Step 2: Install Miniforge and Python
 
       .. code-block:: bash
 
-         conda install python={{ python_version_recommended }} dtumathtools pandas scipy statsmodels uncertainties -y
+         conda install python={{ python_version_recommended }} numpy sympy jupyter ipykernel matplotlib scikit-learn sympy_plot_backends pandas scipy statsmodels uncertainties -y
 
     
 .. _install-python-macos-vscode:
@@ -153,6 +153,8 @@ Step 4: Install extensions for Visual Studio Code
           :width: 200
           :align: center
 
+
+.. include:: /_rst_includes/vscode-ai.rst
 
 .. include:: /_rst_includes/tip-finish.rst
 

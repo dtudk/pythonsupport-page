@@ -35,7 +35,7 @@ Install everything at once
 
        .. code-block:: bash
 
-          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/MacOS/releases/dtu-python-installer-macos.sh)"
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/dtudk/pythonsupport-scripts/main/Core/Orchestration/install_all_macOS.sh)"
 
        .. include:: /_rst_includes/tip-copy.rst
 
@@ -46,7 +46,8 @@ Install everything at once
 
        .. code-block:: bash
 
-          Script has finished. You may now close the terminal...
+          Installation complete!
+	  Restart your terminal to activate conda
 
        Now, Python and Visual Studio Code will be ready to use.
 

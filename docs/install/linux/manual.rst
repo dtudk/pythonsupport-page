@@ -6,7 +6,7 @@
 
 .. _install-python-linux-manual-conda:
 
-Step 1: Install DTU Miniforge
+Step 1: Install Miniforge
 -----------------------------
 
 .. card:: 
@@ -39,7 +39,7 @@ Step 2: Install Visual Studio Code
       Go to `this website  <https://code.visualstudio.com>`__.
    
    #.
-      Click the download button and follow the instructions.
+      Click the download button and install, following the instructions.
       
 
 .. _install-python-linux-manual-vscode-exts:
