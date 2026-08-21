@@ -19,7 +19,7 @@ function PyS_osSelector(os) {
   console.log("Base URL:", baseUrl); // Debugging line
   switch ( os ) {
     case "windows":
-      window.location.href = `${baseUrl}install/${os}/automated.html`;
+      window.location.href = `${baseUrl}install/${os}/manual.html`;
       break;
     case "macos":
       window.location.href = `${baseUrl}install/${os}/automated.html`;
