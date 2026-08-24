@@ -3,7 +3,7 @@
 {{ apple_icon }} Automated Installation
 ============================================
 
-.. dropdown:: {{ video_install }}
+.. .. dropdown:: {{ video_install }}
     :open:
     :color: info
 
