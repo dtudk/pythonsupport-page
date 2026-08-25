@@ -64,7 +64,7 @@ html_short_title = ""
 html_logo = "_static/DTU_logo_Coral_Red_CMYK.svg"
 
 copyright = f"{year}, DTU Python support"
-author = "DTU Python support developers"
+author = "DTU Python support"
 
 # when we have a guideline:
 _pref_symbol = ":fas:`ranking-star`"

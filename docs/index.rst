@@ -7,7 +7,7 @@
 
 .. Temporary extra open information
 
-.. article-info::
+.. .. article-info::
    :author: Closed in exam period until the Autumn semester.
    :date: Closed
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
@@ -18,9 +18,9 @@
    :read-time: 12-16
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. comment .. article-info::
+.. article-info::
    :author: **Workshops on Computational thinking!**
-   :date: 22nd of September and rest of semester.
+   :date: 31st of August and rest of semester.
    :read-time: :fas:`less-than` 20 min
    :avatar-link: he
    :class-container: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
@@ -131,9 +131,9 @@ Office hours
 The office is *only* open during the 13 semester weeks, we are closed
 on holidays, 3-week periods and during exams.
 
-.. .. article-info::
+.. article-info::
    :author: Closed during the Autumn break! Week 42.
-   :date: 13th of October -- 19th of October
+   :date: 12th of October -- 16th of October
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
 .. include:: /timetable/timetables.rst
