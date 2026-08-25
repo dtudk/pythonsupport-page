@@ -2,13 +2,13 @@
 Verification
 --------------------------------------
 
-.. .. dropdown:: {{ video_install }}
+ .. dropdown:: {{ video_install }}
     :open:
     :color: info
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e47d9eac-3269-4754-9666-b34700a2fb5c" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=99b368ae-2365-4c04-b5c3-b4b100d59447" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 Verify that your installation is successful by following these steps:
 

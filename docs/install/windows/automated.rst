@@ -3,13 +3,13 @@
 {{ windows_icon }} Automated Installation
 ===============================================
 
-.. .. dropdown:: {{ video_install }}
+ .. dropdown:: {{ video_install }}
     :open:
     :color: info
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7ec56b9b-895a-4ad8-b617-b34700a303bb" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=88e7fba6-24d8-4f1e-8e0a-b4b100d5f53a" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 Install everything at once
