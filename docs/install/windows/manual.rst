@@ -38,6 +38,19 @@ Step 1: Install Miniforge
    #.
       Follow the instructions from the installer.
 
+      .. dropdown:: Error: 'Destination Folder' contains 1 space
+         :animate: fade-in-slide-down
+         :color: warning
+         :icon: alert
+
+         If your Windows username contains spaces, you will get an error (e.g. ``Error: 'Destination Folder' contains 1 space.``) asking you to remove spaces from the installation path.
+
+         In that case, change the :guilabel:`Destination Folder` to ``C:\miniforge3-dtu`` instead.
+
+         .. note::
+
+            In case the destination folder is not writeable, run the installer as administrator (right-click on the installer ``.exe`` and choose :guilabel:`Run as administrator`).
+
 
 .. _install-python-windows-manual-vscode:
 
