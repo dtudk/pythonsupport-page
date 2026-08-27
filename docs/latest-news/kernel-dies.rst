@@ -4,6 +4,8 @@
   :title: Kernel Has Died
   :date: 21-10-2025
   :keywords: vscode, jupyter notebook
+  :timeout: never
+  :show-date: false
 
 
 

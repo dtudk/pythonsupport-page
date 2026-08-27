@@ -670,7 +670,7 @@ def install_survey(app, exception):
     We will keep the `survey` for something else.
     """
     # Copy all files from `<root>/survey` into `outdir/surveyq`
-    print("install_survey")
+    print(f"install-survey: the survey folder will be created")
     top_dir = app.confdir / ".."
     survey_dir = top_dir / "survey"
     if not survey_dir.is_dir():

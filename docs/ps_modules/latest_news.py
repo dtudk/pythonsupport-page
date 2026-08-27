@@ -1,12 +1,13 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from textwrap import indent, shorten
 from typing import Iterable, List, Dict, Optional, Tuple
 from docutils import nodes
 from docutils.core import publish_doctree
+import re
 
 # ------------------------------ Model -----------------------------------------
 @dataclass(frozen=True)
@@ -18,10 +19,37 @@ class Article:
     description: str
     priority: int = field(default=10)
     show_date: bool = field(default=True)
+    timeout: str = field(default="16weeks")
 
     @property
     def datef(self) -> str:
         return self.date.strftime("%d %b %Y")
+
+    @property
+    def hide_date(self) -> datetime:
+        """Convert the current date and timeout to the date it should be hidden"""
+        delta_time = self.timeout
+        if delta_time.lower() == "never":
+            return datetime.today() + timedelta(days=1)
+
+        # initialize
+        pattern = re.compile("\d+\s?\D+")
+        expr = re.compile("(\d+)\s?(\D+)")
+        dt = timedelta()
+        for dt_timeout in pattern.finditer(delta_time):
+            # There are trailing matches
+            count, name = expr.split(dt_timeout.group(0))[1:3]
+            # Ensure correctness of the grabbed data
+            count = int(count)
+            name = name.strip()
+            if name[-1] != "s":
+                name = name + "s"
+            dt = dt + timedelta(**{name: count})
+
+        hide_date = self.date + dt
+        print(f"latest-news: {self.title} "
+              f"hidden from {hide_date.strftime('%d %b %Y')}")
+        return hide_date
 
     def summary(self, width: int = 140) -> str:
         return shorten(self.description, width=width, placeholder="...")
@@ -55,20 +83,21 @@ def parse_article(path: Path) -> Article:
     meta = _meta(doc)
 
     title = (meta.get("title") or path.stem).strip()
-    priority = int(meta.get("priority", 10))
-    show_date = meta.get("show-date", "true").strip().lower() != "false"
+    priority = int(meta.get("priority", Article.priority))
+    show_date = meta.get("show-date", str(Article.show_date)).strip().lower() != "false"
 
     date_raw = (meta.get("date") or "").strip()
     if not date_raw:
         raise ValueError(f"{path}: missing required 'date' meta")
     date = datetime.strptime(date_raw, "%d-%m-%Y")
+    timeout = meta.get("timeout", Article.timeout)
 
     kw = [t.strip() for t in (meta.get("keywords", "")).split(",") if t.strip()]
     desc = _first_nonempty_paragraph(doc) or ""
 
     return Article(
         filename=path.stem, title=title, date=date, keywords=kw, description=desc,
-        priority=priority, show_date=show_date
+        priority=priority, show_date=show_date, timeout=timeout
     )
 
 
@@ -159,9 +188,13 @@ def build_index(
     """Scan once; return (articles_sorted_desc_by_date, all_keywords_sorted)."""
     articles: List[Article] = []
     keywords_set = set()
+    today = datetime.today()
 
     for p in sorted(dir_path.glob("*.rst")):
         a = parse_article(p)
+        if today > a.hide_date:
+            print(f"latest-news: hiding {a.title}")
+            continue
 
         if (keyword_filter is None) or (keyword_filter in a.keywords):
             articles.append(a)
@@ -173,6 +206,7 @@ def build_index(
 
 # ------------------------------ Sphinx hook -----------------------------------
 def create_news_carousel(app) -> None:
+    print(f"news-carousel: will create the news-carousel")
     src = Path(app.srcdir)
     news_dir = src / "latest-news"
     out_dir = src / "_rst_includes"

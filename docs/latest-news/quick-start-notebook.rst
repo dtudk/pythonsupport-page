@@ -5,7 +5,7 @@
    :date: 15-10-2025
    :keywords: vscode, jupyter notebook 
    :show-date: false
-
+   :timeout: never
 
 Quick Start Jupyter Notebook
 ===================================
