@@ -2,13 +2,13 @@
 Verification
 --------------------------------------
 
-.. .. dropdown:: {{ video_install }}
+ .. dropdown:: {{ video_install }}
     :open:
     :color: info
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=377c5e44-55d6-41ca-ad03-b34700c0169a" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=47202f95-19fa-48ad-a329-b4b10109ee87" height="405" width=100% style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 Verify that your installation is successful by following these steps:
 
@@ -42,7 +42,7 @@ Verify that your installation is successful by following these steps:
 
    .. card::
 
-      .. image:: /images/install/MacOS-IDLE-import.png
+      .. image:: /images/install/macos-verify2026.png
          :width: 100%
          :align: center
 
