@@ -35,7 +35,7 @@ Verify that your installation is successful by following these steps:
       It is important to search for :menuselection:`Miniforge Prompt` in the
       menu bar. If it does not exist, please try and install again, or
       stop by us.
-      
+
 
 2. Type ``idle`` in the PowerShell window, then press :kbd:`Enter`.
    This should open a new window in which you can run Python code.
@@ -69,8 +69,8 @@ Only follow these troubleshooting steps if something in the previous section did
 
 
 * Ensure that Miniforge is installed:
-  Search for the ``PowerShell`` prompt (it will say ``Windows PowerShell``)
-  on your computer and open it up.
+  Search for the :menuselection:`Miniforge Prompt` prompt through the menu bar, and open
+  it.
 
   If you cannot find it, press :ref:`here to install conda <install-python-windows-manual-conda>`.
 

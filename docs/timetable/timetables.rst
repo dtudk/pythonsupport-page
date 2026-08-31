@@ -9,17 +9,17 @@
      - Thursday
      - Friday
    * - 8-12:30
-     - 302.A92, or online
-     - 302.A92, or online
-     - 302.A92, or online
-     - 302.A92, or online
-     - 302.A92, or online
+     - 302.004, or online
+     - 302.004, or online
+     - 302.004, or online
+     - 302.004, or online
+     - 302.004, or online
    * - 12:30-16
-     - 302.A92, or online
-     - 302.A92, or online
-     - 302.A92, or online
-     - 302.A92, 358.043 or online
-     - 302.A92, or online
+     - 302.004, or online
+     - 302.004, or online
+     - 302.004, or online
+     - 302.004, 358.043 or online
+     - 302.004, or online
    * - 18-20
      - Online only
      - Online only
