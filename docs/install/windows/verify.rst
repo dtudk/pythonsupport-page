@@ -12,7 +12,7 @@ Verification
 
 Verify that your installation is successful by following these steps:
 
-1. Open PowerShell by opening the menu bar, then search for :menuselection:`Miniforge Prompt`.
+1. Open Miniforge Prompt by opening the menu bar, then search for :menuselection:`Miniforge Prompt`.
    Verify that ``(base)`` is shown to the left of the
    text.
    Something like the image below:
@@ -37,7 +37,7 @@ Verify that your installation is successful by following these steps:
       stop by us.
 
 
-2. Type ``idle`` in the PowerShell window, then press :kbd:`Enter`.
+2. Type ``idle`` in the Miniforge Prompt window, then press :kbd:`Enter`.
    This should open a new window in which you can run Python code.
 
 3. Verify the :guilabel:`IDLE` window says ``Python {{ python_version }}.X``
@@ -74,11 +74,9 @@ Only follow these troubleshooting steps if something in the previous section did
 
   If you cannot find it, press :ref:`here to install conda <install-python-windows-manual-conda>`.
 
-* After opening PowerShell, type ``conda init`` and press :kbd:`Enter`.
-
 * Ensure the packages are installed (if they are already installed, this will not do anything).
 
-  Paste the following line of code to the PowerShell window and press :kbd:`Enter`:
+  Paste the following line of code to the Miniforge Prompt window and press :kbd:`Enter`:
 
   .. code-block:: pwsh
 
