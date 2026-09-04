@@ -1,0 +1,4 @@
+template = """
+
+.. include:: /_rst_includes/course-default-pg-installation.rst
+"""

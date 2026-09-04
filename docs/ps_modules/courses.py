@@ -255,13 +255,12 @@ def build_course(course, current_years) -> None:
                     )
                 )
 
-        print(parse_data(schedule.path))
         template = parse_data(schedule.path)["template"]
         parts.append(template.format(**kwargs))
 
         out = schedule.path.with_suffix(".rst")
         with open(out, "w") as fh:
-            fh.write("\n".join(parts))
+            fh.write("\n".join([":orphan:", ""] + parts))
 
         last_schedule: CourseSchedule = schedule
 
@@ -282,6 +281,5 @@ def create_courses(app, current_years):
 
     for course in courses:
         build_course(course, current_years)
-    print(courses)
 
     print(f"course-database: done creating the course database")
