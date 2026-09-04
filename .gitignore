@@ -2,6 +2,7 @@ build/
 .venv
 *.pyc
 docs/_static/course_switcher.json
+docs/course/**/*.rst
 docs/timetable/timetable.rst
 .coverage
 ps-page-env/

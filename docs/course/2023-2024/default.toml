@@ -1,0 +1,10 @@
+template = """
+
+.. warning::
+
+   This guideline has been removed and is no longer available.
+
+   Please contact the teachers if you want to install the course
+   material for the {period.short_name}{schedule.year} semester.
+"""
+
