@@ -1,4 +1,25 @@
 template = """
 
-.. include:: /_rst_includes/course-default-pg-installation.rst
+This guideline is for students attending course
+:course-base:`{schedule.year}:{course.number}` in the {period.short_name}{schedule.year} year.
+
+First you should install Miniforge by following our regular installations :ref:`here
+<install-python>`.
+This will also install Visual Studio Code and the default packages for this years
+polytechnical foundation courses. These can co-exist, so do not worry about that.
+
+Once you have a functional Miniforge installation, you should create a new
+environment that hosts the packages for this course:
+
+.. code-block:: bash
+
+    conda create --name {period.short_name}{course.number} python=3.12
+    conda activate {period.short_name}{course.number}
+    conda intsall dtumathtools pandas scipy statsmodels uncertainties -y
+
+This will install all required packages into the environment named
+`{period.short_name}{course.number}`. And everytime you need to use
+the packages compatible for this course, you have to activate it.
+For more information on environments, please see :ref:`here <learn-more-environments>`.
 """
+
