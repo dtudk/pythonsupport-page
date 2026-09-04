@@ -1,9 +1,10 @@
-.. _course-2023-2024-02461:
+year = 2023
+period = "autumn"
 
-02461 --- E2023
-============================================================================
+template = """
 
-This guideline is for students attending course :course-base:`2023:02461` in the E23 year.
+This guideline is for students attending course
+:course-base:`{schedule.year}:{course.number}` in the {period.short_name}{schedule.year} year.
 
 The course requires:
 
@@ -32,4 +33,4 @@ and can be done by executing this command:
 .. code-block:: bash
 
    pip install torch torchvision torchaudio matplotlib opencv-python imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
-
+"""

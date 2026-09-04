@@ -30,6 +30,8 @@ from ps_modules.create_timetabs import create_time_table
 from ps_modules.mailto_role import escape_backslash, mailto_role
 from ps_modules.pageredirects import *
 from ps_modules.latest_news import create_news_carousel
+from ps_modules.courses import create_courses
+
 
 if sys.version_info >= (3, 11):
     import tomllib as toml
@@ -112,7 +114,7 @@ except ImportError:
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
     "numpy": ("https://numpy.org/doc/stable/", None),
-    "scipy": ("https://docs.scipy.org/doc/scipy/", None),
+    #"scipy": ("https://docs.scipy.org/doc/scipy/", None),
     "matplotlib": ("https://matplotlib.org/stable/", None),
 }
 
@@ -692,6 +694,9 @@ def setup(app):
 
     app.connect("builder-inited", generate_env_pages_from_json)
     app.connect("builder-inited", create_news_carousel)
+    def tmp_create_courses(app):
+        return create_courses(app, _year)
+    app.connect("builder-inited", tmp_create_courses)
     app.connect("source-read", rstjinja_source)
     app.connect("include-read", rstjinja_include)
     app.connect("html-page-context", add_title_to_context)

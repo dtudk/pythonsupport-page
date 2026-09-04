@@ -1,14 +1,7 @@
-.. _course-2024-2025-02461:
+year = 2024
+period = "autumn"
 
-02461 --- E2024
-=================================================================
-
-.. dropdown:: Looking for previous years?
-   :icon: hourglass
-
-   * :ref:`Autumn 2023 (E23) <course-2023-2024-02461>`
-
-
+template = """
 .. button-link:: https://www.google.com/search?q=cheatsheet+python+conda
    :color: {{ cheatsheet_color }}
    :align: right
@@ -16,7 +9,8 @@
 
    Find a Conda cheatsheet {{ cheatsheet_icon }}
 
-This guideline is for students attending course :course-base:`2024:02461` in the E24 year.
+This guideline is for students attending course
+:course-base:`{schedule.year}:{course.number}` in the {period.short_name}{schedule.year} year.
 
 The course requires:
 
@@ -27,7 +21,7 @@ Choose one of these installation procedures:
 
 .. card:: Semi-manual installation
 
-   Download the :download:`02461.yml </course/2024-2025/02461.yml>` and install
+   Download the :download:`{course.number}.yml </course/{schedule.years}/{course.number}.yml>` and install
    it using :ref:`this environment.yml guide <learn-more-environments-yaml>`.
 
    This will create an environment named ``IntelligentSystems`` that you should
@@ -57,4 +51,4 @@ Choose one of these installation procedures:
       conda activate IntelligentSystems
       conda config --env --add channels pytorch
       conda install pytorch torchvision torchaudio matplotlib opencv imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
-
+"""
