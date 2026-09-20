@@ -1,4 +1,4 @@
-name = "Introduction to Intelligent Systems"
+name = "Applied Mathematics"
 period = "autumn"
 
 template = """
@@ -49,6 +49,6 @@ Choose one of these installation procedures:
    .. code-block:: bash
 
       conda activate {course.env}
-      conda config --env --add channels pytorch
-      conda install pytorch torchvision torchaudio matplotlib opencv imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
+      conda install python matplotlib numpy pip
+      pip install pulp
 """

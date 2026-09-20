@@ -9,8 +9,10 @@ the documentation.
 import tomllib
 from dataclasses import dataclass
 from enum import StrEnum
-from pathlib import Path
+from pathlib import Path, PurePath
 from typing import Any, Dict, Self
+
+import yaml
 
 __all__ = ["create_courses"]
 
@@ -94,6 +96,7 @@ class Course:
     number: str
     schedules: list[CourseSchedule]
     name: str | None
+    env: str | None
 
     def runs(self, year: int) -> bool:
         """Check if the course runs in the year"""
@@ -102,12 +105,13 @@ class Course:
     def remove(self, year: int) -> Self:
         """Return the same course, but removing `year` from the schedule"""
         schedules = list(filter(lambda schedule: schedule.year != year, self.schedules))
-        return type(self)(self.number, schedules, self.name)
+        return type(self)(self.number, schedules, self.name, self.env)
 
     def __add__(self, other):
         """Merge two course schedules"""
         assert self == other
-        return type(self)(self.number, self.schedules + other.schedules, self.name)
+        return type(self)(self.number, self.schedules + other.schedules, self.name,
+                          self.env)
 
     def sort_schedules(self) -> None:
         """Sorts the schedules, in-place"""
@@ -137,6 +141,15 @@ def parse_data(path: Path) -> Dict[str, Any]:
     if default.exists():
         defaults = tomllib.load(default.open("rb"))
     meta = {**defaults, **tomllib.load(path.open("rb"))}
+
+    # If there exists a yml/yaml file with the same course number
+    # We'll add that content to the yaml file
+    for suffix in (".yml", ".yaml"):
+        yaml_path = path.with_suffix(suffix)
+        if yaml_path.exists():
+            environment = yaml.safe_load(open(yaml_path, 'r'))
+            meta["conda_environment"] = environment
+
     return meta
 
 
@@ -159,9 +172,12 @@ def parse_course(path: Path) -> Course:
     name = meta.get("name")  # optional
     year = meta.get("year", int(year))
 
+    conda_env = meta.get("conda_environment", {})
+    env = conda_env.get("name")
+
     schedule = CourseSchedule(year, period, path)
 
-    return Course(number, [schedule], name)
+    return Course(number, [schedule], name, env)
 
 
 def scrape_courses(path: Path) -> list[Course]:
@@ -200,6 +216,12 @@ def _COURSE_REF(*, schedule, course, **kwargs):
 def _COURSE_HEADER(*, schedule, course, period, **kwargs):
     return f"""
 {course.number} --- {period.short_name}{schedule.year}
+=================================================================
+"""
+
+def _COURSE_HEADER_DEFAULT(*, course, **kwargs):
+    return f"""
+{course.name} {course.number}
 =================================================================
 """
 
@@ -266,7 +288,8 @@ def build_course(course, current_years) -> None:
 
     # Create the top-level course
     out = last_schedule.path.parents[1] / f"{course.number}.rst"
-    parts[0] = _COURSE_DEFAULT(schedule=last_schedule, course=course)
+    parts[0] = _COURSE_DEFAULT(**kwargs)
+    parts[1] = _COURSE_HEADER_DEFAULT(**kwargs)
     open(out, "w").write("\n".join(parts))
 
 

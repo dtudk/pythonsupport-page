@@ -1,3 +1,4 @@
+name = "Introduction to Intelligent Systems"
 period = "autumn"
 
 template = """
@@ -18,13 +19,13 @@ We recommend you to create an :ref:`environment <learn-more-environments>` for t
 .. code-block:: bash
 
    conda config --add channels conda-forge
-   conda create --name IntelligentSystems python=3.11 -y
+   conda create --name {course.env} python=3.11 -y
 
 Every time you need to run code in the course, you need to activate the environment:
 
 .. code-block:: bash
 
-   conda activate IntelligentSystems
+   conda activate {course.env}
 
 The required packages should be installed in the above environment,
 and can be done by executing this command:

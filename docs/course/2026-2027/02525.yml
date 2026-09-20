@@ -1,0 +1,11 @@
+name: AppliedMath
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python
+  - matplotlib
+  - numpy
+  - pip
+  - pip:
+     - pulp
