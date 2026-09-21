@@ -24,7 +24,7 @@ Choose one of these installation procedures:
    Download the :download:`{course.number}.yml </course/{schedule.years}/{course.number}.yml>` and install
    it using :ref:`this environment.yml guide <learn-more-environments-yaml>`.
 
-   This will create an environment named ``{course.env}`` that you should
+   This will create an environment named ``{course.env.name}`` that you should
    activate when following the course.
 
 
@@ -34,21 +34,12 @@ Choose one of these installation procedures:
 
    .. code-block:: bash
 
-      conda config --add channels conda-forge
-      conda create --name {course.env}
+      {course.env.channels_cmd}
+      {course.env.create_cmd}
 
    Every time you need to run code in the course, you need to activate the environment:
 
    .. code-block:: bash
 
-      conda activate {course.env}
-
-   The required packages should be installed in the above environment,
-   and can be done by executing these commands, one by one:
-
-   .. code-block:: bash
-
-      conda activate {course.env}
-      conda config --env --add channels pytorch
-      conda install pytorch torchvision torchaudio matplotlib opencv imageio scikit-learn scikit-image jupyter pygame scipy nltk ipywidgets tqdm
+      {course.env.activate_cmd}
 """

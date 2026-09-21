@@ -6,11 +6,13 @@ It will automatically create the necessary rst files when building
 the documentation.
 """
 
+from functools import reduce
 import tomllib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from enum import StrEnum
 from pathlib import Path, PurePath
 from typing import Any, Dict, Self
+import shlex
 
 import yaml
 
@@ -92,11 +94,91 @@ class CourseSchedule:
 
 
 @dataclass(frozen=True)
+class Environment:
+    name: str | None = None
+    channels: list[str] = field(default_factory=list)
+    dependencies: list[str] = field(default_factory=list)
+    pip_dependencies: list[str] = field(default_factory=list)
+
+    @classmethod
+    def from_yaml(cls, yaml_path: Path | str) -> Self:
+        """Instantiate a new class with the content"""
+        yaml_path = Path(yaml_path)
+        if not yaml_path.exists():
+            return cls()
+
+        meta = yaml.safe_load(open(yaml_path, 'r'))
+        name = meta["name"]
+        channels = meta.get("channels", [])
+        deps = meta.get("dependencies", [])
+        # Extract pip-packages
+        pip_deps = []
+        stripped_deps = []
+        for item in deps:
+            if isinstance(item, dict) and "pip" in item:
+                pip_deps = item["pip"]
+            else:
+                stripped_deps.append(item)
+
+        return cls(name, channels, stripped_deps, pip_deps)
+
+    def _list_packages(self) -> list[str]:
+        def clean(package) -> str:
+            return package.replace(" ", "")
+        cmds = list(map(clean, self.dependencies))
+        return cmds
+
+    @property
+    def has_pip(self) -> bool:
+        return bool(self.pip_dependencies)
+
+
+    @property
+    def activate_cmd(self) -> str:
+        return shlex.join(["conda", "activate", self.name])
+
+    @property
+    def channels_cmd(self) -> str:
+        channels = self.channels[:]
+        if "nodefaults" in channels:
+            idx = channels.index("nodefaults")
+            del channels[idx]
+        cmds = ["conda", "config"]
+        channel_adds = map(lambda channel: ["--add", "channels", channel],
+                                                   channels)
+        channel_adds = reduce(lambda a,b: a + b, channel_adds)
+        return shlex.join(cmds + channel_adds)
+
+    @property
+    def create_cmd(self) -> str:
+        cmds = ["conda", "create", "--name", self.name]
+        cmds = cmds + self._list_packages()
+        return shlex.join(cmds + ["-y"])
+
+    @property
+    def install_pip_cmd(self) -> str:
+        cmds = []
+        if self.pip_dependencies:
+            cmds += ["pip", "install"]
+            cmds += self.pip_dependencies
+
+        return shlex.join(cmds)
+
+    @property
+    def install_cmd(self) -> str:
+        cmds = ["conda", "install"] + self._list_packages()
+        return shlex.join(cmds + ["-y"])
+
+    def __bool__(self) -> bool:
+        return self.name is None
+
+
+@dataclass(frozen=True)
 class Course:
     number: str
     schedules: list[CourseSchedule]
     name: str | None
-    env: str | None
+    env: Environment
 
     def runs(self, year: int) -> bool:
         """Check if the course runs in the year"""
@@ -147,8 +229,7 @@ def parse_data(path: Path) -> Dict[str, Any]:
     for suffix in (".yml", ".yaml"):
         yaml_path = path.with_suffix(suffix)
         if yaml_path.exists():
-            environment = yaml.safe_load(open(yaml_path, 'r'))
-            meta["conda_environment"] = environment
+            meta["conda_yaml"] = yaml_path
 
     return meta
 
@@ -163,7 +244,7 @@ def parse_course(path: Path) -> Course:
     # Determine the year from the current directory
     years = path.parents[0].stem.split("-")
     # TODO create a function to extract the correct year!
-    if period.value in ("august", "autumn", "spring & autumn"):
+    if period.value in ("august", "autumn", "spring & autumn", "spring and autumn"):
         year = int(years[0])
     else:
         year = int(years[1])
@@ -172,8 +253,7 @@ def parse_course(path: Path) -> Course:
     name = meta.get("name")  # optional
     year = meta.get("year", int(year))
 
-    conda_env = meta.get("conda_environment", {})
-    env = conda_env.get("name")
+    env = Environment.from_yaml(meta.get("conda_yaml", "not-a-yaml-file"))
 
     schedule = CourseSchedule(year, period, path)
 
