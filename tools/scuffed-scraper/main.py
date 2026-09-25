@@ -161,6 +161,7 @@ SCRAPE_CONTENT_TO_CONTENT = {
     "Learning objectives": "objectives",
     "Content": "content",
     "CourseLiterature": "literature",
+    "Course literature": "literature",
     "Last updated": "updated",
     "Remarks": "remarks",
 }
@@ -199,7 +200,8 @@ def g_session_cookies(
 
 
 def g_course_soup(course_id: str, lang: Lang) -> BeautifulSoup:
-    path_scrape_cache = COURSE_SCRAPES_PATHS[lang] / f"{course_id}.html"
+    # Old style sites had .html suffix
+    path_scrape_cache = COURSE_SCRAPES_PATHS[lang] / f"{course_id}"
     if path_scrape_cache.is_file():
         with path_scrape_cache.open() as f:
             return BeautifulSoup(f.read(), features="html.parser")
@@ -591,8 +593,10 @@ if __name__ == "__main__":
         }
         try:
             course_config = parse_course_information(course_id, course_soups)
-        except (RuntimeError, KeyError):
-            print(f"[{url}] Could not find information, we'll skip the course...")
+        except (RuntimeError, KeyError) as e:
+            #import traceback as tb
+            #tb.print_exception(e)
+            print(f"[{url}] Could not find information, we'll skip the course... ({e!s})")
             continue
 
         def reparse_toml(toml_string):
