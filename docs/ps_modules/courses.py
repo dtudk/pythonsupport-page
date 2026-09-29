@@ -146,7 +146,7 @@ class Environment:
         cmds = ["conda", "config"]
         channel_adds = map(lambda channel: ["--add", "channels", channel],
                                                    channels)
-        channel_adds = reduce(lambda a,b: a + b, channel_adds)
+        channel_adds = reduce(lambda a, b: a + b, channel_adds, [])
         return shlex.join(cmds + channel_adds)
 
     @property
