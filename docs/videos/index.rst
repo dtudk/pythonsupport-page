@@ -9,76 +9,61 @@ Here you will find video tutorials for Visual Studio Code, conda, terminal usage
 Videos related to VS Code
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. dropdown:: Getting Started with VS Code
+.. dropdown:: Complete VS Code Tutorial - only 10 mins!
+    :open:
 
-
-    .. raw:: html
-
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=cde199ec-14ac-47bc-83fc-b1d500d4d82c" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-.. dropdown:: Workspaces and Files in VS Code
-
+    The video below is a complete introduction to VS Code. It includes everything 
+    you need for Python-related courses as a first year student. 
+    All the videos in the cards below are snippets from this tutorial
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=7c0cdab0-d90e-4858-bb3e-b1d5009e11f8" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=0" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
 
-.. dropdown:: Jupyter Notebooks 
-
-
-    .. raw:: html
-
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e2325323-ea37-4216-bdf8-b1ce00b63fcf" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-
-.. dropdown:: Keybindings in VS Code
-
+.. dropdown:: Opening a folder 
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=c67b0cf8-d27c-4287-9e25-b1ce0089a101" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=26" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-
-
-
-.. dropdown:: Integrated Terminal in VS Code
-
+.. dropdown:: Creating and writing in a Python file
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=bce1091c-e3dc-4e53-b785-b1ce00899666" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=84" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
-
-
-
-.. dropdown:: Extensions in VS Code
-
+.. dropdown:: Running a Python file
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=1a8f7346-8daa-48e8-adfd-b1ce00898e08" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=134" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 
-.. dropdown:: Debugging Tool in VS Code
-
-
-    .. raw:: html
-
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=e7399c34-3ff7-4f9e-b8c3-b1ce00898e03" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-
-
-.. dropdown:: Creating a Conda Environment in VS Code
-
+.. dropdown:: Jupyter notebooks
 
     .. raw:: html
 
-        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8521f56a-5620-4b4a-9b20-b1ce0142e7d8" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=232" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
+.. dropdown:: Formatting layout in notebooks
 
+    .. raw:: html
+
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=393" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+.. dropdown:: Making new folders in VS Code 
+
+    .. raw:: html
+
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=511" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+
+.. dropdown:: Working with bigger notebooks 
+
+    .. raw:: html
+
+        <iframe src="https://panopto.dtu.dk/Panopto/Pages/Embed.aspx?id=8a686637-9d58-43e7-9841-b4d3013e0fcb&start=597" height="405" width="640" style="border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
 
 Videos related to conda and the terminal
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
