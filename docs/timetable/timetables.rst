@@ -8,7 +8,7 @@
      - Wednesday
      - Thursday
      - Friday
-   * - 8-12:30
+   * - 10-12:30
      - 302.004, or online
      - 302.004, or online
      - 302.004, or online
