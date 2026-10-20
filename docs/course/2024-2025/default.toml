@@ -15,7 +15,7 @@ environment that hosts the packages for this course:
 
     conda create --name {period.short_name}{course.number} python=3.11
     conda activate {period.short_name}{course.number}
-    conda intsall dtumathtools pandas scipy statsmodels uncertainties -y
+    conda install dtumathtools pandas scipy statsmodels uncertainties -y
 
 This will install all required packages into the environment named
 `{period.short_name}{course.number}`. And everytime you need to use
