@@ -6,6 +6,7 @@ dependencies:
   - python
   - matplotlib
   - numpy
+  - scikit-image
   - pip
   - pip:
      - pulp
