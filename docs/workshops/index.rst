@@ -19,6 +19,7 @@ difficulties in using programming concepts.
    :gutter: 1
 
    .. grid-item-card:: :fas:`x` -- Variables
+      :link: https://raw.githubusercontent.com/dtudk/pythonsupport-workshops/main/Notebooks/Variables_Workshop.ipynb
 
       Understanding how variables are (re)assigned is crucial
       for effective programming.
@@ -26,6 +27,7 @@ difficulties in using programming concepts.
       reordered.
 
    .. grid-item-card:: :fas:`not-equal` -- Conditionals
+      :link: https://raw.githubusercontent.com/dtudk/pythonsupport-workshops/ain/Notebooks/Conditionals_Workshop.ipynb
 
       Conditionals, such as :code:`if` statements, are essential for
       controlling program flow.
@@ -33,12 +35,14 @@ difficulties in using programming concepts.
       efficiently.
 
    .. grid-item-card:: :fas:`repeat` -- Loops
+      :link: https://raw.githubusercontent.com/dtudk/pythonsupport-workshops/main/Notebooks/Loop_Workshop.ipynb
 
       Understanding loops enables repetitive code execution,
       either for a specified number of times or
       based on specific criteria.
 
    .. grid-item-card:: :fas:`diagram-project` -- Functions
+      :link: https://raw.githubusercontent.com/dtudk/pythonsupport-workshops/main/Notebooks/Functions_Workshop.ipynb
 
       Breaking code into functions can significantly improve the
       understanding of complex operations.
@@ -74,9 +78,9 @@ the available options!
      -
      - 10:30-16
    * - Where
-     - 302.A92
-     - 302.A92
-     - 302.A92
+     - 302.004
+     - 302.004
+     - 302.004
      -
-     - 302.A92
+     - 302.004
 

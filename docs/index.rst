@@ -18,14 +18,13 @@
    :read-time: 12-16
    :class-container: sd-text-center sd-p-2 sd-outline-primary sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. article-info::
+.. .. article-info::
    :author: **Workshops on Computational thinking!**
    :date: 31st of August and rest of semester.
    :read-time: :fas:`less-than` 20 min
-   :avatar-link: he
    :class-container: sd-text-center sd-width-75 sd-p-2 sd-outline-primary-highlight sd-bg-primary sd-text-light sd-rounded-2 sd-shadow-md sd-animate-grow50
 
-.. .. button-link:: ./workshops/index.html
+.. button-link:: ./workshops/index.html
    :ref-type: ref
    :outline:
    :shadow:
@@ -35,7 +34,7 @@
 
    **Workshops on Computational thinking!**
 
-   :far:`calendar` drop-in workshops. :far:`clock` :fas:`less-than` 20 min
+   :far:`calendar` drop-in workshops :fas:`clock` :fas:`less-than` 20 min
 
 
 .. _homepage-reference:
